@@ -8,35 +8,72 @@
         <meta http-equiv="refresh" content="30"> 
         <style>
             body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #1e1e2e; color: #cdd6f4; margin: 10px; }
-            h2 { color: #89b4fa; border-bottom: 2px solid #313244; padding-bottom: 5px; margin-bottom: 8px; font-size: 1.2em; }
-            .banner { display: flex; gap: 10px; margin-bottom: 10px; flex-wrap: wrap; }
-            .card { background-color: #181825; border: 1px solid #313244; padding: 8px 15px; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.2); flex: 1; min-width: 90px; text-align: center; }
-            .card h4 { margin: 0; color: #9399b2; font-size: 0.75em; }
-            .card p { margin: 3px 0 0; font-size: 1.1em; font-weight: bold; color: #cdd6f4; }
-            table { width: 100%; border-collapse: collapse; margin-top: 5px; background-color: #181825; box-shadow: 0 4px 8px rgba(0,0,0,0.3); font-size: 0.85em; }
+            
+            /* Sticky Top Container (Title + Timestamp + Banner) */
+            .sticky-top-container {
+                position: sticky;
+                top: 0;
+                background-color: #1e1e2e;
+                z-index: 1000;
+                padding-top: 5px;
+                padding-bottom: 8px;
+                border-bottom: 2px solid #313244;
+            }
+            
+            h2 { color: #89b4fa; margin: 0 0 4px 0; font-size: 1.2em; }
+            .update-time { color: #a6adc8; font-size: 0.75em; margin: 0 0 8px 0; }
+            
+            /* Slim Inline Metric Cards */
+            .banner { display: flex; gap: 8px; flex-wrap: wrap; }
+            .card { 
+                background-color: #181825; 
+                border: 1px solid #313244; 
+                padding: 6px 12px; 
+                border-radius: 6px; 
+                box-shadow: 0 2px 4px rgba(0,0,0,0.2); 
+                flex: 1; 
+                min-width: 130px; 
+                text-align: center; 
+                font-size: 0.85em; 
+                color: #9399b2;
+            }
+            .card strong { color: #cdd6f4; font-weight: bold; margin-left: 4px; }
+            
+            table { width: 100%; border-collapse: collapse; margin-top: 10px; background-color: #181825; box-shadow: 0 4px 8px rgba(0,0,0,0.3); font-size: 0.85em; }
             th, td { padding: 8px 10px; border-bottom: 1px solid #313244; text-align: left; }
-            th { background-color: #313244; color: #bac2de; font-weight: 600; position: sticky; top: 0; z-index: 100; }
+            
+            /* Sticky Table Headers positioned below the sticky top container */
+            th { 
+                background-color: #313244; 
+                color: #bac2de; 
+                font-weight: 600; 
+                position: sticky; 
+                top: 98px; 
+                z-index: 99; 
+            }
+            
             .BUY { color: #a6e3a1; font-weight: bold; }
             .SELL { color: #f38ba8; font-weight: bold; }
             .WIN { color: #a6e3a1; font-weight: bold; }
             .LOSS { color: #f38ba8; font-weight: bold; }
             .OPEN { color: #f9e2af; font-weight: bold; }
             .rationale { color: #a6adc8; font-size: 0.9em; line-height: 1.4; }
-            .update-time { color: #a6adc8; font-size: 0.75em; margin-bottom: 8px; }
             .timestamp { color: #89b4fa; font-size: 0.8em; line-height: 1.3; }
             .ohlc { color: #9399b2; font-size: 0.8em; line-height: 1.3; }
         </style>
     </head>
     <body>
-        <h2>🚀 NIFTY 50 AI Market Scanner & Tracker</h2>
-        <p class="update-time">🟢 Dashboard Updated: 2026-08-26 12:54:33 (Auto-refreshes every 30 seconds)</p>
-        
-        <div class="banner">
-            <div class="card"><h4>Total Trades</h4><p>18</p></div>
-            <div class="card"><h4>Open ⏳</h4><p style="color:#f9e2af;">17</p></div>
-            <div class="card"><h4>Wins 🟢</h4><p style="color:#a6e3a1;">0</p></div>
-            <div class="card"><h4>Losses 🔴</h4><p style="color:#f38ba8;">1</p></div>
-            <div class="card"><h4>Win Rate</h4><p style="color:#89b4fa;">0.0%</p></div>
+        <div class="sticky-top-container">
+            <h2>🚀 NIFTY 50 AI Market Scanner & Tracker</h2>
+            <p class="update-time">🟢 Dashboard Updated: 2026-08-26 13:04:25 (Auto-refreshes every 30 seconds)</p>
+            
+            <div class="banner">
+                <div class="card">Total Trades: <strong>20</strong></div>
+                <div class="card">Open ⏳: <strong style="color:#f9e2af;">19</strong></div>
+                <div class="card">Wins 🟢: <strong style="color:#a6e3a1;">0</strong></div>
+                <div class="card">Losses 🔴: <strong style="color:#f38ba8;">1</strong></div>
+                <div class="card">Win Rate: <strong style="color:#89b4fa;">0.0%</strong></div>
+            </div>
         </div>
 
         <table>
@@ -254,6 +291,30 @@
                 <td>₹381.76</td>
                 <td>₹389.49</td>
                 <td class="rationale">Closed at the session low right after testing the candle high, indicating strong persistent selling control.</td>
+            </tr>
+        
+            <tr>
+                <td class="OPEN">OPEN ⏳</td>
+                <td class="BUY">BUY</td>
+                <td><strong>EICHERMOT.NS</strong></td>
+                <td class="timestamp">2026-08-26<br>13:00:00</td>
+                <td class="ohlc">O: ₹8076.0<br>H: ₹8079.5<br>L: ₹8072.0<br>C: ₹8077.0</td>
+                <td>₹8077.0</td>
+                <td>₹8173.92</td>
+                <td>₹8012.38</td>
+                <td class="rationale">Sustained buying interest holding near session highs with a favorable 1:1.5 risk-reward setup.</td>
+            </tr>
+        
+            <tr>
+                <td class="OPEN">OPEN ⏳</td>
+                <td class="SELL">SELL</td>
+                <td><strong>APOLLOHOSP.NS</strong></td>
+                <td class="timestamp">2026-08-26<br>13:00:00</td>
+                <td class="ohlc">O: ₹8802.5<br>H: ₹8802.5<br>L: ₹8795.0<br>C: ₹8798.0</td>
+                <td>₹8798.0</td>
+                <td>₹8692.42</td>
+                <td>₹8868.38</td>
+                <td class="rationale">Bearish candle structure with Open equal to High and closing near session lows, offering clear downward momentum.</td>
             </tr>
         
             <tr>
