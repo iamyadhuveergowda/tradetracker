@@ -11,11 +11,12 @@
             .sticky-top-container { position: sticky; top: 0; background-color: #1e1e2e; z-index: 1000; padding-top: 5px; padding-bottom: 8px; border-bottom: 2px solid #313244; }
             h2 { color: #89b4fa; margin: 0 0 4px 0; font-size: 1.2em; }
             .update-time { color: #a6adc8; font-size: 0.75em; margin: 0 0 8px 0; }
+            .macro-bar { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 8px; }
+            .macro-card { background-color: #11111b; border: 1px solid #45475a; padding: 6px 14px; border-radius: 6px; flex: 1; min-width: 200px; font-size: 0.85em; }
             .banner { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 10px; }
-            .card { background-color: #181825; border: 1px solid #313244; padding: 6px 12px; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.2); flex: 1; min-width: 130px; text-align: center; font-size: 0.85em; color: #9399b2; }
+            .card { background-color: #181825; border: 1px solid #313244; padding: 6px 12px; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.2); flex: 1; min-width: 120px; text-align: center; font-size: 0.85em; color: #9399b2; }
             .card strong { color: #cdd6f4; font-weight: bold; margin-left: 4px; }
             
-            /* FILTER CONTROLS */
             .controls { display: flex; gap: 10px; margin-bottom: 5px; }
             .controls input, .controls select { background-color: #181825; color: #cdd6f4; border: 1px solid #313244; padding: 6px 10px; border-radius: 4px; outline: none; font-size: 0.85em; }
             .controls input:focus, .controls select:focus { border-color: #89b4fa; }
@@ -23,8 +24,7 @@
             table { width: 100%; border-collapse: collapse; background-color: #181825; box-shadow: 0 4px 8px rgba(0,0,0,0.3); font-size: 0.85em; }
             th, td { padding: 8px 10px; border-bottom: 1px solid #313244; text-align: left; }
             
-            /* SORTABLE HEADERS */
-            th { background-color: #313244; color: #bac2de; font-weight: 600; position: sticky; top: 135px; z-index: 99; cursor: pointer; user-select: none; transition: background 0.2s; }
+            th { background-color: #313244; color: #bac2de; font-weight: 600; position: sticky; top: 165px; z-index: 99; cursor: pointer; user-select: none; transition: background 0.2s; }
             th:hover { background-color: #45475a; color: #fff; }
             th::after { content: " ⇕"; font-size: 0.8em; opacity: 0.5; }
             
@@ -42,7 +42,24 @@
     <body>
         <div class="sticky-top-container">
             <h2>🚀 NIFTY 50 AI Market Scanner & Tracker</h2>
-            <p class="update-time">🟢 Dashboard Updated: 2026-08-27 18:02:58 (Auto-refreshes every 30 seconds)</p>
+            <p class="update-time">🟢 Dashboard Updated: 2026-08-27 18:23:17 (Auto-refreshes every 30 seconds)</p>
+            
+            <!-- MACRO MARKET BAR -->
+            <div class="macro-bar">
+                <div class="macro-card">
+                    📊 NIFTY 50: <strong>₹24,090.85</strong> 
+                    <span style="color:#f38ba8; font-weight:bold; margin-left:6px;">
+                        -243.75 (-1.00%)
+                    </span>
+                </div>
+                <div class="macro-card">
+                    🏛️ BSE SENSEX: <strong>₹76,933.59</strong> 
+                    <span style="color:#f38ba8; font-weight:bold; margin-left:6px;">
+                        -722.51 (-0.93%)
+                    </span>
+                </div>
+            </div>
+
             <div class="banner">
                 <div class="card">Total Trades: <strong>12</strong></div>
                 <div class="card">Open ⏳: <strong style="color:#f9e2af;">11</strong></div>
@@ -50,6 +67,7 @@
                 <div class="card">Losses 🔴: <strong style="color:#f38ba8;">1</strong></div>
                 <div class="card">Win Rate: <strong style="color:#89b4fa;">0.0%</strong></div>
             </div>
+
             <div class="controls">
                 <input type="text" id="searchInput" onkeyup="filterTable()" placeholder="🔍 Search Ticker (e.g., INFY)...">
                 <select id="statusFilter" onchange="filterTable()">
@@ -65,6 +83,7 @@
                 </select>
             </div>
         </div>
+
         <table id="tradeTable">
             <thead>
                 <tr>
@@ -73,11 +92,11 @@
                     <th onclick="sortTable(2)">Action</th>
                     <th onclick="sortTable(3)">Ticker</th>
                     <th onclick="sortTable(4)">Date & Time</th>
-                    <th>OHLC (Open/High/Low/Close)</th>
+                    <th>OHLC</th>
                     <th onclick="sortTable(6)">Entry</th>
                     <th onclick="sortTable(7)">Target</th>
                     <th onclick="sortTable(8)">Stop Loss</th>
-                    <th>AI Analysis</th>
+                    <th>AI Chain-of-Thought Rationale</th>
                 </tr>
             </thead>
             <tbody>
@@ -242,7 +261,6 @@
         </table>
         
         <script>
-            // FILTER FUNCTION
             function filterTable() {
                 let input = document.getElementById("searchInput").value.toUpperCase();
                 let status = document.getElementById("statusFilter").value;
@@ -250,7 +268,6 @@
                 let table = document.getElementById("tradeTable");
                 let tr = table.getElementsByTagName("tr");
 
-                // Save filters to Session Storage
                 sessionStorage.setItem('searchState', document.getElementById("searchInput").value);
                 sessionStorage.setItem('statusState', status);
                 sessionStorage.setItem('actionState', action);
@@ -278,7 +295,6 @@
                 }
             }
 
-            // SORT FUNCTION
             function sortTable(n) {
                 let table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
                 table = document.getElementById("tradeTable");
@@ -295,10 +311,8 @@
                         
                         let xVal = x.innerText.replace('₹', '').trim();
                         let yVal = y.innerText.replace('₹', '').trim();
-                        
                         let xNum = parseFloat(xVal);
                         let yNum = parseFloat(yVal);
-                        
                         let compareX = isNaN(xNum) ? xVal.toLowerCase() : xNum;
                         let compareY = isNaN(yNum) ? yVal.toLowerCase() : yNum;
 
@@ -321,7 +335,6 @@
                 }
             }
 
-            // RESTORE FILTERS
             window.onload = function() {
                 let savedSearch = sessionStorage.getItem('searchState');
                 let savedStatus = sessionStorage.getItem('statusState');
