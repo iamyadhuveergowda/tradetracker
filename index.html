@@ -11,12 +11,23 @@
             .sticky-top-container { position: sticky; top: 0; background-color: #1e1e2e; z-index: 1000; padding-top: 5px; padding-bottom: 8px; border-bottom: 2px solid #313244; }
             h2 { color: #89b4fa; margin: 0 0 4px 0; font-size: 1.2em; }
             .update-time { color: #a6adc8; font-size: 0.75em; margin: 0 0 8px 0; }
-            .banner { display: flex; gap: 8px; flex-wrap: wrap; }
+            .banner { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 10px; }
             .card { background-color: #181825; border: 1px solid #313244; padding: 6px 12px; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.2); flex: 1; min-width: 130px; text-align: center; font-size: 0.85em; color: #9399b2; }
             .card strong { color: #cdd6f4; font-weight: bold; margin-left: 4px; }
-            table { width: 100%; border-collapse: collapse; margin-top: 10px; background-color: #181825; box-shadow: 0 4px 8px rgba(0,0,0,0.3); font-size: 0.85em; }
+            
+            /* FILTER CONTROLS */
+            .controls { display: flex; gap: 10px; margin-bottom: 5px; }
+            .controls input, .controls select { background-color: #181825; color: #cdd6f4; border: 1px solid #313244; padding: 6px 10px; border-radius: 4px; outline: none; font-size: 0.85em; }
+            .controls input:focus, .controls select:focus { border-color: #89b4fa; }
+            
+            table { width: 100%; border-collapse: collapse; background-color: #181825; box-shadow: 0 4px 8px rgba(0,0,0,0.3); font-size: 0.85em; }
             th, td { padding: 8px 10px; border-bottom: 1px solid #313244; text-align: left; }
-            th { background-color: #313244; color: #bac2de; font-weight: 600; position: sticky; top: 98px; z-index: 99; }
+            
+            /* SORTABLE HEADERS */
+            th { background-color: #313244; color: #bac2de; font-weight: 600; position: sticky; top: 135px; z-index: 99; cursor: pointer; user-select: none; transition: background 0.2s; }
+            th:hover { background-color: #45475a; color: #fff; }
+            th::after { content: " ⇕"; font-size: 0.8em; opacity: 0.5; }
+            
             .BUY { color: #a6e3a1; font-weight: bold; }
             .SELL { color: #f38ba8; font-weight: bold; }
             .WIN { color: #a6e3a1; font-weight: bold; }
@@ -25,202 +36,200 @@
             .rationale { color: #a6adc8; font-size: 0.9em; line-height: 1.4; }
             .timestamp { color: #89b4fa; font-size: 0.8em; line-height: 1.3; }
             .ohlc { color: #9399b2; font-size: 0.8em; line-height: 1.3; }
+            .trade-id { color: #f5c2e7; font-weight: bold; font-size: 1.1em; }
         </style>
     </head>
     <body>
         <div class="sticky-top-container">
             <h2>🚀 NIFTY 50 AI Market Scanner & Tracker</h2>
-            <p class="update-time">🟢 Dashboard Updated: 2026-08-27 14:06:51 (Auto-refreshes every 30 seconds)</p>
+            <p class="update-time">🟢 Dashboard Updated: 2026-08-27 14:34:34 (Auto-refreshes every 30 seconds)</p>
             <div class="banner">
-                <div class="card">Total Trades: <strong>14</strong></div>
-                <div class="card">Open ⏳: <strong style="color:#f9e2af;">14</strong></div>
+                <div class="card">Total Trades: <strong>4</strong></div>
+                <div class="card">Open ⏳: <strong style="color:#f9e2af;">4</strong></div>
                 <div class="card">Wins 🟢: <strong style="color:#a6e3a1;">0</strong></div>
                 <div class="card">Losses 🔴: <strong style="color:#f38ba8;">0</strong></div>
                 <div class="card">Win Rate: <strong style="color:#89b4fa;">0.0%</strong></div>
             </div>
+            <div class="controls">
+                <input type="text" id="searchInput" onkeyup="filterTable()" placeholder="🔍 Search Ticker (e.g., INFY)...">
+                <select id="statusFilter" onchange="filterTable()">
+                    <option value="ALL">Show All Statuses</option>
+                    <option value="OPEN">⏳ Show OPEN Only</option>
+                    <option value="WIN">🟢 Show WINS Only</option>
+                    <option value="LOSS">🔴 Show LOSSES Only</option>
+                </select>
+                <select id="actionFilter" onchange="filterTable()">
+                    <option value="ALL">Show All Actions</option>
+                    <option value="BUY">📈 Show BUY Only</option>
+                    <option value="SELL">📉 Show SELL Only</option>
+                </select>
+            </div>
         </div>
-        <table>
-            <tr>
-                <th>Status</th>
-                <th>Action</th>
-                <th>Ticker</th>
-                <th>Date & Time</th>
-                <th>OHLC (Open/High/Low/Close)</th>
-                <th>Entry</th>
-                <th>Target</th>
-                <th>Stop Loss</th>
-                <th>AI Analysis</th>
-            </tr>
+        <table id="tradeTable">
+            <thead>
+                <tr>
+                    <th onclick="sortTable(0)" style="width: 40px;">#</th>
+                    <th onclick="sortTable(1)">Status</th>
+                    <th onclick="sortTable(2)">Action</th>
+                    <th onclick="sortTable(3)">Ticker</th>
+                    <th onclick="sortTable(4)">Date & Time</th>
+                    <th>OHLC (Open/High/Low/Close)</th>
+                    <th onclick="sortTable(6)">Entry</th>
+                    <th onclick="sortTable(7)">Target</th>
+                    <th onclick="sortTable(8)">Stop Loss</th>
+                    <th>AI Analysis</th>
+                </tr>
+            </thead>
+            <tbody>
     
             <tr>
+                <td class="trade-id">1</td>
                 <td class="OPEN">OPEN ⏳</td>
                 <td class="BUY">BUY</td>
-                <td><strong>ICICIBANK.NS</strong></td>
-                <td class="timestamp">2026-08-27<br>12:35:00</td>
-                <td class="ohlc">O: ₹1442.00<br>H: ₹1442.90<br>L: ₹1440.80<br>C: ₹1442.60</td>
-                <td>₹1442.60</td>
-                <td>₹1468.00</td>
-                <td>₹1430.00</td>
-                <td class="rationale">Strong bullish momentum closing near session highs with robust structure above recent support.</td>
+                <td><strong>MARUTI.NS</strong></td>
+                <td class="timestamp">2026-08-27<br>14:30:00</td>
+                <td class="ohlc">O: ₹13476.00<br>H: ₹13488.00<br>L: ₹13465.00<br>C: ₹13466.00</td>
+                <td>₹13466.00</td>
+                <td>₹13698.00</td>
+                <td>₹13350.00</td>
+                <td class="rationale">Strong bullish momentum holding key intraday support near 13465. Structural SL set below key pivot with 1:2 Risk/Reward.</td>
             </tr>
         
             <tr>
+                <td class="trade-id">2</td>
                 <td class="OPEN">OPEN ⏳</td>
                 <td class="BUY">BUY</td>
-                <td><strong>AXISBANK.NS</strong></td>
-                <td class="timestamp">2026-08-27<br>12:35:00</td>
-                <td class="ohlc">O: ₹1257.30<br>H: ₹1258.50<br>L: ₹1257.20<br>C: ₹1258.40</td>
-                <td>₹1258.40</td>
-                <td>₹1279.20</td>
-                <td>₹1248.00</td>
-                <td class="rationale">Sustained buying interest and positive structure holding comfortably above intraday lows.</td>
+                <td><strong>ADANIENT.NS</strong></td>
+                <td class="timestamp">2026-08-27<br>14:30:00</td>
+                <td class="ohlc">O: ₹3153.50<br>H: ₹3158.90<br>L: ₹3153.50<br>C: ₹3155.80</td>
+                <td>₹3155.80</td>
+                <td>₹3207.40</td>
+                <td>₹3130.00</td>
+                <td class="rationale">Sustained buying interest near session highs. Wide structural stop below local consolidation base ensuring minimum 1:2 R:R.</td>
             </tr>
         
             <tr>
+                <td class="trade-id">3</td>
                 <td class="OPEN">OPEN ⏳</td>
                 <td class="SELL">SELL</td>
-                <td><strong>MARUTI.NS</strong></td>
-                <td class="timestamp">2026-08-27<br>12:35:00</td>
-                <td class="ohlc">O: ₹13452.00<br>H: ₹13453.00<br>L: ₹13450.00<br>C: ₹13450.00</td>
-                <td>₹13450.00</td>
-                <td>₹13250.00</td>
-                <td>₹13550.00</td>
-                <td class="rationale">Closed at the extreme low of the candle indicating aggressive shorting and structural breakdown.</td>
+                <td><strong>BHARTIARTL.NS</strong></td>
+                <td class="timestamp">2026-08-27<br>14:30:00</td>
+                <td class="ohlc">O: ₹1887.90<br>H: ₹1889.10<br>L: ₹1887.40<br>C: ₹1887.90</td>
+                <td>₹1887.90</td>
+                <td>₹1857.70</td>
+                <td>₹1903.00</td>
+                <td class="rationale">Rejection from overhead resistance levels with weak close near session lows. Structural SL above resistance wick allowing a 1:2 R:R downside target.</td>
             </tr>
         
             <tr>
+                <td class="trade-id">4</td>
                 <td class="OPEN">OPEN ⏳</td>
                 <td class="SELL">SELL</td>
                 <td><strong>M&M.NS</strong></td>
-                <td class="timestamp">2026-08-27<br>12:35:00</td>
-                <td class="ohlc">O: ₹3364.30<br>H: ₹3365.30<br>L: ₹3363.90<br>C: ₹3364.20</td>
-                <td>₹3364.20</td>
-                <td>₹3312.00</td>
-                <td>₹3390.00</td>
-                <td class="rationale">Intraday resistance rejection leading to a close near lows, signalling continued downside momentum.</td>
+                <td class="timestamp">2026-08-27<br>14:30:00</td>
+                <td class="ohlc">O: ₹3355.10<br>H: ₹3355.40<br>L: ₹3353.00<br>C: ₹3353.10</td>
+                <td>₹3353.10</td>
+                <td>₹3299.30</td>
+                <td>₹3380.00</td>
+                <td class="rationale">Consistent distribution pattern with price closing near the day's low. Wide stop loss placed above recent swing high enforcing 1:2 R:R.</td>
             </tr>
         
-            <tr>
-                <td class="OPEN">OPEN ⏳</td>
-                <td class="BUY">BUY</td>
-                <td><strong>TECHM.NS</strong></td>
-                <td class="timestamp">2026-08-27<br>13:00:00</td>
-                <td class="ohlc">O: ₹1587.00<br>H: ₹1587.00<br>L: ₹1586.90<br>C: ₹1586.90</td>
-                <td>₹1586.90</td>
-                <td>₹1616.70</td>
-                <td>₹1572.00</td>
-                <td class="rationale">Strong bullish consolidation near intraday lows showing clear buying defense; wider SL structural buffer provides a solid 1:2 R:R.</td>
-            </tr>
-        
-            <tr>
-                <td class="OPEN">OPEN ⏳</td>
-                <td class="BUY">BUY</td>
-                <td><strong>DIVISLAB.NS</strong></td>
-                <td class="timestamp">2026-08-27<br>13:00:00</td>
-                <td class="ohlc">O: ₹9077.00<br>H: ₹9077.00<br>L: ₹9075.50<br>C: ₹9076.50</td>
-                <td>₹9076.50</td>
-                <td>₹9229.50</td>
-                <td>₹9000.00</td>
-                <td class="rationale">Maintains structural support above the 9000 psychological mark with steady upward momentum targeting key overhead resistance.</td>
-            </tr>
-        
-            <tr>
-                <td class="OPEN">OPEN ⏳</td>
-                <td class="BUY">BUY</td>
-                <td><strong>ULTRACEMCO.NS</strong></td>
-                <td class="timestamp">2026-08-27<br>13:20:00</td>
-                <td class="ohlc">O: ₹11764.00<br>H: ₹11764.00<br>L: ₹11761.00<br>C: ₹11762.00</td>
-                <td>₹11762.00</td>
-                <td>₹11966.00</td>
-                <td>₹11660.00</td>
-                <td class="rationale">Strong bullish momentum holding near the session high with high structural support above 11660 level.</td>
-            </tr>
-        
-            <tr>
-                <td class="OPEN">OPEN ⏳</td>
-                <td class="BUY">BUY</td>
-                <td><strong>ADANIPORTS.NS</strong></td>
-                <td class="timestamp">2026-08-27<br>13:20:00</td>
-                <td class="ohlc">O: ₹1710.80<br>H: ₹1712.70<br>L: ₹1710.50<br>C: ₹1712.60</td>
-                <td>₹1712.60</td>
-                <td>₹1741.80</td>
-                <td>₹1698.00</td>
-                <td class="rationale">Candle closed at the extreme high, demonstrating robust buying demand and potential for continuous upward continuation.</td>
-            </tr>
-        
-            <tr>
-                <td class="OPEN">OPEN ⏳</td>
-                <td class="SELL">SELL</td>
-                <td><strong>INFY.NS</strong></td>
-                <td class="timestamp">2026-08-27<br>13:20:00</td>
-                <td class="ohlc">O: ₹1112.20<br>H: ₹1112.20<br>L: ₹1111.60<br>C: ₹1111.60</td>
-                <td>₹1111.60</td>
-                <td>₹1094.80</td>
-                <td>₹1120.00</td>
-                <td class="rationale">Consistent lower high and lower low structure with price closing at the session low indicating bearish momentum.</td>
-            </tr>
-        
-            <tr>
-                <td class="OPEN">OPEN ⏳</td>
-                <td class="BUY">BUY</td>
-                <td><strong>SUNPHARMA.NS</strong></td>
-                <td class="timestamp">2026-08-27<br>13:40:00</td>
-                <td class="ohlc">O: ₹1911.40<br>H: ₹1912.00<br>L: ₹1911.00<br>C: ₹1911.60</td>
-                <td>₹1911.60</td>
-                <td>₹1944.80</td>
-                <td>₹1895.00</td>
-                <td class="rationale">Bullish momentum near session high with price holding strong intraday support above 1895.</td>
-            </tr>
-        
-            <tr>
-                <td class="OPEN">OPEN ⏳</td>
-                <td class="BUY">BUY</td>
-                <td><strong>EICHERMOT.NS</strong></td>
-                <td class="timestamp">2026-08-27<br>13:40:00</td>
-                <td class="ohlc">O: ₹8060.00<br>H: ₹8060.00<br>L: ₹8051.00<br>C: ₹8054.00</td>
-                <td>₹8054.00</td>
-                <td>₹8222.00</td>
-                <td>₹7970.00</td>
-                <td class="rationale">Holding structural base at 8050 with favorable risk-reward for upside continuation.</td>
-            </tr>
-        
-            <tr>
-                <td class="OPEN">OPEN ⏳</td>
-                <td class="SELL">SELL</td>
-                <td><strong>RELIANCE.NS</strong></td>
-                <td class="timestamp">2026-08-27<br>13:40:00</td>
-                <td class="ohlc">O: ₹1292.20<br>H: ₹1292.20<br>L: ₹1290.30<br>C: ₹1290.60</td>
-                <td>₹1290.60</td>
-                <td>₹1269.80</td>
-                <td>₹1301.00</td>
-                <td class="rationale">Sustained selling pressure near 1290 with overhead resistance aligned near 1301.</td>
-            </tr>
-        
-            <tr>
-                <td class="OPEN">OPEN ⏳</td>
-                <td class="BUY">BUY</td>
-                <td><strong>TITAN.NS</strong></td>
-                <td class="timestamp">2026-08-27<br>14:05:00</td>
-                <td class="ohlc">O: ₹5173.30<br>H: ₹5173.30<br>L: ₹5170.50<br>C: ₹5171.30</td>
-                <td>₹5171.30</td>
-                <td>₹5254.10</td>
-                <td>₹5129.90</td>
-                <td class="rationale">Strong bullish momentum holding above key pivot at 5170, targeting extended resistance with a strict 1:2 R:R ratio.</td>
-            </tr>
-        
-            <tr>
-                <td class="OPEN">OPEN ⏳</td>
-                <td class="BUY">BUY</td>
-                <td><strong>APOLLOHOSP.NS</strong></td>
-                <td class="timestamp">2026-08-27<br>14:05:00</td>
-                <td class="ohlc">O: ₹8785.00<br>H: ₹8786.00<br>L: ₹8784.00<br>C: ₹8786.00</td>
-                <td>₹8786.00</td>
-                <td>₹8926.00</td>
-                <td>₹8716.00</td>
-                <td class="rationale">Consolidation breakout past high-volume node; wider stop loss placed below structural support to avoid wicks.</td>
-            </tr>
-        
+            </tbody>
         </table>
+        
+        <script>
+            // FILTER FUNCTION
+            function filterTable() {
+                let input = document.getElementById("searchInput").value.toUpperCase();
+                let status = document.getElementById("statusFilter").value;
+                let action = document.getElementById("actionFilter").value;
+                let table = document.getElementById("tradeTable");
+                let tr = table.getElementsByTagName("tr");
+
+                // Save filters to Session Storage
+                sessionStorage.setItem('searchState', document.getElementById("searchInput").value);
+                sessionStorage.setItem('statusState', status);
+                sessionStorage.setItem('actionState', action);
+
+                for (let i = 1; i < tr.length; i++) {
+                    let tdStatus = tr[i].getElementsByTagName("td")[1];
+                    let tdAction = tr[i].getElementsByTagName("td")[2];
+                    let tdTicker = tr[i].getElementsByTagName("td")[3];
+                    
+                    if (tdStatus && tdAction && tdTicker) {
+                        let txtStatus = tdStatus.textContent || tdStatus.innerText;
+                        let txtAction = tdAction.textContent || tdAction.innerText;
+                        let txtTicker = tdTicker.textContent || tdTicker.innerText;
+                        
+                        let matchSearch = txtTicker.toUpperCase().indexOf(input) > -1;
+                        let matchStatus = status === "ALL" || txtStatus.indexOf(status) > -1;
+                        let matchAction = action === "ALL" || txtAction.indexOf(action) > -1;
+                        
+                        if (matchSearch && matchStatus && matchAction) {
+                            tr[i].style.display = "";
+                        } else {
+                            tr[i].style.display = "none";
+                        }
+                    }
+                }
+            }
+
+            // SORT FUNCTION
+            function sortTable(n) {
+                let table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+                table = document.getElementById("tradeTable");
+                switching = true;
+                dir = "asc"; 
+                
+                while (switching) {
+                    switching = false;
+                    rows = table.rows;
+                    for (i = 1; i < (rows.length - 1); i++) {
+                        shouldSwitch = false;
+                        x = rows[i].getElementsByTagName("TD")[n];
+                        y = rows[i + 1].getElementsByTagName("TD")[n];
+                        
+                        let xVal = x.innerText.replace('₹', '').trim();
+                        let yVal = y.innerText.replace('₹', '').trim();
+                        
+                        let xNum = parseFloat(xVal);
+                        let yNum = parseFloat(yVal);
+                        
+                        let compareX = isNaN(xNum) ? xVal.toLowerCase() : xNum;
+                        let compareY = isNaN(yNum) ? yVal.toLowerCase() : yNum;
+
+                        if (dir == "asc") {
+                            if (compareX > compareY) { shouldSwitch = true; break; }
+                        } else if (dir == "desc") {
+                            if (compareX < compareY) { shouldSwitch = true; break; }
+                        }
+                    }
+                    if (shouldSwitch) {
+                        rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                        switching = true;
+                        switchcount ++;      
+                    } else {
+                        if (switchcount == 0 && dir == "asc") {
+                            dir = "desc";
+                            switching = true;
+                        }
+                    }
+                }
+            }
+
+            // RESTORE FILTERS
+            window.onload = function() {
+                let savedSearch = sessionStorage.getItem('searchState');
+                let savedStatus = sessionStorage.getItem('statusState');
+                let savedAction = sessionStorage.getItem('actionState');
+                
+                if (savedSearch) document.getElementById('searchInput').value = savedSearch;
+                if (savedStatus) document.getElementById('statusFilter').value = savedStatus;
+                if (savedAction) document.getElementById('actionFilter').value = savedAction;
+                
+                if (savedSearch || savedStatus || savedAction) filterTable();
+            }
+        </script>
     </body>
     </html>
     
