@@ -40,32 +40,32 @@
     <body>
         <div class="sticky-top-container">
             <h2>🚀 NIFTY 50 AI Market Scanner & Tracker</h2>
-            <p class="update-time">🟢 Dashboard Updated: 2026-09-08 14:12:29 (Auto-refreshes every 30 seconds)</p>
+            <p class="update-time">🟢 Dashboard Updated: 2026-09-08 14:34:01 (Auto-refreshes every 30 seconds)</p>
             
             <div class="account-bar">
                 <span>Total Dummy Equity: ₹100,000.00</span>
-                <span>Available Margin: ₹100,000.00</span>
+                <span>Available Margin: ₹67,878.40</span>
                 <span>Realized Net P&L: ₹0.00</span>
             </div>
 
             <div class="macro-bar">
                 <div class="macro-card">
-                    📊 NIFTY 50: <strong>₹23,651.90</strong> 
+                    📊 NIFTY 50: <strong>₹23,653.35</strong> 
                     <span style="color:#f38ba8; font-weight:bold; margin-left:6px;">
-                        -245.80 (-1.03%)
+                        -244.35 (-1.02%)
                     </span>
                 </div>
                 <div class="macro-card">
-                    🏛️ BSE SENSEX: <strong>₹75,582.91</strong> 
+                    🏛️ BSE SENSEX: <strong>₹75,661.47</strong> 
                     <span style="color:#f38ba8; font-weight:bold; margin-left:6px;">
-                        -932.49 (-1.22%)
+                        -853.93 (-1.12%)
                     </span>
                 </div>
             </div>
 
             <div class="banner">
-                <div class="card">Today's Trades: <strong>0</strong></div>
-                <div class="card">Open ⏳: <strong style="color:#f9e2af;">0</strong></div>
+                <div class="card">Today's Trades: <strong>2</strong></div>
+                <div class="card">Open ⏳: <strong style="color:#f9e2af;">2</strong></div>
                 <div class="card">Wins 🟢: <strong style="color:#a6e3a1;">0</strong></div>
                 <div class="card">Losses 🔴: <strong style="color:#f38ba8;">0</strong></div>
                 <div class="card">Win Rate: <strong style="color:#89b4fa;">0.0%</strong></div>
@@ -106,6 +106,48 @@
             </thead>
             <tbody>
     
+            <tr>
+                <td>1</td>
+                <td class="OPEN">OPEN ⏳</td>
+                <td class="SELL">SELL</td>
+                <td><strong>BAJFINANCE.NS</strong></td>
+                <td>18</td>
+                <td class="ohlc">
+                    <div style="font-size: 0.85em; display: grid; grid-template-columns: auto auto; gap: 2px 10px; white-space: nowrap;">
+                        <span>O: ₹1054.80</span>
+                        <span>H: ₹1055.00</span>
+                        <span>L: ₹1053.40</span>
+                        <span>C: ₹1053.40</span>
+                    </div>
+                </td>
+                <td>₹1053.40</td>
+                <td>₹1049.54</td>
+                <td>₹1055.33</td>
+                <td style="color: #a6adc8; font-weight: bold;">₹0.00</td>
+                <td class="rationale">The stock is exhibiting a bearish trend and aligns with market conditions. The potential reward is greater than the risk taken, adhering to the minimum 1:2 risk/reward ratio.</td>
+            </tr>
+        
+            <tr>
+                <td>2</td>
+                <td class="OPEN">OPEN ⏳</td>
+                <td class="SELL">SELL</td>
+                <td><strong>GRASIM.NS</strong></td>
+                <td>4</td>
+                <td class="ohlc">
+                    <div style="font-size: 0.85em; display: grid; grid-template-columns: auto auto; gap: 2px 10px; white-space: nowrap;">
+                        <span>O: ₹3285.50</span>
+                        <span>H: ₹3294.50</span>
+                        <span>L: ₹3285.00</span>
+                        <span>C: ₹3290.10</span>
+                    </div>
+                </td>
+                <td>₹3290.10</td>
+                <td>₹3276.73</td>
+                <td>₹3296.79</td>
+                <td style="color: #a6adc8; font-weight: bold;">₹0.00</td>
+                <td class="rationale">This stock is also perceived to trend downward based on the market context. The calculated risk/reward aligns favorably with our parameters.</td>
+            </tr>
+        
             </tbody>
         </table>
         
@@ -135,7 +177,7 @@
         </details>
         
         <script>
-            const fullLedgerData = [];
+            const fullLedgerData = [{"ticker": "BAJFINANCE.NS", "action": "SELL", "entry": 1053.4, "sl": 1055.33, "tgt": 1049.54, "rationale": "The stock is exhibiting a bearish trend and aligns with market conditions. The potential reward is greater than the risk taken, adhering to the minimum 1:2 risk/reward ratio.", "open": 1054.8, "high": 1055.0, "low": 1053.4, "close": 1053.4, "time": "2026-09-08 14:30:00", "trade_id": 1, "status": "OPEN \u23f3", "date": "2026-09-08", "qty": 18, "net_pnl": 0.0}, {"ticker": "GRASIM.NS", "action": "SELL", "entry": 3290.1, "sl": 3296.79, "tgt": 3276.73, "rationale": "This stock is also perceived to trend downward based on the market context. The calculated risk/reward aligns favorably with our parameters.", "open": 3285.5, "high": 3294.5, "low": 3285.0, "close": 3290.1, "time": "2026-09-08 14:30:00", "trade_id": 2, "status": "OPEN \u23f3", "date": "2026-09-08", "qty": 4, "net_pnl": 0.0}];
 
             function downloadCSV() {
                 let csvContent = "data:text/csv;charset=utf-8,";
