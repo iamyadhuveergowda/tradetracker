@@ -1,9 +1,99 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="refresh" content="30"><title>NIFTY Intraday Agent v2</title><style>
-:root{--bg:#1e1e2e;--text:#cdd6f4;--green:#a6e3a1;--red:#f38ba8;--yellow:#f9e2af;--blue:#89b4fa;--mauve:#cba6f7;--card:#313244}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:14px system-ui}header{position:sticky;top:0;background:#181825;padding:12px;z-index:2;box-shadow:0 2px 8px #0008}.bar,.macros,.stats,.filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px}.bar div,.macro,.stat{background:var(--card);padding:9px 12px;border-radius:8px;display:grid;gap:4px}.macro span{font-size:16px}.bullish,.buy{color:var(--green)}.bearish,.sell{color:var(--red)}.neutral{color:var(--yellow)}main{padding:14px}input,select,button{background:#45475a;color:var(--text);border:0;padding:8px;border-radius:6px}.wrap{overflow:auto}table{width:100%;border-collapse:collapse;background:#181825}th,td{padding:8px;border-bottom:1px solid #45475a;text-align:left;white-space:nowrap}th{color:var(--blue);cursor:pointer;position:sticky;top:0;background:#181825}tr:hover{background:#313244}.ohlc{font-size:11px;line-height:1.25}details{margin-top:18px}@media(max-width:700px){header{position:relative}th,td{padding:6px;font-size:12px}}
-</style></head><body><header><div class="bar"><div><b>MTM Equity</b>₹99,830.51</div><div><b>Available Margin</b>₹99,830.51</div><div><b>Realized P&L</b>₹-169.49</div><div><b>Today P&L</b>₹-169.49</div></div><div class="macros"><div class="macro"><b>NIFTY 50</b><span>₹23,435.10</span><small class="neutral">NEUTRAL -0.18%</small></div><div class="macro"><b>BSE SENSEX</b><span>₹74,914.06</span><small class="neutral">NEUTRAL +0.02%</small></div><div class="macro"><b>INDIA VIX</b><span>₹12.24</span><small class="bullish">BULLISH +3.82%</small></div><div class="macro"><b>NIFTY BANK</b><span>₹56,625.90</span><small class="bullish">BULLISH +0.27%</small></div><div class="macro"><b>NIFTY IT</b><span>₹28,994.80</span><small class="bullish">BULLISH +0.36%</small></div><div class="macro"><b>NIFTY AUTO</b><span>₹27,347.40</span><small class="bearish">BEARISH -0.70%</small></div></div><div class="stats"><div class="stat">Today's trades <b>2</b></div><div class="stat">Open <b>0</b></div><div class="stat">Wins <b>0</b></div><div class="stat">Losses <b>2</b></div><div class="stat">Win rate <b>0.0%</b></div></div><div class="filters"><input id="q" placeholder="Search ticker"><select id="status"><option value="">All statuses</option><option>OPEN ⏳</option><option>WIN 🟢</option><option>LOSS 🔴</option><option>EXPIRED ⚪</option></select><select id="action"><option value="">BUY + SELL</option><option>BUY</option><option>SELL</option></select><button onclick="downloadCSV()">Download Full History (CSV)</button></div></header><main><h2>Today's live trades</h2><div class="wrap"><table id="today"><thead><tr><th>Date</th><th>Time</th><th>Ticker</th><th>Action</th><th>Qty</th><th>Open Qty</th><th>Entry</th><th>SL</th><th>Target</th><th>Last</th><th>Status</th><th>Net P&L</th><th>Rationale</th><th>OHLC</th></tr></thead><tbody><tr data-status="LOSS 🔴" data-action="SELL"><td>2026-09-11</td><td>11:07:21</td><td>DIVISLAB</td><td>SELL</td><td>2</td><td>0</td><td>₹9,385.00</td><td>₹9,358.07</td><td>₹9,342.46</td><td>₹9,370.18</td><td>LOSS 🔴</td><td>₹-24.22</td><td><span title="PAPER SELL 2 @ ₹9385.00 | Fee-aware stop moved to ₹9358.07 | Stop hit: 2 @ ₹9370.18, net ₹-24.22">Market sentiment is bearish, and the stock is near resistance levels.</span></td><td><div class="ohlc">O 9384.5<br>H 9392.0<br>L 9377.0<br>C 9365.5</div></td></tr><tr data-status="LOSS 🔴" data-action="SELL"><td>2026-09-11</td><td>10:46:59</td><td>LT</td><td>SELL</td><td>6</td><td>0</td><td>₹3,901.10</td><td>₹3,909.20</td><td>₹3,884.89</td><td>₹3,916.06</td><td>LOSS 🔴</td><td>₹-145.27</td><td><span title="PAPER SELL 6 @ ₹3901.10 | Stop hit: 6 @ ₹3916.06, net ₹-145.27">The stock is showing bearish momentum with a recent close below key moving averages.</span></td><td><div class="ohlc">O 3905.7<br>H 3907.0<br>L 3900.0<br>C 3914.1</div></td></tr></tbody></table></div><details><summary>Historical trades archive</summary><div class="wrap"><table id="history"><thead><tr><th>Date</th><th>Time</th><th>Ticker</th><th>Action</th><th>Qty</th><th>Open Qty</th><th>Entry</th><th>SL</th><th>Target</th><th>Last</th><th>Status</th><th>Net P&L</th><th>Rationale</th><th>OHLC</th></tr></thead><tbody></tbody></table></div></details></main><script>
-const ledger=[{"trade_id": "20260911104659-LT", "date": "2026-09-11", "ticker": "LT", "action": "SELL", "qty": 6, "remaining_qty": 0, "entry": 3901.1, "sl": 3909.2, "initial_sl": 3909.2, "tgt": 3884.89, "open": 3905.7, "high": 3907.0, "low": 3900.0, "close": 3914.1, "time": "10:46:59", "status": "LOSS 🔴", "exit_price": 3916.06, "net_pnl": -145.27, "rationale": "The stock is showing bearish momentum with a recent close below key moving averages.", "events": [{"time": "2026-09-11T10:46:59+05:30", "type": "ENTRY", "text": "PAPER SELL 6 @ ₹3901.10"}, {"time": "2026-09-11T11:17:22+05:30", "type": "EXIT", "text": "Stop hit: 6 @ ₹3916.06, net ₹-145.27"}], "mode": "PAPER", "last_price": 3916.06, "atr": 8.1043, "target_booked": false, "breakeven_set": false, "entry_brokerage_remaining": 0.0, "charges": {"brokerage": 40.0, "exchange": 1.44, "sebi": 0.05, "stt": 5.85, "stamp": 0.7, "gst": 7.47, "total": 55.51}, "pnl_by_date": {"2026-09-11": -145.27}, "orders": {}, "exit_time": "2026-09-11T11:17:22+05:30"}, {"trade_id": "20260911110721-DIVISLAB", "date": "2026-09-11", "ticker": "DIVISLAB", "action": "SELL", "qty": 2, "remaining_qty": 0, "entry": 9385.0, "sl": 9358.07, "initial_sl": 9406.27, "tgt": 9342.46, "open": 9384.5, "high": 9392.0, "low": 9377.0, "close": 9365.5, "time": "11:07:21", "status": "LOSS 🔴", "exit_price": 9370.18, "net_pnl": -24.22, "rationale": "Market sentiment is bearish, and the stock is near resistance levels.", "events": [{"time": "2026-09-11T11:07:21+05:30", "type": "ENTRY", "text": "PAPER SELL 2 @ ₹9385.00"}, {"time": "2026-09-11T11:33:45+05:30", "type": "BREAKEVEN", "text": "Fee-aware stop moved to ₹9358.07"}, {"time": "2026-09-11T11:35:22+05:30", "type": "EXIT", "text": "Stop hit: 2 @ ₹9370.18, net ₹-24.22"}], "mode": "PAPER", "last_price": 9370.18, "atr": 21.2723, "target_booked": false, "breakeven_set": true, "entry_brokerage_remaining": 0.0, "charges": {"brokerage": 40.0, "exchange": 1.15, "sebi": 0.04, "stt": 4.69, "stamp": 0.56, "gst": 7.41, "total": 53.86}, "pnl_by_date": {"2026-09-11": -24.22}, "orders": {}, "exit_time": "2026-09-11T11:35:22+05:30"}]; const q=document.querySelector('#q'),s=document.querySelector('#status'),a=document.querySelector('#action');
-for(const e of [q,s,a]){e.value=sessionStorage.getItem(e.id)||'';e.oninput=()=>{sessionStorage.setItem(e.id,e.value);filter()}}function filter(){document.querySelectorAll('tbody tr').forEach(r=>r.hidden=!(r.innerText.toLowerCase().includes(q.value.toLowerCase())&&(!s.value||r.dataset.status===s.value)&&(!a.value||r.dataset.action===a.value)))}filter();
-document.querySelectorAll('th').forEach((th,i)=>th.onclick=()=>{let b=th.closest('table').tBodies[0],rows=[...b.rows],asc=th.dataset.asc!=='1';rows.sort((x,y)=>x.cells[i].innerText.localeCompare(y.cells[i].innerText,undefined,{numeric:true})*(asc?1:-1));rows.forEach(r=>b.appendChild(r));th.dataset.asc=asc?'1':'0'});
-function downloadCSV(){const keys=['trade_id','date','ticker','action','qty','entry','sl','tgt','status','exit_price','net_pnl','mode','rationale'];const esc=v=>'"'+String(v??'').replaceAll('"','""')+'"';const csv=[keys.join(','),...ledger.map(x=>keys.map(k=>esc(x[k])).join(','))].join('
-');const u=URL.createObjectURL(new Blob([csv],{type:'text/csv'}));const x=document.createElement('a');x.href=u;x.download='trade_history.csv';x.click();URL.revokeObjectURL(u)}
-</script></body></html>
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="refresh" content="180">
+<title>NIFTY Intraday Agent v4</title>
+<style>
+body{background:#14141f;color:#e8e8f0;font-family:'Segoe UI',system-ui,sans-serif;margin:0;padding:18px}
+header{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;margin-bottom:14px}
+h1{font-size:22px;margin:0}.ver{color:#8b93ff;font-size:15px}.modebadge{background:#2c2c44;color:#ffd166;border:1px solid #ffd166;border-radius:6px;font-size:12px;padding:2px 8px;margin-left:8px}
+.updated{color:#9aa0b4;font-size:12px}
+.grid4,.grid5,.grididx{display:grid;gap:10px;margin-bottom:12px}
+.grid4{grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}
+.grid5{grid-template-columns:repeat(auto-fit,minmax(130px,1fr))}
+.grididx{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+.card{background:#22222e;border-radius:10px;padding:12px 14px}
+.lbl{color:#9aa0b4;font-size:12px;margin-bottom:4px}.big{font-size:20px;font-weight:600}.small{font-size:13px}
+.pos{color:#34d17b}.neg{color:#ff6b6b}.neu{color:#ffd166}
+.controls{display:flex;gap:10px;margin:14px 0;flex-wrap:wrap}
+.controls input,.controls select{background:#22222e;color:#e8e8f0;border:1px solid #3a3a4d;border-radius:8px;padding:8px 10px}
+.controls button{background:#3a3a5c;color:#fff;border:none;border-radius:8px;padding:8px 14px;cursor:pointer}
+.controls button:hover{background:#4a4a70}
+h2{font-size:18px;margin:18px 0 8px}
+table{width:100%;border-collapse:collapse;font-size:13px;background:#1b1b27;border-radius:10px;overflow:hidden}
+th{background:#26263a;color:#8b93ff;text-align:left;padding:10px 8px;white-space:nowrap}
+td{padding:9px 8px;border-top:1px solid #2a2a3d;vertical-align:top}
+.buy{color:#34d17b;font-weight:600}.sell{color:#ff6b6b;font-weight:600}
+.rat{max-width:260px;color:#c9c9d6}.ohlc{white-space:nowrap;color:#9aa0b4;font-size:12px}
+.empty{text-align:center;color:#9aa0b4;padding:20px}
+.pill{display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.dot{width:9px;height:9px;border-radius:50%;display:inline-block}
+details{margin-top:16px}summary{cursor:pointer;color:#8b93ff;font-size:15px;margin-bottom:8px}
+footer{margin-top:22px;color:#6b6b80;font-size:12px;text-align:center}
+</style></head>
+<body>
+<header><h1>NIFTY Intraday Agent <span class="ver">v4</span><span class="modebadge">PAPER</span></h1>
+<div class="updated">Updated 2026-09-23 14:14 IST &middot; auto-refreshes every 3 min</div></header>
+<section class="grid4">
+<div class="card"><div class="lbl">MTM Equity</div><div class="big">₹100,411.61</div></div>
+<div class="card"><div class="lbl">Available Margin</div><div class="big">₹20,149.01</div></div>
+<div class="card"><div class="lbl">Realized P&amp;L</div><div class="big neg">₹-169.49</div></div>
+<div class="card"><div class="lbl">Today P&amp;L</div><div class="big pos">₹581.10</div></div>
+</section>
+<section class="grididx">
+<div class="card idx"><div class="lbl">NIFTY 50</div><div class="big">₹23,451.15</div><div class="pos small">BULLISH +0.52%</div></div>
+<div class="card idx"><div class="lbl">NIFTY BANK</div><div class="big">₹56,601.60</div><div class="pos small">BULLISH +0.69%</div></div>
+</section>
+<section class="grid5">
+<div class="card"><div class="lbl">Today's trades</div><div class="big">2</div></div>
+<div class="card"><div class="lbl">Open</div><div class="big">2</div></div>
+<div class="card"><div class="lbl">Wins</div><div class="big pos">0</div></div>
+<div class="card"><div class="lbl">Losses</div><div class="big neg">0</div></div>
+<div class="card"><div class="lbl">Win rate</div><div class="big">0.0%</div></div>
+</section>
+<section class="controls">
+<input id="q" placeholder="Search ticker">
+<select id="fstatus"><option value="ALL">All statuses</option><option value="OPEN ⏳">OPEN ⏳</option><option value="WIN 🟢">WIN 🟢</option><option value="LOSS 🔴">LOSS 🔴</option><option value="EXPIRED ⚪">EXPIRED ⚪</option></select>
+<select id="faction"><option value="ALL">BUY + SELL</option><option value="BUY">BUY</option><option value="SELL">SELL</option></select>
+<button onclick="downloadCSV()">Download Full History (CSV)</button>
+</section>
+<h2>Today's trades</h2>
+<table id="todayTable"><thead><tr><th>Date</th><th>Time</th><th>Ticker</th><th>Action</th><th>Qty</th><th>Open Qty</th><th>Entry</th><th>SL</th><th>Target</th><th>Last</th><th>Status</th><th>Net P&amp;L</th><th>Rationale</th><th>OHLC</th></tr></thead>
+<tbody>
+<tr data-ticker="sbilife" data-status="OPEN ⏳" data-action="BUY"><td>2026-09-23</td><td>12:51:11</td><td><b>SBILIFE</b></td><td class="buy">BUY</td><td>113</td><td>113</td><td>₹1,759.50</td><td>₹1,751.86</td><td>₹1,778.60</td><td>₹1,766.20</td><td><span class="pill st-open"><span class="dot" style="background:#ffd166"></span>OPEN ⏳</span></td><td><span class="pos">₹0.00</span></td><td class="rat">No disqualifiers present.</td><td class="ohlc">O 1758.5<br>H 1759.2<br>L 1757.5<br>C 1766.2</td></tr>
+<tr data-ticker="axisbank" data-status="OPEN ⏳" data-action="BUY"><td>2026-09-23</td><td>12:48:25</td><td><b>AXISBANK</b></td><td class="buy">BUY</td><td>160</td><td>160</td><td>₹1,247.40</td><td>₹1,242.41</td><td>₹1,259.88</td><td>₹1,246.30</td><td><span class="pill st-open"><span class="dot" style="background:#ffd166"></span>OPEN ⏳</span></td><td><span class="pos">₹0.00</span></td><td class="rat">No disqualifiers found.</td><td class="ohlc">O 1248.2<br>H 1249.0<br>L 1247.9<br>C 1246.3</td></tr>
+</tbody></table>
+<details><summary>Historical trades archive</summary>
+<table><thead><tr><th>Date</th><th>Time</th><th>Ticker</th><th>Action</th><th>Qty</th><th>Open Qty</th><th>Entry</th><th>SL</th><th>Target</th><th>Last</th><th>Status</th><th>Net P&amp;L</th><th>Rationale</th><th>OHLC</th></tr></thead>
+<tbody>
+<tr data-ticker="divislab" data-status="LOSS 🔴" data-action="SELL"><td>2026-09-11</td><td>11:07:21</td><td><b>DIVISLAB</b></td><td class="sell">SELL</td><td>2</td><td>0</td><td>₹9,385.00</td><td>₹9,358.07</td><td>₹9,342.46</td><td>₹9,370.18</td><td><span class="pill st-loss"><span class="dot" style="background:#ff6b6b"></span>LOSS 🔴</span></td><td><span class="neg">₹-24.22</span></td><td class="rat">Market sentiment is bearish, and the stock is near resistance levels.</td><td class="ohlc">O 9384.5<br>H 9392.0<br>L 9377.0<br>C 9365.5</td></tr>
+<tr data-ticker="lt" data-status="LOSS 🔴" data-action="SELL"><td>2026-09-11</td><td>10:46:59</td><td><b>LT</b></td><td class="sell">SELL</td><td>6</td><td>0</td><td>₹3,901.10</td><td>₹3,909.20</td><td>₹3,884.89</td><td>₹3,916.06</td><td><span class="pill st-loss"><span class="dot" style="background:#ff6b6b"></span>LOSS 🔴</span></td><td><span class="neg">₹-145.27</span></td><td class="rat">The stock is showing bearish momentum with a recent close below key moving averages.</td><td class="ohlc">O 3905.7<br>H 3907.0<br>L 3900.0<br>C 3914.1</td></tr>
+</tbody></table></details>
+<footer>Paper trading dashboard &middot; generated by trading_agent_v4.py</footer>
+<script>
+var TRADES = [{"date": "2026-09-23", "time": "12:51:11", "ticker": "SBILIFE", "action": "BUY", "qty": 113, "remaining_qty": 113, "entry": 1759.5, "sl": 1751.86, "tgt": 1778.6, "last_price": 1766.2, "exit_price": null, "status": "OPEN ⏳", "net_pnl": 0.0, "rationale": "No disqualifiers present."}, {"date": "2026-09-23", "time": "12:48:25", "ticker": "AXISBANK", "action": "BUY", "qty": 160, "remaining_qty": 160, "entry": 1247.4, "sl": 1242.41, "tgt": 1259.88, "last_price": 1246.3, "exit_price": null, "status": "OPEN ⏳", "net_pnl": 0.0, "rationale": "No disqualifiers found."}, {"date": "2026-09-11", "time": "11:07:21", "ticker": "DIVISLAB", "action": "SELL", "qty": 2, "remaining_qty": 0, "entry": 9385.0, "sl": 9358.07, "tgt": 9342.46, "last_price": 9370.18, "exit_price": 9370.18, "status": "LOSS 🔴", "net_pnl": -24.22, "rationale": "Market sentiment is bearish, and the stock is near resistance levels."}, {"date": "2026-09-11", "time": "10:46:59", "ticker": "LT", "action": "SELL", "qty": 6, "remaining_qty": 0, "entry": 3901.1, "sl": 3909.2, "tgt": 3884.89, "last_price": 3916.06, "exit_price": 3916.06, "status": "LOSS 🔴", "net_pnl": -145.27, "rationale": "The stock is showing bearish momentum with a recent close below key moving averages."}];
+function applyFilters(){
+  var q=document.getElementById('q').value.toLowerCase();
+  var st=document.getElementById('fstatus').value;
+  var ac=document.getElementById('faction').value;
+  document.querySelectorAll('#todayTable tbody tr').forEach(function(r){
+    if(!r.dataset.ticker) return;
+    var ok=(r.dataset.ticker.indexOf(q)>=0)&&(st==='ALL'||r.dataset.status===st)&&(ac==='ALL'||r.dataset.action===ac);
+    r.style.display=ok?'':'none';
+  });
+}
+function downloadCSV(){
+  var cols=['date','time','ticker','action','qty','remaining_qty','entry','sl','tgt','last_price','exit_price','status','net_pnl','rationale'];
+  var lines=[cols.join(',')];
+  TRADES.forEach(function(t){
+    lines.push(cols.map(function(c){var v=t[c]==null?'':String(t[c]);return '"'+v.replace(/"/g,'""')+'"';}).join(','));
+  });
+  var a=document.createElement('a');
+  a.href=URL.createObjectURL(new Blob([lines.join('\n')],{type:'text/csv'}));
+  a.download='trade_history.csv';a.click();
+}
+document.getElementById('q').addEventListener('input',applyFilters);
+document.getElementById('fstatus').addEventListener('change',applyFilters);
+document.getElementById('faction').addEventListener('change',applyFilters);
+</script>
+</body></html>
