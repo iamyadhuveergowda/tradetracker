@@ -1,14 +1,14 @@
 {
-  "signal_id": "20260925-094714-HINDUNILVR",
-  "generated_at": "2026-09-25T09:47:14.725939+05:30",
-  "nifty_ltp": 23055.05,
+  "signal_id": "20260925-095014-HINDUNILVR",
+  "generated_at": "2026-09-25T09:50:14.538842+05:30",
+  "nifty_ltp": 23053.45,
   "candidates": [
     {
       "ticker": "HINDUNILVR",
       "signal": "SELL",
-      "ltp": 1924.5,
-      "stop": 1932.2,
-      "target": 1905.26,
+      "ltp": 1923.3,
+      "stop": 1930.99,
+      "target": 1904.07,
       "qty": 0,
       "indicators": {
         "rsi": 39.53,
@@ -173,9 +173,9 @@
           "09:45",
           1924.0,
           1925.6,
-          1923.7,
-          1923.9,
-          2213
+          1922.0,
+          1923.2,
+          8868
         ]
       ]
     }
