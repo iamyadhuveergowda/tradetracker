@@ -1,14 +1,14 @@
 {
-  "signal_id": "20260930-134603-ASIANPAINT",
-  "generated_at": "2026-09-30T13:46:03.745770+05:30",
-  "nifty_ltp": 22724.85,
+  "signal_id": "20260930-134928-ASIANPAINT",
+  "generated_at": "2026-09-30T13:49:28.387371+05:30",
+  "nifty_ltp": 22725.9,
   "candidates": [
     {
       "ticker": "ASIANPAINT",
       "signal": "SELL",
-      "ltp": 2404.8,
-      "stop": 2415.09,
-      "target": 2379.07,
+      "ltp": 2403.1,
+      "stop": 2413.39,
+      "target": 2377.37,
       "qty": 0,
       "indicators": {
         "rsi": 41.51,
@@ -173,9 +173,9 @@
           "13:45",
           2405.3,
           2405.3,
-          2402.9,
-          2402.9,
-          719
+          2402.3,
+          2402.8,
+          4826
         ]
       ]
     }
