@@ -1,13 +1,13 @@
 {
-  "signal_id": "20261005-121559-ADANIPORTS",
-  "generated_at": "2026-10-05T12:15:59.935644+05:30",
-  "nifty_ltp": 22419.15,
+  "signal_id": "20261005-121950-ADANIPORTS",
+  "generated_at": "2026-10-05T12:19:50.530786+05:30",
+  "nifty_ltp": 22432.5,
   "candidates": [
     {
       "ticker": "ADANIPORTS",
       "signal": "BUY",
-      "ltp": 21.03,
-      "stop": 20.88,
+      "ltp": 21.05,
+      "stop": 20.91,
       "target": 21.4,
       "qty": 0,
       "indicators": {
@@ -172,10 +172,10 @@
         [
           "12:15",
           21.03,
-          21.04,
+          21.07,
           21.01,
-          21.03,
-          93586
+          21.06,
+          731239
         ]
       ]
     }
