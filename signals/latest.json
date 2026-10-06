@@ -1,14 +1,14 @@
 {
-  "signal_id": "20261006-123110-DIVISLAB",
-  "generated_at": "2026-10-06T12:31:10.256145+05:30",
-  "nifty_ltp": 22690.05,
+  "signal_id": "20261006-123321-DIVISLAB",
+  "generated_at": "2026-10-06T12:33:21.237510+05:30",
+  "nifty_ltp": 22689.15,
   "candidates": [
     {
       "ticker": "DIVISLAB",
       "signal": "BUY",
-      "ltp": 9347.5,
-      "stop": 9291.11,
-      "target": 9488.49,
+      "ltp": 9346.5,
+      "stop": 9290.11,
+      "target": 9487.49,
       "qty": 6,
       "indicators": {
         "rsi": 54.78,
@@ -174,8 +174,8 @@
           9348.0,
           9348.0,
           9345.0,
-          9345.0,
-          117
+          9347.5,
+          525
         ]
       ]
     }
