@@ -1,14 +1,14 @@
 {
-  "signal_id": "20261006-112527-TATAMOTORS",
-  "generated_at": "2026-10-06T11:25:27.998889+05:30",
-  "nifty_ltp": 22679.0,
+  "signal_id": "20261006-112743-TATAMOTORS",
+  "generated_at": "2026-10-06T11:27:43.656833+05:30",
+  "nifty_ltp": 22676.45,
   "candidates": [
     {
       "ticker": "TATAMOTORS",
       "signal": "BUY",
-      "ltp": 289.05,
-      "stop": 286.96,
-      "target": 294.28,
+      "ltp": 288.9,
+      "stop": 286.81,
+      "target": 294.13,
       "qty": 463,
       "indicators": {
         "rsi": 62.48,
@@ -173,9 +173,9 @@
           "11:25",
           289.0,
           289.1,
-          289.0,
-          289.05,
-          6144
+          288.8,
+          288.8,
+          15511
         ]
       ]
     }
