@@ -1,14 +1,14 @@
 {
-  "signal_id": "20261007-115736-POWERGRID",
-  "generated_at": "2026-10-07T11:57:36.862041+05:30",
-  "nifty_ltp": 22684.1,
+  "signal_id": "20261007-115957-POWERGRID",
+  "generated_at": "2026-10-07T11:59:57.870556+05:30",
+  "nifty_ltp": 22687.4,
   "candidates": [
     {
       "ticker": "POWERGRID",
       "signal": "SELL",
-      "ltp": 255.15,
-      "stop": 256.38,
-      "target": 252.07,
+      "ltp": 255.1,
+      "stop": 256.33,
+      "target": 252.02,
       "qty": 761,
       "indicators": {
         "rsi": 45.43,
@@ -174,17 +174,17 @@
           255.05,
           255.2,
           255.05,
-          255.2,
-          10248
+          255.1,
+          13893
         ]
       ]
     },
     {
       "ticker": "BAJAJFINSV",
       "signal": "SELL",
-      "ltp": 1740.2,
-      "stop": 1752.49,
-      "target": 1709.46,
+      "ltp": 1738.4,
+      "stop": 1750.69,
+      "target": 1707.66,
       "qty": 79,
       "indicators": {
         "rsi": 45.04,
@@ -350,8 +350,8 @@
           1738.7,
           1740.3,
           1738.0,
-          1739.0,
-          14149
+          1738.0,
+          24523
         ]
       ]
     }
