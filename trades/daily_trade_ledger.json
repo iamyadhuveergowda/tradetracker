@@ -1,0 +1,784 @@
+[
+  {
+    "trade_id": "20260911104659-LT",
+    "date": "2026-09-11",
+    "ticker": "LT",
+    "action": "SELL",
+    "qty": 6,
+    "remaining_qty": 0,
+    "entry": 3901.1,
+    "sl": 3909.2,
+    "initial_sl": 3909.2,
+    "tgt": 3884.89,
+    "open": 3905.7,
+    "high": 3907.0,
+    "low": 3900.0,
+    "close": 3914.1,
+    "time": "10:46:59",
+    "status": "LOSS 🔴",
+    "exit_price": 3916.06,
+    "net_pnl": -145.27,
+    "rationale": "The stock is showing bearish momentum with a recent close below key moving averages.",
+    "events": [
+      {
+        "time": "2026-09-11T10:46:59+05:30",
+        "type": "ENTRY",
+        "text": "PAPER SELL 6 @ ₹3901.10"
+      },
+      {
+        "time": "2026-09-11T11:17:22+05:30",
+        "type": "EXIT",
+        "text": "Stop hit: 6 @ ₹3916.06, net ₹-145.27"
+      }
+    ],
+    "mode": "PAPER",
+    "last_price": 3916.06,
+    "atr": 8.1043,
+    "target_booked": false,
+    "breakeven_set": false,
+    "entry_brokerage_remaining": 0.0,
+    "charges": {
+      "brokerage": 40.0,
+      "exchange": 1.44,
+      "sebi": 0.05,
+      "stt": 5.85,
+      "stamp": 0.7,
+      "gst": 7.47,
+      "total": 55.51
+    },
+    "pnl_by_date": {
+      "2026-09-11": -145.27
+    },
+    "orders": {},
+    "exit_time": "2026-09-11T11:17:22+05:30"
+  },
+  {
+    "trade_id": "20260911110721-DIVISLAB",
+    "date": "2026-09-11",
+    "ticker": "DIVISLAB",
+    "action": "SELL",
+    "qty": 2,
+    "remaining_qty": 0,
+    "entry": 9385.0,
+    "sl": 9358.07,
+    "initial_sl": 9406.27,
+    "tgt": 9342.46,
+    "open": 9384.5,
+    "high": 9392.0,
+    "low": 9377.0,
+    "close": 9365.5,
+    "time": "11:07:21",
+    "status": "LOSS 🔴",
+    "exit_price": 9370.18,
+    "net_pnl": -24.22,
+    "rationale": "Market sentiment is bearish, and the stock is near resistance levels.",
+    "events": [
+      {
+        "time": "2026-09-11T11:07:21+05:30",
+        "type": "ENTRY",
+        "text": "PAPER SELL 2 @ ₹9385.00"
+      },
+      {
+        "time": "2026-09-11T11:33:45+05:30",
+        "type": "BREAKEVEN",
+        "text": "Fee-aware stop moved to ₹9358.07"
+      },
+      {
+        "time": "2026-09-11T11:35:22+05:30",
+        "type": "EXIT",
+        "text": "Stop hit: 2 @ ₹9370.18, net ₹-24.22"
+      }
+    ],
+    "mode": "PAPER",
+    "last_price": 9370.18,
+    "atr": 21.2723,
+    "target_booked": false,
+    "breakeven_set": true,
+    "entry_brokerage_remaining": 0.0,
+    "charges": {
+      "brokerage": 40.0,
+      "exchange": 1.15,
+      "sebi": 0.04,
+      "stt": 4.69,
+      "stamp": 0.56,
+      "gst": 7.41,
+      "total": 53.86
+    },
+    "pnl_by_date": {
+      "2026-09-11": -24.22
+    },
+    "orders": {},
+    "exit_time": "2026-09-11T11:35:22+05:30"
+  },
+  {
+    "trade_id": "20260923124825-AXISBANK",
+    "date": "2026-09-23",
+    "ticker": "AXISBANK",
+    "action": "BUY",
+    "qty": 160,
+    "remaining_qty": 0,
+    "requested_qty": 160,
+    "locked_margin_per_share": 249.48,
+    "partial_booked": false,
+    "entry": 1247.4,
+    "sl": 1242.41,
+    "initial_sl": 1242.41,
+    "tgt": 1259.88,
+    "open": 1248.2,
+    "high": 1249.0,
+    "low": 1247.9,
+    "close": 1244.8,
+    "time": "12:48:25",
+    "status": "LOSS 🔴",
+    "exit_price": 1244.8,
+    "net_pnl": -533.89,
+    "rationale": "No disqualifiers found.",
+    "events": [
+      {
+        "time": "2026-09-23T12:48:25+05:30",
+        "type": "ENTRY",
+        "text": "PAPER BUY 160 @ ₹1247.40"
+      },
+      {
+        "time": "2026-09-23T15:10:42+05:30",
+        "type": "EXIT",
+        "text": "15:10 square-off: 160 @ ₹1244.80, net ₹-533.89"
+      }
+    ],
+    "mode": "PAPER",
+    "last_price": 1244.8,
+    "atr": 3.2276,
+    "target_booked": false,
+    "breakeven_set": false,
+    "entry_brokerage_remaining": 0.0,
+    "charges": {
+      "brokerage": 40.0,
+      "exchange": 12.24,
+      "sebi": 0.4,
+      "stt": 49.79,
+      "stamp": 5.99,
+      "gst": 9.48,
+      "total": 117.89
+    },
+    "pnl_by_date": {
+      "2026-09-23": -533.89
+    },
+    "orders": {},
+    "breakeven_price": 1248.29,
+    "exit_time": "2026-09-23T15:10:42+05:30"
+  },
+  {
+    "trade_id": "20260923125111-SBILIFE",
+    "date": "2026-09-23",
+    "ticker": "SBILIFE",
+    "action": "BUY",
+    "qty": 113,
+    "remaining_qty": 0,
+    "requested_qty": 113,
+    "locked_margin_per_share": 351.9,
+    "partial_booked": true,
+    "entry": 1759.5,
+    "sl": 1763.15,
+    "initial_sl": 1751.86,
+    "tgt": 1778.6,
+    "open": 1758.5,
+    "high": 1759.2,
+    "low": 1757.5,
+    "close": 1762.0,
+    "time": "12:51:11",
+    "status": "WIN 🟢",
+    "exit_price": 1761.12,
+    "net_pnl": 393.24,
+    "rationale": "No disqualifiers present.",
+    "events": [
+      {
+        "time": "2026-09-23T12:51:11+05:30",
+        "type": "ENTRY",
+        "text": "PAPER BUY 113 @ ₹1759.50"
+      },
+      {
+        "time": "2026-09-23T14:27:25+05:30",
+        "type": "EXIT",
+        "text": "+1R partial booked: 56 @ ₹1767.40, net ₹372.02"
+      },
+      {
+        "time": "2026-09-23T14:27:25+05:30",
+        "type": "PARTIAL",
+        "text": "+1R reached; remaining 57 protected at ₹1760.76"
+      },
+      {
+        "time": "2026-09-23T14:41:02+05:30",
+        "type": "EXIT",
+        "text": "Stop hit: 57 @ ₹1761.12, net ₹21.22"
+      }
+    ],
+    "mode": "PAPER",
+    "last_price": 1761.12,
+    "atr": 5.0927,
+    "target_booked": false,
+    "breakeven_set": true,
+    "entry_brokerage_remaining": 0.0,
+    "charges": {
+      "brokerage": 60.0,
+      "exchange": 12.22,
+      "sebi": 0.4,
+      "stt": 49.84,
+      "stamp": 5.97,
+      "gst": 13.07,
+      "total": 141.5
+    },
+    "pnl_by_date": {
+      "2026-09-23": 393.24
+    },
+    "orders": {},
+    "breakeven_price": 1760.76,
+    "live_atr": 4.4455,
+    "exit_time": "2026-09-23T14:41:02+05:30"
+  },
+  {
+    "trade_id": "20260925131115-HEROMOTOCO",
+    "date": "2026-09-25",
+    "ticker": "HEROMOTOCO",
+    "action": "BUY",
+    "qty": 37,
+    "remaining_qty": 0,
+    "requested_qty": 37,
+    "locked_margin_per_share": 1066.9,
+    "partial_booked": true,
+    "entry": 5334.5,
+    "sl": 5379.82,
+    "initial_sl": 5310.53,
+    "tgt": 5394.43,
+    "open": 5335.0,
+    "high": 5343.5,
+    "low": 5335.0,
+    "close": 5379.5,
+    "time": "13:11:15",
+    "status": "WIN 🟢",
+    "exit_price": 5376.81,
+    "net_pnl": 1121.7,
+    "rationale": "No clear disqualifiers present.",
+    "events": [
+      {
+        "time": "2026-09-25T13:11:15+05:30",
+        "type": "ENTRY",
+        "text": "PAPER BUY 37 @ ₹5334.50"
+      },
+      {
+        "time": "2026-09-25T14:08:56+05:30",
+        "type": "EXIT",
+        "text": "+1R partial booked: 18 @ ₹5360.00, net ₹389.72"
+      },
+      {
+        "time": "2026-09-25T14:08:56+05:30",
+        "type": "PARTIAL",
+        "text": "+1R reached; remaining 19 protected at ₹5338.36"
+      },
+      {
+        "time": "2026-09-25T14:24:37+05:30",
+        "type": "EXIT",
+        "text": "Stop hit: 19 @ ₹5376.81, net ₹731.98"
+      }
+    ],
+    "mode": "PAPER",
+    "last_price": 5376.81,
+    "atr": 15.9818,
+    "target_booked": false,
+    "breakeven_set": true,
+    "entry_brokerage_remaining": 0.0,
+    "charges": {
+      "brokerage": 60.0,
+      "exchange": 12.16,
+      "sebi": 0.39,
+      "stt": 49.66,
+      "stamp": 5.92,
+      "gst": 13.06,
+      "total": 141.19
+    },
+    "pnl_by_date": {
+      "2026-09-25": 1121.7
+    },
+    "orders": {},
+    "breakeven_price": 5338.36,
+    "live_atr": 14.1821,
+    "exit_time": "2026-09-25T14:24:37+05:30"
+  },
+  {
+    "trade_id": "20260925131426-ITC",
+    "date": "2026-09-25",
+    "ticker": "ITC",
+    "action": "BUY",
+    "qty": 742,
+    "remaining_qty": 0,
+    "requested_qty": 742,
+    "locked_margin_per_share": 53.63,
+    "partial_booked": false,
+    "entry": 268.15,
+    "sl": 267.08,
+    "initial_sl": 267.08,
+    "tgt": 270.83,
+    "open": 267.9,
+    "high": 268.2,
+    "low": 267.7,
+    "close": 268.55,
+    "time": "13:14:26",
+    "status": "WIN 🟢",
+    "exit_price": 268.55,
+    "net_pnl": 178.92,
+    "rationale": "No clear disqualifiers present.",
+    "events": [
+      {
+        "time": "2026-09-25T13:14:26+05:30",
+        "type": "ENTRY",
+        "text": "PAPER BUY 742 @ ₹268.15"
+      },
+      {
+        "time": "2026-09-25T15:10:42+05:30",
+        "type": "EXIT",
+        "text": "15:10 square-off: 742 @ ₹268.55, net ₹178.92"
+      }
+    ],
+    "mode": "PAPER",
+    "last_price": 268.55,
+    "atr": 0.6884,
+    "target_booked": false,
+    "breakeven_set": false,
+    "entry_brokerage_remaining": 0.0,
+    "charges": {
+      "brokerage": 40.0,
+      "exchange": 12.23,
+      "sebi": 0.4,
+      "stt": 49.82,
+      "stamp": 5.97,
+      "gst": 9.47,
+      "total": 117.88
+    },
+    "pnl_by_date": {
+      "2026-09-25": 178.92
+    },
+    "orders": {},
+    "breakeven_price": 268.34,
+    "exit_time": "2026-09-25T15:10:42+05:30"
+  },
+  {
+    "trade_id": "20260930115314-ADANIENT",
+    "date": "2026-09-30",
+    "ticker": "ADANIENT",
+    "action": "BUY",
+    "qty": 44,
+    "remaining_qty": 0,
+    "requested_qty": 44,
+    "locked_margin_per_share": 581.96,
+    "partial_booked": false,
+    "entry": 2909.8,
+    "sl": 2887.26,
+    "initial_sl": 2887.26,
+    "tgt": 2966.15,
+    "open": 2907.2,
+    "high": 2911.6,
+    "low": 2906.6,
+    "close": 2884.0,
+    "time": "11:53:14",
+    "status": "LOSS 🔴",
+    "exit_price": 2882.56,
+    "net_pnl": -1290.84,
+    "rationale": "RSI is within acceptable range (54.65) and trend context is neutral.",
+    "events": [
+      {
+        "time": "2026-09-30T11:53:14+05:30",
+        "type": "ENTRY",
+        "text": "PAPER BUY 44 @ ₹2909.80"
+      },
+      {
+        "time": "2026-09-30T14:31:36+05:30",
+        "type": "EXIT",
+        "text": "Stop hit: 44 @ ₹2882.56, net ₹-1290.84"
+      }
+    ],
+    "mode": "PAPER",
+    "last_price": 2882.56,
+    "atr": 15.0277,
+    "target_booked": false,
+    "breakeven_set": false,
+    "entry_brokerage_remaining": 0.0,
+    "charges": {
+      "brokerage": 40.0,
+      "exchange": 7.82,
+      "sebi": 0.25,
+      "stt": 31.71,
+      "stamp": 3.84,
+      "gst": 8.65,
+      "total": 92.28
+    },
+    "pnl_by_date": {
+      "2026-09-30": -1290.84
+    },
+    "orders": {},
+    "breakeven_price": 2912.44,
+    "exit_time": "2026-09-30T14:31:36+05:30"
+  },
+  {
+    "trade_id": "20261005101653-BEL",
+    "date": "2026-10-05",
+    "ticker": "BEL",
+    "action": "SELL",
+    "qty": 181,
+    "remaining_qty": 0,
+    "requested_qty": 181,
+    "locked_margin_per_share": 75.81,
+    "partial_booked": false,
+    "entry": 379.05,
+    "sl": 381.79,
+    "initial_sl": 381.79,
+    "tgt": 372.19,
+    "open": 379.75,
+    "high": 379.75,
+    "low": 378.9,
+    "close": 382.6,
+    "time": "10:16:53",
+    "status": "LOSS 🔴",
+    "exit_price": 382.79,
+    "net_pnl": -748.53,
+    "rationale": "All risk checks passed",
+    "events": [
+      {
+        "time": "2026-10-05T10:16:53+05:30",
+        "type": "ENTRY",
+        "text": "PAPER SELL 181 @ ₹379.05"
+      },
+      {
+        "time": "2026-10-05T13:40:39+05:30",
+        "type": "EXIT",
+        "text": "Stop hit: 181 @ ₹382.79, net ₹-748.53"
+      }
+    ],
+    "mode": "PAPER",
+    "last_price": 382.79,
+    "atr": 1.8286,
+    "target_booked": false,
+    "breakeven_set": false,
+    "entry_brokerage_remaining": 0.0,
+    "charges": {
+      "brokerage": 40.0,
+      "exchange": 4.23,
+      "sebi": 0.14,
+      "stt": 17.15,
+      "stamp": 2.08,
+      "gst": 7.99,
+      "total": 71.59
+    },
+    "pnl_by_date": {
+      "2026-10-05": -748.53
+    },
+    "orders": {},
+    "breakeven_price": 378.52,
+    "exit_time": "2026-10-05T13:40:39+05:30"
+  },
+  {
+    "trade_id": "20261005110036-COALINDIA",
+    "date": "2026-10-05",
+    "ticker": "COALINDIA",
+    "action": "BUY",
+    "qty": 315,
+    "remaining_qty": 0,
+    "requested_qty": 315,
+    "locked_margin_per_share": 85.43,
+    "partial_booked": false,
+    "entry": 427.15,
+    "sl": 423.99,
+    "initial_sl": 423.99,
+    "tgt": 435.04,
+    "open": 425.05,
+    "high": 426.8,
+    "low": 424.9,
+    "close": 423.95,
+    "time": "11:00:36",
+    "status": "LOSS 🔴",
+    "exit_price": 423.74,
+    "net_pnl": -1168.78,
+    "rationale": "All checks passed",
+    "events": [
+      {
+        "time": "2026-10-05T11:00:36+05:30",
+        "type": "ENTRY",
+        "text": "PAPER BUY 315 @ ₹427.15"
+      },
+      {
+        "time": "2026-10-05T11:45:15+05:30",
+        "type": "EXIT",
+        "text": "Stop hit: 315 @ ₹423.74, net ₹-1168.78"
+      }
+    ],
+    "mode": "PAPER",
+    "last_price": 423.74,
+    "atr": 2.1049,
+    "target_booked": false,
+    "breakeven_set": false,
+    "entry_brokerage_remaining": 0.0,
+    "charges": {
+      "brokerage": 40.0,
+      "exchange": 8.23,
+      "sebi": 0.27,
+      "stt": 33.37,
+      "stamp": 4.04,
+      "gst": 8.73,
+      "total": 94.63
+    },
+    "pnl_by_date": {
+      "2026-10-05": -1168.78
+    },
+    "orders": {},
+    "breakeven_price": 427.53,
+    "exit_time": "2026-10-05T11:45:15+05:30"
+  },
+  {
+    "trade_id": "20261005120307-DRREDDY",
+    "date": "2026-10-05",
+    "ticker": "DRREDDY",
+    "action": "SELL",
+    "qty": 120,
+    "remaining_qty": 0,
+    "requested_qty": 120,
+    "locked_margin_per_share": 239.32,
+    "partial_booked": false,
+    "entry": 1196.6,
+    "sl": 1204.75,
+    "initial_sl": 1204.75,
+    "tgt": 1176.22,
+    "open": 1199.4,
+    "high": 1200.1,
+    "low": 1197.6,
+    "close": 1204.0,
+    "time": "12:03:07",
+    "status": "LOSS 🔴",
+    "exit_price": 1204.0,
+    "net_pnl": -986.21,
+    "rationale": "All checks passed",
+    "events": [
+      {
+        "time": "2026-10-05T12:03:07+05:30",
+        "type": "ENTRY",
+        "text": "PAPER SELL 120 @ ₹1196.60"
+      },
+      {
+        "time": "2026-10-05T15:10:01+05:30",
+        "type": "EXIT",
+        "text": "15:10 square-off: 120 @ ₹1204.00, net ₹-986.21"
+      }
+    ],
+    "mode": "PAPER",
+    "last_price": 1204.0,
+    "atr": 5.4339,
+    "target_booked": false,
+    "breakeven_set": false,
+    "entry_brokerage_remaining": 0.0,
+    "charges": {
+      "brokerage": 40.0,
+      "exchange": 8.84,
+      "sebi": 0.29,
+      "stt": 35.9,
+      "stamp": 4.33,
+      "gst": 8.84,
+      "total": 98.21
+    },
+    "pnl_by_date": {
+      "2026-10-05": -986.21
+    },
+    "orders": {},
+    "breakeven_price": 1195.59,
+    "exit_time": "2026-10-05T15:10:01+05:30"
+  },
+  {
+    "trade_id": "20261006120928-LT",
+    "date": "2026-10-06",
+    "ticker": "LT",
+    "action": "BUY",
+    "qty": 51,
+    "remaining_qty": 0,
+    "requested_qty": 51,
+    "locked_margin_per_share": 749.1,
+    "partial_booked": true,
+    "entry": 3745.5,
+    "sl": 3761.15,
+    "initial_sl": 3728.08,
+    "tgt": 3789.06,
+    "open": 3747.6,
+    "high": 3756.0,
+    "low": 3745.6,
+    "close": 3760.9,
+    "time": "12:09:28",
+    "status": "WIN 🟢",
+    "exit_price": 3759.02,
+    "net_pnl": 870.16,
+    "rationale": "ALL_PASS: target 43.56 points = 3.75 ATR (<4.5 ATR); qty 51 ≥ 1; entry 3746.8 within 0.09% of prev close 3750; stop 3729.38 < entry; macro.nifty_day_pct 0.56 permits BUY; entry 3746.8 ≤ VWAP+1.5 ATR (3762.96); highest recent volume 41515 on bullish candle; entry >0.5 ATR (5.81) away from session high 3756.7; stop >ATR away from any repeatedly tested level – no vetoes triggered.",
+    "events": [
+      {
+        "time": "2026-10-06T12:09:28+05:30",
+        "type": "ENTRY",
+        "text": "PAPER BUY 51 @ ₹3745.50"
+      },
+      {
+        "time": "2026-10-06T14:07:23+05:30",
+        "type": "EXIT",
+        "text": "+1R partial booked: 25 @ ₹3771.80, net ₹588.92"
+      },
+      {
+        "time": "2026-10-06T14:07:23+05:30",
+        "type": "PARTIAL",
+        "text": "+1R reached; stop at ₹3748.24"
+      },
+      {
+        "time": "2026-10-06T14:12:35+05:30",
+        "type": "EXIT",
+        "text": "Stop hit: 26 @ ₹3759.02, net ₹281.24"
+      }
+    ],
+    "mode": "PAPER",
+    "last_price": 3759.02,
+    "atr": 11.6147,
+    "target_booked": false,
+    "breakeven_set": true,
+    "entry_brokerage_remaining": 1.7763568394002505e-15,
+    "charges": {
+      "brokerage": 60.0,
+      "exchange": 11.76,
+      "sebi": 0.39,
+      "stt": 48.0,
+      "stamp": 5.73,
+      "gst": 12.99,
+      "total": 138.86
+    },
+    "pnl_by_date": {
+      "2026-10-06": 870.16
+    },
+    "orders": {},
+    "breakeven_price": 3748.24,
+    "live_atr": 10.651,
+    "exit_time": "2026-10-06T14:12:35+05:30"
+  },
+  {
+    "trade_id": "20261006120929-NTPC",
+    "date": "2026-10-06",
+    "ticker": "NTPC",
+    "action": "BUY",
+    "qty": 569,
+    "remaining_qty": 0,
+    "requested_qty": 569,
+    "locked_margin_per_share": 64.37,
+    "partial_booked": true,
+    "entry": 321.85,
+    "sl": 323.04,
+    "initial_sl": 320.15,
+    "tgt": 326.1,
+    "open": 322.05,
+    "high": 322.95,
+    "low": 322.0,
+    "close": 322.95,
+    "time": "12:09:29",
+    "status": "WIN 🟢",
+    "exit_price": 322.79,
+    "net_pnl": 671.49,
+    "rationale": "ALL_PASS: target 4.25 points = 3.75 ATR (<4.5 ATR); qty 569 ≥ 1; entry 322.1 within 0.09% of prev close 321.8; stop 320.4 < entry; macro.nifty_day_pct 0.56 permits BUY; entry 322.1 ≤ VWAP+1.5 ATR (324.15); highest recent volume 547329 on bullish candle; entry >0.5 ATR (0.57) away from session high 323.3; stop >ATR away from any repeatedly tested level – no vetoes triggered.",
+    "events": [
+      {
+        "time": "2026-10-06T12:09:29+05:30",
+        "type": "ENTRY",
+        "text": "PAPER BUY 569 @ ₹321.85"
+      },
+      {
+        "time": "2026-10-06T12:45:41+05:30",
+        "type": "EXIT",
+        "text": "+1R partial booked: 284 @ ₹323.75, net ₹471.63"
+      },
+      {
+        "time": "2026-10-06T12:45:41+05:30",
+        "type": "PARTIAL",
+        "text": "+1R reached; stop at ₹322.09"
+      },
+      {
+        "time": "2026-10-06T13:00:38+05:30",
+        "type": "EXIT",
+        "text": "Stop hit: 285 @ ₹322.79, net ₹199.86"
+      }
+    ],
+    "mode": "PAPER",
+    "last_price": 322.79,
+    "atr": 1.1329,
+    "target_booked": false,
+    "breakeven_set": true,
+    "entry_brokerage_remaining": 0.0,
+    "charges": {
+      "brokerage": 60.0,
+      "exchange": 11.27,
+      "sebi": 0.36,
+      "stt": 45.99,
+      "stamp": 5.49,
+      "gst": 12.89,
+      "total": 136.01
+    },
+    "pnl_by_date": {
+      "2026-10-06": 671.49
+    },
+    "orders": {},
+    "breakeven_price": 322.09,
+    "live_atr": 1.1586,
+    "exit_time": "2026-10-06T13:00:38+05:30"
+  },
+  {
+    "trade_id": "20261007102720-HDFCLIFE",
+    "date": "2026-10-07",
+    "ticker": "HDFCLIFE",
+    "action": "SELL",
+    "qty": 219,
+    "remaining_qty": 0,
+    "requested_qty": 219,
+    "locked_margin_per_share": 108.44,
+    "partial_booked": false,
+    "entry": 542.2,
+    "sl": 546.68,
+    "initial_sl": 546.68,
+    "tgt": 531.0,
+    "open": 544.55,
+    "high": 544.9,
+    "low": 541.35,
+    "close": 546.85,
+    "time": "10:27:20",
+    "status": "LOSS 🔴",
+    "exit_price": 547.12,
+    "net_pnl": -1166.88,
+    "rationale": "SELL signal passes all hard gates: target‑entry 11.20 ≤ 4.5 × ATR (13.44), qty 219 ≥ 1, entry 2.40 points (0.44 %) from prev_close 543.95, stop 546.03 > entry, macro NIFTY ‑0.44 % permits SELL. No judgment vetoes: entry 541.55 is above VWAP‑1.5 ATR (538.44) so not a chase, recent candles show no 4‑bar exhaustion, highest recent volume (188,871) occurs at a price above entry, entry/tgt are >0.5 ATR from session highs/lows, news is neutral, stop is not within 1 ATR of repeatedly tested level. Henc",
+    "events": [
+      {
+        "time": "2026-10-07T10:27:20+05:30",
+        "type": "ENTRY",
+        "text": "PAPER SELL 219 @ ₹542.20"
+      },
+      {
+        "time": "2026-10-07T11:13:05+05:30",
+        "type": "EXIT",
+        "text": "Stop hit: 219 @ ₹547.12, net ₹-1166.88"
+      }
+    ],
+    "mode": "PAPER",
+    "last_price": 547.12,
+    "atr": 2.9864,
+    "target_booked": false,
+    "breakeven_set": false,
+    "entry_brokerage_remaining": 0.0,
+    "charges": {
+      "brokerage": 40.0,
+      "exchange": 7.32,
+      "sebi": 0.24,
+      "stt": 29.69,
+      "stamp": 3.59,
+      "gst": 8.56,
+      "total": 89.4
+    },
+    "pnl_by_date": {
+      "2026-10-07": -1166.88
+    },
+    "orders": {},
+    "breakeven_price": 541.68,
+    "exit_time": "2026-10-07T11:13:05+05:30"
+  }
+]
