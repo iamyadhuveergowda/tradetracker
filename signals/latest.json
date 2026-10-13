@@ -1,30 +1,22 @@
 {
-  "signal_id": "20261013-143928-JSWSTEEL",
-  "generated_at": "2026-10-13T14:39:28.385628+05:30",
-  "nifty_ltp": 22641.95,
+  "signal_id": "20261013-144133-JSWSTEEL",
+  "generated_at": "2026-10-13T14:41:33.440529+05:30",
+  "nifty_ltp": 22637.4,
   "candidates": [
     {
       "ticker": "JSWSTEEL",
       "signal": "BUY",
-      "ltp": 1174.3,
-      "stop": 1169.2,
-      "target": 1187.05,
+      "ltp": 1173.5,
+      "stop": 1168.4,
+      "target": 1186.25,
       "qty": 82,
       "indicators": {
-        "rsi": 54.14,
-        "atr": 1.9208,
-        "vol_ratio": 1.85
+        "rsi": 55.26,
+        "atr": 1.9193,
+        "vol_ratio": 1.67
       },
-      "scout_reason": "NIFTY 50 +1.25% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +1.23% overextended for BUY; size cut 50%",
       "candles_5m": [
-        [
-          "13:00",
-          1177.1,
-          1177.1,
-          1174.1,
-          1174.2,
-          12549
-        ],
         [
           "13:05",
           1174.5,
@@ -174,8 +166,16 @@
           1174.6,
           1175.1,
           1173.2,
-          1174.5,
-          8993
+          1174.6,
+          9507
+        ],
+        [
+          "14:40",
+          1174.6,
+          1174.6,
+          1173.3,
+          1173.5,
+          1831
         ]
       ]
     }
