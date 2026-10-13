@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261013-131656-HDFCBANK",
-  "generated_at": "2026-10-13T13:16:56.353460+05:30",
-  "nifty_ltp": 22544.9,
+  "signal_id": "20261013-131904-HDFCBANK",
+  "generated_at": "2026-10-13T13:19:04.497562+05:30",
+  "nifty_ltp": 22542.0,
   "candidates": [
     {
       "ticker": "HDFCBANK",
       "signal": "BUY",
-      "ltp": 710.7,
-      "stop": 707.7,
-      "target": 718.19,
+      "ltp": 711.2,
+      "stop": 708.2,
+      "target": 718.69,
       "qty": 136,
       "indicators": {
         "rsi": 53.35,
         "atr": 0.9802,
         "vol_ratio": 1.58
       },
-      "scout_reason": "NIFTY 50 +0.81% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +0.80% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "11:40",
@@ -174,24 +174,24 @@
           711.45,
           711.5,
           710.5,
-          710.7,
-          34291
+          711.2,
+          58940
         ]
       ]
     },
     {
       "ticker": "AXISBANK",
       "signal": "BUY",
-      "ltp": 1258.4,
-      "stop": 1253.06,
-      "target": 1271.74,
+      "ltp": 1259.0,
+      "stop": 1253.66,
+      "target": 1272.34,
       "qty": 77,
       "indicators": {
         "rsi": 62.39,
         "atr": 2.2028,
         "vol_ratio": 8.23
       },
-      "scout_reason": "NIFTY 50 +0.81% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +0.80% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "11:40",
@@ -350,8 +350,8 @@
           1259.8,
           1259.8,
           1258.2,
-          1258.3,
-          11716
+          1258.9,
+          19668
         ]
       ]
     }
