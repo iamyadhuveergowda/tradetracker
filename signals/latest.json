@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261013-113631-CIPLA",
-  "generated_at": "2026-10-13T11:36:31.006533+05:30",
-  "nifty_ltp": 22506.65,
+  "signal_id": "20261013-113833-CIPLA",
+  "generated_at": "2026-10-13T11:38:33.652916+05:30",
+  "nifty_ltp": 22508.5,
   "candidates": [
     {
       "ticker": "CIPLA",
       "signal": "BUY",
-      "ltp": 1324.1,
-      "stop": 1316.56,
-      "target": 1342.94,
+      "ltp": 1323.9,
+      "stop": 1316.36,
+      "target": 1342.74,
       "qty": 64,
       "indicators": {
         "rsi": 58.02,
         "atr": 2.6216,
         "vol_ratio": 3.5
       },
-      "scout_reason": "NIFTY 50 +0.64% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +0.65% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "10:00",
@@ -172,10 +172,10 @@
         [
           "11:35",
           1324.0,
-          1324.8,
-          1323.7,
-          1324.5,
-          932
+          1324.9,
+          1323.5,
+          1323.9,
+          2202
         ]
       ]
     }
