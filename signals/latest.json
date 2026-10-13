@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261013-121731-M&M",
-  "generated_at": "2026-10-13T12:17:31.125331+05:30",
-  "nifty_ltp": 22512.8,
+  "signal_id": "20261013-122000-M&M",
+  "generated_at": "2026-10-13T12:20:00.049995+05:30",
+  "nifty_ltp": 22535.1,
   "candidates": [
     {
       "ticker": "M&M",
       "signal": "BUY",
-      "ltp": 2831.5,
-      "stop": 2815.27,
-      "target": 2872.07,
-      "qty": 29,
+      "ltp": 2831.7,
+      "stop": 2815.54,
+      "target": 2872.1,
+      "qty": 30,
       "indicators": {
         "rsi": 55.66,
         "atr": 5.8644,
         "vol_ratio": 2.83
       },
-      "scout_reason": "NIFTY 50 +0.67% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +0.77% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "10:40",
@@ -172,10 +172,10 @@
         [
           "12:15",
           2833.2,
-          2833.5,
-          2830.4,
+          2833.6,
+          2830.2,
           2831.1,
-          5150
+          10619
         ]
       ]
     }
