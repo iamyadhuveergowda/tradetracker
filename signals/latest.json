@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261013-134221-GRASIM",
-  "generated_at": "2026-10-13T13:42:21.096696+05:30",
-  "nifty_ltp": 22543.55,
+  "signal_id": "20261013-134429-GRASIM",
+  "generated_at": "2026-10-13T13:44:29.308773+05:30",
+  "nifty_ltp": 22548.05,
   "candidates": [
     {
       "ticker": "GRASIM",
       "signal": "BUY",
-      "ltp": 2906.3,
-      "stop": 2891.42,
-      "target": 2943.5,
+      "ltp": 2905.5,
+      "stop": 2890.62,
+      "target": 2942.7,
       "qty": 32,
       "indicators": {
         "rsi": 58.78,
         "atr": 4.9523,
         "vol_ratio": 1.68
       },
-      "scout_reason": "NIFTY 50 +0.81% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +0.83% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "12:05",
@@ -172,10 +172,10 @@
         [
           "13:40",
           2907.0,
-          2907.0,
+          2907.6,
           2904.3,
-          2905.2,
-          330
+          2906.3,
+          674
         ]
       ]
     }
