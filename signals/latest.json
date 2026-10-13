@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261013-120624-TITAN",
-  "generated_at": "2026-10-13T12:06:24.679658+05:30",
-  "nifty_ltp": 22514.8,
+  "signal_id": "20261013-120832-TITAN",
+  "generated_at": "2026-10-13T12:08:32.414116+05:30",
+  "nifty_ltp": 22508.6,
   "candidates": [
     {
       "ticker": "TITAN",
       "signal": "BUY",
-      "ltp": 4423.8,
-      "stop": 4403.8,
-      "target": 4473.79,
+      "ltp": 4424.1,
+      "stop": 4404.1,
+      "target": 4474.09,
       "qty": 21,
       "indicators": {
         "rsi": 53.11,
         "atr": 7.3444,
         "vol_ratio": 2.17
       },
-      "scout_reason": "NIFTY 50 +0.68% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +0.65% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "10:30",
@@ -173,25 +173,25 @@
           "12:05",
           4426.1,
           4426.9,
-          4422.6,
-          4423.2,
-          887
+          4421.7,
+          4424.0,
+          2183
         ]
       ]
     },
     {
       "ticker": "ONGC",
       "signal": "BUY",
-      "ltp": 221.41,
-      "stop": 220.52,
-      "target": 223.62,
-      "qty": 438,
+      "ltp": 221.34,
+      "stop": 220.45,
+      "target": 223.55,
+      "qty": 439,
       "indicators": {
         "rsi": 59.96,
         "atr": 0.3489,
         "vol_ratio": 3.34
       },
-      "scout_reason": "NIFTY 50 +0.68% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +0.65% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "10:30",
@@ -348,10 +348,10 @@
         [
           "12:05",
           221.45,
-          221.45,
-          221.28,
-          221.41,
-          36113
+          221.5,
+          221.26,
+          221.34,
+          54681
         ]
       ]
     }
