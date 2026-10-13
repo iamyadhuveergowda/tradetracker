@@ -1,14 +1,14 @@
 {
-  "signal_id": "20261013-134636-ITC",
-  "generated_at": "2026-10-13T13:46:36.196956+05:30",
-  "nifty_ltp": 22556.5,
+  "signal_id": "20261013-134828-ITC",
+  "generated_at": "2026-10-13T13:48:28.899942+05:30",
+  "nifty_ltp": 22554.8,
   "candidates": [
     {
       "ticker": "ITC",
       "signal": "BUY",
-      "ltp": 260.15,
-      "stop": 259.1,
-      "target": 262.77,
+      "ltp": 260.1,
+      "stop": 259.05,
+      "target": 262.72,
       "qty": 373,
       "indicators": {
         "rsi": 50.89,
