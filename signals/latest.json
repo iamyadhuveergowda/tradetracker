@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261013-133755-ASIANPAINT",
-  "generated_at": "2026-10-13T13:37:55.620304+05:30",
-  "nifty_ltp": 22543.0,
+  "signal_id": "20261013-134004-ASIANPAINT",
+  "generated_at": "2026-10-13T13:40:04.057694+05:30",
+  "nifty_ltp": 22545.25,
   "candidates": [
     {
       "ticker": "ASIANPAINT",
       "signal": "BUY",
-      "ltp": 2348.7,
-      "stop": 2338.44,
-      "target": 2374.35,
+      "ltp": 2348.4,
+      "stop": 2338.14,
+      "target": 2374.05,
       "qty": 41,
       "indicators": {
         "rsi": 50.03,
         "atr": 3.2779,
         "vol_ratio": 1.37
       },
-      "scout_reason": "NIFTY 50 +0.80% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +0.81% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "12:00",
@@ -174,8 +174,8 @@
           2347.4,
           2349.0,
           2346.9,
-          2348.3,
-          1846
+          2348.2,
+          3519
         ]
       ]
     }
