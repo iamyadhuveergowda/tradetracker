@@ -787,7 +787,7 @@
     "ticker": "HDFCLIFE",
     "action": "BUY",
     "qty": 125,
-    "remaining_qty": 125,
+    "remaining_qty": 0,
     "requested_qty": 125,
     "locked_margin_per_share": 110.49,
     "partial_booked": false,
@@ -798,32 +798,48 @@
     "open": 550.65,
     "high": 551.35,
     "low": 550.1,
-    "close": 551.45,
+    "close": 551.95,
     "time": "11:21:08",
-    "status": "OPEN ⏳",
-    "exit_price": null,
-    "net_pnl": 0.0,
+    "status": "LOSS 🔴",
+    "exit_price": 551.95,
+    "net_pnl": -134.18,
     "rationale": "Entry 0.93 above VWAP and within 1.5 ATR; stop 3.87 below entry (≈1.5 ATR) gives clear risk; target 9.67 away (~3.75 ATR) below the 4.5 ATR fantasy cap; expected travel 19.68 pts exceeds target distance; no volume, news or event conflicts; macro regime allows BUYs.",
     "events": [
       {
         "time": "2026-10-15T11:21:08+05:30",
         "type": "ENTRY",
         "text": "PAPER BUY 125 @ ₹552.45"
+      },
+      {
+        "time": "2026-10-15T15:10:16+05:30",
+        "type": "EXIT",
+        "text": "15:10 square-off: 125 @ ₹551.95, net ₹-134.18"
       }
     ],
     "mode": "PAPER",
-    "last_price": 551.45,
+    "last_price": 551.95,
     "atr": 2.5792,
     "target_booked": false,
     "breakeven_set": false,
     "mfe_r": 0.426,
     "mae_r": -0.491,
     "size_tag": "overextended_halfsize",
-    "entry_brokerage_remaining": 20.0,
-    "charges": {},
-    "pnl_by_date": {},
+    "entry_brokerage_remaining": 0.0,
+    "charges": {
+      "brokerage": 40.0,
+      "exchange": 4.24,
+      "sebi": 0.14,
+      "stt": 17.25,
+      "stamp": 2.07,
+      "gst": 7.99,
+      "total": 71.68
+    },
+    "pnl_by_date": {
+      "2026-10-15": -134.18
+    },
     "orders": {},
-    "breakeven_price": 553.22
+    "breakeven_price": 553.22,
+    "exit_time": "2026-10-15T15:10:16+05:30"
   },
   {
     "trade_id": "20261015113001-BAJAJ-AUTO",
@@ -831,7 +847,7 @@
     "ticker": "BAJAJ-AUTO",
     "action": "BUY",
     "qty": 8,
-    "remaining_qty": 8,
+    "remaining_qty": 0,
     "requested_qty": 8,
     "locked_margin_per_share": 2075.6,
     "partial_booked": false,
@@ -842,31 +858,47 @@
     "open": 10361.0,
     "high": 10400.0,
     "low": 10361.0,
-    "close": 10326.0,
+    "close": 10325.0,
     "time": "11:30:01",
-    "status": "OPEN ⏳",
-    "exit_price": null,
-    "net_pnl": 0.0,
+    "status": "LOSS 🔴",
+    "exit_price": 10325.0,
+    "net_pnl": -500.54,
     "rationale": "All hard gates clear: target distance 149.01 ₹ ≤ 4.5 × ATR (178.8 ₹), qty 8 ≥ 1, stop 10315.39 ₹ < entry (correct side), entry 1.22% away from prev_close (within 10%). No regime lock (BUY allowed despite Nifty +1.47%). Judgment checks pass: entry 35 ₹ above VWAP (within 1.5 × ATR), no chase; no 4‑candle exhaustion; highest recent volume (9,151 vol) on bullish candle, not distribution; entry/tgt > 0.5 × ATR away from session high/low; neutral news; stop not in repeated price zone; no upcoming eve",
     "events": [
       {
         "time": "2026-10-15T11:30:01+05:30",
         "type": "ENTRY",
         "text": "PAPER BUY 8 @ ₹10378.00"
+      },
+      {
+        "time": "2026-10-15T15:10:18+05:30",
+        "type": "EXIT",
+        "text": "15:10 square-off: 8 @ ₹10325.00, net ₹-500.54"
       }
     ],
     "mode": "PAPER",
-    "last_price": 10326.0,
+    "last_price": 10325.0,
     "atr": 39.7368,
     "target_booked": false,
     "breakeven_set": false,
     "mfe_r": 0.453,
     "mae_r": -0.923,
     "size_tag": "overextended_halfsize",
-    "entry_brokerage_remaining": 20.0,
-    "charges": {},
-    "pnl_by_date": {},
+    "entry_brokerage_remaining": 0.0,
+    "charges": {
+      "brokerage": 40.0,
+      "exchange": 5.08,
+      "sebi": 0.17,
+      "stt": 20.65,
+      "stamp": 2.49,
+      "gst": 8.15,
+      "total": 76.54
+    },
+    "pnl_by_date": {
+      "2026-10-15": -500.54
+    },
     "orders": {},
-    "breakeven_price": 10390.53
+    "breakeven_price": 10390.53,
+    "exit_time": "2026-10-15T15:10:18+05:30"
   }
 ]
