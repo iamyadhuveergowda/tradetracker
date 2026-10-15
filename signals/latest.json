@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261015-120636-SBIN",
-  "generated_at": "2026-10-15T12:06:36.698023+05:30",
-  "nifty_ltp": 22952.85,
+  "signal_id": "20261015-120850-SBIN",
+  "generated_at": "2026-10-15T12:08:50.979671+05:30",
+  "nifty_ltp": 22942.1,
   "candidates": [
     {
       "ticker": "SBIN",
       "signal": "BUY",
-      "ltp": 955.2,
-      "stop": 950.33,
-      "target": 967.38,
+      "ltp": 954.55,
+      "stop": 949.68,
+      "target": 966.73,
       "qty": 99,
       "indicators": {
         "rsi": 52.88,
         "atr": 1.903,
         "vol_ratio": 1.77
       },
-      "scout_reason": "NIFTY 50 +1.46% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +1.41% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "10:30",
@@ -172,26 +172,26 @@
         [
           "12:05",
           954.8,
-          955.3,
-          954.65,
-          955.05,
-          17412
+          955.35,
+          954.2,
+          954.75,
+          45191
         ]
       ]
     },
     {
       "ticker": "NTPC",
       "signal": "BUY",
-      "ltp": 315.8,
-      "stop": 313.93,
-      "target": 320.48,
+      "ltp": 315.6,
+      "stop": 313.73,
+      "target": 320.28,
       "qty": 259,
       "indicators": {
         "rsi": 56.28,
         "atr": 0.748,
         "vol_ratio": 2.98
       },
-      "scout_reason": "NIFTY 50 +1.46% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +1.41% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "10:30",
@@ -349,25 +349,25 @@
           "12:05",
           315.75,
           315.85,
-          315.65,
-          315.7,
-          25602
+          315.5,
+          315.55,
+          44392
         ]
       ]
     },
     {
       "ticker": "COALINDIA",
       "signal": "BUY",
-      "ltp": 418.75,
-      "stop": 416.75,
-      "target": 423.75,
+      "ltp": 418.5,
+      "stop": 416.5,
+      "target": 423.5,
       "qty": 231,
       "indicators": {
         "rsi": 57.66,
         "atr": 0.6945,
         "vol_ratio": 5.62
       },
-      "scout_reason": "NIFTY 50 +1.46% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +1.41% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "10:30",
@@ -525,25 +525,25 @@
           "12:05",
           418.55,
           418.8,
+          418.4,
           418.55,
-          418.75,
-          6779
+          28808
         ]
       ]
     },
     {
       "ticker": "APOLLOHOSP",
       "signal": "BUY",
-      "ltp": 7927.5,
-      "stop": 7877.66,
-      "target": 8052.1,
+      "ltp": 7921.0,
+      "stop": 7871.16,
+      "target": 8045.6,
       "qty": 9,
       "indicators": {
         "rsi": 54.02,
         "atr": 16.0699,
         "vol_ratio": 2.89
       },
-      "scout_reason": "NIFTY 50 +1.46% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +1.41% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "10:30",
@@ -701,9 +701,9 @@
           "12:05",
           7923.5,
           7929.0,
+          7912.5,
           7919.5,
-          7925.5,
-          1172
+          5236
         ]
       ]
     }
