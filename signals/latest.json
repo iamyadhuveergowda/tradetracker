@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261015-115241-INFY",
-  "generated_at": "2026-10-15T11:52:41.337508+05:30",
-  "nifty_ltp": 22980.3,
+  "signal_id": "20261015-115458-INFY",
+  "generated_at": "2026-10-15T11:54:58.666720+05:30",
+  "nifty_ltp": 22974.85,
   "candidates": [
     {
       "ticker": "INFY",
       "signal": "BUY",
-      "ltp": 1116.0,
-      "stop": 1107.03,
-      "target": 1138.42,
+      "ltp": 1115.45,
+      "stop": 1106.48,
+      "target": 1137.87,
       "qty": 54,
       "indicators": {
         "rsi": 60.14,
         "atr": 2.9428,
         "vol_ratio": 4.03
       },
-      "scout_reason": "NIFTY 50 +1.58% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +1.56% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "10:15",
@@ -173,9 +173,9 @@
           "11:50",
           1116.5,
           1117.5,
-          1115.9,
-          1115.9,
-          40550
+          1115.05,
+          1115.35,
+          71338
         ]
       ]
     }
