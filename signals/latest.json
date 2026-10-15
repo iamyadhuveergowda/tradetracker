@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261015-123131-ITC",
-  "generated_at": "2026-10-15T12:31:31.200758+05:30",
-  "nifty_ltp": 22960.8,
+  "signal_id": "20261015-123346-ITC",
+  "generated_at": "2026-10-15T12:33:46.798824+05:30",
+  "nifty_ltp": 22963.5,
   "candidates": [
     {
       "ticker": "ITC",
       "signal": "BUY",
-      "ltp": 264.05,
-      "stop": 262.68,
-      "target": 267.48,
+      "ltp": 264.2,
+      "stop": 262.83,
+      "target": 267.63,
       "qty": 354,
       "indicators": {
         "rsi": 52.66,
         "atr": 0.5192,
         "vol_ratio": 1.79
       },
-      "scout_reason": "NIFTY 50 +1.49% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +1.51% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "10:55",
@@ -172,10 +172,10 @@
         [
           "12:30",
           264.1,
+          264.3,
+          263.9,
           264.2,
-          264.0,
-          264.2,
-          27002
+          90115
         ]
       ]
     }
