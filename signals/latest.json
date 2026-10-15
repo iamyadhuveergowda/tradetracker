@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261015-122657-BAJFINANCE",
-  "generated_at": "2026-10-15T12:26:57.549661+05:30",
-  "nifty_ltp": 22955.9,
+  "signal_id": "20261015-122911-BAJFINANCE",
+  "generated_at": "2026-10-15T12:29:11.574651+05:30",
+  "nifty_ltp": 22949.5,
   "candidates": [
     {
       "ticker": "BAJFINANCE",
       "signal": "BUY",
-      "ltp": 965.2,
-      "stop": 959.13,
-      "target": 980.37,
+      "ltp": 964.55,
+      "stop": 958.48,
+      "target": 979.72,
       "qty": 79,
       "indicators": {
         "rsi": 61.0,
         "atr": 2.1082,
         "vol_ratio": 1.55
       },
-      "scout_reason": "NIFTY 50 +1.47% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +1.44% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "10:50",
@@ -173,25 +173,25 @@
           "12:25",
           966.0,
           966.15,
-          965.05,
-          965.25,
-          70401
+          964.55,
+          964.55,
+          117232
         ]
       ]
     },
     {
       "ticker": "TATAMOTORS",
       "signal": "BUY",
-      "ltp": 287.1,
-      "stop": 285.46,
-      "target": 291.19,
+      "ltp": 287.0,
+      "stop": 285.36,
+      "target": 291.09,
       "qty": 296,
       "indicators": {
         "rsi": 56.36,
         "atr": 0.5962,
         "vol_ratio": 1.76
       },
-      "scout_reason": "NIFTY 50 +1.47% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +1.44% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "10:50",
@@ -350,8 +350,8 @@
           287.2,
           287.2,
           287.0,
-          287.1,
-          13680
+          287.05,
+          22885
         ]
       ]
     }
