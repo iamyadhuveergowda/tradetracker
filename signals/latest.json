@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261015-113654-AXISBANK",
-  "generated_at": "2026-10-15T11:36:54.958578+05:30",
-  "nifty_ltp": 22950.4,
+  "signal_id": "20261015-113911-AXISBANK",
+  "generated_at": "2026-10-15T11:39:11.094676+05:30",
+  "nifty_ltp": 22962.05,
   "candidates": [
     {
       "ticker": "AXISBANK",
       "signal": "BUY",
-      "ltp": 1287.6,
-      "stop": 1279.52,
-      "target": 1307.8,
+      "ltp": 1287.9,
+      "stop": 1279.82,
+      "target": 1308.1,
       "qty": 60,
       "indicators": {
         "rsi": 62.41,
         "atr": 3.3158,
         "vol_ratio": 2.09
       },
-      "scout_reason": "NIFTY 50 +1.45% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +1.50% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "10:00",
@@ -173,25 +173,25 @@
           "11:35",
           1288.8,
           1289.4,
-          1287.0,
-          1287.4,
-          99261
+          1286.1,
+          1287.5,
+          138209
         ]
       ]
     },
     {
       "ticker": "ONGC",
       "signal": "BUY",
-      "ltp": 225.09,
-      "stop": 224.08,
-      "target": 227.62,
+      "ltp": 225.07,
+      "stop": 224.06,
+      "target": 227.6,
       "qty": 432,
       "indicators": {
         "rsi": 60.02,
         "atr": 0.3783,
         "vol_ratio": 3.31
       },
-      "scout_reason": "NIFTY 50 +1.45% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +1.50% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "10:00",
@@ -348,10 +348,10 @@
         [
           "11:35",
           225.04,
-          225.12,
+          225.14,
           225.03,
-          225.06,
-          11116
+          225.14,
+          24147
         ]
       ]
     }
