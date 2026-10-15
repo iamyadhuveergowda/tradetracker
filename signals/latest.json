@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261015-121108-SBILIFE",
-  "generated_at": "2026-10-15T12:11:08.729498+05:30",
-  "nifty_ltp": 22961.15,
+  "signal_id": "20261015-121326-SBILIFE",
+  "generated_at": "2026-10-15T12:13:26.092005+05:30",
+  "nifty_ltp": 22967.05,
   "candidates": [
     {
       "ticker": "SBILIFE",
       "signal": "BUY",
-      "ltp": 1670.1,
-      "stop": 1659.91,
-      "target": 1695.56,
+      "ltp": 1667.6,
+      "stop": 1657.41,
+      "target": 1693.06,
       "qty": 47,
       "indicators": {
         "rsi": 59.63,
         "atr": 3.8015,
         "vol_ratio": 4.85
       },
-      "scout_reason": "NIFTY 50 +1.50% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +1.52% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "10:35",
@@ -173,9 +173,9 @@
           "12:10",
           1669.9,
           1670.1,
-          1668.6,
-          1668.6,
-          13156
+          1667.5,
+          1667.7,
+          15580
         ]
       ]
     }
