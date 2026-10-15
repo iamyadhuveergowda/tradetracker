@@ -780,5 +780,49 @@
     "orders": {},
     "breakeven_price": 541.68,
     "exit_time": "2026-10-07T11:13:05+05:30"
+  },
+  {
+    "trade_id": "20261015112108-HDFCLIFE",
+    "date": "2026-10-15",
+    "ticker": "HDFCLIFE",
+    "action": "BUY",
+    "qty": 125,
+    "remaining_qty": 125,
+    "requested_qty": 125,
+    "locked_margin_per_share": 110.49,
+    "partial_booked": false,
+    "entry": 552.45,
+    "sl": 548.58,
+    "initial_sl": 548.58,
+    "tgt": 562.12,
+    "open": 550.65,
+    "high": 551.35,
+    "low": 550.1,
+    "close": 551.35,
+    "time": "11:21:08",
+    "status": "OPEN ⏳",
+    "exit_price": null,
+    "net_pnl": 0.0,
+    "rationale": "Entry 0.93 above VWAP and within 1.5 ATR; stop 3.87 below entry (≈1.5 ATR) gives clear risk; target 9.67 away (~3.75 ATR) below the 4.5 ATR fantasy cap; expected travel 19.68 pts exceeds target distance; no volume, news or event conflicts; macro regime allows BUYs.",
+    "events": [
+      {
+        "time": "2026-10-15T11:21:08+05:30",
+        "type": "ENTRY",
+        "text": "PAPER BUY 125 @ ₹552.45"
+      }
+    ],
+    "mode": "PAPER",
+    "last_price": 552.45,
+    "atr": 2.5792,
+    "target_booked": false,
+    "breakeven_set": false,
+    "mfe_r": 0.0,
+    "mae_r": 0.0,
+    "size_tag": "overextended_halfsize",
+    "entry_brokerage_remaining": 20.0,
+    "charges": {},
+    "pnl_by_date": {},
+    "orders": {},
+    "breakeven_price": 553.22
   }
 ]
