@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261015-141048-SHRIRAMFIN",
-  "generated_at": "2026-10-15T14:10:48.374682+05:30",
-  "nifty_ltp": 23032.1,
+  "signal_id": "20261015-141306-SHRIRAMFIN",
+  "generated_at": "2026-10-15T14:13:06.868304+05:30",
+  "nifty_ltp": 23038.55,
   "candidates": [
     {
       "ticker": "SHRIRAMFIN",
       "signal": "BUY",
-      "ltp": 954.5,
-      "stop": 949.13,
-      "target": 967.93,
+      "ltp": 955.1,
+      "stop": 949.73,
+      "target": 968.53,
       "qty": 90,
       "indicators": {
         "rsi": 52.93,
         "atr": 1.813,
         "vol_ratio": 1.84
       },
-      "scout_reason": "NIFTY 50 +1.81% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +1.84% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "12:35",
@@ -174,8 +174,8 @@
           954.65,
           955.25,
           954.5,
-          955.25,
-          3265
+          955.0,
+          11965
         ]
       ]
     }
