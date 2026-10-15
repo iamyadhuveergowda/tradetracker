@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261015-140202-ITC",
-  "generated_at": "2026-10-15T14:02:02.515599+05:30",
-  "nifty_ltp": 23038.8,
+  "signal_id": "20261015-140417-ITC",
+  "generated_at": "2026-10-15T14:04:17.888361+05:30",
+  "nifty_ltp": 23044.1,
   "candidates": [
     {
       "ticker": "ITC",
       "signal": "BUY",
-      "ltp": 264.8,
-      "stop": 263.49,
-      "target": 268.07,
+      "ltp": 264.85,
+      "stop": 263.54,
+      "target": 268.12,
       "qty": 366,
       "indicators": {
         "rsi": 54.4,
         "atr": 0.4611,
         "vol_ratio": 2.24
       },
-      "scout_reason": "NIFTY 50 +1.84% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +1.86% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "12:25",
@@ -173,25 +173,25 @@
           "14:00",
           265.0,
           265.0,
-          264.8,
+          264.75,
           264.85,
-          45821
+          96276
         ]
       ]
     },
     {
       "ticker": "TECHM",
       "signal": "BUY",
-      "ltp": 1640.1,
-      "stop": 1627.92,
-      "target": 1670.54,
+      "ltp": 1638.0,
+      "stop": 1625.82,
+      "target": 1668.44,
       "qty": 39,
       "indicators": {
         "rsi": 64.52,
         "atr": 4.0009,
         "vol_ratio": 1.75
       },
-      "scout_reason": "NIFTY 50 +1.84% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +1.86% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "12:25",
@@ -349,9 +349,9 @@
           "14:00",
           1641.9,
           1642.5,
-          1638.2,
-          1639.5,
-          38286
+          1638.0,
+          1638.6,
+          76989
         ]
       ]
     }
