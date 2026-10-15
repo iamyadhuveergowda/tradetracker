@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261015-115727-TATASTEEL",
-  "generated_at": "2026-10-15T11:57:27.907431+05:30",
-  "nifty_ltp": 22970.2,
+  "signal_id": "20261015-115940-TATASTEEL",
+  "generated_at": "2026-10-15T11:59:40.421620+05:30",
+  "nifty_ltp": 22976.4,
   "candidates": [
     {
       "ticker": "TATASTEEL",
       "signal": "BUY",
-      "ltp": 176.07,
-      "stop": 175.03,
-      "target": 178.67,
+      "ltp": 176.08,
+      "stop": 175.04,
+      "target": 178.68,
       "qty": 467,
       "indicators": {
         "rsi": 63.94,
         "atr": 0.3521,
         "vol_ratio": 1.85
       },
-      "scout_reason": "NIFTY 50 +1.54% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +1.56% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "10:20",
@@ -174,24 +174,24 @@
           176.07,
           176.22,
           176.05,
-          176.08,
-          43537
+          176.13,
+          97113
         ]
       ]
     },
     {
       "ticker": "APOLLOHOSP",
       "signal": "BUY",
-      "ltp": 7920.0,
-      "stop": 7870.16,
-      "target": 8044.6,
+      "ltp": 7912.0,
+      "stop": 7862.16,
+      "target": 8036.6,
       "qty": 9,
       "indicators": {
         "rsi": 56.16,
         "atr": 16.5544,
         "vol_ratio": 4.14
       },
-      "scout_reason": "NIFTY 50 +1.54% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +1.56% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "10:20",
@@ -348,10 +348,10 @@
         [
           "11:55",
           7926.5,
-          7929.5,
-          7918.0,
-          7926.0,
-          1960
+          7931.0,
+          7912.0,
+          7924.0,
+          3314
         ]
       ]
     }
