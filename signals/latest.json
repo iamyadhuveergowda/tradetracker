@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261015-112737-M&M",
-  "generated_at": "2026-10-15T11:27:37.297436+05:30",
-  "nifty_ltp": 22938.75,
+  "signal_id": "20261015-112955-M&M",
+  "generated_at": "2026-10-15T11:29:55.134490+05:30",
+  "nifty_ltp": 22955.65,
   "candidates": [
     {
       "ticker": "M&M",
       "signal": "BUY",
-      "ltp": 2858.1,
-      "stop": 2837.31,
-      "target": 2910.07,
+      "ltp": 2860.4,
+      "stop": 2839.61,
+      "target": 2912.37,
       "qty": 23,
       "indicators": {
         "rsi": 61.02,
         "atr": 8.5478,
         "vol_ratio": 1.4
       },
-      "scout_reason": "NIFTY 50 +1.40% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +1.47% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "09:50",
@@ -172,26 +172,26 @@
         [
           "11:25",
           2856.5,
-          2858.1,
+          2861.6,
           2854.6,
-          2858.0,
-          8073
+          2860.2,
+          18642
         ]
       ]
     },
     {
       "ticker": "BAJAJFINSV",
       "signal": "BUY",
-      "ltp": 1726.8,
-      "stop": 1715.37,
-      "target": 1755.37,
+      "ltp": 1727.3,
+      "stop": 1715.87,
+      "target": 1755.87,
       "qty": 42,
       "indicators": {
         "rsi": 55.1,
         "atr": 4.1911,
         "vol_ratio": 4.48
       },
-      "scout_reason": "NIFTY 50 +1.40% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +1.47% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "09:50",
@@ -348,26 +348,26 @@
         [
           "11:25",
           1725.0,
-          1726.9,
+          1727.3,
           1723.3,
-          1725.9,
-          4230
+          1727.0,
+          6998
         ]
       ]
     },
     {
       "ticker": "BAJAJ-AUTO",
       "signal": "BUY",
-      "ltp": 10380.0,
-      "stop": 10320.39,
-      "target": 10529.01,
+      "ltp": 10375.0,
+      "stop": 10315.39,
+      "target": 10524.01,
       "qty": 8,
       "indicators": {
         "rsi": 62.5,
         "atr": 23.6817,
         "vol_ratio": 3.47
       },
-      "scout_reason": "NIFTY 50 +1.40% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +1.47% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "09:50",
@@ -525,9 +525,9 @@
           "11:25",
           10394.0,
           10394.0,
-          10376.0,
-          10376.0,
-          727
+          10372.0,
+          10378.0,
+          1364
         ]
       ]
     }
