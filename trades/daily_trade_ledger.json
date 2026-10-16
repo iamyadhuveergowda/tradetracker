@@ -907,7 +907,7 @@
     "ticker": "BAJFINANCE",
     "action": "BUY",
     "qty": 154,
-    "remaining_qty": 154,
+    "remaining_qty": 0,
     "requested_qty": 154,
     "locked_margin_per_share": 195.39,
     "partial_booked": false,
@@ -918,31 +918,47 @@
     "open": 976.75,
     "high": 978.4,
     "low": 976.65,
-    "close": 979.15,
+    "close": 979.45,
     "time": "12:01:23",
-    "status": "OPEN ⏳",
-    "exit_price": null,
-    "net_pnl": 0.0,
+    "status": "WIN 🟢",
+    "exit_price": 979.45,
+    "net_pnl": 284.31,
     "rationale": "BUY aligns with market structure: entry 976.85 is just below VWAP+1.5*ATR (971.24+6.26=977.50), stop 970.59 is safely below entry, target distance 15.64 ≤ 4.5*ATR (18.77) and < expected travel 26.23, qty 154 ≥ 1, macro regime allows BUY (nifty +0.53 only blocks SELL), recent 5‑min candles show upward momentum without heavy opposite volume or distribution.",
     "events": [
       {
         "time": "2026-10-16T12:01:23+05:30",
         "type": "ENTRY",
         "text": "PAPER BUY 154 @ ₹976.95"
+      },
+      {
+        "time": "2026-10-16T15:10:44+05:30",
+        "type": "EXIT",
+        "text": "15:10 square-off: 154 @ ₹979.45, net ₹284.31"
       }
     ],
     "mode": "PAPER",
-    "last_price": 979.15,
+    "last_price": 979.45,
     "atr": 4.1707,
     "target_booked": false,
     "breakeven_set": false,
     "mfe_r": 0.559,
     "mae_r": -0.647,
     "size_tag": "standard",
-    "entry_brokerage_remaining": 20.0,
-    "charges": {},
-    "pnl_by_date": {},
+    "entry_brokerage_remaining": 0.0,
+    "charges": {
+      "brokerage": 40.0,
+      "exchange": 9.25,
+      "sebi": 0.3,
+      "stt": 37.71,
+      "stamp": 4.51,
+      "gst": 8.92,
+      "total": 100.69
+    },
+    "pnl_by_date": {
+      "2026-10-16": 284.31
+    },
     "orders": {},
-    "breakeven_price": 977.76
+    "breakeven_price": 977.76,
+    "exit_time": "2026-10-16T15:10:44+05:30"
   }
 ]
