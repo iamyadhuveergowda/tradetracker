@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261021-133239-APOLLOHOSP",
-  "generated_at": "2026-10-21T13:32:39.138994+05:30",
-  "nifty_ltp": 22723.95,
+  "signal_id": "20261021-133445-APOLLOHOSP",
+  "generated_at": "2026-10-21T13:34:45.900949+05:30",
+  "nifty_ltp": 22722.3,
   "candidates": [
     {
       "ticker": "APOLLOHOSP",
       "signal": "SELL",
-      "ltp": 7581.5,
-      "stop": 7625.72,
-      "target": 7470.94,
+      "ltp": 7582.5,
+      "stop": 7626.72,
+      "target": 7471.94,
       "qty": 10,
       "indicators": {
         "rsi": 36.07,
         "atr": 16.027,
         "vol_ratio": 1.62
       },
-      "scout_reason": "NIFTY 50 -0.72% oversold for SELL; size cut 50%",
+      "scout_reason": "NIFTY 50 -0.73% oversold for SELL; size cut 50%",
       "candles_5m": [
         [
           "11:55",
@@ -172,10 +172,10 @@
         [
           "13:30",
           7583.0,
-          7583.0,
+          7590.0,
           7576.5,
-          7578.0,
-          524
+          7587.5,
+          1492
         ]
       ]
     }
