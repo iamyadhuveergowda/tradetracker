@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261021-144112-LT",
-  "generated_at": "2026-10-21T14:41:12.537548+05:30",
-  "nifty_ltp": 22684.8,
+  "signal_id": "20261021-144330-LT",
+  "generated_at": "2026-10-21T14:43:30.721026+05:30",
+  "nifty_ltp": 22683.0,
   "candidates": [
     {
       "ticker": "LT",
       "signal": "SELL",
-      "ltp": 3625.1,
-      "stop": 3643.09,
-      "target": 3580.12,
+      "ltp": 3626.6,
+      "stop": 3644.14,
+      "target": 3582.75,
       "qty": 26,
       "indicators": {
         "rsi": 37.6,
         "atr": 7.239,
         "vol_ratio": 1.76
       },
-      "scout_reason": "NIFTY 50 -0.89% oversold for SELL; size cut 50%",
+      "scout_reason": "NIFTY 50 -0.90% oversold for SELL; size cut 50%",
       "candles_5m": [
         [
           "13:05",
@@ -172,26 +172,26 @@
         [
           "14:40",
           3624.2,
-          3625.9,
-          3624.2,
-          3624.5,
-          7247
+          3626.8,
+          3623.5,
+          3625.3,
+          25367
         ]
       ]
     },
     {
       "ticker": "KOTAKBANK",
       "signal": "SELL",
-      "ltp": 436.4,
-      "stop": 438.66,
-      "target": 430.76,
-      "qty": 211,
+      "ltp": 436.55,
+      "stop": 438.72,
+      "target": 431.12,
+      "qty": 218,
       "indicators": {
         "rsi": 48.38,
         "atr": 0.6996,
         "vol_ratio": 1.57
       },
-      "scout_reason": "NIFTY 50 -0.89% oversold for SELL; size cut 50%",
+      "scout_reason": "NIFTY 50 -0.90% oversold for SELL; size cut 50%",
       "candles_5m": [
         [
           "13:05",
@@ -348,26 +348,26 @@
         [
           "14:40",
           436.35,
-          436.45,
-          436.35,
-          436.35,
-          20284
+          436.7,
+          436.1,
+          436.3,
+          108405
         ]
       ]
     },
     {
       "ticker": "POWERGRID",
       "signal": "SELL",
-      "ltp": 247.5,
-      "stop": 248.82,
-      "target": 244.2,
-      "qty": 361,
+      "ltp": 247.65,
+      "stop": 248.95,
+      "target": 244.4,
+      "qty": 367,
       "indicators": {
         "rsi": 49.67,
         "atr": 0.4119,
         "vol_ratio": 1.79
       },
-      "scout_reason": "NIFTY 50 -0.89% oversold for SELL; size cut 50%",
+      "scout_reason": "NIFTY 50 -0.90% oversold for SELL; size cut 50%",
       "candles_5m": [
         [
           "13:05",
@@ -524,26 +524,26 @@
         [
           "14:40",
           247.5,
-          247.6,
+          247.75,
           247.4,
-          247.5,
-          17928
+          247.6,
+          77625
         ]
       ]
     },
     {
       "ticker": "GRASIM",
       "signal": "SELL",
-      "ltp": 2872.4,
-      "stop": 2889.26,
-      "target": 2830.24,
+      "ltp": 2871.8,
+      "stop": 2888.82,
+      "target": 2829.25,
       "qty": 28,
       "indicators": {
         "rsi": 44.87,
         "atr": 5.4543,
         "vol_ratio": 1.89
       },
-      "scout_reason": "NIFTY 50 -0.89% oversold for SELL; size cut 50%",
+      "scout_reason": "NIFTY 50 -0.90% oversold for SELL; size cut 50%",
       "candles_5m": [
         [
           "13:05",
@@ -700,10 +700,10 @@
         [
           "14:40",
           2870.4,
-          2873.2,
-          2870.4,
-          2873.2,
-          902
+          2873.8,
+          2868.7,
+          2868.7,
+          3740
         ]
       ]
     }
