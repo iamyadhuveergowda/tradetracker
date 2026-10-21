@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261021-143048-ADANIPORTS",
-  "generated_at": "2026-10-21T14:30:48.598707+05:30",
-  "nifty_ltp": 22674.0,
+  "signal_id": "20261021-143255-ADANIPORTS",
+  "generated_at": "2026-10-21T14:32:55.874547+05:30",
+  "nifty_ltp": 22683.8,
   "candidates": [
     {
       "ticker": "ADANIPORTS",
       "signal": "SELL",
-      "ltp": 1732.3,
-      "stop": 1742.21,
-      "target": 1707.53,
+      "ltp": 1730.7,
+      "stop": 1740.61,
+      "target": 1705.93,
       "qty": 48,
       "indicators": {
         "rsi": 39.19,
         "atr": 3.1968,
         "vol_ratio": 1.76
       },
-      "scout_reason": "NIFTY 50 -0.94% oversold for SELL; size cut 50%",
+      "scout_reason": "NIFTY 50 -0.90% oversold for SELL; size cut 50%",
       "candles_5m": [
         [
           "12:55",
@@ -173,9 +173,9 @@
           "14:30",
           1731.5,
           1732.4,
+          1730.0,
           1731.0,
-          1731.3,
-          2896
+          9136
         ]
       ]
     }
