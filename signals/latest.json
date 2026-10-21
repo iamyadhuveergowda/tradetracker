@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261021-141600-LT",
-  "generated_at": "2026-10-21T14:16:00.558920+05:30",
-  "nifty_ltp": 22684.1,
+  "signal_id": "20261021-141804-LT",
+  "generated_at": "2026-10-21T14:18:04.587710+05:30",
+  "nifty_ltp": 22682.4,
   "candidates": [
     {
       "ticker": "LT",
       "signal": "SELL",
-      "ltp": 3628.9,
-      "stop": 3647.32,
-      "target": 3582.86,
+      "ltp": 3628.0,
+      "stop": 3646.42,
+      "target": 3581.96,
       "qty": 25,
       "indicators": {
         "rsi": 35.65,
         "atr": 7.0255,
         "vol_ratio": 1.51
       },
-      "scout_reason": "NIFTY 50 -0.89% oversold for SELL; size cut 50%",
+      "scout_reason": "NIFTY 50 -0.90% oversold for SELL; size cut 50%",
       "candles_5m": [
         [
           "12:40",
@@ -172,26 +172,26 @@
         [
           "14:15",
           3625.2,
-          3629.0,
+          3629.7,
           3625.2,
-          3628.9,
-          9876
+          3628.3,
+          69224
         ]
       ]
     },
     {
       "ticker": "POWERGRID",
       "signal": "SELL",
-      "ltp": 247.05,
-      "stop": 248.42,
-      "target": 243.63,
+      "ltp": 247.1,
+      "stop": 248.47,
+      "target": 243.68,
       "qty": 348,
       "indicators": {
         "rsi": 36.45,
         "atr": 0.4156,
         "vol_ratio": 2.23
       },
-      "scout_reason": "NIFTY 50 -0.89% oversold for SELL; size cut 50%",
+      "scout_reason": "NIFTY 50 -0.90% oversold for SELL; size cut 50%",
       "candles_5m": [
         [
           "12:40",
@@ -348,10 +348,10 @@
         [
           "14:15",
           247.05,
-          247.05,
+          247.1,
           246.95,
-          246.95,
-          7948
+          247.1,
+          28367
         ]
       ]
     }
