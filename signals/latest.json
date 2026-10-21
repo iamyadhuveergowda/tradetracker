@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261021-130709-HINDALCO",
-  "generated_at": "2026-10-21T13:07:09.766194+05:30",
-  "nifty_ltp": 22745.35,
+  "signal_id": "20261021-130919-HINDALCO",
+  "generated_at": "2026-10-21T13:09:19.313664+05:30",
+  "nifty_ltp": 22739.5,
   "candidates": [
     {
       "ticker": "HINDALCO",
       "signal": "SELL",
-      "ltp": 889.85,
-      "stop": 895.37,
-      "target": 876.05,
+      "ltp": 889.4,
+      "stop": 894.92,
+      "target": 875.6,
       "qty": 86,
       "indicators": {
         "rsi": 38.05,
         "atr": 1.8093,
         "vol_ratio": 1.6
       },
-      "scout_reason": "NIFTY 50 -0.63% oversold for SELL; size cut 50%",
+      "scout_reason": "NIFTY 50 -0.65% oversold for SELL; size cut 50%",
       "candles_5m": [
         [
           "11:30",
@@ -173,9 +173,9 @@
           "13:05",
           889.8,
           890.25,
-          889.7,
-          889.9,
-          25717
+          889.3,
+          889.6,
+          35100
         ]
       ]
     }
