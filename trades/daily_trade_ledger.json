@@ -967,7 +967,7 @@
     "ticker": "ITC",
     "action": "BUY",
     "qty": 734,
-    "remaining_qty": 734,
+    "remaining_qty": 0,
     "requested_qty": 734,
     "locked_margin_per_share": 52.7,
     "partial_booked": false,
@@ -978,31 +978,47 @@
     "open": 263.55,
     "high": 263.95,
     "low": 263.35,
-    "close": 262.35,
+    "close": 262.1,
     "time": "10:54:58",
-    "status": "OPEN ⏳",
-    "exit_price": null,
-    "net_pnl": 0.0,
+    "status": "LOSS 🔴",
+    "exit_price": 261.84,
+    "net_pnl": -1333.91,
     "rationale": "Entry 263.8 is below VWAP 264.06 and within 0.5 ATR of recent price action; target 267.03 is 3.23 points (3.75 ATR) away, well under the 4.5 ATR fantasy cap and below the expected travel of 7.32 points; stop 262.51 is correctly placed below entry; volume profile shows no distribution against the BUY side; no conflicting news, events, or desk veto; macro regime permits BUY (nifty_day_pct 0.38 > 0.25 only blocks SELLs).",
     "events": [
       {
         "time": "2026-10-21T10:54:58+05:30",
         "type": "ENTRY",
         "text": "PAPER BUY 734 @ ₹263.50"
+      },
+      {
+        "time": "2026-10-21T11:41:18+05:30",
+        "type": "EXIT",
+        "text": "Stop hit: 734 @ ₹261.84, net ₹-1333.91"
       }
     ],
     "mode": "PAPER",
-    "last_price": 262.35,
+    "last_price": 261.84,
     "atr": 0.8614,
     "target_booked": false,
     "breakeven_set": false,
     "mfe_r": 0.388,
-    "mae_r": -0.891,
+    "mae_r": -1.085,
     "size_tag": "standard",
-    "entry_brokerage_remaining": 20.0,
-    "charges": {},
-    "pnl_by_date": {},
+    "entry_brokerage_remaining": 0.0,
+    "charges": {
+      "brokerage": 40.0,
+      "exchange": 11.84,
+      "sebi": 0.39,
+      "stt": 48.05,
+      "stamp": 5.8,
+      "gst": 9.4,
+      "total": 115.47
+    },
+    "pnl_by_date": {
+      "2026-10-21": -1333.91
+    },
     "orders": {},
-    "breakeven_price": 263.69
+    "breakeven_price": 263.69,
+    "exit_time": "2026-10-21T11:41:18+05:30"
   }
 ]
