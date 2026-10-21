@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261021-141144-LT",
-  "generated_at": "2026-10-21T14:11:44.754684+05:30",
-  "nifty_ltp": 22685.55,
+  "signal_id": "20261021-141351-LT",
+  "generated_at": "2026-10-21T14:13:51.798653+05:30",
+  "nifty_ltp": 22693.0,
   "candidates": [
     {
       "ticker": "LT",
       "signal": "SELL",
-      "ltp": 3626.5,
-      "stop": 3644.92,
-      "target": 3580.46,
+      "ltp": 3627.4,
+      "stop": 3645.82,
+      "target": 3581.36,
       "qty": 25,
       "indicators": {
         "rsi": 36.63,
         "atr": 7.189,
         "vol_ratio": 1.72
       },
-      "scout_reason": "NIFTY 50 -0.89% oversold for SELL; size cut 50%",
+      "scout_reason": "NIFTY 50 -0.86% oversold for SELL; size cut 50%",
       "candles_5m": [
         [
           "12:35",
@@ -172,26 +172,26 @@
         [
           "14:10",
           3627.1,
-          3628.5,
-          3626.4,
-          3627.0,
-          9219
+          3629.7,
+          3625.7,
+          3627.4,
+          17257
         ]
       ]
     },
     {
       "ticker": "BAJAJFINSV",
       "signal": "SELL",
-      "ltp": 1668.0,
-      "stop": 1677.13,
-      "target": 1645.17,
+      "ltp": 1668.4,
+      "stop": 1677.53,
+      "target": 1645.57,
       "qty": 52,
       "indicators": {
         "rsi": 46.43,
         "atr": 3.3562,
         "vol_ratio": 5.68
       },
-      "scout_reason": "NIFTY 50 -0.89% oversold for SELL; size cut 50%",
+      "scout_reason": "NIFTY 50 -0.86% oversold for SELL; size cut 50%",
       "candles_5m": [
         [
           "12:35",
@@ -348,10 +348,10 @@
         [
           "14:10",
           1667.2,
-          1668.3,
+          1668.7,
           1667.0,
-          1668.1,
-          6781
+          1668.0,
+          13724
         ]
       ]
     },
@@ -367,7 +367,7 @@
         "atr": 15.9766,
         "vol_ratio": 1.46
       },
-      "scout_reason": "NIFTY 50 -0.89% oversold for SELL; size cut 50%",
+      "scout_reason": "NIFTY 50 -0.86% oversold for SELL; size cut 50%",
       "candles_5m": [
         [
           "12:35",
@@ -524,10 +524,10 @@
         [
           "14:10",
           7573.0,
-          7573.0,
-          7570.5,
-          7570.5,
-          568
+          7574.0,
+          7569.0,
+          7571.0,
+          1253
         ]
       ]
     }
