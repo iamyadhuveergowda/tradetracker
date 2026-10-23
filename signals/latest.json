@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261023-104611-BAJAJFINSV",
-  "generated_at": "2026-10-23T10:46:11.664940+05:30",
-  "nifty_ltp": 22501.6,
+  "signal_id": "20261023-104858-BAJAJFINSV",
+  "generated_at": "2026-10-23T10:48:58.473426+05:30",
+  "nifty_ltp": 22492.4,
   "candidates": [
     {
       "ticker": "BAJAJFINSV",
       "signal": "SELL",
-      "ltp": 1657.9,
-      "stop": 1669.8,
-      "target": 1628.14,
+      "ltp": 1658.4,
+      "stop": 1670.24,
+      "target": 1628.79,
       "qty": 40,
       "indicators": {
         "rsi": 39.01,
         "atr": 4.9192,
         "vol_ratio": 1.85
       },
-      "scout_reason": "NIFTY 50 -0.82% oversold for SELL; size cut 50%",
+      "scout_reason": "NIFTY 50 -0.86% oversold for SELL; size cut 50%",
       "candles_5m": [
         [
           "15:15",
@@ -172,10 +172,10 @@
         [
           "10:45",
           1657.7,
-          1658.3,
+          1658.5,
           1657.4,
-          1658.2,
-          801
+          1658.4,
+          2891
         ]
       ]
     }
