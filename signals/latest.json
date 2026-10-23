@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261023-115503-SBICARD",
-  "generated_at": "2026-10-23T11:55:03.450636+05:30",
-  "nifty_ltp": 22435.8,
+  "signal_id": "20261023-115705-SBICARD",
+  "generated_at": "2026-10-23T11:57:05.579544+05:30",
+  "nifty_ltp": 22429.6,
   "candidates": [
     {
       "ticker": "SBICARD",
       "signal": "SELL",
-      "ltp": 1587.8,
-      "stop": 1602.87,
-      "target": 1550.12,
+      "ltp": 1585.6,
+      "stop": 1600.67,
+      "target": 1547.92,
       "qty": 31,
       "indicators": {
         "rsi": 43.54,
         "atr": 5.0509,
         "vol_ratio": 1.94
       },
-      "scout_reason": "NIFTY 50 -1.11% oversold for SELL; size cut 50%",
+      "scout_reason": "NIFTY 50 -1.14% oversold for SELL; size cut 50%",
       "candles_5m": [
         [
           "10:20",
@@ -173,9 +173,9 @@
           "11:55",
           1586.5,
           1586.5,
-          1586.5,
-          1586.5,
-          2
+          1584.0,
+          1585.5,
+          6827
         ]
       ]
     }
