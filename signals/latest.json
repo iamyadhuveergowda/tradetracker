@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261023-111658-KOTAKBANK",
-  "generated_at": "2026-10-23T11:16:58.285483+05:30",
-  "nifty_ltp": 22492.45,
+  "signal_id": "20261023-111937-KOTAKBANK",
+  "generated_at": "2026-10-23T11:19:37.654923+05:30",
+  "nifty_ltp": 22512.85,
   "candidates": [
     {
       "ticker": "KOTAKBANK",
       "signal": "SELL",
-      "ltp": 432.15,
-      "stop": 434.87,
-      "target": 425.35,
+      "ltp": 432.4,
+      "stop": 435.12,
+      "target": 425.6,
       "qty": 175,
       "indicators": {
         "rsi": 36.74,
         "atr": 1.0259,
         "vol_ratio": 1.43
       },
-      "scout_reason": "NIFTY 50 -0.86% oversold for SELL; size cut 50%",
+      "scout_reason": "NIFTY 50 -0.77% oversold for SELL; size cut 50%",
       "candles_5m": [
         [
           "09:40",
@@ -172,10 +172,10 @@
         [
           "11:15",
           432.15,
-          432.3,
+          432.65,
           431.95,
-          432.05,
-          63937
+          432.3,
+          164419
         ]
       ]
     }
