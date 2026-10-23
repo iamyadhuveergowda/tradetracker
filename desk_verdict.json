@@ -1,0 +1,10 @@
+{
+  "signal_id": "20261023-123010-RELIANCE",
+  "ticker": "RELIANCE",
+  "action": "SELL",
+  "verdict": "SKIP",
+  "confidence": 0,
+  "age_min": 0.0,
+  "analyst_notes": {},
+  "rationale": "Analyst chain encountered a parsing or connection error; defaulting to safe SKIP."
+}
