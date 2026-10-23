@@ -1,41 +1,50 @@
-name: Assistant Desk Multi-Analyst Pipeline
+name: Assistant Desk (advisory, fixed)
 
+# Event-driven: the agent publishes signals/latest.json, this judges the
+# batch. The script dedupes by signal_id, so re-pushes and manual re-runs
+# never judge the same batch twice.
 on:
   push:
     paths:
       - 'signals/latest.json'
-  workflow_dispatch:
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nifty-desk
+  cancel-in-progress: false
 
 jobs:
   run-analyst-desk:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
-
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
-
-      - name: Install Dependencies
-        run: pip install openai requests
-
-      - name: Run Multi-Analyst Chain & Generate Verdict
+          python-version: '3.12'
+      # The desk script is stdlib-only: no dependencies to install.
+      - name: Judge all candidates
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ secrets.GEMINI_MODEL }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python .github/scripts/assistant_desk.py
-
-      - name: Commit and Push Verdict
+      - name: Commit verdict AND history
         run: |
           git config --global user.name "Assistant Desk Bot"
           git config --global user.email "bot@users.noreply.github.com"
-          git add desk_verdict.json
-          git diff --quiet && git diff --staged --quiet || git commit -m "Auto: Assistant desk verdict update [skip ci]"
-          git pull --rebase origin main
-          git push
+          for f in desk_verdict.json desk_history.json; do
+            [ -f "$f" ] && git add "$f"
+          done
+          if git diff --staged --quiet; then
+            echo "No desk changes to commit"
+          else
+            git commit -m "Auto: Assistant desk verdict update [skip ci]"
+            git pull --rebase origin main
+            git push
+          fi
