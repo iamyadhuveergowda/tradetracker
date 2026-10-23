@@ -1,10 +1,15 @@
 {
-  "signal_id": "20261023-123010-RELIANCE",
-  "ticker": "RELIANCE",
+  "signal_id": "20261023-140322-LTIM",
+  "ticker": "LTIM",
   "action": "SELL",
   "verdict": "SKIP",
-  "confidence": 0,
+  "confidence": 28,
   "age_min": 0.0,
-  "analyst_notes": {},
-  "rationale": "Analyst chain encountered a parsing or connection error; defaulting to safe SKIP."
+  "analyst_notes": {
+    "technical": "Price established an intraday bottom at 4130.2 and subsequently rebounded to 4183.2; the latest 5m candle closed green off 4158.6, indicating higher lows rather than clean breakdown continuation. RSI at 46.81 is neutral and lacks downside momentum.",
+    "sentiment": "No adverse company-specific catalyst detected; trading activity shows muted sentiment with volume dropping off significantly on the latest candle.",
+    "macro": "While NIFTY is bearish, IT sector is neutral, indicating relative strength and resistance to broader index weakness. Shorting a resilient sector introduces unwanted friction.",
+    "risk": "The 45.24-point stop (>3x ATR) is excessively wide and inefficient for intraday, while the 4052.21 target demands an unrealistic 113-point drop with limited trading time remaining."
+  },
+  "rationale": "Shorting LTIM here fights sector relative strength and an intraday bounce structure with an overly loose stop. The trade lacks technical breakdown confirmation and intraday risk-reward efficiency."
 }
