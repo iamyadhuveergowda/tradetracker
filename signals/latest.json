@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261023-142540-TECHM",
-  "generated_at": "2026-10-23T14:25:40.261780+05:30",
-  "nifty_ltp": 22546.3,
+  "signal_id": "20261023-142826-TECHM",
+  "generated_at": "2026-10-23T14:28:26.147826+05:30",
+  "nifty_ltp": 22535.9,
   "candidates": [
     {
       "ticker": "TECHM",
       "signal": "SELL",
-      "ltp": 1792.6,
-      "stop": 1804.07,
-      "target": 1763.94,
+      "ltp": 1791.8,
+      "stop": 1803.27,
+      "target": 1763.14,
       "qty": 41,
       "indicators": {
         "rsi": 47.96,
         "atr": 3.7408,
         "vol_ratio": 1.79
       },
-      "scout_reason": "NIFTY 50 -0.62% oversold for SELL; size cut 50%",
+      "scout_reason": "NIFTY 50 -0.67% oversold for SELL; size cut 50%",
       "candles_5m": [
         [
           "12:50",
@@ -173,25 +173,25 @@
           "14:25",
           1792.9,
           1793.4,
-          1791.5,
-          1791.6,
-          2724
+          1790.0,
+          1791.3,
+          16990
         ]
       ]
     },
     {
       "ticker": "DRREDDY",
       "signal": "SELL",
-      "ltp": 1226.1,
-      "stop": 1235.26,
-      "target": 1203.19,
+      "ltp": 1224.6,
+      "stop": 1233.76,
+      "target": 1201.69,
       "qty": 52,
       "indicators": {
         "rsi": 43.6,
         "atr": 3.3841,
         "vol_ratio": 1.86
       },
-      "scout_reason": "NIFTY 50 -0.62% oversold for SELL; size cut 50%",
+      "scout_reason": "NIFTY 50 -0.67% oversold for SELL; size cut 50%",
       "candles_5m": [
         [
           "12:50",
@@ -349,9 +349,9 @@
           "14:25",
           1226.0,
           1226.4,
-          1225.2,
-          1225.5,
-          1461
+          1224.0,
+          1224.7,
+          10708
         ]
       ]
     }
