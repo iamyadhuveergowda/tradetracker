@@ -121,7 +121,7 @@ def run_multi_analyst_pipeline() -> None:
 
     try:
         response = client.chat.completions.create(
-            model="gemini-1.5-flash",
+            model="gemini-3.8-flash",
             temperature=0.1,
             response_format={"type": "json_object"},
             messages=[
