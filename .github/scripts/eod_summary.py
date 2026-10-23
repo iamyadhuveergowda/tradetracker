@@ -157,7 +157,7 @@ def main():
 
     try:
         response = client.chat.completions.create(
-            model=os.getenv("GEMINI_MODEL", "gemini-2.5-flash"),
+            model=os.getenv("GEMINI_MODEL", "gemini-3.8-flash"),
             temperature=0.2,
             messages=[{"role": "user", "content": prompt}],
             max_tokens=1500,
