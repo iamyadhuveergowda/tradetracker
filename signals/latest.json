@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261023-135033-SUNPHARMA",
-  "generated_at": "2026-10-23T13:50:33.511366+05:30",
-  "nifty_ltp": 22553.2,
+  "signal_id": "20261023-135318-SUNPHARMA",
+  "generated_at": "2026-10-23T13:53:18.979362+05:30",
+  "nifty_ltp": 22527.15,
   "candidates": [
     {
       "ticker": "SUNPHARMA",
       "signal": "SELL",
-      "ltp": 1744.8,
-      "stop": 1753.7,
-      "target": 1722.54,
-      "qty": 107,
+      "ltp": 1743.6,
+      "stop": 1752.5,
+      "target": 1721.34,
+      "qty": 53,
       "indicators": {
         "rsi": 41.66,
         "atr": 3.2912,
         "vol_ratio": 2.1
       },
-      "scout_reason": "NIFTY BEARISH, sector PHARMA BEARISH",
+      "scout_reason": "NIFTY 50 -0.71% oversold for SELL; size cut 50%",
       "candles_5m": [
         [
           "12:15",
@@ -173,9 +173,9 @@
           "13:50",
           1744.3,
           1745.0,
-          1743.5,
-          1744.0,
-          1247
+          1743.1,
+          1743.2,
+          5647
         ]
       ]
     }
