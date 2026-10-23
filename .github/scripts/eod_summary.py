@@ -8,7 +8,8 @@ from openai import OpenAI
 
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 HISTORY_FILE = BASE_DIR / "desk_history.json"
-LEDGER_FILE = BASE_DIR / "trades" / "daily_trade_ledger.json"
+LEDGER_FILE_ALT = BASE_DIR / "trades" / "daily_trade_ledger.json"
+LEDGER_FILE = BASE_DIR / "daily_trade_ledger.json" if (BASE_DIR / "daily_trade_ledger.json").exists() else LEDGER_FILE_ALT
 
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "")
@@ -31,12 +32,17 @@ def main():
     # Try to grab local agent PnL snippet
     local_ledger_data = "No local ledger data found."
     try:
-        if LEDGER_FILE.exists():
-            local_ledger_data = str(json.loads(LEDGER_FILE.read_text(encoding="utf-8")))[:1000]
+        target_ledger = LEDGER_FILE if LEDGER_FILE.exists() else LEDGER_FILE_ALT
+        if target_ledger.exists():
+            local_ledger_data = str(json.loads(target_ledger.read_text(encoding="utf-8")))[:1000]
     except Exception:
         pass
 
-    api_key = os.getenv("GEMINI_API_KEY")
+    api_key = os.getenv("GEMINI_API_KEY") or os.getenv("OPENAI_API_KEY")
+    if not api_key:
+        print("Error: GEMINI_API_KEY or OPENAI_API_KEY is not set.")
+        return
+
     client = OpenAI(
         api_key=api_key,
         base_url="https://generativelanguage.googleapis.com/v1beta/openai/"
@@ -68,21 +74,32 @@ def main():
     *Note: Today's {go_count} tracked GO entries are open/unmeasured pending EOD reconciliation.*
     """
 
-    response = client.chat.completions.create(
-        model="gemini-3.8-flash",
-        temperature=0.2,
-        messages=[{"role": "user", "content": prompt}],
-        max_tokens=1500,
-    )
-    report = response.choices[0].message.content.strip()
+    try:
+        response = client.chat.completions.create(
+            model=os.getenv("GEMINI_MODEL", "gemini-2.5-flash"),
+            temperature=0.2,
+            messages=[{"role": "user", "content": prompt}],
+            max_tokens=1500,
+        )
+        report = response.choices[0].message.content.strip()
+    except Exception as e:
+        print(f"LLM call failed: {e}")
+        return
 
     if TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID:
-        requests.post(
-            f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage",
-            json={"chat_id": TELEGRAM_CHAT_ID, "text": report, "parse_mode": "Markdown"},
-        )
-        
-    HISTORY_FILE.write_text("[]", encoding="utf-8")
+        try:
+            requests.post(
+                f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage",
+                json={"chat_id": TELEGRAM_CHAT_ID, "text": report, "parse_mode": "Markdown"},
+                timeout=10
+            )
+        except Exception as e:
+            print(f"Telegram alert failed: {e}")
+            
+    try:
+        HISTORY_FILE.write_text("[]", encoding="utf-8")
+    except Exception as e:
+        print(f"Failed to reset history file: {e}")
 
 if __name__ == "__main__":
     main()
