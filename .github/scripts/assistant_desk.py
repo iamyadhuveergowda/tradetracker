@@ -1,180 +1,260 @@
 #!/usr/bin/env python3
 """
-Assistant Desk Multi-Analyst Engine:
-Runs the 4-analyst institutional debate using Gemini, 
-saves the verdict to the daily history, and pushes an alert to Telegram.
+Assistant desk for the NIFTY intraday agent — ADVISORY ONLY (fixed build).
+
+Judges EVERY candidate in signals/latest.json with Gemini (4-analyst
+framework) and:
+  * writes desk_verdict.json      (latest judged batch)
+  * appends to desk_history.json  (permanent record the EOD scorer grades)
+  * sends one Telegram message per new signal batch
+
+Fixes vs the previous build (reviewed 2026-10-23):
+  * ALL candidates are judged, not only candidates[0].
+  * Records carry entry/stop/target + signal timestamp, so the EOD can
+    actually score them (previously the scorer read prices that were
+    never stored and graded everything PENDING).
+  * signal_id dedupe: re-pushes and manual re-runs never re-judge or
+    re-alert the same batch, and never duplicate history records.
+  * age_min is the real judged delay, not a hardcoded 0.0.
+  * A Gemini failure writes NOTHING and alerts NOTHING — no fabricated
+    SKIP verdicts polluting the track record.
+  * The sentiment analyst has no news feed and is instructed to judge
+    from the tape and say so, instead of asserting headlines it cannot
+    see. The model is one env setting (GEMINI_MODEL) shared with the
+    EOD script; an unset/empty value falls back to the default.
+
+The desk has no connection to the trading agent: nothing here can
+place, block, or modify a trade.
+
+Env (GitHub Actions secrets):
+  GEMINI_API_KEY     required for verdicts
+  GEMINI_MODEL       optional, default "gemini-3.8-flash"
+  TELEGRAM_BOT_TOKEN optional (no Telegram if unset)
+  TELEGRAM_CHAT_ID   optional
+
+Stdlib only.
 """
-
 from __future__ import annotations
-import os
+
 import json
-import re
-import requests
+import os
+import sys
+import urllib.request
+from datetime import datetime
 from pathlib import Path
-from openai import OpenAI
+from zoneinfo import ZoneInfo
 
-BASE_DIR = Path(__file__).resolve().parent.parent.parent
-SIGNALS_FILE = BASE_DIR / "signals" / "latest.json"
-VERDICT_FILE = BASE_DIR / "desk_verdict.json"
-HISTORY_FILE = BASE_DIR / "desk_history.json"
+IST = ZoneInfo("Asia/Kolkata")
+GEMINI_MODEL = os.getenv("GEMINI_MODEL") or "gemini-3.8-flash"
 
-TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "")
-TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "")
 
-def send_telegram_alert(verdict_data: dict, ticker: str, action: str) -> None:
-    if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
-        print("Telegram credentials missing. Skipping alert.")
-        return
+def repo_root() -> Path:
+    override = os.getenv("DESK_REPO_ROOT")
+    if override:
+        return Path(override)
+    # .github/scripts/<this file> -> repo root is parents[2]
+    return Path(__file__).resolve().parents[2]
 
-    verdict = verdict_data.get("verdict", "SKIP")
-    confidence = verdict_data.get("confidence", 0)
-    notes = verdict_data.get("analyst_notes", {})
-    
-    emoji = "🟢" if verdict == "GO" else "🔴"
-    
-    text = (
-        f"{emoji} *ASSISTANT DESK VERDICT* {emoji}\n\n"
-        f"*Ticker:* {ticker} ({action})\n"
-        f"*Decision:* {verdict} (Confidence: {confidence}%)\n\n"
-        f"*Chief's Summary:*\n{verdict_data.get('summary', 'No summary provided.')}\n\n"
-        f"*Analyst Breakdown:*\n"
-        f"📈 *Technical:* {notes.get('technical', 'N/A')}\n"
-        f"📰 *Sentiment:* {notes.get('sentiment', 'N/A')}\n"
-        f"🌍 *Macro:* {notes.get('macro', 'N/A')}\n"
-        f"🛡️ *Risk:* {notes.get('risk', 'N/A')}"
-    )
 
+def load_json(path: Path, default):
     try:
-        resp = requests.post(
-            f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage",
-            json={"chat_id": TELEGRAM_CHAT_ID, "text": text, "parse_mode": "Markdown"},
-            timeout=10,
-        )
-        if not resp.ok:
-            print(f"Telegram send failed: HTTP {resp.status_code} - {resp.text}")
-        else:
-            print("Telegram alert sent successfully.")
-    except Exception as exc:
-        print(f"Telegram exception: {exc}")
-
-def run_multi_analyst_pipeline() -> None:
-    if not SIGNALS_FILE.exists():
-        print("No signals/latest.json found to analyze.")
-        return
-
-    try:
-        data = json.loads(SIGNALS_FILE.read_text(encoding="utf-8"))
-    except Exception as e:
-        print(f"Error reading signals file: {e}")
-        return
-
-    candidates = data.get("candidates", [])
-    if not candidates:
-        print("No candidates found in signals payload.")
-        return
-
-    target_candidate = candidates[0]
-    ticker = target_candidate.get("ticker")
-    action = target_candidate.get("signal")
-    
-    print(f"Starting Gemini 4-Analyst Deep Debate for {ticker} ({action})...")
-
-    api_key = os.getenv("GEMINI_API_KEY")
-    if not api_key:
-        raise RuntimeError("GEMINI_API_KEY secret is missing.")
-
-    # Using Google's OpenAI-compatible endpoint
-    client = OpenAI(
-        api_key=api_key,
-        base_url="https://generativelanguage.googleapis.com/v1beta/openai/"
-    )
-
-    prompt = f"""
-    You are the Chief Investment Officer overseeing a rigorous 4-analyst trading desk.
-    Evaluate the following incoming intraday trade candidate through four distinct professional lenses:
-
-    CANDIDATE SETUP:
-    {json.dumps(target_candidate, indent=2)}
-
-    THE 4-ANALYST DEBATE FRAMEWORK:
-    1. TECHNICAL ANALYST: Evaluate momentum, RSI levels, ATR buffer, distance from VWAP, and candlestick conviction. Is price chasing or is there a clean structure?
-    2. NEWS & SENTIMENT ANALYST: Screen for headline anomalies, unverified noise, or micro-catalysts that could invalidate the technical edge.
-    3. SECTOR & MACRO ANALYST: Check if the sector trend aligns with index momentum (NIFTY/SPY regime rules). Are we fighting the broader tape?
-    4. RISK MANAGER: Scrutinize the Risk-to-Reward ratio, stop-loss placement against noise/harvest zones, and capital exposure.
-
-    CHIEF'S SYNTHESIS & FINAL VERDICT:
-    Weigh all 4 perspectives critically. Default to skepticism. If any analyst flags high structural risk, reject it.
-    
-    Return your output strictly as a JSON object with this exact schema:
-    {{
-      "ticker": "{ticker}",
-      "action": "{action}",
-      "analyst_notes": {{
-        "technical": "Summary of technical view",
-        "sentiment": "Summary of news/sentiment view",
-        "macro": "Summary of sector/macro view",
-        "risk": "Summary of risk manager view"
-      }},
-      "verdict": "GO" or "SKIP",
-      "confidence": <integer between 0 and 100>,
-      "summary": "Concise 2-sentence rationale for the final verdict."
-    }}
-    """
-
-    try:
-        response = client.chat.completions.create(
-            model="gemini-3.8-flash",
-            temperature=0.1,
-            response_format={"type": "json_object"},
-            messages=[
-                {"role": "system", "content": "You are a risk-first institutional investment committee."},
-                {"role": "user", "content": prompt}
-            ],
-            max_tokens=3000,
-        )
-        result_text = response.choices[0].message.content or "{}"
-        
-        # Clean up markdown code blocks if Gemini returns them
-        result_text = re.sub(r"^```(?:json)?|```$", "", result_text.strip(), flags=re.I).strip()
-        
-        verdict_data = json.loads(result_text)
-    except Exception as exc:
-        print(f"Gemini Analyst chain execution failed: {exc}")
-        verdict_data = {
-            "ticker": ticker,
-            "action": action,
-            "verdict": "SKIP",
-            "confidence": 0,
-            "summary": f"Analyst chain encountered a parsing or connection error; defaulting to safe SKIP. Detail: {exc}",
-            "analyst_notes": {}
-        }
-
-    # Fire Telegram Alert (Sends all GO and SKIP decisions)
-    send_telegram_alert(verdict_data, ticker, action)
-
-    # Format and save payload for the Oracle VM
-    final_payload = {
-        "signal_id": data.get("signal_id"),
-        "ticker": ticker,
-        "action": action,
-        "verdict": verdict_data.get("verdict", "SKIP").upper(),
-        "confidence": int(verdict_data.get("confidence", 50)),
-        "age_min": 0.0,
-        "analyst_notes": verdict_data.get("analyst_notes", {}),
-        "rationale": verdict_data.get("summary", "")
-    }
-
-    # Save to daily history ledger for EOD report
-    try:
-        history = json.loads(HISTORY_FILE.read_text(encoding="utf-8")) if HISTORY_FILE.exists() else []
+        return json.loads(path.read_text(encoding="utf-8"))
     except Exception:
-        history = []
-    history.append(final_payload)
-    HISTORY_FILE.write_text(json.dumps(history, indent=2), encoding="utf-8")
+        return default
 
-    # Update latest verdict for the VM
-    VERDICT_FILE.write_text(json.dumps(final_payload, indent=2), encoding="utf-8")
-    print(f"Successfully generated desk verdict for {ticker}: {final_payload['verdict']} (Confidence: {final_payload['confidence']}%)")
+
+def save_json(path: Path, data) -> None:
+    path.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
+
+
+def gemini_judge(candidates: list[dict], nifty_ltp, signal_time_ist: str) -> list[dict]:
+    """One Gemini call judging all candidates through the 4-analyst
+    framework. Returns one verdict dict per candidate (ticker-matched).
+    Raises on transport/API failure — the caller writes nothing then."""
+    api_key = os.environ["GEMINI_API_KEY"]
+    features = []
+    for c in candidates:
+        entry, stop, tgt = float(c["ltp"]), float(c["stop"]), float(c["target"])
+        atr = float(c.get("indicators", {}).get("atr") or 0) or 0.0
+        risk = abs(entry - stop)
+        features.append({
+            "ticker": c["ticker"], "action": c["signal"],
+            "entry": entry, "stop": stop, "target": tgt,
+            "qty": c.get("qty", 0),
+            "rsi": c.get("indicators", {}).get("rsi"),
+            "atr": atr,
+            "vol_ratio": c.get("indicators", {}).get("vol_ratio"),
+            "stop_distance_atr": round(risk / atr, 2) if atr > 0 else None,
+            "target_distance_atr": round(abs(tgt - entry) / atr, 2) if atr > 0 else None,
+            "reward_to_risk": round(abs(tgt - entry) / risk, 2) if risk > 0 else None,
+            "scout_reason": c.get("scout_reason", ""),
+            "candles_5m_last12": (c.get("candles_5m") or [])[-12:],
+        })
+    prompt = (
+        "You are the Chief Investment Officer overseeing a 4-analyst desk for a NIFTY "
+        "intraday paper-trading system. This is an ADVISORY review: verdicts are logged "
+        "and graded at end of day; you do not place trades.\n\n"
+        f"Session context: signal time {signal_time_ist} IST (session 09:15-15:30). "
+        f"NIFTY spot: {nifty_ltp if nifty_ltp is not None else 'unknown'}. Candles are "
+        "5-minute bars [time, open, high, low, close, volume].\n\n"
+        "Evaluate EACH candidate through four lenses:\n"
+        "1. TECHNICAL: momentum, RSI, ATR buffer, candle structure — clean setup or chasing?\n"
+        "2. SENTIMENT: you have NO news feed. Judge sentiment ONLY from the tape "
+        "(volume behaviour, follow-through, sector-wide prints visible in the data) and "
+        "state plainly that no headline information is available. Never claim a stock "
+        "has 'no negative news' — you cannot know that.\n"
+        "3. MACRO: does the trade direction align with the index tape and the time of day? "
+        "Late-session entries need exceptional structure.\n"
+        "4. RISK: reward:risk, stop distance in ATR, whether the target is reachable in "
+        "the time remaining.\n\n"
+        "Default to skepticism: a SKIP costs nothing. Return ONLY this JSON: "
+        "{\"verdicts\": [{\"ticker\": str, \"verdict\": \"GO\"|\"SKIP\", "
+        "\"confidence\": int 0-100, \"analyst_notes\": {\"technical\": str, "
+        "\"sentiment\": str, \"macro\": str, \"risk\": str}, \"summary\": str}]} "
+        "— one entry per candidate, citing concrete numbers from the payload.\n\n"
+        f"Candidates: {json.dumps(features)}"
+    )
+    body = {
+        "contents": [{"parts": [{"text": prompt}]}],
+        "generationConfig": {"temperature": 0.2, "responseMimeType": "application/json"},
+    }
+    req = urllib.request.Request(
+        f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent",
+        data=json.dumps(body).encode("utf-8"),
+        headers={"Content-Type": "application/json", "x-goog-api-key": api_key},
+        method="POST",
+    )
+    with urllib.request.urlopen(req, timeout=60) as resp:
+        data = json.loads(resp.read().decode("utf-8"))
+    text = data["candidates"][0]["content"]["parts"][0]["text"]
+    parsed = json.loads(text)
+    verdicts = parsed.get("verdicts", [])
+    by_ticker = {str(v.get("ticker", "")).upper(): v for v in verdicts if isinstance(v, dict)}
+    out = []
+    for c in candidates:
+        v = by_ticker.get(c["ticker"].upper())
+        if v is None:
+            raise RuntimeError(f"Gemini returned no verdict for {c['ticker']}")
+        verdict = str(v.get("verdict", "SKIP")).upper()
+        if verdict not in ("GO", "SKIP"):
+            verdict = "SKIP"
+        try:
+            conf = max(0, min(100, int(v.get("confidence", 0))))
+        except (TypeError, ValueError):
+            conf = 0
+        notes = v.get("analyst_notes") if isinstance(v.get("analyst_notes"), dict) else {}
+        out.append({
+            "ticker": c["ticker"], "verdict": verdict, "confidence": conf,
+            "analyst_notes": {
+                "technical": str(notes.get("technical", "")),
+                "sentiment": str(notes.get("sentiment", "")),
+                "macro": str(notes.get("macro", "")),
+                "risk": str(notes.get("risk", "")),
+            },
+            "summary": str(v.get("summary", "")),
+        })
+    return out
+
+
+def send_telegram(text: str) -> None:
+    token = os.getenv("TELEGRAM_BOT_TOKEN", "")
+    chat = os.getenv("TELEGRAM_CHAT_ID", "")
+    if not token or not chat:
+        print("Telegram not configured; message was:\n" + text)
+        return
+    req = urllib.request.Request(
+        f"https://api.telegram.org/bot{token}/sendMessage",
+        data=json.dumps({"chat_id": chat, "text": text}).encode("utf-8"),
+        headers={"Content-Type": "application/json"},
+        method="POST",
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=20) as resp:
+            if resp.status != 200:
+                print(f"Telegram send failed: HTTP {resp.status}", file=sys.stderr)
+    except Exception as exc:  # fail-soft: never fail the run over an alert
+        print(f"Telegram send failed: {exc}", file=sys.stderr)
+
+
+def main() -> int:
+    root = repo_root()
+    latest_path = root / "signals" / "latest.json"
+    verdict_path = root / "desk_verdict.json"
+    history_path = root / "desk_history.json"
+
+    latest = load_json(latest_path, None)
+    if not latest or not latest.get("candidates"):
+        print("No candidates in signals/latest.json; nothing to judge.")
+        return 0
+
+    signal_id = str(latest.get("signal_id", ""))
+    try:
+        gen = datetime.fromisoformat(str(latest["generated_at"]))
+    except Exception:
+        print("latest.json has no parseable generated_at; skipping.")
+        return 0
+    gen_ist = gen.astimezone(IST)
+    now_ist = datetime.now(IST)
+    age_min = round((now_ist - gen_ist).total_seconds() / 60.0, 1)
+
+    history = load_json(history_path, [])
+    if not isinstance(history, list):
+        history = []
+    if any(isinstance(r, dict) and r.get("signal_id") == signal_id for r in history):
+        print(f"Signal {signal_id} already judged; skipping.")
+        return 0
+
+    if not os.getenv("GEMINI_API_KEY"):
+        print("GEMINI_API_KEY not set; cannot judge.", file=sys.stderr)
+        return 0
+
+    try:
+        verdicts = gemini_judge(latest["candidates"], latest.get("nifty_ltp"),
+                                gen_ist.strftime("%H:%M"))
+    except Exception as exc:
+        # Honest failure: no fabricated verdict, no history pollution.
+        print(f"Gemini judging failed: {exc}", file=sys.stderr)
+        return 0
+
+    judged_at = now_ist.isoformat(timespec="seconds")
+    cand_by_ticker = {c["ticker"]: c for c in latest["candidates"]}
+    records = []
+    for v in verdicts:
+        c = cand_by_ticker[v["ticker"]]
+        records.append({
+            "signal_id": signal_id,
+            "signal_time": gen_ist.isoformat(timespec="seconds"),
+            "judged_at": judged_at,
+            "age_min": age_min,
+            "ticker": v["ticker"], "action": c["signal"],
+            "entry": float(c["ltp"]), "stop": float(c["stop"]), "target": float(c["target"]),
+            "qty": c.get("qty", 0),
+            "verdict": v["verdict"], "confidence": v["confidence"],
+            "analyst_notes": v["analyst_notes"],
+            "rationale": v["summary"],
+            "outcome": None, "outcome_r": None, "outcome_at": None,
+        })
+    history.extend(records)
+    save_json(history_path, history)
+    save_json(verdict_path, {
+        "signal_id": signal_id, "judged_at": judged_at,
+        "age_min": age_min, "advisory_only": True, "verdicts": records,
+    })
+
+    lines = [f"ASSISTANT DESK (advisory) — {gen_ist:%H:%M} IST · NIFTY {latest.get('nifty_ltp', 'n/a')}"]
+    for r in records:
+        icon = "GO ✅" if r["verdict"] == "GO" else "SKIP ⛔"
+        lines.append(f"{r['ticker']} {r['action']} @ {r['entry']:.2f} → {icon} ({r['confidence']})")
+        if r["rationale"]:
+            lines.append(f"  {r['rationale'][:220]}")
+        tech = (r["analyst_notes"] or {}).get("technical", "")
+        if tech:
+            lines.append(f"  Technical: {tech[:180]}")
+    lines.append("Advisory only — the agent does not see this verdict.")
+    send_telegram("\n".join(lines))
+    print(f"Judged {len(records)} candidate(s) from {signal_id} (age {age_min} min).")
+    return 0
+
 
 if __name__ == "__main__":
-    run_multi_analyst_pipeline()
+    raise SystemExit(main())
