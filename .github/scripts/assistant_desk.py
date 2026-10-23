@@ -2,7 +2,7 @@
 """
 Assistant Desk Multi-Analyst Engine:
 Runs the 4-analyst institutional debate using Gemini, 
-saves the verdict, and pushes an alert to Telegram.
+saves the verdict to the daily history, and pushes an alert to Telegram.
 """
 
 from __future__ import annotations
@@ -16,6 +16,7 @@ from openai import OpenAI
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 SIGNALS_FILE = BASE_DIR / "signals" / "latest.json"
 VERDICT_FILE = BASE_DIR / "desk_verdict.json"
+HISTORY_FILE = BASE_DIR / "desk_history.json"
 
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "")
@@ -148,7 +149,7 @@ def run_multi_analyst_pipeline() -> None:
             "analyst_notes": {}
         }
 
-    # Fire Telegram Alert
+    # Fire Telegram Alert (Sends all GO and SKIP decisions)
     send_telegram_alert(verdict_data, ticker, action)
 
     # Format and save payload for the Oracle VM
@@ -163,6 +164,15 @@ def run_multi_analyst_pipeline() -> None:
         "rationale": verdict_data.get("summary", "")
     }
 
+    # Save to daily history ledger for EOD report
+    try:
+        history = json.loads(HISTORY_FILE.read_text(encoding="utf-8")) if HISTORY_FILE.exists() else []
+    except Exception:
+        history = []
+    history.append(final_payload)
+    HISTORY_FILE.write_text(json.dumps(history, indent=2), encoding="utf-8")
+
+    # Update latest verdict for the VM
     VERDICT_FILE.write_text(json.dumps(final_payload, indent=2), encoding="utf-8")
     print(f"Successfully generated desk verdict for {ticker}: {final_payload['verdict']} (Confidence: {final_payload['confidence']}%)")
 
