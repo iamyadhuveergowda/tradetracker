@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261023-141052-SUNPHARMA",
-  "generated_at": "2026-10-23T14:10:52.217472+05:30",
-  "nifty_ltp": 22546.0,
+  "signal_id": "20261023-141255-SUNPHARMA",
+  "generated_at": "2026-10-23T14:12:55.689702+05:30",
+  "nifty_ltp": 22550.55,
   "candidates": [
     {
       "ticker": "SUNPHARMA",
       "signal": "SELL",
-      "ltp": 1744.9,
-      "stop": 1753.78,
-      "target": 1722.7,
-      "qty": 53,
+      "ltp": 1744.3,
+      "stop": 1753.18,
+      "target": 1722.1,
+      "qty": 107,
       "indicators": {
         "rsi": 44.16,
         "atr": 3.0725,
         "vol_ratio": 1.37
       },
-      "scout_reason": "NIFTY 50 -0.62% oversold for SELL; size cut 50%",
+      "scout_reason": "NIFTY BEARISH, sector PHARMA BEARISH",
       "candles_5m": [
         [
           "12:35",
@@ -173,25 +173,25 @@
           "14:10",
           1745.0,
           1745.2,
-          1744.9,
+          1744.1,
           1745.0,
-          1159
+          4296
         ]
       ]
     },
     {
       "ticker": "BRITANNIA",
       "signal": "SELL",
-      "ltp": 4558.9,
-      "stop": 4583.38,
-      "target": 4497.71,
-      "qty": 19,
+      "ltp": 4555.0,
+      "stop": 4579.48,
+      "target": 4493.81,
+      "qty": 39,
       "indicators": {
         "rsi": 49.5,
         "atr": 8.0626,
         "vol_ratio": 2.42
       },
-      "scout_reason": "NIFTY 50 -0.62% oversold for SELL; size cut 50%",
+      "scout_reason": "NIFTY BEARISH, sector FMCG BEARISH",
       "candles_5m": [
         [
           "12:35",
@@ -349,25 +349,25 @@
           "14:10",
           4556.9,
           4559.4,
-          4555.1,
-          4557.3,
-          317
+          4553.5,
+          4556.0,
+          1451
         ]
       ]
     },
     {
       "ticker": "LTIM",
       "signal": "SELL",
-      "ltp": 4156.3,
-      "stop": 4201.54,
-      "target": 4043.21,
-      "qty": 10,
+      "ltp": 4154.5,
+      "stop": 4199.74,
+      "target": 4041.41,
+      "qty": 21,
       "indicators": {
         "rsi": 44.64,
         "atr": 13.8595,
         "vol_ratio": 1.95
       },
-      "scout_reason": "NIFTY 50 -0.62% oversold for SELL; size cut 50%",
+      "scout_reason": "NIFTY BEARISH, sector IT NEUTRAL",
       "candles_5m": [
         [
           "12:35",
@@ -524,10 +524,10 @@
         [
           "14:10",
           4154.9,
-          4157.8,
-          4154.7,
-          4157.7,
-          270
+          4159.9,
+          4151.8,
+          4155.0,
+          1664
         ]
       ]
     }
