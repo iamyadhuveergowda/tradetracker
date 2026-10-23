@@ -1,199 +1,362 @@
 #!/usr/bin/env python3
-import os
+"""
+End-of-day summary for the NIFTY intraday agent — deterministic first
+(fixed build).
+
+Two books are reported:
+  1. AGENT BOOK — statistics computed IN CODE from the full
+     trades/daily_trade_ledger.json. (The previous build fed the LLM a
+     1,000-character truncated snippet of the ledger and asked it to
+     summarise the "cumulative book" from that.)
+  2. DESK BOOK — every advisory verdict in desk_history.json is scored
+     against what price did AFTER the signal time (yfinance 5-minute
+     bars sliced from the signal timestamp to the 15:30 close — the
+     previous build used the FULL DAY's high/low, so a stop touched
+     hours before the signal existed counted against the verdict).
+     First hit of target vs stop wins; a bar touching both is
+     AMBIGUOUS (excluded from accuracy), never an automatic loss.
+     Outcomes are written back into desk_history.json: the history is
+     the desk's permanent track record and is NEVER wiped.
+
+The LLM (Gemini) only narrates the computed numbers. The prompt forbids
+inventing figures and forbids rule-change prescriptions.
+
+Env (GitHub Actions secrets):
+  GEMINI_API_KEY / GEMINI_MODEL   optional narration (stats-only if unset)
+  TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID   optional delivery
+  (yfinance needs no key.)
+
+Usage: python3 eod_summary.py [--date YYYY-MM-DD] [--no-send]
+"""
+from __future__ import annotations
+
+import argparse
 import json
-import requests
-from datetime import datetime
+import os
+import re
+import statistics
+import sys
+import urllib.request
+from datetime import datetime, time as dtime
 from pathlib import Path
-from openai import OpenAI
-import yfinance as yf
+from zoneinfo import ZoneInfo
 
-BASE_DIR = Path(__file__).resolve().parent.parent.parent
-HISTORY_FILE = BASE_DIR / "desk_history.json"
-LEDGER_FILE_ALT = BASE_DIR / "trades" / "daily_trade_ledger.json"
-LEDGER_FILE = BASE_DIR / "daily_trade_ledger.json" if (BASE_DIR / "daily_trade_ledger.json").exists() else LEDGER_FILE_ALT
+IST = ZoneInfo("Asia/Kolkata")
+GEMINI_MODEL = os.getenv("GEMINI_MODEL") or "gemini-3.8-flash"
+WIN, LOSS, EXPIRED = "WIN 🟢", "LOSS 🔴", "EXPIRED ⚪"
+SCORE_WINDOW_DAYS = 10  # older unscored records are closed as NO_DATA
 
-TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "").strip()
-TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "").strip()
 
-def evaluate_signal_outcome(signal):
-    """Programmatically check if a signal hit target or stop loss using yfinance."""
-    ticker = signal.get("ticker")
-    action = str(signal.get("action", "BUY")).upper()
-    entry = float(signal.get("entry", 0))
-    tgt = float(signal.get("tgt", 0))
-    sl = float(signal.get("sl", 0))
-    
-    if not ticker or entry <= 0:
-        return "PENDING", 0.0
+def repo_root() -> Path:
+    override = os.getenv("DESK_REPO_ROOT")
+    if override:
+        return Path(override)
+    return Path(__file__).resolve().parents[2]
 
+
+def load_json(path: Path, default):
     try:
-        # Fetch today's price action for the NSE stock
-        data = yf.download(f"{ticker}.NS", period="1d", interval="5m", progress=False)
-        if data.empty:
-            data = yf.download(f"{ticker}.NS", period="5d", interval="1d", progress=False)
-        
-        if data.empty:
-            return "NO_DATA", 0.0
+        return json.loads(path.read_text(encoding="utf-8"))
+    except Exception:
+        return default
 
-        day_high = float(data["High"].max())
-        day_low = float(data["Low"].min())
 
-        hit_target = False
-        hit_stop = False
+def save_json(path: Path, data) -> None:
+    path.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
 
-        if action == "BUY":
-            if day_high >= tgt:
-                hit_target = True
-            if day_low <= sl:
-                hit_stop = True
-        else: # SELL / SHORT
-            if day_low <= tgt:
-                hit_target = True
-            if day_high >= sl:
-                hit_stop = True
 
-        if hit_target and not hit_stop:
-            return "WIN", abs(tgt - entry)
-        elif hit_stop and not hit_target:
-            return "LOSS", -abs(entry - sl)
-        elif hit_target and hit_stop:
-            return "MIXED/STOP", -abs(entry - sl)
+# ---------------------------------------------------------------------------
+# Agent book statistics (pure functions of the ledger)
+# ---------------------------------------------------------------------------
+def trade_r(t: dict) -> float | None:
+    try:
+        risk = abs(float(t["entry"]) - float(t["initial_sl"])) * int(t["qty"])
+        if risk <= 0:
+            return None
+        return float(t["net_pnl"]) / risk
+    except Exception:
+        return None
+
+
+def exit_reason(t: dict) -> str:
+    exits = [e.get("text", "") for e in t.get("events", []) if e.get("type") == "EXIT"]
+    if not exits:
+        return "unknown"
+    # NIFTY exit texts may open with a time ("15:10 square-off: ...");
+    # strip a leading HH:MM so the reason isn't the fragment "15".
+    txt = re.sub(r"^\d{1,2}:\d{2}\s*", "", exits[-1])
+    return txt.split(":")[0].strip() or "unknown"
+
+
+def book_stats(trades: list[dict]) -> dict:
+    settled = [t for t in trades if t.get("status") in (WIN, LOSS, EXPIRED)]
+    wins = [t for t in settled if float(t.get("net_pnl", 0)) > 0]
+    losses = [t for t in settled if float(t.get("net_pnl", 0)) <= 0]
+    rs = [r for r in (trade_r(t) for t in settled) if r is not None]
+    by_side, reasons = {}, {}
+    for side in ("BUY", "SELL"):
+        s = [t for t in settled if t.get("action") == side]
+        if s:
+            by_side[side] = {
+                "n": len(s),
+                "wins": sum(1 for t in s if float(t.get("net_pnl", 0)) > 0),
+                "net": round(sum(float(t.get("net_pnl", 0)) for t in s), 2),
+            }
+    for t in settled:
+        reasons[exit_reason(t)] = reasons.get(exit_reason(t), 0) + 1
+    return {
+        "settled": len(settled),
+        "wins": len(wins), "losses": len(losses),
+        "win_rate_pct": round(100.0 * len(wins) / len(settled), 1) if settled else None,
+        "net_inr": round(sum(float(t.get("net_pnl", 0)) for t in settled), 2),
+        "avg_win_inr": round(statistics.mean(float(t["net_pnl"]) for t in wins), 2) if wins else None,
+        "avg_loss_inr": round(statistics.mean(float(t["net_pnl"]) for t in losses), 2) if losses else None,
+        "mean_r": round(statistics.mean(rs), 2) if rs else None,
+        "median_r": round(statistics.median(rs), 2) if rs else None,
+        "by_side": by_side,
+        "exit_reasons": reasons,
+    }
+
+
+# ---------------------------------------------------------------------------
+# Desk outcome scoring against post-signal bars
+# ---------------------------------------------------------------------------
+def fetch_day_rows(ticker: str, day) -> list[dict]:
+    """5-minute bars for one IST date via yfinance, as plain rows
+    [{'t': aware datetime IST, 'h','l','c'}]. [] on any failure."""
+    try:
+        import yfinance as yf
+    except Exception as exc:
+        print(f"yfinance unavailable: {exc}", file=sys.stderr)
+        return []
+    try:
+        data = yf.download(f"{ticker}.NS", period="5d", interval="5m",
+                           progress=False, auto_adjust=False)
+        if data is None or len(data) == 0:
+            return []
+        if hasattr(data.columns, "nlevels") and data.columns.nlevels > 1:
+            data.columns = data.columns.get_level_values(0)
+        rows = []
+        for ts, row in data.iterrows():
+            t = ts.to_pydatetime()
+            if t.tzinfo is None:
+                t = t.replace(tzinfo=IST)
+            t = t.astimezone(IST)
+            if t.date() != day:
+                continue
+            rows.append({"t": t, "h": float(row["High"]),
+                         "l": float(row["Low"]), "c": float(row["Close"])})
+        rows.sort(key=lambda r: r["t"])
+        return rows
+    except Exception as exc:
+        print(f"Bars fetch failed for {ticker}: {exc}", file=sys.stderr)
+        return []
+
+
+def slice_from_signal(rows: list[dict], signal_dt: datetime) -> list[dict]:
+    """Only bars that START at or after the signal time — price action
+    from before the signal existed must not grade the verdict."""
+    return [r for r in rows if r["t"] >= signal_dt]
+
+
+def score_record(rec: dict, rows: list[dict]) -> tuple[str, float | None]:
+    """First-hit scoring, signal time -> 15:30 close. Theoretical R."""
+    entry, stop, tgt = float(rec["entry"]), float(rec["stop"]), float(rec["target"])
+    risk = abs(entry - stop)
+    if risk <= 0 or not rows:
+        return "PENDING", None
+    buy = rec["action"] == "BUY"
+    reward_r = abs(tgt - entry) / risk
+    for b in rows:
+        hit_t = (b["h"] >= tgt) if buy else (b["l"] <= tgt)
+        hit_s = (b["l"] <= stop) if buy else (b["h"] >= stop)
+        if hit_t and hit_s:
+            return "AMBIGUOUS", None
+        if hit_t:
+            return "TARGET", round(reward_r, 2)
+        if hit_s:
+            return "STOP", -1.0
+    last_close = float(rows[-1]["c"])
+    r = (last_close - entry) / risk if buy else (entry - last_close) / risk
+    return "CLOSE", round(r, 2)
+
+
+def desk_stats(records: list[dict]) -> dict:
+    scored = [r for r in records if r.get("outcome") in ("TARGET", "STOP", "CLOSE")]
+    amb = sum(1 for r in records if r.get("outcome") == "AMBIGUOUS")
+    out = {"judged": len(records), "scored": len(scored), "ambiguous": amb}
+    for verdict in ("GO", "SKIP"):
+        s = [r for r in scored if r.get("verdict") == verdict]
+        if not s:
+            out[verdict] = None
+            continue
+        rs = [float(r["outcome_r"]) for r in s if r.get("outcome_r") is not None]
+        if verdict == "GO":
+            good = sum(1 for r in rs if r > 0)
+            out[verdict] = {"n": len(s), "positive_r_pct": round(100.0 * good / len(s), 1),
+                            "mean_r_if_taken": round(statistics.mean(rs), 2) if rs else None}
         else:
-            return "OPEN/EXPIRED", 0.0
-    except Exception as e:
-        print(f"Failed to fetch price for {ticker}: {e}")
-        return "ERROR", 0.0
+            avoided = sum(1 for r in s if r.get("outcome") == "STOP"
+                          or (r.get("outcome_r") is not None and float(r["outcome_r"]) < 0))
+            out[verdict] = {"n": len(s), "would_have_lost_pct": round(100.0 * avoided / len(s), 1),
+                            "mean_r_if_taken": round(statistics.mean(rs), 2) if rs else None}
+    return out
 
-def main():
-    print(f"Reading history from: {HISTORY_FILE}")
+
+# ---------------------------------------------------------------------------
+# Narration + delivery
+# ---------------------------------------------------------------------------
+def narrate(stats: dict) -> str:
+    api_key = os.getenv("GEMINI_API_KEY", "")
+    if not api_key:
+        return ""
+    prompt = (
+        "You are writing the end-of-day note for a NIFTY intraday paper-trading desk. "
+        "Below are statistics computed in code — they are the ONLY facts you may use. "
+        "Write 3-5 short bullet observations in plain language. Rules: use only the "
+        "numbers given; never invent a figure; never prescribe a rule change or a "
+        "parameter value (observations only — strategy changes are a monthly human "
+        "decision); if the sample is tiny, say so plainly.\n\n"
+        f"STATS: {json.dumps(stats)}"
+    )
+    body = {"contents": [{"parts": [{"text": prompt}]}],
+            "generationConfig": {"temperature": 0.3}}
+    req = urllib.request.Request(
+        f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent",
+        data=json.dumps(body).encode("utf-8"),
+        headers={"Content-Type": "application/json", "x-goog-api-key": api_key},
+        method="POST")
     try:
-        history = json.loads(HISTORY_FILE.read_text(encoding="utf-8")) if HISTORY_FILE.exists() else []
-    except Exception as e:
-        print(f"Error reading history file: {e}")
+        with urllib.request.urlopen(req, timeout=60) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+        return data["candidates"][0]["content"]["parts"][0]["text"].strip()
+    except Exception as exc:
+        print(f"Narration failed: {exc}", file=sys.stderr)
+        return ""
+
+
+def send_telegram(text: str) -> None:
+    token = os.getenv("TELEGRAM_BOT_TOKEN", "")
+    chat = os.getenv("TELEGRAM_CHAT_ID", "")
+    if not token or not chat:
+        print("Telegram not configured; message was:\n" + text)
+        return
+    req = urllib.request.Request(
+        f"https://api.telegram.org/bot{token}/sendMessage",
+        data=json.dumps({"chat_id": chat, "text": text}).encode("utf-8"),
+        headers={"Content-Type": "application/json"}, method="POST")
+    try:
+        with urllib.request.urlopen(req, timeout=20) as resp:
+            if resp.status != 200:
+                print(f"Telegram send failed: HTTP {resp.status}", file=sys.stderr)
+    except Exception as exc:
+        print(f"Telegram send failed: {exc}", file=sys.stderr)
+
+
+def fmt_book(label: str, s: dict) -> str:
+    if not s["settled"]:
+        return f"{label}: no settled trades"
+    aw = s['avg_win_inr'] if s['avg_win_inr'] is not None else "—"
+    al = s['avg_loss_inr'] if s['avg_loss_inr'] is not None else "—"
+    sides = " · ".join(
+        f"{k} {v['n']} trades, {v['wins']}W, ₹{v['net']:+,.2f}" for k, v in s["by_side"].items())
+    reasons = ", ".join(f"{k} ×{v}" for k, v in sorted(s["exit_reasons"].items()))
+    return (f"{label}: {s['settled']} settled · {s['wins']}W/{s['losses']}L "
+            f"({s['win_rate_pct']}%) · net ₹{s['net_inr']:+,.2f}\n"
+            f"  avg win ₹{aw} / avg loss ₹{al} · "
+            f"mean R {s['mean_r']} · median R {s['median_r']}\n"
+            f"  {sides}\n  exits: {reasons}")
+
+
+def main() -> int:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--date", help="IST date to report (default: today IST)")
+    ap.add_argument("--no-send", action="store_true")
+    args = ap.parse_args()
+
+    root = repo_root()
+    ledger = load_json(root / "trades" / "daily_trade_ledger.json", [])
+    history_path = root / "desk_history.json"
+    history = load_json(history_path, [])
+    if not isinstance(ledger, list):
+        ledger = []
+    if not isinstance(history, list):
         history = []
 
-    if not history:
-        print("Notice: desk_history.json is empty or missing.")
-        return
+    now_ist = datetime.now(IST)
+    report_date = args.date or now_ist.date().isoformat()
 
-    date_str = datetime.now().strftime("%d %b %Y")
-    total_signals = len(history)
-    
-    evaluated_results = []
-    go_wins = 0
-    go_losses = 0
-    skip_correct = 0
-    skip_total = 0
-
-    for h in history:
-        verdict = h.get("verdict", "SKIP")
-        outcome, pnl_pts = evaluate_signal_outcome(h)
-        h["evaluated_outcome"] = outcome
-        h["pnl_pts"] = pnl_pts
-        evaluated_results.append(h)
-
-        if verdict == "GO":
-            if outcome == "WIN":
-                go_wins += 1
-            elif outcome in ("LOSS", "MIXED/STOP"):
-                go_losses += 1
-        elif verdict == "SKIP":
-            skip_total += 1
-            if outcome in ("LOSS", "MIXED/STOP", "OPEN/EXPIRED"):
-                skip_correct += 1
-
-    go_total_settled = go_wins + go_losses
-    go_win_rate = (go_wins / go_total_settled * 100) if go_total_settled > 0 else 0.0
-    skip_accuracy = (skip_correct / skip_total * 100) if skip_total > 0 else 0.0
-
-    go_count = sum(1 for h in history if h.get("verdict") == "GO")
-    skip_count = sum(1 for h in history if h.get("verdict") == "SKIP")
-    
-    local_ledger_data = "No local ledger data found."
-    try:
-        target_ledger = LEDGER_FILE if LEDGER_FILE.exists() else LEDGER_FILE_ALT
-        if target_ledger.exists():
-            local_ledger_data = str(json.loads(target_ledger.read_text(encoding="utf-8")))[:1000]
-    except Exception:
-        pass
-
-    api_key = os.getenv("GEMINI_API_KEY") or os.getenv("OPENAI_API_KEY")
-    if not api_key:
-        print("Error: API key is not set.")
-        return
-
-    client = OpenAI(
-        api_key=api_key,
-        base_url="https://generativelanguage.googleapis.com/v1beta/openai/"
-    )
-
-    prompt = f"""
-    You are the Chief Investment Officer. Generate an End-of-Day Performance Ledger based on the programmatic price evaluation results. Do not use code blocks, just raw markdown.
-    
-    Today's Date: {date_str}
-    Total Signals Evaluated: {total_signals}
-    GO: {go_count}, SKIP: {skip_count}
-    
-    Programmatic Outcome Metrics:
-    - GO Win Rate: {go_win_rate:.1f}% ({go_wins} wins, {go_losses} losses out of {go_total_settled} settled)
-    - SKIP Veto Accuracy: {skip_accuracy:.1f}% ({skip_correct} correct skips out of {skip_total})
-    
-    Detailed Evaluation History:
-    {json.dumps(evaluated_results, indent=2)}
-    
-    Local Agent Ledger Snippet: {local_ledger_data}
-    
-    OUTPUT FORMAT EXACTLY LIKE THIS:
-    *EOD Performance Ledger — {date_str}*
-    Signals evaluated: {total_signals} (tracked: {go_count} GO / {skip_count} SKIP)
-    GO simulated: win rate {go_win_rate:.1f}% | settled: {go_wins}W {go_losses}L
-    SKIP veto accuracy: {skip_accuracy:.1f}% ({skip_correct} of {skip_total} safe avoids)
-    Shadow desk book (cumulative): {total_signals} trades evaluated via live market high/low
-    Local agent laptop book (cumulative): summary from ledger snippet
-    
-    *Learnings & Market Behavior:*
-    [Provide a concise 2-paragraph analysis detailing which specific tickers hit targets or stops, why the desk's GO/SKIP decisions succeeded or failed based on price action, and what rules we can embed into the main agent next.]
-    """
-
-    try:
-        response = client.chat.completions.create(
-            model=os.getenv("GEMINI_MODEL", "gemini-3.8-flash"),
-            temperature=0.2,
-            messages=[{"role": "user", "content": prompt}],
-            max_tokens=1500,
-        )
-        report = response.choices[0].message.content.strip()
-
-        # Token usage tracking
-        usage = getattr(response, "usage", None)
-        if usage is not None:
-            prompt_tokens = getattr(usage, "prompt_tokens", 0)
-            completion_tokens = getattr(usage, "completion_tokens", 0)
-            total_tokens = getattr(usage, "total_tokens", 0)
-            print(f"LLM Token Usage -> Prompt: {prompt_tokens}, Completion: {completion_tokens}, Total: {total_tokens}")
-        else:
-            print("LLM response contained no usage block.")
-
-    except Exception as e:
-        print(f"LLM call failed: {e}")
-        return
-
-    print("Generated Report:\n", report)
-
-    if TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID:
-        print("Sending message to Telegram...")
+    # ---- Score any unscored desk verdicts whose session has ended ---------
+    changed = False
+    bars_cache: dict[tuple[str, object], list[dict]] = {}
+    for rec in history:
+        if rec.get("outcome") is not None:
+            continue
         try:
-            url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
-            payload = {"chat_id": TELEGRAM_CHAT_ID, "text": report, "parse_mode": "Markdown"}
-            res = requests.post(url, json=payload, timeout=15)
-            print(f"Telegram response status: {res.status_code}, body: {res.text}")
-        except Exception as e:
-            print(f"Telegram alert failed: {e}")
-            
-    try:
-        HISTORY_FILE.write_text("[]", encoding="utf-8")
-    except Exception as e:
-        print(f"Failed to reset history file: {e}")
+            sig = datetime.fromisoformat(str(rec["signal_time"]))
+        except Exception:
+            continue
+        sig_ist = sig.astimezone(IST)
+        sig_date = sig_ist.date()
+        if sig_date.isoformat() > report_date:
+            continue
+        if sig_date.isoformat() == report_date and now_ist.time() < dtime(15, 35):
+            continue  # today's session may still be running
+        age_days = (now_ist.date() - sig_date).days
+        key = (rec["ticker"], sig_date)
+        if key not in bars_cache:
+            bars_cache[key] = fetch_day_rows(rec["ticker"], sig_date)
+        rows = slice_from_signal(bars_cache[key], sig_ist)
+        outcome, outcome_r = score_record(rec, rows)
+        if outcome == "PENDING" and age_days > SCORE_WINDOW_DAYS:
+            outcome, outcome_r = "NO_DATA", None
+        if outcome != "PENDING":
+            rec["outcome"], rec["outcome_r"] = outcome, outcome_r
+            rec["outcome_at"] = now_ist.isoformat(timespec="seconds")
+            changed = True
+    if changed:
+        save_json(history_path, history)
+
+    # ---- Deterministic statistics -----------------------------------------
+    today_trades = [t for t in ledger if t.get("date") == report_date]
+    stats = {
+        "date": report_date,
+        "agent_today": book_stats(today_trades),
+        "agent_cumulative": book_stats(ledger),
+        "desk_today": desk_stats([r for r in history
+                                  if str(r.get("signal_time", ""))[:10] == report_date]),
+        "desk_cumulative": desk_stats(history),
+    }
+
+    lines = [f"NIFTY EOD — {report_date} (IST)"]
+    lines.append(fmt_book("Agent today", stats["agent_today"]))
+    lines.append(fmt_book("Agent cumulative", stats["agent_cumulative"]))
+    for label, key in (("Desk today", "desk_today"), ("Desk cumulative", "desk_cumulative")):
+        d = stats[key]
+        if not d["judged"]:
+            lines.append(f"{label}: no verdicts")
+            continue
+        parts = [f"judged {d['judged']}, scored {d['scored']}, ambiguous {d['ambiguous']}"]
+        if d.get("GO"):
+            parts.append(f"GO: {d['GO']['n']} verdicts, {d['GO']['positive_r_pct']}% ended positive-R, "
+                         f"avg {d['GO']['mean_r_if_taken']}R if taken")
+        if d.get("SKIP"):
+            parts.append(f"SKIP: {d['SKIP']['n']} verdicts, {d['SKIP']['would_have_lost_pct']}% would have lost, "
+                         f"avg {d['SKIP']['mean_r_if_taken']}R if taken")
+        lines.append(f"{label}: " + " · ".join(parts))
+    lines.append("Desk is advisory only; scores use theoretical R from signal time.")
+
+    note = narrate(stats)
+    if note:
+        lines.append("\n— Desk notes —")
+        lines.append(note)
+
+    message = "\n".join(lines)
+    print(message)
+    if not args.no_send:
+        send_telegram(message)
+    return 0
+
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())
