@@ -57,7 +57,6 @@ def evaluate_signal_outcome(signal):
         elif hit_stop and not hit_target:
             return "LOSS", -abs(entry - sl)
         elif hit_target and hit_stop:
-            # If both touched, check which came first or mark conservative outcome
             return "MIXED/STOP", -abs(entry - sl)
         else:
             return "OPEN/EXPIRED", 0.0
@@ -100,7 +99,6 @@ def main():
                 go_losses += 1
         elif verdict == "SKIP":
             skip_total += 1
-            # If a SKIP trade hit a loss or didn't reach target, the skip was a good decision
             if outcome in ("LOSS", "MIXED/STOP", "OPEN/EXPIRED"):
                 skip_correct += 1
 
@@ -165,6 +163,17 @@ def main():
             max_tokens=1500,
         )
         report = response.choices[0].message.content.strip()
+
+        # Token usage tracking
+        usage = getattr(response, "usage", None)
+        if usage is not None:
+            prompt_tokens = getattr(usage, "prompt_tokens", 0)
+            completion_tokens = getattr(usage, "completion_tokens", 0)
+            total_tokens = getattr(usage, "total_tokens", 0)
+            print(f"LLM Token Usage -> Prompt: {prompt_tokens}, Completion: {completion_tokens}, Total: {total_tokens}")
+        else:
+            print("LLM response contained no usage block.")
+
     except Exception as e:
         print(f"LLM call failed: {e}")
         return
