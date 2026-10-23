@@ -1,15 +1,15 @@
 {
-  "signal_id": "20261023-140322-LTIM",
-  "ticker": "LTIM",
+  "signal_id": "20261023-144418-JSWSTEEL",
+  "ticker": "JSWSTEEL",
   "action": "SELL",
   "verdict": "SKIP",
-  "confidence": 28,
+  "confidence": 78,
   "age_min": 0.0,
   "analyst_notes": {
-    "technical": "Price established an intraday bottom at 4130.2 and subsequently rebounded to 4183.2; the latest 5m candle closed green off 4158.6, indicating higher lows rather than clean breakdown continuation. RSI at 46.81 is neutral and lacks downside momentum.",
-    "sentiment": "No adverse company-specific catalyst detected; trading activity shows muted sentiment with volume dropping off significantly on the latest candle.",
-    "macro": "While NIFTY is bearish, IT sector is neutral, indicating relative strength and resistance to broader index weakness. Shorting a resilient sector introduces unwanted friction.",
-    "risk": "The 45.24-point stop (>3x ATR) is excessively wide and inefficient for intraday, while the 4052.21 target demands an unrealistic 113-point drop with limited trading time remaining."
+    "technical": "High-volume breakdown from the 1198 rejection, but price at 1186.8 is directly extended into major intraday support at 1183.60, creating high chase risk.",
+    "sentiment": "Heavy institutional selling volume visible at 14:35 without immediate single-stock negative news, reflecting broad tape pressure.",
+    "macro": "NIFTY 50 is down -0.97% and flagged oversold; entering late-session shorts into a macro-extended index elevates short-covering squeeze risks.",
+    "risk": "Target of 1163.53 demands a 2% collapse in under 45 minutes before market close, rendering the theoretical 2.5:1 R:R unachievable in intraday reality."
   },
-  "rationale": "Shorting LTIM here fights sector relative strength and an intraday bounce structure with an overly loose stop. The trade lacks technical breakdown confirmation and intraday risk-reward efficiency."
+  "rationale": "Entering a short trade at 14:40 directly above established support with the broader index already oversold offers poor risk-adjusted expectancy. The ambitious target is statistically improbable before the session close, warranting a strict pass."
 }
