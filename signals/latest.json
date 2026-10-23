@@ -1,14 +1,14 @@
 {
-  "signal_id": "20261023-141811-DRREDDY",
-  "generated_at": "2026-10-23T14:18:11.717556+05:30",
-  "nifty_ltp": 22563.5,
+  "signal_id": "20261023-142006-DRREDDY",
+  "generated_at": "2026-10-23T14:20:06.933089+05:30",
+  "nifty_ltp": 22560.3,
   "candidates": [
     {
       "ticker": "DRREDDY",
       "signal": "SELL",
-      "ltp": 1227.5,
-      "stop": 1236.66,
-      "target": 1204.59,
+      "ltp": 1227.2,
+      "stop": 1236.36,
+      "target": 1204.29,
       "qty": 104,
       "indicators": {
         "rsi": 45.16,
