@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261023-103531-BHARTIARTL",
-  "generated_at": "2026-10-23T10:35:31.676270+05:30",
-  "nifty_ltp": 22473.05,
+  "signal_id": "20261023-103811-BHARTIARTL",
+  "generated_at": "2026-10-23T10:38:11.070023+05:30",
+  "nifty_ltp": 22489.65,
   "candidates": [
     {
       "ticker": "BHARTIARTL",
       "signal": "SELL",
-      "ltp": 1896.8,
-      "stop": 1910.29,
-      "target": 1863.07,
+      "ltp": 1898.1,
+      "stop": 1911.59,
+      "target": 1864.37,
       "qty": 35,
       "indicators": {
         "rsi": 42.59,
         "atr": 5.6062,
         "vol_ratio": 1.73
       },
-      "scout_reason": "NIFTY 50 -0.95% oversold for SELL; size cut 50%",
+      "scout_reason": "NIFTY 50 -0.87% oversold for SELL; size cut 50%",
       "candles_5m": [
         [
           "15:05",
@@ -172,10 +172,10 @@
         [
           "10:35",
           1897.1,
-          1897.1,
-          1896.7,
-          1896.7,
-          1968
+          1900.1,
+          1895.6,
+          1897.6,
+          164798
         ]
       ]
     }
