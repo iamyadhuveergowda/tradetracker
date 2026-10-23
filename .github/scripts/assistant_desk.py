@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 """
 Assistant Desk Multi-Analyst Engine:
-Runs the 4-analyst institutional debate using Gemini 1.5 Flash, 
+Runs the 4-analyst institutional debate using Gemini, 
 saves the verdict, and pushes an alert to Telegram.
 """
 
 from __future__ import annotations
 import os
 import json
+import re
 import requests
 from pathlib import Path
 from openai import OpenAI
@@ -81,7 +82,7 @@ def run_multi_analyst_pipeline() -> None:
     if not api_key:
         raise RuntimeError("GEMINI_API_KEY secret is missing.")
 
-    # Using Google's OpenAI-compatible endpoint for Gemini 1.5 Flash
+    # Using Google's OpenAI-compatible endpoint
     client = OpenAI(
         api_key=api_key,
         base_url="https://generativelanguage.googleapis.com/v1beta/openai/"
@@ -121,16 +122,20 @@ def run_multi_analyst_pipeline() -> None:
 
     try:
         response = client.chat.completions.create(
-            model="gemini-3.8-flash",
+            model="gemini-1.5-flash",
             temperature=0.1,
             response_format={"type": "json_object"},
             messages=[
                 {"role": "system", "content": "You are a risk-first institutional investment committee."},
                 {"role": "user", "content": prompt}
             ],
-            max_tokens=1000,
+            max_tokens=3000,
         )
         result_text = response.choices[0].message.content or "{}"
+        
+        # Clean up markdown code blocks if Gemini returns them
+        result_text = re.sub(r"^```(?:json)?|```$", "", result_text.strip(), flags=re.I).strip()
+        
         verdict_data = json.loads(result_text)
     except Exception as exc:
         print(f"Gemini Analyst chain execution failed: {exc}")
@@ -139,7 +144,7 @@ def run_multi_analyst_pipeline() -> None:
             "action": action,
             "verdict": "SKIP",
             "confidence": 0,
-            "summary": "Analyst chain encountered a parsing or connection error; defaulting to safe SKIP.",
+            "summary": f"Analyst chain encountered a parsing or connection error; defaulting to safe SKIP. Detail: {exc}",
             "analyst_notes": {}
         }
 
