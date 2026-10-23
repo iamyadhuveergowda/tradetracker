@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261023-135559-LTIM",
-  "generated_at": "2026-10-23T13:55:59.657481+05:30",
-  "nifty_ltp": 22537.75,
+  "signal_id": "20261023-135759-LTIM",
+  "generated_at": "2026-10-23T13:57:59.084078+05:30",
+  "nifty_ltp": 22534.2,
   "candidates": [
     {
       "ticker": "LTIM",
       "signal": "SELL",
-      "ltp": 4172.2,
-      "stop": 4216.31,
-      "target": 4061.92,
+      "ltp": 4160.1,
+      "stop": 4205.34,
+      "target": 4047.01,
       "qty": 10,
       "indicators": {
         "rsi": 49.38,
         "atr": 13.8538,
         "vol_ratio": 5.4
       },
-      "scout_reason": "NIFTY 50 -0.66% oversold for SELL; size cut 50%",
+      "scout_reason": "NIFTY 50 -0.68% oversold for SELL; size cut 50%",
       "candles_5m": [
         [
           "12:20",
