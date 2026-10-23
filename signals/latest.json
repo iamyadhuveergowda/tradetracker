@@ -1,7 +1,7 @@
 {
-  "signal_id": "20261023-110137-AXISBANK",
-  "generated_at": "2026-10-23T11:01:37.481292+05:30",
-  "nifty_ltp": 22439.5,
+  "signal_id": "20261023-110420-AXISBANK",
+  "generated_at": "2026-10-23T11:04:20.032284+05:30",
+  "nifty_ltp": 22450.25,
   "candidates": [
     {
       "ticker": "AXISBANK",
@@ -15,7 +15,7 @@
         "atr": 3.3803,
         "vol_ratio": 1.87
       },
-      "scout_reason": "NIFTY 50 -1.09% oversold for SELL; size cut 50%",
+      "scout_reason": "NIFTY 50 -1.05% oversold for SELL; size cut 50%",
       "candles_5m": [
         [
           "09:25",
@@ -174,8 +174,8 @@
           1203.0,
           1204.2,
           1201.7,
-          1203.0,
-          177104
+          1203.1,
+          264809
         ]
       ]
     }
