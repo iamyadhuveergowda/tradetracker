@@ -15,6 +15,12 @@ Fixes vs the previous build (reviewed 2026-10-23):
     never stored and graded everything PENDING).
   * signal_id dedupe: re-pushes and manual re-runs never re-judge or
     re-alert the same batch, and never duplicate history records.
+  * 2h ticker+direction dedupe (old Muse rule): a candidate whose ticker
+    and action were already judged within the last 120 minutes is skipped
+    for this batch, so re-published setups do not spam Telegram or inflate
+    history. * Fixed template + trigger: every verdict carries a trigger
+    condition (e.g. 'Valid only on a break below 1183.60'), and Telegram
+    shows SL/Target + trigger + rationale + key risk per ticker.
   * age_min is the real judged delay, not a hardcoded 0.0.
   * A Gemini failure writes NOTHING and alerts NOTHING — no fabricated
     SKIP verdicts polluting the track record.
@@ -74,6 +80,48 @@ def gemini_post_with_retry(req, timeout=90, attempts=3):
     raise last_exc
 
 
+
+DEDUP_WINDOW_MINUTES = 120  # old Muse rule: same ticker+direction within 2h = same setup
+
+def _parse_dt(s):
+    try:
+        dt = datetime.fromisoformat(str(s))
+        return dt
+    except Exception:
+        return None
+
+def filter_deduped(candidates, history, gen_dt):
+    """Return (kept, skipped_tickers) applying the 2h ticker+direction rule.
+
+    A candidate is skipped if history already holds the same ticker and
+    action with a signal_time 0-120 min before this batch's signal_time.
+    signal_id dedupe (in main) still runs first; this is in addition to it.
+    """
+    kept, skipped = [], []
+    for c in candidates:
+        tick = str(c.get("ticker", "")).upper()
+        act = str(c.get("signal", ""))
+        dup = False
+        for r in history:
+            if not isinstance(r, dict):
+                continue
+            if str(r.get("ticker", "")).upper() != tick or str(r.get("action", "")) != act:
+                continue
+            sig_dt = _parse_dt(r.get("signal_time") or r.get("judged_at"))
+            if sig_dt is None:
+                continue
+            # normalise naive datetimes to the batch timezone
+            if sig_dt.tzinfo is None and gen_dt.tzinfo is not None:
+                sig_dt = sig_dt.replace(tzinfo=gen_dt.tzinfo)
+            delta_min = (gen_dt - sig_dt).total_seconds() / 60.0
+            if 0 <= delta_min <= DEDUP_WINDOW_MINUTES:
+                dup = True
+                break
+        if dup:
+            skipped.append(tick)
+        else:
+            kept.append(c)
+    return kept, skipped
 
 def repo_root() -> Path:
     override = os.getenv("DESK_REPO_ROOT")
@@ -136,9 +184,13 @@ def gemini_judge(candidates: list[dict], nifty_ltp, signal_time_ist: str) -> lis
         "the time remaining.\n\n"
         "Default to skepticism: a SKIP costs nothing. Return ONLY this JSON: "
         "{\"verdicts\": [{\"ticker\": str, \"verdict\": \"GO\"|\"SKIP\", "
-        "\"confidence\": int 0-100, \"analyst_notes\": {\"technical\": str, "
+        "\"confidence\": int 0-100, \"trigger\": str, \"analyst_notes\": {\"technical\": str, "
         "\"sentiment\": str, \"macro\": str, \"risk\": str}, \"summary\": str}]} "
-        "— one entry per candidate, citing concrete numbers from the payload.\n\n"
+        "— one entry per candidate, citing concrete numbers from the payload. "
+        "trigger is the price condition that makes the verdict actionable: for GO, "
+        "the entry condition (e.g. 'Enter at market' or 'Enter only below 1183.60'); "
+        "for SKIP, the condition that would make it valid (e.g. 'Valid only on a "
+        "break below 1183.60'), or '' if no meaningful trigger exists in-session.\n\n"
         f"Candidates: {json.dumps(features)}"
     )
     body = {
@@ -171,6 +223,7 @@ def gemini_judge(candidates: list[dict], nifty_ltp, signal_time_ist: str) -> lis
         notes = v.get("analyst_notes") if isinstance(v.get("analyst_notes"), dict) else {}
         out.append({
             "ticker": c["ticker"], "verdict": verdict, "confidence": conf,
+            "trigger": str(v.get("trigger", "")).strip(),
             "analyst_notes": {
                 "technical": str(notes.get("technical", "")),
                 "sentiment": str(notes.get("sentiment", "")),
@@ -230,12 +283,19 @@ def main() -> int:
         print(f"Signal {signal_id} already judged; skipping.")
         return 0
 
+    kept, skipped = filter_deduped(latest["candidates"], history, gen_ist)
+    if skipped:
+        print(f"Deduped (same ticker+direction within 2h, skipping): {', '.join(skipped)}")
+    if not kept:
+        print("All candidates deduped; skipping (no Gemini call, no commit).")
+        return 0
+
     if not os.getenv("GEMINI_API_KEY"):
         print("GEMINI_API_KEY not set; cannot judge.", file=sys.stderr)
         return 0
 
     try:
-        verdicts = gemini_judge(latest["candidates"], latest.get("nifty_ltp"),
+        verdicts = gemini_judge(kept, latest.get("nifty_ltp"),
                                 gen_ist.strftime("%H:%M"))
     except Exception as exc:
         # Honest failure: no fabricated verdict, no history pollution.
@@ -256,6 +316,7 @@ def main() -> int:
             "entry": float(c["ltp"]), "stop": float(c["stop"]), "target": float(c["target"]),
             "qty": c.get("qty", 0),
             "verdict": v["verdict"], "confidence": v["confidence"],
+            "trigger": v.get("trigger", ""),
             "analyst_notes": v["analyst_notes"],
             "rationale": v["summary"],
             "outcome": None, "outcome_r": None, "outcome_at": None,
@@ -271,11 +332,14 @@ def main() -> int:
     for r in records:
         icon = "GO ✅" if r["verdict"] == "GO" else "SKIP ⛔"
         lines.append(f"{r['ticker']} {r['action']} @ {r['entry']:.2f} → {icon} ({r['confidence']})")
+        lines.append(f"  SL {r['stop']:.2f} / Target {r['target']:.2f}")
+        if r.get("trigger"):
+            lines.append(f"  Trigger: {r['trigger'][:160]}")
         if r["rationale"]:
-            lines.append(f"  {r['rationale'][:220]}")
-        tech = (r["analyst_notes"] or {}).get("technical", "")
-        if tech:
-            lines.append(f"  Technical: {tech[:180]}")
+            lines.append(f"  {r['rationale'][:160]}")
+        risk = (r["analyst_notes"] or {}).get("risk", "")
+        if risk:
+            lines.append(f"  Key risk: {risk[:160]}")
     lines.append("Advisory only — the agent does not see this verdict.")
     send_telegram("\n".join(lines))
     print(f"Judged {len(records)} candidate(s) from {signal_id} (age {age_min} min).")
