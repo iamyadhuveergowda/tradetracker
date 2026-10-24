@@ -1,12 +1,29 @@
 name: Assistant Desk (advisory, fixed)
 
-# Event-driven: the agent publishes signals/latest.json, this judges the
-# batch. The script dedupes by signal_id, so re-pushes and manual re-runs
-# never judge the same batch twice.
+# Two triggers (push primary, 5-minute polling backup):
+#  * push on signals/latest.json — primary. Every agent publish starts a
+#    run within ~a minute.
+#  * schedule every 5 min in the NIFTY session window — backup / polling
+#    cadence. Cron "*/5 3-10 * * 1-5" UTC = 08:30-15:30 IST Mon-Fri, covering
+#    the 09:15-15:30 IST session with buffer. A run that finds the batch
+#    already judged exits in seconds with no Gemini call and no commit.
+# Marking done: the script dedupes by signal_id (desk_history.json), so
+# re-pushes, cron re-runs and manual re-runs never judge the same batch
+# twice. The workflow commits verdict AND history with [skip ci], so its
+# own commit does not retrigger it, and the concurrency group queues
+# overlapping runs instead of cancelling them — no double judging.
+# NOTE for future wire-in: desk_verdict.json is already machine-readable
+# ({signal_id, judged_at, verdicts: [{ticker, action, verdict, confidence,
+# entry, stop, target, ...}]}), so a future agent build could poll it by
+# signal_id and wait — but that agent-side wait/gate is NOT in this package
+# and is NOT enabled by this workflow change. The desk stays advisory-only
+# until its track record proves good, per the Oct 23 decision.
 on:
   push:
     paths:
       - 'signals/latest.json'
+  schedule:
+    - cron: "*/5 3-10 * * 1-5"
   workflow_dispatch: {}
 
 permissions:
