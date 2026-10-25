@@ -28,6 +28,15 @@ Fixes vs the previous build (reviewed 2026-10-23):
     from the tape and say so, instead of asserting headlines it cannot
     see. The model is one env setting (GEMINI_MODEL) shared with the
     EOD script; an unset/empty value falls back to the default.
+  * FEASIBILITY (draft patch, Oct 2026, step 2 alone; 1 and 4 deferred):
+    a deterministic flag, not a hard reject. If target_distance_atr
+    is >=5.5 with <=60 min to close, or >=4.5 with <=30 min, the
+    candidate is INFEASIBLE; a looser TIGHT tier covers >=5.5 with
+    <=120 min or >=4.5 with <=60 min. Grounded: all 17 NIFTY ledger
+    trades were <=3.89 ATR with >=136 min left (zero flags), while
+    the Oct 23 batch was 5.96-7.65 ATR with 46 min left (all flagged).
+    The flag is injected into the prompt, stored, and shown on
+    Telegram. Gemini may still GO, but must justify it explicitly.
   * RESULTS RISK (draft patch, Oct 2026): earnings_calendar_nifty.json
     at the repo root lists {date, ticker} results dates. The desk
     injects a flag into the Gemini prompt ONLY for candidates whose
@@ -184,6 +193,29 @@ def results_flag(calendar: dict, ticker, signal_date) -> str:
             return f"reported results 2 DAYS AGO ({d})"
     return ""
 
+
+def feasibility_flag(target_atr, minutes_left) -> str:
+    """Deterministic time-to-target flag, or ''.
+
+    Conservative by design: it flags only extremes, so the 17-trade
+    NIFTY ledger (max 3.89 ATR, min 136 min left) gets zero flags.
+    """
+    if target_atr is None or minutes_left is None:
+        return ""
+    try:
+        atr = float(target_atr); mins = int(minutes_left)
+    except Exception:
+        return ""
+    if (mins <= 60 and atr >= 5.5) or (mins <= 30 and atr >= 4.5):
+        return f"INFEASIBLE: target {atr:.2f} ATR with {mins} min to close"
+    if (mins <= 120 and atr >= 5.5) or (mins <= 60 and atr >= 4.5):
+        return f"TIGHT: target {atr:.2f} ATR with {mins} min to close"
+    return ""
+
+
+def minutes_to_close_nifty(gen_dt) -> int:
+    return (15*60+30) - (gen_dt.hour*60 + gen_dt.minute)
+
 def repo_root() -> Path:
     override = os.getenv("DESK_REPO_ROOT")
     if override:
@@ -203,7 +235,7 @@ def save_json(path: Path, data) -> None:
     path.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
 
 
-def gemini_judge(candidates: list[dict], nifty_ltp, signal_time_ist: str, calendar=None, signal_date=None) -> list[dict]:
+def gemini_judge(candidates: list[dict], nifty_ltp, signal_time_ist: str, calendar=None, signal_date=None, minutes_left=None) -> list[dict]:
     """One Gemini call judging all candidates through the 4-analyst
     framework. Returns one verdict dict per candidate (ticker-matched).
     Raises on transport/API failure — the caller writes nothing then."""
@@ -225,6 +257,7 @@ def gemini_judge(candidates: list[dict], nifty_ltp, signal_time_ist: str, calend
             "reward_to_risk": round(abs(tgt - entry) / risk, 2) if risk > 0 else None,
             "scout_reason": c.get("scout_reason", ""),
             "results_risk": results_flag(calendar or {}, c["ticker"], signal_date),
+            "feasibility": feasibility_flag(round(abs(float(c["target"]) - float(c["ltp"])) / (float(c.get("indicators", {}).get("atr") or 0) or 0.0), 2) if float(c.get("indicators", {}).get("atr") or 0) else None, minutes_left),
             "candles_5m_last12": (c.get("candles_5m") or [])[-12:],
         })
     prompt = (
@@ -244,6 +277,11 @@ def gemini_judge(candidates: list[dict], nifty_ltp, signal_time_ist: str, calend
         "Late-session entries need exceptional structure.\n"
         "4. RISK: reward:risk, stop distance in ATR, whether the target is reachable in "
         "the time remaining.\n\n"
+        "FEASIBILITY: each candidate carries a feasibility field computed from "
+        "target_distance_atr and minutes left to the 15:30 close, NOT from Gemini. "
+        "If it starts INFEASIBLE, you MUST mention it and default to SKIP unless "
+        "the structure is exceptional and you say why; if TIGHT, weigh it in risk. "
+        "If empty, do not invent a feasibility problem.\n\n"
         "RESULTS RISK: each candidate carries a results_risk field taken ONLY from "
         "earnings_calendar_nifty.json supplied with this prompt. If it is non-empty, "
         "you MUST mention it in risk/summary and weigh pre-/post-results volatility: "
@@ -365,7 +403,7 @@ def main() -> int:
     try:
         verdicts = gemini_judge(kept, latest.get("nifty_ltp"),
                                 gen_ist.strftime("%H:%M"), calendar=calendar,
-                                signal_date=gen_ist.date())
+                                signal_date=gen_ist.date(), minutes_left=minutes_to_close_nifty(gen_ist))
     except Exception as exc:
         # Honest failure: no fabricated verdict, no history pollution.
         print(f"Gemini judging failed: {exc}", file=sys.stderr)
@@ -387,6 +425,7 @@ def main() -> int:
             "verdict": v["verdict"], "confidence": v["confidence"],
             "trigger": v.get("trigger", ""),
             "results_risk": results_flag(calendar, v["ticker"], gen_ist.date()),
+            "feasibility": feasibility_flag(round(abs(float(c["target"]) - float(c["ltp"])) / (float(c.get("indicators", {}).get("atr") or 0) or 0.0), 2) if float(c.get("indicators", {}).get("atr") or 0) else None, minutes_to_close_nifty(gen_ist)),
             "analyst_notes": v["analyst_notes"],
             "rationale": v["summary"],
             "outcome": None, "outcome_r": None, "outcome_at": None,
@@ -407,6 +446,8 @@ def main() -> int:
             lines.append(f"  Trigger: {r['trigger'][:160]}")
         if r.get("results_risk"):
             lines.append(f"  Results risk: {r['results_risk']}")
+        if r.get("feasibility"):
+            lines.append(f"  Feasibility: {r['feasibility']}")
         if r["rationale"]:
             lines.append(f"  {r['rationale'][:160]}")
         risk = (r["analyst_notes"] or {}).get("risk", "")
