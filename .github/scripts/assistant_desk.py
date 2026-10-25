@@ -28,6 +28,13 @@ Fixes vs the previous build (reviewed 2026-10-23):
     from the tape and say so, instead of asserting headlines it cannot
     see. The model is one env setting (GEMINI_MODEL) shared with the
     EOD script; an unset/empty value falls back to the default.
+  * RESULTS RISK (draft patch, Oct 2026): earnings_calendar_nifty.json
+    at the repo root lists {date, ticker} results dates. The desk
+    injects a flag into the Gemini prompt ONLY for candidates whose
+    ticker reports today, tomorrow, yesterday, or 2 days ago (weekend
+    results). It never invents a results date, never blocks a trade
+    (advisory only), and fails open if the file is missing/malformed.
+    The flag is also stored in history/verdict and shown on Telegram.
 
 The desk has no connection to the trading agent: nothing here can
 place, block, or modify a trade.
@@ -123,6 +130,60 @@ def filter_deduped(candidates, history, gen_dt):
             kept.append(c)
     return kept, skipped
 
+
+def _norm_ticker(tick) -> str:
+    return str(tick or "").upper().replace("-", "").replace(" ", "")
+
+
+def load_earnings_calendar(root: Path) -> dict:
+    """{normalised ticker: {ISO dates}} from earnings_calendar_nifty.json.
+
+    Fail-open, mirroring the US agent loader: a missing or malformed
+    file disables the results-risk flag, with one log line, and the
+    desk judges exactly as before. No date is ever invented here.
+    """
+    path = root / "earnings_calendar_nifty.json"
+    out = {}
+    if not path.exists():
+        print("No earnings_calendar_nifty.json; results-risk flag inactive")
+        return out
+    try:
+        rows = json.loads(path.read_text(encoding="utf-8"))
+        for row in rows:
+            d = datetime.fromisoformat(str(row["date"])).date().isoformat()
+            out.setdefault(_norm_ticker(row["ticker"]), set()).add(d)
+    except Exception as exc:
+        print(f"earnings_calendar_nifty.json unreadable ({exc}); results-risk flag OFF")
+        return {}
+    return out
+
+
+def results_flag(calendar: dict, ticker, signal_date) -> str:
+    """One-line flag, or '' if no results date is near the signal date.
+
+    Window: reports today, tomorrow, yesterday, or 2 days ago (covers
+    a Saturday result flagged on Monday). Anything else is not flagged,
+    so a stale calendar cannot spam every verdict.
+    """
+    dates = calendar.get(_norm_ticker(ticker)) or set()
+    if not dates or signal_date is None:
+        return ""
+    for d in sorted(dates):
+        try:
+            ed = datetime.fromisoformat(d).date()
+        except Exception:
+            continue
+        delta = (ed - signal_date).days
+        if delta == 0:
+            return f"reports results TODAY ({d})"
+        if delta == 1:
+            return f"reports results TOMORROW ({d})"
+        if delta == -1:
+            return f"reported results YESTERDAY ({d})"
+        if delta == -2:
+            return f"reported results 2 DAYS AGO ({d})"
+    return ""
+
 def repo_root() -> Path:
     override = os.getenv("DESK_REPO_ROOT")
     if override:
@@ -142,7 +203,7 @@ def save_json(path: Path, data) -> None:
     path.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
 
 
-def gemini_judge(candidates: list[dict], nifty_ltp, signal_time_ist: str) -> list[dict]:
+def gemini_judge(candidates: list[dict], nifty_ltp, signal_time_ist: str, calendar=None, signal_date=None) -> list[dict]:
     """One Gemini call judging all candidates through the 4-analyst
     framework. Returns one verdict dict per candidate (ticker-matched).
     Raises on transport/API failure — the caller writes nothing then."""
@@ -163,6 +224,7 @@ def gemini_judge(candidates: list[dict], nifty_ltp, signal_time_ist: str) -> lis
             "target_distance_atr": round(abs(tgt - entry) / atr, 2) if atr > 0 else None,
             "reward_to_risk": round(abs(tgt - entry) / risk, 2) if risk > 0 else None,
             "scout_reason": c.get("scout_reason", ""),
+            "results_risk": results_flag(calendar or {}, c["ticker"], signal_date),
             "candles_5m_last12": (c.get("candles_5m") or [])[-12:],
         })
     prompt = (
@@ -182,6 +244,11 @@ def gemini_judge(candidates: list[dict], nifty_ltp, signal_time_ist: str) -> lis
         "Late-session entries need exceptional structure.\n"
         "4. RISK: reward:risk, stop distance in ATR, whether the target is reachable in "
         "the time remaining.\n\n"
+        "RESULTS RISK: each candidate carries a results_risk field taken ONLY from "
+        "earnings_calendar_nifty.json supplied with this prompt. If it is non-empty, "
+        "you MUST mention it in risk/summary and weigh pre-/post-results volatility: "
+        "a GO on a results-today/tomorrow name needs exceptional structure. If it is "
+        "empty, do NOT invent a results date or claim a company is reporting.\n\n"
         "Default to skepticism: a SKIP costs nothing. Return ONLY this JSON: "
         "{\"verdicts\": [{\"ticker\": str, \"verdict\": \"GO\"|\"SKIP\", "
         "\"confidence\": int 0-100, \"trigger\": str, \"analyst_notes\": {\"technical\": str, "
@@ -290,13 +357,15 @@ def main() -> int:
         print("All candidates deduped; skipping (no Gemini call, no commit).")
         return 0
 
+    calendar = load_earnings_calendar(root)
     if not os.getenv("GEMINI_API_KEY"):
         print("GEMINI_API_KEY not set; cannot judge.", file=sys.stderr)
         return 0
 
     try:
         verdicts = gemini_judge(kept, latest.get("nifty_ltp"),
-                                gen_ist.strftime("%H:%M"))
+                                gen_ist.strftime("%H:%M"), calendar=calendar,
+                                signal_date=gen_ist.date())
     except Exception as exc:
         # Honest failure: no fabricated verdict, no history pollution.
         print(f"Gemini judging failed: {exc}", file=sys.stderr)
@@ -317,6 +386,7 @@ def main() -> int:
             "qty": c.get("qty", 0),
             "verdict": v["verdict"], "confidence": v["confidence"],
             "trigger": v.get("trigger", ""),
+            "results_risk": results_flag(calendar, v["ticker"], gen_ist.date()),
             "analyst_notes": v["analyst_notes"],
             "rationale": v["summary"],
             "outcome": None, "outcome_r": None, "outcome_at": None,
@@ -335,6 +405,8 @@ def main() -> int:
         lines.append(f"  SL {r['stop']:.2f} / Target {r['target']:.2f}")
         if r.get("trigger"):
             lines.append(f"  Trigger: {r['trigger'][:160]}")
+        if r.get("results_risk"):
+            lines.append(f"  Results risk: {r['results_risk']}")
         if r["rationale"]:
             lines.append(f"  {r['rationale'][:160]}")
         risk = (r["analyst_notes"] or {}).get("risk", "")
