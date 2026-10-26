@@ -1,20 +1,20 @@
 {
-  "signal_id": "20261026-121214-HDFCBANK",
-  "generated_at": "2026-10-26T12:12:14.859073+05:30",
-  "nifty_ltp": 22601.45,
+  "signal_id": "20261026-121416-HDFCBANK",
+  "generated_at": "2026-10-26T12:14:16.879066+05:30",
+  "nifty_ltp": 22595.75,
   "candidates": [
     {
       "ticker": "HDFCBANK",
       "signal": "SELL",
-      "ltp": 688.3,
-      "stop": 692.3,
-      "target": 678.29,
+      "ltp": 687.75,
+      "stop": 691.75,
+      "target": 677.74,
       "qty": 241,
       "indicators": {
         "rsi": 40.45,
         "atr": 1.6198,
         "atr_15m": 2.6697,
-        "vwap": 689.88,
+        "vwap": 689.84,
         "vol_ratio": 2.8
       },
       "scout_reason": "NIFTY NEUTRAL, sector BANK BEARISH",
@@ -174,10 +174,10 @@
         [
           "12:10",
           687.85,
-          688.3,
+          688.5,
           687.35,
-          688.3,
-          157182
+          687.75,
+          308981
         ]
       ]
     }
