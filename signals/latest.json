@@ -1,20 +1,20 @@
 {
-  "signal_id": "20261026-132633-TATACONSUM",
-  "generated_at": "2026-10-26T13:26:33.082460+05:30",
-  "nifty_ltp": 22654.9,
+  "signal_id": "20261026-132915-TATACONSUM",
+  "generated_at": "2026-10-26T13:29:15.454067+05:30",
+  "nifty_ltp": 22655.1,
   "candidates": [
     {
       "ticker": "TATACONSUM",
       "signal": "SELL",
-      "ltp": 926.55,
-      "stop": 935.4,
-      "target": 904.42,
+      "ltp": 925.5,
+      "stop": 934.35,
+      "target": 903.37,
       "qty": 108,
       "indicators": {
         "rsi": 44.5,
         "atr": 2.7555,
         "atr_15m": 5.9009,
-        "vwap": 928.69,
+        "vwap": 928.68,
         "vol_ratio": 2.01
       },
       "scout_reason": "NIFTY NEUTRAL, sector FMCG NEUTRAL",
@@ -175,9 +175,9 @@
           "13:25",
           927.2,
           927.7,
-          926.0,
-          926.3,
-          2786
+          924.45,
+          925.6,
+          9281
         ]
       ]
     }
