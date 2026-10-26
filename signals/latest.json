@@ -1,14 +1,14 @@
 {
-  "signal_id": "20261026-133158-CIPLA",
-  "generated_at": "2026-10-26T13:31:58.720466+05:30",
-  "nifty_ltp": 22649.6,
+  "signal_id": "20261026-133357-CIPLA",
+  "generated_at": "2026-10-26T13:33:57.583460+05:30",
+  "nifty_ltp": 22646.95,
   "candidates": [
     {
       "ticker": "CIPLA",
       "signal": "BUY",
-      "ltp": 1344.8,
-      "stop": 1336.29,
-      "target": 1366.09,
+      "ltp": 1344.3,
+      "stop": 1335.79,
+      "target": 1365.59,
       "qty": 113,
       "indicators": {
         "rsi": 56.85,
