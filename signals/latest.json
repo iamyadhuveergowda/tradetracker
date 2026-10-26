@@ -1,20 +1,20 @@
 {
-  "signal_id": "20261026-134214-TITAN",
-  "generated_at": "2026-10-26T13:42:14.085798+05:30",
-  "nifty_ltp": 22645.8,
+  "signal_id": "20261026-134418-TITAN",
+  "generated_at": "2026-10-26T13:44:18.482894+05:30",
+  "nifty_ltp": 22636.45,
   "candidates": [
     {
       "ticker": "TITAN",
       "signal": "BUY",
-      "ltp": 4315.8,
-      "stop": 4290.96,
-      "target": 4377.89,
+      "ltp": 4314.4,
+      "stop": 4289.56,
+      "target": 4376.49,
       "qty": 38,
       "indicators": {
         "rsi": 64.57,
         "atr": 8.1359,
         "atr_15m": 16.5586,
-        "vwap": 4295.45,
+        "vwap": 4295.53,
         "vol_ratio": 2.03
       },
       "scout_reason": "NIFTY NEUTRAL, sector CONSUMER GOODS NEUTRAL",
@@ -176,8 +176,8 @@
           4318.0,
           4318.0,
           4314.1,
-          4315.8,
-          845
+          4314.2,
+          2188
         ]
       ]
     }
