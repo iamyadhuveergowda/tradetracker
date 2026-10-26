@@ -1,20 +1,20 @@
 {
-  "signal_id": "20261026-131707-HEROMOTOCO",
-  "generated_at": "2026-10-26T13:17:07.891069+05:30",
-  "nifty_ltp": 22621.95,
+  "signal_id": "20261026-131911-HEROMOTOCO",
+  "generated_at": "2026-10-26T13:19:11.729172+05:30",
+  "nifty_ltp": 22628.05,
   "candidates": [
     {
       "ticker": "HEROMOTOCO",
       "signal": "BUY",
-      "ltp": 5087.0,
-      "stop": 5042.18,
-      "target": 5199.05,
-      "qty": 21,
+      "ltp": 5085.0,
+      "stop": 5042.67,
+      "target": 5190.81,
+      "qty": 22,
       "indicators": {
         "rsi": 60.89,
         "atr": 13.2576,
-        "atr_15m": 29.8791,
-        "vwap": 5063.93,
+        "atr_15m": 28.2172,
+        "vwap": 5064.05,
         "vol_ratio": 5.01
       },
       "scout_reason": "NIFTY NEUTRAL, sector AUTO NEUTRAL",
@@ -175,9 +175,9 @@
           "13:15",
           5091.5,
           5091.5,
-          5086.0,
-          5087.0,
-          624
+          5085.0,
+          5085.0,
+          1710
         ]
       ]
     }
