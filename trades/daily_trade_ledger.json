@@ -1027,7 +1027,7 @@
     "ticker": "BEL",
     "action": "BUY",
     "qty": 325,
-    "remaining_qty": 325,
+    "remaining_qty": 0,
     "requested_qty": 325,
     "locked_margin_per_share": 72.19,
     "partial_booked": false,
@@ -1038,21 +1038,26 @@
     "open": 360.5,
     "high": 360.95,
     "low": 360.25,
-    "close": 363.05,
+    "close": 363.0,
     "time": "11:20:32",
-    "status": "OPEN ⏳",
-    "exit_price": null,
-    "net_pnl": 0.0,
+    "status": "WIN 🟢",
+    "exit_price": 363.0,
+    "net_pnl": 577.24,
     "rationale": "Entry 360.95 is just above VWAP (360.31) and below the session high, stop 358.02 is safely below entry (correct BUY stop). Target 368.28 is 7.33 points away (~3.75 ATR), well under the 4.5 ATR fantasy cap and below the expected travel of 14.95 points. Qty 325 shares meets the minimum size. Macro regime is neutral (nifty_day_pct -0.01) so no regime lock. No news conflict, no upcoming event, and no desk veto. All hard gates and judgment vetoes clear.",
     "events": [
       {
         "time": "2026-10-26T11:20:32+05:30",
         "type": "ENTRY",
         "text": "PAPER BUY 325 @ ₹360.95"
+      },
+      {
+        "time": "2026-10-26T15:10:04+05:30",
+        "type": "EXIT",
+        "text": "15:10 square-off: 325 @ ₹363.00, net ₹577.24"
       }
     ],
     "mode": "PAPER",
-    "last_price": 363.05,
+    "last_price": 363.0,
     "atr": 1.9541,
     "target_booked": false,
     "breakeven_set": false,
@@ -1063,11 +1068,22 @@
     "stop_atr_mult": 1.5,
     "rvol": 0.97,
     "rule_version": "v13.3",
-    "entry_brokerage_remaining": 20.0,
-    "charges": {},
-    "pnl_by_date": {},
+    "entry_brokerage_remaining": 0.0,
+    "charges": {
+      "brokerage": 40.0,
+      "exchange": 7.22,
+      "sebi": 0.24,
+      "stt": 29.49,
+      "stamp": 3.52,
+      "gst": 8.54,
+      "total": 89.01
+    },
+    "pnl_by_date": {
+      "2026-10-26": 577.24
+    },
     "orders": {},
-    "breakeven_price": 361.3
+    "breakeven_price": 361.3,
+    "exit_time": "2026-10-26T15:10:04+05:30"
   },
   {
     "trade_id": "20261026112723-NTPC",
@@ -1075,7 +1091,7 @@
     "ticker": "NTPC",
     "action": "BUY",
     "qty": 416,
-    "remaining_qty": 416,
+    "remaining_qty": 0,
     "requested_qty": 416,
     "locked_margin_per_share": 59.63,
     "partial_booked": false,
@@ -1086,21 +1102,26 @@
     "open": 298.0,
     "high": 298.65,
     "low": 298.0,
-    "close": 299.25,
+    "close": 299.3,
     "time": "11:27:23",
-    "status": "OPEN ⏳",
-    "exit_price": null,
-    "net_pnl": 0.0,
+    "status": "WIN 🟢",
+    "exit_price": 299.3,
+    "net_pnl": 387.06,
     "rationale": "TARGET_CAP passed (target‑entry = 5.73 ≤ 4.5×ATR = 6.88); GHOST passed (qty = 416 ≥ 1); CORRUPT_QUOTE passed (entry 298.05 within 0.02% of prev_close = 298.0); WRONG_SIDE_STOP passed (sl = 295.76 < entry); REGIME_LOCK neutral (macro nifty_day_pct = ‑0.08); entry below VWAP+1.5×ATR (298.05 < 300.65) so not a CHASE; no EXHAUSTION, DISTRIBUTION, INTO_WALL, NEWS_CONTRADICTION, STOP_IN_NOISE, EVENT_RISK_UPCOMING or DESK_VETO; TIME_DECAY passed (target distance 5.73 ≤ expected_travel 11.35). All gates",
     "events": [
       {
         "time": "2026-10-26T11:27:23+05:30",
         "type": "ENTRY",
         "text": "PAPER BUY 416 @ ₹298.15"
+      },
+      {
+        "time": "2026-10-26T15:10:05+05:30",
+        "type": "EXIT",
+        "text": "15:10 square-off: 416 @ ₹299.30, net ₹387.06"
       }
     ],
     "mode": "PAPER",
-    "last_price": 299.25,
+    "last_price": 299.3,
     "atr": 1.5283,
     "target_booked": false,
     "breakeven_set": false,
@@ -1111,10 +1132,21 @@
     "stop_atr_mult": 1.5,
     "rvol": 0.86,
     "rule_version": "v13.3",
-    "entry_brokerage_remaining": 20.0,
-    "charges": {},
-    "pnl_by_date": {},
+    "entry_brokerage_remaining": 0.0,
+    "charges": {
+      "brokerage": 40.0,
+      "exchange": 7.63,
+      "sebi": 0.25,
+      "stt": 31.13,
+      "stamp": 3.72,
+      "gst": 8.62,
+      "total": 91.34
+    },
+    "pnl_by_date": {
+      "2026-10-26": 387.06
+    },
     "orders": {},
-    "breakeven_price": 298.43
+    "breakeven_price": 298.43,
+    "exit_time": "2026-10-26T15:10:05+05:30"
   }
 ]
