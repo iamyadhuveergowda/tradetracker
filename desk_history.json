@@ -19,9 +19,9 @@
       "risk": "Target of 1163.53 sits 23.27 points (5.96 ATR) away. Requiring nearly 6 ATRs of downside movement in the remaining 46 minutes of regular trading is completely unrealistic."
     },
     "rationale": "While the breakdown tape is clean, the 5.96 ATR target distance cannot realistically be reached in 46 minutes at 14:44 IST.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-10-26T22:18:53+05:30"
   },
   {
     "signal_id": "20261023-144418-JSWSTEEL",
@@ -43,9 +43,9 @@
       "risk": "Stop distance is 3.06 ATR (1804.54) while the target of 1765.21 requires a 28.09-point move (7.65 ATR). Expecting 7.65 ATRs in under an hour from a chopping stock is unviable."
     },
     "rationale": "Consolidating tightly without breakdown confirmation, and a 7.65 ATR target is unattainable in the 46 minutes left before close.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.29,
+    "outcome_at": "2026-10-26T22:18:53+05:30"
   },
   {
     "signal_id": "20261023-144418-JSWSTEEL",
@@ -67,9 +67,9 @@
       "risk": "Target of 8701.53 demands a 159.97-point drop (6.93 ATR). Realizing a nearly 7-ATR decline in 46 minutes is mathematically and practically unfeasible."
     },
     "rationale": "Setup is merely a minor pullback in a range; demanding nearly 7 ATRs to target before 15:30 IST is an unacceptable risk.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-10-26T22:18:53+05:30"
   },
   {
     "signal_id": "20261026-111258-ONGC",
@@ -94,8 +94,8 @@
       "risk": "Target distance is extremely demanding at 5.72 ATRs (230.25, well above the morning high of 228.90), while stop distance is 2.28 ATRs (225.97). Requiring nearly 6 ATRs of upside in the remaining session makes the reward-to-risk of 2.51 structurally unrealistic."
     },
     "rationale": "ONGC has broken down from its 10:35 high of 228.90 and is drifting near 227.19 without structural reversal signs. Requiring a 5.72 ATR rally to reach 230.25 is improbable intraday against current negative tape momentum. SKIP.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 1.02,
+    "outcome_at": "2026-10-26T22:18:53+05:30"
   }
 ]
