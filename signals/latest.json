@@ -1,20 +1,20 @@
 {
-  "signal_id": "20261026-123722-M&M",
-  "generated_at": "2026-10-26T12:37:22.578283+05:30",
-  "nifty_ltp": 22622.25,
+  "signal_id": "20261026-123926-M&M",
+  "generated_at": "2026-10-26T12:39:26.615916+05:30",
+  "nifty_ltp": 22613.25,
   "candidates": [
     {
       "ticker": "M&M",
       "signal": "BUY",
-      "ltp": 2851.6,
-      "stop": 2831.92,
-      "target": 2900.8,
+      "ltp": 2850.0,
+      "stop": 2830.32,
+      "target": 2899.2,
       "qty": 48,
       "indicators": {
         "rsi": 53.1,
         "atr": 6.0523,
         "atr_15m": 13.1206,
-        "vwap": 2847.93,
+        "vwap": 2847.94,
         "vol_ratio": 3.11
       },
       "scout_reason": "NIFTY NEUTRAL, sector AUTO NEUTRAL",
@@ -175,24 +175,24 @@
           "12:35",
           2853.2,
           2854.6,
-          2850.4,
-          2850.8,
-          2186
+          2849.0,
+          2850.0,
+          4123
         ]
       ]
     },
     {
       "ticker": "CIPLA",
       "signal": "BUY",
-      "ltp": 1345.7,
-      "stop": 1336.26,
-      "target": 1369.3,
+      "ltp": 1345.1,
+      "stop": 1335.66,
+      "target": 1368.7,
       "qty": 101,
       "indicators": {
         "rsi": 59.03,
         "atr": 3.1916,
         "atr_15m": 6.2933,
-        "vwap": 1346.97,
+        "vwap": 1346.96,
         "vol_ratio": 3.25
       },
       "scout_reason": "NIFTY NEUTRAL, sector PHARMA BULLISH",
@@ -354,23 +354,23 @@
           1346.8,
           1346.8,
           1345.0,
-          1345.0,
-          35226
+          1345.1,
+          39341
         ]
       ]
     },
     {
       "ticker": "ADANIPORTS",
       "signal": "BUY",
-      "ltp": 1737.0,
-      "stop": 1724.18,
-      "target": 1769.05,
+      "ltp": 1736.5,
+      "stop": 1723.68,
+      "target": 1768.55,
       "qty": 74,
       "indicators": {
         "rsi": 56.78,
         "atr": 4.566,
         "atr_15m": 8.5458,
-        "vwap": 1732.57,
+        "vwap": 1732.56,
         "vol_ratio": 4.64
       },
       "scout_reason": "NIFTY NEUTRAL, sector INFRASTRUCTURE NEUTRAL",
@@ -531,9 +531,9 @@
           "12:35",
           1738.0,
           1739.0,
-          1736.5,
-          1736.5,
-          17810
+          1735.6,
+          1735.6,
+          21159
         ]
       ]
     }
