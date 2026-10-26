@@ -1,20 +1,20 @@
 {
-  "signal_id": "20261026-114546-RELIANCE",
-  "generated_at": "2026-10-26T11:45:46.375196+05:30",
-  "nifty_ltp": 22559.6,
+  "signal_id": "20261026-114750-RELIANCE",
+  "generated_at": "2026-10-26T11:47:50.100945+05:30",
+  "nifty_ltp": 22564.0,
   "candidates": [
     {
       "ticker": "RELIANCE",
       "signal": "BUY",
-      "ltp": 1193.4,
-      "stop": 1184.41,
-      "target": 1215.89,
+      "ltp": 1194.0,
+      "stop": 1185.01,
+      "target": 1216.49,
       "qty": 106,
       "indicators": {
         "rsi": 53.16,
         "atr": 3.311,
         "atr_15m": 5.9964,
-        "vwap": 1190.83,
+        "vwap": 1190.9,
         "vol_ratio": 2.44
       },
       "scout_reason": "NIFTY NEUTRAL, sector ENERGY BULLISH",
@@ -174,10 +174,10 @@
         [
           "11:45",
           1194.2,
-          1194.2,
+          1196.0,
           1193.2,
-          1193.5,
-          7838
+          1193.9,
+          105765
         ]
       ]
     }
