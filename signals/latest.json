@@ -1,20 +1,20 @@
 {
-  "signal_id": "20261026-105117-SBICARD",
-  "generated_at": "2026-10-26T10:51:17.611927+05:30",
-  "nifty_ltp": 22643.8,
+  "signal_id": "20261026-105320-SBICARD",
+  "generated_at": "2026-10-26T10:53:20.202916+05:30",
+  "nifty_ltp": 22633.3,
   "candidates": [
     {
       "ticker": "SBICARD",
       "signal": "BUY",
-      "ltp": 1594.8,
-      "stop": 1578.85,
-      "target": 1634.67,
+      "ltp": 1592.5,
+      "stop": 1576.55,
+      "target": 1632.37,
       "qty": 59,
       "indicators": {
         "rsi": 55.66,
         "atr": 6.7515,
         "atr_15m": 10.6323,
-        "vwap": 1587.86,
+        "vwap": 1587.87,
         "vol_ratio": 1.53
       },
       "scout_reason": "NIFTY NEUTRAL, sector FINANCIAL SERVICES NEUTRAL",
@@ -175,9 +175,9 @@
           "10:50",
           1595.0,
           1595.2,
-          1594.8,
-          1595.0,
-          369
+          1592.5,
+          1592.5,
+          1009
         ]
       ]
     }
