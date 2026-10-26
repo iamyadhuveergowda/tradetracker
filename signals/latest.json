@@ -1,20 +1,20 @@
 {
-  "signal_id": "20261026-115718-ADANIPORTS",
-  "generated_at": "2026-10-26T11:57:18.950259+05:30",
-  "nifty_ltp": 22567.4,
+  "signal_id": "20261026-115923-ADANIPORTS",
+  "generated_at": "2026-10-26T11:59:23.339305+05:30",
+  "nifty_ltp": 22575.75,
   "candidates": [
     {
       "ticker": "ADANIPORTS",
       "signal": "BUY",
-      "ltp": 1732.8,
-      "stop": 1719.11,
-      "target": 1767.04,
+      "ltp": 1733.0,
+      "stop": 1719.31,
+      "target": 1767.24,
       "qty": 69,
       "indicators": {
         "rsi": 54.93,
         "atr": 4.8111,
         "atr_15m": 9.1295,
-        "vwap": 1731.28,
+        "vwap": 1731.27,
         "vol_ratio": 5.53
       },
       "scout_reason": "NIFTY NEUTRAL, sector INFRASTRUCTURE NEUTRAL",
@@ -175,9 +175,9 @@
           "11:55",
           1735.7,
           1735.8,
-          1732.5,
-          1733.6,
-          13948
+          1732.0,
+          1732.6,
+          19601
         ]
       ]
     }
