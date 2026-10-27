@@ -1,20 +1,20 @@
 {
-  "signal_id": "20261027-113118-CIPLA",
-  "generated_at": "2026-10-27T11:31:18.882498+05:30",
-  "nifty_ltp": 22750.2,
+  "signal_id": "20261027-113318-CIPLA",
+  "generated_at": "2026-10-27T11:33:18.620796+05:30",
+  "nifty_ltp": 22755.8,
   "candidates": [
     {
       "ticker": "CIPLA",
       "signal": "BUY",
-      "ltp": 1362.5,
-      "stop": 1353.46,
-      "target": 1385.1,
+      "ltp": 1361.8,
+      "stop": 1352.76,
+      "target": 1384.4,
       "qty": 106,
       "indicators": {
         "rsi": 56.69,
         "atr": 3.7037,
         "atr_15m": 6.027,
-        "vwap": 1359.43,
+        "vwap": 1359.44,
         "vol_ratio": 3.26
       },
       "scout_reason": "NIFTY NEUTRAL, sector PHARMA BULLISH",
@@ -175,9 +175,9 @@
           "11:30",
           1365.5,
           1365.8,
-          1362.1,
-          1363.5,
-          6118
+          1361.0,
+          1362.3,
+          12671
         ]
       ]
     }
