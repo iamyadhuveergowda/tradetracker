@@ -1,20 +1,20 @@
 {
-  "signal_id": "20261027-125621-SBILIFE",
-  "generated_at": "2026-10-27T12:56:21.660217+05:30",
-  "nifty_ltp": 22783.85,
+  "signal_id": "20261027-125905-SBILIFE",
+  "generated_at": "2026-10-27T12:59:05.641536+05:30",
+  "nifty_ltp": 22784.2,
   "candidates": [
     {
       "ticker": "SBILIFE",
       "signal": "SELL",
-      "ltp": 1628.9,
-      "stop": 1638.05,
-      "target": 1606.02,
+      "ltp": 1628.5,
+      "stop": 1637.65,
+      "target": 1605.62,
       "qty": 105,
       "indicators": {
         "rsi": 43.25,
         "atr": 3.0959,
         "atr_15m": 6.1016,
-        "vwap": 1636.23,
+        "vwap": 1636.19,
         "vol_ratio": 2.34
       },
       "scout_reason": "NIFTY NEUTRAL, sector LIFE INSURANCE NEUTRAL",
@@ -175,9 +175,9 @@
           "12:55",
           1628.8,
           1629.0,
-          1628.7,
-          1628.7,
-          1936
+          1627.7,
+          1628.4,
+          6218
         ]
       ]
     }
