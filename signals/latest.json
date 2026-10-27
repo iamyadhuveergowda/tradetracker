@@ -1,20 +1,20 @@
 {
-  "signal_id": "20261027-134622-BHARTIARTL",
-  "generated_at": "2026-10-27T13:46:22.886279+05:30",
-  "nifty_ltp": 22699.65,
+  "signal_id": "20261027-134908-BHARTIARTL",
+  "generated_at": "2026-10-27T13:49:08.180443+05:30",
+  "nifty_ltp": 22696.65,
   "candidates": [
     {
       "ticker": "BHARTIARTL",
       "signal": "BUY",
-      "ltp": 1965.5,
-      "stop": 1954.41,
-      "target": 1993.22,
+      "ltp": 1963.7,
+      "stop": 1952.61,
+      "target": 1991.42,
       "qty": 86,
       "indicators": {
         "rsi": 56.23,
         "atr": 3.4362,
         "atr_15m": 7.3931,
-        "vwap": 1954.59,
+        "vwap": 1954.67,
         "vol_ratio": 2.11
       },
       "scout_reason": "NIFTY NEUTRAL, sector TELECOM NEUTRAL",
@@ -175,24 +175,24 @@
           "13:45",
           1965.7,
           1966.0,
-          1965.0,
-          1965.0,
-          21866
+          1960.5,
+          1963.8,
+          109545
         ]
       ]
     },
     {
       "ticker": "GRASIM",
       "signal": "SELL",
-      "ltp": 2898.5,
-      "stop": 2913.21,
-      "target": 2861.74,
+      "ltp": 2899.0,
+      "stop": 2913.71,
+      "target": 2862.24,
       "qty": 65,
       "indicators": {
         "rsi": 38.02,
         "atr": 5.622,
         "atr_15m": 9.804,
-        "vwap": 2908.8,
+        "vwap": 2908.66,
         "vol_ratio": 1.9
       },
       "scout_reason": "NIFTY NEUTRAL, sector CEMENT NEUTRAL",
@@ -352,10 +352,10 @@
         [
           "13:45",
           2899.4,
-          2899.4,
-          2896.7,
-          2898.5,
-          882
+          2899.7,
+          2896.4,
+          2899.7,
+          4595
         ]
       ]
     }
