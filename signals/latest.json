@@ -1,20 +1,20 @@
 {
-  "signal_id": "20261027-104715-BAJAJ-AUTO",
-  "generated_at": "2026-10-27T10:47:15.224890+05:30",
-  "nifty_ltp": 22759.25,
+  "signal_id": "20261027-104922-BAJAJ-AUTO",
+  "generated_at": "2026-10-27T10:49:22.005166+05:30",
+  "nifty_ltp": 22764.15,
   "candidates": [
     {
       "ticker": "BAJAJ-AUTO",
       "signal": "BUY",
-      "ltp": 10228.0,
-      "stop": 10154.25,
-      "target": 10412.37,
+      "ltp": 10260.0,
+      "stop": 10186.81,
+      "target": 10442.99,
       "qty": 13,
       "indicators": {
         "rsi": 62.98,
         "atr": 29.4204,
-        "atr_15m": 49.1661,
-        "vwap": 10219.83,
+        "atr_15m": 48.7963,
+        "vwap": 10230.93,
         "vol_ratio": 2.75
       },
       "scout_reason": "NIFTY NEUTRAL, sector AUTO BULLISH",
@@ -174,10 +174,10 @@
         [
           "10:45",
           10234.0,
-          10234.0,
+          10290.0,
           10228.0,
-          10230.0,
-          171
+          10270.0,
+          26668
         ]
       ]
     }
