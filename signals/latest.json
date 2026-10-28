@@ -1,23 +1,23 @@
 {
-  "signal_id": "20261028-102040-AXISBANK",
-  "generated_at": "2026-10-28T10:20:40.840903+05:30",
-  "nifty_ltp": 22513.05,
+  "signal_id": "20261028-102325-AXISBANK",
+  "generated_at": "2026-10-28T10:23:25.584299+05:30",
+  "nifty_ltp": 22508.0,
   "candidates": [
     {
       "ticker": "AXISBANK",
       "signal": "SELL",
-      "ltp": 1204.0,
-      "stop": 1210.72,
-      "target": 1187.19,
+      "ltp": 1203.2,
+      "stop": 1209.92,
+      "target": 1186.39,
       "qty": 71,
       "indicators": {
         "rsi": 39.03,
         "atr": 3.3517,
         "atr_15m": 4.4827,
-        "vwap": 1206.39,
+        "vwap": 1206.36,
         "vol_ratio": 1.78
       },
-      "scout_reason": "NIFTY 50 -1.04% oversold for SELL; size cut 50%",
+      "scout_reason": "NIFTY 50 -1.06% oversold for SELL; size cut 50%",
       "candles_5m": [
         [
           "14:50",
@@ -175,27 +175,27 @@
           "10:20",
           1204.3,
           1204.3,
-          1203.8,
-          1204.0,
-          1803
+          1203.0,
+          1203.1,
+          18016
         ]
       ]
     },
     {
       "ticker": "BRITANNIA",
       "signal": "SELL",
-      "ltp": 4529.4,
-      "stop": 4555.51,
-      "target": 4464.14,
+      "ltp": 4534.0,
+      "stop": 4560.11,
+      "target": 4468.74,
       "qty": 18,
       "indicators": {
         "rsi": 46.98,
         "atr": 11.389,
         "atr_15m": 17.4038,
-        "vwap": 4528.46,
+        "vwap": 4528.73,
         "vol_ratio": 2.03
       },
-      "scout_reason": "NIFTY 50 -1.04% oversold for SELL; size cut 50%",
+      "scout_reason": "NIFTY 50 -1.06% oversold for SELL; size cut 50%",
       "candles_5m": [
         [
           "14:50",
@@ -352,10 +352,10 @@
         [
           "10:20",
           4527.0,
-          4530.0,
+          4534.8,
           4525.5,
-          4526.1,
-          4214
+          4532.1,
+          4824
         ]
       ]
     }
