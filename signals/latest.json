@@ -1,7 +1,7 @@
 {
-  "signal_id": "20261028-113142-JSWSTEEL",
-  "generated_at": "2026-10-28T11:31:42.576696+05:30",
-  "nifty_ltp": 22631.3,
+  "signal_id": "20261028-113346-JSWSTEEL",
+  "generated_at": "2026-10-28T11:33:46.374847+05:30",
+  "nifty_ltp": 22627.35,
   "candidates": [
     {
       "ticker": "JSWSTEEL",
@@ -14,7 +14,7 @@
         "rsi": 45.85,
         "atr": 3.183,
         "atr_15m": 5.7357,
-        "vwap": 1238.12,
+        "vwap": 1238.13,
         "vol_ratio": 3.34
       },
       "scout_reason": "NIFTY BEARISH, sector METAL BEARISH",
@@ -174,25 +174,25 @@
         [
           "11:30",
           1238.4,
-          1239.5,
+          1240.0,
           1238.4,
-          1239.3,
-          1162
+          1239.7,
+          2186
         ]
       ]
     },
     {
       "ticker": "BRITANNIA",
       "signal": "SELL",
-      "ltp": 4534.2,
-      "stop": 4557.47,
-      "target": 4476.01,
+      "ltp": 4533.9,
+      "stop": 4557.17,
+      "target": 4475.71,
       "qty": 41,
       "indicators": {
         "rsi": 49.83,
         "atr": 8.5256,
         "atr_15m": 15.5166,
-        "vwap": 4529.08,
+        "vwap": 4529.3,
         "vol_ratio": 4.15
       },
       "scout_reason": "NIFTY BEARISH, sector FMCG BEARISH",
@@ -354,8 +354,8 @@
           4529.7,
           4535.0,
           4529.7,
-          4533.4,
-          4691
+          4533.9,
+          11606
         ]
       ]
     }
