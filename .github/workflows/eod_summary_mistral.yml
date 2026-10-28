@@ -1,0 +1,47 @@
+name: Mistral EOD Scoring (NIFTY)
+
+# SCORING ONLY for the Mistral shadow desk. 10:45 UTC = 16:15 IST, 30 min
+# after the Gemini EOD (15:45 IST), so both EODs never race on git.
+# Scores desk_history_mistral.json with the identical first-hit rules and
+# commits ONLY that file. No Telegram, no LLM narration, no agent book —
+# the Gemini EOD already reports those, and a second EOD message would be spam.
+on:
+  schedule:
+    - cron: '45 10 * * 1-5'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nifty-eod-mistral
+  cancel-in-progress: false
+
+jobs:
+  generate-eod-report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Dependencies
+        run: pip install yfinance
+      - name: Score Mistral desk verdicts (no Telegram, no LLM)
+        run: python .github/scripts/eod_summary_mistral.py
+      - name: Commit scored desk history
+        run: |
+          git config --global user.name "Assistant Desk Bot"
+          git config --global user.email "bot@users.noreply.github.com"
+          if [ -f desk_history_mistral.json ]; then
+            git add desk_history_mistral.json
+            if git diff --staged --quiet; then
+              echo "No scoring changes to commit"
+            else
+              git commit -m "Auto: Mistral EOD desk outcomes scored [skip ci]"
+              git pull --rebase origin main
+              git push
+            fi
+          else
+            echo "desk_history_mistral.json not found, skipping commit."
+          fi
