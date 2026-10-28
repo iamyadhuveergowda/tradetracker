@@ -121,9 +121,9 @@
       "risk": "Target of 1905.03 requires an ambitious 4.44 ATR move (35.77 pts) against a daily ATR of 8.06, which is overly demanding intraday. Stop at 1955.11 represents 1.78 ATR. Results risk is empty."
     },
     "rationale": "SKIP. Shorting at 1940.8 sells right into the session low support of 1935.10 with diminishing volume on the 10:00 bar (198k). The 4.44 ATR target distance to 1905.03 is excessive intraday, particularly with NIFTY already down -0.82%.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-10-28T22:09:37+05:30"
   },
   {
     "signal_id": "20261028-102040-AXISBANK",
@@ -148,9 +148,9 @@
       "risk": "Stop is set at 1210.72 (2.0 ATR), target at 1187.19 (5.02 ATR). Demanding a 5.02 ATR decline from current levels after the opening flush is overly ambitious for intraday expectations."
     },
     "rationale": "Selling AXISBANK at 1204.00 places entry right above round-number support at 1200.00 while NIFTY is already oversold (-1.04%). Requiring a 5.02 ATR drop to reach target makes this an unfavorable intraday R:R.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-10-28T22:09:37+05:30"
   },
   {
     "signal_id": "20261028-102040-AXISBANK",
@@ -175,9 +175,9 @@
       "risk": "Target of 4464.14 requires a 5.73 ATR plunge (65.26 points) well below the day's low, while the stop is 2.29 ATR at 4555.51. The distance to target is completely disconnected from current intraday volatility."
     },
     "rationale": "BRITANNIA exhibits clear relative strength against a weak NIFTY (-1.04%), posting higher lows all morning. Shorting against this drift with a target requiring 5.73 ATRs of downside is unjustified.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-10-28T22:09:37+05:30"
   },
   {
     "signal_id": "20261028-113142-JSWSTEEL",
@@ -202,9 +202,9 @@
       "risk": "Stop distance is 2.70 ATR (8.60 points to 1247.90). However, the target of 1217.79 demands a massive 6.76 ATR expansion (21.51 points) with under 4 hours remaining, making full realization highly improbable in standard intraday range conditions."
     },
     "rationale": "Despite sector and index alignment, JSWSTEEL is drifting upward over the trailing hour. An ambitious 6.76 ATR target paired with lack of downside breakdown confirmation warrants a SKIP.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-10-28T22:09:37+05:30"
   },
   {
     "signal_id": "20261028-114642-GRASIM",
@@ -229,8 +229,8 @@
       "risk": "Reward:risk is 2.50 on paper, but the target distance is 7.39 ATR (39.80 points to 2842.60) against a stop of 2.96 ATR (2898.32). Expecting an expansion of over 7 ATRs into the afternoon close from an oversold index context is low-probability."
     },
     "rationale": "SKIP. Shorting directly into established intraday support at 2879.50 with a massive 7.39 ATR target requirement in mid-day trade offers poor execution probability despite the 11:40 supply spike.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-10-28T22:09:37+05:30"
   }
 ]
