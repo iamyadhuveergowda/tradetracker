@@ -178,5 +178,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261028-113142-JSWSTEEL",
+    "signal_time": "2026-10-28T11:31:42+05:30",
+    "judged_at": "2026-10-28T11:32:03+05:30",
+    "age_min": 0.4,
+    "ticker": "JSWSTEEL",
+    "action": "SELL",
+    "entry": 1239.3,
+    "stop": 1247.9,
+    "target": 1217.79,
+    "qty": 112,
+    "verdict": "SKIP",
+    "confidence": 42,
+    "trigger": "Valid only on a break below 1234.80 with sustained volume",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "Price has drifted upward from 1234.80 at 10:35 to 1243.50 at 11:25. While the 11:25 bar printed an upper rejection wick, the immediate trend across the 12-candle window remains bullish. RSI sits neutral at 45.85, and entering a short at 1239.30 without confirmation of a trend reversal is premature.",
+      "sentiment": "Tape shows a notable volume surge to 39,355 contracts on the 11:25 bar rejecting the 1243.50 high, suggesting overhead supply, but follow-through selling has yet to materialize. Note that no headline news feed is available.",
+      "macro": "Midday tape at 11:31 IST aligns with the scout's bearish thesis on NIFTY (spot 22631.3) and the Metal sector, but midday consolidation often leads to choppy action rather than immediate continuation.",
+      "risk": "Stop distance is 2.70 ATR (8.60 points to 1247.90). However, the target of 1217.79 demands a massive 6.76 ATR expansion (21.51 points) with under 4 hours remaining, making full realization highly improbable in standard intraday range conditions."
+    },
+    "rationale": "Despite sector and index alignment, JSWSTEEL is drifting upward over the trailing hour. An ambitious 6.76 ATR target paired with lack of downside breakdown confirmation warrants a SKIP.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
