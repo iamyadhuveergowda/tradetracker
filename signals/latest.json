@@ -1,23 +1,23 @@
 {
-  "signal_id": "20261028-114642-GRASIM",
-  "generated_at": "2026-10-28T11:46:42.315970+05:30",
-  "nifty_ltp": 22601.65,
+  "signal_id": "20261028-114925-GRASIM",
+  "generated_at": "2026-10-28T11:49:25.723446+05:30",
+  "nifty_ltp": 22616.6,
   "candidates": [
     {
       "ticker": "GRASIM",
       "signal": "SELL",
-      "ltp": 2882.4,
-      "stop": 2898.32,
-      "target": 2842.6,
-      "qty": 30,
+      "ltp": 2883.9,
+      "stop": 2899.82,
+      "target": 2844.1,
+      "qty": 60,
       "indicators": {
         "rsi": 46.36,
         "atr": 5.3829,
         "atr_15m": 10.613,
-        "vwap": 2884.05,
+        "vwap": 2884.08,
         "vol_ratio": 5.22
       },
-      "scout_reason": "NIFTY 50 -0.65% oversold for SELL; size cut 50%",
+      "scout_reason": "NIFTY BEARISH, sector CEMENT NEUTRAL",
       "candles_5m": [
         [
           "10:10",
@@ -175,9 +175,9 @@
           "11:45",
           2886.6,
           2886.6,
-          2881.5,
-          2881.6,
-          2424
+          2881.1,
+          2883.5,
+          6229
         ]
       ]
     }
