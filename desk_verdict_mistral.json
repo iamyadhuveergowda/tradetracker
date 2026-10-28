@@ -1,0 +1,35 @@
+{
+  "signal_id": "20261028-130230-DRREDDY",
+  "judged_at": "2026-10-28T13:02:44+05:30",
+  "age_min": 0.2,
+  "advisory_only": true,
+  "verdicts": [
+    {
+      "signal_id": "20261028-130230-DRREDDY",
+      "signal_time": "2026-10-28T13:02:30+05:30",
+      "judged_at": "2026-10-28T13:02:44+05:30",
+      "age_min": 0.2,
+      "ticker": "DRREDDY",
+      "action": "BUY",
+      "entry": 1327.0,
+      "stop": 1318.7,
+      "target": 1347.76,
+      "qty": 116,
+      "verdict": "SKIP",
+      "confidence": 85,
+      "trigger": "Valid only on a break above 1330.0 with RSI > 70 and volume > 100k",
+      "results_risk": "",
+      "feasibility": "",
+      "analyst_notes": {
+        "technical": "RSI at 63.57 is neutral, not overbought. Candle structure shows choppy action with no clear momentum: last 5m candle closed at entry (1327.0) with weak volume (7664) and no follow-through. ATR buffer (2.9471) suggests tight stop (1318.7) but target (1347.76) is 7.04 ATR away—unrealistic in 38 minutes. No clean setup; appears to be chasing.",
+        "sentiment": "No headline information available. Volume spike at 12:25 (125169) suggests prior rejection, but no follow-through into the entry. Sector-wide prints not visible in data; tape shows indecision.",
+        "macro": "NIFTY neutral per scout, but late-session entry (13:02) requires exceptional structure. Pharma sector is bullish, but this trade lacks alignment with index tape or time-of-day dynamics.",
+        "risk": "Target distance (7.04 ATR) is infeasible in 38 minutes (feasibility: empty, no invented constraints). Stop distance (2.82 ATR) is tight, and reward:risk (2.5) is misleading without a realistic target. No results risk (empty)."
+      },
+      "rationale": "Choppy tape, no momentum, and late-session entry with an unrealistic target distance (7.04 ATR in 38 minutes). Requires a break above 1330.0 with RSI > 70 and volume > 100k to reconsider, but even then, structure is weak.",
+      "outcome": null,
+      "outcome_r": null,
+      "outcome_at": null
+    }
+  ]
+}
