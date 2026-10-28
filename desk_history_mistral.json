@@ -52,5 +52,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261028-132849-SBILIFE",
+    "signal_time": "2026-10-28T13:28:49+05:30",
+    "judged_at": "2026-10-28T13:29:05+05:30",
+    "age_min": 0.3,
+    "ticker": "SBILIFE",
+    "action": "BUY",
+    "entry": 1668.9,
+    "stop": 1656.49,
+    "target": 1699.92,
+    "qty": 77,
+    "verdict": "SKIP",
+    "confidence": 0,
+    "trigger": "",
+    "results_risk": "reported results YESTERDAY (2026-10-27)",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 64.91 suggests moderate overbought conditions, but the last 5-minute candle (13:25) shows a bearish engulfing pattern (close at 1668.5 after a high of 1670.1). The 13:20 candle's high (1673.9) was not sustained, indicating weak follow-through. ATR buffer (3.81) is tight, and the stop (1656.49) is 3.26 ATR away, which is reasonable but not compelling given the lack of momentum.",
+      "sentiment": "No headline information available. Volume surged in the 13:05-13:20 window (12969 to 17376), but the tape lacks conviction: the 13:25 candle closed lower with high volume, signaling distribution. Sector (Life Insurance) is neutral, but the stock is printing weaker than the broader NIFTY tape.",
+      "macro": "NIFTY is neutral, and the trade direction (BUY) is counterintuitive in a late-session (13:28) setup where the index is not showing clear momentum. Late-session entries require exceptional structure, which is absent here.",
+      "risk": "Results reported yesterday (2026-10-27) introduce pre-/post-results volatility risk. The target (1699.92) is 8.14 ATR away, which is a 2.5:1 reward-to-risk ratio, but the feasibility is questionable due to time left (102 minutes to close) and lack of follow-through. Stop distance (3.26 ATR) is adequate but not protective given the weak structure."
+    },
+    "rationale": "SKIP due to weak candle structure (bearish engulfing at 13:25), lack of follow-through, and late-session timing. Results reported yesterday add volatility risk, and the target is not reachable in the remaining session time without a clear catalyst. No meaningful trigger exists in-session to justify a GO.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
