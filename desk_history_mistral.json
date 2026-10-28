@@ -22,9 +22,9 @@
       "risk": "Target distance (7.04 ATR) is infeasible in 38 minutes (feasibility: empty, no invented constraints). Stop distance (2.82 ATR) is tight, and reward:risk (2.5) is misleading without a realistic target. No results risk (empty)."
     },
     "rationale": "Choppy tape, no momentum, and late-session entry with an unrealistic target distance (7.04 ATR in 38 minutes). Requires a break above 1330.0 with RSI > 70 and volume > 100k to reconsider, but even then, structure is weak.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 1.01,
+    "outcome_at": "2026-10-28T22:20:21+05:30"
   },
   {
     "signal_id": "20261028-131605-LT",
@@ -49,9 +49,9 @@
       "risk": "Results reported **YESTERDAY (2026-10-27)** introduce pre-/post-results volatility risk. Stop distance (2.94 ATR) is too close for a 2.5:1 reward:risk setup. Target (3896.96) is **INFEASIBLE** with 104 minutes left (target_distance_atr: 7.35 ATR; average 5m move: ~1.5 ATR). No hedge against index risk."
     },
     "rationale": "Late-session BUY on LT lacks momentum, confirmation, and macro alignment. Technical structure is weak (exhaustion, no follow-through), sentiment is neutral with declining volume, and risk/reward is skewed by tight stop and infeasible target. **SKIP** unless a break above 3836.0 with RSI > 70 and volume > 200k occurs, signaling renewed buying interest.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-10-28T22:20:21+05:30"
   },
   {
     "signal_id": "20261028-132849-SBILIFE",
@@ -76,9 +76,9 @@
       "risk": "Results reported yesterday (2026-10-27) introduce pre-/post-results volatility risk. The target (1699.92) is 8.14 ATR away, which is a 2.5:1 reward-to-risk ratio, but the feasibility is questionable due to time left (102 minutes to close) and lack of follow-through. Stop distance (3.26 ATR) is adequate but not protective given the weak structure."
     },
     "rationale": "SKIP due to weak candle structure (bearish engulfing at 13:25), lack of follow-through, and late-session timing. Results reported yesterday add volatility risk, and the target is not reachable in the remaining session time without a clear catalyst. No meaningful trigger exists in-session to justify a GO.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": -0.18,
+    "outcome_at": "2026-10-28T22:20:21+05:30"
   },
   {
     "signal_id": "20261028-133132-SBIN",
@@ -103,9 +103,9 @@
       "risk": "TIGHT feasibility (7.10 ATR target with 119 min left). Stop at 950.69 (2.84 ATR) is aggressive; reward:risk 2.5 is decent but hinges on untested upside. No results risk."
     },
     "rationale": "Late-session setup lacks momentum and follow-through. Volume spikes are erratic, and candle structure is indecisive. Requires a break above 956.75 with sustained volume to justify entry.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.28,
+    "outcome_at": "2026-10-28T22:20:21+05:30"
   },
   {
     "signal_id": "20261028-133132-SBIN",
@@ -130,8 +130,8 @@
       "risk": "TIGHT feasibility (6.19 ATR target with 119 min left). Stop is well-placed (2.48 ATR), but target is ambitious. Reward:risk 2.5 is acceptable given the sector context. No results risk."
     },
     "rationale": "Sector-wide volume interest and late-session recovery attempt justify a GO, but only with confirmation of a close above 444.20 and volume > 250k. Structure is weak but not disastrous; risk is controlled.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-10-28T22:20:21+05:30"
   }
 ]
