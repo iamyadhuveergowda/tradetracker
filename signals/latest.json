@@ -1,20 +1,20 @@
 {
-  "signal_id": "20261028-124656-DRREDDY",
-  "generated_at": "2026-10-28T12:46:56.312055+05:30",
-  "nifty_ltp": 22719.55,
+  "signal_id": "20261028-124857-DRREDDY",
+  "generated_at": "2026-10-28T12:48:57.597557+05:30",
+  "nifty_ltp": 22706.35,
   "candidates": [
     {
       "ticker": "DRREDDY",
       "signal": "BUY",
-      "ltp": 1325.7,
-      "stop": 1317.65,
-      "target": 1345.83,
+      "ltp": 1326.3,
+      "stop": 1318.25,
+      "target": 1346.43,
       "qty": 119,
       "indicators": {
         "rsi": 61.9,
         "atr": 2.9799,
         "atr_15m": 5.369,
-        "vwap": 1318.76,
+        "vwap": 1318.79,
         "vol_ratio": 3.29
       },
       "scout_reason": "NIFTY NEUTRAL, sector PHARMA BULLISH",
@@ -176,8 +176,8 @@
           1326.2,
           1326.8,
           1325.2,
-          1325.2,
-          11090
+          1326.1,
+          14952
         ]
       ]
     }
