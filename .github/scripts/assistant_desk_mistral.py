@@ -269,12 +269,15 @@ def mistral_judge(candidates: list[dict], nifty_ltp, signal_time_ist: str, calen
             "results_risk": results_flag(calendar or {}, c["ticker"], signal_date),
             "feasibility": feasibility_flag(round(abs(float(c["target"]) - float(c["ltp"])) / (float(c.get("indicators", {}).get("atr") or 0) or 0.0), 2) if float(c.get("indicators", {}).get("atr") or 0) else None, minutes_left),
             "candles_5m_last12": (c.get("candles_5m") or [])[-12:],
+            "minutes_left": minutes_left,
         })
     prompt = (
         "You are the Chief Investment Officer overseeing a 4-analyst desk for a NIFTY "
         "intraday paper-trading system. This is an ADVISORY review: verdicts are logged "
         "and graded at end of day; you do not place trades.\n\n"
         f"Session context: signal time {signal_time_ist} IST (session 09:15-15:30). "
+        f"Minutes remaining to the 15:30 close: {minutes_left} — use THIS number for all "
+        "time-to-close reasoning; do not recompute it from the signal time. "
         f"NIFTY spot: {nifty_ltp if nifty_ltp is not None else 'unknown'}. Candles are "
         "5-minute bars [time, open, high, low, close, volume].\n\n"
         "Evaluate EACH candidate through four lenses:\n"
@@ -297,7 +300,7 @@ def mistral_judge(candidates: list[dict], nifty_ltp, signal_time_ist: str, calen
         "you MUST mention it in risk/summary and weigh pre-/post-results volatility: "
         "a GO on a results-today/tomorrow name needs exceptional structure. If it is "
         "empty, do NOT invent a results date or claim a company is reporting.\n\n"
-        "Default to skepticism: a SKIP costs nothing. Return ONLY this JSON: "
+        "Default to skepticism: a SKIP costs nothing. CONFIDENCE: confidence is your conviction in the verdict you just gave for that candidate (GO or SKIP), as an integer. A verdict you stand behind is 50-95; a SKIP you believe in is 60-90. Never output 0 and never omit the confidence field — 0 means you have no opinion, not low conviction, and is not a valid confidence for a verdict. Return ONLY this JSON: "
         "{\"verdicts\": [{\"ticker\": str, \"verdict\": \"GO\"|\"SKIP\", "
         "\"confidence\": int 0-100, \"trigger\": str, \"analyst_notes\": {\"technical\": str, "
         "\"sentiment\": str, \"macro\": str, \"risk\": str}, \"summary\": str}]} "
