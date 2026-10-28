@@ -1,20 +1,20 @@
 {
-  "signal_id": "20261028-123116-RELIANCE",
-  "generated_at": "2026-10-28T12:31:16.808765+05:30",
-  "nifty_ltp": 22657.6,
+  "signal_id": "20261028-123406-RELIANCE",
+  "generated_at": "2026-10-28T12:34:06.165535+05:30",
+  "nifty_ltp": 22658.6,
   "candidates": [
     {
       "ticker": "RELIANCE",
       "signal": "SELL",
-      "ltp": 1172.7,
-      "stop": 1181.82,
-      "target": 1149.89,
-      "qty": 105,
+      "ltp": 1172.5,
+      "stop": 1181.08,
+      "target": 1151.05,
+      "qty": 112,
       "indicators": {
         "rsi": 36.83,
         "atr": 2.6737,
-        "atr_15m": 6.0817,
-        "vwap": 1183.61,
+        "atr_15m": 5.7194,
+        "vwap": 1183.53,
         "vol_ratio": 3.44
       },
       "scout_reason": "NIFTY BEARISH, sector ENERGY BEARISH",
@@ -174,25 +174,25 @@
         [
           "12:30",
           1172.4,
-          1173.1,
+          1173.2,
           1172.0,
-          1172.7,
-          16457
+          1172.5,
+          93874
         ]
       ]
     },
     {
       "ticker": "BHARTIARTL",
       "signal": "SELL",
-      "ltp": 1944.0,
-      "stop": 1957.7,
-      "target": 1909.75,
-      "qty": 70,
+      "ltp": 1945.9,
+      "stop": 1959.19,
+      "target": 1912.67,
+      "qty": 72,
       "indicators": {
         "rsi": 44.61,
         "atr": 4.7784,
-        "atr_15m": 9.1323,
-        "vwap": 1945.7,
+        "atr_15m": 8.8605,
+        "vwap": 1945.72,
         "vol_ratio": 2.1
       },
       "scout_reason": "NIFTY BEARISH, sector TELECOM NEUTRAL",
@@ -352,10 +352,10 @@
         [
           "12:30",
           1942.4,
-          1944.6,
+          1946.2,
           1942.4,
-          1944.6,
-          57747
+          1946.1,
+          121680
         ]
       ]
     }
