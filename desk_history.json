@@ -97,5 +97,32 @@
     "outcome": "CLOSE",
     "outcome_r": 1.02,
     "outcome_at": "2026-10-26T22:18:53+05:30"
+  },
+  {
+    "signal_id": "20261028-100504-BHARTIARTL",
+    "signal_time": "2026-10-28T10:05:04+05:30",
+    "judged_at": "2026-10-28T10:05:18+05:30",
+    "age_min": 0.2,
+    "ticker": "BHARTIARTL",
+    "action": "SELL",
+    "entry": 1940.8,
+    "stop": 1955.11,
+    "target": 1905.03,
+    "qty": 33,
+    "verdict": "SKIP",
+    "confidence": 35,
+    "trigger": "Valid only on a break below 1935.10",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "Price at 1941.1 sits right above the morning low support of 1935.10 set at 09:15. RSI is 42.39. Selling at 1940.8 enters directly into immediate support rather than on confirmed breakdown. ATR is 8.06.",
+      "sentiment": "No headline news feed is available; sentiment judged strictly from the tape. Heavy selling volume printed at 09:15 (899,298) and 09:20 (885,371), but the recent 10:00 drop closed on subdued volume (198,696), showing a lack of aggressive aggressive continuation.",
+      "macro": "Signal at 10:05 IST aligns with morning trade, but the scout notes NIFTY 50 is already down -0.82% and oversold, increasing the probability of an index-level mean-reversion bounce.",
+      "risk": "Target of 1905.03 requires an ambitious 4.44 ATR move (35.77 pts) against a daily ATR of 8.06, which is overly demanding intraday. Stop at 1955.11 represents 1.78 ATR. Results risk is empty."
+    },
+    "rationale": "SKIP. Shorting at 1940.8 sells right into the session low support of 1935.10 with diminishing volume on the 10:00 bar (198k). The 4.44 ATR target distance to 1905.03 is excessive intraday, particularly with NIFTY already down -0.82%.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
