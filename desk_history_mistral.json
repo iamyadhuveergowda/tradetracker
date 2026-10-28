@@ -79,5 +79,59 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261028-133132-SBIN",
+    "signal_time": "2026-10-28T13:31:32+05:30",
+    "judged_at": "2026-10-28T13:31:53+05:30",
+    "age_min": 0.4,
+    "ticker": "SBIN",
+    "action": "BUY",
+    "entry": 955.45,
+    "stop": 950.69,
+    "target": 967.35,
+    "qty": 201,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "Valid only on a break above 956.75 with volume > 200k",
+    "results_risk": "",
+    "feasibility": "TIGHT: target 7.10 ATR with 119 min to close",
+    "analyst_notes": {
+      "technical": "RSI at 52.68 is neutral; ATR buffer (1.6754) suggests tight stop (2.84 ATR). Candle structure shows late-session consolidation with no clear breakout momentum. Last 5m candle (13:30) closed near high but lacks follow-through volume (189k vs. earlier 418k spike).",
+      "sentiment": "No headline information available. Volume spike at 12:55 (156k) and 13:25 (418k) suggests sector-wide interest, but late-session prints lack conviction. No clear sector-wide follow-through.",
+      "macro": "NIFTY neutral aligns with late-session caution. Banks are sector-bullish but lack index tailwind; late entries require stronger structure.",
+      "risk": "TIGHT feasibility (7.10 ATR target with 119 min left). Stop at 950.69 (2.84 ATR) is aggressive; reward:risk 2.5 is decent but hinges on untested upside. No results risk."
+    },
+    "rationale": "Late-session setup lacks momentum and follow-through. Volume spikes are erratic, and candle structure is indecisive. Requires a break above 956.75 with sustained volume to justify entry.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
+  },
+  {
+    "signal_id": "20261028-133132-SBIN",
+    "signal_time": "2026-10-28T13:31:32+05:30",
+    "judged_at": "2026-10-28T13:31:53+05:30",
+    "age_min": 0.4,
+    "ticker": "KOTAKBANK",
+    "action": "BUY",
+    "entry": 443.25,
+    "stop": 441.21,
+    "target": 448.35,
+    "qty": 435,
+    "verdict": "GO",
+    "confidence": 75,
+    "trigger": "Enter at market on confirmation of close above 444.20 with volume > 250k",
+    "results_risk": "",
+    "feasibility": "TIGHT: target 6.19 ATR with 119 min to close",
+    "analyst_notes": {
+      "technical": "RSI at 59.85 is bullish but not overbought. ATR (0.8241) is tight; stop at 441.21 (2.48 ATR) is conservative. Last 5m candle (13:30) closed near high with volume (65k) but lacks follow-through. Breakout attempt at 12:55 (443.9) failed to hold, but 13:10-13:25 shows recovery with volume (274k-499k).",
+      "sentiment": "No headline information available. Volume surge at 12:55 (601k) and 13:25 (499k) indicates sector-wide interest, but late-session prints are mixed. No clear negative tape.",
+      "macro": "NIFTY neutral aligns with cautious sector play. Banks are sector-bullish, but late entries require confirmation. Time of day (13:31) favors structure over momentum.",
+      "risk": "TIGHT feasibility (6.19 ATR target with 119 min left). Stop is well-placed (2.48 ATR), but target is ambitious. Reward:risk 2.5 is acceptable given the sector context. No results risk."
+    },
+    "rationale": "Sector-wide volume interest and late-session recovery attempt justify a GO, but only with confirmation of a close above 444.20 and volume > 250k. Structure is weak but not disastrous; risk is controlled.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
