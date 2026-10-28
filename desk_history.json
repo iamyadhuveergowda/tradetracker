@@ -124,5 +124,59 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261028-102040-AXISBANK",
+    "signal_time": "2026-10-28T10:20:40+05:30",
+    "judged_at": "2026-10-28T10:20:56+05:30",
+    "age_min": 0.3,
+    "ticker": "AXISBANK",
+    "action": "SELL",
+    "entry": 1204.0,
+    "stop": 1210.72,
+    "target": 1187.19,
+    "qty": 71,
+    "verdict": "SKIP",
+    "confidence": 35,
+    "trigger": "Valid only on a decisive breakdown below 1200.00 with volume confirmation",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "AXISBANK established a session low of 1200.00 at 09:30, rebounded to 1211.50, and has since flattened into a 1203-1206 range (RSI 39.03). Entering a short at 1204.00 is selling directly above key support at 1200.00 rather than trading a clean breakdown.",
+      "sentiment": "No headline information is available. The tape shows volume expanding heavily between 10:05 and 10:15 (peaking at 227k shares), but candles remained tight and indecisive, indicating dip-buying absorption around 1203-1204 rather than clean selling pressure.",
+      "macro": "NIFTY is down -1.04% at 22513.05, flagged as oversold for short positions. Shorting a major banking component when the broader index is already stretched lower increases the probability of a sharp mean-reverting bounce.",
+      "risk": "Stop is set at 1210.72 (2.0 ATR), target at 1187.19 (5.02 ATR). Demanding a 5.02 ATR decline from current levels after the opening flush is overly ambitious for intraday expectations."
+    },
+    "rationale": "Selling AXISBANK at 1204.00 places entry right above round-number support at 1200.00 while NIFTY is already oversold (-1.04%). Requiring a 5.02 ATR drop to reach target makes this an unfavorable intraday R:R.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
+  },
+  {
+    "signal_id": "20261028-102040-AXISBANK",
+    "signal_time": "2026-10-28T10:20:40+05:30",
+    "judged_at": "2026-10-28T10:20:56+05:30",
+    "age_min": 0.3,
+    "ticker": "BRITANNIA",
+    "action": "SELL",
+    "entry": 4529.4,
+    "stop": 4555.51,
+    "target": 4464.14,
+    "qty": 18,
+    "verdict": "SKIP",
+    "confidence": 25,
+    "trigger": "Valid only on a break below morning low of 4502.40",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "Candle structure shows an intraday recovery with higher lows from 4502.40 (09:25) to 4537.50 (10:00). RSI stands at 46.98. Shorting at 4529.40 attempts to catch a top against an established morning rebound.",
+      "sentiment": "No headline information is available. Tape behaviour indicates steady accumulation off morning lows, with volume surging to 45,003 shares on the 10:05 rally bar, showing relative buyer resilience.",
+      "macro": "While NIFTY is weak at -1.04%, BRITANNIA is displaying classic FMCG defensive relative strength by grinding higher against the falling index. Shorting relative strength in an oversold macro environment carries poor odds.",
+      "risk": "Target of 4464.14 requires a 5.73 ATR plunge (65.26 points) well below the day's low, while the stop is 2.29 ATR at 4555.51. The distance to target is completely disconnected from current intraday volatility."
+    },
+    "rationale": "BRITANNIA exhibits clear relative strength against a weak NIFTY (-1.04%), posting higher lows all morning. Shorting against this drift with a target requiring 5.73 ATRs of downside is unjustified.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
