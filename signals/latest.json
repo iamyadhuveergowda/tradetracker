@@ -1,14 +1,14 @@
 {
-  "signal_id": "20261029-104437-AXISBANK",
-  "generated_at": "2026-10-29T10:44:37.884037+05:30",
-  "nifty_ltp": 22850.9,
+  "signal_id": "20261029-104633-AXISBANK",
+  "generated_at": "2026-10-29T10:46:33.312603+05:30",
+  "nifty_ltp": 22856.5,
   "candidates": [
     {
       "ticker": "AXISBANK",
       "signal": "BUY",
-      "ltp": 1223.3,
-      "stop": 1217.19,
-      "target": 1238.58,
+      "ltp": 1223.1,
+      "stop": 1216.99,
+      "target": 1238.38,
       "qty": 78,
       "indicators": {
         "rsi": 58.95,
@@ -17,7 +17,7 @@
         "vwap": 1221.06,
         "vol_ratio": 1.52
       },
-      "scout_reason": "NIFTY 50 +0.67% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +0.69% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "15:05",
