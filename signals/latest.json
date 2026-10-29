@@ -1,20 +1,20 @@
 {
-  "signal_id": "20261029-110629-HDFCLIFE",
-  "generated_at": "2026-10-29T11:06:29.916975+05:30",
-  "nifty_ltp": 22832.45,
+  "signal_id": "20261029-110912-HDFCLIFE",
+  "generated_at": "2026-10-29T11:09:12.404949+05:30",
+  "nifty_ltp": 22821.4,
   "candidates": [
     {
       "ticker": "HDFCLIFE",
       "signal": "BUY",
-      "ltp": 516.45,
-      "stop": 512.87,
-      "target": 525.4,
+      "ltp": 516.35,
+      "stop": 512.77,
+      "target": 525.3,
       "qty": 269,
       "indicators": {
         "rsi": 56.84,
         "atr": 1.3171,
         "atr_15m": 2.3879,
-        "vwap": 514.22,
+        "vwap": 514.29,
         "vol_ratio": 1.92
       },
       "scout_reason": "NIFTY BULLISH, sector LIFE INSURANCE NEUTRAL",
@@ -174,10 +174,10 @@
         [
           "11:05",
           516.45,
-          516.45,
+          516.8,
           516.2,
-          516.45,
-          407
+          516.8,
+          11969
         ]
       ]
     }
