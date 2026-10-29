@@ -259,5 +259,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261029-124745-TCS",
+    "signal_time": "2026-10-29T12:47:45+05:30",
+    "judged_at": "2026-10-29T12:48:04+05:30",
+    "age_min": 0.3,
+    "ticker": "TCS",
+    "action": "BUY",
+    "entry": 2472.8,
+    "stop": 2456.56,
+    "target": 2513.4,
+    "qty": 59,
+    "verdict": "SKIP",
+    "confidence": 78,
+    "trigger": "Valid only on a sustained breakout above 2485.00 with expanding volume",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "The tape displays a persistent downward drift from the 11:50 high of 2483.50 down to a low of 2464.00 at 12:25. Although a bounce attempted at 12:40 reached 2479.10 on 115,399 volume, it met immediate rejection back to 2472.70 at 12:45. RSI is neutral at 51.45 and structure reflects choppy consolidation rather than a confirmed bullish reversal.",
+      "sentiment": "No headline news information is available. Judging strictly from the tape, heavy volume prints accompanied the sell-offs at 12:25 (102,919) and 12:30 (107,957), and the 12:40 push struggled with immediate follow-through, indicating ongoing overhead supply.",
+      "macro": "At 12:47 IST, midday conditions prevail with NIFTY spot at 22813.45. While the scout tags NIFTY and IT as bullish, TCS price action is lagging and failing to demonstrate concurrent relative strength.",
+      "risk": "Target distance is extremely wide at 7.69 ATR (40.60 points) relative to an ATR of 5.2823, requiring an improbable multi-ATR expansion within the remaining ~2.7 hours. Stop distance is 3.07 ATR (2456.56). Results risk is not applicable as no earnings release is scheduled."
+    },
+    "rationale": "SKIP. TCS is languishing in a post-drop range after a rejection at 2479.10. A target distance of 7.69 ATR is unrealistic for an intraday session with under three hours remaining.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
