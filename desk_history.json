@@ -340,5 +340,59 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261029-132225-AXISBANK",
+    "signal_time": "2026-10-29T13:22:25+05:30",
+    "judged_at": "2026-10-29T13:22:41+05:30",
+    "age_min": 0.3,
+    "ticker": "AXISBANK",
+    "action": "BUY",
+    "entry": 1221.1,
+    "stop": 1215.86,
+    "target": 1234.2,
+    "qty": 78,
+    "verdict": "SKIP",
+    "confidence": 75,
+    "trigger": "Valid only on a break above 1224.00 with sustained volume",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "AXISBANK experienced a sharp decline between 12:45 and 13:05, hitting a low of 1217.60 before bouncing back to 1221.00. While the 13:05–13:15 rebound showed strong candle closes, price is currently stalled below the prior consolidation resistance shelf at 1223.00–1224.00 with RSI neutral at 51.85.",
+      "sentiment": "No headline information is available. Tape analysis shows high-volume absorption on the 13:00 (239k) and 13:05 (133k) bars near 1218.00, followed by a volume surge of 165k at 13:15, indicating active buying interest at lower levels but immediate stall at 1221.30.",
+      "macro": "NIFTY spot is at 22850.25 (+0.67%), flagged as overextended for longs. Entering a long post-13:20 into an overextended index without clear breakout structure offers poor timing.",
+      "risk": "Reward:risk is 2.5 with stop distance at 2.76 ATR (1215.86). However, the target of 1234.20 requires 6.89 ATRs (13.10 points) of upside expansion with only ~128 minutes remaining in the session, making target attainment highly improbable under standard volatility."
+    },
+    "rationale": "SKIP. AXISBANK's proposed target of 1234.20 lies 6.89 ATRs away in the final two hours of trading while price faces immediate overhead resistance at 1223.00-1224.00.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
+  },
+  {
+    "signal_id": "20261029-132225-AXISBANK",
+    "signal_time": "2026-10-29T13:22:25+05:30",
+    "judged_at": "2026-10-29T13:22:41+05:30",
+    "age_min": 0.3,
+    "ticker": "TATACONSUM",
+    "action": "BUY",
+    "entry": 1011.5,
+    "stop": 1004.33,
+    "target": 1029.43,
+    "qty": 67,
+    "verdict": "SKIP",
+    "confidence": 80,
+    "trigger": "Valid only on a break above 1014.00 on expanding volume",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "TATACONSUM has been locked in a tight 2.5-point horizontal range (1009.00 to 1011.80) across the last hour. RSI is flat at 53.40. The 13:20 candle recorded almost zero range (1011.00-1011.20) on 943 shares, reflecting complete momentum absence.",
+      "sentiment": "No headline information is available. Tape analysis indicates a 119k volume spike at 13:15 that failed to push price past 1011.80, followed by severe volume evaporation on the subsequent bar, signaling lack of follow-through demand.",
+      "macro": "NIFTY sits at 22850.25 (+0.67%) with scout notes signaling overextension for fresh longs. Late-session market conditions demand dynamic expansion, which this stock is failing to demonstrate.",
+      "risk": "Stop is set at 1004.33 (3.38 ATR). The target of 1029.43 requires an 8.45 ATR (17.93 points) move from 1011.50 in under 130 minutes, an extreme distance for a stock exhibiting negligible intraday range."
+    },
+    "rationale": "SKIP. TATACONSUM is trapped in a sideways grind around 1011.00; reaching the 1029.43 target demands an unfeasible 8.45 ATRs of movement before the 15:30 close.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
