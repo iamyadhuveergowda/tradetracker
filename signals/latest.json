@@ -1,23 +1,23 @@
 {
-  "signal_id": "20261029-115044-SBIN",
-  "generated_at": "2026-10-29T11:50:44.728777+05:30",
-  "nifty_ltp": 22860.85,
+  "signal_id": "20261029-115252-SBIN",
+  "generated_at": "2026-10-29T11:52:52.336869+05:30",
+  "nifty_ltp": 22853.45,
   "candidates": [
     {
       "ticker": "SBIN",
       "signal": "BUY",
-      "ltp": 962.5,
-      "stop": 958.49,
-      "target": 972.52,
+      "ltp": 962.05,
+      "stop": 957.96,
+      "target": 972.26,
       "qty": 100,
       "indicators": {
         "rsi": 61.45,
         "atr": 1.7296,
-        "atr_15m": 2.6718,
-        "vwap": 959.79,
+        "atr_15m": 2.7238,
+        "vwap": 959.82,
         "vol_ratio": 4.03
       },
-      "scout_reason": "NIFTY 50 +0.71% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +0.68% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "10:15",
@@ -175,9 +175,9 @@
           "11:50",
           962.85,
           962.95,
-          962.5,
-          962.55,
-          3168
+          961.95,
+          962.05,
+          45533
         ]
       ]
     }
