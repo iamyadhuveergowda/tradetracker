@@ -232,5 +232,32 @@
     "outcome": "STOP",
     "outcome_r": -1.0,
     "outcome_at": "2026-10-28T22:09:37+05:30"
+  },
+  {
+    "signal_id": "20261029-104437-AXISBANK",
+    "signal_time": "2026-10-29T10:44:37+05:30",
+    "judged_at": "2026-10-29T10:45:41+05:30",
+    "age_min": 1.1,
+    "ticker": "AXISBANK",
+    "action": "BUY",
+    "entry": 1223.3,
+    "stop": 1217.19,
+    "target": 1238.58,
+    "qty": 78,
+    "verdict": "SKIP",
+    "confidence": 35,
+    "trigger": "Valid only on a decisive 5-minute candle close above 1225.00 with volume exceeding 80k",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "Price is struggling under local resistance at 1224.90 set at 10:05. While candles from 10:30 to 10:40 show a recovery to 1223.50 with RSI at 58.95, entering at 1223.30 is buying right into supply rather than a clean breakout.",
+      "sentiment": "Tape-only observation: no headline news feed is available. A notable volume spike of 170,938 shares at 10:25 pushed the price down to 1219.80, indicating institutional supply overhead that has not yet been convincingly absorbed.",
+      "macro": "Signal time 10:44 IST with NIFTY spot at 22850.90 (+0.67%). The scout system flagged the broader index as overextended for new long positions, creating headwinds for continuation.",
+      "risk": "Target of 1238.58 demands an unrealistic 5.73 ATR expansion (15.28 points) in the remainder of the session, making the 2.5 R:R largely theoretical. Stop is wide at 2.29 ATR (1217.19). Results risk is empty."
+    },
+    "rationale": "SKIP. AXISBANK is capped beneath 1224.90 resistance following a high-volume supply bar at 10:25. Coupled with an overextended index (+0.67%) and an excessive 5.73 ATR target distance, the trade offers poor intraday probability.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
