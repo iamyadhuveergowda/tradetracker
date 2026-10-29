@@ -394,5 +394,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261029-133951-TCS",
+    "signal_time": "2026-10-29T13:39:51+05:30",
+    "judged_at": "2026-10-29T13:40:10+05:30",
+    "age_min": 0.3,
+    "ticker": "SHRIRAMFIN",
+    "action": "BUY",
+    "entry": 835.2,
+    "stop": 829.62,
+    "target": 849.15,
+    "qty": 86,
+    "verdict": "SKIP",
+    "confidence": 80,
+    "trigger": "Valid only on a decisive breakout above 837.00 with high volume",
+    "results_risk": "",
+    "feasibility": "TIGHT: target 8.69 ATR with 111 min to close",
+    "analyst_notes": {
+      "technical": "RSI sits at 60.35 and price rallied from 833 to a local high of 836.90 at 13:15, but has since stalled and slipped back to 835.15 at 13:35. The 13:30 candle printed heavy volume (144,621) with an upper wick at 836.35, signaling distribution or resistance near 836-837 rather than clean continuation.",
+      "sentiment": "No headline or news feed information is available. Tape sentiment shows an initial push absorbed at 836.80-836.90, where subsequent volume spikes have failed to yield further upside progress, reflecting fading intraday buying interest.",
+      "macro": "At 13:39 IST with NIFTY spot at 22864.45 (+0.73%), the broader index is flagged as overextended for long entries. Entering late in the session against an overextended market reduces the probability of a multi-ATR expansion.",
+      "risk": "Target distance is 8.69 ATR (target 849.15 vs entry 835.20) flagged as TIGHT feasibility with only 111 minutes remaining. Stop distance is wide at 3.47 ATR (829.62). Asking for an ~14-point move when the entire last hour spanned under 4 points is an unfavorable time-risk trade-off. Results risk is empty."
+    },
+    "rationale": "SKIP. Reaching an 8.69 ATR target in 111 minutes under TIGHT feasibility is unrealistic given the tight 833-837 range and overhead rejection at 836.90, compounded by an overextended NIFTY tape.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
