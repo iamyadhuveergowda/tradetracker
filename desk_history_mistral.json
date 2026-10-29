@@ -214,5 +214,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261029-110629-HDFCLIFE",
+    "signal_time": "2026-10-29T11:06:29+05:30",
+    "judged_at": "2026-10-29T11:06:44+05:30",
+    "age_min": 0.2,
+    "ticker": "HDFCLIFE",
+    "action": "BUY",
+    "entry": 516.45,
+    "stop": 512.87,
+    "target": 525.4,
+    "qty": 269,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 56.84 indicates neutral momentum; ATR buffer (1.3171) is tight for a 2.72 ATR stop distance. The last 5-minute candle (11:05) is a doji with minimal volume (407), suggesting indecision. No clear breakout structure; entry at 516.45 lacks follow-through momentum. Sector (Life Insurance) is neutral, and the stock has not shown sector-wide leadership.",
+      "sentiment": "No headline information available. Volume behavior is inconsistent: the 10:25 candle shows a spike (23028), but subsequent candles lack follow-through. No clear sector-wide prints or tape-driven momentum.",
+      "macro": "NIFTY is bullish, but late-session entries (264 minutes to close) require exceptional structure. This trade does not align with the time-of-day dynamics (no late-session surge or breakout).",
+      "risk": "Reward:risk of 2.5 is mathematically appealing, but the stop distance (2.72 ATR) is too tight for the remaining time (264 minutes). Feasibility is empty, but the target (525.4) is 6.8 ATR away, which is aggressive for intraday. No results risk, but the lack of momentum and weak candle structure elevates risk."
+    },
+    "rationale": "HDFCLIFE lacks a clean technical setup, follow-through momentum, and aligns poorly with late-session macro dynamics. The tight stop and aggressive target distance (6.8 ATR) make this a high-risk, low-probability trade. Default to SKIP despite neutral RSI and sector.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
