@@ -256,9 +256,9 @@
       "risk": "Target of 1238.58 demands an unrealistic 5.73 ATR expansion (15.28 points) in the remainder of the session, making the 2.5 R:R largely theoretical. Stop is wide at 2.29 ATR (1217.19). Results risk is empty."
     },
     "rationale": "SKIP. AXISBANK is capped beneath 1224.90 resistance following a high-volume supply bar at 10:25. Coupled with an overextended index (+0.67%) and an excessive 5.73 ATR target distance, the trade offers poor intraday probability.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.28,
+    "outcome_at": "2026-10-29T22:26:52+05:30"
   },
   {
     "signal_id": "20261029-124745-TCS",
@@ -283,9 +283,9 @@
       "risk": "Target distance is extremely wide at 7.69 ATR (40.60 points) relative to an ATR of 5.2823, requiring an improbable multi-ATR expansion within the remaining ~2.7 hours. Stop distance is 3.07 ATR (2456.56). Results risk is not applicable as no earnings release is scheduled."
     },
     "rationale": "SKIP. TCS is languishing in a post-drop range after a rejection at 2479.10. A target distance of 7.69 ATR is unrealistic for an intraday session with under three hours remaining.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.32,
+    "outcome_at": "2026-10-29T22:26:52+05:30"
   },
   {
     "signal_id": "20261029-125600-BRITANNIA",
@@ -310,9 +310,9 @@
       "risk": "Target distance is excessive at 6.64 ATR (68.68 points to 4723.68) with approximately 2.5 hours remaining before close. Reaching this in a low-beta FMCG name from a downtrending base is highly improbable, despite a theoretical 2.5 reward-to-risk ratio. Results risk is empty."
     },
     "rationale": "BRITANNIA is drifting downward with failed bounce attempts and heavy supply prints. A 6.64 ATR target distance is unrealistic for an afternoon move without exceptional momentum. SKIP.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.0,
+    "outcome_at": "2026-10-29T22:26:52+05:30"
   },
   {
     "signal_id": "20261029-130051-ITC",
@@ -337,9 +337,9 @@
       "risk": "Target of 268.23 requires a massive 6.87 ATR move (4.18 points) in only 150 minutes on a low-beta heavyweight with ATR 0.6082. Demanding nearly 7 ATRs of upside intraday makes execution mathematically improbable before the 15:30 close."
     },
     "rationale": "Despite scout alignment with FMCG and a volume burst at 12:55, the target distance of 6.87 ATRs is overly ambitious for an afternoon session on ITC. Defaulting to SKIP due to unrealistic intraday upside requirement.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.57,
+    "outcome_at": "2026-10-29T22:26:52+05:30"
   },
   {
     "signal_id": "20261029-132225-AXISBANK",
@@ -364,9 +364,9 @@
       "risk": "Reward:risk is 2.5 with stop distance at 2.76 ATR (1215.86). However, the target of 1234.20 requires 6.89 ATRs (13.10 points) of upside expansion with only ~128 minutes remaining in the session, making target attainment highly improbable under standard volatility."
     },
     "rationale": "SKIP. AXISBANK's proposed target of 1234.20 lies 6.89 ATRs away in the final two hours of trading while price faces immediate overhead resistance at 1223.00-1224.00.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.74,
+    "outcome_at": "2026-10-29T22:26:52+05:30"
   },
   {
     "signal_id": "20261029-132225-AXISBANK",
@@ -391,9 +391,9 @@
       "risk": "Stop is set at 1004.33 (3.38 ATR). The target of 1029.43 requires an 8.45 ATR (17.93 points) move from 1011.50 in under 130 minutes, an extreme distance for a stock exhibiting negligible intraday range."
     },
     "rationale": "SKIP. TATACONSUM is trapped in a sideways grind around 1011.00; reaching the 1029.43 target demands an unfeasible 8.45 ATRs of movement before the 15:30 close.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 1.32,
+    "outcome_at": "2026-10-29T22:26:52+05:30"
   },
   {
     "signal_id": "20261029-133951-TCS",
@@ -418,8 +418,8 @@
       "risk": "Target distance is 8.69 ATR (target 849.15 vs entry 835.20) flagged as TIGHT feasibility with only 111 minutes remaining. Stop distance is wide at 3.47 ATR (829.62). Asking for an ~14-point move when the entire last hour spanned under 4 points is an unfavorable time-risk trade-off. Results risk is empty."
     },
     "rationale": "SKIP. Reaching an 8.69 ATR target in 111 minutes under TIGHT feasibility is unrealistic given the tight 833-837 range and overhead rejection at 836.90, compounded by an overextended NIFTY tape.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 1.06,
+    "outcome_at": "2026-10-29T22:26:52+05:30"
   }
 ]
