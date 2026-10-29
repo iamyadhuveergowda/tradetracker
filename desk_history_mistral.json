@@ -157,9 +157,9 @@
       "risk": "Target distance (5.45 ATR) is feasible in 320 minutes (~5.3 hours), but the reward:risk (2.5) is skewed by the tight stop (2.18 ATR). The stock is not showing a clean breakout or momentum shift, increasing the risk of a false move. No results risk, but the lack of follow-through and weak candle structure elevate the risk of a choppy or failed trade. Feasibility is not marked as INFEASIBLE or TIGHT, but the early-session signal and weak tape make this a high-risk setup."
     },
     "rationale": "TCS is SKIPPED due to weak technical structure (doji-like candle, no momentum), lack of sector-wide follow-through, and misalignment with the NIFTY tape. The reward:risk (2.5) is attractive, but the early-session signal and indecision in the tape make this a low-conviction setup. No results risk, but the absence of a clean breakout or reversal pattern justifies the SKIP.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.26,
+    "outcome_at": "2026-10-29T22:35:30+05:30"
   },
   {
     "signal_id": "20261029-104231-AXISBANK",
@@ -184,9 +184,9 @@
       "risk": "Target distance (5.73 ATR) is too far for the remaining time (288 minutes), especially with no results risk. Stop distance (2.29 ATR) is tight, and the reward:risk (2.5) is misleading without a high-probability setup. Feasibility is TIGHT due to target distance and time constraints."
     },
     "rationale": "SKIP AXISBANK BUY. The setup lacks momentum (RSI neutral, no volume follow-through), macro alignment (late-session entry without breakout structure), and feasibility (target too far for remaining time). A break above 1224.3 with RSI > 65 and volume > 100k could reconsider, but current structure is weak.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.25,
+    "outcome_at": "2026-10-29T22:35:30+05:30"
   },
   {
     "signal_id": "20261029-105855-DRREDDY",
@@ -211,9 +211,9 @@
       "risk": "Reward:risk is 2.5, which is decent, but the target (1360.91) is 5.85 ATR away, and with 272 minutes left, the feasibility is questionable. No results risk, but the stop (1332.76) is far from current price (1340.8), increasing exposure to a potential drop. Feasibility is not explicitly marked as INFEASIBLE, but the lack of momentum and late-session timing weigh heavily."
     },
     "rationale": "SKIP DRREDDY due to weak follow-through, lack of momentum in the last two candles, and late-session timing. The RSI is neutral, and the volume spike in the 10:50 candle did not translate into sustained buying. The trade does not align with the current tape structure, and the target is unlikely to be reached in the remaining 272 minutes without a clear catalyst.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.52,
+    "outcome_at": "2026-10-29T22:35:30+05:30"
   },
   {
     "signal_id": "20261029-110629-HDFCLIFE",
@@ -238,9 +238,9 @@
       "risk": "Reward:risk of 2.5 is mathematically appealing, but the stop distance (2.72 ATR) is too tight for the remaining time (264 minutes). Feasibility is empty, but the target (525.4) is 6.8 ATR away, which is aggressive for intraday. No results risk, but the lack of momentum and weak candle structure elevates risk."
     },
     "rationale": "HDFCLIFE lacks a clean technical setup, follow-through momentum, and aligns poorly with late-session macro dynamics. The tight stop and aggressive target distance (6.8 ATR) make this a high-risk, low-probability trade. Default to SKIP despite neutral RSI and sector.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.15,
+    "outcome_at": "2026-10-29T22:35:30+05:30"
   },
   {
     "signal_id": "20261029-112155-ULTRACEMCO",
@@ -265,9 +265,9 @@
       "risk": "Reward:risk is 2.5, but the target (11291.0) is highly ambitious given the time left (249 minutes) and the stock's current momentum. Stop distance (2.26 ATR) is tight, and the lack of volume on the 11:20 candle increases slippage risk. No results risk, but the stock's weak structure makes it unfeasible for a GO. Feasibility is not explicitly marked as INFEASIBLE, but the target distance (5.65 ATR) in the remaining time is aggressive."
     },
     "rationale": "ULTRACEMCO's late-session breakdown, weak volume follow-through, and lack of alignment with the broader NIFTY tape make this a high-risk setup. The target is ambitious given the time left (249 minutes), and the stop is too close to justify a GO. Requires a break above 11192.0 with strong volume and RSI confirmation to reconsider.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-10-29T22:35:30+05:30"
   },
   {
     "signal_id": "20261029-113631-SBIN",
@@ -292,9 +292,9 @@
       "risk": "Reward:risk of 2.5 is mathematically appealing, but the target (971.27) is 10.02 points away (6.02 ATR), which is tight for the remaining time. Stop distance (2.41 ATR) is adequate, but the lack of follow-through and indecision in the last candle increase risk. No results risk, but the scouting reason ('NIFTY overextended') is subjective without additional context."
     },
     "rationale": "SBIN lacks a clean technical setup for a late-session BUY. The indecisive candle structure, absence of follow-through volume, and poor timing (234 minutes to close) outweigh the mathematical reward:risk. Requires a break above 962.80 with volume confirmation to reconsider.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "TARGET",
+    "outcome_r": 2.5,
+    "outcome_at": "2026-10-29T22:35:30+05:30"
   },
   {
     "signal_id": "20261029-114321-BHARTIARTL",
@@ -319,9 +319,9 @@
       "risk": "Target distance (7.51 ATRs) is high for the time remaining (227 minutes), making feasibility TIGHT. Reward:risk is 2.5, which is decent but not exceptional for a late-session trade. No results risk, but the lack of follow-through and weak candle structure increases execution risk. Stop is placed ~3 ATRs away, which is reasonable but not protective given the aggressive target."
     },
     "rationale": "BHARTIARTL lacks a clean technical setup for a late-session entry, with weak follow-through and no clear breakout structure. The elevated volume is short-lived, and the target is aggressive for the remaining time (227 minutes). While the reward:risk is acceptable, the macro context (NIFTY +0.66% but no clear momentum) and late-session timing make this a high-risk, low-conviction trade. Default to SKIP.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-10-29T22:35:30+05:30"
   },
   {
     "signal_id": "20261029-115653-BRITANNIA",
@@ -346,9 +346,9 @@
       "risk": "Stop distance is 2.88 ATR (~30.8 points), which is tight for a 2.5:1 reward:risk setup. Target feasibility is TIGHT (7.21 ATR in 214 minutes), and the lack of a clear breakout (high of 4668.0 at 11:35 was rejected) increases slippage risk. No results_risk identified, but the late-session timing and weak candle structure amplify downside exposure. Reward:risk is mathematically favorable, but execution risk outweighs it."
     },
     "rationale": "BRITANNIA’s late-session BUY setup at 4662.0 lacks confirmation despite a bullish engulfing candle at 11:55. The RSI (64.39), rejection at 4662.6, and tight stop (2.88 ATR) create a high-risk profile. The target (4736.34) is TIGHTLY feasible (7.21 ATR in 214 minutes), but the index’s overextension and weak follow-through make this a speculative play. SKIP unless a break above 4668.0 with volume > 2000 occurs, which would warrant reassessment.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": -0.24,
+    "outcome_at": "2026-10-29T22:35:30+05:30"
   },
   {
     "signal_id": "20261029-124745-TCS",
@@ -373,9 +373,9 @@
       "risk": "Reward:risk is 2.5, which is mathematically attractive but risky given the time left (163 minutes). Stop distance (3.07 ATR) is too close for a late-session trade, and the target (7.69 ATR) is ambitious. No results risk, but the volatility implied by the 12:25 candle's low (2464.0) suggests potential downside. Feasibility is empty, but the target distance (7.69 ATR) in 163 minutes is TIGHT and requires near-perfect execution."
     },
     "rationale": "TCS lacks a clean technical setup for a late-session BUY, with weak momentum, no follow-through volume, and erratic candle structure. The reward:risk ratio is mathematically appealing but unsupported by tape activity or time-of-day alignment. The trade is SKIPPED unless a break above 2483.5 with sustained volume materializes, which would warrant reassessment.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.32,
+    "outcome_at": "2026-10-29T22:35:30+05:30"
   },
   {
     "signal_id": "20261029-130051-ITC",
@@ -400,9 +400,9 @@
       "risk": "Target (268.23) is 6.87 ATRs away, requiring a 1.65% move in 150 minutes (0.67%/hour)—unrealistic given ATR (0.6082) and time left. Stop is 2.75 ATRs away (0.6082 * 2.75 = 1.67), which is tight for a late-session trade. No results risk, but late-session volatility is low. Reward:risk (2.5) is misleading without feasibility."
     },
     "rationale": "ITC’s late-session BUY setup lacks momentum, follow-through, and feasibility. The 13:00 candle is bearish, RSI is neutral, and the target is unattainable in 150 minutes (6.87 ATRs away). Volume spike at 12:55 failed to sustain, and the trade misaligns with ITC’s weak tape despite NIFTY/FMCG bullishness. SKIP unless a break above 265.40 with volume > 1M and RSI > 60 materializes.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.57,
+    "outcome_at": "2026-10-29T22:35:30+05:30"
   },
   {
     "signal_id": "20261029-132031-AXISBANK",
@@ -427,9 +427,9 @@
       "risk": "Stop distance (2.76 ATR) is reasonable, but target distance (6.89 ATR) is aggressive for the remaining time (130 mins). No results risk, but the stock is not showing the necessary momentum to justify a GO."
     },
     "rationale": "AXISBANK lacks a clean setup for a late-session entry. The indecisive candle structure, weak follow-through, and absence of sector-wide leadership make this a high-risk SKIP despite the bullish NIFTY and sector outlook.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.76,
+    "outcome_at": "2026-10-29T22:35:30+05:30"
   },
   {
     "signal_id": "20261029-132031-AXISBANK",
@@ -454,9 +454,9 @@
       "risk": "Stop distance (3.38 ATR) is reasonable, but the target (8.45 ATR) is aggressive for the remaining time. No results risk, but the lack of volume follow-through and weak candle structure make this a high-risk SKIP unless a breakout occurs with volume."
     },
     "rationale": "TATACONSUM requires a break above 1011.80 with volume > 120k to be considered for a GO, but the current structure is not actionable. The weak follow-through and lack of momentum make this a SKIP unless exceptional conditions are met.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 1.39,
+    "outcome_at": "2026-10-29T22:35:30+05:30"
   },
   {
     "signal_id": "20261029-133951-TCS",
@@ -481,9 +481,9 @@
       "risk": "Target distance (8.69 ATR) is TIGHT with only 111 minutes left to close, making it infeasible for a clean exit. Stop distance (3.47 ATR) is reasonable but not protective given the lack of momentum. No results risk is present, but the late-session timing and weak candle structure amplify risk."
     },
     "rationale": "SKIP due to weak candle structure, lack of follow-through, and tight feasibility. The late-session entry lacks alignment with the index tape and does not justify the aggressive target distance (8.69 ATR) with only 111 minutes remaining. No meaningful trigger exists to override the SKIP.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 1.06,
+    "outcome_at": "2026-10-29T22:35:30+05:30"
   },
   {
     "signal_id": "20261029-134244-BAJFINANCE",
@@ -508,9 +508,9 @@
       "risk": "Feasibility marked TIGHT (6.83 ATR target in 108 min). No results risk. Reward:risk 2.5 is mathematically appealing, but late-session execution risk outweighs. Stop distance (2.73 ATR) is too wide for intraday; better to wait for clearer breakout."
     },
     "rationale": "BAJFINANCE lacks a clean breakout structure at 13:42 with 108 min to close. The RSI is neutral, volume is unconvincing, and the target is TIGHT (6.83 ATR). Late-session entries require exceptional follow-through, which is absent here. Default to SKIP unless a break above 931.85 with volume >150k materializes.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 1.48,
+    "outcome_at": "2026-10-29T22:35:30+05:30"
   },
   {
     "signal_id": "20261029-135248-JSWSTEEL",
@@ -535,8 +535,8 @@
       "risk": "Feasibility is TIGHT (7.78 ATR target in 98 minutes), and the stop (3.11 ATR) is aggressive. No results risk, but the lack of follow-through and weak candle structure amplify downside exposure. Reward:risk of 2.5 is misleading without confirmation."
     },
     "rationale": "JSWSTEEL’s late-session BUY setup lacks conviction despite the NIFTY’s overextension. The 13:45 spike failed to sustain, and the 13:50 doji signals indecision. Feasibility is TIGHT, and the macro environment favors caution. Requires a break above 1251.60 with volume > 100k to reconsider.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.93,
+    "outcome_at": "2026-10-29T22:35:30+05:30"
   }
 ]
