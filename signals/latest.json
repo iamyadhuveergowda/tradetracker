@@ -1,20 +1,20 @@
 {
-  "signal_id": "20261029-125600-BRITANNIA",
-  "generated_at": "2026-10-29T12:56:00.138819+05:30",
-  "nifty_ltp": 22813.45,
+  "signal_id": "20261029-125847-BRITANNIA",
+  "generated_at": "2026-10-29T12:58:47.602755+05:30",
+  "nifty_ltp": 22824.75,
   "candidates": [
     {
       "ticker": "BRITANNIA",
       "signal": "BUY",
-      "ltp": 4655.0,
-      "stop": 4627.53,
-      "target": 4723.68,
-      "qty": 35,
+      "ltp": 4654.5,
+      "stop": 4626.45,
+      "target": 4724.62,
+      "qty": 34,
       "indicators": {
         "rsi": 52.97,
         "atr": 10.3421,
-        "atr_15m": 18.3151,
-        "vwap": 4647.02,
+        "atr_15m": 18.6997,
+        "vwap": 4647.08,
         "vol_ratio": 4.57
       },
       "scout_reason": "NIFTY BULLISH, sector FMCG BULLISH",
@@ -175,9 +175,9 @@
           "12:55",
           4657.0,
           4658.4,
-          4651.1,
-          4651.1,
-          103
+          4650.5,
+          4654.3,
+          1090
         ]
       ]
     }
