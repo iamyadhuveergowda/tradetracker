@@ -1,23 +1,23 @@
 {
-  "signal_id": "20261029-132031-AXISBANK",
-  "generated_at": "2026-10-29T13:20:31.725243+05:30",
-  "nifty_ltp": 22828.65,
+  "signal_id": "20261029-132225-AXISBANK",
+  "generated_at": "2026-10-29T13:22:25.419319+05:30",
+  "nifty_ltp": 22850.25,
   "candidates": [
     {
       "ticker": "AXISBANK",
       "signal": "BUY",
-      "ltp": 1221.0,
-      "stop": 1215.76,
-      "target": 1234.1,
-      "qty": 157,
+      "ltp": 1221.1,
+      "stop": 1215.86,
+      "target": 1234.2,
+      "qty": 78,
       "indicators": {
         "rsi": 51.85,
         "atr": 1.9004,
         "atr_15m": 3.4932,
-        "vwap": 1221.24,
+        "vwap": 1221.23,
         "vol_ratio": 3.64
       },
-      "scout_reason": "NIFTY BULLISH, sector BANK BULLISH",
+      "scout_reason": "NIFTY 50 +0.67% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "11:45",
@@ -175,19 +175,19 @@
           "13:20",
           1221.3,
           1221.3,
-          1220.7,
-          1220.7,
-          12637
+          1220.0,
+          1221.0,
+          77872
         ]
       ]
     },
     {
       "ticker": "TATACONSUM",
       "signal": "BUY",
-      "ltp": 1011.0,
-      "stop": 1003.83,
-      "target": 1028.93,
-      "qty": 134,
+      "ltp": 1011.5,
+      "stop": 1004.33,
+      "target": 1029.43,
+      "qty": 67,
       "indicators": {
         "rsi": 53.4,
         "atr": 2.1218,
@@ -195,7 +195,7 @@
         "vwap": 1008.37,
         "vol_ratio": 6.27
       },
-      "scout_reason": "NIFTY BULLISH, sector FMCG BULLISH",
+      "scout_reason": "NIFTY 50 +0.67% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "11:45",
