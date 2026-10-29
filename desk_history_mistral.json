@@ -403,5 +403,59 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261029-132031-AXISBANK",
+    "signal_time": "2026-10-29T13:20:31+05:30",
+    "judged_at": "2026-10-29T13:20:47+05:30",
+    "age_min": 0.3,
+    "ticker": "AXISBANK",
+    "action": "BUY",
+    "entry": 1221.0,
+    "stop": 1215.76,
+    "target": 1234.1,
+    "qty": 157,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 51.85 is neutral; ATR buffer (1.90) is tight for a late-session entry. The last 5m candle (13:20) is a doji, signaling indecision. No clear momentum or breakout structure; the stock is trading below its 13:15 high (1222.5) and has not shown follow-through. Volume spike at 13:00 (239171) was a washout, not a breakout.",
+      "sentiment": "No headline information available. Volume behavior shows weak follow-through: the 13:00-13:20 candles lack conviction, with volume drying up (12637 at 13:20). Sector-wide prints are not visible in the data, but the tape suggests caution.",
+      "macro": "NIFTY is bullish, but late-session entries (130 mins left) require exceptional structure. AXISBANK is not leading the index tape; it is lagging and lacks a clear directional bias.",
+      "risk": "Stop distance (2.76 ATR) is reasonable, but target distance (6.89 ATR) is aggressive for the remaining time (130 mins). No results risk, but the stock is not showing the necessary momentum to justify a GO."
+    },
+    "rationale": "AXISBANK lacks a clean setup for a late-session entry. The indecisive candle structure, weak follow-through, and absence of sector-wide leadership make this a high-risk SKIP despite the bullish NIFTY and sector outlook.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
+  },
+  {
+    "signal_id": "20261029-132031-AXISBANK",
+    "signal_time": "2026-10-29T13:20:31+05:30",
+    "judged_at": "2026-10-29T13:20:47+05:30",
+    "age_min": 0.3,
+    "ticker": "TATACONSUM",
+    "action": "BUY",
+    "entry": 1011.0,
+    "stop": 1003.83,
+    "target": 1028.93,
+    "qty": 134,
+    "verdict": "SKIP",
+    "confidence": 75,
+    "trigger": "Valid only on a break above 1011.80 with volume > 120k",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 53.4 is slightly bullish but not extreme. The last 5m candle (13:20) is a tight range candle with low volume (943), indicating weak participation. The stock is trading near its 13:15 high (1011.8) but lacks a clear breakout. ATR (2.12) suggests volatility, but the current structure is not compelling.",
+      "sentiment": "No headline information available. Volume behavior is inconsistent: the 13:15 candle had high volume (119935), but the 13:20 candle collapsed to 943, signaling a lack of follow-through. Sector-wide prints are not visible, but the tape suggests hesitation.",
+      "macro": "NIFTY is bullish, but TATACONSUM is not leading the tape. Late-session entries (130 mins left) require exceptional structure, which is absent here. The stock is not showing the necessary momentum to align with the index.",
+      "risk": "Stop distance (3.38 ATR) is reasonable, but the target (8.45 ATR) is aggressive for the remaining time. No results risk, but the lack of volume follow-through and weak candle structure make this a high-risk SKIP unless a breakout occurs with volume."
+    },
+    "rationale": "TATACONSUM requires a break above 1011.80 with volume > 120k to be considered for a GO, but the current structure is not actionable. The weak follow-through and lack of momentum make this a SKIP unless exceptional conditions are met.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
