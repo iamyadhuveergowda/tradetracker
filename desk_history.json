@@ -286,5 +286,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261029-125600-BRITANNIA",
+    "signal_time": "2026-10-29T12:56:00+05:30",
+    "judged_at": "2026-10-29T12:56:16+05:30",
+    "age_min": 0.3,
+    "ticker": "BRITANNIA",
+    "action": "BUY",
+    "entry": 4655.0,
+    "stop": 4627.53,
+    "target": 4723.68,
+    "qty": 35,
+    "verdict": "SKIP",
+    "confidence": 25,
+    "trigger": "Valid only on a break above 4678.00 with sustained volume",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "The tape shows clear intraday deterioration, drifting down from 4676.60 at 12:00 to a low of 4642.60 at 12:40. While the 12:50 bar attempted a high-volume recovery (11,421 shares) reaching 4665.00, the 12:55 candle immediately failed and closed near its low at 4651.10. RSI at 52.97 is neutral, and price is currently below proposed entry 4655.00.",
+      "sentiment": "No headline news feed is available. Judging solely from the tape, heavy volume prints on downswings (11,450 at 12:10, 4,889 at 12:40) indicate persistent overhead supply, and the quick rejection of the 12:50 bounce shows buyers lack follow-through.",
+      "macro": "NIFTY spot sits at 22813.45 with FMCG sector noted as bullish, but the individual stock structure is running counter to the index during the mid-day session at 12:56 IST.",
+      "risk": "Target distance is excessive at 6.64 ATR (68.68 points to 4723.68) with approximately 2.5 hours remaining before close. Reaching this in a low-beta FMCG name from a downtrending base is highly improbable, despite a theoretical 2.5 reward-to-risk ratio. Results risk is empty."
+    },
+    "rationale": "BRITANNIA is drifting downward with failed bounce attempts and heavy supply prints. A 6.64 ATR target distance is unrealistic for an afternoon move without exceptional momentum. SKIP.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
