@@ -295,5 +295,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261029-114321-BHARTIARTL",
+    "signal_time": "2026-10-29T11:43:21+05:30",
+    "judged_at": "2026-10-29T11:43:44+05:30",
+    "age_min": 0.4,
+    "ticker": "BHARTIARTL",
+    "action": "BUY",
+    "entry": 1968.1,
+    "stop": 1956.18,
+    "target": 1997.89,
+    "qty": 40,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 64.45 suggests moderate overbought conditions, not extreme. The last 5m candle (11:40) closed at 1968.1, the entry price, but with weak follow-through (high 1970.3, low 1967.6). The 11:35 candle shows a strong push higher (close 1969.1, high 1970.5), but the 11:40 candle lacks conviction (low 1967.6, close 1968.1). ATR buffer (stop at 1956.18, ~3.01 ATRs away) is reasonable, but the target (1997.89, ~7.51 ATRs away) requires a 1.5% move in 227 minutes (~1.97%/hour), which is aggressive for late-session. No clear breakout structure; appears to be chasing.",
+      "sentiment": "No headline information available. Volume ratio (2.34) is elevated, but the spike in volume at 11:30 (190186) and 11:35 (173436) suggests a short-term squeeze rather than sustained buying interest. Sector-wide prints are not visible in the data, but the stock’s move appears isolated.",
+      "macro": "NIFTY is +0.66% at 22848.9, but the late-session entry (11:43) is risky given the time remaining (227 minutes). Late-session entries require exceptional structure, and this lacks it. The index is not showing clear momentum for a sector-wide push, and the stock’s move is not aligned with broader tape behavior.",
+      "risk": "Target distance (7.51 ATRs) is high for the time remaining (227 minutes), making feasibility TIGHT. Reward:risk is 2.5, which is decent but not exceptional for a late-session trade. No results risk, but the lack of follow-through and weak candle structure increases execution risk. Stop is placed ~3 ATRs away, which is reasonable but not protective given the aggressive target."
+    },
+    "rationale": "BHARTIARTL lacks a clean technical setup for a late-session entry, with weak follow-through and no clear breakout structure. The elevated volume is short-lived, and the target is aggressive for the remaining time (227 minutes). While the reward:risk is acceptable, the macro context (NIFTY +0.66% but no clear momentum) and late-session timing make this a high-risk, low-conviction trade. Default to SKIP.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
