@@ -322,5 +322,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261029-115653-BRITANNIA",
+    "signal_time": "2026-10-29T11:56:53+05:30",
+    "judged_at": "2026-10-29T11:57:09+05:30",
+    "age_min": 0.3,
+    "ticker": "BRITANNIA",
+    "action": "BUY",
+    "entry": 4662.0,
+    "stop": 4632.26,
+    "target": 4736.34,
+    "qty": 16,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "Valid only on a break above 4668.0 with follow-through volume > 2000",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 64.39 suggests moderate overbought conditions, but the 11:55 candle (4660.0 → 4664.0) is a bullish engulfing with high volume (7904), indicating some momentum. However, the 11:45 candle (4660.3 → 4660.0) shows rejection at the upper Bollinger band (~4662.6), and the 11:40 candle (4662.2 → 4662.0) is a doji-like structure with weak close. ATR buffer (stop at 4632.26, ~2.88 ATRs away) is tight for a late-session entry, and the target (4736.34, ~7.21 ATRs) requires a 1.6% move in 214 minutes (~1.8% hourly pace), which is aggressive for this timeframe. No clear breakout structure yet.",
+      "sentiment": "No headline information available. Volume spike at 11:50 (4974) and 11:55 (7904) suggests late-session interest, but the lack of follow-through above 4664.0 (high of 11:55 candle) indicates hesitation. Sector-wide prints are not visible in the data, but the tape shows no broad participation in this move.",
+      "macro": "NIFTY is at 22853.6 (+0.68% from open), but the late-session entry (11:56) is risky given the index’s overextension. Late-session trades require exceptional structure, and this setup lacks confirmation. The index is likely to consolidate or reverse into close, reducing the probability of a sustained BRITANNIA rally.",
+      "risk": "Stop distance is 2.88 ATR (~30.8 points), which is tight for a 2.5:1 reward:risk setup. Target feasibility is TIGHT (7.21 ATR in 214 minutes), and the lack of a clear breakout (high of 4668.0 at 11:35 was rejected) increases slippage risk. No results_risk identified, but the late-session timing and weak candle structure amplify downside exposure. Reward:risk is mathematically favorable, but execution risk outweighs it."
+    },
+    "rationale": "BRITANNIA’s late-session BUY setup at 4662.0 lacks confirmation despite a bullish engulfing candle at 11:55. The RSI (64.39), rejection at 4662.6, and tight stop (2.88 ATR) create a high-risk profile. The target (4736.34) is TIGHTLY feasible (7.21 ATR in 214 minutes), but the index’s overextension and weak follow-through make this a speculative play. SKIP unless a break above 4668.0 with volume > 2000 occurs, which would warrant reassessment.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
