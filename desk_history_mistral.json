@@ -349,5 +349,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261029-124745-TCS",
+    "signal_time": "2026-10-29T12:47:45+05:30",
+    "judged_at": "2026-10-29T12:48:04+05:30",
+    "age_min": 0.3,
+    "ticker": "TCS",
+    "action": "BUY",
+    "entry": 2472.8,
+    "stop": 2456.56,
+    "target": 2513.4,
+    "qty": 59,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "Valid only on a break above 2483.5 with follow-through volume > 2x average (last 12 candles)",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 51.45 is neutral; momentum is weak with no clear breakout from the 12:40-12:45 candle's high (2479.1). The 12:25 candle shows a sharp drop to 2464.0, indicating a potential exhaustion of bullish momentum. ATR buffer (5.28) is tight for a late-session entry, and the stop (2456.56) is only 3.07 ATR away, leaving little room for error. The target (2513.4) is 7.69 ATR away, which is aggressive for the remaining 163 minutes (13.5 hours). Candle structure lacks conviction: no higher highs or higher lows in the last 12 candles.",
+      "sentiment": "No headline information available. Volume behavior is erratic: the 12:25 candle shows a spike (102,919), but it was a downside move. The 12:40 candle had high volume (115,399) but failed to sustain momentum. Sector-wide IT prints are not visible in the data, so sentiment cannot be inferred from broader tape activity.",
+      "macro": "NIFTY is at 22,813.45, and the trade direction (BUY) aligns with the index tape if it were to rally. However, late-session entries (163 minutes left) require exceptional structure, which is absent here. The lack of follow-through in the last 12 candles suggests weak macro alignment.",
+      "risk": "Reward:risk is 2.5, which is mathematically attractive but risky given the time left (163 minutes). Stop distance (3.07 ATR) is too close for a late-session trade, and the target (7.69 ATR) is ambitious. No results risk, but the volatility implied by the 12:25 candle's low (2464.0) suggests potential downside. Feasibility is empty, but the target distance (7.69 ATR) in 163 minutes is TIGHT and requires near-perfect execution."
+    },
+    "rationale": "TCS lacks a clean technical setup for a late-session BUY, with weak momentum, no follow-through volume, and erratic candle structure. The reward:risk ratio is mathematically appealing but unsupported by tape activity or time-of-day alignment. The trade is SKIPPED unless a break above 2483.5 with sustained volume materializes, which would warrant reassessment.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
