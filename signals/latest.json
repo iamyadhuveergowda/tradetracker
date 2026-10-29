@@ -1,23 +1,23 @@
 {
-  "signal_id": "20261029-134244-BAJFINANCE",
-  "generated_at": "2026-10-29T13:42:44.576237+05:30",
-  "nifty_ltp": 22861.8,
+  "signal_id": "20261029-134440-BAJFINANCE",
+  "generated_at": "2026-10-29T13:44:40.442018+05:30",
+  "nifty_ltp": 22860.55,
   "candidates": [
     {
       "ticker": "BAJFINANCE",
       "signal": "BUY",
-      "ltp": 930.3,
-      "stop": 924.47,
-      "target": 944.87,
+      "ltp": 930.45,
+      "stop": 924.62,
+      "target": 945.02,
       "qty": 82,
       "indicators": {
         "rsi": 57.1,
         "atr": 2.1317,
         "atr_15m": 3.8867,
-        "vwap": 924.18,
+        "vwap": 924.2,
         "vol_ratio": 1.68
       },
-      "scout_reason": "NIFTY 50 +0.72% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +0.71% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "12:05",
@@ -176,8 +176,8 @@
           930.2,
           930.8,
           930.0,
-          930.25,
-          38008
+          930.3,
+          59196
         ]
       ]
     }
