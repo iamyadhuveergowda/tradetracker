@@ -376,5 +376,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261029-130051-ITC",
+    "signal_time": "2026-10-29T13:00:51+05:30",
+    "judged_at": "2026-10-29T13:01:11+05:30",
+    "age_min": 0.3,
+    "ticker": "ITC",
+    "action": "BUY",
+    "entry": 264.05,
+    "stop": 262.38,
+    "target": 268.23,
+    "qty": 577,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "Valid only on a break above 265.40 with volume > 1M and RSI > 60",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "Weak candle structure at entry: 13:00 candle is a bearish engulfing (close at 264.05, low at 264.05, open at 264.20). RSI (53.25) is neutral, not overbought. ATR buffer (0.6082) suggests a tight stop (2.75 ATRs away at 262.38), but the target (268.23) is 6.87 ATRs away—unrealistic in 150 minutes. Last 12 candles show consolidation with no clear breakout momentum; 12:55 candle (breakout attempt) closed lower than open (264.20). Volume spike at 12:55 (771879) was not sustained.",
+      "sentiment": "No headline information available. Sector-wide FMCG prints are not visible in the data, but ITC’s tape shows lack of follow-through: volume ratio (2.24) is elevated but not exceptional, and the 12:55 breakout attempt failed to hold. No clear sector-wide bullishness inferred from tape alone.",
+      "macro": "Late-session entry (13:00, 150 minutes to close) requires exceptional structure. NIFTY is bullish, but ITC’s relative weakness (consolidation, failed breakout) misaligns with index tape. FMCG sector bullishness is not validated by ITC’s tape.",
+      "risk": "Target (268.23) is 6.87 ATRs away, requiring a 1.65% move in 150 minutes (0.67%/hour)—unrealistic given ATR (0.6082) and time left. Stop is 2.75 ATRs away (0.6082 * 2.75 = 1.67), which is tight for a late-session trade. No results risk, but late-session volatility is low. Reward:risk (2.5) is misleading without feasibility."
+    },
+    "rationale": "ITC’s late-session BUY setup lacks momentum, follow-through, and feasibility. The 13:00 candle is bearish, RSI is neutral, and the target is unattainable in 150 minutes (6.87 ATRs away). Volume spike at 12:55 failed to sustain, and the trade misaligns with ITC’s weak tape despite NIFTY/FMCG bullishness. SKIP unless a break above 265.40 with volume > 1M and RSI > 60 materializes.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
