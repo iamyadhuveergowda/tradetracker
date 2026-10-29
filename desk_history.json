@@ -313,5 +313,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261029-130051-ITC",
+    "signal_time": "2026-10-29T13:00:51+05:30",
+    "judged_at": "2026-10-29T13:01:11+05:30",
+    "age_min": 0.3,
+    "ticker": "ITC",
+    "action": "BUY",
+    "entry": 264.05,
+    "stop": 262.38,
+    "target": 268.23,
+    "qty": 577,
+    "verdict": "SKIP",
+    "confidence": 30,
+    "trigger": "Valid only on a break above 265.55 with condensed targets",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "Price drifted from 265.55 down to 263.25 before a sharp single-bar bounce at 12:55 to 264.60. The 13:00 bar immediately printed a lower high and lower close at 264.05. RSI is flat at 53.25, showing lack of sustained directional momentum.",
+      "sentiment": "No headline news feed is available. Tape sentiment shows an aggressive volume spike of 771,879 shares at 12:55 attempting a reversal, but immediate overhead supply capped it at 264.60.",
+      "macro": "At 13:00 IST, NIFTY spot sits at 22833.15 with a reported bullish FMCG backdrop, yet ITC has spent most of the past hour drifting lower against the broader tape.",
+      "risk": "Target of 268.23 requires a massive 6.87 ATR move (4.18 points) in only 150 minutes on a low-beta heavyweight with ATR 0.6082. Demanding nearly 7 ATRs of upside intraday makes execution mathematically improbable before the 15:30 close."
+    },
+    "rationale": "Despite scout alignment with FMCG and a volume burst at 12:55, the target distance of 6.87 ATRs is overly ambitious for an afternoon session on ITC. Defaulting to SKIP due to unrealistic intraday upside requirement.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
