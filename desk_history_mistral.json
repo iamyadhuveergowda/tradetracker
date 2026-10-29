@@ -160,5 +160,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261029-104231-AXISBANK",
+    "signal_time": "2026-10-29T10:42:31+05:30",
+    "judged_at": "2026-10-29T10:42:50+05:30",
+    "age_min": 0.3,
+    "ticker": "AXISBANK",
+    "action": "BUY",
+    "entry": 1223.5,
+    "stop": 1217.39,
+    "target": 1238.78,
+    "qty": 78,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "Valid only on a break above 1224.3 with RSI > 65 and volume > 100k",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI (58.95) is neutral, not overbought. The last 5m candle (10:40) closed at 1224.0, forming a small bullish candle with low volume (38793) after a volatile 10:25 candle (170938). ATR buffer (2.6681) suggests a tight stop (1217.39) and a target (1238.78) that is 5.73 ATR away—too aggressive for late-session entry. No clear breakout structure; the 10:25 spike was a dead-cat bounce with no follow-through.",
+      "sentiment": "No headline information available. Volume behavior shows a late-morning spike (10:25) with no sustained follow-through; current volume (38793) is low and lacks conviction. Sector-wide prints are not visible in the data, but the lack of volume on the 10:40 candle suggests weak participation.",
+      "macro": "NIFTY is +0.68% at 22852.45, but the time-to-close (288 minutes) is too late for a speculative long. Late-session entries require exceptional structure, and this setup lacks it. The index is overextended, but AXISBANK is not leading the rally.",
+      "risk": "Target distance (5.73 ATR) is too far for the remaining time (288 minutes), especially with no results risk. Stop distance (2.29 ATR) is tight, and the reward:risk (2.5) is misleading without a high-probability setup. Feasibility is TIGHT due to target distance and time constraints."
+    },
+    "rationale": "SKIP AXISBANK BUY. The setup lacks momentum (RSI neutral, no volume follow-through), macro alignment (late-session entry without breakout structure), and feasibility (target too far for remaining time). A break above 1224.3 with RSI > 65 and volume > 100k could reconsider, but current structure is weak.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
