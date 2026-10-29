@@ -484,5 +484,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261029-134244-BAJFINANCE",
+    "signal_time": "2026-10-29T13:42:44+05:30",
+    "judged_at": "2026-10-29T13:42:59+05:30",
+    "age_min": 0.3,
+    "ticker": "BAJFINANCE",
+    "action": "BUY",
+    "entry": 930.3,
+    "stop": 924.47,
+    "target": 944.87,
+    "qty": 82,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "Valid only on a break above 931.85 with follow-through volume >150k",
+    "results_risk": "",
+    "feasibility": "TIGHT: target 6.83 ATR with 108 min to close",
+    "analyst_notes": {
+      "technical": "RSI at 57.1 suggests neutral momentum; no clear breakout structure. Last 5m candle (13:40) closed flat with low volume (38k), failing to sustain 13:35's high (931.85). ATR buffer (2.13) is tight; stop at 924.47 (2.73 ATR) is too far for late-session entry. Target (944.87) requires 1.6% move in 108 min (avg 0.08%/5m), which is aggressive for this timeframe.",
+      "sentiment": "No headline information available. Volume spike at 13:00 (154k) and 13:35 (157k) suggests prior interest, but no follow-through into 13:42. Sector-wide prints not visible in data; tape appears neutral.",
+      "macro": "NIFTY +0.72% overextended for BUY, but late-session entries (108 min left) require exceptional structure. BAJFINANCE’s move is not aligned with index momentum; index is consolidating near 22861.8.",
+      "risk": "Feasibility marked TIGHT (6.83 ATR target in 108 min). No results risk. Reward:risk 2.5 is mathematically appealing, but late-session execution risk outweighs. Stop distance (2.73 ATR) is too wide for intraday; better to wait for clearer breakout."
+    },
+    "rationale": "BAJFINANCE lacks a clean breakout structure at 13:42 with 108 min to close. The RSI is neutral, volume is unconvincing, and the target is TIGHT (6.83 ATR). Late-session entries require exceptional follow-through, which is absent here. Default to SKIP unless a break above 931.85 with volume >150k materializes.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
