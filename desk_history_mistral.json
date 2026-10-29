@@ -241,5 +241,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261029-112155-ULTRACEMCO",
+    "signal_time": "2026-10-29T11:21:55+05:30",
+    "judged_at": "2026-10-29T11:22:13+05:30",
+    "age_min": 0.3,
+    "ticker": "ULTRACEMCO",
+    "action": "BUY",
+    "entry": 11159.0,
+    "stop": 11106.2,
+    "target": 11291.0,
+    "qty": 8,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "Valid only on a break above 11192.0 with volume > 2500 and RSI > 60",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "Candle structure shows a late-session breakdown with a long lower wick (11:10 candle) and a failed recovery attempt (11:15 candle). RSI at 50.19 is neutral, but the 11:10 candle's low (11123.0) suggests weak momentum. ATR buffer (stop at 11106.2) is tight (2.26 ATR), and the target (11291.0) requires a 5.65 ATR move in 249 minutes (~2.25% of current price). The 11:20 candle closed at entry (11159.0) with minimal follow-through volume (74), indicating lack of conviction.",
+      "sentiment": "No headline information available. Volume spike at 11:10 (2085) suggests panic selling, but the 11:15 recovery (2358 volume) lacks follow-through. Sector-wide prints are not visible in the data, but the tape shows indecision rather than strong participation.",
+      "macro": "NIFTY is +0.66% at 22847.6, but the late-session entry (11:21) is risky given the time remaining (249 minutes). Late-session entries require exceptional structure, and this setup lacks it. The index is overextended, but the stock's breakdown contradicts the broader tape.",
+      "risk": "Reward:risk is 2.5, but the target (11291.0) is highly ambitious given the time left (249 minutes) and the stock's current momentum. Stop distance (2.26 ATR) is tight, and the lack of volume on the 11:20 candle increases slippage risk. No results risk, but the stock's weak structure makes it unfeasible for a GO. Feasibility is not explicitly marked as INFEASIBLE, but the target distance (5.65 ATR) in the remaining time is aggressive."
+    },
+    "rationale": "ULTRACEMCO's late-session breakdown, weak volume follow-through, and lack of alignment with the broader NIFTY tape make this a high-risk setup. The target is ambitious given the time left (249 minutes), and the stop is too close to justify a GO. Requires a break above 11192.0 with strong volume and RSI confirmation to reconsider.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
