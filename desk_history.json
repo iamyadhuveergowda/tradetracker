@@ -421,5 +421,32 @@
     "outcome": "CLOSE",
     "outcome_r": 1.06,
     "outcome_at": "2026-10-29T22:26:52+05:30"
+  },
+  {
+    "signal_id": "20261030-115920-DRREDDY",
+    "signal_time": "2026-10-30T11:59:20+05:30",
+    "judged_at": "2026-10-30T11:59:43+05:30",
+    "age_min": 0.4,
+    "ticker": "DRREDDY",
+    "action": "BUY",
+    "entry": 1358.4,
+    "stop": 1351.44,
+    "target": 1375.8,
+    "qty": 69,
+    "verdict": "SKIP",
+    "confidence": 75,
+    "trigger": "Valid only on a decisive breakout above 1360.00 with expanding volume",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI sits at 59.17, showing mild positive momentum, but price met distinct resistance at 1359.90 across the 11:35 and 11:40 candles. The subsequent consolidation closed at 1358.00 on sharply diminishing volume (7,540 contracts vs 76,760 at the 11:30 peak), indicating momentum exhaustion near the session highs.",
+      "sentiment": "No headline news feed is available; judging purely from the tape, an aggressive volume push occurred between 11:25 and 11:35, but buyers failed to hold the push above 1359.00, resulting in fading tape participation.",
+      "macro": "NIFTY is trading at 23105.1 (+0.73%), flagged by the scout as overextended for fresh long entries at midday with 211 minutes remaining.",
+      "risk": "Target distance is demanding at 3.75 ATR (17.40 points to 1375.80) against a 1.50 ATR stop (1351.44). Even with 211 minutes left, achieving a 3.75 ATR directional thrust in large-cap pharma without strong index continuation is an unfavorable risk-reward proposition."
+    },
+    "rationale": "SKIP DRREDDY long at 1358.40. The stock stalled twice at 1359.90, volume dried up to 7,540 on the latest bar, and reaching a 3.75 ATR target in 211 minutes while NIFTY is overextended (+0.73%) carries poor execution probability.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
