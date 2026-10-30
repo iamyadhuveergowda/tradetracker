@@ -808,5 +808,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261030-135203-BEL",
+    "signal_time": "2026-10-30T13:52:03+05:30",
+    "judged_at": "2026-10-30T13:52:22+05:30",
+    "age_min": 0.3,
+    "ticker": "BEL",
+    "action": "BUY",
+    "entry": 368.8,
+    "stop": 366.18,
+    "target": 375.34,
+    "qty": 367,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "results_risk": "reports results TODAY (2026-10-30)",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "Candle structure shows a weak follow-through after a brief pullback from 13:25-13:40, with no clear momentum reversal. RSI (50.58) is neutral, and the ATR buffer (1.744) suggests tight volatility. The last 5-minute candle (13:50) closed near the low, indicating indecision. No clean setup; appears to be chasing.",
+      "sentiment": "No headline information available. Volume behavior is inconsistent: high volume at 12:55 and 13:45 suggests prior interest, but the lack of follow-through in the last 3 candles (13:45-13:50) signals waning momentum. Sector-wide prints (INFRASTRUCTURE) are neutral per scout reason, but no visible tape-wide strength.",
+      "macro": "Late-session entry (98 minutes to close) with NIFTY spot at 23048.85, showing no clear directional bias. The trade direction (BUY) does not align with the index tape's lack of late-session conviction. Late entries require exceptional structure, which is absent here.",
+      "risk": "Results risk today (2026-10-30) adds pre-results volatility, increasing the likelihood of erratic moves. Stop distance (1.5 ATR) is reasonable, but the target (3.75 ATR away) is aggressive given the time left (98 minutes) and weak structure. Reward:risk (2.5) is mathematically favorable but structurally unsupported."
+    },
+    "rationale": "BEL is a SKIP due to weak candle structure, lack of momentum, and misalignment with the index tape in the late session. Results risk today further compounds the risk of erratic moves, and the target is unreachable in the remaining time (98 minutes) without a clear catalyst. No meaningful trigger exists to override the SKIP.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
