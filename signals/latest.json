@@ -1,23 +1,23 @@
 {
-  "signal_id": "20261030-115713-DRREDDY",
-  "generated_at": "2026-10-30T11:57:13.103506+05:30",
-  "nifty_ltp": 23089.3,
+  "signal_id": "20261030-115920-DRREDDY",
+  "generated_at": "2026-10-30T11:59:20.574063+05:30",
+  "nifty_ltp": 23105.1,
   "candidates": [
     {
       "ticker": "DRREDDY",
       "signal": "BUY",
-      "ltp": 1357.0,
-      "stop": 1350.04,
-      "target": 1374.4,
+      "ltp": 1358.4,
+      "stop": 1351.44,
+      "target": 1375.8,
       "qty": 69,
       "indicators": {
         "rsi": 59.17,
         "atr": 4.6394,
         "atr_5m": 3.0606,
-        "vwap": 1353.63,
+        "vwap": 1353.66,
         "vol_ratio": 2.08
       },
-      "scout_reason": "NIFTY 50 +0.67% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +0.73% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "10:20",
@@ -174,16 +174,16 @@
         [
           "11:55",
           1356.9,
-          1357.1,
+          1358.8,
           1356.2,
-          1356.8,
-          4217
+          1358.0,
+          7540
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
-      "outcome_reason": "REGIME_LOCK: Nifty +0.67% (above +0.25% threshold), rejecting all BUYs in a running index tape.",
-      "outcome_at": "2026-10-30T11:57:21.575318+05:30"
+      "outcome_reason": "DISTRIBUTION: heaviest volume bar (76760) at 11:30 shows supply into highs, opposing BUY; INTO_WALL: entry 1358.4 is within 0.5*ATR (2.3197) of session high 1359.9, too close to swing high",
+      "outcome_at": "2026-10-30T11:59:24.981740+05:30"
     }
   ]
 }
