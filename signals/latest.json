@@ -1,20 +1,20 @@
 {
-  "signal_id": "20261030-135203-BEL",
-  "generated_at": "2026-10-30T13:52:03.648130+05:30",
-  "nifty_ltp": 23048.85,
+  "signal_id": "20261030-135407-BEL",
+  "generated_at": "2026-10-30T13:54:07.231168+05:30",
+  "nifty_ltp": 23048.4,
   "candidates": [
     {
       "ticker": "BEL",
       "signal": "BUY",
-      "ltp": 368.8,
-      "stop": 366.18,
-      "target": 375.34,
+      "ltp": 369.05,
+      "stop": 366.43,
+      "target": 375.59,
       "qty": 367,
       "indicators": {
         "rsi": 50.58,
         "atr": 1.744,
         "atr_5m": 0.9995,
-        "vwap": 367.64,
+        "vwap": 367.65,
         "vol_ratio": 1.61
       },
       "scout_reason": "NIFTY BULLISH, sector INFRASTRUCTURE NEUTRAL",
@@ -174,16 +174,16 @@
         [
           "13:50",
           369.3,
-          369.3,
+          369.4,
           368.65,
-          368.9,
-          64387
+          368.85,
+          106626
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
-      "outcome_reason": "TIME_DECAY: target distance 6.54 exceeds expected travel 4.53",
-      "outcome_at": "2026-10-30T13:52:08.473926+05:30"
+      "outcome_reason": "TIME_DECAY: target distance 6.54 exceeds expected travel 4.41",
+      "outcome_at": "2026-10-30T13:54:11.221810+05:30"
     }
   ]
 }
