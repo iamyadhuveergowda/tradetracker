@@ -1,20 +1,20 @@
 {
-  "signal_id": "20261030-110240-BRITANNIA",
-  "generated_at": "2026-10-30T11:02:40.088546+05:30",
-  "nifty_ltp": 22990.0,
+  "signal_id": "20261030-110446-BRITANNIA",
+  "generated_at": "2026-10-30T11:04:46.456175+05:30",
+  "nifty_ltp": 22989.2,
   "candidates": [
     {
       "ticker": "BRITANNIA",
       "signal": "SELL",
-      "ltp": 4568.0,
-      "stop": 4602.21,
-      "target": 4482.48,
+      "ltp": 4569.3,
+      "stop": 4603.51,
+      "target": 4483.78,
       "qty": 28,
       "indicators": {
         "rsi": 36.3,
         "atr": 22.806,
         "atr_5m": 12.7121,
-        "vwap": 4573.86,
+        "vwap": 4573.8,
         "vol_ratio": 1.66
       },
       "scout_reason": "NIFTY NEUTRAL, sector FMCG BEARISH",
@@ -177,26 +177,26 @@
           4570.0,
           4564.0,
           4570.0,
-          1029
+          1934
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_unrecorded",
       "outcome_reason": "",
-      "outcome_at": "2026-10-30T11:02:47.978640+05:30"
+      "outcome_at": "2026-10-30T11:04:51.107345+05:30"
     },
     {
       "ticker": "SHRIRAMFIN",
       "signal": "SELL",
-      "ltp": 828.85,
-      "stop": 834.08,
-      "target": 815.77,
+      "ltp": 828.55,
+      "stop": 833.78,
+      "target": 815.47,
       "qty": 184,
       "indicators": {
         "rsi": 38.06,
         "atr": 3.4893,
         "atr_5m": 2.2432,
-        "vwap": 830.9,
+        "vwap": 830.87,
         "vol_ratio": 2.38
       },
       "scout_reason": "NIFTY NEUTRAL, sector FINANCIAL SERVICES NEUTRAL",
@@ -358,14 +358,14 @@
           828.3,
           829.1,
           827.75,
-          828.7,
-          71322
+          828.55,
+          85569
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
-      "outcome_reason": "REGIME_LOCK: Nifty day % +2.30% (above +2.50% threshold), rejecting all SELLs in a strong tape.",
-      "outcome_at": "2026-10-30T11:02:47.978666+05:30"
+      "outcome_reason": "INTO_WALL: entry 828.55 is within 0.5*ATR (1.7447) of session low 826.95",
+      "outcome_at": "2026-10-30T11:04:51.107366+05:30"
     }
   ]
 }
