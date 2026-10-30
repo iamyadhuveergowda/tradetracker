@@ -727,5 +727,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261030-130613-TCS",
+    "signal_time": "2026-10-30T13:06:13+05:30",
+    "judged_at": "2026-10-30T13:06:27+05:30",
+    "age_min": 0.2,
+    "ticker": "TCS",
+    "action": "BUY",
+    "entry": 2517.7,
+    "stop": 2503.49,
+    "target": 2553.23,
+    "qty": 33,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "Valid only on a break above 2521.4 with volume > 50k and RSI > 65",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "Weak candle structure at entry (13:05 candle closed near low, RSI=59.16 in neutral zone). Last 12 candles show indecision: 5-minute bars since 12:10 failed to sustain momentum above 2520, with 3 consecutive lower highs (12:20, 12:25, 12:30). ATR buffer (9.47) suggests stop at 2503.49 is too tight for a late-session entry (144 mins left). Target of 2553.23 (3.75 ATR) is aggressive for a stock showing no follow-through on breakout attempts.",
+      "sentiment": "No headline information available. Volume behavior is mixed: spike at 13:00 (83546) but no follow-through; subsequent candles show declining participation (12:35-12:55 volume < 30k). Sector-wide prints not visible in data; tape suggests caution.",
+      "macro": "Trade direction (BUY) aligns with NIFTY's +0.67% overextension, but late-session entries require exceptional structure. NIFTY spot (23089.9) is near session highs, increasing risk of mean-reversion. TCS is a large-cap laggard; no macro tailwind visible.",
+      "risk": "Reward:risk of 2.5 is mathematically appealing, but stop distance (1.5 ATR) is insufficient for a late-session entry. Feasibility is TIGHT (target_distance_atr=3.75, 144 mins left), and no results_risk applies. High volatility in last 5 minutes (13:00-13:05) suggests exhaustion rather than fresh momentum."
+    },
+    "rationale": "TCS fails on technical structure (no follow-through, weak RSI), macro alignment (late-session entry without tailwind), and risk (tight stop, aggressive target). Requires a break above 2521.4 with volume > 50k and RSI > 65 to reconsider, but even then, the 144-minute timeframe is restrictive for a 3.75 ATR move.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
