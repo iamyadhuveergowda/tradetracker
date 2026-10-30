@@ -592,5 +592,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261030-113254-CIPLA",
+    "signal_time": "2026-10-30T11:32:54+05:30",
+    "judged_at": "2026-10-30T11:33:18+05:30",
+    "age_min": 0.4,
+    "ticker": "CIPLA",
+    "action": "BUY",
+    "entry": 1368.4,
+    "stop": 1359.94,
+    "target": 1389.56,
+    "qty": 114,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "results_risk": "reported results 3 DAYS AGO (2026-10-27)",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 63.58 suggests moderate overbought conditions, but the recent candle at 11:30 (1368.1 low, 1371.3 high) shows a sharp reversal from the 11:25 spike (1371.7 high). The 11:25 candle is a strong bullish engulfing pattern, but the immediate follow-through at 11:30 lacks conviction (low volume of 9104 vs. prior 70737). ATR buffer (stop at 1359.94) is tight, and the target (1389.56) requires a 1.5% move in 238 minutes (~3.9 hours), which is aggressive for late-session intraday. No clear breakout structure beyond the 11:25 spike.",
+      "sentiment": "No headline information available. Volume behavior shows a spike at 11:25 (70737) followed by a sharp drop at 11:30 (9104), suggesting a lack of follow-through. Sector-wide prints are not visible in the provided data, but the tape indicates a potential exhaustion of momentum in the short term.",
+      "macro": "NIFTY is at 23038.3, and the trade direction (BUY) aligns with the index tape being bullish. However, late-session entries (238 minutes to close) require exceptional structure, which is absent here. The lack of follow-through on the 11:25 spike raises macro-level skepticism about the sustainability of the move.",
+      "risk": "Stop distance is 1.5 ATR (~5.64), which is tight. Target distance is 3.75 ATR, and with 238 minutes left, the feasibility is TIGHT (no explicit feasibility flag, but the time-to-close and ATR distance make it risky). Results were reported 3 days ago (2026-10-27), but no immediate volatility spike is observed in the tape. Pre-/post-results volatility is not a concern here, but the lack of follow-through is."
+    },
+    "rationale": "CIPLA shows a late-session BUY signal with moderate RSI (63.58) and a bullish engulfing candle at 11:25, but the immediate reversal at 11:30 with low volume and no follow-through raises skepticism. The target (1389.56) is aggressive for the remaining 238 minutes, and the stop is tight at 1.5 ATR. No headline information is available, but the tape suggests exhaustion. SKIP due to lack of conviction in the setup and late-session timing.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
