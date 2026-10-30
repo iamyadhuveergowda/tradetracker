@@ -47,6 +47,22 @@ def load_json(path: Path, default):
         return default
 
 
+def load_json_strict(path: Path, default):
+    """Like load_json, but a present-but-unparseable file is an error.
+
+    A missing file still returns the default. A present file that is not
+    valid JSON must never be silently replaced by an empty list — that
+    would destroy the permanent desk history. Raises RuntimeError; the
+    caller lets it abort the run before anything is written or sent.
+    """
+    if not path.exists():
+        return default
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except Exception as exc:
+        raise RuntimeError(f"{path} exists but is not valid JSON ({exc}); refusing to overwrite it") from exc
+
+
 def save_json(path: Path, data) -> None:
     path.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
 
@@ -60,7 +76,7 @@ def fetch_day_rows(ticker: str, day) -> list[dict]:
         print(f"yfinance unavailable: {exc}", file=sys.stderr)
         return []
     try:
-        data = yf.download(f"{ticker}.NS", period="5d", interval="5m",
+        data = yf.download(f"{ticker}.NS", period="1mo", interval="5m",
                            progress=False, auto_adjust=False)
         if data is None or len(data) == 0:
             return []
@@ -140,9 +156,9 @@ def main() -> int:
 
     root = repo_root()
     history_path = root / "desk_history_mistral.json"
-    history = load_json(history_path, [])
+    history = load_json_strict(history_path, [])
     if not isinstance(history, list):
-        history = []
+        raise RuntimeError(f"{history_path} is not a JSON list; refusing to overwrite it")
 
     now_ist = datetime.now(IST)
     report_date = args.date or now_ist.date().isoformat()
@@ -160,14 +176,25 @@ def main() -> int:
         sig_date = sig_ist.date()
         if sig_date.isoformat() > report_date:
             continue
-        if sig_date.isoformat() == report_date and now_ist.time() < dtime(15, 35):
+        # R2: the session-running skip keys on TODAY's date only, so a
+        # manual --date backfill for a past date scores regardless of
+        # the current time of day; scheduled runs (report_date == today)
+        # behave exactly as before.
+        if sig_date.isoformat() == now_ist.date().isoformat() and now_ist.time() < dtime(15, 35):
             continue  # today's session may still be running
         age_days = (now_ist.date() - sig_date).days
         key = (rec["ticker"], sig_date)
         if key not in bars_cache:
             bars_cache[key] = fetch_day_rows(rec["ticker"], sig_date)
         rows = slice_from_signal(bars_cache[key], sig_ist)
-        outcome, outcome_r = score_record(rec, rows)
+        try:
+            outcome, outcome_r = score_record(rec, rows)
+        except Exception as exc:
+            print(f"Scoring failed for {rec.get('ticker')} {rec.get('signal_time')}: {exc}; marking NO_DATA", file=sys.stderr)
+            rec["outcome"], rec["outcome_r"] = "NO_DATA", None
+            rec["outcome_at"] = now_ist.isoformat(timespec="seconds")
+            changed = True
+            continue
         if outcome == "PENDING" and age_days > SCORE_WINDOW_DAYS:
             outcome, outcome_r = "NO_DATA", None
         if outcome != "PENDING":
