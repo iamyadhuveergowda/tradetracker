@@ -445,9 +445,9 @@
       "risk": "Target distance is demanding at 3.75 ATR (17.40 points to 1375.80) against a 1.50 ATR stop (1351.44). Even with 211 minutes left, achieving a 3.75 ATR directional thrust in large-cap pharma without strong index continuation is an unfavorable risk-reward proposition."
     },
     "rationale": "SKIP DRREDDY long at 1358.40. The stock stalled twice at 1359.90, volume dried up to 7,540 on the latest bar, and reaching a 3.75 ATR target in 211 minutes while NIFTY is overextended (+0.73%) carries poor execution probability.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-10-30T22:12:37+05:30"
   },
   {
     "signal_id": "20261030-123205-ONGC",
@@ -472,9 +472,9 @@
       "risk": "Stop distance of 1.5 ATR (225.08) provides reasonable room, and reward-to-risk is acceptable at 2.5. However, reaching the target at 228.37 requires a 3.75 ATR advance, which is highly improbable within the 178 minutes left in the session. Results risk is not present."
     },
     "rationale": "SKIP. ONGC is range-bound below 226.35, and demanding a 3.75 ATR expansion within 178 minutes while NIFTY trades at overextended intraday levels creates an unfavorable risk profile.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-10-30T22:12:37+05:30"
   },
   {
     "signal_id": "20261030-130613-TCS",
@@ -499,9 +499,9 @@
       "risk": "Stop is set at 2503.49 (1.50 ATR / 14.21 pts) with target at 2553.23 (3.75 ATR / 35.53 pts). Requiring a 3.75 ATR expansion within 144 minutes against an ATR of 9.4745 is an excessively demanding target in an afternoon session without fresh breakout confirmation."
     },
     "rationale": "SKIP TCS BUY at 2517.70. While R:R is 2.5 on paper, the target of 2553.23 requires a 3.75 ATR run in 144 minutes while the stock is struggling against local resistance at 2520.50-2522.50 and NIFTY is already overextended.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-10-30T22:12:37+05:30"
   },
   {
     "signal_id": "20261030-133957-TITAN",
@@ -526,9 +526,9 @@
       "risk": "Stop is 4431.67 (1.50 ATR, 24.83 pts) and target is 4518.57 (3.75 ATR, 62.07 pts) for a 2.5 R:R. Covering 3.75 ATR in 111 minutes against intraday downward momentum presents an unfavourable risk profile."
     },
     "rationale": "TITAN printed lower highs from 4472.9 to 4463.5 and broke to 4448.6 on high volume. Reaching a 3.75 ATR target at 4518.57 within 111 minutes is highly improbable under current tape pressure. SKIP.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": -0.81,
+    "outcome_at": "2026-10-30T22:12:37+05:30"
   },
   {
     "signal_id": "20261030-133957-TITAN",
@@ -553,9 +553,9 @@
       "risk": "Stop is 2941.58 (14.42 pts, 1.50 ATR) with a target of 2992.04 (36.04 pts, 3.75 ATR). Asking an intraday stock that has moved less than 8 points over the last hour to run 36 points in 111 minutes carries poor feasibility."
     },
     "rationale": "GRASIM is grinding down towards 2954.9 with volume expanding on dips. Expecting a 3.75 ATR advance to 2992.04 in 111 minutes without any technical base or catalyst is unrealistic. SKIP.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 1.76,
+    "outcome_at": "2026-10-30T22:12:37+05:30"
   },
   {
     "signal_id": "20261030-135203-BEL",
@@ -580,8 +580,8 @@
       "risk": "Target distance is demanding at 3.75 ATR (375.34) within 98 minutes. Crucially, BEL carries heavy event risk as it reports results TODAY (2026-10-30), introducing severe pre/post-earnings volatility that completely undermines a 1.5 ATR stop."
     },
     "rationale": "SKIP BEL due to substantial event risk with results scheduled today, a demanding 3.75 ATR target with 98 minutes left, and persistent intraday downward drift from 370.95 to 368.90.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.42,
+    "outcome_at": "2026-10-30T22:12:37+05:30"
   }
 ]
