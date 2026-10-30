@@ -1,23 +1,23 @@
 {
-  "signal_id": "20261030-123205-ONGC",
-  "generated_at": "2026-10-30T12:32:05.319462+05:30",
-  "nifty_ltp": 23080.0,
+  "signal_id": "20261030-123456-ONGC",
+  "generated_at": "2026-10-30T12:34:56.045826+05:30",
+  "nifty_ltp": 23092.95,
   "candidates": [
     {
       "ticker": "ONGC",
       "signal": "BUY",
-      "ltp": 226.02,
-      "stop": 225.08,
-      "target": 228.37,
+      "ltp": 225.86,
+      "stop": 224.93,
+      "target": 228.17,
       "qty": 427,
       "indicators": {
         "rsi": 59.32,
-        "atr": 0.627,
+        "atr": 0.617,
         "atr_5m": 0.3445,
         "vwap": 225.63,
         "vol_ratio": 3.1
       },
-      "scout_reason": "NIFTY 50 +0.62% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +0.68% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "10:55",
@@ -176,14 +176,14 @@
           225.92,
           226.05,
           225.78,
-          226.0,
-          187541
+          225.88,
+          234481
         ]
       ],
       "stop_floor_bound": false,
-      "outcome": "dropped_unrecorded",
-      "outcome_reason": "",
-      "outcome_at": "2026-10-30T12:32:06.632645+05:30"
+      "outcome": "dropped_other",
+      "outcome_reason": "EXHAUSTION: 4+ consecutive decreasing closes (226.35, 226.24, 225.90, 225.86) leading into entry, indicating exhaustion",
+      "outcome_at": "2026-10-30T12:35:00.322344+05:30"
     }
   ]
 }
