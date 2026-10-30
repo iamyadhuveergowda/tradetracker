@@ -1,14 +1,14 @@
 {
-  "signal_id": "20261030-114019-DIVISLAB",
-  "generated_at": "2026-10-30T11:40:19.015184+05:30",
-  "nifty_ltp": 23052.45,
+  "signal_id": "20261030-114213-DIVISLAB",
+  "generated_at": "2026-10-30T11:42:13.546945+05:30",
+  "nifty_ltp": 23052.95,
   "candidates": [
     {
       "ticker": "DIVISLAB",
       "signal": "BUY",
-      "ltp": 9798.5,
-      "stop": 9726.85,
-      "target": 9977.62,
+      "ltp": 9799.5,
+      "stop": 9727.85,
+      "target": 9978.62,
       "qty": 13,
       "indicators": {
         "rsi": 58.51,
@@ -182,8 +182,8 @@
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
-      "outcome_reason": "DISTRIBUTION: heaviest volume bar in last 6 candles (11:25) volume 30675 closed down (9755.5) against BUY direction",
-      "outcome_at": "2026-10-30T11:40:22.893967+05:30"
+      "outcome_reason": "DISTRIBUTION: heaviest volume in last 6 candles is 30675 at 11:25, bearish candle (open 9786.5, close 9755.5) printed against BUY direction",
+      "outcome_at": "2026-10-30T11:42:17.541787+05:30"
     }
   ]
 }
