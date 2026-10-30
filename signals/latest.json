@@ -1,23 +1,23 @@
 {
-  "signal_id": "20261030-120619-TATACONSUM",
-  "generated_at": "2026-10-30T12:06:19.554157+05:30",
-  "nifty_ltp": 23097.65,
+  "signal_id": "20261030-120822-TATACONSUM",
+  "generated_at": "2026-10-30T12:08:22.935391+05:30",
+  "nifty_ltp": 23094.3,
   "candidates": [
     {
       "ticker": "TATACONSUM",
       "signal": "BUY",
-      "ltp": 1017.65,
-      "stop": 1010.76,
-      "target": 1034.88,
+      "ltp": 1016.7,
+      "stop": 1009.81,
+      "target": 1033.93,
       "qty": 69,
       "indicators": {
         "rsi": 61.65,
         "atr": 4.5947,
         "atr_5m": 2.4833,
-        "vwap": 1013.0,
+        "vwap": 1013.03,
         "vol_ratio": 2.59
       },
-      "scout_reason": "NIFTY 50 +0.70% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +0.69% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "10:30",
@@ -175,15 +175,15 @@
           "12:05",
           1018.0,
           1018.0,
-          1016.95,
-          1017.3,
-          1767
+          1016.65,
+          1016.7,
+          5724
         ]
       ],
       "stop_floor_bound": false,
-      "outcome": "dropped_other",
-      "outcome_reason": "INTO_WALL: entry 1017.65 is within 0.5*ATR (2.30) of recent swing high 1019.05, risking immediate wall.",
-      "outcome_at": "2026-10-30T12:06:23.981030+05:30"
+      "outcome": "executed",
+      "outcome_reason": "",
+      "outcome_at": "2026-10-30T12:08:29.146877+05:30"
     }
   ]
 }
