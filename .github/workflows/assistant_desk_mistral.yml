@@ -6,7 +6,7 @@ name: Mistral Desk (advisory, shadow)
 #  * push on signals/latest.json — primary. Every agent publish starts a
 #    run within ~a minute.
 #  * schedule every 5 min in the NIFTY session window — backup / polling
-#    cadence. Cron "*/5 3-10 * * 1-5" UTC = 08:30-15:30 IST Mon-Fri, covering
+#    cadence. Cron "*/5 3-10 * * 1-5" UTC = 08:30-16:25 IST Mon-Fri, covering
 #    the 09:15-15:30 IST session with buffer. A run that finds the batch
 #    already judged exits in seconds with no Gemini call and no commit.
 # Marking done: the script dedupes by signal_id (desk_history_mistral.json), so
@@ -22,6 +22,7 @@ name: Mistral Desk (advisory, shadow)
 # until its track record proves good, per the Oct 23 decision.
 on:
   push:
+    branches: [main]
     paths:
       - 'signals/latest.json'
   schedule:
@@ -38,6 +39,7 @@ concurrency:
 jobs:
   run-analyst-desk:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -58,12 +60,19 @@ jobs:
           git config --global user.name "Assistant Desk Bot"
           git config --global user.email "bot@users.noreply.github.com"
           for f in desk_verdict_mistral.json desk_history_mistral.json; do
-            [ -f "$f" ] && git add "$f"
+            if [ -f "$f" ]; then git add "$f"; fi
           done
           if git diff --staged --quiet; then
             echo "No desk changes to commit"
           else
             git commit -m "Auto: Mistral desk verdict update [skip ci]"
-            git pull --rebase origin main
-            git push
+            for attempt in 1 2 3; do
+              if git pull --rebase origin main && git push origin HEAD:main; then
+                break
+              fi
+              git rebase --abort 2>/dev/null || true
+              echo "Push attempt $attempt failed; retrying..."
+              sleep 5
+              if [ "$attempt" = "3" ]; then echo "ERROR: push failed after 3 attempts" >&2; exit 1; fi
+            done
           fi
