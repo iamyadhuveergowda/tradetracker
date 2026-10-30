@@ -1148,5 +1148,53 @@
     "orders": {},
     "breakeven_price": 298.43,
     "exit_time": "2026-10-26T15:10:05+05:30"
+  },
+  {
+    "trade_id": "20261030120417-DIVISLAB",
+    "date": "2026-10-30",
+    "ticker": "DIVISLAB",
+    "action": "BUY",
+    "qty": 6,
+    "remaining_qty": 6,
+    "requested_qty": 6,
+    "locked_margin_per_share": 1962.4,
+    "partial_booked": false,
+    "entry": 9812.0,
+    "sl": 9739.09,
+    "initial_sl": 9739.09,
+    "tgt": 9994.26,
+    "open": 9807.0,
+    "high": 9838.0,
+    "low": 9807.0,
+    "close": 9832.0,
+    "time": "12:04:17",
+    "status": "OPEN ⏳",
+    "exit_price": null,
+    "net_pnl": 0.0,
+    "rationale": "BUY aligns with VWAP (9787.42) and ATR (48.60); entry 9812 is only 0.5% above VWAP and well within VWAP+1.5*ATR (9860.33). Stop 9739.09 is 1.5 ATR below entry, providing a tight risk. Target 9994.26 is 182.26 points away, below expected travel 301.02 and yields a risk‑reward ~3.75. No hard‑gate or veto conditions are met.",
+    "events": [
+      {
+        "time": "2026-10-30T12:04:17+05:30",
+        "type": "ENTRY",
+        "text": "PAPER BUY 6 @ ₹9812.00"
+      }
+    ],
+    "mode": "PAPER",
+    "last_price": 9812.0,
+    "atr": 48.6034,
+    "target_booked": false,
+    "breakeven_set": false,
+    "mfe_r": 0.0,
+    "mae_r": 0.0,
+    "size_tag": "overextended_halfsize",
+    "vol_ratio": 2.3,
+    "stop_atr_mult": 1.5,
+    "rvol": 1.57,
+    "rule_version": "v13.3",
+    "entry_brokerage_remaining": 20.0,
+    "charges": {},
+    "pnl_by_date": {},
+    "orders": {},
+    "breakeven_price": 9827.28
   }
 ]
