@@ -646,5 +646,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261030-115507-DRREDDY",
+    "signal_time": "2026-10-30T11:55:07+05:30",
+    "judged_at": "2026-10-30T11:55:26+05:30",
+    "age_min": 0.3,
+    "ticker": "DRREDDY",
+    "action": "BUY",
+    "entry": 1356.5,
+    "stop": 1349.54,
+    "target": 1373.9,
+    "qty": 138,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 59.17 suggests moderate bullish momentum but not overbought. The last 5-minute candle (11:55) is a doji, indicating indecision. The 11:25 candle shows a strong bullish breakout (1355.5 close after 1355.8 high), but the subsequent candles (11:30-11:55) show a lack of follow-through, with price oscillating between 1354.8 and 1358.6. ATR buffer (stop at 1349.54) is tight (1.5 ATR), and the target (1373.9) is 3.75 ATR away, which is a clean reward:risk of 2.5. However, the candle structure post-breakout lacks conviction, with no clear higher highs or sustained momentum.",
+      "sentiment": "No headline information available. Volume surged at 11:25 (52,385) and 11:30 (76,760), but the follow-through was weak, with volume tapering off in subsequent candles. The sector (PHARMA) is marked as bullish, but the tape shows no clear sector-wide momentum in the last 12 candles.",
+      "macro": "NIFTY is bullish, but the time of day (215 minutes to close) is late for a fresh entry. Late-session entries require exceptional structure, which is lacking here. The index tape does not show a clear late-session rally, and the stock’s action is isolated without broader participation.",
+      "risk": "Stop distance is tight (1.5 ATR), and the target (1373.9) is feasible in time (215 minutes), but the lack of follow-through and indecision in the last candle increase the risk of a false breakout. No results risk is present, but the late-session timing and weak tape participation weigh heavily against the trade."
+    },
+    "rationale": "SKIP: Weak follow-through post-breakout, late-session timing, and lack of sector-wide momentum despite bullish NIFTY and PHARMA signals. The doji candle at 11:55 and oscillating price action reduce conviction. A valid GO would require a breakout above 1359.9 with sustained volume and higher highs in the remaining session.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
