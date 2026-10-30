@@ -1,14 +1,14 @@
 {
-  "signal_id": "20261030-123658-ONGC",
-  "generated_at": "2026-10-30T12:36:58.575349+05:30",
-  "nifty_ltp": 23097.15,
+  "signal_id": "20261030-123944-ONGC",
+  "generated_at": "2026-10-30T12:39:44.833444+05:30",
+  "nifty_ltp": 23085.5,
   "candidates": [
     {
       "ticker": "ONGC",
       "signal": "BUY",
-      "ltp": 225.96,
-      "stop": 225.03,
-      "target": 228.27,
+      "ltp": 225.66,
+      "stop": 224.73,
+      "target": 227.97,
       "qty": 427,
       "indicators": {
         "rsi": 59.52,
@@ -17,7 +17,7 @@
         "vwap": 225.63,
         "vol_ratio": 3.82
       },
-      "scout_reason": "NIFTY 50 +0.70% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +0.65% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "11:00",
@@ -175,15 +175,15 @@
           "12:35",
           225.85,
           225.97,
-          225.83,
-          225.95,
-          34712
+          225.66,
+          225.68,
+          53067
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_unrecorded",
       "outcome_reason": "",
-      "outcome_at": "2026-10-30T12:36:59.102129+05:30"
+      "outcome_at": "2026-10-30T12:39:45.279926+05:30"
     }
   ]
 }
