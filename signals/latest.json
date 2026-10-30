@@ -1,20 +1,20 @@
 {
-  "signal_id": "20261030-133756-TITAN",
-  "generated_at": "2026-10-30T13:37:56.962193+05:30",
-  "nifty_ltp": 23050.4,
+  "signal_id": "20261030-133957-TITAN",
+  "generated_at": "2026-10-30T13:39:57.704799+05:30",
+  "nifty_ltp": 23046.95,
   "candidates": [
     {
       "ticker": "TITAN",
       "signal": "BUY",
-      "ltp": 4455.0,
-      "stop": 4430.17,
-      "target": 4517.07,
+      "ltp": 4456.5,
+      "stop": 4431.67,
+      "target": 4518.57,
       "qty": 38,
       "indicators": {
         "rsi": 57.24,
         "atr": 16.5532,
         "atr_5m": 8.4586,
-        "vwap": 4442.41,
+        "vwap": 4442.66,
         "vol_ratio": 3.63
       },
       "scout_reason": "NIFTY BULLISH, sector CONSUMER GOODS NEUTRAL",
@@ -175,28 +175,28 @@
           "13:35",
           4462.5,
           4463.5,
-          4454.1,
-          4454.8,
-          3537
+          4448.6,
+          4458.0,
+          12450
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_unrecorded",
       "outcome_reason": "",
-      "outcome_at": "2026-10-30T13:37:57.591246+05:30"
+      "outcome_at": "2026-10-30T13:39:58.391462+05:30"
     },
     {
       "ticker": "GRASIM",
       "signal": "BUY",
-      "ltp": 2955.0,
-      "stop": 2940.58,
-      "target": 2991.04,
+      "ltp": 2956.0,
+      "stop": 2941.58,
+      "target": 2992.04,
       "qty": 65,
       "indicators": {
         "rsi": 53.73,
         "atr": 9.6101,
         "atr_5m": 4.1876,
-        "vwap": 2940.79,
+        "vwap": 2940.89,
         "vol_ratio": 2.15
       },
       "scout_reason": "NIFTY BULLISH, sector CEMENT NEUTRAL",
@@ -356,16 +356,16 @@
         [
           "13:35",
           2955.7,
-          2955.8,
+          2957.0,
           2954.9,
-          2955.6,
-          2224
+          2956.9,
+          3867
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_unrecorded",
       "outcome_reason": "",
-      "outcome_at": "2026-10-30T13:37:57.591266+05:30"
+      "outcome_at": "2026-10-30T13:39:58.391481+05:30"
     }
   ]
 }
