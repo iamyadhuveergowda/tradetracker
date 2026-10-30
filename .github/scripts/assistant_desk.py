@@ -64,7 +64,7 @@ import sys
 import time
 import urllib.request
 import urllib.error
-from datetime import datetime
+from datetime import datetime, time as dtime
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -166,9 +166,15 @@ def load_earnings_calendar(root: Path) -> dict:
         return out
     try:
         rows = json.loads(path.read_text(encoding="utf-8"))
+        if not isinstance(rows, list):
+            raise ValueError("earnings calendar is not a list")
         for row in rows:
-            d = datetime.fromisoformat(str(row["date"])).date().isoformat()
-            out.setdefault(_norm_ticker(row["ticker"]), set()).add(d)
+            try:
+                d = datetime.fromisoformat(str(row["date"])).date().isoformat()
+                out.setdefault(_norm_ticker(row["ticker"]), set()).add(d)
+            except Exception:
+                print(f"Skipping bad earnings calendar row: {row!r}")
+                continue
     except Exception as exc:
         print(f"earnings_calendar_nifty.json unreadable ({exc}); results-risk flag OFF")
         return {}
@@ -178,7 +184,7 @@ def load_earnings_calendar(root: Path) -> dict:
 def results_flag(calendar: dict, ticker, signal_date) -> str:
     """One-line flag, or '' if no results date is near the signal date.
 
-    Window: reports today, tomorrow, yesterday, or 2 days ago (covers
+    Window: reports today, tomorrow, yesterday, 2 days ago, or 3 days ago (covers
     a Saturday result flagged on Monday). Anything else is not flagged,
     so a stale calendar cannot spam every verdict.
     """
@@ -199,6 +205,8 @@ def results_flag(calendar: dict, ticker, signal_date) -> str:
             return f"reported results YESTERDAY ({d})"
         if delta == -2:
             return f"reported results 2 DAYS AGO ({d})"
+        if delta == -3:
+            return f"reported results 3 DAYS AGO ({d})"
     return ""
 
 
@@ -207,6 +215,11 @@ def feasibility_flag(target_atr, minutes_left) -> str:
 
     Conservative by design: it flags only extremes, so the 17-trade
     NIFTY ledger (max 3.89 ATR, min 136 min left) gets zero flags.
+    CALIBRATION BASIS WARNING (Oct 2026, v13.4): the 5.5/4.5 thresholds
+    were calibrated when indicators.atr was the 5m ATR; from the v13.4
+    deploy indicators.atr is ATR15, so the same target reads fewer ATRs
+    and flags fire less often. Thresholds are NOT re-derived here —
+    re-measurement on a week of ATR15 data is required first.
     """
     if target_atr is None or minutes_left is None:
         return ""
@@ -239,6 +252,22 @@ def load_json(path: Path, default):
         return default
 
 
+def load_json_strict(path: Path, default):
+    """Like load_json, but a present-but-unparseable file is an error.
+
+    A missing file still returns the default. A present file that is not
+    valid JSON must never be silently replaced by an empty list — that
+    would destroy the permanent desk history. Raises RuntimeError; the
+    caller lets it abort the run before anything is written or sent.
+    """
+    if not path.exists():
+        return default
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except Exception as exc:
+        raise RuntimeError(f"{path} exists but is not valid JSON ({exc}); refusing to overwrite it") from exc
+
+
 def save_json(path: Path, data) -> None:
     path.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
 
@@ -248,6 +277,23 @@ def gemini_judge(candidates: list[dict], nifty_ltp, signal_time_ist: str, calend
     framework. Returns one verdict dict per candidate (ticker-matched).
     Raises on transport/API failure — the caller writes nothing then."""
     api_key = os.environ["GEMINI_API_KEY"]
+    # N5: validate per candidate — one malformed candidate must not
+    # kill the whole batch. Skip it with a log line, judge the rest.
+    _valid = []
+    for _c in candidates:
+        try:
+            if not _c.get("ticker") or not _c.get("signal"):
+                raise ValueError("missing ticker/signal")
+            float(_c["ltp"]); float(_c["stop"]); float(_c["target"])
+            if _c.get("indicators") is not None and not isinstance(_c.get("indicators"), dict):
+                raise ValueError("indicators not a dict")
+        except Exception as exc:
+            print(f"Skipping malformed candidate {_c.get('ticker', '?')}: {exc}", file=sys.stderr)
+            continue
+        _valid.append(_c)
+    candidates = _valid
+    if not candidates:
+        raise RuntimeError("All candidates malformed; nothing to judge")
     features = []
     for c in candidates:
         entry, stop, tgt = float(c["ltp"]), float(c["stop"]), float(c["target"])
@@ -267,12 +313,15 @@ def gemini_judge(candidates: list[dict], nifty_ltp, signal_time_ist: str, calend
             "results_risk": results_flag(calendar or {}, c["ticker"], signal_date),
             "feasibility": feasibility_flag(round(abs(float(c["target"]) - float(c["ltp"])) / (float(c.get("indicators", {}).get("atr") or 0) or 0.0), 2) if float(c.get("indicators", {}).get("atr") or 0) else None, minutes_left),
             "candles_5m_last12": (c.get("candles_5m") or [])[-12:],
+            "minutes_left": minutes_left,
         })
     prompt = (
         "You are the Chief Investment Officer overseeing a 4-analyst desk for a NIFTY "
         "intraday paper-trading system. This is an ADVISORY review: verdicts are logged "
         "and graded at end of day; you do not place trades.\n\n"
         f"Session context: signal time {signal_time_ist} IST (session 09:15-15:30). "
+        f"Minutes remaining to the 15:30 close: {minutes_left} — use THIS number for all "
+        "time-to-close reasoning; do not recompute it from the signal time. "
         f"NIFTY spot: {nifty_ltp if nifty_ltp is not None else 'unknown'}. Candles are "
         "5-minute bars [time, open, high, low, close, volume].\n\n"
         "Evaluate EACH candidate through four lenses:\n"
@@ -295,9 +344,9 @@ def gemini_judge(candidates: list[dict], nifty_ltp, signal_time_ist: str, calend
         "you MUST mention it in risk/summary and weigh pre-/post-results volatility: "
         "a GO on a results-today/tomorrow name needs exceptional structure. If it is "
         "empty, do NOT invent a results date or claim a company is reporting.\n\n"
-        "Default to skepticism: a SKIP costs nothing. Return ONLY this JSON: "
+        "Default to skepticism: a SKIP costs nothing. CONFIDENCE: confidence is your conviction in the verdict you just gave for that candidate (GO or SKIP), as an integer. A verdict you stand behind is 50-95; a SKIP you believe in is 60-90. Never output 0 and never omit the confidence field — 0 means you have no opinion, not low conviction, and is not a valid confidence for a verdict. Return ONLY this JSON: "
         "{\"verdicts\": [{\"ticker\": str, \"verdict\": \"GO\"|\"SKIP\", "
-        "\"confidence\": int 0-100, \"trigger\": str, \"analyst_notes\": {\"technical\": str, "
+        "\"confidence\": int 50-95, \"trigger\": str, \"analyst_notes\": {\"technical\": str, "
         "\"sentiment\": str, \"macro\": str, \"risk\": str}, \"summary\": str}]} "
         "— one entry per candidate, citing concrete numbers from the payload. "
         "trigger is the price condition that makes the verdict actionable: for GO, "
@@ -330,9 +379,11 @@ def gemini_judge(candidates: list[dict], nifty_ltp, signal_time_ist: str, calend
         if verdict not in ("GO", "SKIP"):
             verdict = "SKIP"
         try:
-            conf = max(0, min(100, int(v.get("confidence", 0))))
+            conf = int(v.get("confidence", 0))
         except (TypeError, ValueError):
-            conf = 0
+            raise RuntimeError(f"Invalid confidence for {c['ticker']}: {v.get('confidence')!r}")
+        if conf <= 0 or conf > 100:
+            raise RuntimeError(f"Invalid confidence {conf} for {c['ticker']}: 0 is not a valid confidence")
         notes = v.get("analyst_notes") if isinstance(v.get("analyst_notes"), dict) else {}
         out.append({
             "ticker": c["ticker"], "verdict": verdict, "confidence": conf,
@@ -379,10 +430,10 @@ def send_telegram(text):
         )
         try:
             with urllib.request.urlopen(req, timeout=20) as resp:
-                if resp.status != 200:
-                    print('Telegram send failed: HTTP %s (chunk %d)' % (resp.status, i), file=sys.stderr)
+                if not (200 <= resp.status < 300):
+                    print('ERROR: Telegram send failed: HTTP %s (chunk %d) — verdict saved but NOT delivered via Telegram' % (resp.status, i), file=sys.stderr)
         except Exception as exc:
-            print('Telegram send failed: %s (chunk %d)' % (exc, i), file=sys.stderr)
+            print('ERROR: Telegram send failed: %s (chunk %d) — verdict saved but NOT delivered via Telegram' % (exc, i), file=sys.stderr)
 
 
 def main() -> int:
@@ -397,6 +448,9 @@ def main() -> int:
         return 0
 
     signal_id = str(latest.get("signal_id", ""))
+    if not signal_id:
+        print("latest.json has no signal_id; skipping (cannot dedupe).")
+        return 0
     try:
         gen = datetime.fromisoformat(str(latest["generated_at"]))
     except Exception:
@@ -406,9 +460,21 @@ def main() -> int:
     now_ist = datetime.now(IST)
     age_min = round((now_ist - gen_ist).total_seconds() / 60.0, 1)
 
-    history = load_json(history_path, [])
+    # Freshness/session gate (F1, ported from the US desks): never judge
+    # a stale or out-of-session batch as if it were current.
+    if gen_ist.date() != now_ist.date() or age_min > 30 or age_min < -5:
+        print(f"Signal {signal_id} is stale (age {age_min:.1f} min); skipping.")
+        return 0
+    if gen_ist.weekday() >= 5 or not (dtime(9, 15) <= gen_ist.time() <= dtime(15, 30)):
+        print(f"Signal generated outside NIFTY session ({gen_ist:%H:%M} IST); skipping.")
+        return 0
+    if now_ist.time() > dtime(15, 35):
+        print(f"Judging after NIFTY close ({now_ist:%H:%M} IST); skipping.")
+        return 0
+
+    history = load_json_strict(history_path, [])
     if not isinstance(history, list):
-        history = []
+        raise RuntimeError(f"{history_path} is not a JSON list; refusing to overwrite it")
     if any(isinstance(r, dict) and r.get("signal_id") == signal_id for r in history):
         print(f"Signal {signal_id} already judged; skipping.")
         return 0
@@ -432,6 +498,13 @@ def main() -> int:
     except Exception as exc:
         # Honest failure: no fabricated verdict, no history pollution.
         print(f"Gemini judging failed: {exc}", file=sys.stderr)
+        # C7: judging failures are otherwise silent (exit 0, no verdict):
+        # alert loudly, but still write nothing.
+        try:
+            send_telegram(f"DESK judging failed: {exc} — batch {signal_id} NOT judged")
+        except Exception as alert_exc:
+            # C7 nit: a failing alert must not itself be silent.
+            print(f"DESK judging-failure alert failed: {alert_exc}", file=sys.stderr)
         return 0
 
     judged_at = now_ist.isoformat(timespec="seconds")
