@@ -20,6 +20,7 @@ concurrency:
 jobs:
   generate-eod-report:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -39,8 +40,15 @@ jobs:
               echo "No scoring changes to commit"
             else
               git commit -m "Auto: Mistral EOD desk outcomes scored [skip ci]"
-              git pull --rebase origin main
-              git push
+              for attempt in 1 2 3; do
+                if git pull --rebase origin main && git push origin HEAD:main; then
+                  break
+                fi
+                git rebase --abort 2>/dev/null || true
+                echo "Push attempt $attempt failed; retrying..."
+                sleep 5
+                if [ "$attempt" = "3" ]; then echo "ERROR: push failed after 3 attempts" >&2; exit 1; fi
+              done
             fi
           else
             echo "desk_history_mistral.json not found, skipping commit."
