@@ -1,23 +1,23 @@
 {
-  "signal_id": "20261030-130613-TCS",
-  "generated_at": "2026-10-30T13:06:13.025983+05:30",
-  "nifty_ltp": 23089.9,
+  "signal_id": "20261030-130859-TCS",
+  "generated_at": "2026-10-30T13:08:59.144356+05:30",
+  "nifty_ltp": 23087.0,
   "candidates": [
     {
       "ticker": "TCS",
       "signal": "BUY",
-      "ltp": 2517.7,
-      "stop": 2503.49,
-      "target": 2553.23,
+      "ltp": 2518.9,
+      "stop": 2504.69,
+      "target": 2554.43,
       "qty": 33,
       "indicators": {
         "rsi": 59.16,
         "atr": 9.4745,
         "atr_5m": 4.7813,
-        "vwap": 2511.63,
+        "vwap": 2511.67,
         "vol_ratio": 2.4
       },
-      "scout_reason": "NIFTY 50 +0.67% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +0.66% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "11:30",
@@ -174,16 +174,16 @@
         [
           "13:05",
           2518.9,
-          2519.3,
+          2520.0,
           2517.3,
-          2517.7,
-          6725
+          2518.7,
+          16906
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_unrecorded",
       "outcome_reason": "",
-      "outcome_at": "2026-10-30T13:06:13.514192+05:30"
+      "outcome_at": "2026-10-30T13:08:59.815429+05:30"
     }
   ]
 }
