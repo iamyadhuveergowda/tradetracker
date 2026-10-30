@@ -619,5 +619,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261030-114019-DIVISLAB",
+    "signal_time": "2026-10-30T11:40:19+05:30",
+    "judged_at": "2026-10-30T11:40:39+05:30",
+    "age_min": 0.3,
+    "ticker": "DIVISLAB",
+    "action": "BUY",
+    "entry": 9798.5,
+    "stop": 9726.85,
+    "target": 9977.62,
+    "qty": 13,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "Valid only on a break above 9815.0 with follow-through volume > 25000",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI (58.51) is neutral, not overbought or oversold. The last 5m candle (11:40) shows a tight range (9795.5-9800.5) with no clear momentum. The 11:35 candle closed at 9798.5 after a high of 9815.0, but volume (25059) was not exceptional. ATR buffer (47.7652) suggests a stop at 9726.85 is ~1.5 ATR away, which is reasonable, but the target (9977.62) is 3.75 ATR away—a stretch in 230 minutes. The 11:30 candle's high (9793.5) failed to sustain, indicating weak follow-through.",
+      "sentiment": "No headline information available. Volume surged at 11:25 (30675) and 11:35 (25059), but the tape shows no clear sector-wide momentum in PHARMA. The 11:40 candle's volume (307) is an outlier low, suggesting lack of conviction. The NIFTY spot (23052.45) is not directly actionable here, but the PHARMA sector's tape is ambiguous without broader context.",
+      "macro": "Late-session entries (230 minutes left) require exceptional structure. The trade direction (BUY) aligns with the NIFTY's bullish bias, but the PHARMA sector's tape lacks clarity. The 11:40 entry is too close to close for a meaningful move to 9977.62, especially without a catalyst.",
+      "risk": "Reward:risk (2.5) is mathematically attractive, but the target (9977.62) is 189.12 points away (~3.75 ATR), which is aggressive for the remaining time. Stop distance (1.5 ATR) is reasonable, but the lack of follow-through (e.g., 11:35 high failed) increases downside risk. No results_risk or feasibility issues, but the setup is speculative."
+    },
+    "rationale": "DIVISLAB's BUY signal at 9798.5 lacks conviction due to weak follow-through (11:35 high failed), low volume at entry (11:40), and an aggressive target (3.75 ATR) in 230 minutes. The PHARMA sector tape is ambiguous, and the trade is too close to close for a high-probability move. Requires a break above 9815.0 with volume > 25000 to reconsider.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
