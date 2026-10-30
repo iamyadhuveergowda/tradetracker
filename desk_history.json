@@ -556,5 +556,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261030-135203-BEL",
+    "signal_time": "2026-10-30T13:52:03+05:30",
+    "judged_at": "2026-10-30T13:52:22+05:30",
+    "age_min": 0.3,
+    "ticker": "BEL",
+    "action": "BUY",
+    "entry": 368.8,
+    "stop": 366.18,
+    "target": 375.34,
+    "qty": 367,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "Valid only on a sustained breakout above 371.00 with heavy volume",
+    "results_risk": "reports results TODAY (2026-10-30)",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "The tape shows a steady downward drift over the last 12 bars from a high of 370.95 down to 368.90, printing lower highs. RSI sits neutral at 50.58 with no bullish reversal candle pattern established to justify a long entry at 368.80.",
+      "sentiment": "No headline news feed is available. From the tape, volume spiked to 131,327 on the 13:45 bar during a drop to 368.30, indicating lingering supply rather than aggressive institutional accumulation.",
+      "macro": "While NIFTY spot is bullish at 23048.85, BEL's sector is neutral and the stock is decoupling negatively from the broader market with only 98 minutes remaining in the session.",
+      "risk": "Target distance is demanding at 3.75 ATR (375.34) within 98 minutes. Crucially, BEL carries heavy event risk as it reports results TODAY (2026-10-30), introducing severe pre/post-earnings volatility that completely undermines a 1.5 ATR stop."
+    },
+    "rationale": "SKIP BEL due to substantial event risk with results scheduled today, a demanding 3.75 ATR target with 98 minutes left, and persistent intraday downward drift from 370.95 to 368.90.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
