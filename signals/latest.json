@@ -1,23 +1,23 @@
 {
-  "signal_id": "20261030-115507-DRREDDY",
-  "generated_at": "2026-10-30T11:55:07.497025+05:30",
-  "nifty_ltp": 23068.05,
+  "signal_id": "20261030-115713-DRREDDY",
+  "generated_at": "2026-10-30T11:57:13.103506+05:30",
+  "nifty_ltp": 23089.3,
   "candidates": [
     {
       "ticker": "DRREDDY",
       "signal": "BUY",
-      "ltp": 1356.5,
-      "stop": 1349.54,
-      "target": 1373.9,
-      "qty": 138,
+      "ltp": 1357.0,
+      "stop": 1350.04,
+      "target": 1374.4,
+      "qty": 69,
       "indicators": {
         "rsi": 59.17,
         "atr": 4.6394,
         "atr_5m": 3.0606,
-        "vwap": 1353.62,
+        "vwap": 1353.63,
         "vol_ratio": 2.08
       },
-      "scout_reason": "NIFTY BULLISH, sector PHARMA BULLISH",
+      "scout_reason": "NIFTY 50 +0.67% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "10:20",
@@ -174,16 +174,16 @@
         [
           "11:55",
           1356.9,
-          1356.9,
-          1356.5,
-          1356.5,
-          106
+          1357.1,
+          1356.2,
+          1356.8,
+          4217
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
-      "outcome_reason": "STOP_IN_NOISE: stop 1349.54 sits within 1 ATR (4.6394) of repeatedly tested price around 1349.5 in recent 5‑min candles",
-      "outcome_at": "2026-10-30T11:55:13.549551+05:30"
+      "outcome_reason": "REGIME_LOCK: Nifty +0.67% (above +0.25% threshold), rejecting all BUYs in a running index tape.",
+      "outcome_at": "2026-10-30T11:57:21.575318+05:30"
     }
   ]
 }
