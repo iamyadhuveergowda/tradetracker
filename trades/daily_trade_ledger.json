@@ -1219,7 +1219,7 @@
     "ticker": "TATACONSUM",
     "action": "BUY",
     "qty": 69,
-    "remaining_qty": 69,
+    "remaining_qty": 0,
     "requested_qty": 69,
     "locked_margin_per_share": 203.36,
     "partial_booked": false,
@@ -1230,21 +1230,26 @@
     "open": 1015.55,
     "high": 1019.05,
     "low": 1015.0,
-    "close": 1024.85,
+    "close": 1024.9,
     "time": "12:08:28",
-    "status": "OPEN ⏳",
-    "exit_price": null,
-    "net_pnl": 0.0,
+    "status": "WIN 🟢",
+    "exit_price": 1024.9,
+    "net_pnl": 486.65,
     "rationale": "Buy at 1016.7 with SL 1009.81 (≈1.5 ATR risk) and target 1033.93 (≈3.75 ATR reward); entry sits just above VWAP and within 1.5 ATR, recent 5‑min candles show upward momentum and modest volume near the stop, no contradictory news or upcoming events, and expected travel (27.81) comfortably exceeds the required 17.23 move, giving a solid risk‑reward profile.",
     "events": [
       {
         "time": "2026-10-30T12:08:28+05:30",
         "type": "ENTRY",
         "text": "PAPER BUY 69 @ ₹1016.80"
+      },
+      {
+        "time": "2026-10-30T15:10:11+05:30",
+        "type": "EXIT",
+        "text": "15:10 square-off: 69 @ ₹1024.90, net ₹486.65"
       }
     ],
     "mode": "PAPER",
-    "last_price": 1024.85,
+    "last_price": 1024.9,
     "atr": 4.5947,
     "target_booked": false,
     "breakeven_set": false,
@@ -1255,10 +1260,21 @@
     "stop_atr_mult": 1.5,
     "rvol": 0.2,
     "rule_version": "v13.3",
-    "entry_brokerage_remaining": 20.0,
-    "charges": {},
-    "pnl_by_date": {},
+    "entry_brokerage_remaining": 0.0,
+    "charges": {
+      "brokerage": 40.0,
+      "exchange": 4.32,
+      "sebi": 0.14,
+      "stt": 17.68,
+      "stamp": 2.1,
+      "gst": 8.0,
+      "total": 72.25
+    },
+    "pnl_by_date": {
+      "2026-10-30": 486.65
+    },
     "orders": {},
-    "breakeven_price": 1018.2
+    "breakeven_price": 1018.2,
+    "exit_time": "2026-10-30T15:10:11+05:30"
   }
 ]
