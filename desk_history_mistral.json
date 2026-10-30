@@ -538,5 +538,59 @@
     "outcome": "CLOSE",
     "outcome_r": 0.93,
     "outcome_at": "2026-10-29T22:35:30+05:30"
+  },
+  {
+    "signal_id": "20261030-110240-BRITANNIA",
+    "signal_time": "2026-10-30T11:02:40+05:30",
+    "judged_at": "2026-10-30T11:03:02+05:30",
+    "age_min": 0.4,
+    "ticker": "BRITANNIA",
+    "action": "SELL",
+    "entry": 4568.0,
+    "stop": 4602.21,
+    "target": 4482.48,
+    "qty": 28,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 36.3 suggests oversold conditions, but the last 12 candles show a choppy, sideways structure with no clear bearish momentum. The 11:00 candle closed near its high, lacking follow-through. ATR buffer (22.806) is wide, but the stop (4602.21) is only 1.5 ATR away, making it vulnerable to a quick reversal. No clean breakdown or rejection pattern visible.",
+      "sentiment": "No headline information available. Volume ratio (1.66) is elevated but not extreme; sector FMCG shows no clear bearish tape-wide prints in the last 12 candles. No visible panic or forced selling.",
+      "macro": "NIFTY is neutral, but late-session entries (268 minutes left) require exceptional structure. This setup lacks conviction for a directional trade in the remaining time.",
+      "risk": "Reward:risk of 2.5 is mathematically appealing, but the stop is too close (1.5 ATR) for a stock with this volatility. Feasibility is empty, but target (4482.48) is 3.75 ATR away—unlikely to be reached in 268 minutes without a catalyst. No results risk."
+    },
+    "rationale": "Choppy tape, no clear momentum, and late-session timing make this a low-conviction SELL. The stop is too tight for the ATR, and the target is unlikely to be hit in the remaining time. Default to SKIP despite the RSI oversold reading.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
+  },
+  {
+    "signal_id": "20261030-110240-BRITANNIA",
+    "signal_time": "2026-10-30T11:02:40+05:30",
+    "judged_at": "2026-10-30T11:03:02+05:30",
+    "age_min": 0.4,
+    "ticker": "SHRIRAMFIN",
+    "action": "SELL",
+    "entry": 828.85,
+    "stop": 834.08,
+    "target": 815.77,
+    "qty": 184,
+    "verdict": "SKIP",
+    "confidence": 75,
+    "trigger": "Valid only on a break below 827.75 with volume > 150k",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 38.06 is neutral, and the last 12 candles show a weak downtrend with no follow-through. The 11:00 candle closed near its low but lacked volume (71322) to confirm bearish intent. ATR (3.4893) is tight, and the stop (834.08) is only 1.5 ATR away—too close for a volatile financial services stock. No clear rejection or breakdown pattern.",
+      "sentiment": "No headline information available. Volume ratio (2.38) is elevated, but the spike at 10:55 (125757) was a one-candle event with no follow-through. Sector FINANCIAL SERVICES is neutral, and no tape-wide bearish prints are visible.",
+      "macro": "NIFTY is neutral, and late-session entries (268 minutes left) require exceptional structure. This setup lacks conviction for a directional trade in the remaining time.",
+      "risk": "Reward:risk of 2.5 is mathematically appealing, but the stop is too tight (1.5 ATR) for a stock with this volatility. Feasibility is empty, but the target (815.77) is 3.75 ATR away—unlikely to be reached in 268 minutes without a catalyst. No results risk."
+    },
+    "rationale": "Weak downtrend, no follow-through, and late-session timing make this a low-conviction SELL. The stop is too tight for the ATR, and the target is unlikely to be hit in the remaining time. Requires a break below 827.75 with volume > 150k to consider, but even then, the structure is unconvincing.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
