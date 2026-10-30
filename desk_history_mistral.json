@@ -700,5 +700,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261030-123205-ONGC",
+    "signal_time": "2026-10-30T12:32:05+05:30",
+    "judged_at": "2026-10-30T12:32:22+05:30",
+    "age_min": 0.3,
+    "ticker": "ONGC",
+    "action": "BUY",
+    "entry": 226.02,
+    "stop": 225.08,
+    "target": 228.37,
+    "qty": 427,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 59.32 suggests neutral momentum, not overbought or oversold. The last 5-minute candle (12:30) closed at 226.00, near the entry price of 226.02, but lacks a clear breakout or follow-through. The 12:25 candle shows a doji-like structure with low volume (168018), indicating indecision. ATR buffer (0.627) is tight, and the stop (225.08) is ~1.5 ATR away, which is reasonable but not compelling given the lack of momentum. The target (228.37) is 3.75 ATR away, a 2.5:1 reward:risk ratio, but the time remaining (178 minutes) is insufficient for a meaningful move given the current structure.",
+      "sentiment": "No headline information available. Volume behavior shows a spike at 11:55 (269982) and 12:30 (187541), but the follow-through is weak. The 12:25-12:30 candles show high volume but no clear directional conviction. Sector-wide prints are not visible in the data, but the lack of follow-through suggests caution.",
+      "macro": "The NIFTY is +0.62% at 23080.0, but ONGC is trading near its entry price without clear alignment. Late-session entries require exceptional structure, and this setup lacks it. The trade direction (BUY) does not align with a strong index tape or time-of-day momentum; the index is overextended but not showing exhaustion.",
+      "risk": "Reward:risk is 2.5:1, which is mathematically favorable, but the stop distance (1.5 ATR) is not justified by the current structure. No results risk is present. Feasibility is empty, but the target distance (3.75 ATR) in 178 minutes is highly unlikely given the current lack of momentum. The trade is speculative and lacks a clear catalyst."
+    },
+    "rationale": "SKIP ONGC due to lack of momentum, weak follow-through, and insufficient time-to-close for the target to be reached. The setup is speculative with no clear catalyst, and the late-session timing does not favor a BUY entry. Confidence in the SKIP verdict is high (85).",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
