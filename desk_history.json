@@ -475,5 +475,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261030-130613-TCS",
+    "signal_time": "2026-10-30T13:06:13+05:30",
+    "judged_at": "2026-10-30T13:06:27+05:30",
+    "age_min": 0.2,
+    "ticker": "TCS",
+    "action": "BUY",
+    "entry": 2517.7,
+    "stop": 2503.49,
+    "target": 2553.23,
+    "qty": 33,
+    "verdict": "SKIP",
+    "confidence": 75,
+    "trigger": "Valid only on a decisive break and 5m close above 2522.50 with volume expansion",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "Price bounced from 2508.50 back to 2517.70, but faces immediate overhead resistance at 2520.50-2522.50. The 13:00 candle showed an upper wick rejection at 2520.50 on 83,546 volume, followed by volume drying up sharply to 6,725 on the 13:05 bar, indicating exhaustion rather than a clean momentum breakout. RSI stands at 59.16.",
+      "sentiment": "Tape-based observation only as no headline or news feed is available. The tape shows strong buying into 13:00, but supply promptly capped the move above 2520, and participation vanished on the subsequent 13:05 bar.",
+      "macro": "NIFTY spot is at 23089.9 (+0.67%), flagged as overextended for new long positions. With 144 minutes left in the session, initiating a fresh long into index resistance lacks supportive tailwinds.",
+      "risk": "Stop is set at 2503.49 (1.50 ATR / 14.21 pts) with target at 2553.23 (3.75 ATR / 35.53 pts). Requiring a 3.75 ATR expansion within 144 minutes against an ATR of 9.4745 is an excessively demanding target in an afternoon session without fresh breakout confirmation."
+    },
+    "rationale": "SKIP TCS BUY at 2517.70. While R:R is 2.5 on paper, the target of 2553.23 requires a 3.75 ATR run in 144 minutes while the stock is struggling against local resistance at 2520.50-2522.50 and NIFTY is already overextended.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
