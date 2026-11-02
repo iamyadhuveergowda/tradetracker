@@ -859,9 +859,9 @@
       "risk": "Stop distance is 1.5 ATR (~30.0079), which is tight given the volatility (ATR of 30.0079). Target distance is 3.75 ATR, but the feasibility is TIGHT (target_distance_atr of 3.75 in 334 minutes is aggressive). No results risk is present, but the late-session timing and lack of clear structure increase risk. Reward:risk of 2.5 is mathematically appealing but structurally unsupported."
     },
     "rationale": "SKIP due to lack of clear technical structure, weak late-session volume follow-through, and overextended NIFTY tape. The entry is above recent highs, suggesting a chase, and the feasibility of hitting the target in 334 minutes is TIGHT. No meaningful trigger exists in-session to justify a GO.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 1.94,
+    "outcome_at": "2026-11-03T02:00:52+05:30"
   },
   {
     "signal_id": "20261102-111124-ONGC",
@@ -886,9 +886,9 @@
       "risk": "Reward:risk of 2.5 is mathematically appealing, but the target (232.35) is 3.75 ATR away, which is a stretch in the remaining time. Stop distance (1.5 ATR) is tight, and a move against the trade would quickly invalidate the setup. No results risk is present, but the lack of a clear trigger or confirmation makes this a high-risk proposition. Feasibility is not explicitly marked as infeasible, but the target distance and time constraints weigh heavily against it."
     },
     "rationale": "SKIP ONGC BUY. The setup lacks clear momentum, follow-through, and a compelling late-session catalyst. While the RSI and ATR metrics are not extreme, the candle structure and volume behavior suggest indecision. The target is ambitious for the remaining time, and the stop is too close to the recent lows. No meaningful trigger exists to justify the trade in the current tape.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "TARGET",
+    "outcome_r": 2.5,
+    "outcome_at": "2026-11-03T02:00:52+05:30"
   },
   {
     "signal_id": "20261102-111542-POWERGRID",
@@ -913,9 +913,9 @@
       "risk": "Reward:risk of 2.51 is mathematically appealing, but the target distance (3.75 ATR) is tight given the time remaining (255 minutes). Feasibility is not flagged as INFEASIBLE, but the lack of volume and momentum raises execution risk. No results risk identified, but the stock's volatility profile (ATR 1.46) suggests tight stops and limited room for error. Late-session entries are inherently risky, and this setup lacks conviction."
     },
     "rationale": "POWERGRID BUY at 267.55 is a SKIP due to weak candle structure (doji with low volume), lack of follow-through momentum, and late-session timing. While the reward:risk ratio is attractive, the absence of volume conviction and proximity to the 11:10 high suggest exhaustion rather than a fresh buying opportunity. The trade would require a 2.0% move in 255 minutes, which is aggressive without additional catalysts. Default to skepticism.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-03T02:00:52+05:30"
   },
   {
     "signal_id": "20261102-113803-ADANIENT",
@@ -940,9 +940,9 @@
       "risk": "Stop distance is 1.5 ATR (11.8666), which is tight given the volatility in the last 5m candles (e.g., 11:30 candle range: 2603.7-2597.2 = 6.5). Target distance is 3.75 ATR, which is reasonable, but the feasibility is TIGHT due to time remaining (232 minutes). No results risk, but the lack of a defined entry trigger and late-session timing amplify risk."
     },
     "rationale": "ADANIENT lacks a clean technical setup for a late-session BUY, with no clear pullback or breakout structure. The volume spike at 11:30 was strong but was followed by a drop in volume at 11:35, suggesting caution. The trade direction aligns with the NIFTY tape, but the timing is risky with 232 minutes left. The stop is tight (1.5 ATR), and the target is feasible but not exceptional. Default to SKIP due to lack of conviction in the setup.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.92,
+    "outcome_at": "2026-11-03T02:00:52+05:30"
   },
   {
     "signal_id": "20261102-121433-BPCL",
@@ -967,9 +967,9 @@
       "risk": "Reward:risk is 2.5:1, but the target (296.48) is **INFEASIBLE** given the time remaining (196 minutes) and the stock’s ATR (1.2474). The target distance (3.75 ATR) is unrealistic for an intraday move in this timeframe. No results risk, but the lack of momentum and late-session timing amplify the risk of a failed trade."
     },
     "rationale": "BPCL’s BUY setup is a **SKIP** due to **INFEASIBLE** target distance (3.75 ATR in 196 minutes), lack of momentum, and late-session detachment from the NIFTY tape. The candle structure is choppy, volume lacks conviction, and the trade direction does not align with macro leadership. Confidence in the SKIP is high (85) due to structural flaws and time constraints.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-03T02:00:52+05:30"
   },
   {
     "signal_id": "20261102-121640-DIVISLAB",
@@ -994,9 +994,9 @@
       "risk": "Reward:risk is 2.5 (target_distance_atr: 3.75, stop_distance_atr: 1.5), which is mathematically favorable, but the feasibility is **TIGHT** (194 minutes left to close). Stop is 1.5 ATR (~64.16 points) away, and the target (10115.4) would require a 1.6% move in 3.25 hours—unlikely without a catalyst. No results risk, but the tape’s indecision is the primary concern."
     },
     "rationale": "DIVISLAB’s BUY setup is **SKIP** due to choppy tape, lack of momentum, and tight feasibility. The RSI and candle structure lack conviction, and the late-session entry requires a breakout that isn’t materializing. Even if entered, the target is unlikely to be reached in the remaining 194 minutes without a catalyst. Confidence in the SKIP is high (85) due to the absence of a clean setup.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": -0.15,
+    "outcome_at": "2026-11-03T02:00:52+05:30"
   },
   {
     "signal_id": "20261102-122122-BEL",
@@ -1021,8 +1021,8 @@
       "risk": "Results reported 3 days ago (2026-10-30) imply post-results volatility may have already played out, but the stock could still react to broader market sentiment. Stop distance (1.5 ATR) is tight, and the target (3.75 ATR) is ambitious for the remaining time. Feasibility is empty, but the target distance (3.75 ATR) in 189 minutes is borderline TIGHT for a clean setup."
     },
     "rationale": "SKIP due to weak follow-through in candle structure, tight stop distance (1.5 ATR), and aggressive target (3.75 ATR) in a late-session environment. Post-results volatility is a minor concern, but the lack of conviction in the tape (volume drop post-12:15) outweighs the BUY signal. No meaningful trigger exists in-session.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": -0.27,
+    "outcome_at": "2026-11-03T02:00:52+05:30"
   }
 ]
