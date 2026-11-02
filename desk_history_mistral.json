@@ -916,5 +916,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261102-113803-ADANIENT",
+    "signal_time": "2026-11-02T11:38:03+05:30",
+    "judged_at": "2026-11-02T11:38:25+05:30",
+    "age_min": 0.4,
+    "ticker": "ADANIENT",
+    "action": "BUY",
+    "entry": 2599.0,
+    "stop": 2581.2,
+    "target": 2643.5,
+    "qty": 27,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 63.95 suggests moderate overbought conditions, not extreme. The last 5m candle (11:35) shows a tight range (2597.6-2599.9) with a close near the high, but the 11:30 candle was a strong bullish candle (2598.5-2603.7) with high volume (24687). The entry at 2599.0 is near the current spot, and the stock is already up ~1.5% from the 11:30 low. No clear breakout or pullback structure; appears to be chasing momentum without a defined entry trigger.",
+      "sentiment": "No headline information available. Volume spike at 11:30 (24687) suggests strong follow-through, but the 11:35 candle shows volume dropping to 7085, indicating potential profit-taking or hesitation. Sector-wide prints are not visible in the data, so sentiment remains ambiguous.",
+      "macro": "NIFTY is +1.11% at 23308.85, overextended for a late-session BUY. With 232 minutes left, late-session entries require exceptional structure, which is lacking here. The trade direction aligns with the index tape, but the timing is risky.",
+      "risk": "Stop distance is 1.5 ATR (11.8666), which is tight given the volatility in the last 5m candles (e.g., 11:30 candle range: 2603.7-2597.2 = 6.5). Target distance is 3.75 ATR, which is reasonable, but the feasibility is TIGHT due to time remaining (232 minutes). No results risk, but the lack of a defined entry trigger and late-session timing amplify risk."
+    },
+    "rationale": "ADANIENT lacks a clean technical setup for a late-session BUY, with no clear pullback or breakout structure. The volume spike at 11:30 was strong but was followed by a drop in volume at 11:35, suggesting caution. The trade direction aligns with the NIFTY tape, but the timing is risky with 232 minutes left. The stop is tight (1.5 ATR), and the target is feasible but not exceptional. Default to SKIP due to lack of conviction in the setup.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
