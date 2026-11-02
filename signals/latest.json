@@ -1,23 +1,23 @@
 {
-  "signal_id": "20261102-111124-ONGC",
-  "generated_at": "2026-11-02T11:11:24.665889+05:30",
-  "nifty_ltp": 23334.4,
+  "signal_id": "20261102-111332-ONGC",
+  "generated_at": "2026-11-02T11:13:32.990134+05:30",
+  "nifty_ltp": 23337.0,
   "candidates": [
     {
       "ticker": "ONGC",
       "signal": "BUY",
-      "ltp": 229.12,
-      "stop": 227.83,
-      "target": 232.35,
+      "ltp": 229.25,
+      "stop": 227.96,
+      "target": 232.48,
       "qty": 373,
       "indicators": {
         "rsi": 63.59,
         "atr": 0.8606,
         "atr_5m": 0.5635,
-        "vwap": 228.45,
+        "vwap": 228.46,
         "vol_ratio": 3.49
       },
-      "scout_reason": "NIFTY 50 +1.22% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +1.23% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "09:35",
@@ -174,16 +174,16 @@
         [
           "11:10",
           229.06,
-          229.19,
+          229.27,
           228.99,
-          229.12,
-          28041
+          229.24,
+          55246
         ]
       ],
       "stop_floor_bound": false,
-      "outcome": "dropped_other",
-      "outcome_reason": "DISTRIBUTION: heaviest volume bar (480966) in last 6 candles at 11:05 showed price falling from high 229.73 to close 229.05, indicating supply against BUY direction",
-      "outcome_at": "2026-11-02T11:11:29.412874+05:30"
+      "outcome": "executed",
+      "outcome_reason": "",
+      "outcome_at": "2026-11-02T11:13:39.065462+05:30"
     }
   ]
 }
