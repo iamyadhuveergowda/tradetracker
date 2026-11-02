@@ -583,5 +583,32 @@
     "outcome": "CLOSE",
     "outcome_r": 0.42,
     "outcome_at": "2026-10-30T22:12:37+05:30"
+  },
+  {
+    "signal_id": "20261102-095818-APOLLOHOSP",
+    "signal_time": "2026-11-02T09:58:18+05:30",
+    "judged_at": "2026-11-02T10:01:46+05:30",
+    "age_min": 3.5,
+    "ticker": "APOLLOHOSP",
+    "action": "BUY",
+    "entry": 8371.5,
+    "stop": 8326.49,
+    "target": 8484.03,
+    "qty": 10,
+    "verdict": "SKIP",
+    "confidence": 75,
+    "trigger": "Valid only on a clean 5-minute close above 8385.00",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI sits at 63.27 showing bullish momentum, backed by a strong impulse candle at 09:50 (close 8378.00 on 29,650 volume). However, entering at 8371.50 sits directly below morning resistance at 8382.50-8385.00, followed by an immediate volume drop-off to 2,551 on the 09:55 pullback bar (high 8380.00, low 8365.50). Buying here risks buying directly into overhead supply.",
+      "sentiment": "No headline news feed is available. Tape analysis shows notable buying interest on the 09:50 volume surge (vol_ratio 3.27), though the subsequent pause at 09:55 reflects hesitation ahead of the morning high.",
+      "macro": "With 332 minutes remaining to close and NIFTY spot at 23317.15 (+1.15% overextended), entering fresh long positions carries broad-market mean-reversion risk, which warrants caution despite the ample time left in the session.",
+      "risk": "Stop distance is 1.5 ATR (45.01 pts below entry at 8326.49), while target of 8484.03 sits 3.75 ATR away. Demanding a 3.75 ATR extension when broad market momentum is already stretched creates an unfavorable hurdle, despite nominal 2.5 R:R. Results risk is not present in the calendar."
+    },
+    "rationale": "SKIP APOLLOHOSP at 8371.50. Although 09:50 showed strong volume expansion, entry sits directly beneath morning resistance at 8385.00, and NIFTY is overextended at +1.15%. Demanding a 3.75 ATR target under these conditions is low-probability without a confirmed breakout above 8385.00.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
