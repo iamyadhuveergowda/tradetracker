@@ -1,14 +1,14 @@
 {
-  "signal_id": "20261102-122122-BEL",
-  "generated_at": "2026-11-02T12:21:22.714124+05:30",
-  "nifty_ltp": 23333.6,
+  "signal_id": "20261102-122328-BEL",
+  "generated_at": "2026-11-02T12:23:28.998261+05:30",
+  "nifty_ltp": 23334.15,
   "candidates": [
     {
       "ticker": "BEL",
       "signal": "BUY",
-      "ltp": 377.3,
-      "stop": 374.32,
-      "target": 384.75,
+      "ltp": 377.25,
+      "stop": 374.27,
+      "target": 384.7,
       "qty": 162,
       "indicators": {
         "rsi": 62.4,
@@ -175,15 +175,15 @@
           "12:20",
           377.5,
           377.8,
-          377.15,
+          377.1,
           377.2,
-          26344
+          52916
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
-      "outcome_reason": "STOP_IN_NOISE: stop 374.32 sits within 1.0*ATR (1.9868) of repeatedly tested low around 374.5 (multiple candles), making stop vulnerable to noise.",
-      "outcome_at": "2026-11-02T12:21:27.834902+05:30"
+      "outcome_reason": "INTO_WALL: entry 377.25 is within 0.5*ATR (0.99) of recent swing high 377.6 at 11:40, too close to wall",
+      "outcome_at": "2026-11-02T12:23:32.915100+05:30"
     }
   ]
 }
