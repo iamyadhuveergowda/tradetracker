@@ -610,5 +610,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261102-111124-ONGC",
+    "signal_time": "2026-11-02T11:11:24+05:30",
+    "judged_at": "2026-11-02T11:11:47+05:30",
+    "age_min": 0.4,
+    "ticker": "ONGC",
+    "action": "BUY",
+    "entry": 229.12,
+    "stop": 227.83,
+    "target": 232.35,
+    "qty": 373,
+    "verdict": "SKIP",
+    "confidence": 75,
+    "trigger": "Valid only on a decisive breakout and close above 229.75",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "While ONGC is in an intraday uptrend with RSI at 63.59, the 11:05 candle printed an aggressive rejection wick from 229.73 on heavy volume (480,966 shares), followed by a low-volume inside bar at 11:10 (28,041 shares). Buying at 229.12 means entering straight into local supply.",
+      "sentiment": "Tape sentiment shows substantial distribution and profit-taking at 229.73 visible in the 11:05 volume spike and upper shadow. No headline or news feed information is available.",
+      "macro": "Direction aligns with the broader market, but the scout notes NIFTY is already up +1.22% and overextended, making new long entries prone to index pullbacks with 259 minutes remaining.",
+      "risk": "Stop of 227.83 (1.50 ATR) is adequate, but reaching the target of 232.35 requires 3.75 ATR, which is ambitious following an immediate high-volume supply rejection. No earnings results risk noted."
+    },
+    "rationale": "SKIP ONGC BUY at 229.12. The 11:05 candle met heavy selling pressure at 229.73 on 480k volume. With NIFTY already +1.22% overextended, buying into immediate overhead resistance carries unfavorable immediate odds; re-evaluate only if 229.75 clears convincingly.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
