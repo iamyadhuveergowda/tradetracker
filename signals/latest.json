@@ -1,20 +1,20 @@
 {
-  "signal_id": "20261102-111542-POWERGRID",
-  "generated_at": "2026-11-02T11:15:42.872517+05:30",
-  "nifty_ltp": 23336.2,
+  "signal_id": "20261102-111745-POWERGRID",
+  "generated_at": "2026-11-02T11:17:45.510936+05:30",
+  "nifty_ltp": 23335.9,
   "candidates": [
     {
       "ticker": "POWERGRID",
       "signal": "BUY",
-      "ltp": 267.55,
-      "stop": 265.36,
-      "target": 273.04,
+      "ltp": 267.6,
+      "stop": 265.41,
+      "target": 273.09,
       "qty": 219,
       "indicators": {
         "rsi": 53.4,
         "atr": 1.4632,
         "atr_5m": 0.6702,
-        "vwap": 268.39,
+        "vwap": 268.38,
         "vol_ratio": 2.55
       },
       "scout_reason": "NIFTY 50 +1.23% overextended for BUY; size cut 50%",
@@ -174,16 +174,16 @@
         [
           "11:15",
           267.6,
-          267.7,
+          267.8,
           267.5,
           267.6,
-          13610
+          61430
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-02T11:15:43.402655+05:30"
+      "outcome_at": "2026-11-02T11:17:45.923092+05:30"
     }
   ]
 }
