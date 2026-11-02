@@ -1,7 +1,7 @@
 {
-  "signal_id": "20261102-095604-APOLLOHOSP",
-  "generated_at": "2026-11-02T09:56:04.696410+05:30",
-  "nifty_ltp": 23307.6,
+  "signal_id": "20261102-095818-APOLLOHOSP",
+  "generated_at": "2026-11-02T09:58:18.489942+05:30",
+  "nifty_ltp": 23317.15,
   "candidates": [
     {
       "ticker": "APOLLOHOSP",
@@ -14,10 +14,10 @@
         "rsi": 63.27,
         "atr": 30.0079,
         "atr_5m": 24.3318,
-        "vwap": 8351.58,
+        "vwap": 8351.77,
         "vol_ratio": 3.27
       },
-      "scout_reason": "NIFTY 50 +1.10% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +1.15% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "14:25",
@@ -176,14 +176,14 @@
           8380.0,
           8380.0,
           8365.5,
-          8375.0,
-          1328
+          8371.5,
+          2551
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
-      "outcome_reason": "INTO_WALL: entry 8371.5 is within 0.5*ATR (15.0) of session high 8385.0",
-      "outcome_at": "2026-11-02T09:56:09.951737+05:30"
+      "outcome_reason": "DISTRIBUTION: heaviest volume bar in the last 6 candles (09:15, volume 32720) showed supply into highs against BUY direction",
+      "outcome_at": "2026-11-02T09:58:22.671828+05:30"
     }
   ]
 }
