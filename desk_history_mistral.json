@@ -943,5 +943,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261102-121433-BPCL",
+    "signal_time": "2026-11-02T12:14:33+05:30",
+    "judged_at": "2026-11-02T12:14:58+05:30",
+    "age_min": 0.4,
+    "ticker": "BPCL",
+    "action": "BUY",
+    "entry": 291.8,
+    "stop": 289.93,
+    "target": 296.48,
+    "qty": 259,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 61.7 suggests moderate overbought conditions, but not extreme. The last 5-minute candle (12:10) closed at 291.80, near the session low of 291.60, with a narrow range (291.60-292.10). The ATR buffer (1.2474) implies a tight stop at 289.93 (~1.5 ATR), and the target (296.48) is ~3.75 ATR away. The candle structure lacks follow-through momentum; the last 12 candles show choppy, low-volume prints (avg. vol ~25k) with no clear breakout. The setup is a chase: BPCL is not leading the NIFTY tape but reacting to broader index moves.",
+      "sentiment": "No headline information available. Volume behavior shows no sector-wide follow-through; BPCL’s volume ratio (2.06) is elevated but not exceptional. The tape lacks conviction in the oil sector, with no visible sector-wide prints or momentum.",
+      "macro": "The NIFTY is +1.20% at 23330.45, but BPCL’s action is detached from the broader index’s late-session strength. Late-session entries require exceptional structure, and BPCL fails to meet this criterion. The trade direction (BUY) does not align with the index tape’s leadership or time-of-day dynamics (196 minutes to close).",
+      "risk": "Reward:risk is 2.5:1, but the target (296.48) is **INFEASIBLE** given the time remaining (196 minutes) and the stock’s ATR (1.2474). The target distance (3.75 ATR) is unrealistic for an intraday move in this timeframe. No results risk, but the lack of momentum and late-session timing amplify the risk of a failed trade."
+    },
+    "rationale": "BPCL’s BUY setup is a **SKIP** due to **INFEASIBLE** target distance (3.75 ATR in 196 minutes), lack of momentum, and late-session detachment from the NIFTY tape. The candle structure is choppy, volume lacks conviction, and the trade direction does not align with macro leadership. Confidence in the SKIP is high (85) due to structural flaws and time constraints.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
