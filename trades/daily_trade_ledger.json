@@ -1283,46 +1283,67 @@
     "ticker": "ONGC",
     "action": "BUY",
     "qty": 373,
-    "remaining_qty": 373,
+    "remaining_qty": 187,
     "requested_qty": 373,
     "locked_margin_per_share": 45.832,
-    "partial_booked": false,
+    "partial_booked": true,
     "entry": 229.16,
-    "sl": 227.87,
+    "sl": 231.14,
     "initial_sl": 227.87,
     "tgt": 232.39,
     "open": 228.71,
     "high": 229.73,
     "low": 228.63,
-    "close": 231.12,
+    "close": 231.91,
     "time": "11:13:38",
     "status": "OPEN ⏳",
     "exit_price": null,
-    "net_pnl": 0.0,
+    "net_pnl": 470.16,
     "rationale": "Entry at 229.25 is just above VWAP (228.46) and within 1.5 ATR of VWAP, stop is safely below entry (1.29 ATR), target is 3.23 points away (3.75 ATR) well under the 4.5 ATR cap, expected travel (6.78) comfortably exceeds target distance, and macro regime is strongly bullish (Nifty +1.23%). No contradictory news, event, or desk veto present.",
     "events": [
       {
         "time": "2026-11-02T11:13:38+05:30",
         "type": "ENTRY",
         "text": "PAPER BUY 373 @ ₹229.16"
+      },
+      {
+        "time": "2026-11-02T13:16:10+05:30",
+        "type": "EXIT",
+        "text": "+2R partial booked: 186 @ ₹231.96, net ₹470.16"
+      },
+      {
+        "time": "2026-11-02T13:16:10+05:30",
+        "type": "PARTIAL",
+        "text": "+2R reached; stop at ₹229.43"
       }
     ],
     "mode": "PAPER",
-    "last_price": 231.12,
+    "last_price": 231.91,
     "atr": 0.8606,
     "target_booked": false,
-    "breakeven_set": false,
-    "mfe_r": 1.767,
+    "breakeven_set": true,
+    "mfe_r": 2.171,
     "mae_r": -0.225,
     "size_tag": "overextended_halfsize",
     "vol_ratio": 3.49,
     "stop_atr_mult": 1.5,
     "rvol": 1.66,
     "rule_version": "v13.4",
-    "entry_brokerage_remaining": 20.0,
-    "charges": {},
-    "pnl_by_date": {},
+    "entry_brokerage_remaining": 10.026809651474531,
+    "charges": {
+      "brokerage": 29.97,
+      "exchange": 2.63,
+      "sebi": 0.09,
+      "stt": 10.79,
+      "stamp": 1.28,
+      "gst": 5.88,
+      "total": 50.64
+    },
+    "pnl_by_date": {
+      "2026-11-02": 470.16
+    },
     "orders": {},
-    "breakeven_price": 229.43
+    "breakeven_price": 229.43,
+    "live_atr": 0.8154
   }
 ]
