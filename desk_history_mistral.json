@@ -862,5 +862,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261102-111124-ONGC",
+    "signal_time": "2026-11-02T11:11:24+05:30",
+    "judged_at": "2026-11-02T11:11:46+05:30",
+    "age_min": 0.4,
+    "ticker": "ONGC",
+    "action": "BUY",
+    "entry": 229.12,
+    "stop": 227.83,
+    "target": 232.35,
+    "qty": 373,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 63.59 indicates moderate overbought territory, but not extreme. Candle structure shows a recent pullback from 11:05 high of 229.73 to current entry at 229.12, with a 5-minute candle closing near the low (229.12). The last 12 candles show a choppy tape with no clear breakout momentum; the 11:10 candle is a small-bodied doji-like candle, suggesting indecision. ATR buffer (1.5x) stop at 227.83 is tight relative to the recent range (227.85-229.73), and the target (232.35) requires a +1.4% move in 259 minutes (~4.3 hours), which is aggressive for a late-session entry without a clear catalyst.",
+      "sentiment": "No headline information available. Volume ratio (3.49) is elevated but not exceptional; the 11:05 candle saw a spike in volume (480966) but failed to sustain momentum. Sector-wide prints are not visible in the data, and the tape lacks follow-through on the recent rally. The lack of a clear breakout or volume-driven confirmation raises skepticism about the trade's validity.",
+      "macro": "NIFTY is +1.22% at 23334.4, but the time of day (11:11 IST, 259 minutes to close) is late for a long entry without a strong intraday catalyst. Late-session entries require exceptional structure, and this setup lacks it. The trade direction (BUY) aligns with the index tape, but the lack of momentum and time constraints make it risky.",
+      "risk": "Reward:risk of 2.5 is mathematically appealing, but the target (232.35) is 3.75 ATR away, which is a stretch in the remaining time. Stop distance (1.5 ATR) is tight, and a move against the trade would quickly invalidate the setup. No results risk is present, but the lack of a clear trigger or confirmation makes this a high-risk proposition. Feasibility is not explicitly marked as infeasible, but the target distance and time constraints weigh heavily against it."
+    },
+    "rationale": "SKIP ONGC BUY. The setup lacks clear momentum, follow-through, and a compelling late-session catalyst. While the RSI and ATR metrics are not extreme, the candle structure and volume behavior suggest indecision. The target is ambitious for the remaining time, and the stop is too close to the recent lows. No meaningful trigger exists to justify the trade in the current tape.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
