@@ -607,9 +607,9 @@
       "risk": "Stop distance is 1.5 ATR (45.01 pts below entry at 8326.49), while target of 8484.03 sits 3.75 ATR away. Demanding a 3.75 ATR extension when broad market momentum is already stretched creates an unfavorable hurdle, despite nominal 2.5 R:R. Results risk is not present in the calendar."
     },
     "rationale": "SKIP APOLLOHOSP at 8371.50. Although 09:50 showed strong volume expansion, entry sits directly beneath morning resistance at 8385.00, and NIFTY is overextended at +1.15%. Demanding a 3.75 ATR target under these conditions is low-probability without a confirmed breakout above 8385.00.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 1.94,
+    "outcome_at": "2026-11-03T01:53:24+05:30"
   },
   {
     "signal_id": "20261102-111124-ONGC",
@@ -634,8 +634,8 @@
       "risk": "Stop of 227.83 (1.50 ATR) is adequate, but reaching the target of 232.35 requires 3.75 ATR, which is ambitious following an immediate high-volume supply rejection. No earnings results risk noted."
     },
     "rationale": "SKIP ONGC BUY at 229.12. The 11:05 candle met heavy selling pressure at 229.73 on 480k volume. With NIFTY already +1.22% overextended, buying into immediate overhead resistance carries unfavorable immediate odds; re-evaluate only if 229.75 clears convincingly.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "TARGET",
+    "outcome_r": 2.5,
+    "outcome_at": "2026-11-03T01:53:24+05:30"
   }
 ]
