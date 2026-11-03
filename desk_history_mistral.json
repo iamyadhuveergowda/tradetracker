@@ -1132,5 +1132,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261103-122720-TITAN",
+    "signal_time": "2026-11-03T12:27:20+05:30",
+    "judged_at": "2026-11-03T12:27:53+05:30",
+    "age_min": 0.5,
+    "ticker": "TITAN",
+    "action": "BUY",
+    "entry": 4505.8,
+    "stop": 4480.88,
+    "target": 4568.11,
+    "qty": 19,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "Valid only on a break above 4505.9 with volume > 20k and RSI > 70",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 64.94 is neutral, not overbought. The last 5-minute candle (12:25) shows a tight range (4503.0-4505.9) with no clear follow-through momentum. The 12:20 candle closed at 4505.0 after a high of 4505.9, but volume spiked to 20,619 (vol_ratio 2.12), suggesting a potential rejection. ATR buffer (stop at 4480.88) is 1.5 ATRs away, which is tight for a late-session entry. No clear breakout or breakdown structure is visible.",
+      "sentiment": "No headline information available. Volume behavior shows a spike at 12:20 (20,619) but no sustained follow-through. Sector-wide prints are not visible in the data, and the tape lacks clear directional sentiment.",
+      "macro": "NIFTY is +0.95% overextended, but late-session entries (183 minutes left) require exceptional structure. The index tape is not showing a clear late-session rally signal, and TITAN’s action is not aligned with a broader index push.",
+      "risk": "Reward:risk is 2.5, which is mathematically attractive, but the stop distance (1.5 ATR) is too tight for the time remaining (183 minutes). Feasibility is empty, but the target (4568.11) is 3.75 ATRs away, which is aggressive for the remaining time. No results risk is present, but the lack of momentum and late-session timing increases risk."
+    },
+    "rationale": "TITAN’s BUY signal lacks a clean technical setup, with no clear breakout or momentum. The late-session timing (183 minutes left) and tight stop distance (1.5 ATR) make this a high-risk entry. Volume spikes are not sustained, and the index tape does not support a late-session push. SKIP unless a break above 4505.9 with volume > 20k and RSI > 70 materializes.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
