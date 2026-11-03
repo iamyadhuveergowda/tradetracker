@@ -1078,5 +1078,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261103-113137-M&M",
+    "signal_time": "2026-11-03T11:31:37+05:30",
+    "judged_at": "2026-11-03T11:32:06+05:30",
+    "age_min": 0.5,
+    "ticker": "M&M",
+    "action": "BUY",
+    "entry": 2905.6,
+    "stop": 2885.99,
+    "target": 2954.64,
+    "qty": 24,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 61.26 indicates mild overbought conditions, not extreme. Candle structure shows choppy action with no clear breakout; last 5m candle (11:30) is a small-bodied doji-like candle with low volume (6682), suggesting indecision. ATR buffer (13.0761) is not violated by the stop (1.5 ATR away), but the target (3.75 ATR) is speculative given the lack of momentum. Volume ratio (2.29) is elevated but not exceptional for a late-session entry.",
+      "sentiment": "No headline information available. Volume behavior shows a spike in the 11:25-11:30 window (66920 → 6682), but this is not sustained follow-through. Sector-wide prints are not visible in the data, and the tape lacks clear directional conviction.",
+      "macro": "NIFTY is +0.86% at 23641.8, but the time of day (11:31, 239 minutes to close) is late for a fresh long entry. Late-session entries require exceptional structure, which is absent here. The trade direction (BUY) aligns with the index tape, but the lack of momentum and indecisive candles make it risky.",
+      "risk": "Reward:risk is 2.5, which is mathematically attractive, but the target (2954.64) is 3.75 ATR away and requires 239 minutes to reach. Feasibility is not explicitly marked as INFEASIBLE or TIGHT, but the time constraint and lack of momentum make it high-risk. No results risk is flagged, but the absence of a clear catalyst is a red flag. Stop distance (1.5 ATR) is reasonable, but the entry is not justified by the tape."
+    },
+    "rationale": "M&M BUY is skipped due to lack of momentum, indecisive candle structure, and late-session timing. While the reward:risk ratio is mathematically appealing, the absence of follow-through volume and clear directional conviction in the tape makes this a high-risk entry. No meaningful trigger exists in-session to justify a GO.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
