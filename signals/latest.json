@@ -1,23 +1,23 @@
 {
-  "signal_id": "20261103-124245-AXISBANK",
-  "generated_at": "2026-11-03T12:42:45.487764+05:30",
-  "nifty_ltp": 23667.85,
+  "signal_id": "20261103-124505-AXISBANK",
+  "generated_at": "2026-11-03T12:45:05.827032+05:30",
+  "nifty_ltp": 23670.45,
   "candidates": [
     {
       "ticker": "AXISBANK",
       "signal": "BUY",
-      "ltp": 1233.1,
-      "stop": 1226.87,
-      "target": 1248.66,
+      "ltp": 1232.8,
+      "stop": 1226.57,
+      "target": 1248.36,
       "qty": 78,
       "indicators": {
         "rsi": 60.75,
         "atr": 4.1501,
         "atr_5m": 2.0622,
-        "vwap": 1226.72,
+        "vwap": 1226.74,
         "vol_ratio": 2.04
       },
-      "scout_reason": "NIFTY 50 +0.97% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +0.98% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "11:05",
@@ -175,15 +175,15 @@
           "12:40",
           1233.6,
           1233.6,
+          1232.7,
           1232.9,
-          1233.1,
-          8124
+          22381
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
-      "outcome_reason": "CHASE: entry 1233.1 > vwap+1.5*ATR (1226.72+6.225=1232.945) with no retest visible; DISTRIBUTION: heaviest volume bar (123700) at 12:35 shows supply into highs against BUY; INTO_WALL: entry 1233.1 is ",
-      "outcome_at": "2026-11-03T12:42:51.648934+05:30"
+      "outcome_reason": "max_positions_reached",
+      "outcome_at": "2026-11-03T12:45:11.114480+05:30"
     }
   ]
 }
