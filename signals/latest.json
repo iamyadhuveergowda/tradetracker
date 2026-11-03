@@ -1,23 +1,23 @@
 {
-  "signal_id": "20261103-113137-M&M",
-  "generated_at": "2026-11-03T11:31:37.522646+05:30",
-  "nifty_ltp": 23641.8,
+  "signal_id": "20261103-113346-M&M",
+  "generated_at": "2026-11-03T11:33:46.403140+05:30",
+  "nifty_ltp": 23637.25,
   "candidates": [
     {
       "ticker": "M&M",
       "signal": "BUY",
-      "ltp": 2905.6,
-      "stop": 2885.99,
-      "target": 2954.64,
+      "ltp": 2905.5,
+      "stop": 2885.89,
+      "target": 2954.54,
       "qty": 24,
       "indicators": {
         "rsi": 61.26,
         "atr": 13.0761,
         "atr_5m": 7.3721,
-        "vwap": 2893.35,
+        "vwap": 2893.46,
         "vol_ratio": 2.29
       },
-      "scout_reason": "NIFTY 50 +0.86% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +0.84% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "09:55",
@@ -175,15 +175,15 @@
           "11:30",
           2907.0,
           2907.3,
-          2904.1,
-          2905.0,
-          6682
+          2903.0,
+          2906.5,
+          14144
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
-      "outcome_reason": "DISTRIBUTION: heaviest volume bar in last 6 candles (volume 66920 at 11:25) showed price hitting the high (2910.5) then closing lower (2907.0), indicating supply into highs against the BUY direction",
-      "outcome_at": "2026-11-03T11:31:41.486317+05:30"
+      "outcome_reason": "DISTRIBUTION: heaviest volume bar (vol 66920) at 11:25 showed supply into highs against BUY direction; INTO_WALL: entry 2905.5 is within 0.5*ATR (6.54) of session high 2910.8",
+      "outcome_at": "2026-11-03T11:33:51.697908+05:30"
     }
   ]
 }
