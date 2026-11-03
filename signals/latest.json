@@ -1,23 +1,23 @@
 {
-  "signal_id": "20261103-122720-TITAN",
-  "generated_at": "2026-11-03T12:27:20.397364+05:30",
-  "nifty_ltp": 23662.6,
+  "signal_id": "20261103-122936-TITAN",
+  "generated_at": "2026-11-03T12:29:36.781755+05:30",
+  "nifty_ltp": 23672.4,
   "candidates": [
     {
       "ticker": "TITAN",
       "signal": "BUY",
-      "ltp": 4505.8,
-      "stop": 4480.88,
-      "target": 4568.11,
+      "ltp": 4504.5,
+      "stop": 4479.58,
+      "target": 4566.81,
       "qty": 19,
       "indicators": {
         "rsi": 64.94,
         "atr": 16.6152,
         "atr_5m": 8.7267,
-        "vwap": 4479.55,
+        "vwap": 4479.91,
         "vol_ratio": 2.12
       },
-      "scout_reason": "NIFTY 50 +0.95% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +0.99% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "10:50",
@@ -174,16 +174,16 @@
         [
           "12:25",
           4504.9,
-          4505.9,
+          4506.7,
           4503.0,
-          4505.0,
-          4137
+          4505.5,
+          10283
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
-      "outcome_reason": "CHASE: entry 4505.8 is 1.33 above vwap+1.5*ATR (4479.55+24.92=4504.47) with no base or retest visible in recent 5‑minute candles",
-      "outcome_at": "2026-11-03T12:27:26.265457+05:30"
+      "outcome_reason": "max_positions_reached",
+      "outcome_at": "2026-11-03T12:29:40.985016+05:30"
     }
   ]
 }
