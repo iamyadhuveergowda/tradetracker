@@ -1240,5 +1240,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261103-125508-SBILIFE",
+    "signal_time": "2026-11-03T12:55:08+05:30",
+    "judged_at": "2026-11-03T12:55:53+05:30",
+    "age_min": 0.8,
+    "ticker": "SBILIFE",
+    "action": "BUY",
+    "entry": 1682.6,
+    "stop": 1673.44,
+    "target": 1705.49,
+    "qty": 53,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 61.21 suggests moderate overbought conditions, but not extreme. The last 5-minute candle (12:55) is a doji, indicating indecision. The 12:45 candle shows a sharp volume spike (61,647) with a downward close, suggesting rejection. The 12:50 candle attempted a recovery but closed near its low, lacking follow-through. ATR buffer (1.5x) is tight, and the target (1705.49) is 3.75 ATR away—unlikely to be reached in 155 minutes without a clear breakout. Candle structure is weak, with no clean momentum or breakout pattern.",
+      "sentiment": "No headline information available. Volume behavior shows a late-session spike (12:45) with a downward close, indicating potential profit-taking or distribution. Follow-through is absent; sector-wide prints are not visible in the data.",
+      "macro": "NIFTY is +1.02% at 23680.55, but the late-session entry (12:55) is risky given the time remaining (155 minutes). Late-session entries require exceptional structure, which is lacking here. The trade direction (BUY) does not align with the weak candle structure or the index's potential exhaustion.",
+      "risk": "Reward:risk is 2.5, but the target is highly unlikely to be reached in the remaining time (3.75 ATR in 155 minutes is aggressive). Stop distance (1.5 ATR) is tight, and the lack of follow-through increases the risk of a false breakout. No results risk identified, but the technical and macro conditions are unfavorable."
+    },
+    "rationale": "SBILIFE is a SKIP due to weak candle structure, lack of follow-through, and late-session timing. The RSI and volume behavior suggest potential distribution, and the target is unreachable in the remaining time without a clear breakout. Default to skepticism given the absence of a clean setup.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
