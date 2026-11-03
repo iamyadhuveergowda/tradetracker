@@ -1024,5 +1024,59 @@
     "outcome": "CLOSE",
     "outcome_r": -0.27,
     "outcome_at": "2026-11-03T02:00:52+05:30"
+  },
+  {
+    "signal_id": "20261103-112658-BAJAJFINSV",
+    "signal_time": "2026-11-03T11:26:58+05:30",
+    "judged_at": "2026-11-03T11:27:28+05:30",
+    "age_min": 0.5,
+    "ticker": "BAJAJFINSV",
+    "action": "BUY",
+    "entry": 1712.7,
+    "stop": 1701.57,
+    "target": 1740.51,
+    "qty": 43,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 59.23 suggests neutral momentum; no clear breakout structure. Last 5m candle (11:25) is a tight doji with low volume (1328), indicating indecision. ATR buffer (7.4169) is not violated, and the entry at 1712.7 lacks follow-through momentum. Candle structure shows choppy action with no clear directional bias.",
+      "sentiment": "No headline information available. Volume ratio (2.06) is elevated but not exceptional; tape shows no sector-wide follow-through or clear directional flow.",
+      "macro": "NIFTY is +0.93% overextended, but late-session entries (244 minutes left) require exceptional structure. This setup lacks conviction for a directional bias in the remaining session.",
+      "risk": "Stop distance (1.5 ATR) is reasonable, but target (1740.51) is 3.75 ATR away, which is tight given the time remaining (244 minutes). No results risk present."
+    },
+    "rationale": "Lacks clean technical structure, no sector-wide follow-through, and late-session timing reduces feasibility. SKIP due to indecision and lack of momentum.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
+  },
+  {
+    "signal_id": "20261103-112658-BAJAJFINSV",
+    "signal_time": "2026-11-03T11:26:58+05:30",
+    "judged_at": "2026-11-03T11:27:28+05:30",
+    "age_min": 0.5,
+    "ticker": "BRITANNIA",
+    "action": "BUY",
+    "entry": 4777.7,
+    "stop": 4739.81,
+    "target": 4872.42,
+    "qty": 12,
+    "verdict": "SKIP",
+    "confidence": 75,
+    "trigger": "Valid only on a break above 4782.8 with volume > 10k",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 62.38 is neutral; last 5m candle (11:25) is a bullish candle but lacks strong momentum (close at 4778.3 after a high of 4779.2). ATR buffer (25.2593) is not violated, but the entry at 4777.7 lacks a clear breakout. Volume spike at 11:15 (6536) was not sustained.",
+      "sentiment": "No headline information available. Volume ratio (1.68) is moderate; tape shows no clear sector-wide momentum or follow-through.",
+      "macro": "NIFTY is +0.93% overextended, but late-session entries (244 minutes left) require exceptional structure. This setup lacks conviction for a directional bias in the remaining session.",
+      "risk": "Stop distance (1.5 ATR) is reasonable, but target (4872.42) is 3.75 ATR away, which is tight given the time remaining (244 minutes). No results risk present. Feasibility is TIGHT due to target distance and time constraints."
+    },
+    "rationale": "Lacks clean breakout structure and sector-wide follow-through. Requires a break above 4782.8 with volume > 10k to reconsider, but even then, late-session timing and tight target distance reduce feasibility.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
