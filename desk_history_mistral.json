@@ -1321,5 +1321,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261103-134507-JSWSTEEL",
+    "signal_time": "2026-11-03T13:45:07+05:30",
+    "judged_at": "2026-11-03T13:45:44+05:30",
+    "age_min": 0.6,
+    "ticker": "JSWSTEEL",
+    "action": "BUY",
+    "entry": 1318.3,
+    "stop": 1311.33,
+    "target": 1335.73,
+    "qty": 69,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 63.68 is neutral, not extreme. Candle structure shows a late-session pullback: the 13:35 candle (entry price 1318.3) is a bullish engulfing but follows a 13:30-13:40 range contraction. ATR buffer (4.649) suggests a tight stop (1311.33) and a target (1335.73) that is 3.75 ATR away—aggressive for 105 minutes left. Volume spike at 13:55 (54017) was a failed breakout attempt; current volume ratio (1.68) is elevated but not extreme. No clear momentum acceleration into the entry.",
+      "sentiment": "No headline information available. Volume behavior shows sector-wide caution: JSWSTEEL’s 13:35 spike (54017) was unsustained, and the 13:40 candle closed lower (1318.7 vs. 1319.4 high). Follow-through is weak; tape suggests late-session profit-taking rather than fresh buying.",
+      "macro": "NIFTY is +1.27% but overextended per scout note. Late-session entries (105 minutes to close) require exceptional structure, especially in a metal stock like JSWSTEEL, which is typically volatile but lacks clear index alignment. The trade direction (BUY) conflicts with the tape’s late-session consolidation.",
+      "risk": "Reward:risk of 2.5 is mathematically appealing, but the target (1335.73) is 3.75 ATR away—unrealistic in 105 minutes (1.75 hours) without a catalyst. Stop distance (1.5 ATR) is tight, and the 13:40 candle’s close (1318.7) is already near the entry (1318.3), increasing slippage risk. No results risk, but sector-wide prints (e.g., SAIL, TATASTEEL) show no follow-through."
+    },
+    "rationale": "SKIP: Late-session BUY on JSWSTEEL lacks momentum, follow-through, and macro alignment. The target is infeasible (3.75 ATR in 105 minutes), and the tape shows sector-wide caution. Structure is weak despite the bullish engulfing at 13:35; no trigger justifies entry.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
