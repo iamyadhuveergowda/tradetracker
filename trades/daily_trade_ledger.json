@@ -1351,5 +1351,53 @@
     "breakeven_price": 229.43,
     "live_atr": 0.8443,
     "exit_time": "2026-11-02T13:37:29+05:30"
+  },
+  {
+    "trade_id": "20261103112923-BAJAJFINSV",
+    "date": "2026-11-03",
+    "ticker": "BAJAJFINSV",
+    "action": "BUY",
+    "qty": 44,
+    "remaining_qty": 44,
+    "requested_qty": 44,
+    "locked_margin_per_share": 342.4,
+    "partial_booked": false,
+    "entry": 1712.0,
+    "sl": 1701.08,
+    "initial_sl": 1701.08,
+    "tgt": 1739.3,
+    "open": 1712.2,
+    "high": 1713.0,
+    "low": 1708.7,
+    "close": 1712.5,
+    "time": "11:29:23",
+    "status": "OPEN ⏳",
+    "exit_price": null,
+    "net_pnl": 0.0,
+    "rationale": "Target distance 27.3 points is 3.75 × ATR (7.28), well below the 4.5 × ATR fantasy cap; stop‑loss 1701.08 is 10.92 points (1.5 × ATR) below entry, respecting proper risk side; entry 1712.0 sits just 1.82 points above VWAP (1710.18) within 0.25 × ATR, indicating price is near fair value; macro regime is strongly bullish (nifty +0.92) which supports BUYs; expected travel 53.56 pts exceeds target distance, so the move is feasible; no news conflict, no upcoming event, and no desk veto.",
+    "events": [
+      {
+        "time": "2026-11-03T11:29:23+05:30",
+        "type": "ENTRY",
+        "text": "PAPER BUY 44 @ ₹1712.00"
+      }
+    ],
+    "mode": "PAPER",
+    "last_price": 1712.0,
+    "atr": 7.28,
+    "target_booked": false,
+    "breakeven_set": false,
+    "mfe_r": 0.0,
+    "mae_r": 0.0,
+    "size_tag": "overextended_halfsize",
+    "vol_ratio": 2.06,
+    "stop_atr_mult": 1.5,
+    "rvol": 0.88,
+    "rule_version": "v13.4",
+    "entry_brokerage_remaining": 20.0,
+    "charges": {},
+    "pnl_by_date": {},
+    "orders": {},
+    "breakeven_price": 1714.22
   }
 ]

@@ -1,23 +1,23 @@
 {
-  "signal_id": "20261103-112658-BAJAJFINSV",
-  "generated_at": "2026-11-03T11:26:58.060930+05:30",
-  "nifty_ltp": 23659.45,
+  "signal_id": "20261103-112916-BAJAJFINSV",
+  "generated_at": "2026-11-03T11:29:16.612725+05:30",
+  "nifty_ltp": 23656.55,
   "candidates": [
     {
       "ticker": "BAJAJFINSV",
       "signal": "BUY",
-      "ltp": 1712.7,
-      "stop": 1701.57,
-      "target": 1740.51,
-      "qty": 43,
+      "ltp": 1712.0,
+      "stop": 1701.08,
+      "target": 1739.3,
+      "qty": 44,
       "indicators": {
         "rsi": 59.23,
-        "atr": 7.4169,
+        "atr": 7.28,
         "atr_5m": 3.7407,
         "vwap": 1710.18,
         "vol_ratio": 2.06
       },
-      "scout_reason": "NIFTY 50 +0.93% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +0.92% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "09:50",
@@ -175,31 +175,31 @@
           "11:25",
           1712.5,
           1712.8,
-          1711.6,
-          1712.5,
-          1328
+          1711.3,
+          1712.4,
+          2278
         ]
       ],
       "stop_floor_bound": false,
-      "outcome": "dropped_other",
-      "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-03T11:26:58.712066+05:30"
+      "outcome": "executed",
+      "outcome_reason": "",
+      "outcome_at": "2026-11-03T11:29:23.902975+05:30"
     },
     {
       "ticker": "BRITANNIA",
       "signal": "BUY",
-      "ltp": 4777.7,
-      "stop": 4739.81,
-      "target": 4872.42,
-      "qty": 12,
+      "ltp": 4780.2,
+      "stop": 4743.2,
+      "target": 4872.71,
+      "qty": 13,
       "indicators": {
         "rsi": 62.38,
-        "atr": 25.2593,
+        "atr": 24.6693,
         "atr_5m": 13.7093,
-        "vwap": 4773.7,
+        "vwap": 4774.43,
         "vol_ratio": 1.68
       },
-      "scout_reason": "NIFTY 50 +0.93% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +0.92% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "09:50",
@@ -356,16 +356,16 @@
         [
           "11:25",
           4776.1,
-          4779.2,
+          4791.0,
           4775.2,
-          4778.3,
-          761
+          4784.6,
+          13342
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-03T11:26:58.712088+05:30"
+      "outcome_at": "2026-11-03T11:29:23.902998+05:30"
     }
   ]
 }
