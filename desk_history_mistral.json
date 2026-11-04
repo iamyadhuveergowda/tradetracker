@@ -1348,5 +1348,59 @@
     "outcome": "CLOSE",
     "outcome_r": 0.24,
     "outcome_at": "2026-11-03T23:34:06+05:30"
+  },
+  {
+    "signal_id": "20261104-095730-ICICIBANK",
+    "signal_time": "2026-11-04T09:57:30+05:30",
+    "judged_at": "2026-11-04T09:58:09+05:30",
+    "age_min": 0.7,
+    "ticker": "ICICIBANK",
+    "action": "BUY",
+    "entry": 1428.1,
+    "stop": 1418.82,
+    "target": 1451.29,
+    "qty": 104,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 54.11 suggests neutral momentum; ATR buffer (6.18) is tight for a late-session entry. The last 5m candle (09:55) closed at 1428.4, near the entry level (1428.1), but lacks follow-through momentum. Volume ratio (2.18) is elevated but not exceptional. No clear breakout structure; appears to be chasing the sector.",
+      "sentiment": "No headline information available. Volume spike at 09:50 (647k) suggests some late-morning interest, but the last 30m (15:00-15:10) shows weak follow-through with declining volume (194k → 344k → 326k). Sector-wide prints are not visible in the tape; no clear tape-driven sentiment.",
+      "macro": "NIFTY is bullish, but ICICIBANK’s late-session entry (333m to close) requires exceptional structure. The stock is not leading the index tape; no macro alignment beyond sector-level bullishness.",
+      "risk": "Reward:risk of 2.5 is decent, but stop distance (1.5 ATR) is tight for a late-session trade. Target distance (3.75 ATR) is feasible in 333m, but the lack of momentum and weak tape follow-through increases execution risk. No results risk."
+    },
+    "rationale": "Late-session entry lacks momentum, tape alignment, and follow-through. Volume spike at 09:50 is not sustained; no clear breakout structure. SKIP due to weak technicals and macro misalignment.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
+  },
+  {
+    "signal_id": "20261104-095730-ICICIBANK",
+    "signal_time": "2026-11-04T09:57:30+05:30",
+    "judged_at": "2026-11-04T09:58:09+05:30",
+    "age_min": 0.7,
+    "ticker": "MARUTI",
+    "action": "BUY",
+    "entry": 11902.0,
+    "stop": 11841.58,
+    "target": 12053.06,
+    "qty": 16,
+    "verdict": "SKIP",
+    "confidence": 80,
+    "trigger": "Valid only on a break above 11905.0 (15:15 candle high)",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 64.64 indicates overbought conditions; ATR (40.28) is high, but the stock is trading near session highs (11905.0). The 15:15 candle is a doji (11828.0 open/high/low/close), signaling indecision. No clear momentum into the entry (11902.0). Volume ratio (5.1) is high but not actionable without a breakout.",
+      "sentiment": "No headline information available. Volume is thin in the last 30m (15:05-15:15: 14k → 12k → 51), suggesting weak liquidity. Sector (AUTO) is neutral; no tape-driven sentiment or follow-through visible.",
+      "macro": "NIFTY is bullish, but MARUTI is not leading the tape. Late-session entries (333m to close) require exceptional structure, which is absent here. The stock is range-bound with no clear directional bias.",
+      "risk": "Reward:risk of 2.5 is attractive, but the stop distance (1.5 ATR) is tight for a late-session trade. Target distance (3.75 ATR) is feasible in 333m, but the lack of momentum and weak volume make execution risky. No results risk."
+    },
+    "rationale": "Overbought RSI, weak volume, and indecision (doji at 15:15) make this a high-risk late-session entry. Requires a break above 11905.0 to validate, but even then, tape alignment is lacking. SKIP unless exceptional structure emerges.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
