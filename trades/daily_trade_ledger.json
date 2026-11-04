@@ -1486,7 +1486,7 @@
     "ticker": "MARUTI",
     "action": "BUY",
     "qty": 16,
-    "remaining_qty": 16,
+    "remaining_qty": 0,
     "requested_qty": 16,
     "locked_margin_per_share": 2378.4,
     "partial_booked": false,
@@ -1497,21 +1497,26 @@
     "open": 11892.0,
     "high": 11903.0,
     "low": 11880.0,
-    "close": 11917.0,
+    "close": 11924.0,
     "time": "10:25:42",
-    "status": "OPEN ⏳",
-    "exit_price": null,
-    "net_pnl": 0.0,
+    "status": "WIN 🟢",
+    "exit_price": 11924.0,
+    "net_pnl": 397.14,
     "rationale": "Entry 11890 is below VWAP (11895.17) with stop 59 points (≈1.5 ATR) below entry and target 147.5 points (≈3.75 ATR) within expected travel 372.88; risk‑reward ≈2.5:1, macro regime neutral (nifty +0.16 %), no conflicting news or events, qty ≥ 1, target ≤4.5 ATR and stop correctly placed below entry.",
     "events": [
       {
         "time": "2026-11-04T10:25:42+05:30",
         "type": "ENTRY",
         "text": "PAPER BUY 16 @ ₹11892.00"
+      },
+      {
+        "time": "2026-11-04T15:10:47+05:30",
+        "type": "EXIT",
+        "text": "15:10 square-off: 16 @ ₹11924.00, net ₹397.14"
       }
     ],
     "mode": "PAPER",
-    "last_price": 11917.0,
+    "last_price": 11924.0,
     "atr": 39.3336,
     "target_booked": false,
     "breakeven_set": false,
@@ -1522,11 +1527,22 @@
     "stop_atr_mult": 1.5,
     "rvol": 1.31,
     "rule_version": "v13.4",
-    "entry_brokerage_remaining": 20.0,
-    "charges": {},
-    "pnl_by_date": {},
+    "entry_brokerage_remaining": 0.0,
+    "charges": {
+      "brokerage": 40.0,
+      "exchange": 11.7,
+      "sebi": 0.38,
+      "stt": 47.7,
+      "stamp": 5.71,
+      "gst": 9.37,
+      "total": 114.86
+    },
+    "pnl_by_date": {
+      "2026-11-04": 397.14
+    },
     "orders": {},
-    "breakeven_price": 11900.65
+    "breakeven_price": 11900.65,
+    "exit_time": "2026-11-04T15:10:47+05:30"
   },
   {
     "trade_id": "20261104110247-ULTRACEMCO",
@@ -1534,7 +1550,7 @@
     "ticker": "ULTRACEMCO",
     "action": "BUY",
     "qty": 15,
-    "remaining_qty": 15,
+    "remaining_qty": 0,
     "requested_qty": 15,
     "locked_margin_per_share": 2349.0,
     "partial_booked": false,
@@ -1545,21 +1561,26 @@
     "open": 11745.0,
     "high": 11771.0,
     "low": 11743.0,
-    "close": 11809.0,
+    "close": 11805.0,
     "time": "11:02:47",
-    "status": "OPEN ⏳",
-    "exit_price": null,
-    "net_pnl": 0.0,
+    "status": "WIN 🟢",
+    "exit_price": 11805.0,
+    "net_pnl": 790.03,
     "rationale": "All hard gates passed: target distance 152.56 ≤ 4.5 × ATR (183.08), qty = 15 ≥ 1, entry within 0.36% of prev_close, stop below entry, macro regime permits BUY. No vetoes triggered: entry is below vwap + 1.5 × ATR (11742 < 11815.80), target (11894.56) is within expected travel 335.37, stop not in noisy zone, no upcoming event, no desk veto, and price action shows no chase, exhaustion, distribution, wall, or contradictory news. Hence signal is approved.",
     "events": [
       {
         "time": "2026-11-04T11:02:47+05:30",
         "type": "ENTRY",
         "text": "PAPER BUY 15 @ ₹11745.00"
+      },
+      {
+        "time": "2026-11-04T15:10:48+05:30",
+        "type": "EXIT",
+        "text": "15:10 square-off: 15 @ ₹11805.00, net ₹790.03"
       }
     ],
     "mode": "PAPER",
-    "last_price": 11809.0,
+    "last_price": 11805.0,
     "atr": 40.6839,
     "target_booked": false,
     "breakeven_set": false,
@@ -1570,10 +1591,21 @@
     "stop_atr_mult": 1.5,
     "rvol": 1.9,
     "rule_version": "v13.4",
-    "entry_brokerage_remaining": 20.0,
-    "charges": {},
-    "pnl_by_date": {},
+    "entry_brokerage_remaining": 0.0,
+    "charges": {
+      "brokerage": 40.0,
+      "exchange": 10.84,
+      "sebi": 0.35,
+      "stt": 44.27,
+      "stamp": 5.29,
+      "gst": 9.22,
+      "total": 109.97
+    },
+    "pnl_by_date": {
+      "2026-11-04": 790.03
+    },
     "orders": {},
-    "breakeven_price": 11754.11
+    "breakeven_price": 11754.11,
+    "exit_time": "2026-11-04T15:10:48+05:30"
   }
 ]
