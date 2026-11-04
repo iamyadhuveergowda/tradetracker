@@ -1,48 +1,24 @@
 {
-  "signal_id": "20261104-110954-EICHERMOT",
-  "generated_at": "2026-11-04T11:09:54.374352+05:30",
-  "nifty_ltp": 23793.1,
+  "signal_id": "20261104-112016-EICHERMOT",
+  "generated_at": "2026-11-04T11:20:16.917105+05:30",
+  "nifty_ltp": 23833.55,
   "candidates": [
     {
       "ticker": "EICHERMOT",
       "signal": "BUY",
-      "ltp": 7391.0,
-      "stop": 7348.18,
-      "target": 7498.04,
+      "ltp": 7393.5,
+      "stop": 7350.68,
+      "target": 7500.54,
       "qty": 9,
       "indicators": {
-        "rsi": 56.93,
+        "rsi": 57.97,
         "atr": 28.5442,
-        "atr_5m": 17.1657,
-        "vwap": 7389.99,
-        "vol_ratio": 1.98
+        "atr_5m": 16.0195,
+        "vwap": 7390.57,
+        "vol_ratio": 2.64
       },
-      "scout_reason": "NIFTY NEUTRAL, sector AUTO NEUTRAL",
+      "scout_reason": "NIFTY NEUTRAL, sector AUTO BULLISH",
       "candles_5m": [
-        [
-          "09:30",
-          7422.5,
-          7422.5,
-          7400.0,
-          7407.5,
-          4776
-        ],
-        [
-          "09:35",
-          7409.5,
-          7409.5,
-          7385.5,
-          7388.0,
-          6317
-        ],
-        [
-          "09:40",
-          7389.0,
-          7399.0,
-          7384.0,
-          7393.0,
-          3192
-        ],
         [
           "09:45",
           7392.5,
@@ -176,14 +152,38 @@
           7390.0,
           7395.0,
           7387.5,
-          7394.0,
-          2013
+          7395.0,
+          2923
+        ],
+        [
+          "11:10",
+          7393.5,
+          7395.0,
+          7386.5,
+          7393.5,
+          1983
+        ],
+        [
+          "11:15",
+          7392.0,
+          7404.0,
+          7386.5,
+          7395.5,
+          10826
+        ],
+        [
+          "11:20",
+          7392.0,
+          7394.5,
+          7392.0,
+          7392.0,
+          134
         ]
       ],
       "stop_floor_bound": false,
-      "outcome": "dropped_critic_bypass",
-      "outcome_reason": "critic LLM unavailable — dropped",
-      "outcome_at": "2026-11-04T11:10:07.559085+05:30"
+      "outcome": "dropped_other",
+      "outcome_reason": "DISTRIBUTION: heaviest volume bar (10826) in last 6 candles at 11:15 shows supply into highs (high 7404, close 7395.5) against BUY direction",
+      "outcome_at": "2026-11-04T11:20:20.879799+05:30"
     }
   ]
 }
