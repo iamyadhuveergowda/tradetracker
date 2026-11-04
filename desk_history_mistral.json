@@ -1429,5 +1429,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261104-110733-EICHERMOT",
+    "signal_time": "2026-11-04T11:07:33+05:30",
+    "judged_at": "2026-11-04T11:08:06+05:30",
+    "age_min": 0.5,
+    "ticker": "EICHERMOT",
+    "action": "BUY",
+    "entry": 7391.0,
+    "stop": 7347.49,
+    "target": 7499.78,
+    "qty": 9,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 56.93 suggests neither overbought nor oversold conditions. The last 5-minute candle (11:05) closed at 7389.5, showing a tight range (7390.0-7387.5) with low volume (1128), indicating weak follow-through. The 10:30 candle had a strong bullish reversal (7336.5 → 7375.5) but lacked volume confirmation in subsequent candles. ATR buffer (29.0091) suggests a stop at 7347.49 is ~1.5 ATR away, which is reasonable, but the target (7499.78) is 3.75 ATR away—a stretch in 263 minutes (4.4 hours). The last 12 candles show no clear breakout structure; the stock is trading in a tight range with no momentum.",
+      "sentiment": "No headline information available. Volume behavior shows a spike at 10:30 (7990) but no follow-through in subsequent candles. The sector (AUTO) is neutral, and the stock is not leading the tape. The 1.98 volume ratio (vs. average) at 11:07 is not exceptional and does not indicate strong sentiment.",
+      "macro": "NIFTY is neutral, and the auto sector is also neutral. Late-session entries (263 minutes to close) require exceptional structure, which is absent here. The trade direction (BUY) does not align with a clear macro narrative or index tape momentum.",
+      "risk": "Reward:risk is 2.5, which is mathematically attractive, but the target distance (3.75 ATR) is aggressive for the time remaining. No earnings risk, but the stock lacks a clear catalyst. Stop distance (1.5 ATR) is reasonable, but the lack of momentum and weak follow-through increases downside risk. Feasibility is not flagged, but the target is tight given the time left."
+    },
+    "rationale": "EICHERMOT lacks a clean technical setup, momentum, or sector-wide leadership to justify a GO. The RSI, volume behavior, and candle structure do not support a high-conviction entry at 7391.0 with 263 minutes to close. The reward:risk ratio is mathematically favorable, but the absence of follow-through and weak tape alignment make this a high-risk, low-reward scenario. Default to SKIP.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
