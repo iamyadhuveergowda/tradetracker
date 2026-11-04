@@ -637,5 +637,32 @@
     "outcome": "TARGET",
     "outcome_r": 2.5,
     "outcome_at": "2026-11-03T01:53:24+05:30"
+  },
+  {
+    "signal_id": "20261104-110242-ULTRACEMCO",
+    "signal_time": "2026-11-04T11:02:42+05:30",
+    "judged_at": "2026-11-04T11:03:07+05:30",
+    "age_min": 0.4,
+    "ticker": "ULTRACEMCO",
+    "action": "BUY",
+    "entry": 11742.0,
+    "stop": 11680.97,
+    "target": 11894.56,
+    "qty": 15,
+    "verdict": "SKIP",
+    "confidence": 75,
+    "trigger": "Valid only on a sustained breakout above 11780.00 with expanding volume",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "Price is locked in a tight consolidation between 11725.00 and 11770.00. The 10:55 bar attempted an upside probe to 11771.00 on 8,217 volume but left an upper wick and was immediately faded at 11:00 (closing at 11746.00 on 1,354 volume). RSI is neutral at 58.73 with no clear directional impulse.",
+      "sentiment": "Tape-based reading only as no news feed is available. The tape reflects overhead supply above 11760.00, with aggressive selling absorbing the 10:55 volume spike rather than sustaining follow-through.",
+      "macro": "NIFTY at 23782.75 is neutral, and the Cement sector is neutral. There is no macro or sectoral momentum to drive a significant intraday trend with 268 minutes remaining.",
+      "risk": "While reward-to-risk is mathematically 2.5 (stop 1.5 ATR / 61.03 pts at 11680.97 vs target 3.75 ATR / 152.56 pts at 11894.56), demanding a 3.75 ATR expansion out of a flat tape is unrealistic. Results risk is empty."
+    },
+    "rationale": "SKIP. ULTRACEMCO is range-bound between 11725 and 11770, with the 10:55 volume spike immediately faded at 11:00. In a neutral market and sector context, demanding a 3.75 ATR expansion to 11894.56 represents poor probability.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
