@@ -1,20 +1,20 @@
 {
-  "signal_id": "20261104-112016-EICHERMOT",
-  "generated_at": "2026-11-04T11:20:16.917105+05:30",
-  "nifty_ltp": 23833.55,
+  "signal_id": "20261104-112226-EICHERMOT",
+  "generated_at": "2026-11-04T11:22:26.449047+05:30",
+  "nifty_ltp": 23840.2,
   "candidates": [
     {
       "ticker": "EICHERMOT",
       "signal": "BUY",
-      "ltp": 7393.5,
-      "stop": 7350.68,
-      "target": 7500.54,
+      "ltp": 7390.5,
+      "stop": 7347.68,
+      "target": 7497.54,
       "qty": 9,
       "indicators": {
         "rsi": 57.97,
         "atr": 28.5442,
         "atr_5m": 16.0195,
-        "vwap": 7390.57,
+        "vwap": 7390.59,
         "vol_ratio": 2.64
       },
       "scout_reason": "NIFTY NEUTRAL, sector AUTO BULLISH",
@@ -174,16 +174,16 @@
         [
           "11:20",
           7392.0,
-          7394.5,
-          7392.0,
-          7392.0,
-          134
+          7398.0,
+          7390.0,
+          7393.5,
+          664
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
-      "outcome_reason": "DISTRIBUTION: heaviest volume bar (10826) in last 6 candles at 11:15 shows supply into highs (high 7404, close 7395.5) against BUY direction",
-      "outcome_at": "2026-11-04T11:20:20.879799+05:30"
+      "outcome_reason": "INTO_WALL: entry 7390.5 is within 0.5*ATR (14.2721) of recent swing high 7404.0",
+      "outcome_at": "2026-11-04T11:22:31.544172+05:30"
     }
   ]
 }
