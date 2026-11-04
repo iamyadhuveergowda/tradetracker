@@ -661,8 +661,8 @@
       "risk": "While reward-to-risk is mathematically 2.5 (stop 1.5 ATR / 61.03 pts at 11680.97 vs target 3.75 ATR / 152.56 pts at 11894.56), demanding a 3.75 ATR expansion out of a flat tape is unrealistic. Results risk is empty."
     },
     "rationale": "SKIP. ULTRACEMCO is range-bound between 11725 and 11770, with the 10:55 volume spike immediately faded at 11:00. In a neutral market and sector context, demanding a 3.75 ATR expansion to 11894.56 represents poor probability.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 1.21,
+    "outcome_at": "2026-11-04T23:29:48+05:30"
   }
 ]
