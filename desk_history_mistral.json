@@ -1402,5 +1402,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261104-110035-ULTRACEMCO",
+    "signal_time": "2026-11-04T11:00:35+05:30",
+    "judged_at": "2026-11-04T11:00:59+05:30",
+    "age_min": 0.4,
+    "ticker": "ULTRACEMCO",
+    "action": "BUY",
+    "entry": 11759.0,
+    "stop": 11697.97,
+    "target": 11911.56,
+    "qty": 15,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 58.73 suggests neither overbought nor oversold conditions. The last 5-minute candle (11:00) is a doji (open=11758, close=11754, high=11759, low=11754), indicating indecision. The stock has been consolidating in a tight range (11730-11778) for the past 60 minutes, with no clear breakout or breakdown. ATR buffer (1.5x) is tight, and the target (11911.56) is 3.75 ATR away, which is aggressive for a stock showing no momentum or follow-through.",
+      "sentiment": "No headline information available. Volume behavior is inconsistent: the 11:00 candle volume (236) is unusually low compared to prior candles (e.g., 8217 at 10:55), suggesting lack of conviction. Sector-wide prints (cement) are neutral, and no follow-through is visible in the tape.",
+      "macro": "NIFTY is neutral, and the trade direction (BUY) does not align with the broader index tape. Late-session entries require exceptional structure, which is absent here. The stock is not showing alignment with the index's directional bias or time-of-day dynamics (270 minutes to close).",
+      "risk": "Reward:risk is 2.5, which is mathematically favorable but ignores the lack of momentum and tight stop distance (1.5 ATR). Feasibility is empty, but the target distance (3.75 ATR) in 270 minutes is tight given the stock's recent range-bound behavior. No results risk is flagged, but the lack of follow-through and weak volume are red flags."
+    },
+    "rationale": "ULTRACEMCO lacks momentum, follow-through, and conviction despite a mathematically appealing reward:risk ratio. The doji candle, low volume, and neutral sector/broader market context make this a high-risk setup. SKIP due to insufficient structure and alignment with the tape.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
