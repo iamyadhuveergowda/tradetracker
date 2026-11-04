@@ -1479,5 +1479,53 @@
     "orders": {},
     "breakeven_price": 1944.86,
     "exit_time": "2026-11-03T15:10:26+05:30"
+  },
+  {
+    "trade_id": "20261104102542-MARUTI",
+    "date": "2026-11-04",
+    "ticker": "MARUTI",
+    "action": "BUY",
+    "qty": 16,
+    "remaining_qty": 16,
+    "requested_qty": 16,
+    "locked_margin_per_share": 2378.4,
+    "partial_booked": false,
+    "entry": 11892.0,
+    "sl": 11833.0,
+    "initial_sl": 11833.0,
+    "tgt": 12039.5,
+    "open": 11892.0,
+    "high": 11903.0,
+    "low": 11880.0,
+    "close": 11895.0,
+    "time": "10:25:42",
+    "status": "OPEN ⏳",
+    "exit_price": null,
+    "net_pnl": 0.0,
+    "rationale": "Entry 11890 is below VWAP (11895.17) with stop 59 points (≈1.5 ATR) below entry and target 147.5 points (≈3.75 ATR) within expected travel 372.88; risk‑reward ≈2.5:1, macro regime neutral (nifty +0.16 %), no conflicting news or events, qty ≥ 1, target ≤4.5 ATR and stop correctly placed below entry.",
+    "events": [
+      {
+        "time": "2026-11-04T10:25:42+05:30",
+        "type": "ENTRY",
+        "text": "PAPER BUY 16 @ ₹11892.00"
+      }
+    ],
+    "mode": "PAPER",
+    "last_price": 11892.0,
+    "atr": 39.3336,
+    "target_booked": false,
+    "breakeven_set": false,
+    "mfe_r": 0.0,
+    "mae_r": 0.0,
+    "size_tag": "standard",
+    "vol_ratio": 1.59,
+    "stop_atr_mult": 1.5,
+    "rvol": 1.31,
+    "rule_version": "v13.4",
+    "entry_brokerage_remaining": 20.0,
+    "charges": {},
+    "pnl_by_date": {},
+    "orders": {},
+    "breakeven_price": 11900.65
   }
 ]
