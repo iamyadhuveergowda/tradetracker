@@ -1,20 +1,20 @@
 {
-  "signal_id": "20261104-110035-ULTRACEMCO",
-  "generated_at": "2026-11-04T11:00:35.891757+05:30",
-  "nifty_ltp": 23814.5,
+  "signal_id": "20261104-110242-ULTRACEMCO",
+  "generated_at": "2026-11-04T11:02:42.343268+05:30",
+  "nifty_ltp": 23782.75,
   "candidates": [
     {
       "ticker": "ULTRACEMCO",
       "signal": "BUY",
-      "ltp": 11759.0,
-      "stop": 11697.97,
-      "target": 11911.56,
+      "ltp": 11742.0,
+      "stop": 11680.97,
+      "target": 11894.56,
       "qty": 15,
       "indicators": {
         "rsi": 58.73,
         "atr": 40.6839,
         "atr_5m": 25.7594,
-        "vwap": 11754.89,
+        "vwap": 11754.77,
         "vol_ratio": 1.87
       },
       "scout_reason": "NIFTY NEUTRAL, sector CEMENT NEUTRAL",
@@ -174,16 +174,16 @@
         [
           "11:00",
           11758.0,
-          11759.0,
-          11754.0,
-          11754.0,
-          236
+          11760.0,
+          11742.0,
+          11746.0,
+          1354
         ]
       ],
       "stop_floor_bound": false,
-      "outcome": "dropped_other",
-      "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-04T11:00:36.706006+05:30"
+      "outcome": "executed",
+      "outcome_reason": "",
+      "outcome_at": "2026-11-04T11:02:48.277693+05:30"
     }
   ]
 }
