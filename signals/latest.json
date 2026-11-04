@@ -1,20 +1,20 @@
 {
-  "signal_id": "20261104-110733-EICHERMOT",
-  "generated_at": "2026-11-04T11:07:33.994553+05:30",
-  "nifty_ltp": 23793.9,
+  "signal_id": "20261104-110954-EICHERMOT",
+  "generated_at": "2026-11-04T11:09:54.374352+05:30",
+  "nifty_ltp": 23793.1,
   "candidates": [
     {
       "ticker": "EICHERMOT",
       "signal": "BUY",
       "ltp": 7391.0,
-      "stop": 7347.49,
-      "target": 7499.78,
+      "stop": 7348.18,
+      "target": 7498.04,
       "qty": 9,
       "indicators": {
         "rsi": 56.93,
-        "atr": 29.0091,
+        "atr": 28.5442,
         "atr_5m": 17.1657,
-        "vwap": 7389.91,
+        "vwap": 7389.99,
         "vol_ratio": 1.98
       },
       "scout_reason": "NIFTY NEUTRAL, sector AUTO NEUTRAL",
@@ -174,16 +174,16 @@
         [
           "11:05",
           7390.0,
-          7393.0,
+          7395.0,
           7387.5,
-          7389.5,
-          1128
+          7394.0,
+          2013
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_critic_bypass",
       "outcome_reason": "critic LLM unavailable — dropped",
-      "outcome_at": "2026-11-04T11:07:45.552628+05:30"
+      "outcome_at": "2026-11-04T11:10:07.559085+05:30"
     }
   ]
 }
