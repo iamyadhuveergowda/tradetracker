@@ -1372,9 +1372,9 @@
       "risk": "Reward:risk of 2.5 is decent, but stop distance (1.5 ATR) is tight for a late-session trade. Target distance (3.75 ATR) is feasible in 333m, but the lack of momentum and weak tape follow-through increases execution risk. No results risk."
     },
     "rationale": "Late-session entry lacks momentum, tape alignment, and follow-through. Volume spike at 09:50 is not sustained; no clear breakout structure. SKIP due to weak technicals and macro misalignment.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-04T23:44:23+05:30"
   },
   {
     "signal_id": "20261104-095730-ICICIBANK",
@@ -1399,9 +1399,9 @@
       "risk": "Reward:risk of 2.5 is attractive, but the stop distance (1.5 ATR) is tight for a late-session trade. Target distance (3.75 ATR) is feasible in 333m, but the lack of momentum and weak volume make execution risky. No results risk."
     },
     "rationale": "Overbought RSI, weak volume, and indecision (doji at 15:15) make this a high-risk late-session entry. Requires a break above 11905.0 to validate, but even then, tape alignment is lacking. SKIP unless exceptional structure emerges.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 1.54,
+    "outcome_at": "2026-11-04T23:44:23+05:30"
   },
   {
     "signal_id": "20261104-110035-ULTRACEMCO",
@@ -1426,9 +1426,9 @@
       "risk": "Reward:risk is 2.5, which is mathematically favorable but ignores the lack of momentum and tight stop distance (1.5 ATR). Feasibility is empty, but the target distance (3.75 ATR) in 270 minutes is tight given the stock's recent range-bound behavior. No results risk is flagged, but the lack of follow-through and weak volume are red flags."
     },
     "rationale": "ULTRACEMCO lacks momentum, follow-through, and conviction despite a mathematically appealing reward:risk ratio. The doji candle, low volume, and neutral sector/broader market context make this a high-risk setup. SKIP due to insufficient structure and alignment with the tape.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.93,
+    "outcome_at": "2026-11-04T23:44:23+05:30"
   },
   {
     "signal_id": "20261104-110733-EICHERMOT",
@@ -1453,8 +1453,8 @@
       "risk": "Reward:risk is 2.5, which is mathematically attractive, but the target distance (3.75 ATR) is aggressive for the time remaining. No earnings risk, but the stock lacks a clear catalyst. Stop distance (1.5 ATR) is reasonable, but the lack of momentum and weak follow-through increases downside risk. Feasibility is not flagged, but the target is tight given the time left."
     },
     "rationale": "EICHERMOT lacks a clean technical setup, momentum, or sector-wide leadership to justify a GO. The RSI, volume behavior, and candle structure do not support a high-conviction entry at 7391.0 with 263 minutes to close. The reward:risk ratio is mathematically favorable, but the absence of follow-through and weak tape alignment make this a high-risk, low-reward scenario. Default to SKIP.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.67,
+    "outcome_at": "2026-11-04T23:44:23+05:30"
   }
 ]
