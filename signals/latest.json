@@ -1,7 +1,7 @@
 {
-  "signal_id": "20261105-112252-KOTAKBANK",
-  "generated_at": "2026-11-05T11:22:52.851550+05:30",
-  "nifty_ltp": 24386.5,
+  "signal_id": "20261105-112507-KOTAKBANK",
+  "generated_at": "2026-11-05T11:25:07.710233+05:30",
+  "nifty_ltp": 24374.6,
   "candidates": [
     {
       "ticker": "KOTAKBANK",
@@ -17,7 +17,7 @@
         "vwap": 462.64,
         "vol_ratio": 1.55
       },
-      "scout_reason": "NIFTY 50 +1.78% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +1.73% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "09:45",
@@ -174,16 +174,16 @@
         [
           "11:20",
           463.1,
-          463.25,
+          463.3,
           462.6,
           463.25,
-          121802
+          172386
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
-      "outcome_reason": "INTO_WALL: entry 463.15 is within 0.5*ATR (1.19) of recent swing high 463.25, risking immediate wall",
-      "outcome_at": "2026-11-05T11:22:56.876994+05:30"
+      "outcome_reason": "DISTRIBUTION: heaviest volume bar in last 6 candles at 11:05 with volume 796030 printed a down close (high 462.15, close 461.9) against BUY direction",
+      "outcome_at": "2026-11-05T11:25:12.407373+05:30"
     }
   ]
 }
