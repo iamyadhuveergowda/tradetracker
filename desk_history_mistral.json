@@ -1483,5 +1483,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261105-112252-KOTAKBANK",
+    "signal_time": "2026-11-05T11:22:52+05:30",
+    "judged_at": "2026-11-05T11:23:25+05:30",
+    "age_min": 0.5,
+    "ticker": "KOTAKBANK",
+    "action": "BUY",
+    "entry": 463.15,
+    "stop": 459.58,
+    "target": 472.07,
+    "qty": 138,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 58.3 is neutral, not extreme. Candle structure shows a choppy tape with no clear breakout momentum; last 5m candle (11:15) is a bullish engulfing but lacks follow-through volume (652521 vs. prior 121802). ATR buffer (2.379) suggests tight stop placement (1.5 ATR = 3.57), and target (472.07) is 3.75 ATR away—aggressive for late-session entry. No clear retest or pullback to entry.",
+      "sentiment": "No headline information available. Volume spike at 10:45 (364979) suggests prior intraday interest, but no follow-through into 11:22. Sector-wide prints (banking) show mixed tape: some peers like HDFCBANK are consolidating, while others like ICICIBANK are lagging. No clear sector-wide momentum.",
+      "macro": "NIFTY is +1.78% at 24386.5, overextended for a late-session BUY entry (248 minutes to close). Late-session entries require exceptional structure, and this lacks it. Index tape is likely to consolidate or correct toward close, reducing probability of target (472.07) being reached.",
+      "risk": "Reward:risk of 2.5 is mathematically appealing but ignores time decay (248 minutes left). Stop distance (1.5 ATR) is tight for a BUY in a choppy tape. No results risk, but late-session entries in overextended markets carry higher probability of mean reversion. Feasibility is empty, but target distance (3.75 ATR) is TIGHT for remaining time."
+    },
+    "rationale": "SKIP KOTAKBANK BUY due to lack of clear momentum, overextended NIFTY tape, and tight feasibility. Late-session entries require exceptional structure, which is absent here. Even if entered, target (472.07) is unlikely to be reached in 248 minutes given current choppy tape and index positioning.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
