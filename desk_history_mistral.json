@@ -1456,5 +1456,32 @@
     "outcome": "CLOSE",
     "outcome_r": 0.67,
     "outcome_at": "2026-11-04T23:44:23+05:30"
+  },
+  {
+    "signal_id": "20261105-111227-BRITANNIA",
+    "signal_time": "2026-11-05T11:12:27+05:30",
+    "judged_at": "2026-11-05T11:13:00+05:30",
+    "age_min": 0.5,
+    "ticker": "BRITANNIA",
+    "action": "BUY",
+    "entry": 4980.8,
+    "stop": 4945.37,
+    "target": 5069.38,
+    "qty": 13,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "Valid only on a break above 5000.00 with volume > 10,000 and RSI > 70",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "Candle structure shows a late-morning breakdown from 4994.9 (10:20 high) to 4966.2 (10:40 low), followed by a choppy recovery. The 11:10 candle closes at 4982.4 with a high of 4990.0 but lacks follow-through momentum. RSI (60.28) is neutral, not overbought, and ATR buffer (stop at 4945.37) is tight (1.5 ATR). The target (5069.38) is 3.75 ATR away, requiring a 1.8% move in 258 minutes (~2.6% hourly), which is aggressive for a late-session entry. No clear breakout or exhaustion pattern is visible.",
+      "sentiment": "No headline information available. Volume spike at 11:05 (9154) suggests short-covering or algorithmic activity, but the 11:10 candle’s volume (5363) is elevated but not exceptional. Sector-wide prints are not visible in the data; tape behavior is inconsistent with a clean setup.",
+      "macro": "NIFTY is +1.74% at 24376.35, but the time-to-close (258 minutes) is late for a BUY entry unless the structure is exceptional. Late-session entries require either a strong index tailwind or a high-probability reversal setup, neither of which is present here.",
+      "risk": "Stop distance (1.5 ATR) is tight, and the target is 3.75 ATR away, yielding a 2.5:1 reward:risk. No results risk is flagged, but the lack of follow-through and late-session timing increase execution risk. Feasibility is not explicitly marked as INFEASIBLE, but the target distance (3.75 ATR) in 258 minutes (~4.3 hours) is tight for an intraday trade, especially without a clear catalyst."
+    },
+    "rationale": "BRITANNIA’s BUY signal lacks a clean technical setup, follow-through momentum, and aligns poorly with late-session macro dynamics. The RSI is neutral, the candle structure is choppy, and the target requires an aggressive move in limited time. Volume spikes are not sustained, and no sector-wide prints support the trade. Default to SKIP unless a break above 5000.00 with volume > 10,000 and RSI > 70 materializes, which would justify reassessment.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
