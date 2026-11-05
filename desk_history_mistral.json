@@ -1645,5 +1645,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261105-125457-BPCL",
+    "signal_time": "2026-11-05T12:54:57+05:30",
+    "judged_at": "2026-11-05T12:55:38+05:30",
+    "age_min": 0.7,
+    "ticker": "BPCL",
+    "action": "BUY",
+    "entry": 318.1,
+    "stop": 314.91,
+    "target": 326.09,
+    "qty": 154,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "Valid only on a break above 318.50 with volume > 1.2M and RSI > 60",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 57.79 is neutral, not overbought. The last 12 candles show a choppy, indecisive tape with no clear momentum. The 12:45 candle (entry candle) is a 5-minute hammer with high volume (1.12M), but it lacks follow-through. The ATR buffer (2.1293) suggests a tight stop (1.5 ATR = 314.91), and the target (326.09) is 3.75 ATR away—aggressive for 156 minutes left. The 12:50 candle closed at 318.10, failing to sustain above 318.20, a key resistance level.",
+      "sentiment": "No headline information available. Volume spike at 12:45 (1.12M) suggests some interest, but the lack of follow-through and the choppy tape indicate weak conviction. Sector-wide prints are not visible in the data, so no broader sector confirmation.",
+      "macro": "NIFTY is +1.98% at 24433.9, but late-session entries (156 minutes left) require exceptional structure. BPCL’s move is not aligned with the broader index’s late-session momentum, which typically favors liquidity-driven stocks or breakout plays. The index is overextended, but this does not justify a late BUY in BPCL without clearer tape confirmation.",
+      "risk": "Stop distance is 1.5 ATR (314.91), which is tight given the volatility in the last 12 candles. Target distance is 3.75 ATR, which is ambitious for the remaining time (156 minutes). No results risk, but the lack of follow-through and weak momentum increase the risk of a false breakout. Reward:risk is 2.5, but the feasibility is TIGHT due to time constraints and lack of momentum."
+    },
+    "rationale": "BPCL’s BUY signal at 318.10 lacks conviction due to choppy tape, weak follow-through, and late-session timing. The 12:45 hammer candle failed to sustain above 318.20, and the RSI (57.79) is not overbought. While the reward:risk is 2.5, the target (326.09) is 3.75 ATR away with only 156 minutes left, making it infeasible without a breakout above 318.50 with volume > 1.2M. Default to SKIP.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
