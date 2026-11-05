@@ -1,20 +1,20 @@
 {
-  "signal_id": "20261105-124124-BAJAJ-AUTO",
-  "generated_at": "2026-11-05T12:41:24.380788+05:30",
-  "nifty_ltp": 24425.15,
+  "signal_id": "20261105-124335-BAJAJ-AUTO",
+  "generated_at": "2026-11-05T12:43:35.742268+05:30",
+  "nifty_ltp": 24424.95,
   "candidates": [
     {
       "ticker": "BAJAJ-AUTO",
       "signal": "BUY",
-      "ltp": 10671.0,
-      "stop": 10614.0,
-      "target": 10813.5,
+      "ltp": 10670.0,
+      "stop": 10613.0,
+      "target": 10812.5,
       "qty": 8,
       "indicators": {
         "rsi": 50.58,
         "atr": 37.9991,
         "atr_5m": 23.5575,
-        "vwap": 10632.82,
+        "vwap": 10632.97,
         "vol_ratio": 2.5
       },
       "scout_reason": "NIFTY 50 +1.94% overextended for BUY; size cut 50%",
@@ -174,16 +174,16 @@
         [
           "12:40",
           10663.0,
-          10671.0,
+          10679.0,
           10663.0,
           10669.0,
-          954
+          2262
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
-      "outcome_reason": "DISTRIBUTION: heaviest volume bar (26462) in last 6 candles at 12:30 closed down at 10657, supplying into highs against BUY direction.",
-      "outcome_at": "2026-11-05T12:41:29.454554+05:30"
+      "outcome_reason": "DISTRIBUTION: heaviest volume bar (22432) in last 6 candles closed near low (close 10670, low 10669) indicating supply into highs against BUY direction",
+      "outcome_at": "2026-11-05T12:43:40.625274+05:30"
     }
   ]
 }
