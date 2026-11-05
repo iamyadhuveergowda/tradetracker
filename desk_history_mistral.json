@@ -1591,5 +1591,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261105-124552-TCS",
+    "signal_time": "2026-11-05T12:45:52+05:30",
+    "judged_at": "2026-11-05T12:46:17+05:30",
+    "age_min": 0.4,
+    "ticker": "TCS",
+    "action": "BUY",
+    "entry": 2480.7,
+    "stop": 2464.77,
+    "target": 2520.52,
+    "qty": 30,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "Valid only on a break above 2483.0 with follow-through volume > 100k",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 50.89 indicates neutral momentum; ATR buffer (1.5x ATR) stop is tight for a late-session entry. The 12:45 candle closed at 2480.7 with weak volume (19.5k) and no clear breakout structure. The 12:40 candle's high (2483.0) was not decisively breached, and the 12:45 candle's low (2479.8) suggests indecision. The target (2520.52) is 3.75x ATR (~42.5 points) away, requiring a strong move in the remaining 165 minutes (15.3 points/minute). The 12:40-12:45 candles show choppy action with no clear trend continuation.",
+      "sentiment": "No headline information available. Volume behavior is inconsistent: the 12:40 candle (107k) was strong but lacked follow-through, while the 12:45 candle (19.5k) was anemic. Sector-wide prints are not visible in the data, but the NIFTY's +1.98% overextension (per scout) suggests caution rather than FOMO.",
+      "macro": "Late-session entries require exceptional structure, especially in a +1.98% NIFTY rally. The time-to-close (165 minutes) is insufficient for a 3.75x ATR move unless the index accelerates sharply, which is unlikely without a catalyst. The trade direction (BUY) aligns with the index tape, but the lack of momentum in TCS relative to NIFTY is concerning.",
+      "risk": "Reward:risk is 2.5:1, but the stop distance (1.5x ATR) is too tight for a late-session trade. The target is feasible only if TCS decouples sharply from NIFTY, which is unlikely without a catalyst. No results risk, but the lack of volume follow-through increases slippage risk. The 12:45 candle's close (2480.7) is near the 12:40 high (2483.0), suggesting a potential reversal rather than continuation."
+    },
+    "rationale": "TCS lacks a clean breakout structure, volume follow-through, and momentum to justify a late-session BUY. The target is ambitious for the remaining time (165 minutes), and the stop is too tight. Requires a break above 2483.0 with volume > 100k to reconsider, but even then, the risk-reward is skewed by the time constraint.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
