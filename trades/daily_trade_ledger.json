@@ -1614,7 +1614,7 @@
     "ticker": "BRITANNIA",
     "action": "BUY",
     "qty": 13,
-    "remaining_qty": 13,
+    "remaining_qty": 0,
     "requested_qty": 13,
     "locked_margin_per_share": 996.14,
     "partial_booked": false,
@@ -1625,21 +1625,26 @@
     "open": 4980.6,
     "high": 4991.2,
     "low": 4980.6,
-    "close": 4987.7,
+    "close": 4984.4,
     "time": "11:12:34",
-    "status": "OPEN ⏳",
-    "exit_price": null,
-    "net_pnl": 0.0,
+    "status": "LOSS 🔴",
+    "exit_price": 4984.4,
+    "net_pnl": -22.09,
     "rationale": "All hard gates cleared: target distance 88.58 pts = 3.78 ATR (<4.5 ATR), qty 13 ≥ 1, stop 4945.37 < entry (correct side), entry deviation from prev close 0.70 % (<10 %), macro regime (nifty +1.74 %) allows BUY. No vetoes triggered: entry 4980.8 is below vwap+1.5 ATR (4994.09+35.43=5029.52), so not a CHASE; target 88.58 pts < expected travel 187.01 pts (TIME_DECAY OK); stop not within 1 ATR of repeatedly tested levels (STOP_IN_NOISE OK); no contradictory news, no upcoming event, no desk veto, no ",
     "events": [
       {
         "time": "2026-11-05T11:12:34+05:30",
         "type": "ENTRY",
         "text": "PAPER BUY 13 @ ₹4980.70"
+      },
+      {
+        "time": "2026-11-05T15:10:17+05:30",
+        "type": "EXIT",
+        "text": "15:10 square-off: 13 @ ₹4984.40, net ₹-22.09"
       }
     ],
     "mode": "PAPER",
-    "last_price": 4987.7,
+    "last_price": 4984.4,
     "atr": 23.6222,
     "target_booked": false,
     "breakeven_set": false,
@@ -1650,11 +1655,22 @@
     "stop_atr_mult": 1.5,
     "rvol": 1.28,
     "rule_version": "v13.4",
-    "entry_brokerage_remaining": 20.0,
-    "charges": {},
-    "pnl_by_date": {},
+    "entry_brokerage_remaining": 0.0,
+    "charges": {
+      "brokerage": 40.0,
+      "exchange": 3.98,
+      "sebi": 0.13,
+      "stt": 16.2,
+      "stamp": 1.94,
+      "gst": 7.94,
+      "total": 70.19
+    },
+    "pnl_by_date": {
+      "2026-11-05": -22.09
+    },
     "orders": {},
-    "breakeven_price": 4988.22
+    "breakeven_price": 4988.22,
+    "exit_time": "2026-11-05T15:10:17+05:30"
   },
   {
     "trade_id": "20261105115228-INFY",
@@ -1662,7 +1678,7 @@
     "ticker": "INFY",
     "action": "BUY",
     "qty": 52,
-    "remaining_qty": 52,
+    "remaining_qty": 0,
     "requested_qty": 52,
     "locked_margin_per_share": 232.38,
     "partial_booked": false,
@@ -1673,21 +1689,26 @@
     "open": 1159.5,
     "high": 1161.9,
     "low": 1159.1,
-    "close": 1164.8,
+    "close": 1165.0,
     "time": "11:52:28",
-    "status": "OPEN ⏳",
-    "exit_price": null,
-    "net_pnl": 0.0,
+    "status": "WIN 🟢",
+    "exit_price": 1165.0,
+    "net_pnl": 92.52,
     "rationale": "TARGET_CAP cleared: target distance 23.45 points = 3.75 ATR (<4.5 ATR); GHOST cleared: qty 52≥1; CORRUPT_QUOTE cleared: entry 2.94% away from prev_close (≤10%); WRONG_SIDE_STOP cleared: stop 1152.02 < entry 1161.4; REGIME_LOCK cleared for BUY (nifty_day_pct 1.89% >0.25 only blocks SELL); CHASE cleared: entry 1161.4 ≤ VWAP+1.5·ATR (1170.17); EXHAUSTION, DISTRIBUTION, INTO_WALL, NEWS_CONTRADICTION, STOP_IN_NOISE all absent; EVENT_RISK_UPCOMING null; DESK_VETO null; TIME_DECAY cleared: target dista",
     "events": [
       {
         "time": "2026-11-05T11:52:28+05:30",
         "type": "ENTRY",
         "text": "PAPER BUY 52 @ ₹1161.90"
+      },
+      {
+        "time": "2026-11-05T15:10:18+05:30",
+        "type": "EXIT",
+        "text": "15:10 square-off: 52 @ ₹1165.00, net ₹92.52"
       }
     ],
     "mode": "PAPER",
-    "last_price": 1164.8,
+    "last_price": 1165.0,
     "atr": 6.2528,
     "target_booked": false,
     "breakeven_set": false,
@@ -1698,10 +1719,21 @@
     "stop_atr_mult": 1.5,
     "rvol": 1.26,
     "rule_version": "v13.4",
-    "entry_brokerage_remaining": 20.0,
-    "charges": {},
-    "pnl_by_date": {},
+    "entry_brokerage_remaining": 0.0,
+    "charges": {
+      "brokerage": 40.0,
+      "exchange": 3.71,
+      "sebi": 0.12,
+      "stt": 15.14,
+      "stamp": 1.81,
+      "gst": 7.89,
+      "total": 68.68
+    },
+    "pnl_by_date": {
+      "2026-11-05": 92.52
+    },
     "orders": {},
-    "breakeven_price": 1163.67
+    "breakeven_price": 1163.67,
+    "exit_time": "2026-11-05T15:10:18+05:30"
   }
 ]
