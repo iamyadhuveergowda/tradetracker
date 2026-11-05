@@ -1,23 +1,23 @@
 {
-  "signal_id": "20261105-133609-CIPLA",
-  "generated_at": "2026-11-05T13:36:09.131639+05:30",
-  "nifty_ltp": 24500.15,
+  "signal_id": "20261105-133837-CIPLA",
+  "generated_at": "2026-11-05T13:38:37.628720+05:30",
+  "nifty_ltp": 24514.75,
   "candidates": [
     {
       "ticker": "CIPLA",
       "signal": "BUY",
-      "ltp": 1399.1,
-      "stop": 1393.48,
-      "target": 1413.14,
+      "ltp": 1398.6,
+      "stop": 1392.9,
+      "target": 1412.84,
       "qty": 70,
       "indicators": {
         "rsi": 58.62,
-        "atr": 3.7439,
+        "atr": 3.7979,
         "atr_5m": 2.5099,
-        "vwap": 1397.46,
+        "vwap": 1397.51,
         "vol_ratio": 3.17
       },
-      "scout_reason": "NIFTY 50 +2.25% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +2.31% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "12:00",
@@ -175,15 +175,15 @@
           "13:35",
           1399.3,
           1400.0,
-          1398.4,
-          1398.4,
-          14709
+          1398.3,
+          1399.4,
+          27003
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
-      "outcome_reason": "REGIME_LOCK: Nifty day move +2.25% (above +2.5% threshold), rejecting all BUYs in a running index tape.",
-      "outcome_at": "2026-11-05T13:36:16.989645+05:30"
+      "outcome_reason": "DISTRIBUTION: heaviest volume bar in last 6 candles at 13:20 with volume 68941 closed at 1395.6, below entry 1398.6, indicating supply against BUY",
+      "outcome_at": "2026-11-05T13:38:44.653309+05:30"
     }
   ]
 }
