@@ -1510,5 +1510,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261105-113734-HEROMOTOCO",
+    "signal_time": "2026-11-05T11:37:34+05:30",
+    "judged_at": "2026-11-05T11:38:04+05:30",
+    "age_min": 0.5,
+    "ticker": "HEROMOTOCO",
+    "action": "BUY",
+    "entry": 5510.0,
+    "stop": 5472.14,
+    "target": 5604.64,
+    "qty": 13,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "Valid only on a break above 5519.0 with follow-through volume > 30k",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 62.74 suggests moderate overbought conditions, but the 11:30 candle (5504.0-5515.0) shows a bullish engulfing pattern with high volume (27963), indicating short-term momentum. However, the 11:35 candle (5509.5-5511.5) is a tight range with low volume (2930), signaling potential exhaustion. ATR buffer (stop at 5472.14) is tight (1.5 ATR), and the target (5604.64) is 3.75 ATR away—aggressive for the remaining 233 minutes (15:30 close).",
+      "sentiment": "No headline information available. Volume behavior shows a spike at 10:50 (37040) and 11:30 (27963) but tapers off sharply afterward, suggesting profit-taking or hesitation. Sector-wide prints are not visible in the provided data, but the lack of follow-through volume in the last two candles raises caution.",
+      "macro": "NIFTY is +1.87% at 24409.5, overextended for a late-session BUY entry. Late-session entries require exceptional structure, and this setup lacks it. The index is likely consolidating or preparing for a pullback, making a directional bet risky without a clear catalyst.",
+      "risk": "Reward:risk is 2.5, but the stop distance (1.5 ATR) is too tight for the volatility implied by the recent candle ranges (e.g., 11:30 candle range: 5515.0 - 5500.5 = 14.5, or ~0.57 ATR). No results risk, but the feasibility of hitting the target in 233 minutes is questionable given the lack of momentum and tight liquidity. Feasibility is not explicitly marked as INFEASIBLE, but the structure is weak for a GO."
+    },
+    "rationale": "HEROMOTOCO shows a bullish engulfing candle at 11:30 with high volume, but the subsequent lack of follow-through and tight range at 11:35 undermines the setup. The RSI is moderately overbought, and the stop is too close for the implied volatility. Late-session entries in an overextended NIFTY (+1.87%) require stronger confirmation, which is absent here. Default to SKIP unless a break above 5519.0 with volume > 30k materializes, signaling renewed momentum.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
