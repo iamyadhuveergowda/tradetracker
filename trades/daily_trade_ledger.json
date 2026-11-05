@@ -1607,5 +1607,53 @@
     "orders": {},
     "breakeven_price": 11754.11,
     "exit_time": "2026-11-04T15:10:48+05:30"
+  },
+  {
+    "trade_id": "20261105111234-BRITANNIA",
+    "date": "2026-11-05",
+    "ticker": "BRITANNIA",
+    "action": "BUY",
+    "qty": 13,
+    "remaining_qty": 13,
+    "requested_qty": 13,
+    "locked_margin_per_share": 996.14,
+    "partial_booked": false,
+    "entry": 4980.7,
+    "sl": 4945.27,
+    "initial_sl": 4945.27,
+    "tgt": 5069.28,
+    "open": 4980.6,
+    "high": 4991.2,
+    "low": 4980.6,
+    "close": 4990.0,
+    "time": "11:12:34",
+    "status": "OPEN ⏳",
+    "exit_price": null,
+    "net_pnl": 0.0,
+    "rationale": "All hard gates cleared: target distance 88.58 pts = 3.78 ATR (<4.5 ATR), qty 13 ≥ 1, stop 4945.37 < entry (correct side), entry deviation from prev close 0.70 % (<10 %), macro regime (nifty +1.74 %) allows BUY. No vetoes triggered: entry 4980.8 is below vwap+1.5 ATR (4994.09+35.43=5029.52), so not a CHASE; target 88.58 pts < expected travel 187.01 pts (TIME_DECAY OK); stop not within 1 ATR of repeatedly tested levels (STOP_IN_NOISE OK); no contradictory news, no upcoming event, no desk veto, no ",
+    "events": [
+      {
+        "time": "2026-11-05T11:12:34+05:30",
+        "type": "ENTRY",
+        "text": "PAPER BUY 13 @ ₹4980.70"
+      }
+    ],
+    "mode": "PAPER",
+    "last_price": 4980.7,
+    "atr": 23.6222,
+    "target_booked": false,
+    "breakeven_set": false,
+    "mfe_r": 0.0,
+    "mae_r": 0.0,
+    "size_tag": "overextended_halfsize",
+    "vol_ratio": 2.82,
+    "stop_atr_mult": 1.5,
+    "rvol": 1.28,
+    "rule_version": "v13.4",
+    "entry_brokerage_remaining": 20.0,
+    "charges": {},
+    "pnl_by_date": {},
+    "orders": {},
+    "breakeven_price": 4988.22
   }
 ]
