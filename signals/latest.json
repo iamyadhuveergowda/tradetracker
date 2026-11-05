@@ -1,23 +1,23 @@
 {
-  "signal_id": "20261105-121628-HEROMOTOCO",
-  "generated_at": "2026-11-05T12:16:28.339560+05:30",
-  "nifty_ltp": 24414.1,
+  "signal_id": "20261105-121842-HEROMOTOCO",
+  "generated_at": "2026-11-05T12:18:42.150387+05:30",
+  "nifty_ltp": 24423.65,
   "candidates": [
     {
       "ticker": "HEROMOTOCO",
       "signal": "BUY",
-      "ltp": 5499.5,
-      "stop": 5464.47,
-      "target": 5587.08,
+      "ltp": 5497.0,
+      "stop": 5461.97,
+      "target": 5584.58,
       "qty": 14,
       "indicators": {
         "rsi": 53.97,
         "atr": 23.354,
         "atr_5m": 11.397,
-        "vwap": 5497.89,
+        "vwap": 5497.86,
         "vol_ratio": 3.07
       },
-      "scout_reason": "NIFTY 50 +1.89% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +1.93% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "10:40",
@@ -174,16 +174,16 @@
         [
           "12:15",
           5495.5,
-          5499.5,
-          5495.5,
-          5499.5,
-          1452
+          5501.5,
+          5493.5,
+          5496.0,
+          6332
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
-      "outcome_reason": "DISTRIBUTION: heaviest volume bar (12:10) volume 36752 printed supply into highs against BUY direction",
-      "outcome_at": "2026-11-05T12:16:32.987532+05:30"
+      "outcome_reason": "DISTRIBUTION: heaviest volume bar in last 6 candles at 12:10 has volume 36752 with close 5495.5 below entry 5497, indicating supply against BUY direction.",
+      "outcome_at": "2026-11-05T12:18:48.103001+05:30"
     }
   ]
 }
