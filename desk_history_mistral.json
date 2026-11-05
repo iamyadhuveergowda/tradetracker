@@ -1672,5 +1672,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261105-130752-TITAN",
+    "signal_time": "2026-11-05T13:07:52+05:30",
+    "judged_at": "2026-11-05T13:08:27+05:30",
+    "age_min": 0.6,
+    "ticker": "TITAN",
+    "action": "BUY",
+    "entry": 4825.9,
+    "stop": 4792.31,
+    "target": 4909.89,
+    "qty": 14,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 64.08 suggests moderate overbought conditions, but not extreme. The last 5-minute candle (13:05) shows a doji-like structure with minimal follow-through (close at 4825.5 vs. high of 4835.0), indicating indecision. The 12:55 candle had a strong volume spike (63,457 vs. prior 5-13k), but the 13:00-13:05 candles show fading momentum with volume dropping to 7,043. ATR buffer (stop at 4792.31) is tight (1.5 ATR), and the target (4909.89) is 3.75 ATR away—requiring a strong, sustained move in the remaining 143 minutes (13:07 to 15:30). No clear breakout or breakdown structure is visible.",
+      "sentiment": "No headline information available. Volume behavior shows a late-session spike at 12:55, but the follow-through is weak. Sector-wide prints are not visible in the data, but the lack of volume on the 13:00-13:05 candles suggests caution among participants.",
+      "macro": "NIFTY is +2.06% at 24,453.5, which is overextended for a late-session BUY entry. Late-session entries require exceptional structure, and this setup lacks it. The index tape is not supportive of a directional bias in TITAN without a broader breakout.",
+      "risk": "Stop distance is tight (1.5 ATR), and the target is ambitious (3.75 ATR) given the time left (143 minutes). No results risk is present, but the reward:risk of 2.5 is misleading without confirmation of follow-through. Feasibility is not flagged, but the lack of momentum and weak volume on the last two candles make this a high-risk setup."
+    },
+    "rationale": "TITAN’s BUY signal at 4825.9 lacks confirmation with weak volume follow-through and indecisive candle structure. The late-session entry in an overextended NIFTY (+2.06%) is not supported by macro or technical alignment. The tight stop (1.5 ATR) and ambitious target (3.75 ATR) further reduce feasibility. SKIP due to lack of conviction in the setup.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
