@@ -1,20 +1,20 @@
 {
-  "signal_id": "20261105-113734-HEROMOTOCO",
-  "generated_at": "2026-11-05T11:37:34.223909+05:30",
-  "nifty_ltp": 24409.5,
+  "signal_id": "20261105-113949-HEROMOTOCO",
+  "generated_at": "2026-11-05T11:39:49.605761+05:30",
+  "nifty_ltp": 24408.75,
   "candidates": [
     {
       "ticker": "HEROMOTOCO",
       "signal": "BUY",
-      "ltp": 5510.0,
-      "stop": 5472.14,
-      "target": 5604.64,
+      "ltp": 5509.5,
+      "stop": 5471.64,
+      "target": 5604.14,
       "qty": 13,
       "indicators": {
         "rsi": 62.74,
         "atr": 25.2367,
         "atr_5m": 13.9097,
-        "vwap": 5498.31,
+        "vwap": 5498.38,
         "vol_ratio": 2.09
       },
       "scout_reason": "NIFTY 50 +1.87% overextended for BUY; size cut 50%",
@@ -176,14 +176,14 @@
           5509.5,
           5511.5,
           5509.0,
-          5509.5,
-          2930
+          5510.0,
+          5553
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
-      "outcome_reason": "INTO_WALL: entry 5510.0 is within 0.5*ATR (12.62) of recent swing high 5515.0, risking immediate wall",
-      "outcome_at": "2026-11-05T11:37:38.969734+05:30"
+      "outcome_reason": "REGIME_LOCK: Nifty day % +1.87 > +0.25, rejecting all BUYs in a running index tape.",
+      "outcome_at": "2026-11-05T11:39:57.597048+05:30"
     }
   ]
 }
