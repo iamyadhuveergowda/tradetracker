@@ -1,23 +1,23 @@
 {
-  "signal_id": "20261105-124552-TCS",
-  "generated_at": "2026-11-05T12:45:52.612027+05:30",
-  "nifty_ltp": 24434.8,
+  "signal_id": "20261105-124800-TCS",
+  "generated_at": "2026-11-05T12:48:00.640926+05:30",
+  "nifty_ltp": 24432.8,
   "candidates": [
     {
       "ticker": "TCS",
       "signal": "BUY",
-      "ltp": 2480.7,
-      "stop": 2464.77,
-      "target": 2520.52,
+      "ltp": 2480.9,
+      "stop": 2464.97,
+      "target": 2520.72,
       "qty": 30,
       "indicators": {
         "rsi": 50.89,
         "atr": 10.6185,
         "atr_5m": 4.7474,
-        "vwap": 2491.39,
+        "vwap": 2491.27,
         "vol_ratio": 3.45
       },
-      "scout_reason": "NIFTY 50 +1.98% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +1.97% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "11:10",
@@ -175,15 +175,15 @@
           "12:45",
           2480.9,
           2481.4,
-          2479.8,
-          2480.7,
-          19495
+          2479.1,
+          2480.9,
+          48533
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
-      "outcome_reason": "INTO_WALL: entry 2480.7 is within 0.5*ATR (5.31) of recent swing low 2475.6 (distance 5.1), too close to wall",
-      "outcome_at": "2026-11-05T12:45:57.832415+05:30"
+      "outcome_reason": "scout: omitted from LLM output",
+      "outcome_at": "2026-11-05T12:48:01.352931+05:30"
     }
   ]
 }
