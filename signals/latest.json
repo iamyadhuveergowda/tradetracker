@@ -1,23 +1,23 @@
 {
-  "signal_id": "20261105-130752-TITAN",
-  "generated_at": "2026-11-05T13:07:52.791375+05:30",
-  "nifty_ltp": 24453.5,
+  "signal_id": "20261105-131013-TITAN",
+  "generated_at": "2026-11-05T13:10:13.868870+05:30",
+  "nifty_ltp": 24462.35,
   "candidates": [
     {
       "ticker": "TITAN",
       "signal": "BUY",
-      "ltp": 4825.9,
-      "stop": 4792.31,
-      "target": 4909.89,
+      "ltp": 4825.0,
+      "stop": 4791.41,
+      "target": 4908.99,
       "qty": 14,
       "indicators": {
         "rsi": 64.08,
         "atr": 22.3961,
         "atr_5m": 11.8744,
-        "vwap": 4816.76,
+        "vwap": 4816.8,
         "vol_ratio": 2.93
       },
-      "scout_reason": "NIFTY 50 +2.06% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +2.09% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "11:30",
@@ -176,14 +176,14 @@
           4833.6,
           4835.0,
           4825.0,
-          4825.5,
-          7043
+          4826.0,
+          11231
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
-      "outcome_reason": "INTO_WALL: entry 4825.9 is within 0.5*ATR (11.20) of recent swing high 4830.0, too close to resistance",
-      "outcome_at": "2026-11-05T13:07:57.979444+05:30"
+      "outcome_reason": "INTO_WALL: entry 4825.0 is within 0.5*ATR (11.20) of recent swing high 4835.0",
+      "outcome_at": "2026-11-05T13:10:18.362707+05:30"
     }
   ]
 }
