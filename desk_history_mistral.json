@@ -1537,5 +1537,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261105-115222-INFY",
+    "signal_time": "2026-11-05T11:52:22+05:30",
+    "judged_at": "2026-11-05T11:52:52+05:30",
+    "age_min": 0.5,
+    "ticker": "INFY",
+    "action": "BUY",
+    "entry": 1161.4,
+    "stop": 1152.02,
+    "target": 1184.85,
+    "qty": 52,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "Valid only on a break above 1163.80 with follow-through volume > 200k",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 56.07 is neutral; ATR buffer (1.5x) stop suggests tight risk. Last 5m candle (11:50) is a doji with no follow-through, indicating indecision. No clear momentum breakout; 11:20 candle shows a sharp drop to 1158.4 but failed to close below 1160. Late-session entries require stronger structure.",
+      "sentiment": "No headline information available. Volume spike at 11:45 (233k) suggests some interest, but no sustained follow-through. Sector-wide prints not visible in data; tape shows choppy, low-volume prints post-11:45.",
+      "macro": "NIFTY is +1.89% overextended, but late-session entries (218 mins left) demand exceptional structure. BUY action misaligned with typical late-session consolidation behavior; index may seek mean reversion.",
+      "risk": "Results risk: none. Stop distance (1.5 ATR) is tight; target (3.75 ATR) is feasible in time (218 mins), but reward:risk (2.5) is marginal for a late-session entry. Feasibility: empty, but structure is weak."
+    },
+    "rationale": "Weak late-session structure, no follow-through, and marginal reward:risk (2.5) make this a high-risk entry. Requires a break above 1163.80 with volume > 200k to reconsider. Default to SKIP.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
