@@ -1618,5 +1618,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261105-125004-SBILIFE",
+    "signal_time": "2026-11-05T12:50:04+05:30",
+    "judged_at": "2026-11-05T12:50:31+05:30",
+    "age_min": 0.4,
+    "ticker": "SBILIFE",
+    "action": "BUY",
+    "entry": 1734.2,
+    "stop": 1724.68,
+    "target": 1758.0,
+    "qty": 51,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 63.75 suggests moderate overbought conditions, not extreme. The last 5-minute candle (12:45) closed lower than its open (1734.7 vs. 1738.5) after a sharp spike to 1738.4 in the 12:40 candle, indicating weak follow-through. ATR buffer (stop at 1724.68) is tight relative to the recent volatility spike (1732.6–1738.4 in 12:40–12:45). Candle structure lacks a clean breakout or reversal signal; the 12:40–12:45 range suggests indecision.",
+      "sentiment": "No headline information available. Volume surged in the 12:40 candle (17,316 vs. prior ~3,000–7,000), but the 12:45 candle closed on lower volume (7,737) with a downward drift, signaling potential profit-taking or hesitation. Sector-wide prints are not visible in the data.",
+      "macro": "NIFTY is +2.02% at 24,443.9, but late-session entries (160 minutes to close) require exceptional structure. The trade direction (BUY) aligns with the index tape, but the lack of follow-through in SBILIFE’s candles raises macro misalignment risk.",
+      "risk": "Reward:risk of 2.5 is mathematically appealing, but the stop distance (1.5 ATR) is tight for a late-session entry, and the target (1758.0) requires a 23.8-point move (~1.4% upside) in 160 minutes. Feasibility is **TIGHT** due to time constraints and weak candle structure. No results risk, but the volatility spike in the 12:40 candle suggests elevated intraday noise."
+    },
+    "rationale": "SBILIFE’s BUY signal lacks a clean technical setup, with weak follow-through in the 12:45 candle and no sector-wide confirmation. The late-session timing (160 minutes to close) and tight stop distance (1.5 ATR) amplify risk despite a 2.5x reward:risk ratio. SKIP unless the stock prints a fresh 5-minute high with volume confirmation and NIFTY holds above 24,400.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
