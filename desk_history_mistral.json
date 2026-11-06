@@ -1915,5 +1915,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261106-135150-DRREDDY",
+    "signal_time": "2026-11-06T13:51:50+05:30",
+    "judged_at": "2026-11-06T13:52:51+05:30",
+    "age_min": 1.0,
+    "ticker": "DRREDDY",
+    "action": "BUY",
+    "entry": 1368.9,
+    "stop": 1362.76,
+    "target": 1384.25,
+    "qty": 72,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "Valid only on a break above 1371.30 with volume > 20k and RSI > 60",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI (57.7) is neutral, not overbought. The last 5m candle (13:50) closed near its low (1368.6), forming a bearish engulfing-like structure. The 13:45 candle shows a wide range (1366.7-1370.6) but closed near its high, lacking follow-through. ATR buffer (4.09) is not violated by the stop (1362.76), but the target (1384.25) is 3.75 ATR away—too aggressive for 99 minutes left. No clear momentum breakout; the 13:15-13:20 candles show a failed attempt to sustain above 1370.8.",
+      "sentiment": "No headline information available. Volume spike at 13:15 (21190) and 13:45 (18966) suggests late-session distribution or profit-booking, not accumulation. Sector-wide prints are not visible in the data, but the stock’s relative volume (vol_ratio: 1.63) hints at intraday interest without clear directional consensus.",
+      "macro": "NIFTY is +1.06% at 24797.85, but late-session entries (99 minutes left) require exceptional structure. The stock’s action is detached from the index’s tape; no alignment with the broader market’s late-day momentum. Late-session longs in a single stock without index tailwind are high-risk.",
+      "risk": "Target distance (3.75 ATR) is unfeasible in 99 minutes (feasibility: empty, but target is too distant). Stop distance (1.5 ATR) is reasonable, but the reward:risk (2.5) is misleading without a high-probability setup. No results_risk, but the lack of follow-through and late-session timing amplify risk. Volume spikes are ambiguous—could be short-covering or profit-taking."
+    },
+    "rationale": "SKIP: DRREDDY lacks a clean momentum setup, has ambiguous volume behavior, and the target is unfeasible in the remaining time (99 minutes). The late-session entry without index alignment and weak candle follow-through (e.g., 13:45’s failure to hold above 1370.6) make this a low-conviction trade. Requires a break above 1371.30 with volume > 20k and RSI > 60 to even consider, which is not present.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
