@@ -1861,5 +1861,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261106-112835-CIPLA",
+    "signal_time": "2026-11-06T11:28:35+05:30",
+    "judged_at": "2026-11-06T11:29:01+05:30",
+    "age_min": 0.4,
+    "ticker": "CIPLA",
+    "action": "BUY",
+    "entry": 1404.7,
+    "stop": 1397.42,
+    "target": 1422.89,
+    "qty": 135,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "Valid only on a break above 1408.9 with volume > 30k and RSI > 60",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI (53.52) is neutral, not overbought. The last 5-minute candle (11:25) closed at 1404.7, below the entry (1404.7) and target (1422.89). The 11:20 candle shows a sharp drop to 1402.1, indicating weak follow-through. ATR buffer (4.85) suggests a tight stop (1397.42) and a distant target (3.75 ATR away). No clear momentum or breakout structure; the 11:15 candle’s low (1403.3) was not followed through. Candle structure lacks conviction for a late-session entry.",
+      "sentiment": "No headline information available. Volume spike at 11:25 (3162) is low relative to earlier prints (e.g., 11:20 at 36331), suggesting lack of conviction. Sector-wide prints (PHARMA) are not visible in the data, but the tape shows no clear sector-wide momentum.",
+      "macro": "NIFTY is at 24612.5, but the late-session entry (11:28) requires exceptional structure. With 242 minutes left, the trade direction (BUY) aligns with the index tape only if CIPLA shows a strong breakout. Late-session entries are risky without a clear catalyst or momentum.",
+      "risk": "Reward:risk (2.5) is mathematically favorable, but the target (1422.89) is 3.75 ATR away, which is aggressive for the remaining time (242 minutes). Stop distance (1.5 ATR) is tight, and the trade lacks a clear trigger for entry. No results risk (empty field), but the lack of follow-through and weak volume make this a high-risk setup."
+    },
+    "rationale": "CIPLA’s BUY signal at 1404.7 lacks technical conviction, with weak follow-through, low volume, and no clear momentum. The late-session entry (11:28) is misaligned with the tape’s structure, and the target is too distant for the remaining time. SKIP unless a break above 1408.9 with volume > 30k and RSI > 60 materializes, which would justify reassessment.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
