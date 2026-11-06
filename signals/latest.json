@@ -1,14 +1,14 @@
 {
-  "signal_id": "20261106-113554-HDFCLIFE",
-  "generated_at": "2026-11-06T11:35:54.918994+05:30",
-  "nifty_ltp": 24612.95,
+  "signal_id": "20261106-113809-HDFCLIFE",
+  "generated_at": "2026-11-06T11:38:09.271445+05:30",
+  "nifty_ltp": 24622.7,
   "candidates": [
     {
       "ticker": "HDFCLIFE",
       "signal": "BUY",
-      "ltp": 547.3,
-      "stop": 543.27,
-      "target": 557.37,
+      "ltp": 548.0,
+      "stop": 543.97,
+      "target": 558.07,
       "qty": 244,
       "indicators": {
         "rsi": 51.33,
@@ -174,16 +174,16 @@
         [
           "11:35",
           547.6,
-          548.0,
+          548.35,
           547.3,
-          547.75,
-          1842
+          548.05,
+          10866
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
-      "outcome_reason": "DISTRIBUTION: heavy volume 493212 at 11:20 on down candle supplies into highs against BUY direction",
-      "outcome_at": "2026-11-06T11:35:58.844828+05:30"
+      "outcome_reason": "DISTRIBUTION: heaviest volume bar in last 6 candles (11:20) closed at 545.9 below entry 548, showing strong sell pressure against BUY",
+      "outcome_at": "2026-11-06T11:38:12.950388+05:30"
     }
   ]
 }
