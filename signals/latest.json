@@ -1,20 +1,20 @@
 {
-  "signal_id": "20261106-114026-CIPLA",
-  "generated_at": "2026-11-06T11:40:26.030299+05:30",
-  "nifty_ltp": 24610.0,
+  "signal_id": "20261106-114250-CIPLA",
+  "generated_at": "2026-11-06T11:42:50.654268+05:30",
+  "nifty_ltp": 24613.1,
   "candidates": [
     {
       "ticker": "CIPLA",
       "signal": "BUY",
-      "ltp": 1403.1,
-      "stop": 1395.92,
-      "target": 1421.04,
+      "ltp": 1402.7,
+      "stop": 1395.52,
+      "target": 1420.64,
       "qty": 137,
       "indicators": {
         "rsi": 52.92,
         "atr": 4.7844,
         "atr_5m": 2.9055,
-        "vwap": 1400.15,
+        "vwap": 1400.16,
         "vol_ratio": 5.73
       },
       "scout_reason": "NIFTY BULLISH, sector PHARMA BULLISH",
@@ -174,16 +174,16 @@
         [
           "11:40",
           1403.5,
-          1403.5,
-          1403.1,
-          1403.5,
-          507
+          1403.7,
+          1402.3,
+          1402.6,
+          3593
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
-      "outcome_reason": "DISTRIBUTION: heaviest volume bar in last 6 candles (73620 at 11:35) showed supply into highs with close (1403.5) below high (1404.1), opposing BUY direction; STOP_IN_NOISE: stop 1395.92 is within 1 A",
-      "outcome_at": "2026-11-06T11:40:31.906031+05:30"
+      "outcome_reason": "DISTRIBUTION: heaviest volume bar (73620) at 11:35 shows supply into highs against BUY direction",
+      "outcome_at": "2026-11-06T11:42:54.295079+05:30"
     }
   ]
 }
