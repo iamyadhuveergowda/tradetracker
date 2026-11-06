@@ -688,8 +688,8 @@
       "risk": "Stop at 1397.42 represents 1.5 ATR, while the target of 1422.89 sits 3.75 ATR away. Demanding a 3.75 ATR upside expansion within the remaining 242 minutes immediately after heavy sell-volume bars carries poor execution probability. Results risk is empty; feasibility is empty."
     },
     "rationale": "CIPLA attempted a bounce to 1404.7 on negligible volume following heavy distribution at 11:15-11:20. Reaching 1422.89 (3.75 ATR away) across 242 minutes against recent tape supply is low probability; SKIP.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.87,
+    "outcome_at": "2026-11-06T23:01:23+05:30"
   }
 ]
