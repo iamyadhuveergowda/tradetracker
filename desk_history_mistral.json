@@ -1834,5 +1834,32 @@
     "outcome": "STOP",
     "outcome_r": -1.0,
     "outcome_at": "2026-11-05T23:47:34+05:30"
+  },
+  {
+    "signal_id": "20261106-094713-HDFCLIFE",
+    "signal_time": "2026-11-06T09:47:13+05:30",
+    "judged_at": "2026-11-06T09:47:37+05:30",
+    "age_min": 0.4,
+    "ticker": "HDFCLIFE",
+    "action": "BUY",
+    "entry": 546.85,
+    "stop": 543.22,
+    "target": 555.93,
+    "qty": 271,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 61.48 indicates moderate overbought conditions, not extreme. The last 5-minute candle (09:45) shows a bullish close at 547.9, but the session opened with a gap down and struggled to sustain momentum above 546.85. The 12-candle structure reveals choppy action with no clear breakout or follow-through. ATR buffer (stop at 1.5x ATR) is tight, and the target (555.93) is 3.75x ATR away—unlikely to be reached in 343 minutes without a catalyst. Volume ratio (3.6) is elevated but not exceptional.",
+      "sentiment": "No headline information available. Volume behavior shows a spike at 09:30-09:45 (302,678 to 376,733), but the tape lacks conviction: the last 3 candles (14:55-15:15) show weak follow-through with volume drying up (221 at 15:15). Sector-wide prints (LIFE INSURANCE) are neutral, and the stock is not leading the index tape.",
+      "macro": "NIFTY is bullish, but HDFCLIFE is not participating meaningfully. Late-session entries (343 minutes left) require exceptional structure, which is absent here. The stock is trading in a tight range (537.9-547.9) with no clear directional bias, misaligned with the broader index momentum.",
+      "risk": "Reward:risk of 2.5 is mathematically appealing, but the target (555.93) is 3.75x ATR away—unrealistic in the remaining time. Stop distance (1.5x ATR) is tight, and the stock lacks momentum to justify a GO. No results risk, but the lack of follow-through and weak late-session volume are red flags. Feasibility is empty, but the target distance and time left make this infeasible."
+    },
+    "rationale": "HDFCLIFE lacks the technical momentum, sector leadership, and macro alignment to justify a GO. The RSI is moderately overbought, volume is inconsistent, and the target is unreachable in the remaining session time. Default to SKIP despite neutral sector cues.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
