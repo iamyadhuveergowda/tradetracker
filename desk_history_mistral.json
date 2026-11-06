@@ -1858,9 +1858,9 @@
       "risk": "Reward:risk of 2.5 is mathematically appealing, but the target (555.93) is 3.75x ATR away—unrealistic in the remaining time. Stop distance (1.5x ATR) is tight, and the stock lacks momentum to justify a GO. No results risk, but the lack of follow-through and weak late-session volume are red flags. Feasibility is empty, but the target distance and time left make this infeasible."
     },
     "rationale": "HDFCLIFE lacks the technical momentum, sector leadership, and macro alignment to justify a GO. The RSI is moderately overbought, volume is inconsistent, and the target is unreachable in the remaining session time. Default to SKIP despite neutral sector cues.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "TARGET",
+    "outcome_r": 2.5,
+    "outcome_at": "2026-11-06T23:11:15+05:30"
   },
   {
     "signal_id": "20261106-112835-CIPLA",
@@ -1885,9 +1885,9 @@
       "risk": "Reward:risk (2.5) is mathematically favorable, but the target (1422.89) is 3.75 ATR away, which is aggressive for the remaining time (242 minutes). Stop distance (1.5 ATR) is tight, and the trade lacks a clear trigger for entry. No results risk (empty field), but the lack of follow-through and weak volume make this a high-risk setup."
     },
     "rationale": "CIPLA’s BUY signal at 1404.7 lacks technical conviction, with weak follow-through, low volume, and no clear momentum. The late-session entry (11:28) is misaligned with the tape’s structure, and the target is too distant for the remaining time. SKIP unless a break above 1408.9 with volume > 30k and RSI > 60 materializes, which would justify reassessment.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.87,
+    "outcome_at": "2026-11-06T23:11:15+05:30"
   },
   {
     "signal_id": "20261106-113051-KOTAKBANK",
@@ -1912,9 +1912,9 @@
       "risk": "Reward:risk is 2.5 (target 479.2, stop 467.72), which is mathematically favorable but ignores the time constraint. Stop distance is 1.5 ATR (reasonable), but the target distance is 3.75 ATR, which is tight given only 240 minutes remain. Feasibility is empty, but the target is unlikely to be reached in the time left. No results risk is present."
     },
     "rationale": "KOTAKBANK lacks a clean technical setup, with weak follow-through and choppy momentum. While the reward:risk ratio is mathematically attractive, the late-session timing and lack of tape-driven sentiment make this a high-risk entry. The target of 479.2 is unlikely to be reached in the remaining 240 minutes, and the structure does not justify a GO. Default to SKIP.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "TARGET",
+    "outcome_r": 2.5,
+    "outcome_at": "2026-11-06T23:11:15+05:30"
   },
   {
     "signal_id": "20261106-135150-DRREDDY",
@@ -1939,8 +1939,8 @@
       "risk": "Target distance (3.75 ATR) is unfeasible in 99 minutes (feasibility: empty, but target is too distant). Stop distance (1.5 ATR) is reasonable, but the reward:risk (2.5) is misleading without a high-probability setup. No results_risk, but the lack of follow-through and late-session timing amplify risk. Volume spikes are ambiguous—could be short-covering or profit-taking."
     },
     "rationale": "SKIP: DRREDDY lacks a clean momentum setup, has ambiguous volume behavior, and the target is unfeasible in the remaining time (99 minutes). The late-session entry without index alignment and weak candle follow-through (e.g., 13:45’s failure to hold above 1370.6) make this a low-conviction trade. Requires a break above 1371.30 with volume > 20k and RSI > 60 to even consider, which is not present.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.67,
+    "outcome_at": "2026-11-06T23:11:15+05:30"
   }
 ]
