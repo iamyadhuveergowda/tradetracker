@@ -664,5 +664,32 @@
     "outcome": "CLOSE",
     "outcome_r": 1.21,
     "outcome_at": "2026-11-04T23:29:48+05:30"
+  },
+  {
+    "signal_id": "20261106-112835-CIPLA",
+    "signal_time": "2026-11-06T11:28:35+05:30",
+    "judged_at": "2026-11-06T11:29:05+05:30",
+    "age_min": 0.5,
+    "ticker": "CIPLA",
+    "action": "BUY",
+    "entry": 1404.7,
+    "stop": 1397.42,
+    "target": 1422.89,
+    "qty": 135,
+    "verdict": "SKIP",
+    "confidence": 75,
+    "trigger": "Valid only on a break and 5m close above 1409.0 on expanding buy volume",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI stands neutral at 53.52, but recent candle structure shows supply rejection. The 11:15 and 11:20 bars broke down sharply from 1407.0 to 1402.1, and the current pullback to 1404.7 occurred on weak volume (3,162 vs 36,331 prior), suggesting buying into overhead resistance rather than a clean momentum setup.",
+      "sentiment": "No headline news feed is available. Tape inspection indicates distinct distribution, with heavy volume spikes (27,965 and 36,331) accompanying the drop between 11:15 and 11:25, while the bounce lacks institutional commitment.",
+      "macro": "NIFTY spot is 24612.5 and sector bias is noted as bullish, but stock-level price action is decoupling with local intraday selling.",
+      "risk": "Stop at 1397.42 represents 1.5 ATR, while the target of 1422.89 sits 3.75 ATR away. Demanding a 3.75 ATR upside expansion within the remaining 242 minutes immediately after heavy sell-volume bars carries poor execution probability. Results risk is empty; feasibility is empty."
+    },
+    "rationale": "CIPLA attempted a bounce to 1404.7 on negligible volume following heavy distribution at 11:15-11:20. Reaching 1422.89 (3.75 ATR away) across 242 minutes against recent tape supply is low probability; SKIP.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
