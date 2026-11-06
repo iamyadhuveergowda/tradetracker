@@ -1,15 +1,15 @@
 {
-  "signal_id": "20261106-135150-DRREDDY",
-  "generated_at": "2026-11-06T13:51:50.815559+05:30",
-  "nifty_ltp": 24797.85,
+  "signal_id": "20261106-135343-DRREDDY",
+  "generated_at": "2026-11-06T13:53:43.236720+05:30",
+  "nifty_ltp": 24801.65,
   "candidates": [
     {
       "ticker": "DRREDDY",
       "signal": "BUY",
-      "ltp": 1368.9,
-      "stop": 1362.76,
-      "target": 1384.25,
-      "qty": 72,
+      "ltp": 1369.6,
+      "stop": 1363.46,
+      "target": 1384.95,
+      "qty": 71,
       "indicators": {
         "rsi": 57.7,
         "atr": 4.0944,
@@ -17,7 +17,7 @@
         "vwap": 1365.19,
         "vol_ratio": 1.63
       },
-      "scout_reason": "NIFTY 50 +1.06% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +1.08% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "12:15",
@@ -182,8 +182,8 @@
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
-      "outcome_reason": "STOP_IN_NOISE: stop 1362.76 is within 1.0*ATR (4.0944) of price level ~1365 tested multiple times in recent 5‑min candles; TIME_DECAY: target distance 15.35 exceeds expected travel 10.62 based on rema",
-      "outcome_at": "2026-11-06T13:52:17.398898+05:30"
+      "outcome_reason": "INTO_WALL: entry 1369.6 is within 0.5*ATR (2.05) of session high 1371.4; TIME_DECAY: target distance 15.35 exceeds expected travel 10.41",
+      "outcome_at": "2026-11-06T13:53:47.368499+05:30"
     }
   ]
 }
