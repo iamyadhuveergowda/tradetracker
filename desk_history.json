@@ -745,5 +745,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261109-122100-GRASIM",
+    "signal_time": "2026-11-09T12:21:00+05:30",
+    "judged_at": "2026-11-09T12:21:31+05:30",
+    "age_min": 0.5,
+    "ticker": "GRASIM",
+    "action": "SELL",
+    "entry": 3164.1,
+    "stop": 3188.19,
+    "target": 3103.88,
+    "qty": 40,
+    "verdict": "SKIP",
+    "confidence": 75,
+    "trigger": "Valid only on a break below 3146.90",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI sits at 39.96, but the 5-minute candle structure reflects a sideways consolidation band between 3152 and 3172 rather than an active breakdown. Notably, recent bars show ascending local lows (3152.60 at 12:00, 3155.90 at 12:10, 3160.00 at 12:15, and 3161.50 at 12:20). Entering short at 3164.10 sells the middle of an intraday range without confirmation.",
+      "sentiment": "No headline news feed is available; sentiment is inferred purely from the tape. The 5-minute volume prints show two-way churn, particularly the 88k volume bar at 11:30 with a long lower wick and the 51.6k bar at 12:15, indicating active dip-buying support rather than pure liquidation.",
+      "macro": "NIFTY spot at 24911.75 is flagged bearish, which favors short exposure in theory, but sector scout reports Cement as neutral. With 189 minutes remaining, midday drift can trap low-momentum short setups lacking sector-wide participation.",
+      "risk": "Target distance is 3.75 ATR (60.22 pts to 3103.88) against a stop of 1.50 ATR (24.09 pts at 3188.19). While R:R is mathematically sound at 2.5, capturing 3.75 ATR in 189 minutes out of an indecisive range is an aggressive hurdle. Results risk is empty."
+    },
+    "rationale": "GRASIM is grinding sideways in a 20-point band with micro higher lows forming between 12:00 and 12:20. Selling at 3164.10 lacks momentum confirmation and requires an overly ambitious 3.75 ATR decline in 189 minutes. A short only becomes viable on a confirmed breakdown below the 11:30 low of 3146.90.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
