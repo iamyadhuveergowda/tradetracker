@@ -2293,5 +2293,59 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261109-130533-HEROMOTOCO",
+    "signal_time": "2026-11-09T13:05:33+05:30",
+    "judged_at": "2026-11-09T13:06:15+05:30",
+    "age_min": 0.7,
+    "ticker": "HEROMOTOCO",
+    "action": "SELL",
+    "entry": 5400.5,
+    "stop": 5436.06,
+    "target": 5311.59,
+    "qty": 27,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 45.74 suggests neutral momentum, not overbought or oversold. The last 5-minute candle (13:05) is a small-bodied doji, indicating indecision. The 12:30 candle shows a sharp drop to 5386.0, but the subsequent candles have struggled to sustain momentum below 5400. The setup lacks a clear breakout or breakdown structure, and the entry at 5400.5 is near the recent lows, making it a potential trap. ATR buffer (1.5x) is tight, and the stop-loss at 5436.06 is far from the entry, reducing risk-reward efficiency.",
+      "sentiment": "No headline information available. Volume behavior shows a spike at 12:30 (3324) and 12:40 (6413), but the follow-through is weak. The sector (AUTO) is neutral, and the stock lacks clear sector-wide momentum. The volume ratio (2.74) is average, not exceptional.",
+      "macro": "NIFTY is neutral, and the trade direction (SELL) aligns with the sector's neutral stance. However, the time of day (13:05, 145 minutes to close) is not ideal for late-session entries, especially without a strong macro catalyst or clear technical break. Late-session shorts require exceptional structure, which is absent here.",
+      "risk": "Reward:risk is 2.5, which is decent, but the stop distance (1.5 ATR) is too far from the entry, making the trade vulnerable to noise. The target (5311.59) is reachable in 145 minutes if momentum holds, but the lack of follow-through in the last few candles raises skepticism. No results risk is present."
+    },
+    "rationale": "The setup for HEROMOTOCO lacks a clean technical structure, and the late-session timing does not justify the trade. The indecisive candle at 13:05 and weak follow-through make this a high-risk, low-reward proposition. Default to SKIP.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
+  },
+  {
+    "signal_id": "20261109-130533-HEROMOTOCO",
+    "signal_time": "2026-11-09T13:05:33+05:30",
+    "judged_at": "2026-11-09T13:06:15+05:30",
+    "age_min": 0.7,
+    "ticker": "SBICARD",
+    "action": "BUY",
+    "entry": 1780.3,
+    "stop": 1763.44,
+    "target": 1822.45,
+    "qty": 58,
+    "verdict": "GO",
+    "confidence": 75,
+    "trigger": "Enter at market on confirmation of a close above 1781.3 (13:05 candle close) with volume > 15000.",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 54.26 is neutral but not overbought, suggesting room for upside. The 13:05 candle closed at 1781.3 with a high of 1781.3, showing a potential bullish reversal after a sharp drop to 1776.8 in the 12:35 candle. The 12:35 candle's volume spike (19545) indicates strong bearish rejection, but the 13:00 candle (volume 48100) shows a strong bullish follow-through. The setup is a potential bullish engulfing pattern if the stock closes above 1781.3 with volume confirmation. ATR buffer (1.5x) is reasonable, and the stop-loss at 1763.44 is 1.5 ATR below entry, providing a tight risk management framework.",
+      "sentiment": "No headline information available. Volume behavior is strong, with a notable spike at 12:35 (19545) and 13:00 (48100), suggesting institutional interest. The sector (FINANCIAL SERVICES) is bullish, and the stock is showing follow-through in line with sector trends. The volume ratio (2.71) is solid, supporting the trade thesis.",
+      "macro": "NIFTY is neutral, but the sector (FINANCIAL SERVICES) is bullish, aligning with the BUY action. The time of day (13:05, 145 minutes to close) is not ideal for late-session entries, but the strong volume and sector alignment mitigate some of the timing risk. The trade direction aligns with the macro tape if the stock can sustain momentum.",
+      "risk": "Reward:risk is 2.5, which is favorable. The stop distance (1.5 ATR) is appropriate, and the target (1822.45) is reachable in 145 minutes if momentum continues. No results risk is present. The primary risk is a false breakout, but the volume confirmation at 13:00 reduces this risk."
+    },
+    "rationale": "SBICARD shows a potential bullish reversal with strong volume confirmation and sector alignment. The entry is justified on a close above 1781.3 with volume > 15000, and the risk-reward profile is favorable. The trade is GO with the trigger specified, but the late-session timing requires strict adherence to the entry condition.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
