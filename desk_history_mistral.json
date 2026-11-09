@@ -2266,5 +2266,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261109-130309-BHARTIARTL",
+    "signal_time": "2026-11-09T13:03:09+05:30",
+    "judged_at": "2026-11-09T13:03:50+05:30",
+    "age_min": 0.7,
+    "ticker": "BHARTIARTL",
+    "action": "SELL",
+    "entry": 2048.0,
+    "stop": 2060.65,
+    "target": 2016.37,
+    "qty": 78,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 37.9 suggests neither overbought nor oversold conditions. The last 5-minute candle (13:00) closed at 2047.9, near the entry price of 2048.0, but lacks a clear breakout or breakdown structure. The 12:50 candle shows a strong bullish spike (2043.7 → 2047.2) with high volume (256626), but the follow-through at 13:00 was weak (close at 2047.9 vs. high of 2048.3). ATR buffer (1.5x) is tight for a SELL, and the target (2016.37) is 3.75 ATR away—unlikely to be reached in 147 minutes without a sharp move. Candle structure is inconclusive for a short.",
+      "sentiment": "No headline information available. Volume behavior shows a spike at 12:50 (256626) but tapers off in the 13:00 candle (104486), suggesting exhaustion or lack of follow-through. Telecom sector is labeled NEUTRAL, but tape sentiment is unclear without broader sector prints.",
+      "macro": "NIFTY is NEUTRAL per scout reason, and late-session entries (147 minutes to close) require exceptional structure. A SELL here would need a clear breakdown with high conviction, which is absent. The index tape does not support a directional bias at this juncture.",
+      "risk": "Stop distance (1.5 ATR) is tight for a SELL, and the target (2016.37) is 3.75 ATR away—unrealistic in the remaining time. Reward:risk of 2.5 is theoretically attractive but relies on an improbable sharp move. No results risk identified, but the lack of follow-through and weak candle structure elevates risk. Feasibility is not flagged, but the target distance and time constraints make this a high-risk setup."
+    },
+    "rationale": "SKIP: Weak candle structure, lack of follow-through, and tight stop distance make this SELL unconvincing. The target is unreachable in the remaining time (147 minutes) without a sharp move, and the tape does not support a directional bias. Confidence in the SKIP is high (85) due to the absence of a clean setup.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
