@@ -1,20 +1,20 @@
 {
-  "signal_id": "20261109-135140-SBILIFE",
-  "generated_at": "2026-11-09T13:51:40.254444+05:30",
-  "nifty_ltp": 24924.9,
+  "signal_id": "20261109-135354-SBILIFE",
+  "generated_at": "2026-11-09T13:53:54.498113+05:30",
+  "nifty_ltp": 24942.35,
   "candidates": [
     {
       "ticker": "SBILIFE",
       "signal": "SELL",
-      "ltp": 1733.4,
-      "stop": 1744.66,
-      "target": 1705.26,
+      "ltp": 1735.0,
+      "stop": 1746.26,
+      "target": 1706.86,
       "qty": 87,
       "indicators": {
         "rsi": 37.91,
         "atr": 7.5051,
         "atr_5m": 3.1621,
-        "vwap": 1741.14,
+        "vwap": 1741.06,
         "vol_ratio": 3.63
       },
       "scout_reason": "NIFTY NEUTRAL, sector LIFE INSURANCE NEUTRAL",
@@ -176,14 +176,14 @@
           1735.0,
           1735.0,
           1733.3,
-          1733.7,
-          1503
+          1735.0,
+          9074
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-09T13:51:40.746092+05:30"
+      "outcome_at": "2026-11-09T13:53:55.037360+05:30"
     }
   ]
 }
