@@ -2428,5 +2428,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261109-133042-ITC",
+    "signal_time": "2026-11-09T13:30:42+05:30",
+    "judged_at": "2026-11-09T13:31:28+05:30",
+    "age_min": 0.8,
+    "ticker": "ITC",
+    "action": "SELL",
+    "entry": 279.0,
+    "stop": 280.48,
+    "target": 275.29,
+    "qty": 666,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "Weak candle structure at entry (13:30 candle is a doji with no follow-through, RSI at 45.5 suggests neutral momentum). The last 5-minute candle closed near the low, indicating indecision. ATR buffer (0.9892) is tight, and the stop (280.48) is only 1.5 ATR away, making it vulnerable to a quick reversal. The target (275.29) is 3.75 ATR away, which is a reasonable reward-to-risk (2.51), but the lack of momentum and poor candle structure undermines the setup.",
+      "sentiment": "No headline information available. Volume spike at 13:25 (677707) suggests some distribution, but the lack of follow-through in the 13:30 candle (volume 11875) indicates weak conviction. Sector-wide FMCG prints are not visible in the data, but the NIFTY tape is bearish, which aligns with the trade direction.",
+      "macro": "Late-session entry (13:30, 120 minutes to close) requires exceptional structure. The trade direction (SELL) aligns with the bearish NIFTY tape, but the lack of momentum and poor candle structure make it risky in the closing window. Late-session moves are often driven by profit-booking rather than fresh trends.",
+      "risk": "Results risk is empty, so no earnings-related volatility is a concern. However, the stop is very close (1.5 ATR), and the target is tight given the time remaining (120 minutes). The reward-to-risk is mathematically favorable (2.51), but the execution risk is high due to the weak structure. Feasibility is not flagged, but the target distance (3.75 ATR) in 120 minutes is aggressive for a late-session trade."
+    },
+    "rationale": "ITC's SELL setup is rejected due to poor candle structure, weak momentum (RSI 45.5), and lack of follow-through at the entry time (13:30). While the reward-to-risk (2.51) is mathematically appealing, the late-session timing and indecisive tape make this a high-risk trade. The stop is too close (1.5 ATR), and the target is tight for the remaining time (120 minutes). Default to SKIP despite the bearish NIFTY and sector context.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
