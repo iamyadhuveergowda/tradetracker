@@ -2158,5 +2158,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261109-124603-POWERGRID",
+    "signal_time": "2026-11-09T12:46:03+05:30",
+    "judged_at": "2026-11-09T12:46:40+05:30",
+    "age_min": 0.6,
+    "ticker": "POWERGRID",
+    "action": "SELL",
+    "entry": 258.05,
+    "stop": 259.66,
+    "target": 254.03,
+    "qty": 612,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 45.08 is neutral, not extreme. Candle structure shows choppy action with no clear breakout or breakdown; last 5-minute candle (12:45) is a doji-like indecision bar. ATR buffer (1.0709) is tight, and the stop (259.66) is 1.5 ATR away, which is reasonable but not compelling. The target (254.03) is 3.75 ATR away, offering a 2.5 reward:risk, but the setup lacks momentum or a clean structure for a SELL in this late-stage session (164 minutes left).",
+      "sentiment": "No headline information available. Volume ratio (2.8) is elevated but not exceptional; sector-wide prints in ENERGY are not visible in the data. Follow-through is weak, with no clear directional bias in the last 12 candles.",
+      "macro": "NIFTY is bearish, but late-session entries require exceptional structure. The SELL action on POWERGRID does not align with the broader index tape's momentum or time-of-day dynamics. Late-session shorts are high-risk unless there is a clear breakdown or extreme exhaustion.",
+      "risk": "Results risk is empty, so no earnings-related volatility is a concern. However, the stop distance (1.5 ATR) is tight for a SELL in this context, and the target (254.03) may not be reachable in the remaining 164 minutes given the lack of momentum. Feasibility is empty, but the target distance (3.75 ATR) and time left suggest this is a TIGHT setup. Reward:risk (2.5) is mathematically favorable, but the lack of structure undermines conviction."
+    },
+    "rationale": "POWERGRID's SELL setup lacks momentum, clear candle structure, and sector-wide follow-through. While the reward:risk is mathematically attractive (2.5), the late-session timing (164 minutes left) and absence of a clean breakdown or exhaustion make this a high-risk, low-conviction trade. Default to SKIP due to insufficient structure and alignment with the broader tape.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
