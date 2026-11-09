@@ -1942,5 +1942,59 @@
     "outcome": "CLOSE",
     "outcome_r": 0.67,
     "outcome_at": "2026-11-06T23:11:15+05:30"
+  },
+  {
+    "signal_id": "20261109-103535-WIPRO",
+    "signal_time": "2026-11-09T10:35:35+05:30",
+    "judged_at": "2026-11-09T10:36:22+05:30",
+    "age_min": 0.8,
+    "ticker": "WIPRO",
+    "action": "SELL",
+    "entry": 196.24,
+    "stop": 197.37,
+    "target": 193.42,
+    "qty": 872,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 43.55 suggests neutral momentum; ATR buffer (1.5x) is tight for a SELL setup. The last 5-minute candle (10:35) is a doji, indicating indecision. No clear breakout or breakdown structure visible in the last 12 candles. The entry at 196.24 is near the recent lows (195.60), but the lack of follow-through volume (1785 vs. earlier spikes like 304043) weakens conviction.",
+      "sentiment": "No headline information available. Volume behavior shows sector-wide IT prints are mixed, with no clear directional follow-through. The 10:20-10:30 candles had elevated volume (251915, 304043), but the 10:35 candle volume (1785) is unusually low, suggesting fading interest.",
+      "macro": "NIFTY is bearish per scout reason, but late-session entries (295 minutes left) require exceptional structure. The SELL action aligns with the index tape, but the lack of momentum and weak candle structure make it risky in the current session context.",
+      "risk": "Reward:risk of 2.5 is decent, but the stop distance (1.5 ATR) is tight. Target distance (3.75 ATR) is achievable in 295 minutes, but the lack of follow-through and weak volume raise execution risk. No results risk identified."
+    },
+    "rationale": "SKIP due to weak candle structure, low follow-through volume, and lack of momentum despite bearish NIFTY/IT sector context. The setup lacks conviction for a late-session SELL in WIPRO.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
+  },
+  {
+    "signal_id": "20261109-103535-WIPRO",
+    "signal_time": "2026-11-09T10:35:35+05:30",
+    "judged_at": "2026-11-09T10:36:22+05:30",
+    "age_min": 0.8,
+    "ticker": "CIPLA",
+    "action": "BUY",
+    "entry": 1417.7,
+    "stop": 1409.38,
+    "target": 1438.5,
+    "qty": 59,
+    "verdict": "SKIP",
+    "confidence": 75,
+    "trigger": "Valid only on a break above 1421.40 with volume > 50k",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 61.43 indicates overbought conditions, and the last 5-minute candle (10:35) is a bullish engulfing pattern (1417.2 low to 1418.4 close). However, the 10:30 candle (1416.5-1421.4) shows a strong push higher but lacks confirmation. The entry at 1417.7 is near the 10:30 low, and the stop (1409.38) is 1.5 ATR away, which is tight for a BUY in a bearish NIFTY context.",
+      "sentiment": "No headline information available. Volume behavior is mixed: the 10:20-10:30 candles show a spike (42781), but the 10:35 candle volume (1934) is low. Sector-wide prints are not clearly bullish, and the BUY action contradicts the bearish NIFTY context provided in the scout reason.",
+      "macro": "BUY action is misaligned with the bearish NIFTY tape. Late-session entries (295 minutes left) require exceptional structure, which is absent here. The target (1438.5) is 3.75 ATR away, but the lack of index support makes this high-risk.",
+      "risk": "Reward:risk of 2.5 is decent, but the stop distance (1.5 ATR) is tight, and the target distance (3.75 ATR) may not be reachable in the remaining time without a strong catalyst. No results risk identified, but the bearish macro context is a significant headwind."
+    },
+    "rationale": "SKIP due to misalignment with bearish NIFTY context, weak volume follow-through, and lack of momentum despite a technically bullish candle. A break above 1421.40 with volume > 50k could reconsider, but current structure is insufficient.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
