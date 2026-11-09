@@ -2131,5 +2131,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261109-122100-GRASIM",
+    "signal_time": "2026-11-09T12:21:00+05:30",
+    "judged_at": "2026-11-09T12:21:31+05:30",
+    "age_min": 0.5,
+    "ticker": "GRASIM",
+    "action": "SELL",
+    "entry": 3164.1,
+    "stop": 3188.19,
+    "target": 3103.88,
+    "qty": 40,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 39.96 suggests neither overbought nor oversold conditions. The last 5-minute candle (12:20) is a doji-like structure with minimal range (3161.5-3164.1), indicating indecision. The ATR buffer (16.0591) is not violated by the stop (3188.19), but the target (3103.88) is 3.75 ATR away, which is aggressive for the remaining 189 minutes. No clear breakout or breakdown structure is visible; the sell action is chasing the intraday lows without a defined trigger.",
+      "sentiment": "No headline information available. Volume ratio (2.03) is elevated but not extreme, and sector-wide prints (cement) are neutral per scout reason. The tape shows no follow-through on the sell action; the last 12 candles lack a decisive directional move.",
+      "macro": "NIFTY is bearish, but the time of day (12:21, 189 minutes to close) is late for a short entry without a clear catalyst. Late-session entries require exceptional structure, which is absent here. The sell action does not align with a macro-driven breakdown.",
+      "risk": "Reward:risk is 2.5, but the target distance (3.75 ATR) is tight for the time remaining (189 minutes). Stop distance (1.5 ATR) is reasonable, but the lack of a clear trigger and the indecisive candle structure increase risk. No results risk is present, but the trade lacks conviction."
+    },
+    "rationale": "SKIP: No clean setup for a sell action. The candle structure is indecisive, sentiment lacks follow-through, and the macro environment does not justify a late-session short without a defined trigger. Feasibility is not an issue, but the risk-reward and timing do not warrant a GO.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
