@@ -1742,7 +1742,7 @@
     "ticker": "ICICIBANK",
     "action": "BUY",
     "qty": 90,
-    "remaining_qty": 90,
+    "remaining_qty": 0,
     "requested_qty": 90,
     "locked_margin_per_share": 315.74,
     "partial_booked": false,
@@ -1753,21 +1753,26 @@
     "open": 1575.8,
     "high": 1579.5,
     "low": 1575.1,
-    "close": 1585.7,
+    "close": 1586.9,
     "time": "12:08:10",
-    "status": "OPEN ⏳",
-    "exit_price": null,
-    "net_pnl": 0.0,
+    "status": "WIN 🟢",
+    "exit_price": 1586.9,
+    "net_pnl": 640.18,
     "rationale": "BUY aligns with VWAP (entry 0.23 below VWAP), stop 11.9 points (1.64 ATR) below entry, target 27.26 points (3.75 ATR) well within expected travel 44.07, recent 5‑min candles show higher highs, bullish closes and solid volume, RSI 50.5 neutral, and no hard‑gate or veto rule is triggered",
     "events": [
       {
         "time": "2026-11-09T12:08:10+05:30",
         "type": "ENTRY",
         "text": "PAPER BUY 90 @ ₹1578.70"
+      },
+      {
+        "time": "2026-11-09T15:10:19+05:30",
+        "type": "EXIT",
+        "text": "15:10 square-off: 90 @ ₹1586.90, net ₹640.18"
       }
     ],
     "mode": "PAPER",
-    "last_price": 1585.7,
+    "last_price": 1586.9,
     "atr": 7.268,
     "target_booked": false,
     "breakeven_set": false,
@@ -1778,10 +1783,21 @@
     "stop_atr_mult": 1.5,
     "rvol": 1.51,
     "rule_version": "v13.4",
-    "entry_brokerage_remaining": 20.0,
-    "charges": {},
-    "pnl_by_date": {},
+    "entry_brokerage_remaining": 0.0,
+    "charges": {
+      "brokerage": 40.0,
+      "exchange": 8.75,
+      "sebi": 0.28,
+      "stt": 35.71,
+      "stamp": 4.26,
+      "gst": 8.83,
+      "total": 97.82
+    },
+    "pnl_by_date": {
+      "2026-11-09": 640.18
+    },
     "orders": {},
-    "breakeven_price": 1580.05
+    "breakeven_price": 1580.05,
+    "exit_time": "2026-11-09T15:10:19+05:30"
   }
 ]
