@@ -1996,5 +1996,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261109-112132-ITC",
+    "signal_time": "2026-11-09T11:21:32+05:30",
+    "judged_at": "2026-11-09T11:22:17+05:30",
+    "age_min": 0.7,
+    "ticker": "ITC",
+    "action": "SELL",
+    "entry": 279.25,
+    "stop": 280.83,
+    "target": 275.29,
+    "qty": 624,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 35.21 suggests oversold conditions, but the candle structure at 11:20 (279.20-279.35) is weak with no clear follow-through momentum. The last 5-minute candle closed near its low, lacking conviction for a short entry. ATR buffer (1.0563) is tight, and the stop (280.83) is 1.5 ATR away, which is aggressive for a late-session short. No clear breakout or breakdown pattern is visible in the last 12 candles.",
+      "sentiment": "No headline information available. Volume behavior shows a spike at 10:40 (339,037) and 11:15 (397,753), but the follow-through is inconsistent. FMCG sector prints are not visible in the data, so sentiment cannot be inferred from tape alone. The vol_ratio (2.77) is elevated but not extreme.",
+      "macro": "NIFTY is bearish as per the scout reason, but the time of day (249 minutes to close) is late for a short entry. Late-session entries require exceptional structure, which is absent here. The index tape alignment is not confirmed by the candle data provided.",
+      "risk": "Reward:risk is 2.51, which is attractive, but the stop distance (1.5 ATR) is tight, and the target (275.29) is 3.75 ATR away. Feasibility is not flagged as INFEASIBLE or TIGHT, but the time remaining (249 minutes) is insufficient for a short trade to play out without index volatility. No results risk is present, but late-session shorts are inherently risky due to potential index reversals."
+    },
+    "rationale": "ITC short lacks a clean technical setup, and the late-session timing (249 minutes to close) is unfavorable for a short trade. While the RSI and reward:risk are technically supportive, the absence of follow-through momentum, weak candle structure, and lack of sector-wide confirmation make this a high-risk, low-conviction trade. Default to SKIP.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
