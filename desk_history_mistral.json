@@ -2347,5 +2347,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261109-132041-ADANIENT",
+    "signal_time": "2026-11-09T13:20:41+05:30",
+    "judged_at": "2026-11-09T13:21:17+05:30",
+    "age_min": 0.6,
+    "ticker": "ADANIENT",
+    "action": "SELL",
+    "entry": 2701.5,
+    "stop": 2718.55,
+    "target": 2658.87,
+    "qty": 57,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "Candle structure shows a sharp breakdown at 13:15 (2703.7 → 2695.0), but the 13:20 candle (entry candle) is a doji-like formation with minimal follow-through (close at 2700.0 vs. low of 2699.6). RSI (36.78) is neutral, not extreme, and ATR buffer (11.3687) suggests volatility is moderate. The stop (2718.55) is placed above the recent highs, which is illogical for a SELL setup. The target (2658.87) is 3.75 ATR away, but the last 12 candles show erratic volume spikes (e.g., 39766 at 13:15) without sustained momentum. No clear breakout or breakdown structure.",
+      "sentiment": "No headline information available. Volume behavior is erratic: the 13:15 candle shows a 39766 spike (vs. average ~5000-10000), but the 13:20 candle volume (916) is unusually low for a breakdown. Sector-wide prints are not visible in the data, but the lack of follow-through in volume suggests weak conviction in the move.",
+      "macro": "NIFTY is at 24888.85, and the time remaining (130 minutes) is insufficient for a SELL setup to reach the target (2658.87) without exceptional structure. Late-session entries require a clear index bias or extreme structure, neither of which is present here. The index tape is not explicitly bearish in the last 12 candles of ADANIENT; the breakdown is isolated.",
+      "risk": "Reward:risk is 2.5, which is mathematically appealing, but the stop placement (above recent highs) is nonsensical for a SELL. The target is 3.75 ATR away, but the time remaining (130 minutes) is insufficient to cover this distance given the current volatility (ATR: 11.3687). No results risk is present, but the lack of follow-through and erratic volume make this a high-risk setup. Feasibility is not explicitly marked as INFEASIBLE, but the target distance and time-to-close make it TIGHT at best."
+    },
+    "rationale": "SKIP due to poor candle structure (doji-like entry candle), illogical stop placement, insufficient time-to-close (130 minutes) to reach the target (3.75 ATR away), and weak volume follow-through. The setup lacks conviction despite a mathematically attractive reward:risk ratio.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
