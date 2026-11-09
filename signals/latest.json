@@ -1,20 +1,20 @@
 {
-  "signal_id": "20261109-130533-HEROMOTOCO",
-  "generated_at": "2026-11-09T13:05:33.741720+05:30",
-  "nifty_ltp": 24939.3,
+  "signal_id": "20261109-130757-HEROMOTOCO",
+  "generated_at": "2026-11-09T13:07:57.750993+05:30",
+  "nifty_ltp": 24946.1,
   "candidates": [
     {
       "ticker": "HEROMOTOCO",
       "signal": "SELL",
-      "ltp": 5400.5,
-      "stop": 5436.06,
-      "target": 5311.59,
+      "ltp": 5400.0,
+      "stop": 5435.56,
+      "target": 5311.09,
       "qty": 27,
       "indicators": {
         "rsi": 45.74,
         "atr": 23.7087,
         "atr_5m": 10.2924,
-        "vwap": 5403.05,
+        "vwap": 5403.04,
         "vol_ratio": 2.74
       },
       "scout_reason": "NIFTY NEUTRAL, sector AUTO NEUTRAL",
@@ -176,27 +176,27 @@
           5400.0,
           5402.0,
           5400.0,
-          5402.0,
-          711
+          5401.5,
+          1664
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
-      "outcome_reason": "INTO_WALL: entry 5400.5 is within 0.5*ATR (11.85) of recent swing low 5400.0 (13:00 candle), risking immediate wall",
-      "outcome_at": "2026-11-09T13:05:38.502656+05:30"
+      "outcome_reason": "INTO_WALL: entry 5400.0 within 0.5*ATR (11.85) of recent low 5400.0 (13:00 candle)",
+      "outcome_at": "2026-11-09T13:08:02.342683+05:30"
     },
     {
       "ticker": "SBICARD",
       "signal": "BUY",
-      "ltp": 1780.3,
-      "stop": 1763.44,
-      "target": 1822.45,
+      "ltp": 1776.8,
+      "stop": 1759.94,
+      "target": 1818.95,
       "qty": 58,
       "indicators": {
         "rsi": 54.26,
         "atr": 11.2393,
         "atr_5m": 5.8602,
-        "vwap": 1769.51,
+        "vwap": 1769.52,
         "vol_ratio": 2.71
       },
       "scout_reason": "NIFTY NEUTRAL, sector FINANCIAL SERVICES BULLISH",
@@ -356,16 +356,16 @@
         [
           "13:05",
           1780.3,
-          1781.3,
-          1779.8,
-          1781.3,
-          1368
+          1781.5,
+          1775.6,
+          1776.4,
+          4461
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-09T13:05:38.502678+05:30"
+      "outcome_at": "2026-11-09T13:08:02.342707+05:30"
     }
   ]
 }
