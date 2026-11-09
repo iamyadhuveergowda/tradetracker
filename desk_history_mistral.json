@@ -2023,5 +2023,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261109-114206-HINDUNILVR",
+    "signal_time": "2026-11-09T11:42:06+05:30",
+    "judged_at": "2026-11-09T11:42:36+05:30",
+    "age_min": 0.5,
+    "ticker": "HINDUNILVR",
+    "action": "BUY",
+    "entry": 1999.9,
+    "stop": 1989.1,
+    "target": 2026.9,
+    "qty": 91,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 60.33 suggests neither overbought nor oversold conditions. The last 5-minute candle (11:35-11:40) is a doji with minimal close-to-open movement (2000.4 → 2000.0), indicating indecision. The stock has been in a tight range (1999.3–2003.2) since 11:30, with no clear breakout or breakdown. ATR buffer (7.2013) is not violated, and the stop (1989.1) is 1.5 ATR away, which is reasonable but not compelling. The target (2026.9) is 3.75 ATR away, a 2.5:1 reward-to-risk ratio, but the candle structure lacks conviction for a directional move.",
+      "sentiment": "No headline information available. Volume surged in the 11:35 candle (34,875 vs. prior 5m avg ~14,000), but this appears to be a late-session volume spike without follow-through. Sector-wide FMCG prints are neutral, and the stock is not showing sector leadership. The tape lacks a clear directional bias for HINDUNILVR.",
+      "macro": "NIFTY is neutral, and the stock’s action does not align with the index tape. Late-session entries (228 minutes to close) require exceptional structure, which is absent here. The stock is not participating in a broader late-session rally or decline.",
+      "risk": "No results risk identified. However, the feasibility is not explicitly marked as INFEASIBLE or TIGHT, but the lack of momentum and indecisive candle structure make the trade high-risk. The target (2026.9) is ambitious given the time remaining (228 minutes) and the stock’s recent range-bound behavior."
+    },
+    "rationale": "HINDUNILVR lacks a clean technical setup, with indecisive candles and no clear momentum despite a volume spike. Sentiment is neutral, and the trade does not align with the NIFTY tape or late-session dynamics. The reward-to-risk ratio (2.5:1) is mathematically attractive but structurally unsupported. SKIP due to low conviction in follow-through.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
