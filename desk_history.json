@@ -691,5 +691,59 @@
     "outcome": "CLOSE",
     "outcome_r": 0.87,
     "outcome_at": "2026-11-06T23:01:23+05:30"
+  },
+  {
+    "signal_id": "20261109-103535-WIPRO",
+    "signal_time": "2026-11-09T10:35:35+05:30",
+    "judged_at": "2026-11-09T10:36:24+05:30",
+    "age_min": 0.8,
+    "ticker": "WIPRO",
+    "action": "SELL",
+    "entry": 196.24,
+    "stop": 197.37,
+    "target": 193.42,
+    "qty": 872,
+    "verdict": "SKIP",
+    "confidence": 75,
+    "trigger": "Valid only on a break below 195.60",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI sits at 43.55 indicating mild bearish bias, but the candle structure shows a rebound off the 10:10 low of 195.60 up to 196.74, followed by tight consolidation between 196.15 and 196.56. Entering a short at 196.24 enters directly into support without breakdown confirmation.",
+      "sentiment": "No headline information is available. Tape inspection reveals heavy volume (300k+ shares per bar at 10:25 and 10:30) absorbing downward flow rather than facilitating lower low prints.",
+      "macro": "Direction aligns with the broader bearish NIFTY (spot 24922.7) and weak IT sector, but macro tailwind alone does not justify selling into an intraday base.",
+      "risk": "Target of 193.42 requires a 3.75 ATR extension downward. While 295 minutes remain, entering inside mid-range consolidation against absorption volume creates poor immediate risk-reward around the 197.37 stop (1.5 ATR)."
+    },
+    "rationale": "Despite sector and index macro alignment, WIPRO is holding support above 195.60 with high-volume absorption; skip short entry until 195.60 breaks convincingly.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
+  },
+  {
+    "signal_id": "20261109-103535-WIPRO",
+    "signal_time": "2026-11-09T10:35:35+05:30",
+    "judged_at": "2026-11-09T10:36:24+05:30",
+    "age_min": 0.8,
+    "ticker": "CIPLA",
+    "action": "BUY",
+    "entry": 1417.7,
+    "stop": 1409.38,
+    "target": 1438.5,
+    "qty": 59,
+    "verdict": "SKIP",
+    "confidence": 70,
+    "trigger": "Valid only on a break above 1421.50",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 61.43 confirms upward momentum with constructive higher lows from 1402.50 to 1416.10, but the 10:30 test of 1421.40 faced an immediate rejection wick back down to 1418.40, making a market entry at 1417.70 premature.",
+      "sentiment": "No headline information is available. Tape reveals strong relative strength and accumulation with volume surging to 42,781 shares on the 10:30 run, though follow-through stalled immediately at the morning peak.",
+      "macro": "Clashes directly with macro conditions as NIFTY is bearish at 24922.7. Counter-trend longs fighting index drag struggle to achieve extended multi-ATR runs.",
+      "risk": "Target of 1438.50 is 3.75 ATR away (20.80 pts). While 295 minutes remain and size is reduced by 50%, capturing nearly 4 ATR counter-trend against a falling market introduces poor probability of full target completion."
+    },
+    "rationale": "CIPLA displays impressive relative strength on volume, but pushing for a 3.75 ATR expansion directly against a bearish NIFTY macro backdrop carries excessive friction; skip unless 1421.50 clears decisively.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
