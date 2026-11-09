@@ -2050,5 +2050,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261109-115245-TECHM",
+    "signal_time": "2026-11-09T11:52:45+05:30",
+    "judged_at": "2026-11-09T11:53:26+05:30",
+    "age_min": 0.7,
+    "ticker": "TECHM",
+    "action": "SELL",
+    "entry": 1811.2,
+    "stop": 1823.09,
+    "target": 1781.47,
+    "qty": 82,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "Valid only on a break below 1806.0 with follow-through volume > 2x avg (65k+)",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 43.06 suggests neither overbought nor oversold; momentum is neutral. ATR buffer (7.9272) is tight for a SELL setup. The last 5m candle (11:50) shows a bullish close (1812.0) after a high of 1812.9, rejecting the SELL entry (1811.2). No clear bearish candle structure (e.g., engulfing, doji, or rejection at key levels) is visible. Volume spike at 11:25 (56k) and 11:35 (51k) lacks follow-through on the downside. Feasibility is empty, but target distance (3.75 ATR) is aggressive for 218 minutes left (target reachability: ~1.7% move in 3.6 hours).",
+      "sentiment": "No headline information available. Volume behavior shows sector-wide IT prints are mixed: earlier candles (11:10-11:25) had low volume (6k-17k), but recent spikes (51k-65k) coincide with NIFTY spot hovering near 24963.9 without clear directional follow-through. No evidence of panic or forced selling.",
+      "macro": "NIFTY is neutral per scout reason, but late-session SELL entries require exceptional structure. At 11:52 (218 mins to close), the index is range-bound with no clear trend. A SELL in IT aligns with sector bearishness but lacks macro tailwind; late-session moves are typically driven by FII flows or sector rotation, neither of which is evident here.",
+      "risk": "Reward:risk of 2.5 is mathematically appealing, but stop distance (1.5 ATR) is too close for a SELL in a neutral-to-bullish tape (last candle closed above entry). Target distance (3.75 ATR) is feasible only if TECHM decouples sharply from NIFTY, which is unlikely without catalyst. No results risk, but earnings calendar is empty. Late-session liquidity risk: volume may thin as close approaches."
+    },
+    "rationale": "SKIP TECHM SELL. The setup lacks a clean bearish candle structure, follow-through volume, and macro alignment. The last candle rejected the entry, and the target distance (3.75 ATR) is aggressive for the remaining time (218 mins). Valid only on a break below 1806.0 with sustained volume, which is not present. Confidence in SKIP is high (85) due to neutral-to-bullish tape and absence of forced selling.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
