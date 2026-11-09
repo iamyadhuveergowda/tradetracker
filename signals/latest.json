@@ -1,20 +1,20 @@
 {
-  "signal_id": "20261109-112132-ITC",
-  "generated_at": "2026-11-09T11:21:32.819654+05:30",
-  "nifty_ltp": 24914.2,
+  "signal_id": "20261109-112410-ITC",
+  "generated_at": "2026-11-09T11:24:10.636892+05:30",
+  "nifty_ltp": 24907.55,
   "candidates": [
     {
       "ticker": "ITC",
       "signal": "SELL",
-      "ltp": 279.25,
-      "stop": 280.83,
-      "target": 275.29,
+      "ltp": 279.0,
+      "stop": 280.58,
+      "target": 275.04,
       "qty": 624,
       "indicators": {
         "rsi": 35.21,
         "atr": 1.0563,
         "atr_5m": 0.6335,
-        "vwap": 280.15,
+        "vwap": 280.12,
         "vol_ratio": 2.77
       },
       "scout_reason": "NIFTY BEARISH, sector FMCG BEARISH",
@@ -175,15 +175,15 @@
           "11:20",
           279.2,
           279.35,
-          279.15,
-          279.3,
-          14257
+          278.9,
+          278.95,
+          133474
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-09T11:21:33.447141+05:30"
+      "outcome_at": "2026-11-09T11:24:11.073204+05:30"
     }
   ]
 }
