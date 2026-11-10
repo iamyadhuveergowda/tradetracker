@@ -1,14 +1,14 @@
 {
-  "signal_id": "20261110-094725-TITAN",
-  "judged_at": "2026-11-10T09:47:51+05:30",
-  "age_min": 0.4,
+  "signal_id": "20261110-114846-TITAN",
+  "judged_at": "2026-11-10T11:49:16+05:30",
+  "age_min": 0.5,
   "advisory_only": true,
   "verdicts": [
     {
-      "signal_id": "20261110-094725-TITAN",
-      "signal_time": "2026-11-10T09:47:25+05:30",
-      "judged_at": "2026-11-10T09:47:51+05:30",
-      "age_min": 0.4,
+      "signal_id": "20261110-114846-TITAN",
+      "signal_time": "2026-11-10T11:48:46+05:30",
+      "judged_at": "2026-11-10T11:49:16+05:30",
+      "age_min": 0.5,
       "ticker": "TITAN",
       "action": "BUY",
       "entry": 5005.0,
@@ -21,21 +21,21 @@
       "results_risk": "",
       "feasibility": "",
       "analyst_notes": {
-        "technical": "RSI at 59.37 suggests neutral momentum; ATR buffer (16.39) is wide, but the last 12 candles show choppy late-session prints with no clear follow-through. The 15:10 candle (5000.0-5000.3) printed a massive volume spike (550,488) on a down candle, indicating distribution pressure. Entry at 5005.0 is near the high of the 15:28 candle, but no fresh momentum or breakout structure is visible. Candle structure is weak for a late-session entry.",
-        "sentiment": "No headline information available. Volume behavior shows heavy selling in the 15:10 candle (550,488), followed by a dead 15:28 candle (782,040) with no follow-through. Sector (Consumer Goods) is neutral, and no sector-wide prints suggest a bullish bias.",
-        "macro": "NIFTY is neutral, and the trade direction (BUY) aligns poorly with the late-session tape (343 minutes left). Late-session entries require exceptional structure, which is absent here. The index is not showing a clear upward bias.",
-        "risk": "Reward:risk is 2.5, but the stop distance (1.5 ATR) is tight for the remaining time (343 minutes). Target distance (3.75 ATR) is feasible, but the lack of momentum and weak candle structure make this a high-risk setup. No results risk."
+        "technical": "RSI at 59.37 suggests neutral momentum; ATR buffer (1.5x) is tight for a late-session entry. The last 5m candle (15:28) is a flatline at entry price (5005.0), with no follow-through. The 15:10 candle shows a sharp drop to 4991.5 (low), but no recovery to justify entry. Candle structure lacks conviction for a directional move with 222 minutes left.",
+        "sentiment": "No headline information available. Volume spike at 15:10 (550,488) suggests a late-session dump, but no clear follow-through buying. Sector (Consumer Goods) is neutral; no visible sector-wide prints to support a directional bias.",
+        "macro": "NIFTY is neutral, and late-session entries (222 minutes to close) require exceptional structure. The index tape shows no clear trend, and TITAN’s action is isolated without broader participation.",
+        "risk": "Reward:risk is 2.5:1, but stop distance (1.5 ATR) is tight for a late-session trade. Feasibility is empty, but target distance (3.75 ATR) is unlikely to be reached in the remaining time. No results risk."
       },
-      "rationale": "Late-session entry lacks momentum, follow-through, and macro alignment. Heavy volume on down candles and choppy prints make this a high-risk, low-conviction setup. Default to SKIP.",
+      "rationale": "Late-session entry lacks momentum, follow-through, and macro alignment. SKIP due to weak candle structure and insufficient time to reach target.",
       "outcome": null,
       "outcome_r": null,
       "outcome_at": null
     },
     {
-      "signal_id": "20261110-094725-TITAN",
-      "signal_time": "2026-11-10T09:47:25+05:30",
-      "judged_at": "2026-11-10T09:47:51+05:30",
-      "age_min": 0.4,
+      "signal_id": "20261110-114846-TITAN",
+      "signal_time": "2026-11-10T11:48:46+05:30",
+      "judged_at": "2026-11-10T11:49:16+05:30",
+      "age_min": 0.5,
       "ticker": "HDFCLIFE",
       "action": "BUY",
       "entry": 565.4,
@@ -43,17 +43,17 @@
       "target": 574.42,
       "qty": 274,
       "verdict": "SKIP",
-      "confidence": 75,
-      "trigger": "Valid only on a break above 565.50 with volume confirmation",
+      "confidence": 80,
+      "trigger": "",
       "results_risk": "",
       "feasibility": "",
       "analyst_notes": {
-        "technical": "RSI at 52.5 is neutral; ATR buffer (2.40) is narrow. The 15:10 candle (564.15-565.5) printed a massive volume spike (1,271,195), but it closed near the low (564.0). The 15:28 candle (565.4) is a dead candle with no follow-through, and the 15:52 candle shows no movement. Entry at 565.4 is near the high of the 15:10 candle but lacks confirmation. Candle structure is weak for a BUY.",
-        "sentiment": "No headline information available. Volume behavior is erratic: the 15:10 candle shows extreme volume on a downside move, followed by dead candles. Sector (Life Insurance) is neutral, and no sector-wide prints suggest a bullish bias.",
-        "macro": "NIFTY is neutral, and the trade direction (BUY) aligns poorly with the late-session tape (343 minutes left). Late-session entries require exceptional structure, which is absent here. The index is not showing a clear upward bias.",
-        "risk": "Reward:risk is 2.5, but the stop distance (1.5 ATR) is tight for the remaining time (343 minutes). Target distance (3.75 ATR) is feasible, but the lack of momentum and weak candle structure make this a high-risk setup. No results risk."
+        "technical": "RSI at 52.5 indicates neutral momentum; ATR buffer (1.5x) is tight. The 15:28 candle is a flatline at entry (565.4), with no prior follow-through. The 15:10 candle shows a sharp drop to 563.05 (low) but no recovery. Candle structure is weak for a directional move with 222 minutes left.",
+        "sentiment": "No headline information available. Volume spike at 15:10 (1,271,195) suggests late-session activity, but no clear buying interest. Sector (Life Insurance) is neutral; no visible sector-wide prints to support a directional bias.",
+        "macro": "NIFTY is neutral, and late-session entries require exceptional structure. The index tape shows no clear trend, and HDFCLIFE’s action is isolated without broader participation.",
+        "risk": "Reward:risk is 2.5:1, but stop distance (1.5 ATR) is tight for a late-session trade. Feasibility is empty, but target distance (3.75 ATR) is unlikely to be reached in the remaining time. No results risk."
       },
-      "rationale": "Late-session entry lacks momentum and confirmation. The massive volume spike in the 15:10 candle was bearish, and the dead candles since then confirm weak structure. Requires a break above 565.50 with volume to even consider, but current setup is too risky for a GO.",
+      "rationale": "Late-session entry lacks momentum, follow-through, and macro alignment. SKIP due to weak candle structure and insufficient time to reach target.",
       "outcome": null,
       "outcome_r": null,
       "outcome_at": null
