@@ -2563,5 +2563,59 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261110-134958-TITAN",
+    "signal_time": "2026-11-10T13:49:58+05:30",
+    "judged_at": "2026-11-10T13:50:27+05:30",
+    "age_min": 0.5,
+    "ticker": "TITAN",
+    "action": "BUY",
+    "entry": 5005.0,
+    "stop": 4980.41,
+    "target": 5066.46,
+    "qty": 39,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 59.37 is neutral, not overbought or oversold. The last 5m candle (15:28) is a flatline at entry price (5005.0), lacking momentum. The 15:10 candle shows a sharp drop to 4991.5 (101.5 points in 5m), indicating weak follow-through. ATR buffer (16.39) suggests a tight stop (1.5 ATR = 24.59), but the target (5066.46) is 3.75 ATR away, requiring a strong late-session push (101m left). Candle structure is choppy with no clear breakout.",
+      "sentiment": "No headline information available. Volume spike at 15:10 (550,488) suggests panic selling, but the 15:28 flatline (782,040) may indicate profit-taking or indecision. Sector (Consumer Goods) is neutral, and NIFTY is neutral, but the tape shows no sector-wide follow-through.",
+      "macro": "Late-session entry (101m to close) requires exceptional structure. NIFTY is neutral, and the trade direction (long) aligns with no clear macro narrative. The lack of follow-through in the last 5m candles raises skepticism about late-session liquidity.",
+      "risk": "Reward:risk is 2.5, but the target (5066.46) is 61.46 points away (3.75 ATR), and the stop (4980.41) is 24.59 points away (1.5 ATR). Feasibility is empty, but 101m is insufficient for a 3.75 ATR move in a neutral tape. No results risk."
+    },
+    "rationale": "TITAN lacks momentum, follow-through, and late-session conviction. The flatline candle at entry and weak tape make this a high-risk, low-reward setup in a neutral NIFTY. SKIP unless a breakout above 5008.9 (14:45 high) occurs with volume.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
+  },
+  {
+    "signal_id": "20261110-134958-TITAN",
+    "signal_time": "2026-11-10T13:49:58+05:30",
+    "judged_at": "2026-11-10T13:50:27+05:30",
+    "age_min": 0.5,
+    "ticker": "HDFCLIFE",
+    "action": "BUY",
+    "entry": 565.4,
+    "stop": 561.79,
+    "target": 574.42,
+    "qty": 274,
+    "verdict": "SKIP",
+    "confidence": 75,
+    "trigger": "Valid only on a break above 565.5 (15:10 high) with volume > 1.5M",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 52.5 is neutral. The 15:10 candle shows a sharp drop to 563.05 (2.45 points) followed by a flatline at entry (565.4). The 15:28 candle is a flatline, lacking momentum. ATR buffer (2.40) suggests a tight stop (1.5 ATR = 3.61), but the target (574.42) is 3.75 ATR away (9 points). The 15:10 low (563.05) is 2.35 ATR below entry, indicating weak structure.",
+      "sentiment": "No headline information available. Volume spike at 15:10 (1.27M) suggests panic selling, but the 15:28 flatline (2.4M) may indicate indecision or accumulation. Sector (Life Insurance) is neutral, and NIFTY is neutral, with no sector-wide follow-through.",
+      "macro": "Late-session entry (101m to close) requires exceptional structure. NIFTY is neutral, and the trade direction (long) aligns with no clear macro narrative. The lack of follow-through in the last 5m candles raises skepticism about late-session liquidity.",
+      "risk": "Reward:risk is 2.5, but the target (574.42) is 9 points away (3.75 ATR), and the stop (561.79) is 3.61 points away (1.5 ATR). Feasibility is empty, but 101m is insufficient for a 3.75 ATR move in a neutral tape. No results risk, but the 15:10 sharp drop signals caution. A break above 565.5 with volume > 1.5M could justify a GO."
+    },
+    "rationale": "HDFCLIFE shows weak late-session structure with no follow-through. The flatline candle at entry and sharp drop at 15:10 make this a speculative play in a neutral tape. SKIP unless a breakout above 565.5 with volume > 1.5M occurs, signaling renewed buying interest.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
