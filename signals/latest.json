@@ -1,6 +1,6 @@
 {
-  "signal_id": "20261110-133208-TITAN",
-  "generated_at": "2026-11-10T13:32:08.233381+05:30",
+  "signal_id": "20261110-133417-TITAN",
+  "generated_at": "2026-11-10T13:34:17.251703+05:30",
   "nifty_ltp": 25044.65,
   "candidates": [
     {
@@ -183,7 +183,7 @@
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-10T13:32:08.722618+05:30"
+      "outcome_at": "2026-11-10T13:34:17.756260+05:30"
     },
     {
       "ticker": "HDFCLIFE",
@@ -365,7 +365,7 @@
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-10T13:32:08.722638+05:30"
+      "outcome_at": "2026-11-10T13:34:17.756279+05:30"
     }
   ]
 }
