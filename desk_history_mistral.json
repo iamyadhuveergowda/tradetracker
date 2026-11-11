@@ -2644,5 +2644,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261111-124824-BRITANNIA",
+    "signal_time": "2026-11-11T12:48:24+05:30",
+    "judged_at": "2026-11-11T12:48:47+05:30",
+    "age_min": 0.4,
+    "ticker": "BRITANNIA",
+    "action": "BUY",
+    "entry": 4867.3,
+    "stop": 4845.63,
+    "target": 4921.49,
+    "qty": 4,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "Valid only on a break above 4871.0 with volume > 10k and RSI > 60",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "Candle structure shows choppy action with no clear momentum: last 12 candles exhibit 5-minute range between 4861.8–4871.1, with no decisive breakout. RSI (56.16) is neutral, and ATR buffer (14.45) suggests tight stops. The 12:45 candle closed at entry (4867.3) but lacks follow-through volume (1420 vs. prior 5216–9974). No clean setup; appears to be chasing.",
+      "sentiment": "No headline information available. Volume behavior is inconsistent: 12:30–12:40 saw a spike (7913–9974), but 12:45–12:48 volume (1420) is weak. Sector-wide prints not visible in data; no clear follow-through.",
+      "macro": "NIFTY is +0.95% at 25283.05, but late-session entries (162 minutes left) require exceptional structure. BUY signal in a potential overbought zone (NIFTY) without index alignment is risky.",
+      "risk": "Stop distance (1.5 ATR) is tight; target (4921.49) is 3.75 ATR away, requiring a 2.5:1 reward:risk. **Results risk**: None. **Feasibility**: Empty, but target is tight for 162 minutes remaining (4921.49 implies ~0.35% move in 2.7 hours, or ~0.08%/hour). Late-session moves are unlikely without catalyst."
+    },
+    "rationale": "Choppy tape, weak follow-through volume, and late-session timing make this a high-risk chase. Requires a break above 4871.0 with volume > 10k and RSI > 60 to reconsider, but even then, the time-to-close (162 mins) and index alignment are concerns.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
