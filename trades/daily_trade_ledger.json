@@ -1806,7 +1806,7 @@
     "ticker": "TATASTEEL",
     "action": "BUY",
     "qty": 105,
-    "remaining_qty": 105,
+    "remaining_qty": 0,
     "requested_qty": 105,
     "locked_margin_per_share": 37.764,
     "partial_booked": false,
@@ -1817,21 +1817,26 @@
     "open": 188.24,
     "high": 189.07,
     "low": 188.1,
-    "close": 188.42,
+    "close": 188.39,
     "time": "13:00:57",
-    "status": "OPEN ⏳",
-    "exit_price": null,
-    "net_pnl": 0.0,
+    "status": "LOSS 🔴",
+    "exit_price": 188.3,
+    "net_pnl": -108.77,
     "rationale": "BULL: entry 188.85 just above VWAP (188.08) with stop 1.3 ATR below and target 192.11 is 3.26 ₹ (≈3.75 ATR) within expected travel 3.74 ₹; BEAR: target lies near session high (189.66) requiring 0.81 ₹ beyond high and a 3.26 ₹ move in 129 min, but still within 1.5×expected travel.",
     "events": [
       {
         "time": "2026-11-11T13:00:57+05:30",
         "type": "ENTRY",
         "text": "PAPER BUY 105 @ ₹188.82"
+      },
+      {
+        "time": "2026-11-11T15:10:14+05:30",
+        "type": "EXIT",
+        "text": "15:10 square-off: 105 @ ₹188.30, net ₹-108.77"
       }
     ],
     "mode": "PAPER",
-    "last_price": 188.42,
+    "last_price": 188.3,
     "atr": 0.8691,
     "target_booked": false,
     "breakeven_set": false,
@@ -1842,10 +1847,21 @@
     "stop_atr_mult": 1.5,
     "rvol": 1.14,
     "rule_version": "v13.7",
-    "entry_brokerage_remaining": 20.0,
-    "charges": {},
-    "pnl_by_date": {},
+    "entry_brokerage_remaining": 0.0,
+    "charges": {
+      "brokerage": 40.0,
+      "exchange": 1.18,
+      "sebi": 0.04,
+      "stt": 4.94,
+      "stamp": 0.59,
+      "gst": 7.42,
+      "total": 54.17
+    },
+    "pnl_by_date": {
+      "2026-11-11": -108.77
+    },
     "orders": {},
-    "breakeven_price": 189.57
+    "breakeven_price": 189.57,
+    "exit_time": "2026-11-11T15:10:14+05:30"
   }
 ]
