@@ -2671,5 +2671,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261111-130052-TATASTEEL",
+    "signal_time": "2026-11-11T13:00:52+05:30",
+    "judged_at": "2026-11-11T13:01:28+05:30",
+    "age_min": 0.6,
+    "ticker": "TATASTEEL",
+    "action": "BUY",
+    "entry": 188.85,
+    "stop": 187.55,
+    "target": 192.11,
+    "qty": 105,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "Valid only on a break below 187.55 with follow-through volume > 1.5M",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI (56.71) is neutral, not extreme. Candle structure at 13:00 is indecisive (close near low, no clear breakout). ATR buffer (0.8691) suggests tight stops; 12:35 candle shows a sharp drop to 187.51, but no follow-through. Volume spike at 12:55 (1.68M) is late and lacks conviction. Setup appears reactive, not proactive.",
+      "sentiment": "No headline information available. Volume ratio (4.49) is elevated but erratic—12:40-12:55 shows erratic prints with no clear directional flow. Sector-wide prints not visible in data; tape suggests hesitation.",
+      "macro": "NIFTY +1.03% overextended for BUY aligns with late-session caution. Late-session entries (150 mins left) require exceptional structure; this lacks it. Index tape is likely consolidating or reversing.",
+      "risk": "Stop distance (1.5 ATR) is tight; target (192.11) is 3.75 ATR away, requiring a 2.51:1 reward:risk. Feasibility is TIGHT (target_distance_atr 3.75, 150 mins left). No results risk, but late-session volatility is high. Reward:risk is mathematically attractive but structurally unsupported."
+    },
+    "rationale": "TATASTEEL’s BUY signal at 188.85 lacks structural conviction: neutral RSI, indecisive candles, and erratic volume. Late-session entry (150 mins to close) demands exceptional tape alignment, which is absent. While reward:risk (2.51) is mathematically favorable, the setup is reactive and lacks follow-through. SKIP unless a break below 187.55 with volume > 1.5M materializes, signaling fresh momentum.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
