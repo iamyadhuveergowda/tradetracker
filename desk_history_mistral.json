@@ -2641,9 +2641,9 @@
       "risk": "Results risk is empty. However, the feasibility is TIGHT (3.75 ATR target in 167 minutes). The stop is well-placed (1.5 ATR), but the lack of momentum and follow-through increases the risk of a false break. The reward:risk ratio (2.5) is decent, but the setup is not compelling for a GO."
     },
     "rationale": "The late-session entry lacks follow-through and momentum despite a spike at 12:35. The RSI is neutral, and the candle structure is weak. While the reward:risk ratio is favorable, the time-to-close (167 minutes) and lack of conviction in the tape make this a SKIP unless a break above 379.65 with volume > 20,000 occurs.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "TARGET",
+    "outcome_r": 2.5,
+    "outcome_at": "2026-11-11T23:34:23+05:30"
   },
   {
     "signal_id": "20261111-124824-BRITANNIA",
@@ -2668,9 +2668,9 @@
       "risk": "Stop distance (1.5 ATR) is tight; target (4921.49) is 3.75 ATR away, requiring a 2.5:1 reward:risk. **Results risk**: None. **Feasibility**: Empty, but target is tight for 162 minutes remaining (4921.49 implies ~0.35% move in 2.7 hours, or ~0.08%/hour). Late-session moves are unlikely without catalyst."
     },
     "rationale": "Choppy tape, weak follow-through volume, and late-session timing make this a high-risk chase. Requires a break above 4871.0 with volume > 10k and RSI > 60 to reconsider, but even then, the time-to-close (162 mins) and index alignment are concerns.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-11T23:34:23+05:30"
   },
   {
     "signal_id": "20261111-130052-TATASTEEL",
@@ -2695,8 +2695,8 @@
       "risk": "Stop distance (1.5 ATR) is tight; target (192.11) is 3.75 ATR away, requiring a 2.51:1 reward:risk. Feasibility is TIGHT (target_distance_atr 3.75, 150 mins left). No results risk, but late-session volatility is high. Reward:risk is mathematically attractive but structurally unsupported."
     },
     "rationale": "TATASTEEL’s BUY signal at 188.85 lacks structural conviction: neutral RSI, indecisive candles, and erratic volume. Late-session entry (150 mins to close) demands exceptional tape alignment, which is absent. While reward:risk (2.51) is mathematically favorable, the setup is reactive and lacks follow-through. SKIP unless a break below 187.55 with volume > 1.5M materializes, signaling fresh momentum.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.33,
+    "outcome_at": "2026-11-11T23:34:23+05:30"
   }
 ]
