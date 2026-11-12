@@ -1,20 +1,20 @@
 {
-  "signal_id": "20261112-133644-ICICIBANK",
-  "generated_at": "2026-11-12T13:36:44.531263+05:30",
-  "nifty_ltp": 25237.45,
+  "signal_id": "20261112-133856-ICICIBANK",
+  "generated_at": "2026-11-12T13:38:56.867910+05:30",
+  "nifty_ltp": 25245.6,
   "candidates": [
     {
       "ticker": "ICICIBANK",
       "signal": "BUY",
-      "ltp": 1585.7,
-      "stop": 1577.19,
-      "target": 1606.98,
+      "ltp": 1586.1,
+      "stop": 1577.59,
+      "target": 1607.38,
       "qty": 25,
       "indicators": {
         "rsi": 60.91,
         "atr": 5.6735,
         "atr_5m": 3.0219,
-        "vwap": 1584.45,
+        "vwap": 1584.48,
         "vol_ratio": 2.56
       },
       "scout_reason": "NIFTY NEUTRAL, sector BANK BULLISH",
@@ -174,16 +174,16 @@
         [
           "13:35",
           1587.0,
-          1587.2,
-          1585.5,
-          1585.7,
-          128348
+          1588.2,
+          1585.3,
+          1586.0,
+          280458
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
-      "outcome_reason": "STOP_IN_NOISE: stop 1577.19 is within 1.0*ATR (5.6735) of price level ~1575 tested 3 times in recent 5‑min candles.",
-      "outcome_at": "2026-11-12T13:36:50.510906+05:30"
+      "outcome_reason": "scout: omitted from LLM output",
+      "outcome_at": "2026-11-12T13:39:00.528528+05:30"
     }
   ]
 }
