@@ -2941,5 +2941,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261112-134349-ICICIBANK",
+    "signal_time": "2026-11-12T13:43:49+05:30",
+    "judged_at": "2026-11-12T13:44:39+05:30",
+    "age_min": 0.8,
+    "ticker": "AXISBANK",
+    "action": "BUY",
+    "entry": 1343.9,
+    "stop": 1336.61,
+    "target": 1362.12,
+    "qty": 29,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "Valid only on a break above 1346.40 with follow-through volume > 150k",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 61.5 suggests moderate bullish momentum but not overbought. The last 5m candle (13:40) closed near its low (1344.2), forming a bearish engulfing-like structure with high volume (194k). ATR buffer (4.8574) is tight; stop at 1336.61 (1.5 ATR) is reasonable, but target (1362.12) requires a 1.75 ATR move in 107 minutes—unlikely without a catalyst. No clear breakout structure; current price (1343.9) is below the 13:35 high (1345.8).",
+      "sentiment": "No headline information available. Volume spike at 13:40 (194k) suggests profit-taking or distribution, not accumulation. Sector-wide bank prints are mixed; no clear follow-through from peers.",
+      "macro": "NIFTY is neutral, but late-session entries (107 minutes left) require exceptional structure. Banks are not leading the tape; index is consolidating near 25254.95 without directional bias.",
+      "risk": "Target distance (3.75 ATR) is high for remaining time (107 mins). Stop distance (1.5 ATR) is adequate, but reward:risk (2.5) is skewed by feasibility. No results risk, but late-session liquidity is thin. Feasibility is TIGHT due to time constraints."
+    },
+    "rationale": "AXISBANK lacks a clean breakout structure at 13:43 IST, with the last candle showing distribution volume and a bearish close. The target is ambitious for the remaining session time (107 mins), and the lack of sector-wide follow-through or index leadership makes this a high-risk setup. Requires a break above 1346.40 with sustained volume to reconsider.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
