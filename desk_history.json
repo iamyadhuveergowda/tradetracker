@@ -823,9 +823,9 @@
       "risk": "Stop distance of 1.5 ATR (8.44 pts) to 1577.56 is reasonable, but target distance of 3.75 ATR (21.10 pts) to 1607.10 is steep for 107 minutes remaining given the lack of an active breakout. Results risk is empty, with no earnings flagged."
     },
     "rationale": "SKIP ICICIBANK. Despite sector tailwinds, the stock is range-bound below 1591.00 resistance with fading volume at 13:40. Requiring 3.75 ATR to reach 1607.10 in 107 minutes makes this uncompelling without a confirmed breakout.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.47,
+    "outcome_at": "2026-11-12T23:50:58+05:30"
   },
   {
     "signal_id": "20261112-134349-ICICIBANK",
@@ -850,9 +850,9 @@
       "risk": "Reward-to-risk is 2.5 with a 1.5 ATR stop at 1336.61. Reaching the target of 1362.12 requires an 18.22 pt move (3.75 ATR) in 107 minutes immediately following a high-volume upper wick rejection. Results risk is empty."
     },
     "rationale": "SKIP AXISBANK. The steady uptrend is met by a heavy 194k volume upper wick at 1346.40. Chasing at 1343.90 right into overhead supply with 107 minutes remaining carries poor risk-reward.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": -0.14,
+    "outcome_at": "2026-11-12T23:50:58+05:30"
   },
   {
     "signal_id": "20261112-134349-ICICIBANK",
@@ -877,8 +877,8 @@
       "risk": "Stop at 1407.46 (1.5 ATR / 6.36 pts) is placed safely above recent highs, but covering 3.75 ATR (15.91 pts down to 1385.19) in 107 minutes is unrealistic if the stock stalls at 1400.00. Results risk is empty."
     },
     "rationale": "SKIP CIPLA. While PHARMA sector weakness aligns with a short thesis, CIPLA is currently bouncing off firm support at 1400.00. Selling above support without an established breakdown offers poor risk-reward.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-12T23:50:58+05:30"
   }
 ]
