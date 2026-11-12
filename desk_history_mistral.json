@@ -2698,5 +2698,32 @@
     "outcome": "CLOSE",
     "outcome_r": 0.33,
     "outcome_at": "2026-11-11T23:34:23+05:30"
+  },
+  {
+    "signal_id": "20261112-110519-LT",
+    "signal_time": "2026-11-12T11:05:19+05:30",
+    "judged_at": "2026-11-12T11:05:42+05:30",
+    "age_min": 0.4,
+    "ticker": "LT",
+    "action": "SELL",
+    "entry": 4199.9,
+    "stop": 4222.02,
+    "target": 4144.6,
+    "qty": 9,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 48.51 indicates neutral momentum, not extreme. Candle structure at 11:05 shows a flat open/close (4200.0) with a narrow range (4198.1-4200.0), lacking clear follow-through. The last 12 candles show choppy, low-volume prints (avg. vol: ~27,000) with no decisive breakout or breakdown. ATR buffer (14.7455) suggests volatility is moderate, but the setup lacks a clean momentum signal for a SELL entry.",
+      "sentiment": "No headline information available. Volume behavior shows no sector-wide or tape-driven follow-through; infrastructure sector remains neutral per scout. The 2.01 vol_ratio is unremarkable and does not signal urgency or panic.",
+      "macro": "NIFTY is neutral, and the time-to-close (265 minutes) is insufficient for a late-session SELL entry unless exceptional structure is present. The trade direction (SELL) does not align with the index tape or time-of-day dynamics (late-session entries require strong conviction).",
+      "risk": "Stop distance (1.5 ATR) is tight, and the target (4144.6) is 3.75 ATR away, yielding a 2.5 reward:risk ratio. However, the target is **feasible** (265 minutes left), but the lack of momentum and weak candle structure make the risk of a false breakdown high. No results risk present."
+    },
+    "rationale": "LT’s SELL setup is **SKIPPED** due to weak technical structure (flat candles, neutral RSI, no momentum), lack of sector/tape-driven sentiment, and misalignment with macro timing. The reward:risk (2.5) is mathematically valid, but the absence of a clean entry trigger and late-session timing make this a low-conviction trade. Confidence in the SKIP is high (85) due to the lack of actionable follow-through.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
