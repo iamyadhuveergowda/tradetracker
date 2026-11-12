@@ -1,20 +1,20 @@
 {
-  "signal_id": "20261112-110519-LT",
-  "generated_at": "2026-11-12T11:05:19.347278+05:30",
-  "nifty_ltp": 25314.95,
+  "signal_id": "20261112-110725-LT",
+  "generated_at": "2026-11-12T11:07:25.174898+05:30",
+  "nifty_ltp": 25314.55,
   "candidates": [
     {
       "ticker": "LT",
       "signal": "SELL",
-      "ltp": 4199.9,
-      "stop": 4222.02,
-      "target": 4144.6,
+      "ltp": 4200.1,
+      "stop": 4222.22,
+      "target": 4144.8,
       "qty": 9,
       "indicators": {
         "rsi": 48.51,
         "atr": 14.7455,
         "atr_5m": 7.4872,
-        "vwap": 4196.48,
+        "vwap": 4196.76,
         "vol_ratio": 2.01
       },
       "scout_reason": "NIFTY NEUTRAL, sector INFRASTRUCTURE NEUTRAL",
@@ -174,16 +174,16 @@
         [
           "11:05",
           4200.0,
-          4200.0,
-          4198.1,
-          4200.0,
-          1696
+          4201.5,
+          4197.6,
+          4200.1,
+          56066
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-12T11:05:19.922325+05:30"
+      "outcome_at": "2026-11-12T11:07:25.579010+05:30"
     }
   ]
 }
