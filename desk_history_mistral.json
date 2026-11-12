@@ -2779,5 +2779,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261112-122648-SBIN",
+    "signal_time": "2026-11-12T12:26:48+05:30",
+    "judged_at": "2026-11-12T12:27:10+05:30",
+    "age_min": 0.4,
+    "ticker": "SBIN",
+    "action": "BUY",
+    "entry": 1078.2,
+    "stop": 1072.1,
+    "target": 1093.44,
+    "qty": 36,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "Valid only on a break above 1080.50 with follow-through volume > 500k",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 58.42 is neutral, not extreme. The 12:20 candle shows a strong bullish spike (1076.05 → 1080.5) but closes lower at 1077.9, indicating rejection. The 12:25 candle is a tight range (1077.8–1078.55) with low volume (65k), suggesting indecision. ATR buffer (4.0653) is not violated by the stop (1072.1), but the target (1093.44) is 3.75 ATR away—unrealistic in 184 minutes without a clear breakout. No momentum confirmation post-spike.",
+      "sentiment": "No headline information available. Volume surged on the 12:20 spike (728k), but the 12:25 candle shows volume collapse (65k), signaling weak follow-through. Sector-wide bank prints are not visible in the tape; this appears isolated.",
+      "macro": "NIFTY is neutral, but late-session entries (184 mins left) require exceptional structure. The index is not trending strongly, and a sector-wide bank rally is not evident. This trade risks being a contrarian play in a neutral tape.",
+      "risk": "Stop distance (1.5 ATR) is tight, but the target (3.75 ATR) is aggressive. **Results risk is empty**, but the lack of follow-through and weak volume post-spike elevate execution risk. Reward:risk of 2.5 is misleading without confirmation. **Feasibility is empty**, but the target is implausible in the timeframe without a breakout."
+    },
+    "rationale": "SBIN’s 12:20 spike lacks follow-through (volume collapsed to 65k in 12:25), and the RSI/structure do not support a GO. The target is 3.75 ATR away with 184 minutes left—unrealistic without a break above 1080.50 and volume confirmation. **SKIP** unless the breakout materializes with heavy volume, which is unlikely given the tape.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
