@@ -2806,5 +2806,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261112-124111-INFY",
+    "signal_time": "2026-11-12T12:41:11+05:30",
+    "judged_at": "2026-11-12T12:42:02+05:30",
+    "age_min": 0.8,
+    "ticker": "INFY",
+    "action": "SELL",
+    "entry": 1145.8,
+    "stop": 1151.13,
+    "target": 1132.46,
+    "qty": 34,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "Valid only on a break below 1143.50 with follow-through volume > 100k",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 45.2 is neutral, not overbought/oversold. The last 5m candle (12:40) is a bullish engulfing with a high of 1145.8, but the preceding candles show a lack of momentum (low volume in 11:55-12:10 range). ATR buffer (3.5562) suggests a tight stop (1.5 ATR = 5.33 points), but the target (1132.46) is 3.75 ATR away, which is aggressive for the remaining 169 minutes. No clear breakout or breakdown structure; the sell setup is speculative without a decisive move.",
+      "sentiment": "No headline information available. Volume behavior is inconsistent: the 12:40 candle shows a spike (19653), but prior candles (11:55-12:10) had low volume (32247-48740), suggesting weak follow-through. Sector-wide IT prints are not visible in the provided data, but the NIFTY-neutral context aligns with the bearish scout reason.",
+      "macro": "Late-session sell entry (12:41) is high-risk without a clear index trend or time-of-day alignment. NIFTY is at 25213.35, and the last 5m candles show no strong directional bias. Late-session entries require exceptional structure, which is absent here.",
+      "risk": "Reward:risk of 2.5 is mathematically appealing, but the stop distance (1.5 ATR) is tight, and the target (3.75 ATR) is ambitious for 169 minutes left. No results risk, but the lack of momentum and weak volume follow-through increases execution risk. Feasibility is not flagged, but the target distance (1145.8 to 1132.46) is aggressive for the remaining time."
+    },
+    "rationale": "SKIP: The sell setup on INFY lacks a decisive breakdown structure, momentum, or volume follow-through. Late-session entries require exceptional confirmation, which is absent. The target is ambitious for the remaining 169 minutes, and the stop is tight. No news or macro alignment supports the trade.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
