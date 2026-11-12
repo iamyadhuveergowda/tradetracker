@@ -1,20 +1,20 @@
 {
-  "signal_id": "20261112-122648-SBIN",
-  "generated_at": "2026-11-12T12:26:48.062563+05:30",
-  "nifty_ltp": 25227.2,
+  "signal_id": "20261112-122852-SBIN",
+  "generated_at": "2026-11-12T12:28:52.664424+05:30",
+  "nifty_ltp": 25236.0,
   "candidates": [
     {
       "ticker": "SBIN",
       "signal": "BUY",
-      "ltp": 1078.2,
-      "stop": 1072.1,
-      "target": 1093.44,
+      "ltp": 1078.35,
+      "stop": 1072.25,
+      "target": 1093.59,
       "qty": 36,
       "indicators": {
         "rsi": 58.42,
         "atr": 4.0653,
         "atr_5m": 2.137,
-        "vwap": 1075.3,
+        "vwap": 1075.32,
         "vol_ratio": 3.74
       },
       "scout_reason": "NIFTY NEUTRAL, sector BANK BULLISH",
@@ -175,15 +175,15 @@
           "12:25",
           1078.0,
           1078.55,
-          1077.8,
-          1078.2,
-          65107
+          1077.25,
+          1078.35,
+          151348
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-12T12:26:48.933488+05:30"
+      "outcome_at": "2026-11-12T12:28:53.182709+05:30"
     }
   ]
 }
