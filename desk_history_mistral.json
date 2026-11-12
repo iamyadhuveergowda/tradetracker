@@ -2833,5 +2833,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261112-131559-CIPLA",
+    "signal_time": "2026-11-12T13:15:59+05:30",
+    "judged_at": "2026-11-12T13:16:30+05:30",
+    "age_min": 0.5,
+    "ticker": "CIPLA",
+    "action": "SELL",
+    "entry": 1405.0,
+    "stop": 1411.18,
+    "target": 1389.54,
+    "qty": 28,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "CIPLA shows a mixed candle structure with a recent spike at 13:00 (1406.6) followed by consolidation. The RSI (48.66) is neutral, and the ATR (4.12) suggests moderate volatility. The last candle (13:15) is a doji, indicating indecision. The stop (1411.18) is placed above the recent high, which is risky given the lack of clear momentum. The target (1389.54) is 3.75 ATR away, but the time remaining (135 minutes) is tight for a 1.46% move (1405.0 → 1389.54).",
+      "sentiment": "No headline information available. Volume behavior shows a spike at 13:00 (36311) but has since tapered off. The sector (PHARMA) is labeled bearish, but no clear follow-through is visible in the tape. The vol_ratio (3.66) suggests elevated activity, but no directional consensus.",
+      "macro": "NIFTY is neutral, and the trade direction (SELL) aligns with the sector call but not the index tape. Late-session entries require exceptional structure, which is lacking here. The trade is contrarian to the broader market context.",
+      "risk": "The reward:risk (2.5) is decent, but the stop distance (1.5 ATR) is tight, and the target is tight given the time remaining (135 minutes). No results risk is present, but the lack of clear momentum and indecision in the last candle increase risk. Feasibility is not flagged, but the target distance (3.75 ATR) in 135 minutes is aggressive for intraday."
+    },
+    "rationale": "CIPLA lacks a clean setup for a SELL with no clear momentum, weak follow-through, and tight time-to-target. The doji candle and neutral RSI suggest indecision, and the stop placement is risky. The trade is SKIPPED due to insufficient conviction in the structure and macro alignment.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
