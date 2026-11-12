@@ -1,7 +1,7 @@
 {
-  "signal_id": "20261112-120058-COALINDIA",
-  "generated_at": "2026-11-12T12:00:58.114344+05:30",
-  "nifty_ltp": 25267.5,
+  "signal_id": "20261112-120326-COALINDIA",
+  "generated_at": "2026-11-12T12:03:26.720227+05:30",
+  "nifty_ltp": 25267.35,
   "candidates": [
     {
       "ticker": "COALINDIA",
@@ -14,7 +14,7 @@
         "rsi": 42.23,
         "atr": 1.0217,
         "atr_5m": 0.5972,
-        "vwap": 403.93,
+        "vwap": 403.92,
         "vol_ratio": 2.07
       },
       "scout_reason": "NIFTY NEUTRAL, sector ENERGY BEARISH",
@@ -174,29 +174,29 @@
         [
           "12:00",
           403.2,
-          403.3,
-          403.15,
-          403.2,
-          3715
+          403.5,
+          403.1,
+          403.1,
+          20070
         ]
       ],
       "stop_floor_bound": true,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-12T12:00:59.441024+05:30"
+      "outcome_at": "2026-11-12T12:03:28.012968+05:30"
     },
     {
       "ticker": "ADANIENT",
       "signal": "SELL",
-      "ltp": 2733.0,
-      "stop": 2750.64,
-      "target": 2688.9,
+      "ltp": 2731.8,
+      "stop": 2749.44,
+      "target": 2687.7,
       "qty": 14,
       "indicators": {
         "rsi": 46.51,
         "atr": 11.7607,
         "atr_5m": 6.2301,
-        "vwap": 2742.15,
+        "vwap": 2742.09,
         "vol_ratio": 2.02
       },
       "scout_reason": "NIFTY NEUTRAL, sector DIVERSIFIED NEUTRAL",
@@ -357,15 +357,15 @@
           "12:00",
           2734.0,
           2734.0,
-          2732.0,
-          2732.0,
-          1576
+          2731.0,
+          2731.1,
+          4805
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-12T12:00:59.441044+05:30"
+      "outcome_at": "2026-11-12T12:03:28.012988+05:30"
     }
   ]
 }
