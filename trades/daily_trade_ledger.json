@@ -1863,5 +1863,53 @@
     "orders": {},
     "breakeven_price": 189.57,
     "exit_time": "2026-11-11T15:10:14+05:30"
+  },
+  {
+    "trade_id": "20261112133428-BEL",
+    "date": "2026-11-12",
+    "ticker": "BEL",
+    "action": "BUY",
+    "qty": 98,
+    "remaining_qty": 98,
+    "requested_qty": 98,
+    "locked_margin_per_share": 80.76,
+    "partial_booked": false,
+    "entry": 403.8,
+    "sl": 401.73,
+    "initial_sl": 401.73,
+    "tgt": 408.96,
+    "open": 403.05,
+    "high": 404.3,
+    "low": 402.25,
+    "close": 404.0,
+    "time": "13:34:28",
+    "status": "OPEN ⏳",
+    "exit_price": null,
+    "net_pnl": 0.0,
+    "rationale": "BULL: Entry near VWAP (403.91) with ATR 1.38, price showing recent upward bias and tight SL 401.93 gives good risk‑reward; BEAR: Target 409.16 sits 2.6 above the day high (406.55) requiring a breakout and 5.16 points move in ~96 min (≈1.2× expected travel), which may be tight; VERDICT: APPROVE",
+    "events": [
+      {
+        "time": "2026-11-12T13:34:28+05:30",
+        "type": "ENTRY",
+        "text": "PAPER BUY 98 @ ₹403.80"
+      }
+    ],
+    "mode": "PAPER",
+    "last_price": 403.8,
+    "atr": 1.3769,
+    "target_booked": false,
+    "breakeven_set": false,
+    "mfe_r": 0.0,
+    "mae_r": 0.0,
+    "size_tag": "standard",
+    "vol_ratio": 4.03,
+    "stop_atr_mult": 1.5,
+    "rvol": 0.99,
+    "rule_version": "v13.7",
+    "entry_brokerage_remaining": 20.0,
+    "charges": {},
+    "pnl_by_date": {},
+    "orders": {},
+    "breakeven_price": 404.66
   }
 ]
