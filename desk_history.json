@@ -880,5 +880,32 @@
     "outcome": "STOP",
     "outcome_r": -1.0,
     "outcome_at": "2026-11-12T23:50:58+05:30"
+  },
+  {
+    "signal_id": "20261113-111102-MARUTI",
+    "signal_time": "2026-11-13T11:11:02+05:30",
+    "judged_at": "2026-11-13T11:11:42+05:30",
+    "age_min": 0.7,
+    "ticker": "MARUTI",
+    "action": "SELL",
+    "entry": 12925.0,
+    "stop": 13003.96,
+    "target": 12727.6,
+    "qty": 3,
+    "verdict": "SKIP",
+    "confidence": 75,
+    "trigger": "Valid only on a breakdown and close below 12900.00",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 46.1 is neutral. Price is consolidating within the 12900-12967 range. Crucially, the 11:05 candle printed an intraday low of 12905.00 with a prominent lower tail, closing back up at 12923.00. Selling at 12925.00 enters right on top of a tested support floor without confirmation of a breakdown.",
+      "sentiment": "Tape-based assessment only; no headline news is available. The tape shows an aggressive volume spike on the 11:05 bar (24,595 vs prior ~3-4k average; vol_ratio 5.01) accompanied by an immediate rejection of the lows, pointing to intraday demand absorption rather than sustained selling pressure.",
+      "macro": "Macro alignment is structurally supportive with NIFTY spot at 25194.85 and Auto sector flagged bearish, with 259 minutes remaining to the close.",
+      "risk": "Reward-to-risk is 2.5 with a 1.5 ATR (78.96 pts) stop at 13003.96. However, demanding a 3.75 ATR (197.40 pts) move to 12727.60 is an ambitious intraday target when price has not yet breached the 12900.00 shelf. No earnings results risk reported."
+    },
+    "rationale": "MARUTI is a SKIP. Despite broad index and sector weakness, the 11:05 tape printed massive absorption volume (24.5k contracts) rejecting 12905.00. Initiating a short at 12925.00 with a demanding 3.75 ATR target front-runs support rather than reacting to a clean break.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
