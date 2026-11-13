@@ -1,20 +1,20 @@
 {
-  "signal_id": "20261113-111726-KOTAKBANK",
-  "generated_at": "2026-11-13T11:17:26.037823+05:30",
-  "nifty_ltp": 25171.1,
+  "signal_id": "20261113-111944-KOTAKBANK",
+  "generated_at": "2026-11-13T11:19:44.195736+05:30",
+  "nifty_ltp": 25177.7,
   "candidates": [
     {
       "ticker": "KOTAKBANK",
       "signal": "SELL",
-      "ltp": 485.0,
-      "stop": 487.52,
-      "target": 478.69,
+      "ltp": 485.55,
+      "stop": 488.07,
+      "target": 479.24,
       "qty": 81,
       "indicators": {
         "rsi": 36.33,
         "atr": 1.6814,
         "atr_5m": 1.1547,
-        "vwap": 487.06,
+        "vwap": 486.96,
         "vol_ratio": 2.26
       },
       "scout_reason": "NIFTY BEARISH, sector BANK BEARISH",
@@ -174,16 +174,16 @@
         [
           "11:15",
           484.85,
-          485.1,
+          486.1,
           484.55,
-          485.0,
-          34213
+          485.55,
+          299063
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
-      "outcome_reason": "INTO_WALL: entry 485.0 within 0.5*ATR (0.84) of session low 484.3",
-      "outcome_at": "2026-11-13T11:17:30.501399+05:30"
+      "outcome_reason": "STOP_IN_NOISE: stop 488.07 is within 1.0*ATR (1.6814) of repeatedly tested level ~488.0 seen in multiple 5‑min candles, making stop vulnerable to noise.",
+      "outcome_at": "2026-11-13T11:19:49.834369+05:30"
     }
   ]
 }
