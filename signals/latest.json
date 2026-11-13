@@ -1,23 +1,23 @@
 {
-  "signal_id": "20261113-122146-SBIN",
-  "generated_at": "2026-11-13T12:21:46.976248+05:30",
-  "nifty_ltp": 25096.85,
+  "signal_id": "20261113-122400-SBIN",
+  "generated_at": "2026-11-13T12:24:00.167988+05:30",
+  "nifty_ltp": 25105.15,
   "candidates": [
     {
       "ticker": "SBIN",
       "signal": "SELL",
-      "ltp": 1079.95,
-      "stop": 1084.88,
-      "target": 1067.62,
+      "ltp": 1080.95,
+      "stop": 1085.88,
+      "target": 1068.62,
       "qty": 18,
       "indicators": {
         "rsi": 48.41,
         "atr": 3.2891,
         "atr_5m": 1.4631,
-        "vwap": 1079.42,
+        "vwap": 1079.43,
         "vol_ratio": 4.57
       },
-      "scout_reason": "NIFTY 50 -0.80% oversold for SELL; size cut 50%",
+      "scout_reason": "NIFTY 50 -0.77% oversold for SELL; size cut 50%",
       "candles_5m": [
         [
           "10:45",
@@ -174,16 +174,16 @@
         [
           "12:20",
           1079.9,
-          1080.2,
+          1080.95,
           1079.6,
-          1079.95,
-          27423
+          1080.9,
+          69577
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "shadow",
       "outcome_reason": "shadow_short_logged (SHORTS_MODE=shadow)",
-      "outcome_at": "2026-11-13T12:21:53.472945+05:30"
+      "outcome_at": "2026-11-13T12:24:08.600831+05:30"
     }
   ]
 }
