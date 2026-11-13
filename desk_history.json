@@ -904,8 +904,8 @@
       "risk": "Reward-to-risk is 2.5 with a 1.5 ATR (78.96 pts) stop at 13003.96. However, demanding a 3.75 ATR (197.40 pts) move to 12727.60 is an ambitious intraday target when price has not yet breached the 12900.00 shelf. No earnings results risk reported."
     },
     "rationale": "MARUTI is a SKIP. Despite broad index and sector weakness, the 11:05 tape printed massive absorption volume (24.5k contracts) rejecting 12905.00. Initiating a short at 12925.00 with a demanding 3.75 ATR target front-runs support rather than reacting to a clean break.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.9,
+    "outcome_at": "2026-11-13T23:16:00+05:30"
   }
 ]
