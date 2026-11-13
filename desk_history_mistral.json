@@ -2968,5 +2968,32 @@
     "outcome": "CLOSE",
     "outcome_r": -0.14,
     "outcome_at": "2026-11-13T00:06:40+05:30"
+  },
+  {
+    "signal_id": "20261113-105529-GRASIM",
+    "signal_time": "2026-11-13T10:55:29+05:30",
+    "judged_at": "2026-11-13T10:56:10+05:30",
+    "age_min": 0.7,
+    "ticker": "GRASIM",
+    "action": "SELL",
+    "entry": 3110.0,
+    "stop": 3126.69,
+    "target": 3068.27,
+    "qty": 12,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 46.3 indicates neither overbought nor oversold conditions. The last 5-minute candle (10:55) is a doji, signaling indecision. ATR buffer (11.1272) suggests a tight stop (1.5 ATR = 16.69), but the target (3068.27) is 3.75 ATR away, requiring a clean break. The candle structure lacks follow-through momentum; the last 12 candles show choppy, low-volume prints (avg. vol = 10,175) with no clear directional bias.",
+      "sentiment": "No headline information available. Volume behavior is inconsistent: the 10:25-10:55 candles show elevated volume (avg. 18,847), but it lacks conviction in either direction. Sector-wide prints (cement) are neutral per scout reason, but no visible tape-wide momentum.",
+      "macro": "NIFTY is bearish, but the time of day (275 minutes to close) is late for a short entry. Late-session entries require exceptional structure, which is absent here. The trade direction (SELL) aligns with the index tape, but the lack of momentum and indecision in the candle structure make it risky.",
+      "risk": "Reward:risk is 2.5, which is favorable, but the stop distance (1.5 ATR) is tight, and the target (3.75 ATR) may not be reachable in the remaining time (275 minutes). No results risk, but the feasibility is empty, meaning no inherent time constraint. However, the lack of momentum and choppy tape make this a high-risk setup."
+    },
+    "rationale": "GRASIM lacks the momentum and clear directional bias required for a late-session short entry. The doji candle at 10:55, combined with choppy volume prints and no sector-wide follow-through, makes this a high-risk, low-conviction setup. Default to SKIP despite the favorable reward:risk ratio.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
