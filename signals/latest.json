@@ -1,32 +1,24 @@
 {
-  "signal_id": "20261113-130812-TITAN",
-  "generated_at": "2026-11-13T13:08:12.698355+05:30",
-  "nifty_ltp": 25116.8,
+  "signal_id": "20261113-131024-TITAN",
+  "generated_at": "2026-11-13T13:10:24.657901+05:30",
+  "nifty_ltp": 25112.05,
   "candidates": [
     {
       "ticker": "TITAN",
       "signal": "SELL",
-      "ltp": 4849.2,
-      "stop": 4872.59,
-      "target": 4790.73,
+      "ltp": 4849.1,
+      "stop": 4872.49,
+      "target": 4790.63,
       "qty": 4,
       "indicators": {
-        "rsi": 40.99,
+        "rsi": 40.76,
         "atr": 15.5914,
-        "atr_5m": 6.6242,
-        "vwap": 4863.21,
-        "vol_ratio": 2.75
+        "atr_5m": 6.4654,
+        "vwap": 4863.11,
+        "vol_ratio": 2.65
       },
-      "scout_reason": "NIFTY 50 -0.72% oversold for SELL; size cut 50%",
+      "scout_reason": "NIFTY 50 -0.74% oversold for SELL; size cut 50%",
       "candles_5m": [
-        [
-          "11:30",
-          4857.9,
-          4859.4,
-          4855.8,
-          4858.8,
-          5614
-        ],
         [
           "11:35",
           4858.3,
@@ -176,14 +168,22 @@
           4850.0,
           4851.8,
           4847.4,
-          4848.6,
-          20940
+          4849.1,
+          24786
+        ],
+        [
+          "13:10",
+          4850.0,
+          4850.0,
+          4847.8,
+          4847.8,
+          197
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-13T13:08:13.200378+05:30"
+      "outcome_at": "2026-11-13T13:10:25.572988+05:30"
     }
   ]
 }
