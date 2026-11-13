@@ -1,23 +1,23 @@
 {
-  "signal_id": "20261113-135141-SBILIFE",
-  "generated_at": "2026-11-13T13:51:41.214068+05:30",
-  "nifty_ltp": 25092.05,
+  "signal_id": "20261113-135405-SBILIFE",
+  "generated_at": "2026-11-13T13:54:05.768469+05:30",
+  "nifty_ltp": 25090.15,
   "candidates": [
     {
       "ticker": "SBILIFE",
       "signal": "SELL",
-      "ltp": 1790.8,
-      "stop": 1798.56,
-      "target": 1771.41,
+      "ltp": 1791.1,
+      "stop": 1798.86,
+      "target": 1771.71,
       "qty": 11,
       "indicators": {
         "rsi": 49.26,
         "atr": 5.1715,
         "atr_5m": 2.4035,
-        "vwap": 1798.39,
+        "vwap": 1798.38,
         "vol_ratio": 1.76
       },
-      "scout_reason": "NIFTY 50 -0.82% oversold for SELL; size cut 50%",
+      "scout_reason": "NIFTY 50 -0.83% oversold for SELL; size cut 50%",
       "candles_5m": [
         [
           "12:15",
@@ -176,14 +176,14 @@
           1790.8,
           1791.7,
           1790.2,
-          1791.2,
-          3355
+          1791.5,
+          4171
         ]
       ],
       "stop_floor_bound": false,
-      "outcome": "shadow",
-      "outcome_reason": "shadow_short_logged (SHORTS_MODE=shadow)",
-      "outcome_at": "2026-11-13T13:51:47.553848+05:30"
+      "outcome": "dropped_other",
+      "outcome_reason": "DISTRIBUTION: heavy volume bar at 13:45 (vol 6421) absorbed lows near entry (low 1791.2, close 1791.2), opposing SELL direction",
+      "outcome_at": "2026-11-13T13:54:12.361828+05:30"
     }
   ]
 }
