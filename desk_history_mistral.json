@@ -3022,5 +3022,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261113-111726-KOTAKBANK",
+    "signal_time": "2026-11-13T11:17:26+05:30",
+    "judged_at": "2026-11-13T11:17:56+05:30",
+    "age_min": 0.5,
+    "ticker": "KOTAKBANK",
+    "action": "SELL",
+    "entry": 485.0,
+    "stop": 487.52,
+    "target": 478.69,
+    "qty": 81,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 36.33 suggests oversold but not extreme. Candle structure shows a late-session breakdown at 11:15 (close at 485.0), but the 12-candle sequence lacks a clear momentum shift. The 10:55 candle (close 485.7) had a sharp drop to 485.6 (low) but failed to sustain below 485.0. ATR buffer (1.68) is tight for a late-session short; stop at 487.52 is 1.5 ATR away, but the target (478.69) is 3.75 ATR away—unrealistic in 253 minutes. No follow-through on the 11:10-11:15 drop (volume spiked but closed near open).",
+      "sentiment": "No headline information available. Volume ratio (2.26) is elevated but not extreme; sector-wide bank prints are not visible in the tape. The 11:15 candle’s volume (34213) is high but lacks directional clarity.",
+      "macro": "NIFTY is bearish, but late-session shorts require exceptional structure. The index is at 25171.1, and a short here aligns with the tape, but the lack of follow-through on the breakdown raises skepticism. Time-to-close (253 minutes) is insufficient for a 3.75 ATR move.",
+      "risk": "Results risk is empty. Reward:risk is 2.5, but the target is infeasible (3.75 ATR in 253 minutes). Stop distance (1.5 ATR) is reasonable, but the trade lacks conviction due to weak follow-through and late-session timing."
+    },
+    "rationale": "SKIP: Late-session short on KOTAKBANK lacks follow-through despite elevated volume. Target is infeasible (3.75 ATR in 253 minutes), and candle structure shows no momentum shift. Reward:risk is misleading without a realistic target.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
