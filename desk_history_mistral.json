@@ -3076,5 +3076,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261113-120209-LT",
+    "signal_time": "2026-11-13T12:02:09+05:30",
+    "judged_at": "2026-11-13T12:02:32+05:30",
+    "age_min": 0.4,
+    "ticker": "LT",
+    "action": "SELL",
+    "entry": 4158.4,
+    "stop": 4178.86,
+    "target": 4107.25,
+    "qty": 4,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "Valid only on a break below 4154.0 with follow-through volume > 2x average",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 42.45 is neutral, not oversold. The last 5m candle (12:00) shows a doji-like structure with low volume (5564), failing to confirm a breakdown. ATR buffer (13.641) suggests a stop at 4178.86 is too wide for a short entry at 4158.4. No clear momentum or structure for a short; the tape is choppy without a decisive move.",
+      "sentiment": "No headline information available. Volume behavior shows no sector-wide follow-through; LT's volume ratio (2.03) is elevated but not exceptional. The tape lacks conviction for a short setup.",
+      "macro": "NIFTY is down -0.61% but remains in a late-session grind with 208 minutes left. Late-session shorts require exceptional structure, which is absent here. The index is not in a clear downtrend; this is a weak macro backdrop for a short.",
+      "risk": "Target distance (4107.25) is 3.75 ATR away, but feasibility is TIGHT given 208 minutes left (target requires ~1.8% move in ~3.5 hours). Stop distance (1.5 ATR) is too wide for a short in this range. No results risk, but pre-open or earnings volatility is not factored in."
+    },
+    "rationale": "LT lacks a clean short setup with weak momentum, no follow-through volume, and a choppy tape. The macro backdrop is unfavorable for late-session shorts, and the risk-reward is skewed by a wide stop and tight feasibility. Requires a break below 4154.0 with volume confirmation to reconsider.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
