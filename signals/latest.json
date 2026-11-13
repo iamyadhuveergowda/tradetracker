@@ -1,23 +1,23 @@
 {
-  "signal_id": "20261113-115726-HDFCLIFE",
-  "generated_at": "2026-11-13T11:57:26.282203+05:30",
-  "nifty_ltp": 25143.0,
+  "signal_id": "20261113-115947-HDFCLIFE",
+  "generated_at": "2026-11-13T11:59:47.153065+05:30",
+  "nifty_ltp": 25144.5,
   "candidates": [
     {
       "ticker": "HDFCLIFE",
       "signal": "SELL",
-      "ltp": 591.8,
-      "stop": 595.39,
-      "target": 582.82,
+      "ltp": 592.15,
+      "stop": 595.74,
+      "target": 583.17,
       "qty": 33,
       "indicators": {
         "rsi": 38.58,
         "atr": 2.3948,
         "atr_5m": 1.1662,
-        "vwap": 594.51,
+        "vwap": 594.5,
         "vol_ratio": 2.67
       },
-      "scout_reason": "NIFTY 50 -0.62% oversold for SELL; size cut 50%",
+      "scout_reason": "NIFTY 50 -0.61% oversold for SELL; size cut 50%",
       "candles_5m": [
         [
           "10:20",
@@ -174,16 +174,16 @@
         [
           "11:55",
           591.05,
-          592.0,
+          592.15,
           591.05,
-          591.9,
-          25414
+          592.1,
+          29410
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
-      "outcome_reason": "INTO_WALL: entry 0.8 below session low (591.0) within 0.5*ATR=1.1974",
-      "outcome_at": "2026-11-13T11:57:31.391629+05:30"
+      "outcome_reason": "INTO_WALL: entry 592.15 is 1.15 above session low 591.0, within 0.5*ATR (1.20)",
+      "outcome_at": "2026-11-13T11:59:51.482660+05:30"
     }
   ]
 }
