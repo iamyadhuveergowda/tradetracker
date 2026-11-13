@@ -3157,5 +3157,32 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261113-131709-BAJAJ-AUTO",
+    "signal_time": "2026-11-13T13:17:09+05:30",
+    "judged_at": "2026-11-13T13:17:53+05:30",
+    "age_min": 0.7,
+    "ticker": "BAJAJ-AUTO",
+    "action": "SELL",
+    "entry": 10825.0,
+    "stop": 10881.81,
+    "target": 10682.97,
+    "qty": 1,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "Valid only on a break below 10810.0 with follow-through volume > 2x average",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI (41.68) is neutral, not extreme. Candle structure shows a late-session breakdown at 12:45 (10810.0 low) with a 5% drop from 10862.0 high, but no clear momentum reversal or exhaustion. ATR buffer (1.5x stop) is tight, and the target (10682.97) is 3.75 ATR away—unrealistic in 133 minutes without a catalyst. Last 12 candles show erratic volume spikes (e.g., 13122 at 12:45) but no sustained follow-through.",
+      "sentiment": "No headline information available. Volume surge at 12:45 (13122) suggests short-covering or profit-booking, but no sector-wide prints or tape-driven momentum. Sentiment leans bearish on the breakdown, but lack of follow-through raises skepticism.",
+      "macro": "NIFTY is -0.71% oversold, but late-session entries (133 minutes left) require exceptional structure. SELL aligns with index tape, but the time window is too tight for a 3.75 ATR move without a catalyst.",
+      "risk": "Reward:risk (2.5) is attractive, but stop distance (1.5 ATR) is too close for a volatile auto stock. No results risk, but feasibility is **INFEASIBLE**—target distance (3.75 ATR) in 133 minutes is unrealistic without a tailwind. Late-session breakdowns often fail to hold."
+    },
+    "rationale": "SKIP: Late-session breakdown lacks momentum, follow-through, and feasibility. Valid only if 10810.0 breaks with volume > 2x average and tape confirms sector-wide weakness. Current structure is speculative for intraday.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
