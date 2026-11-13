@@ -1,20 +1,20 @@
 {
-  "signal_id": "20261113-111102-MARUTI",
-  "generated_at": "2026-11-13T11:11:02.536690+05:30",
-  "nifty_ltp": 25194.85,
+  "signal_id": "20261113-111308-MARUTI",
+  "generated_at": "2026-11-13T11:13:08.970710+05:30",
+  "nifty_ltp": 25176.7,
   "candidates": [
     {
       "ticker": "MARUTI",
       "signal": "SELL",
-      "ltp": 12925.0,
-      "stop": 13003.96,
-      "target": 12727.6,
+      "ltp": 12931.0,
+      "stop": 13009.96,
+      "target": 12733.6,
       "qty": 3,
       "indicators": {
         "rsi": 46.1,
         "atr": 52.6401,
         "atr_5m": 26.4661,
-        "vwap": 12902.57,
+        "vwap": 12902.81,
         "vol_ratio": 5.01
       },
       "scout_reason": "NIFTY BEARISH, sector AUTO BEARISH",
@@ -174,16 +174,16 @@
         [
           "11:10",
           12924.0,
-          12925.0,
-          12924.0,
-          12925.0,
-          42
+          12934.0,
+          12920.0,
+          12934.0,
+          1159
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-13T11:11:03.122060+05:30"
+      "outcome_at": "2026-11-13T11:13:09.418815+05:30"
     }
   ]
 }
