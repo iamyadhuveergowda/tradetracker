@@ -1,23 +1,23 @@
 {
-  "signal_id": "20261113-133659-TATASTEEL",
-  "generated_at": "2026-11-13T13:36:59.727518+05:30",
-  "nifty_ltp": 25117.85,
+  "signal_id": "20261113-133920-TATASTEEL",
+  "generated_at": "2026-11-13T13:39:20.501561+05:30",
+  "nifty_ltp": 25124.4,
   "candidates": [
     {
       "ticker": "TATASTEEL",
       "signal": "SELL",
-      "ltp": 187.03,
-      "stop": 187.79,
-      "target": 185.12,
+      "ltp": 187.02,
+      "stop": 187.77,
+      "target": 185.15,
       "qty": 105,
       "indicators": {
         "rsi": 44.91,
-        "atr": 0.5085,
+        "atr": 0.495,
         "atr_5m": 0.2311,
         "vwap": 187.51,
         "vol_ratio": 1.74
       },
-      "scout_reason": "NIFTY 50 -0.72% oversold for SELL; size cut 50%",
+      "scout_reason": "NIFTY 50 -0.69% oversold for SELL; size cut 50%",
       "candles_5m": [
         [
           "12:00",
@@ -176,14 +176,14 @@
           187.01,
           187.14,
           186.98,
-          187.03,
-          18556
+          187.05,
+          32426
         ]
       ],
-      "stop_floor_bound": false,
+      "stop_floor_bound": true,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-13T13:37:00.185984+05:30"
+      "outcome_at": "2026-11-13T13:39:21.363448+05:30"
     }
   ]
 }
