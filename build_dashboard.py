@@ -59,6 +59,10 @@ _STAMP_RE = re.compile(
 # (The v1 page still says v13.7 in its title while the live agent is v13.9.)
 _AGENT_VERSION = "v13.11"
 
+# Generator change log: 2026-11-15 — Kaggle Picks card added (reads
+# kaggle_picks/kaggle_picks_log.csv and, when present,
+# kaggle_intraday/intraday_scored.csv). No other section changed.
+
 # Starting capital of the paper account (Rs.1,00,000). The MTM card falls
 # back to START_CAPITAL + ledger net when the old page has no MTM card.
 _START_CAPITAL = 100000.0
@@ -723,6 +727,174 @@ def macro_strip(repo: Path) -> str:
     )
 
 
+# ---------------------------------------------------------------------------
+# Kaggle picks (daily v1.1 + intraday v2) — dashboard card, added 2026-11-15
+# ---------------------------------------------------------------------------
+# The daily notebook (kaggle_daily_picks_v1.1) pushes its picks log to
+# kaggle_picks/kaggle_picks_log.csv after each run; the intraday workflow
+# (once live) writes kaggle_intraday/intraday_scored.csv. Both are plain
+# CSVs with the same pick columns; the scored files also carry outcome /
+# realised_r. A missing file is NEVER a build failure: the daily panel
+# shows "no picks yet" and the intraday panel is simply omitted.
+
+import csv as _csv
+
+_KAGGLE_DAILY_LOG = Path("kaggle_picks/kaggle_picks_log.csv")
+_KAGGLE_INTRADAY_SCORED = Path("kaggle_intraday/intraday_scored.csv")
+_KAGGLE_INTRADAY_LOG = Path("kaggle_intraday/picks_log.csv")
+_KAGGLE_RANDOM_WIN_RATE = 29.0  # % wins at 2.5R for a random screen (v1 trial)
+
+# outcome -> pill class (reuses the desk-table pill styles)
+_KAGGLE_BADGE = {
+    "WIN": "go",
+    "LOSS": "loss",
+    "AMBIGUOUS": "amb",
+    "CLOSE": "skip",
+    "PENDING": "skip",
+    "UNTESTED": "skip",
+}
+
+
+def _load_csv_rows(path: Path):
+    """Tolerant CSV read: missing file -> [], bad rows skipped, a bad file
+    never breaks the page (same rule as _load for JSON)."""
+    if not path.exists():
+        return []
+    try:
+        with path.open(newline="", encoding="utf-8") as f:
+            return [r for r in _csv.DictReader(f) if (r.get("ticker") or "").strip()]
+    except Exception as exc:  # never let a half-written file kill the page
+        print(f"  ! could not parse {path.name}: {exc}")
+        return []
+
+
+def _kaggle_trial_stats(rows):
+    """Trial line over all rows: decided picks (WIN/LOSS only), win rate,
+    average realised R. Undecided rows (PENDING/CLOSE/AMBIGUOUS) never
+    enter the win rate."""
+    decided = [r for r in rows if r.get("outcome") in ("WIN", "LOSS")]
+    wins = [r for r in decided if r["outcome"] == "WIN"]
+    rs = []
+    for r in decided:
+        try:
+            rs.append(float(r["realised_r"]))
+        except (TypeError, ValueError):
+            continue
+    return {
+        "n": len(rows),
+        "decided": len(decided),
+        "wins": len(wins),
+        "losses": len(decided) - len(wins),
+        "win_rate": (100.0 * len(wins) / len(decided)) if decided else None,
+        "avg_r": mean(rs) if rs else None,
+    }
+
+
+def _close_vs_ref_pct(row):
+    """Close vs ref % for a scored pick. Intraday rows carry
+    close_vs_ref_pct directly; daily rows only carry realised_r, so for a
+    CLOSE outcome derive it: R = (close - ref) / (ref - stop)."""
+    raw = row.get("close_vs_ref_pct")
+    try:
+        if raw not in (None, ""):
+            return float(raw) * 100.0
+    except (TypeError, ValueError):
+        pass
+    if row.get("outcome") == "CLOSE":
+        try:
+            rr = float(row["realised_r"])
+            ref = float(row["ref_price"])
+            stop = float(row["stop"])
+            return rr * (ref - stop) / ref * 100.0
+        except (TypeError, ValueError, ZeroDivisionError):
+            return None
+    return None
+
+
+def _kaggle_picks_table(rows, date_label):
+    """One market's picks for the latest date in `rows`: ticker, levels,
+    score, status badge, close vs ref % once scored."""
+    latest = max((r.get("pick_date") or "") for r in rows)
+    today = datetime.now(_IST).strftime("%Y-%m-%d")
+    suffix = " (today)" if latest == today else ""
+    shown = [r for r in rows if r.get("pick_date") == latest]
+    body = []
+    for r in sorted(shown, key=lambda x: x.get("market", "")):
+        outcome = (r.get("outcome") or "PENDING").upper()
+        badge = _KAGGLE_BADGE.get(outcome, "skip")
+        rr = None
+        try:
+            rr = float(r["realised_r"])
+        except (TypeError, ValueError):
+            pass
+        outcome_txt = outcome
+        if outcome in ("WIN", "LOSS") and rr is not None:
+            outcome_txt = f"{outcome} ({rr:+.1f}R)"
+        cvr = _close_vs_ref_pct(r)
+        cvr_txt = f"{cvr:+.1f}%" if cvr is not None else "—"
+        cvr_cls = "pos" if (cvr or 0) > 0 else ("neg" if (cvr or 0) < 0 else "dim")
+        body.append(
+            f'<tr><td>{esc(r.get("market"))}</td>'
+            f'<td><b>{esc(r.get("ticker"))}</b></td>'
+            f'<td>{esc(r.get("ref_price"))}</td>'
+            f'<td>{esc(r.get("stop"))}</td>'
+            f'<td>{esc(r.get("target"))}</td>'
+            f'<td>{esc(r.get("score"))}/7</td>'
+            f'<td><span class="pill {badge}">{outcome_txt}</span></td>'
+            f'<td class="{cvr_cls}">{cvr_txt}</td></tr>'
+        )
+    stats = _kaggle_trial_stats(rows)
+    if stats["decided"]:
+        trial = (
+            f'Trial to date: {stats["n"]} picks · {stats["decided"]} decided · '
+            f'win rate {stats["win_rate"]:.0f}% (random baseline ~{_KAGGLE_RANDOM_WIN_RATE:.0f}%) · '
+            f'avg R {stats["avg_r"]:+.2f}R' if stats["avg_r"] is not None else
+            f'Trial to date: {stats["n"]} picks · {stats["decided"]} decided · '
+            f'win rate {stats["win_rate"]:.0f}% (random baseline ~{_KAGGLE_RANDOM_WIN_RATE:.0f}%)'
+        )
+    else:
+        trial = f'Trial to date: {stats["n"]} picks · no decided picks yet (random baseline ~{_KAGGLE_RANDOM_WIN_RATE:.0f}% wins at 2.5R)'
+    return (
+        f'<div class="panel"><h3>{esc(date_label)} · {esc(latest)}{suffix}</h3>'
+        f'<table><thead><tr><th>Mkt</th><th>Ticker</th><th>Ref</th><th>Stop</th>'
+        f'<th>Target</th><th>Score</th><th>Status</th><th>Close vs ref</th></tr></thead>'
+        f'<tbody>{"".join(body)}</tbody></table>'
+        f'<div class="sub" style="margin-top:8px">{trial}</div></div>'
+    )
+
+
+def kaggle_picks_section(repo: Path) -> str:
+    """The Kaggle Picks card. Daily panel always renders (missing file ->
+    'no picks yet'); the intraday panel renders only when its file exists."""
+    daily = _load_csv_rows(repo / _KAGGLE_DAILY_LOG)
+    # Intraday: prefer the scored file (carries outcomes); fall back to the
+    # raw picks log (all PENDING) if the EOD job has not scored it yet.
+    intra = _load_csv_rows(repo / _KAGGLE_INTRADAY_SCORED)
+    if not intra:
+        intra = _load_csv_rows(repo / _KAGGLE_INTRADAY_LOG)
+
+    if daily:
+        daily_html = _kaggle_picks_table(daily, "Daily picks")
+    else:
+        daily_html = (
+            '<div class="panel"><h3>Daily picks</h3>'
+            '<div class="empty">No picks logged yet. The daily notebook pushes '
+            'its log here after each run (needs the GITHUB_PAT Kaggle Secret); '
+            'until the first push lands, this card stays empty.</div></div>'
+        )
+
+    if intra:
+        intra_html = _kaggle_picks_table(intra, "Intraday picks")
+    else:
+        intra_html = ""
+
+    return (
+        '<h2>Kaggle picks <span class="tag">paper trial — names to watch, not orders; '
+        'scored on first-hit vs stop/target</span></h2>'
+        f'<div class="two">{daily_html}{intra_html}</div>'
+    )
+
+
 def kpi(label, value, sub="", cls=""):
     sub_html = f'<div class="sub">{sub}</div>' if sub else ""
     return f'<div class="card"><div class="lbl">{label}</div><div class="big {cls}">{value}</div>{sub_html}</div>'
@@ -764,6 +936,8 @@ tr.click:hover td{background:#20202f}
 .pill{display:inline-block;border-radius:10px;padding:1px 7px;font-size:10.5px;border:1px solid var(--line)}
 .pill.go{color:var(--pos);border-color:var(--pos)}
 .pill.skip{color:var(--dim)}
+.pill.loss{color:var(--neg);border-color:var(--neg)}
+.pill.amb{color:var(--warn);border-color:var(--warn)}
 .empty{text-align:center;color:var(--dim);padding:18px}
 .chart{width:100%;height:auto;display:block}
 .ax{font-size:9.5px;fill:#7f859b}
@@ -1212,6 +1386,7 @@ def render_html(
     js = JS.replace("__TRADES_JSON__", trades_json)
 
     # -------------------------------------------------------------- page
+    kaggle_html = kaggle_picks_section(repo)
     return f"""<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta http-equiv="refresh" content="180">
@@ -1271,6 +1446,8 @@ def render_html(
   <div class="grid">{earn_html}</div></div>
   {scout_html}
 </div>
+
+{kaggle_html}
 
 <footer>
 Generated by <code>build_dashboard.py</code> from this repo's own JSON — no external requests, no CDN.

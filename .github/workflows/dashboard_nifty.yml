@@ -10,6 +10,9 @@ name: NIFTY Dashboard Rebuild
 #  * push on any data file the page reads (including the agent's own index.html
 #    until the agent patch lands — after that, index.html only changes here)
 #  * push on market_nifty.json, once the agent publishes it
+#  * push on kaggle_picks/** and kaggle_intraday/** — the Kaggle Picks card's
+#    data (the daily notebook pushes its log; the intraday workflow writes
+#    its files). A log push rebuilds the dashboard automatically.
 #  * a 10-min safety net across NIFTY hours, in case a push run is missed
 #
 # No [skip ci] here on purpose would retrigger this workflow forever, so the
@@ -32,6 +35,8 @@ on:
       - "desk_verdict_mistral.json"
       - "earnings_calendar_nifty.json"
       - "market_nifty.json"
+      - "kaggle_picks/**"
+      - "kaggle_intraday/**"
       - "index.html"
       - "build_dashboard.py"
       - ".github/workflows/dashboard_nifty.yml"
