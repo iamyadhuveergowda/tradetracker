@@ -777,7 +777,7 @@ def _kaggle_trial_stats(rows):
     rs = []
     for r in decided:
         try:
-            rs.append(float(r["realised_r"]))
+            rs.append(float(r.get("realised_r")))
         except (TypeError, ValueError):
             continue
     return {
@@ -802,7 +802,7 @@ def _close_vs_ref_pct(row):
         pass
     if row.get("outcome") == "CLOSE":
         try:
-            rr = float(row["realised_r"])
+            rr = float(row.get("realised_r"))
             ref = float(row["ref_price"])
             stop = float(row["stop"])
             return rr * (ref - stop) / ref * 100.0
@@ -824,7 +824,7 @@ def _kaggle_picks_table(rows, date_label):
         badge = _KAGGLE_BADGE.get(outcome, "skip")
         rr = None
         try:
-            rr = float(r["realised_r"])
+            rr = float(r.get("realised_r"))
         except (TypeError, ValueError):
             pass
         outcome_txt = outcome
