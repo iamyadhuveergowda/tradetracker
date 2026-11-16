@@ -3265,9 +3265,9 @@
       "risk": "Reward:risk of 2.5 is mathematically attractive, but the target distance (3.75 ATR) is tight for the remaining time (163 minutes). Stop distance (1.5 ATR) is adequate, but the lack of a clear breakout or momentum shift increases the risk of a false move. No results risk is present, but the late-session timing and weak structure weigh heavily against the trade."
     },
     "rationale": "NESTLEIND lacks a clean technical setup for a late-session long entry. The RSI is neutral, momentum is weak, and the volume spike at 12:40 failed to sustain upward pressure. The target is tight for the remaining time, and the entry is near the session high without follow-through. SKIP due to poor structure and late-session timing.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 2.44,
+    "outcome_at": "2026-11-17T02:11:19+05:30"
   },
   {
     "signal_id": "20261116-135229-GRASIM",
@@ -3295,8 +3295,8 @@
       "risk": "Reward:risk is 2.5, which is mathematically favorable, but the target distance (3.75 ATR) and time remaining (98 minutes) make this **INFEASIBLE** under normal market conditions. No results risk, but the lack of follow-through and tight stop (1.5 ATR) increases the likelihood of a stop-out in a choppy close. Feasibility is **INFEASIBLE** due to target distance and time constraints."
     },
     "rationale": "GRASIM lacks a clean technical setup, sector-wide follow-through, and macro alignment for a late-session entry. The target is unreachable in the remaining time (98 minutes), and the stock is consolidating without momentum. Default to SKIP despite the mathematically favorable reward:risk ratio.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.84,
+    "outcome_at": "2026-11-17T02:11:19+05:30"
   }
 ]
