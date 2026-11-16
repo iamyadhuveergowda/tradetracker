@@ -1,40 +1,24 @@
 {
-  "signal_id": "20261116-133245-NESTLEIND",
-  "generated_at": "2026-11-16T13:32:45.487711+05:30",
-  "nifty_ltp": 25244.25,
+  "signal_id": "20261116-134025-NESTLEIND",
+  "generated_at": "2026-11-16T13:40:25.703112+05:30",
+  "nifty_ltp": 25251.9,
   "candidates": [
     {
       "ticker": "NESTLEIND",
       "signal": "BUY",
-      "ltp": 1284.2,
-      "stop": 1278.16,
-      "target": 1299.3,
+      "ltp": 1283.9,
+      "stop": 1277.86,
+      "target": 1299.0,
       "qty": 30,
       "indicators": {
-        "rsi": 60.09,
+        "rsi": 54.12,
         "atr": 4.0277,
-        "atr_5m": 2.2693,
-        "vwap": 1280.85,
-        "vol_ratio": 1.57
+        "atr_5m": 2.3919,
+        "vwap": 1280.92,
+        "vol_ratio": 1.55
       },
       "scout_reason": "NIFTY BULLISH, sector FMCG BULLISH",
       "candles_5m": [
-        [
-          "11:55",
-          1280.6,
-          1282.2,
-          1279.8,
-          1280.3,
-          22792
-        ],
-        [
-          "12:00",
-          1280.3,
-          1281.3,
-          1279.6,
-          1280.1,
-          33558
-        ],
         [
           "12:05",
           1280.1,
@@ -175,15 +159,31 @@
           "13:30",
           1285.0,
           1285.1,
+          1282.2,
+          1282.2,
+          14430
+        ],
+        [
+          "13:35",
+          1282.3,
+          1285.1,
+          1281.7,
           1283.5,
-          1284.0,
-          11658
+          27335
+        ],
+        [
+          "13:40",
+          1283.5,
+          1283.9,
+          1283.5,
+          1283.9,
+          718
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
-      "outcome_reason": "DISTRIBUTION: heaviest volume bar in last 6 candles (13:20) volume 30564 showed supply into highs (high 1284.1, close 1283.4) against BUY direction; INTO_WALL: entry 1284.2 is within 0.5*ATR (2.01) of",
-      "outcome_at": "2026-11-16T13:32:51.928987+05:30"
+      "outcome_reason": "scout: omitted from LLM output",
+      "outcome_at": "2026-11-16T13:40:26.600533+05:30"
     }
   ]
 }
