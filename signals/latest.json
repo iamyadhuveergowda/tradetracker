@@ -1,20 +1,20 @@
 {
-  "signal_id": "20261116-135229-GRASIM",
-  "generated_at": "2026-11-16T13:52:29.304756+05:30",
-  "nifty_ltp": 25227.25,
+  "signal_id": "20261116-135439-GRASIM",
+  "generated_at": "2026-11-16T13:54:39.808142+05:30",
+  "nifty_ltp": 25209.6,
   "candidates": [
     {
       "ticker": "GRASIM",
       "signal": "BUY",
-      "ltp": 3067.1,
-      "stop": 3046.59,
-      "target": 3118.36,
+      "ltp": 3065.4,
+      "stop": 3044.89,
+      "target": 3116.66,
       "qty": 12,
       "indicators": {
         "rsi": 60.32,
         "atr": 13.6704,
         "atr_5m": 6.8517,
-        "vwap": 3055.18,
+        "vwap": 3055.5,
         "vol_ratio": 1.59
       },
       "scout_reason": "NIFTY BULLISH, sector CEMENT NEUTRAL",
@@ -175,15 +175,15 @@
           "13:50",
           3070.9,
           3070.9,
-          3066.5,
-          3067.0,
-          2613
+          3065.0,
+          3068.1,
+          16718
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-16T13:52:30.159979+05:30"
+      "outcome_at": "2026-11-16T13:54:40.954943+05:30"
     }
   ]
 }
