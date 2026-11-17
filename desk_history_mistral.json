@@ -3478,5 +3478,35 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261117-131740-AXISBANK",
+    "signal_time": "2026-11-17T13:17:40+05:30",
+    "judged_at": "2026-11-17T13:18:35+05:30",
+    "age_min": 0.9,
+    "ticker": "AXISBANK",
+    "action": "BUY",
+    "entry": 1369.8,
+    "stop": 1363.52,
+    "target": 1385.51,
+    "qty": 28,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "Valid only on a break below 1366.80 with follow-through volume > 300k",
+    "setup_hash": "32110ab27a23186a85b0873da72f7761630a9329",
+    "index_name": "NIFTY 50",
+    "index_day_pct": 0.36,
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "Candle structure shows a late-session breakdown with a long lower wick (1366.80) and a doji-like rejection at 1370.00 in the 13:15 candle. RSI (51.01) is neutral, but the ATR buffer (4.1897) suggests volatility is moderate. The 13:10 candle's high (1368.8) failed to sustain, indicating weak momentum. The setup lacks a clear bullish reversal signal and appears to be chasing the initial breakout.",
+      "sentiment": "No headline information available. Volume behavior shows a spike in the 13:05 candle (375065) on the breakdown, but the follow-through volume in the 13:10 and 13:15 candles (243947 and 25803) is inconsistent with a strong sector-wide rally. The bank sector's tape is mixed; AXISBANK is not leading the charge.",
+      "macro": "The trade direction (BUY) is counterintuitive given the late-session breakdown and the time remaining (133 minutes to close). Late-session entries require exceptional structure, and this setup lacks it. The NIFTY spot (25393.05) is not showing a clear bullish bias at this juncture.",
+      "risk": "Stop distance (1.5 ATR) is tight, and the target (1385.51) is 3.75 ATR away, which is ambitious given the time left (133 minutes). The reward:risk ratio (2.5) is decent, but the lack of follow-through and weak candle structure increases the risk of a false breakout. No results risk is present, but the late-session entry is inherently risky."
+    },
+    "rationale": "AXISBANK's late-session breakdown lacks conviction despite the NIFTY and sector being scouted as bullish. The candle structure, weak follow-through volume, and lack of a clear reversal signal make this a high-risk, low-reward setup. The trade is SKIPPED unless a break below 1366.80 with volume > 300k confirms a stronger bearish bias, which would still require exceptional structure to justify a GO.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
