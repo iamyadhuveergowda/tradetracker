@@ -62,6 +62,9 @@ _AGENT_VERSION = "v13.11"
 # Generator change log: 2026-11-15 — Kaggle Picks card added (reads
 # kaggle_picks/kaggle_picks_log.csv and, when present,
 # kaggle_intraday/intraday_scored.csv). No other section changed.
+# 2026-11-17 — Kaggle card shows full pick history (hideable) instead of
+# latest date only; Trade History gets a Hide/Show history button. Same
+# toggle helper for both; no data or scoring change.
 
 # Starting capital of the paper account (Rs.1,00,000). The MTM card falls
 # back to START_CAPITAL + ledger net when the old page has no MTM card.
@@ -811,38 +814,44 @@ def _close_vs_ref_pct(row):
     return None
 
 
-def _kaggle_picks_table(rows, date_label):
-    """One market's picks for the latest date in `rows`: ticker, levels,
-    score, status badge, close vs ref % once scored."""
+def _kaggle_pick_row(r, with_date=False):
+    """One picks-table row: levels, score, status badge, close vs ref %.
+    with_date adds the pick_date cell (history table only)."""
+    outcome = (r.get("outcome") or "PENDING").upper()
+    badge = _KAGGLE_BADGE.get(outcome, "skip")
+    rr = None
+    try:
+        rr = float(r.get("realised_r"))
+    except (TypeError, ValueError):
+        pass
+    outcome_txt = outcome
+    if outcome in ("WIN", "LOSS") and rr is not None:
+        outcome_txt = f"{outcome} ({rr:+.1f}R)"
+    cvr = _close_vs_ref_pct(r)
+    cvr_txt = f"{cvr:+.1f}%" if cvr is not None else "—"
+    cvr_cls = "pos" if (cvr or 0) > 0 else ("neg" if (cvr or 0) < 0 else "dim")
+    date_cell = f"<td>{esc(r.get('pick_date'))}</td>" if with_date else ""
+    return (
+        f"<tr>{date_cell}<td>{esc(r.get('market'))}</td>"
+        f"<td><b>{esc(r.get('ticker'))}</b></td>"
+        f"<td>{esc(r.get('ref_price'))}</td>"
+        f"<td>{esc(r.get('stop'))}</td>"
+        f"<td>{esc(r.get('target'))}</td>"
+        f"<td>{esc(r.get('score'))}/7</td>"
+        f"<td><span class=\"pill {badge}\">{outcome_txt}</span></td>"
+        f"<td class=\"{cvr_cls}\">{cvr_txt}</td></tr>"
+    )
+
+
+def _kaggle_picks_table(rows, date_label, hist_id):
+    """One market's picks for the latest date in `rows`, plus a hideable
+    history table of every earlier date (newest first)."""
     latest = max((r.get("pick_date") or "") for r in rows)
     today = datetime.now(_IST).strftime("%Y-%m-%d")
     suffix = " (today)" if latest == today else ""
     shown = [r for r in rows if r.get("pick_date") == latest]
-    body = []
-    for r in sorted(shown, key=lambda x: x.get("market", "")):
-        outcome = (r.get("outcome") or "PENDING").upper()
-        badge = _KAGGLE_BADGE.get(outcome, "skip")
-        rr = None
-        try:
-            rr = float(r.get("realised_r"))
-        except (TypeError, ValueError):
-            pass
-        outcome_txt = outcome
-        if outcome in ("WIN", "LOSS") and rr is not None:
-            outcome_txt = f"{outcome} ({rr:+.1f}R)"
-        cvr = _close_vs_ref_pct(r)
-        cvr_txt = f"{cvr:+.1f}%" if cvr is not None else "—"
-        cvr_cls = "pos" if (cvr or 0) > 0 else ("neg" if (cvr or 0) < 0 else "dim")
-        body.append(
-            f'<tr><td>{esc(r.get("market"))}</td>'
-            f'<td><b>{esc(r.get("ticker"))}</b></td>'
-            f'<td>{esc(r.get("ref_price"))}</td>'
-            f'<td>{esc(r.get("stop"))}</td>'
-            f'<td>{esc(r.get("target"))}</td>'
-            f'<td>{esc(r.get("score"))}/7</td>'
-            f'<td><span class="pill {badge}">{outcome_txt}</span></td>'
-            f'<td class="{cvr_cls}">{cvr_txt}</td></tr>'
-        )
+    older = [r for r in rows if r.get("pick_date") != latest]
+    body = [_kaggle_pick_row(r) for r in sorted(shown, key=lambda x: x.get("market", ""))]
     stats = _kaggle_trial_stats(rows)
     if stats["decided"]:
         trial = (
@@ -854,12 +863,28 @@ def _kaggle_picks_table(rows, date_label):
         )
     else:
         trial = f'Trial to date: {stats["n"]} picks · no decided picks yet (random baseline ~{_KAGGLE_RANDOM_WIN_RATE:.0f}% wins at 2.5R)'
+    hist_html = ""
+    if older:
+        hbody = [
+            _kaggle_pick_row(r, with_date=True)
+            for r in sorted(
+                older,
+                key=lambda x: (x.get("pick_date") or "", x.get("market", ""), x.get("ticker") or ""),
+                reverse=True,
+            )
+        ]
+        hist_html = (
+            f'<div style="margin-top:10px"><button class="toggle" onclick="toggleBlock(\'{hist_id}\', this)">Hide history</button></div>'
+            f'<div id="{hist_id}" style="margin-top:8px"><table><thead><tr><th>Date</th><th>Mkt</th><th>Ticker</th><th>Ref</th><th>Stop</th>'
+            f'<th>Target</th><th>Score</th><th>Status</th><th>Close vs ref</th></tr></thead>'
+            f'<tbody>{"".join(hbody)}</tbody></table></div>'
+        )
     return (
         f'<div class="panel"><h3>{esc(date_label)} · {esc(latest)}{suffix}</h3>'
         f'<table><thead><tr><th>Mkt</th><th>Ticker</th><th>Ref</th><th>Stop</th>'
         f'<th>Target</th><th>Score</th><th>Status</th><th>Close vs ref</th></tr></thead>'
         f'<tbody>{"".join(body)}</tbody></table>'
-        f'<div class="sub" style="margin-top:8px">{trial}</div></div>'
+        f'<div class="sub" style="margin-top:8px">{trial}</div>{hist_html}</div>'
     )
 
 
@@ -874,7 +899,7 @@ def kaggle_picks_section(repo: Path) -> str:
         intra = _load_csv_rows(repo / _KAGGLE_INTRADAY_LOG)
 
     if daily:
-        daily_html = _kaggle_picks_table(daily, "Daily picks")
+        daily_html = _kaggle_picks_table(daily, "Daily picks", "kaggle-hist-daily")
     else:
         daily_html = (
             '<div class="panel"><h3>Daily picks</h3>'
@@ -884,7 +909,7 @@ def kaggle_picks_section(repo: Path) -> str:
         )
 
     if intra:
-        intra_html = _kaggle_picks_table(intra, "Intraday picks")
+        intra_html = _kaggle_picks_table(intra, "Intraday picks", "kaggle-hist-intra")
     else:
         intra_html = ""
 
@@ -976,6 +1001,12 @@ function filterTable(inputId, tableId){
     var hay=(tr.dataset.key||tr.textContent).toLowerCase();
     tr.style.display = !q || hay.indexOf(q)>-1 ? '' : 'none';
   });
+}
+function toggleBlock(id, btn){
+  var el=document.getElementById(id);
+  if(!el)return;
+  el.classList.toggle('hidden');
+  if(btn)btn.textContent=el.classList.contains('hidden')?'Show history':'Hide history';
 }
 function downloadCSV(){
   var cols=['date','time','ticker','action','qty','remaining_qty','entry','sl','tgt','last_price','exit_price','status','net_pnl','rationale'];
@@ -1419,6 +1450,7 @@ def render_html(
 <div class="row-actions">
   <input id="q" class="toggle" placeholder="Filter ticker / status…" onkeyup="filterTable('q','hist')" style="min-width:220px">
   <button class="toggle" onclick="downloadCSV()">Export CSV</button>
+  <button class="toggle" onclick="toggleBlock('hist', this)">Hide history</button>
 </div>
 <table id="hist"><thead><tr><th>Date</th><th>Time (IST)</th><th>Ticker</th><th>Action</th><th>Qty</th><th>Entry</th><th>SL</th>
 <th>TGT</th><th>Exit</th><th>Status</th><th>Net P&amp;L</th><th>R</th><th>Rationale</th></tr></thead>
