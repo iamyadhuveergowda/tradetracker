@@ -1,14 +1,14 @@
 {
-  "signal_id": "20261117-121729-KOTAKBANK",
-  "generated_at": "2026-11-17T12:17:29.855646+05:30",
-  "nifty_ltp": 25491.55,
+  "signal_id": "20261117-121947-KOTAKBANK",
+  "generated_at": "2026-11-17T12:19:47.484530+05:30",
+  "nifty_ltp": 25490.0,
   "candidates": [
     {
       "ticker": "KOTAKBANK",
       "signal": "BUY",
-      "ltp": 497.45,
-      "stop": 494.98,
-      "target": 503.61,
+      "ltp": 497.8,
+      "stop": 495.33,
+      "target": 503.96,
       "qty": 39,
       "indicators": {
         "rsi": 64.64,
@@ -174,16 +174,16 @@
         [
           "12:15",
           497.45,
-          497.6,
+          497.8,
           496.8,
-          497.55,
-          156927
+          497.1,
+          215584
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-17T12:17:33.054490+05:30"
+      "outcome_at": "2026-11-17T12:19:49.464907+05:30"
     }
   ]
 }
