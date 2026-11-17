@@ -907,5 +907,35 @@
     "outcome": "CLOSE",
     "outcome_r": 0.9,
     "outcome_at": "2026-11-13T23:16:00+05:30"
+  },
+  {
+    "signal_id": "20261117-133116-DRREDDY",
+    "signal_time": "2026-11-17T13:31:16+05:30",
+    "judged_at": "2026-11-17T13:31:50+05:30",
+    "age_min": 0.6,
+    "ticker": "DRREDDY",
+    "action": "BUY",
+    "entry": 1381.0,
+    "stop": 1375.48,
+    "target": 1394.81,
+    "qty": 28,
+    "verdict": "SKIP",
+    "confidence": 75,
+    "trigger": "Valid only on a break above 1383.00 with volume expansion",
+    "setup_hash": "19f2fffe04ca67df0f82c12a5445469a29ab06a7",
+    "index_name": "NIFTY 50",
+    "index_day_pct": 0.37,
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI sits at 57.39 reflecting mild positive momentum. While the 13:25 bar staged a sharp breakout to 1382.90 on 45,433 volume, the 13:30 follow-up candle immediately faded back to close at 1380.80 on just 3,150 volume, showing an inability to hold above the 1381.00 breakout level.",
+      "sentiment": "Tape sentiment showed a brief high-volume impulse at 13:25 that stalled immediately without sustained follow-through. Note that no headline news feed is available; evaluation is strictly tape-derived.",
+      "macro": "The broader index (NIFTY at 25389.3) and Pharma sector are flagged bullish, but entering late in the session with 119 minutes remaining requires clean structural continuation rather than immediate fade.",
+      "risk": "Target of 1394.81 requires traversing 3.79 ATRs (13.81 points) against a stop of 1375.48 (1.51 ATRs). Achieving nearly 4 ATRs in 119 minutes without clear continuation represents excessive duration risk. Results risk and feasibility flags are empty."
+    },
+    "rationale": "Despite sector and index tailwinds, DRREDDY's breakout attempt to 1382.90 saw volume vanish and price slip back to 1380.80. A 3.79 ATR target is overly ambitious in 119 minutes under these tape conditions; recommend SKIP.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
