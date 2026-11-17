@@ -3448,5 +3448,35 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261117-124421-SBIN",
+    "signal_time": "2026-11-17T12:44:21+05:30",
+    "judged_at": "2026-11-17T12:44:59+05:30",
+    "age_min": 0.6,
+    "ticker": "SBIN",
+    "action": "BUY",
+    "entry": 1109.85,
+    "stop": 1104.82,
+    "target": 1122.41,
+    "qty": 17,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "Valid only on a break above 1111.00 with volume > 300k and RSI > 65",
+    "setup_hash": "2957a539fe9aa55cbdce734e0f5204bca85b3bb1",
+    "index_name": "NIFTY 50",
+    "index_day_pct": 0.67,
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI (57.96) is neutral, not overbought. The last 12 candles show a choppy, sideways structure with no clear breakout momentum. The 12:35 candle (entry candle) has high volume (350,258) but closes near its low, lacking follow-through. ATR buffer (3.35) suggests a tight stop (1104.82), and the target (1122.41) is 3.75 ATR away—unlikely to be reached in 166 minutes without a strong catalyst. The 12:40 candle (current) is a doji-like structure, signaling indecision.",
+      "sentiment": "No headline information available. Volume spike at 12:35 (350,258) suggests some interest, but the lack of follow-through and sideways action in the last 12 candles implies weak sentiment. Sector-wide prints are not visible in the data, so no broader context is available.",
+      "macro": "NIFTY is +0.66% at 25,457.4, but this is not a late-session entry (166 minutes left). The trade direction (BUY) aligns with the index tape, but the time of day is not ideal for a high-conviction entry. Late-session entries require exceptional structure, which is absent here.",
+      "risk": "Stop distance is 1.5 ATR (1104.82), which is reasonable, but the target (1122.41) is 3.75 ATR away, yielding a 2.5:1 reward:risk. Feasibility is not flagged as INFEASIBLE or TIGHT, but the time remaining (166 minutes) is insufficient for a breakout to unfold without a catalyst. No results risk is present (empty field)."
+    },
+    "rationale": "SBIN lacks a clean technical setup with neutral RSI (57.96), choppy candles, and no follow-through momentum. The volume spike at 12:35 did not translate into upward momentum, and the time remaining (166 minutes) is insufficient for a breakout to the target (1122.41) without a catalyst. The trade is speculative and does not meet the criteria for a GO in this session.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
