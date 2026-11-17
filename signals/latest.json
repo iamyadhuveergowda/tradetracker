@@ -1,23 +1,23 @@
 {
-  "signal_id": "20261117-112031-ADANIENT",
-  "generated_at": "2026-11-17T11:20:31.381022+05:30",
-  "nifty_ltp": 25448.05,
+  "signal_id": "20261117-112241-ADANIENT",
+  "generated_at": "2026-11-17T11:22:41.545311+05:30",
+  "nifty_ltp": 25445.85,
   "candidates": [
     {
       "ticker": "ADANIENT",
       "signal": "BUY",
-      "ltp": 2692.7,
-      "stop": 2677.9,
-      "target": 2729.7,
+      "ltp": 2693.0,
+      "stop": 2678.2,
+      "target": 2730.0,
       "qty": 7,
       "indicators": {
         "rsi": 56.55,
         "atr": 9.8678,
         "atr_5m": 5.2844,
-        "vwap": 2693.09,
+        "vwap": 2693.08,
         "vol_ratio": 2.03
       },
-      "scout_reason": "NIFTY 50 +0.62% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +0.61% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "09:45",
@@ -175,15 +175,15 @@
           "11:20",
           2694.0,
           2694.2,
-          2692.7,
-          2693.7,
-          884
+          2692.0,
+          2692.1,
+          4173
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-17T11:20:32.364111+05:30"
+      "outcome_at": "2026-11-17T11:22:42.642680+05:30"
     }
   ]
 }
