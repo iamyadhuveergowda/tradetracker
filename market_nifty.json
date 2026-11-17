@@ -1,35 +1,35 @@
 {
-  "fetched_at_ist": "2026-11-17 08:59 IST",
+  "fetched_at_ist": "2026-11-17 09:00 IST",
   "indices": [
     {
       "name": "NIFTY 50",
-      "price": 25291.1,
-      "label": "BULLISH",
-      "percent": 0.58
+      "price": 24824.45,
+      "label": "BEARISH",
+      "percent": -1.85
     },
     {
       "name": "NIFTY BANK",
-      "price": 61575.9,
-      "label": "BULLISH",
-      "percent": 0.89
+      "price": 59901.6,
+      "label": "BEARISH",
+      "percent": -2.72
     },
     {
       "name": "INDIA VIX",
-      "price": 0.16,
-      "label": "BULLISH",
-      "percent": 1.16
+      "price": 15.68,
+      "label": "NEUTRAL",
+      "percent": 0.0
     },
     {
       "name": "NIFTY IT",
-      "price": 31941.05,
-      "label": "NEUTRAL",
-      "percent": 0.03
+      "price": 31686.7,
+      "label": "BEARISH",
+      "percent": -0.8
     },
     {
       "name": "NIFTY AUTO",
-      "price": 27570.25,
-      "label": "BEARISH",
-      "percent": -1.29
+      "price": 27758.05,
+      "label": "BULLISH",
+      "percent": 0.68
     }
   ]
 }
