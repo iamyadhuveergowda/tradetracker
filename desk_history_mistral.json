@@ -3328,5 +3328,35 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261117-112031-ADANIENT",
+    "signal_time": "2026-11-17T11:20:31+05:30",
+    "judged_at": "2026-11-17T11:20:56+05:30",
+    "age_min": 0.4,
+    "ticker": "ADANIENT",
+    "action": "BUY",
+    "entry": 2692.7,
+    "stop": 2677.9,
+    "target": 2729.7,
+    "qty": 7,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "setup_hash": "63a774ecf2524da4e3e38a1602b8eaa6e9efbe88",
+    "index_name": "NIFTY 50",
+    "index_day_pct": 0.64,
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 56.55 is neutral, not extreme. Candle structure at 11:20 shows a tight range (2692.7–2694.2) with no clear follow-through momentum. The last 5-minute candle is a doji-like indecision bar, lacking conviction. ATR buffer (1.5x) stop at 2677.9 is too close for a late-session entry (250 minutes left), and the target (2729.7) requires a 3.75 ATR move—unlikely in remaining time without stronger structure. Volume spike at 11:15 (23961) was a one-off and did not sustain momentum.",
+      "sentiment": "No headline information available. Volume ratio (2.03) suggests some interest, but the tape lacks sector-wide follow-through. The stock is trading in isolation without broader NIFTY participation.",
+      "macro": "NIFTY is +0.62% at 25448.05, but the late-session entry (11:20) is risky without confirmation. The index is overextended per scout note, but ADANIENT’s lack of alignment with the broader tape (e.g., no sector-wide rally or breakout) makes it a high-risk play. Late-session entries require exceptional structure, which is absent here.",
+      "risk": "Target distance (3.75 ATR) is tight for 250 minutes left (feasibility: **TIGHT**). Stop distance (1.5 ATR) is aggressive for intraday. No results risk, but the reward:risk of 2.5 is misleading without a high-probability setup. The trade is exposed to a quick reversal if the index stalls or turns."
+    },
+    "rationale": "ADANIENT’s BUY at 2692.7 lacks a clean technical setup, sector-wide sentiment, or macro alignment for a late-session entry. The RSI is neutral, candles are indecisive, and the target is tight for the remaining time. Default to SKIP despite the reward:risk ratio, as the structure does not justify the risk in a paper-trading environment.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
