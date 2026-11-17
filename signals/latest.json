@@ -1,20 +1,20 @@
 {
-  "signal_id": "20261117-133116-DRREDDY",
-  "generated_at": "2026-11-17T13:31:16.961611+05:30",
-  "nifty_ltp": 25389.3,
+  "signal_id": "20261117-133332-DRREDDY",
+  "generated_at": "2026-11-17T13:33:32.752933+05:30",
+  "nifty_ltp": 25381.15,
   "candidates": [
     {
       "ticker": "DRREDDY",
       "signal": "BUY",
-      "ltp": 1381.0,
-      "stop": 1375.48,
-      "target": 1394.81,
+      "ltp": 1380.6,
+      "stop": 1375.08,
+      "target": 1394.41,
       "qty": 28,
       "indicators": {
         "rsi": 57.39,
         "atr": 3.6481,
         "atr_5m": 2.5521,
-        "vwap": 1377.49,
+        "vwap": 1377.54,
         "vol_ratio": 3.72
       },
       "scout_reason": "NIFTY BULLISH, sector PHARMA BULLISH",
@@ -175,15 +175,15 @@
           "13:30",
           1382.0,
           1382.9,
-          1380.8,
-          1380.8,
-          3150
+          1379.8,
+          1380.7,
+          11798
         ]
       ],
       "stop_floor_bound": true,
       "outcome": "dropped_other",
-      "outcome_reason": "INTO_WALL: entry 1381.0 within 0.5*ATR (1.824) of recent swing high 1382.9",
-      "outcome_at": "2026-11-17T13:31:22.658565+05:30"
+      "outcome_reason": "scout: omitted from LLM output",
+      "outcome_at": "2026-11-17T13:33:35.780158+05:30"
     }
   ]
 }
