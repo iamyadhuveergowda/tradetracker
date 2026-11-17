@@ -934,8 +934,8 @@
       "risk": "Target of 1394.81 requires traversing 3.79 ATRs (13.81 points) against a stop of 1375.48 (1.51 ATRs). Achieving nearly 4 ATRs in 119 minutes without clear continuation represents excessive duration risk. Results risk and feasibility flags are empty."
     },
     "rationale": "Despite sector and index tailwinds, DRREDDY's breakout attempt to 1382.90 saw volume vanish and price slip back to 1380.80. A 3.79 ATR target is overly ambitious in 119 minutes under these tape conditions; recommend SKIP.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 1.27,
+    "outcome_at": "2026-11-18T00:41:51+05:30"
   }
 ]
