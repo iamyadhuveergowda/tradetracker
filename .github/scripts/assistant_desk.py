@@ -78,14 +78,16 @@ from zoneinfo import ZoneInfo
 IST = ZoneInfo("Asia/Kolkata")
 GEMINI_MODEL = os.getenv("GEMINI_MODEL") or "gemini-3.8-flash"
 
-def gemini_post_with_retry(req, timeout=90, attempts=3):
+def gemini_post_with_retry(req, timeout=90, attempts=5):
     """POST to Gemini with retries on timeouts / 5xx / 429 only.
 
     A 4xx other than 429 (e.g. 404 bad model) fails fast -- retrying
     cannot fix it. 429 is retryable: rate-limit windows are usually
-    per-minute, so 429 uses longer backoff (30s then 60s) than
-    timeouts/5xx (10s then 20s). A timeout, like the Oct 24 mock run,
-    is retried: 90s per attempt. Raises the last error.
+    per-minute, so 429 uses longer backoff (30s, 60s, 90s, 120s across
+    the 5 attempts) than timeouts/5xx (10s, 20s, 30s, 40s). A timeout,
+    like the Oct 24 mock run, is retried: 90s per attempt. Worst case
+    (all attempts timing out) is ~12.5 min, inside the workflow's
+    15-min timeout. Raises the last error.
     """
     last_exc = None
     for attempt in range(1, attempts + 1):
