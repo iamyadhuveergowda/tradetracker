@@ -3598,5 +3598,35 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261118-100722-RELIANCE",
+    "signal_time": "2026-11-18T10:07:22+05:30",
+    "judged_at": "2026-11-18T10:07:48+05:30",
+    "age_min": 0.4,
+    "ticker": "RELIANCE",
+    "action": "BUY",
+    "entry": 1366.8,
+    "stop": 1358.17,
+    "target": 1388.37,
+    "qty": 14,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "setup_hash": "913f47b9c9c1c28441621021d760391af8ef6b07",
+    "index_name": "NIFTY 50",
+    "index_day_pct": -0.35,
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 60.72 suggests neutral momentum; ATR buffer (5.75 ATRs to target) is wide, but candle structure lacks follow-through. The 10:05 candle closed lower (1367.0) after a brief spike to 1370.5, indicating weak follow-through. No clear breakout or breakdown pattern visible in the last 12 candles. Entry at 1366.8 is near the 10:00 high (1370.5), suggesting a potential chase rather than a structured setup.",
+      "sentiment": "No headline information available. Volume ratio (1.55) is elevated but not exceptional; tape shows no sector-wide momentum in Reliance. The 10:00-10:05 candles exhibit hesitation with volume drying up post-spike, signaling caution.",
+      "macro": "NIFTY is trending down (-0.39%), and the time remaining (323 minutes) is insufficient for a late-session reversal. Reliance’s action is counter to the broader index tape, increasing macro misalignment risk.",
+      "risk": "Target distance (3.75 ATRs) is achievable in 323 minutes, but **feasibility is TIGHT** due to time constraints and lack of clear momentum. Stop distance (1.5 ATRs) is reasonable, but reward:risk (2.5) is not compelling given the weak structure. No results risk, but late-session entries require exceptional structure, which is absent here."
+    },
+    "rationale": "SKIP: Weak candle follow-through, counter-trend to NIFTY, and insufficient time-to-close for a structured reversal. Elevated volume ratio does not justify the trade given the lack of momentum and macro alignment.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
