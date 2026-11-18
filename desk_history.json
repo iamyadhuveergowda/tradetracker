@@ -964,9 +964,9 @@
       "risk": "Stop is set at 396.23 (1.50 ATR, 1.88 pts) with target at 389.65 (3.75 ATR, 4.70 pts) offering an acceptable 2.5 R:R. However, demanding 3.75 ATR of downward movement without breakdown confirmation against an oversold market is low-probability. Results risk is empty."
     },
     "rationale": "BEL is consolidating above its morning low of 393.65 after an initial sell-off. With the NIFTY index already down -0.64% and oversold, initiating a short at 394.35 carries high mean-reversion risk. Passing on this entry until a confirmed break below 393.65 occurs.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-19T00:22:17+05:30"
   },
   {
     "signal_id": "20261118-112540-DIVISLAB",
@@ -994,9 +994,9 @@
       "risk": "Target distance of 3.75 ATR (176.33 pts) is steep to cover within the remaining 245 minutes against index headwinds. Results risk is empty. The paper R:R of 2.5 is degraded by the immediate overhead resistance around 11200-11208."
     },
     "rationale": "DIVISLAB is attempting a rebound off 11159.0 but remains bound within its intraday consolidation band under 11208.0. With NIFTY down -0.49% and target distance demanding an ambitious 3.75 ATR rally across 245 minutes, taking a counter-trend BUY here carries poor odds. Sizing was already cut 50% by the scout; passing completely costs nothing.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-19T00:22:17+05:30"
   },
   {
     "signal_id": "20261118-113052-INFY",
@@ -1024,9 +1024,9 @@
       "risk": "Target distance of 3.75 ATR (13.82 points to 1103.18) is ambitious given the sluggish 3-point trading band seen across the last hour. Stop distance is 1.5 ATR (5.53 points to 1122.53) for an attractive 2.5 R:R, but entering ahead of confirmation risks being stopped out by routine bounce noise. Results risk is empty and not a factor."
     },
     "rationale": "While sector and index pressures align with a short thesis, INFY has bounced off 1114.70 with rising volume on recent 5-minute bars up to 1117.00. Selling the top of this micro-rebound without breakdown confirmation offers poor immediate risk, warranting a SKIP until 1114.70 breaks.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 1.48,
+    "outcome_at": "2026-11-19T00:22:17+05:30"
   },
   {
     "signal_id": "20261118-114718-INFY",
@@ -1054,9 +1054,9 @@
       "risk": "The proposed stop at 570.18 is extremely vulnerable given the 11:30 bar wicked to 570.25, placing the stop below recent peak liquidity. Requiring a 3.75 ATR move (8.46 pts) down to 558.34 is demanding given the current lack of bearish momentum."
     },
     "rationale": "SBICARD recently wicked up to 570.25, making the proposed stop at 570.18 ill-placed and vulnerable. Without a breakdown below the 11:00 low of 564.85 and with declining sell volume, the short setup lacks confirmation.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 1.57,
+    "outcome_at": "2026-11-19T00:22:17+05:30"
   },
   {
     "signal_id": "20261118-124007-JSWSTEEL",
@@ -1084,9 +1084,9 @@
       "risk": "Stop of 1322.37 (1.50 ATR) is adequately placed above 1319.10, but the target of 1298.69 requires a massive 3.75 ATR move (16.91 points) in 170 minutes against current consolidation. Results risk is empty."
     },
     "rationale": "SKIP. Shorting JSWSTEEL here lacks breakdown confirmation after an intraday bounce to 1319.10. With NIFTY already oversold at -0.76% and target distance demanding an ambitious 3.75 ATR drop to 1298.69 in 170 minutes, the setup offers poor execution probability.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": -0.04,
+    "outcome_at": "2026-11-19T00:22:17+05:30"
   },
   {
     "signal_id": "20261118-132633-BEL",
@@ -1114,9 +1114,9 @@
       "risk": "Target of 389.05 sits 3.75 ATR away, an ambitious stretch given the 1.15 ATR and the fact that price has moved less than 1.50 points across the past 12 candles. Stop distance is 1.50 ATR (395.07). Results risk is empty."
     },
     "rationale": "BEL is consolidating in a tight 392.65-394.05 range with volume leaning toward dip buyers at 13:15-13:20. With 124 minutes left, demanding a 3.75 ATR drop into an already oversold index tape carries poor intraday expectancy. SKIP unless 392.65 breaks with volume.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-19T00:22:17+05:30"
   },
   {
     "signal_id": "20261118-133609-M&M",
@@ -1144,9 +1144,9 @@
       "risk": "Target of 3294.55 requires traversing 3.75 ATR (44.45 points) in 114 minutes, which is ambitious given the current tight consolidation. Stop is set at 3356.78 (1.5 ATR). No results risk is noted in the calendar."
     },
     "rationale": "M&M is trapped in an 18-point intraday range with the current tape pausing at 3340.00. Asking for a 3.75 ATR downside extension into an already oversold index tape with 114 minutes remaining presents poor probability without a prior break of 3331.00.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-19T00:22:17+05:30"
   },
   {
     "signal_id": "20261118-133609-M&M",
@@ -1174,9 +1174,9 @@
       "risk": "Target distance of 3.75 ATR (8.37 points down to 568.13) is unrealistic within 114 minutes given the stock has moved less than 2 points over the preceding 60 minutes. Stop is 579.85 (1.5 ATR). No results risk is logged."
     },
     "rationale": "HDFCLIFE is in dead sideways compression between 575.70 and 577.65 with volume drying up. Demanding a 3.75 ATR downward trend in 114 minutes from this stagnant structure is unjustified.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-19T00:22:17+05:30"
   },
   {
     "signal_id": "20261118-134109-COALINDIA",
@@ -1204,9 +1204,9 @@
       "risk": "Target distance is 3.75 ATR (383.71, 4.09 pts away), which is highly demanding given the sluggish 1.09 ATR and only 109 minutes remaining. Results risk is empty."
     },
     "rationale": "SKIP COALINDIA short. Requiring a 3.75 ATR move to 383.71 within 109 minutes is unrealistic out of a 1.35-point consolidation band, especially with neutral RSI (46.55) and an oversold broader market.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": -0.12,
+    "outcome_at": "2026-11-19T00:22:17+05:30"
   },
   {
     "signal_id": "20261118-135016-CIPLA",
@@ -1234,8 +1234,8 @@
       "risk": "Target distance is 3.75 ATR (25.16 points to 1454.16). Given the tight intraday range and only 100 minutes to close, achieving a nearly 4-ATR expansion against market trend is highly improbable despite the 2.5 R:R."
     },
     "rationale": "SKIP. CIPLA is tightly range-bound between 1427 and 1430 against a weak broader tape (NIFTY -0.84%). Covering a 3.75 ATR distance to 1454.16 within 100 minutes is unrealistic given current volatility.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-19T00:22:17+05:30"
   }
 ]
