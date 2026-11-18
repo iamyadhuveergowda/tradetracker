@@ -3688,5 +3688,35 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261118-110546-BEL",
+    "signal_time": "2026-11-18T11:05:46+05:30",
+    "judged_at": "2026-11-18T11:06:11+05:30",
+    "age_min": 0.4,
+    "ticker": "BEL",
+    "action": "SELL",
+    "entry": 394.35,
+    "stop": 396.23,
+    "target": 389.65,
+    "qty": 50,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "setup_hash": "8e691b44010a8a613a77fd18c78e770889c2064d",
+    "index_name": "NIFTY 50",
+    "index_day_pct": -0.65,
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 36.68 indicates oversold territory, but the candle structure at 11:05 (11:05 candle: close 394.35, low 394.15) shows a weak follow-through after a sharp drop from 396.3 (10:10 high). The 5-minute candle at 10:30 (close 393.75) was a strong bearish candle with high volume (87,388), but the subsequent candles lack conviction. ATR buffer (1.2534) suggests a tight stop (396.23) and a distant target (389.65, 3.75 ATR away). The setup lacks a clean break or momentum confirmation.",
+      "sentiment": "No headline information available. Volume behavior shows a spike at 10:30 (87,388) and 11:00 (166,272), but the follow-through is weak. The NIFTY-wide oversold condition (NIFTY -0.65%) does not guarantee BEL’s participation; sector-wide prints are not visible in the data.",
+      "macro": "Late-session entries require exceptional structure, and this SELL lacks it. The NIFTY is oversold, but BEL’s move is isolated without clear macro alignment. Time remaining (265 minutes) is ample, but the trade direction (SELL) does not align with a late-session rally or exhaustion play.",
+      "risk": "Reward:risk is 2.5, but the target (389.65) is 3.75 ATR away, making it a stretch in the remaining time. Stop distance (1.5 ATR) is tight, and the trade is exposed to a quick reversal. No results risk, but the lack of follow-through increases execution risk. Feasibility is empty, but the target distance and weak structure make it **TIGHT** at best."
+    },
+    "rationale": "BEL’s SELL setup at 394.35 lacks clean momentum, follow-through, and macro alignment. The oversold RSI (36.68) and weak candle structure (no breakout/breakdown confirmation) make this a speculative play with high execution risk. The target (389.65) is too distant (3.75 ATR) for the remaining 265 minutes, and the stop (396.23) is too close to the entry. SKIP unless BEL shows a decisive breakdown below 394.15 with volume confirmation.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
