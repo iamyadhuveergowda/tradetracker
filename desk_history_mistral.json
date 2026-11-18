@@ -3538,5 +3538,35 @@
     "outcome": "CLOSE",
     "outcome_r": 1.27,
     "outcome_at": "2026-11-18T00:55:01+05:30"
+  },
+  {
+    "signal_id": "20261118-094641-TATACONSUM",
+    "signal_time": "2026-11-18T09:46:41+05:30",
+    "judged_at": "2026-11-18T09:47:19+05:30",
+    "age_min": 0.6,
+    "ticker": "TATACONSUM",
+    "action": "SELL",
+    "entry": 1106.8,
+    "stop": 1113.06,
+    "target": 1091.15,
+    "qty": 17,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "Valid only on a break below 1106.70 with follow-through volume > 2x average 5m volume (avg ~20k)",
+    "setup_hash": "2e30dd257152f683432b86fc00c432c748aab13b",
+    "index_name": "NIFTY 50",
+    "index_day_pct": -0.61,
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 48.94 is neutral, not extreme. Candle structure shows a late-session spike at 15:05 (1112.2) with no follow-through; current candle (09:45) is a bearish engulfing attempt but lacks conviction. ATR buffer (4.174) suggests a tight stop (1113.06) and a distant target (1091.15, 3.75 ATR away). Momentum is weak: last 5m candle closed at 1107.1, well above entry (1106.8), and no clear breakout/breakdown pattern.",
+      "sentiment": "No headline information available. Volume behavior is erratic: 15:05 spike had 35,964 volume but no follow-through; 09:35 candle had 70,206 volume but closed lower. Sector-wide prints not visible in data. Late-session prints (14:55-15:15) show indecision with minimal volume, suggesting low conviction.",
+      "macro": "NIFTY is -0.71% from spot (25208.3), but this is a late-session SELL signal (344 minutes to close). Late-session entries require exceptional structure, especially in a weakening index. The trade direction (SELL) aligns with the index tape, but the timing is risky without a clear catalyst or momentum confirmation.",
+      "risk": "Reward:risk is 2.5, but target distance (3.75 ATR) is aggressive for 344 minutes left (feasibility: empty, but target is TIGHT). Stop distance (1.5 ATR) is reasonable, but the lack of follow-through volume and weak candle structure increases risk of a false break. No results risk (empty), but late-session volatility is elevated. Feasibility is not explicitly marked, but the target is unlikely to be reached in time without a sharp move."
+    },
+    "rationale": "SKIP due to weak candle structure, lack of follow-through volume, and late-session timing. The trade requires a break below 1106.70 with volume confirmation to be valid, but current tape shows no momentum. Even if entered, the target (1091.15) is TIGHT for 344 minutes left, and the stop (1113.06) is too close to entry (1106.8) to justify risk in this setup.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
