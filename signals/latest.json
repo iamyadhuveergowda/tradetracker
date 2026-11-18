@@ -1,7 +1,7 @@
 {
-  "signal_id": "20261118-110546-BEL",
-  "generated_at": "2026-11-18T11:05:46.546299+05:30",
-  "nifty_ltp": 25223.6,
+  "signal_id": "20261118-110755-BEL",
+  "generated_at": "2026-11-18T11:07:55.510213+05:30",
+  "nifty_ltp": 25224.8,
   "candidates": [
     {
       "ticker": "BEL",
@@ -14,10 +14,10 @@
         "rsi": 36.68,
         "atr": 1.2534,
         "atr_5m": 0.8898,
-        "vwap": 395.42,
+        "vwap": 395.41,
         "vol_ratio": 2.18
       },
-      "scout_reason": "NIFTY 50 -0.65% oversold for SELL; size cut 50%",
+      "scout_reason": "NIFTY 50 -0.64% oversold for SELL; size cut 50%",
       "candles_5m": [
         [
           "09:30",
@@ -176,14 +176,14 @@
           394.2,
           394.4,
           394.15,
-          394.35,
-          3148
+          394.3,
+          14328
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-18T11:05:47.376928+05:30"
+      "outcome_at": "2026-11-18T11:07:56.611436+05:30"
     }
   ]
 }
