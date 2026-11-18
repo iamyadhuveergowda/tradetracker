@@ -1,23 +1,23 @@
 {
-  "signal_id": "20261118-125603-JSWSTEEL",
-  "generated_at": "2026-11-18T12:56:03.292749+05:30",
-  "nifty_ltp": 25186.6,
+  "signal_id": "20261118-125818-JSWSTEEL",
+  "generated_at": "2026-11-18T12:58:18.678119+05:30",
+  "nifty_ltp": 25194.6,
   "candidates": [
     {
       "ticker": "JSWSTEEL",
       "signal": "SELL",
-      "ltp": 1314.6,
-      "stop": 1321.18,
-      "target": 1298.14,
+      "ltp": 1314.2,
+      "stop": 1320.78,
+      "target": 1297.74,
       "qty": 15,
       "indicators": {
         "rsi": 44.74,
         "atr": 4.3883,
         "atr_5m": 2.4994,
-        "vwap": 1316.89,
+        "vwap": 1316.86,
         "vol_ratio": 2.76
       },
-      "scout_reason": "NIFTY 50 -0.79% oversold for SELL; size cut 50%",
+      "scout_reason": "NIFTY 50 -0.76% oversold for SELL; size cut 50%",
       "candles_5m": [
         [
           "11:20",
@@ -174,16 +174,16 @@
         [
           "12:55",
           1314.5,
-          1314.9,
-          1314.0,
-          1314.2,
-          1425
+          1315.0,
+          1313.3,
+          1314.3,
+          8981
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-18T12:56:04.682270+05:30"
+      "outcome_at": "2026-11-18T12:58:23.482499+05:30"
     },
     {
       "ticker": "BAJAJ-AUTO",
@@ -196,10 +196,10 @@
         "rsi": 37.93,
         "atr": 37.3749,
         "atr_5m": 22.6977,
-        "vwap": 10634.01,
+        "vwap": 10632.1,
         "vol_ratio": 4.1
       },
-      "scout_reason": "NIFTY 50 -0.79% oversold for SELL; size cut 50%",
+      "scout_reason": "NIFTY 50 -0.76% oversold for SELL; size cut 50%",
       "candles_5m": [
         [
           "11:20",
@@ -359,13 +359,13 @@
           10608.0,
           10594.0,
           10600.0,
-          201
+          14643
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-18T12:56:04.682309+05:30"
+      "outcome_at": "2026-11-18T12:58:23.482518+05:30"
     }
   ]
 }
