@@ -1207,5 +1207,35 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261118-135016-CIPLA",
+    "signal_time": "2026-11-18T13:50:16+05:30",
+    "judged_at": "2026-11-18T13:50:41+05:30",
+    "age_min": 0.4,
+    "ticker": "CIPLA",
+    "action": "BUY",
+    "entry": 1429.0,
+    "stop": 1418.93,
+    "target": 1454.16,
+    "qty": 13,
+    "verdict": "SKIP",
+    "confidence": 80,
+    "trigger": "Valid only on a breakout above 1432.00 with sustained volume",
+    "setup_hash": "0bcfcfb780b3e768c51d9497479a6b35710e8f09",
+    "index_name": "NIFTY 50",
+    "index_day_pct": -0.83,
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "CIPLA has been stuck in a flat 3-point consolidation between 1427.0 and 1430.2 for the entire past hour. While RSI is moderate at 61.88 and 13:45 volume spiked to 65.8k, price failed to expand beyond 1430.0.",
+      "sentiment": "No headline information is available; sentiment judged solely from tape indicates mild buying interest around 1428-1429, but no aggressive upside follow-through.",
+      "macro": "NIFTY is down -0.84% and trending downward. Initiating a long counter-trend position with only 100 minutes remaining demands exceptional momentum, which is absent here.",
+      "risk": "Target distance is 3.75 ATR (25.16 points to 1454.16). Given the tight intraday range and only 100 minutes to close, achieving a nearly 4-ATR expansion against market trend is highly improbable despite the 2.5 R:R."
+    },
+    "rationale": "SKIP. CIPLA is tightly range-bound between 1427 and 1430 against a weak broader tape (NIFTY -0.84%). Covering a 3.75 ATR distance to 1454.16 within 100 minutes is unrealistic given current volatility.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
