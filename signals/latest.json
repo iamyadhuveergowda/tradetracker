@@ -1,7 +1,7 @@
 {
-  "signal_id": "20261118-134600-COALINDIA",
-  "generated_at": "2026-11-18T13:46:00.373721+05:30",
-  "nifty_ltp": 25170.0,
+  "signal_id": "20261118-134811-COALINDIA",
+  "generated_at": "2026-11-18T13:48:11.064840+05:30",
+  "nifty_ltp": 25160.35,
   "candidates": [
     {
       "ticker": "COALINDIA",
@@ -14,10 +14,10 @@
         "rsi": 44.21,
         "atr": 1.0898,
         "atr_5m": 0.4893,
-        "vwap": 388.74,
+        "vwap": 388.72,
         "vol_ratio": 1.9
       },
-      "scout_reason": "NIFTY 50 -0.86% oversold for SELL; size cut 50%",
+      "scout_reason": "NIFTY 50 -0.89% oversold for SELL; size cut 50%",
       "candles_5m": [
         [
           "12:10",
@@ -175,15 +175,15 @@
           "13:45",
           388.2,
           388.4,
-          388.1,
-          388.35,
-          33395
+          388.05,
+          388.25,
+          189659
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-18T13:46:01.152633+05:30"
+      "outcome_at": "2026-11-18T13:48:12.051323+05:30"
     }
   ]
 }
