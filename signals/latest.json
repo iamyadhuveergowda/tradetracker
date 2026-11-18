@@ -1,23 +1,23 @@
 {
-  "signal_id": "20261118-133609-M&M",
-  "generated_at": "2026-11-18T13:36:09.999942+05:30",
-  "nifty_ltp": 25153.75,
+  "signal_id": "20261118-133848-M&M",
+  "generated_at": "2026-11-18T13:38:48.764490+05:30",
+  "nifty_ltp": 25150.8,
   "candidates": [
     {
       "ticker": "M&M",
       "signal": "SELL",
-      "ltp": 3339.0,
-      "stop": 3356.78,
-      "target": 3294.55,
+      "ltp": 3339.5,
+      "stop": 3357.2,
+      "target": 3295.26,
       "qty": 5,
       "indicators": {
         "rsi": 35.2,
-        "atr": 11.8523,
+        "atr": 11.7985,
         "atr_5m": 6.7824,
-        "vwap": 3370.71,
+        "vwap": 3370.54,
         "vol_ratio": 1.66
       },
-      "scout_reason": "NIFTY 50 -0.92% oversold for SELL; size cut 50%",
+      "scout_reason": "NIFTY 50 -0.93% oversold for SELL; size cut 50%",
       "candles_5m": [
         [
           "12:00",
@@ -174,32 +174,32 @@
         [
           "13:35",
           3339.3,
-          3340.3,
+          3340.6,
           3337.0,
-          3340.0,
-          3063
+          3338.9,
+          8910
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-18T13:36:14.580171+05:30"
+      "outcome_at": "2026-11-18T13:38:53.770467+05:30"
     },
     {
       "ticker": "HDFCLIFE",
       "signal": "SELL",
-      "ltp": 576.5,
-      "stop": 579.85,
-      "target": 568.13,
+      "ltp": 576.35,
+      "stop": 579.6,
+      "target": 568.23,
       "qty": 34,
       "indicators": {
         "rsi": 35.57,
-        "atr": 2.2317,
+        "atr": 2.1652,
         "atr_5m": 0.9674,
-        "vwap": 580.21,
+        "vwap": 580.2,
         "vol_ratio": 1.8
       },
-      "scout_reason": "NIFTY 50 -0.92% oversold for SELL; size cut 50%",
+      "scout_reason": "NIFTY 50 -0.93% oversold for SELL; size cut 50%",
       "candles_5m": [
         [
           "12:00",
@@ -357,15 +357,15 @@
           "13:35",
           576.3,
           576.55,
-          576.25,
-          576.25,
-          2277
+          576.05,
+          576.2,
+          8398
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-18T13:36:14.580190+05:30"
+      "outcome_at": "2026-11-18T13:38:53.770486+05:30"
     }
   ]
 }
