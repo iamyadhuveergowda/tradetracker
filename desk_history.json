@@ -997,5 +997,35 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261118-113052-INFY",
+    "signal_time": "2026-11-18T11:30:52+05:30",
+    "judged_at": "2026-11-18T11:31:18+05:30",
+    "age_min": 0.4,
+    "ticker": "INFY",
+    "action": "SELL",
+    "entry": 1117.0,
+    "stop": 1122.53,
+    "target": 1103.18,
+    "qty": 35,
+    "verdict": "SKIP",
+    "confidence": 75,
+    "trigger": "Valid only on a breakdown below 1114.70 with sustained sell volume",
+    "setup_hash": "de8cf0d07e859e7514e8ea956f6f55f6e32e7175",
+    "index_name": "NIFTY 50",
+    "index_day_pct": -0.48,
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI sits at 38.67 reflecting broader softness, but recent price action has formed higher lows from 1114.70 (11:15) to 1116.90 (11:30). Selling at 1117.00 enters into an active intraday bounce rather than a clean breakdown, risking immediate adverse movement.",
+      "sentiment": "Tape-based observation only as no headline or news feed is available. The tape shows volume expansion during the bounce from 1114.70 to 1117.00, with 116,313 shares at 11:20 and 146,736 shares at 11:25, reflecting buying interest and absorption at the local lows rather than aggressive shorting.",
+      "macro": "The macro background is aligned with the short side given NIFTY at 25276.25 and IT sector weakness noted by the scout. With 240 minutes remaining to the close, time is sufficient, but macro alignment cannot compensate for poor local entry timing.",
+      "risk": "Target distance of 3.75 ATR (13.82 points to 1103.18) is ambitious given the sluggish 3-point trading band seen across the last hour. Stop distance is 1.5 ATR (5.53 points to 1122.53) for an attractive 2.5 R:R, but entering ahead of confirmation risks being stopped out by routine bounce noise. Results risk is empty and not a factor."
+    },
+    "rationale": "While sector and index pressures align with a short thesis, INFY has bounced off 1114.70 with rising volume on recent 5-minute bars up to 1117.00. Selling the top of this micro-rebound without breakdown confirmation offers poor immediate risk, warranting a SKIP until 1114.70 breaks.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
