@@ -1027,5 +1027,35 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261118-114718-INFY",
+    "signal_time": "2026-11-18T11:47:18+05:30",
+    "judged_at": "2026-11-18T11:47:52+05:30",
+    "age_min": 0.6,
+    "ticker": "SBICARD",
+    "action": "SELL",
+    "entry": 566.8,
+    "stop": 570.18,
+    "target": 558.34,
+    "qty": 69,
+    "verdict": "SKIP",
+    "confidence": 75,
+    "trigger": "Valid only on a break below 564.85",
+    "setup_hash": "747441b5612341e4c272ec70f4f17c4b687de2dc",
+    "index_name": "NIFTY 50",
+    "index_day_pct": -0.58,
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "Price rallied sharply from 566.0 to 570.25 between 11:15 and 11:30 before fading back to 566.8. Entering short at 566.8 sells into the mid-range of the recent consolidation without a clean breakdown below the 11:00 swing low of 564.85. RSI at 45.06 is neutral.",
+      "sentiment": "No headline information is available; sentiment is inferred purely from the tape. The 11:15-11:30 rally saw elevated volume (up to 30.7k at 11:30), while the subsequent decline to 566.8 dried up to just 4.8k at 11:45, indicating an absence of aggressive follow-through selling.",
+      "macro": "Scout indicates NIFTY and Financial Services are bearish, aligning with short direction with 223 minutes remaining, but broad index weakness is not reflected in SBICARD's immediate tape.",
+      "risk": "The proposed stop at 570.18 is extremely vulnerable given the 11:30 bar wicked to 570.25, placing the stop below recent peak liquidity. Requiring a 3.75 ATR move (8.46 pts) down to 558.34 is demanding given the current lack of bearish momentum."
+    },
+    "rationale": "SBICARD recently wicked up to 570.25, making the proposed stop at 570.18 ill-placed and vulnerable. Without a breakdown below the 11:00 low of 564.85 and with declining sell volume, the short setup lacks confirmation.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
