@@ -3778,5 +3778,35 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261118-114718-INFY",
+    "signal_time": "2026-11-18T11:47:18+05:30",
+    "judged_at": "2026-11-18T11:47:53+05:30",
+    "age_min": 0.6,
+    "ticker": "SBICARD",
+    "action": "SELL",
+    "entry": 566.8,
+    "stop": 570.18,
+    "target": 558.34,
+    "qty": 69,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "Valid only on a break below 566.40 with follow-through volume > 2x average (last 12 candles)",
+    "setup_hash": "747441b5612341e4c272ec70f4f17c4b687de2dc",
+    "index_name": "NIFTY 50",
+    "index_day_pct": -0.58,
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI (45.06) is neutral, but candle structure shows choppy action with no clear bearish momentum. The last 5-minute candle (11:45) closed near its low (566.40), but the move lacks conviction: volume spiked at 11:10 (28,838) and 11:30 (30,696) on rallies, not breakdowns. ATR buffer (2.2549) suggests a stop at 570.18 is too tight for a meaningful short; the 1.5 ATR stop distance (3.38 points) is insufficient for a late-session short. Target (558.34) is 3.75 ATR away, but with 223 minutes left, this is **INFEASIBLE** unless the stock gaps down overnight (unlikely in financials without catalyst).",
+      "sentiment": "No headline information available. Volume behavior shows sector-wide indecision: FINANCIAL SERVICES (NIFTY sub-index) has not broken down decisively. The 11:15-11:20 candles saw a failed rally attempt (569.15 high rejected), but the lack of follow-through on the 11:45 breakdown (volume 4,795 vs. 14,821 at 11:40) signals weak bearish conviction.",
+      "macro": "NIFTY is at 25,235.40, trading in a tight range post-lunch. Late-session shorts require either a clear index breakdown or a sector-wide collapse; neither is present. FINANCIAL SERVICES is holding support at 25,100 (NIFTY level), and SBICARD’s relative weakness is isolated. Time-of-day risk: 223 minutes to close leaves no room for error on a short with a 2.5 reward:risk ratio.",
+      "risk": "Results risk is empty, but **feasibility is INFEASIBLE** for the target (3.75 ATR in 223 minutes = ~0.016 ATR/min, which is unattainable without a catalyst). Stop distance (1.5 ATR) is too close for a short in a ranging market. Reward:risk (2.5) is mathematically appealing but structurally unsound given the tape. Sector and index alignment are weak."
+    },
+    "rationale": "SKIP: Late-session short lacks structural conviction, feasibility, and macro alignment. Requires a break below 566.40 with volume > 2x average (last 12 candles) to even consider, but 223 minutes to close makes the target unreachable without a catalyst. Technicals show chop, sentiment is neutral, and macro context is unfavorable.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
