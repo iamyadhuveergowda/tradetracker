@@ -3718,5 +3718,35 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261118-112540-DIVISLAB",
+    "signal_time": "2026-11-18T11:25:40+05:30",
+    "judged_at": "2026-11-18T11:26:19+05:30",
+    "age_min": 0.7,
+    "ticker": "DIVISLAB",
+    "action": "BUY",
+    "entry": 11188.0,
+    "stop": 11117.47,
+    "target": 11364.33,
+    "qty": 1,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "setup_hash": "80bc29a7a37ebc333706ddb7d2a2d91ec5fd0a3a",
+    "index_name": "NIFTY 50",
+    "index_day_pct": -0.51,
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "Weak momentum into close: last 5m candle is a doji (11193.0 open/close) with no follow-through, indicating indecision. RSI (54.51) is neutral, not extreme. ATR buffer (47.02) is wide, but the stock lacks a clear breakout structure—it’s consolidating below its 11199.0 high from 11:20. Volume spike at 11:20 (13361) was not sustained, suggesting a short-lived rally. No clean setup; appears to be chasing.",
+      "sentiment": "No headline information available. Volume behavior shows no sector-wide follow-through; the 1.9x volume ratio is elevated but lacks conviction. The tape is neutral to negative for this stock in isolation.",
+      "macro": "Trade direction (BUY) is counterintuitive given NIFTY’s -0.49% trend and late-session timing (245 minutes left). Late-session entries require exceptional structure, which is absent here. The stock is not leading the index tape.",
+      "risk": "Stop distance (1.5 ATR) is tight, and the target (11364.33, 3.75 ATR away) is unlikely to be reached in the remaining time (245 minutes). Reward:risk (2.5) is mathematically attractive but structurally unsound. No results risk, but the lack of follow-through and weak candle structure invalidate the trade."
+    },
+    "rationale": "DIVISLAB lacks a clean technical setup, shows no sector-wide sentiment, and is misaligned with the index tape and late-session timing. The trade is structurally weak despite a favorable reward:risk ratio. SKIP due to high conviction in the absence of a valid entry trigger.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
