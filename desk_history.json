@@ -967,5 +967,35 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261118-112540-DIVISLAB",
+    "signal_time": "2026-11-18T11:25:40+05:30",
+    "judged_at": "2026-11-18T11:26:13+05:30",
+    "age_min": 0.6,
+    "ticker": "DIVISLAB",
+    "action": "BUY",
+    "entry": 11188.0,
+    "stop": 11117.47,
+    "target": 11364.33,
+    "qty": 1,
+    "verdict": "SKIP",
+    "confidence": 75,
+    "trigger": "Valid only on a sustained 5-minute close above 11210 with expanding volume",
+    "setup_hash": "80bc29a7a37ebc333706ddb7d2a2d91ec5fd0a3a",
+    "index_name": "NIFTY 50",
+    "index_day_pct": -0.51,
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "Price bounced off 11159.0 to 11193.5 but remains capped below the morning swing high of 11208.0 (10:30 candle). RSI sits neutral at 54.51. The setup is trapped in a tight 11160-11200 range, making the proposed 11364.33 target (3.75 ATR away) an aggressive ask without prior structural breakout.",
+      "sentiment": "No headline or news feed information is available; sentiment is judged strictly from the tape. The tape showed solid buyer participation on the 11:10-11:20 recovery (volumes of 11,273 and 13,361), but stalled immediately at the 11:25 candle with an inside bar and drying volume (523), failing to establish follow-through.",
+      "macro": "NIFTY 50 is trending downward at -0.49% (spot 25264.15). Taking a counter-trend long against an index in distribution requires exceptional individual relative strength, which DIVISLAB has not yet demonstrated.",
+      "risk": "Target distance of 3.75 ATR (176.33 pts) is steep to cover within the remaining 245 minutes against index headwinds. Results risk is empty. The paper R:R of 2.5 is degraded by the immediate overhead resistance around 11200-11208."
+    },
+    "rationale": "DIVISLAB is attempting a rebound off 11159.0 but remains bound within its intraday consolidation band under 11208.0. With NIFTY down -0.49% and target distance demanding an ambitious 3.75 ATR rally across 245 minutes, taking a counter-trend BUY here carries poor odds. Sizing was already cut 50% by the scout; passing completely costs nothing.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
