@@ -3748,5 +3748,35 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261118-113052-INFY",
+    "signal_time": "2026-11-18T11:30:52+05:30",
+    "judged_at": "2026-11-18T11:31:18+05:30",
+    "age_min": 0.4,
+    "ticker": "INFY",
+    "action": "SELL",
+    "entry": 1117.0,
+    "stop": 1122.53,
+    "target": 1103.18,
+    "qty": 35,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "Valid only on a break below 1115.0 with volume > 120k and RSI < 35",
+    "setup_hash": "de8cf0d07e859e7514e8ea956f6f55f6e32e7175",
+    "index_name": "NIFTY 50",
+    "index_day_pct": -0.48,
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "Momentum is weak (RSI 38.67 in neutral zone), but candle structure at 11:30 is a doji (1117.0 open/close, tight range), lacking follow-through. ATR buffer (3.68) suggests 1122.53 stop is reasonable, but target (1103.18) requires a 13.82-point move (~3.75 ATR) in 240 minutes (~4 hours). Last 12 candles show choppy action with no clear breakout or breakdown; 11:25 candle (1117.0 open/close) is a potential rejection of the 1117.0 entry level. Volume spike at 11:25 (146k) was intraday but failed to sustain momentum.",
+      "sentiment": "No headline information available. Volume behavior shows sector-wide IT weakness (vol_ratio 2.75 vs. NIFTY spot), but no clear panic. Follow-through is absent; 11:30 doji suggests indecision rather than conviction.",
+      "macro": "Late-session SELL entry (240 minutes to close) requires exceptional structure. NIFTY is at 25276.25, and IT sector is bearish, but the trade direction (short) aligns with the broader tape. However, the lack of momentum and choppy tape make this a high-risk late-session play.",
+      "risk": "Reward:risk is 2.5 (favorable), but stop distance (1.5 ATR) is tight for a short in a volatile session. Target feasibility is TIGHT (3.75 ATR in 240 minutes is aggressive; NIFTY moves ~100-150 pts in this window). No results risk, but pre-open or earnings-related volatility cannot be ruled out. Late-session shorts are risky without a clear catalyst."
+    },
+    "rationale": "SKIP: Weak momentum (RSI 38.67), indecisive candle structure (11:30 doji), and lack of follow-through despite IT sector weakness. Late-session short requires a break below 1115.0 with volume > 120k and RSI < 35 to justify; otherwise, the setup is speculative. Feasibility is TIGHT (3.75 ATR target in 240 minutes), and the stop is too close for comfort in a choppy tape.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
