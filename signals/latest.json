@@ -1,7 +1,7 @@
 {
-  "signal_id": "20261118-130603-RELIANCE",
-  "generated_at": "2026-11-18T13:06:03.655655+05:30",
-  "nifty_ltp": 25178.3,
+  "signal_id": "20261118-130833-RELIANCE",
+  "generated_at": "2026-11-18T13:08:33.357301+05:30",
+  "nifty_ltp": 25153.7,
   "candidates": [
     {
       "ticker": "RELIANCE",
@@ -14,10 +14,10 @@
         "rsi": 48.31,
         "atr": 5.132,
         "atr_5m": 2.1688,
-        "vwap": 1361.36,
+        "vwap": 1361.19,
         "vol_ratio": 2.38
       },
-      "scout_reason": "NIFTY 50 -0.82% oversold for SELL; size cut 50%",
+      "scout_reason": "NIFTY 50 -0.92% oversold for SELL; size cut 50%",
       "candles_5m": [
         [
           "11:30",
@@ -175,31 +175,31 @@
           "13:05",
           1358.4,
           1358.7,
-          1357.7,
+          1356.8,
           1358.0,
-          432048
+          967113
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-18T13:06:08.672421+05:30"
+      "outcome_at": "2026-11-18T13:08:38.542116+05:30"
     },
     {
       "ticker": "TATACONSUM",
       "signal": "BUY",
-      "ltp": 1120.0,
-      "stop": 1114.0,
-      "target": 1135.01,
+      "ltp": 1120.1,
+      "stop": 1114.1,
+      "target": 1135.11,
       "qty": 17,
       "indicators": {
         "rsi": 61.98,
         "atr": 4.0033,
         "atr_5m": 2.1106,
-        "vwap": 1115.64,
+        "vwap": 1115.65,
         "vol_ratio": 19.41
       },
-      "scout_reason": "NIFTY 50 -0.82% trending; BUY size cut 50%",
+      "scout_reason": "NIFTY 50 -0.92% trending; BUY size cut 50%",
       "candles_5m": [
         [
           "11:30",
@@ -357,15 +357,15 @@
           "13:05",
           1120.4,
           1120.7,
-          1119.9,
-          1120.5,
-          1496
+          1119.1,
+          1119.8,
+          4222
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-18T13:06:08.672441+05:30"
+      "outcome_at": "2026-11-18T13:08:38.542136+05:30"
     }
   ]
 }
