@@ -1087,5 +1087,35 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261118-132633-BEL",
+    "signal_time": "2026-11-18T13:26:33+05:30",
+    "judged_at": "2026-11-18T13:27:03+05:30",
+    "age_min": 0.5,
+    "ticker": "BEL",
+    "action": "SELL",
+    "entry": 393.35,
+    "stop": 395.07,
+    "target": 389.05,
+    "qty": 50,
+    "verdict": "SKIP",
+    "confidence": 75,
+    "trigger": "Valid only on a breakdown below 392.65",
+    "setup_hash": "76df8802ef876ac8e781209444bf0d319562a2cb",
+    "index_name": "NIFTY 50",
+    "index_day_pct": -0.84,
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "Price is stuck in a narrow range between 392.65 and 394.05 over the last hour. RSI at 40.93 reflects neutral-to-soft momentum, but the 13:25 close at 393.30 is squarely in the middle of consolidation rather than a breakdown. Selling here is front-running support.",
+      "sentiment": "No headline information is available. Judging purely from the tape, the largest volume spikes over the past hour appeared on upward-testing candles (172,679 at 13:15 and 196,961 at 13:20), indicating dip-buying rather than aggressive liquidation.",
+      "macro": "NIFTY spot is weak at 25181.2 (-0.81%), but as the scout notes, the index is extended/oversold on the short side, increasing mean-reversion risk with 124 minutes left in the session.",
+      "risk": "Target of 389.05 sits 3.75 ATR away, an ambitious stretch given the 1.15 ATR and the fact that price has moved less than 1.50 points across the past 12 candles. Stop distance is 1.50 ATR (395.07). Results risk is empty."
+    },
+    "rationale": "BEL is consolidating in a tight 392.65-394.05 range with volume leaning toward dip buyers at 13:15-13:20. With 124 minutes left, demanding a 3.75 ATR drop into an already oversold index tape carries poor intraday expectancy. SKIP unless 392.65 breaks with volume.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
