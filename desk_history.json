@@ -1057,5 +1057,35 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261118-124007-JSWSTEEL",
+    "signal_time": "2026-11-18T12:40:07+05:30",
+    "judged_at": "2026-11-18T12:41:37+05:30",
+    "age_min": 1.5,
+    "ticker": "JSWSTEEL",
+    "action": "SELL",
+    "entry": 1315.6,
+    "stop": 1322.37,
+    "target": 1298.69,
+    "qty": 15,
+    "verdict": "SKIP",
+    "confidence": 75,
+    "trigger": "Valid only on a break below 1312.20",
+    "setup_hash": "beb1fe064eb917c926c5ad8ba4661e54bf305dd2",
+    "index_name": "NIFTY 50",
+    "index_day_pct": -0.76,
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "Price action over the last hour shows a recovery from 1312.20 to 1319.10 before consolidating around 1315.60. RSI is neutral at 46.22. Shorting at 1315.60 without a structural breakdown below the 1312.20 base is preemptive.",
+      "sentiment": "No headline news is available; tape indicates two-way interest with heavy volume printed on up-moves (29,655 at 11:45, 22,656 at 12:15) as well as the 12:30 drop (29,891), showing no signs of aggressive one-way institutional liquidation.",
+      "macro": "NIFTY spot is at 25194.85 (-0.76%), flagged by the scout as oversold for SELL trades. Initiating fresh shorts into an extended index decline with 170 minutes remaining carries adverse mean-reversion risk.",
+      "risk": "Stop of 1322.37 (1.50 ATR) is adequately placed above 1319.10, but the target of 1298.69 requires a massive 3.75 ATR move (16.91 points) in 170 minutes against current consolidation. Results risk is empty."
+    },
+    "rationale": "SKIP. Shorting JSWSTEEL here lacks breakdown confirmation after an intraday bounce to 1319.10. With NIFTY already oversold at -0.76% and target distance demanding an ambitious 3.75 ATR drop to 1298.69 in 170 minutes, the setup offers poor execution probability.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
