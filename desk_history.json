@@ -937,5 +937,35 @@
     "outcome": "CLOSE",
     "outcome_r": 1.27,
     "outcome_at": "2026-11-18T00:41:51+05:30"
+  },
+  {
+    "signal_id": "20261118-110755-BEL",
+    "signal_time": "2026-11-18T11:07:55+05:30",
+    "judged_at": "2026-11-18T11:09:20+05:30",
+    "age_min": 1.4,
+    "ticker": "BEL",
+    "action": "SELL",
+    "entry": 394.35,
+    "stop": 396.23,
+    "target": 389.65,
+    "qty": 50,
+    "verdict": "SKIP",
+    "confidence": 75,
+    "trigger": "Valid only on a break below 393.65",
+    "setup_hash": "8e691b44010a8a613a77fd18c78e770889c2064d",
+    "index_name": "NIFTY 50",
+    "index_day_pct": -0.66,
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI stands at 36.68, reflecting extended downside rather than a fresh impulse. After bottoming at 393.65 at 10:30, price bounced toward 395.25 before easing to 394.30. Selling at 394.35 without taking out the session swing low at 393.65 represents front-running support.",
+      "sentiment": "No headline or news feed is available; sentiment is inferred purely from tape action. High volume printed at 11:00 (166,272 contracts) failed to generate decisive downward expansion, and volume dried up sharply at 11:05 (14,328), indicating lack of aggressive follow-through selling.",
+      "macro": "With 263 minutes remaining and NIFTY spot at 25224.8 (-0.64%), the broader market is already oversold for fresh shorting, creating elevated intraday bounce risk.",
+      "risk": "Stop is set at 396.23 (1.50 ATR, 1.88 pts) with target at 389.65 (3.75 ATR, 4.70 pts) offering an acceptable 2.5 R:R. However, demanding 3.75 ATR of downward movement without breakdown confirmation against an oversold market is low-probability. Results risk is empty."
+    },
+    "rationale": "BEL is consolidating above its morning low of 393.65 after an initial sell-off. With the NIFTY index already down -0.64% and oversold, initiating a short at 394.35 carries high mean-reversion risk. Passing on this entry until a confirmed break below 393.65 occurs.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
