@@ -1,20 +1,20 @@
 {
-  "signal_id": "20261118-113052-INFY",
-  "generated_at": "2026-11-18T11:30:52.982856+05:30",
-  "nifty_ltp": 25276.25,
+  "signal_id": "20261118-113304-INFY",
+  "generated_at": "2026-11-18T11:33:04.994353+05:30",
+  "nifty_ltp": 25256.05,
   "candidates": [
     {
       "ticker": "INFY",
       "signal": "SELL",
-      "ltp": 1117.0,
-      "stop": 1122.53,
-      "target": 1103.18,
+      "ltp": 1115.9,
+      "stop": 1121.43,
+      "target": 1102.08,
       "qty": 35,
       "indicators": {
         "rsi": 38.67,
         "atr": 3.6844,
         "atr_5m": 1.9434,
-        "vwap": 1119.57,
+        "vwap": 1119.49,
         "vol_ratio": 2.75
       },
       "scout_reason": "NIFTY BEARISH, sector IT BEARISH",
@@ -175,15 +175,15 @@
           "11:30",
           1117.0,
           1117.0,
-          1116.9,
-          1117.0,
-          44204
+          1115.9,
+          1115.9,
+          77075
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-18T11:30:54.068864+05:30"
+      "outcome_at": "2026-11-18T11:33:06.007209+05:30"
     }
   ]
 }
