@@ -1,20 +1,20 @@
 {
-  "signal_id": "20261118-113733-BEL",
-  "generated_at": "2026-11-18T11:37:33.887903+05:30",
-  "nifty_ltp": 25264.8,
+  "signal_id": "20261118-113944-BEL",
+  "generated_at": "2026-11-18T11:39:44.702939+05:30",
+  "nifty_ltp": 25257.55,
   "candidates": [
     {
       "ticker": "BEL",
       "signal": "SELL",
-      "ltp": 395.3,
-      "stop": 397.2,
-      "target": 390.55,
+      "ltp": 395.55,
+      "stop": 397.45,
+      "target": 390.8,
       "qty": 100,
       "indicators": {
         "rsi": 47.18,
         "atr": 1.2673,
         "atr_5m": 0.8767,
-        "vwap": 395.41,
+        "vwap": 395.42,
         "vol_ratio": 2.18
       },
       "scout_reason": "NIFTY BEARISH, sector INFRASTRUCTURE NEUTRAL",
@@ -174,16 +174,16 @@
         [
           "11:35",
           395.25,
-          395.4,
+          395.7,
           394.9,
-          395.25,
-          142398
+          395.5,
+          209551
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-18T11:37:34.785406+05:30"
+      "outcome_at": "2026-11-18T11:39:45.791534+05:30"
     }
   ]
 }
