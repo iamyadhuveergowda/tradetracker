@@ -1,7 +1,7 @@
 {
-  "signal_id": "20261118-100722-RELIANCE",
-  "generated_at": "2026-11-18T10:07:22.994869+05:30",
-  "nifty_ltp": 25287.4,
+  "signal_id": "20261118-100930-RELIANCE",
+  "generated_at": "2026-11-18T10:09:30.213909+05:30",
+  "nifty_ltp": 25289.2,
   "candidates": [
     {
       "ticker": "RELIANCE",
@@ -14,7 +14,7 @@
         "rsi": 60.72,
         "atr": 5.7531,
         "atr_5m": 4.2759,
-        "vwap": 1364.42,
+        "vwap": 1364.43,
         "vol_ratio": 1.55
       },
       "scout_reason": "NIFTY 50 -0.39% trending; BUY size cut 50%",
@@ -175,15 +175,15 @@
           "10:05",
           1369.9,
           1370.2,
-          1366.0,
-          1367.0,
-          221353
+          1365.9,
+          1366.8,
+          264082
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-18T10:07:25.933021+05:30"
+      "outcome_at": "2026-11-18T10:09:34.002294+05:30"
     }
   ]
 }
