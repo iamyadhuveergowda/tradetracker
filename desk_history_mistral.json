@@ -4048,5 +4048,35 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261118-132633-BEL",
+    "signal_time": "2026-11-18T13:26:33+05:30",
+    "judged_at": "2026-11-18T13:26:58+05:30",
+    "age_min": 0.4,
+    "ticker": "BEL",
+    "action": "SELL",
+    "entry": 393.35,
+    "stop": 395.07,
+    "target": 389.05,
+    "qty": 50,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "setup_hash": "76df8802ef876ac8e781209444bf0d319562a2cb",
+    "index_name": "NIFTY 50",
+    "index_day_pct": -0.84,
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 40.93 suggests oversold conditions, but the candle structure lacks a clean breakdown. The last 5m candle (13:25) closed at 393.30, near the entry price (393.35), with no clear follow-through. Volume spike at 13:15 (172679) and 13:20 (196961) suggests some distribution, but the lack of a decisive move below 393.25 (low of 13:25) weakens the case. ATR buffer (1.1463) is tight for a SELL setup, and the stop (395.07) is 1.5 ATR away, which is too far for a late-session trade with only 124 minutes left. Target (389.05) is 3.75 ATR away, requiring a 1.25% move in 2.07 hours (124m), which is aggressive for this timeframe.",
+      "sentiment": "No headline information available. Volume behavior shows some distribution (spikes at 13:15 and 13:20), but the lack of follow-through below 393.25 suggests hesitation. Sector-wide prints are not visible in the data, but the NIFTY is down -0.81%, which aligns with the SELL thesis. However, the tape lacks conviction for a short entry at this stage.",
+      "macro": "The SELL aligns with the NIFTY's -0.81% decline, but late-session entries require exceptional structure. With 124 minutes left, the trade would need to resolve quickly, which is unlikely given the lack of a clear breakdown. The index is already weak, but the time of day (13:26) is not ideal for a short setup without a stronger catalyst or breakdown.",
+      "risk": "Reward:risk is 2.5, which is mathematically attractive, but the stop distance (1.5 ATR) is too wide for a late-session trade. The target (389.05) is reachable in theory, but the time remaining (124m) and lack of follow-through make it risky. No results risk is present, but the volatility profile is not favorable for a short entry at this juncture. Feasibility is not explicitly marked as INFEASIBLE, but the structure is weak for a GO."
+    },
+    "rationale": "SKIP BEL for SELL due to lack of clean breakdown, weak follow-through, and late-session timing. The RSI (40.93) and volume spikes suggest distribution, but the candle structure and ATR buffer do not justify a short entry with only 124 minutes left. The trade would require a swift 1.25% move to hit the target, which is unlikely without a stronger catalyst or breakdown. Default to skepticism.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
