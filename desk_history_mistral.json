@@ -3568,5 +3568,35 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261118-094903-SBIN",
+    "signal_time": "2026-11-18T09:49:03+05:30",
+    "judged_at": "2026-11-18T09:49:29+05:30",
+    "age_min": 0.4,
+    "ticker": "SBIN",
+    "action": "SELL",
+    "entry": 1108.65,
+    "stop": 1113.79,
+    "target": 1095.8,
+    "qty": 35,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "setup_hash": "cd5f8cdf050ad57cb2abd78891fcb1b2cc09bb96",
+    "index_name": "NIFTY 50",
+    "index_day_pct": -0.54,
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 43.01 suggests neither extreme overbought nor oversold conditions. The last 5-minute candle (15:10) shows a doji-like structure with minimal close-to-close movement (1108.95 → 1109.5), indicating indecision. The 15:15 candle is flat (1110.0), with negligible volume (4862), suggesting lack of conviction. The stop (1113.79) is placed above the recent highs (1110.0), which is illogical for a SELL setup. ATR buffer (1.5) is tight, and the target (1095.8) is 3.75 ATR away—unrealistic in 341 minutes without a clear breakout or breakdown.",
+      "sentiment": "No headline information available. Volume ratio (1.51) is neutral, but the flat 15:15 candle and lack of follow-through in the last 5 minutes suggest weak sentiment. Sector-wide BANK prints are not visible in the provided data, but the NIFTY tape is bearish as per the scout reason.",
+      "macro": "The SELL action aligns with the bearish NIFTY tape, but the time of day (341 minutes to close) is a critical risk. Late-session entries require exceptional structure, which is absent here. The lack of momentum or clear breakdown makes this a high-risk proposition.",
+      "risk": "Reward:risk of 2.5 is mathematically appealing, but the target distance (3.75 ATR) is infeasible in the remaining time (341 minutes) without a catalyst. No results risk, but the stop placement is illogical for a SELL. Feasibility is TIGHT due to target distance and time constraints. The flat candles and lack of follow-through increase execution risk."
+    },
+    "rationale": "SKIP: The SELL setup on SBIN lacks a clear breakdown, has an illogical stop placement, and the target is infeasible in the remaining time. The flat candles and weak volume suggest low conviction. The bearish NIFTY tape is not enough to justify this trade without stronger structure.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
