@@ -3808,5 +3808,35 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261118-115146-TATASTEEL",
+    "signal_time": "2026-11-18T11:51:46+05:30",
+    "judged_at": "2026-11-18T11:52:08+05:30",
+    "age_min": 0.4,
+    "ticker": "TATASTEEL",
+    "action": "SELL",
+    "entry": 179.46,
+    "stop": 180.37,
+    "target": 177.18,
+    "qty": 220,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "Valid only on a break below 179.38 with volume > 500k and RSI < 45",
+    "setup_hash": "e8e58c5453ca00f484d2447b43f889be8ed7f869",
+    "index_name": "NIFTY 50",
+    "index_day_pct": -0.52,
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "Candle structure shows a late-session consolidation with a minor bearish engulfing pattern at 11:50 (close 179.41, low 179.38). However, the RSI (48.18) is neutral, not extreme, and the ATR buffer (0.6092) suggests tight stops. The last 5-minute candle closed near its low, but the move lacks momentum (high-low spread of 0.08). The 179.46 entry is near the high of the 11:45 candle, indicating a potential chase rather than a clean setup. Stop distance (1.49 ATR) is reasonable, but the target (177.18) is 3.74 ATR away, which is aggressive for the remaining 219 minutes (3.65 hours).",
+      "sentiment": "No headline information available. Volume behavior shows a spike at 11:10 (441k) and 11:45 (490k), but the sector (METAL) is labeled bearish. The NIFTY is also bearish, but the lack of follow-through in TATASTEEL’s volume (current candle volume: 154k) suggests weak conviction. The vol_ratio (3.41) is elevated but not extreme.",
+      "macro": "Late-session entries require exceptional structure, especially in a bearish NIFTY. The time-to-close (219 minutes) is insufficient to reliably reach the target (177.18) from the entry (179.46) without a clear catalyst. The trade direction aligns with the index tape, but the lack of momentum and weak volume follow-through raise skepticism.",
+      "risk": "Reward:risk is 2.51, which is mathematically favorable, but the target distance (3.74 ATR) is high for the remaining time. Stop distance (1.49 ATR) is tight but justifiable. No results risk is present, but the late-session timing and lack of momentum increase execution risk. Feasibility is not flagged, but the target is tight given the time left."
+    },
+    "rationale": "TATASTEEL’s SELL setup lacks momentum and follow-through volume despite a bearish NIFTY and sector. The late-session entry (179.46) is near recent highs, risking a chase. While the reward:risk (2.51) is attractive, the target (177.18) is 3.74 ATR away with only 219 minutes left, making it infeasible without a break below 179.38 and stronger volume. Default to SKIP unless structure improves.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
