@@ -3658,5 +3658,35 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261118-110338-GRASIM",
+    "signal_time": "2026-11-18T11:03:38+05:30",
+    "judged_at": "2026-11-18T11:04:03+05:30",
+    "age_min": 0.4,
+    "ticker": "GRASIM",
+    "action": "SELL",
+    "entry": 3051.6,
+    "stop": 3067.73,
+    "target": 3011.28,
+    "qty": 6,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "setup_hash": "eab542428741c131145520ade09b1d95c85e0477",
+    "index_name": "NIFTY 50",
+    "index_day_pct": -0.62,
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 41.81 indicates neither extreme overbought nor oversold conditions. The last 5-minute candle (11:00) shows a strong bullish momentum with a close at 3051.7 (high of 3051.8), breaking the prior session's highs. The ATR buffer (10.7525) suggests a tight stop-loss placement (1.5 ATR = 16.13 points), and the target (3011.28) is 3.75 ATR away, which is a wide move for the remaining 267 minutes. The candle structure lacks clear bearish reversal signals (e.g., engulfing, doji, or rejection at key levels).",
+      "sentiment": "No headline information available. Volume surged in the 11:00 candle (36,983 vs. prior average of ~1,500-5,000), indicating strong follow-through on the upside. This contradicts the oversold narrative for a SELL action. Sector-wide prints are not visible in the provided data, but the tape suggests a bullish bias.",
+      "macro": "The NIFTY is down -0.62% at 25,230.85, but the late-session entry (267 minutes left) for a SELL requires exceptional bearish structure. The trade direction (SELL) is counterintuitive to the current tape momentum, which is upward. Late-session entries are high-risk unless there is a clear reversal signal.",
+      "risk": "Reward:risk is 2.5, which is mathematically favorable, but the target distance (3.75 ATR) is aggressive for the remaining time (267 minutes). Stop-loss is tight (1.5 ATR), and the trade lacks clear bearish confirmation. No results risk is present, but the lack of bearish structure and strong volume follow-through on the upside are red flags. Feasibility is not flagged as INFEASIBLE or TIGHT, but the time-to-close and lack of bearish confirmation make this a high-risk setup."
+    },
+    "rationale": "SKIP GRASIM SELL due to strong bullish momentum, lack of bearish reversal signals, and counterintuitive late-session timing. The trade requires a clear breakdown below recent highs (e.g., 3051.8) with volume confirmation to be reconsidered. Current structure favors a bullish continuation, not a SELL.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
