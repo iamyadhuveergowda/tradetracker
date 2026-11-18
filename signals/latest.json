@@ -1,20 +1,20 @@
 {
-  "signal_id": "20261118-120633-HINDUNILVR",
-  "generated_at": "2026-11-18T12:06:33.640051+05:30",
-  "nifty_ltp": 25236.55,
+  "signal_id": "20261118-120846-HINDUNILVR",
+  "generated_at": "2026-11-18T12:08:46.392178+05:30",
+  "nifty_ltp": 25243.85,
   "candidates": [
     {
       "ticker": "HINDUNILVR",
       "signal": "SELL",
-      "ltp": 1983.0,
-      "stop": 1992.01,
-      "target": 1960.48,
+      "ltp": 1984.4,
+      "stop": 1993.41,
+      "target": 1961.88,
       "qty": 19,
       "indicators": {
         "rsi": 38.54,
         "atr": 6.0056,
         "atr_5m": 3.3257,
-        "vwap": 1986.33,
+        "vwap": 1986.34,
         "vol_ratio": 2.67
       },
       "scout_reason": "NIFTY BEARISH, sector FMCG BEARISH",
@@ -174,32 +174,32 @@
         [
           "12:05",
           1981.6,
-          1983.3,
+          1984.6,
           1981.5,
-          1982.5,
-          2864
+          1984.6,
+          4410
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-18T12:06:34.749785+05:30"
+      "outcome_at": "2026-11-18T12:08:50.670727+05:30"
     },
     {
       "ticker": "DRREDDY",
       "signal": "BUY",
-      "ltp": 1386.4,
-      "stop": 1379.45,
-      "target": 1403.76,
+      "ltp": 1389.7,
+      "stop": 1382.75,
+      "target": 1407.06,
       "qty": 14,
       "indicators": {
         "rsi": 51.85,
         "atr": 4.6302,
         "atr_5m": 2.7629,
-        "vwap": 1384.48,
+        "vwap": 1384.57,
         "vol_ratio": 2.69
       },
-      "scout_reason": "NIFTY 50 -0.59% trending; BUY size cut 50%",
+      "scout_reason": "NIFTY 50 -0.57% trending; BUY size cut 50%",
       "candles_5m": [
         [
           "10:30",
@@ -356,16 +356,16 @@
         [
           "12:05",
           1385.7,
-          1386.4,
+          1390.0,
           1385.7,
-          1386.4,
-          875
+          1389.6,
+          7021
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-18T12:06:34.749804+05:30"
+      "outcome_at": "2026-11-18T12:08:50.670749+05:30"
     }
   ]
 }
