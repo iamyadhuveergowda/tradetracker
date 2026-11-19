@@ -4350,5 +4350,37 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261119-111429-CIPLA",
+    "signal_time": "2026-11-19T11:14:29+05:30",
+    "judged_at": "2026-11-19T11:15:33+05:30",
+    "age_min": 1.1,
+    "ticker": "CIPLA",
+    "action": "SELL",
+    "entry": 1410.0,
+    "stop": 1418.57,
+    "target": 1388.57,
+    "qty": 14,
+    "verdict": "SKIP",
+    "confidence": null,
+    "filter": "SELL_FILTER_REGIME",
+    "raw_verdict": null,
+    "index_name": "NIFTY 50",
+    "index_day_pct": null,
+    "setup_hash": "0c51df2ee52cd270697e6bcd6643fcb03f1d5424",
+    "trigger": "",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "",
+      "sentiment": "",
+      "macro": "",
+      "risk": "SELL filtered: NIFTY 50 day % unavailable at judge time — SELL ineligible (fail-closed, SELL_FILTER_REGIME shadow test)."
+    },
+    "rationale": "SELL filtered: NIFTY 50 day % unavailable at judge time — SELL ineligible (fail-closed, SELL_FILTER_REGIME shadow test).",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
