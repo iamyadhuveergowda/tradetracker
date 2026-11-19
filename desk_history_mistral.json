@@ -4472,5 +4472,35 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261119-120129-SBICARD",
+    "signal_time": "2026-11-19T12:01:29+05:30",
+    "judged_at": "2026-11-19T12:01:59+05:30",
+    "age_min": 0.5,
+    "ticker": "SBICARD",
+    "action": "BUY",
+    "entry": 569.35,
+    "stop": 565.46,
+    "target": 579.07,
+    "qty": 69,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "setup_hash": "0ea2ea442dc6969291475387ee74f48b6b3d9030",
+    "index_name": "NIFTY 50",
+    "index_day_pct": 0.56,
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 63.98 suggests moderate overbought conditions, not extreme. The last 5-minute candle (12:00) is a small-bodied doji with a slight close above open, but the preceding candle (11:55) shows a sharp spike in volume (39,256) on a breakout attempt that failed to sustain momentum. The 12:00 candle's low (569.35) aligns with the entry, but the lack of follow-through (high at 569.7) and weak close (569.65) signals hesitation. ATR buffer (2.59) is tight for a late-session entry, and the stop (565.46) is 1.5 ATR away, which is reasonable but leaves little room for error. The target (579.07) is 3.75 ATR away, a 2.5:1 reward-to-risk ratio, but the time remaining (209 minutes) is insufficient for a clean run to target given the current lack of momentum.",
+      "sentiment": "No headline information available. Volume surged in the 11:55 candle (39,256 vs. average ~6,000-10,000 in prior candles), but the follow-through was weak, indicating possible profit-taking or short-covering exhaustion. Sector-wide prints (FINANCIAL SERVICES) are not visible in the data, so sentiment remains ambiguous.",
+      "macro": "The trade direction (BUY) aligns with the NIFTY being bullish, but the time of day (12:01 IST, 209 minutes to close) is late for a sector play without exceptional structure. Late-session entries require stronger confirmation, such as a breakout with volume and sustained momentum, which is absent here.",
+      "risk": "The stop distance (1.5 ATR) is adequate, but the target (579.07) is **feasible** (3.75 ATR in 209 minutes is ~1.8% move, which is aggressive for the remaining time). No results risk is present. However, the lack of follow-through and weak close on high volume raises the risk of a trap or reversal. The reward-to-risk ratio (2.5) is mathematically appealing, but the execution risk outweighs it."
+    },
+    "rationale": "SBICARD shows a weak breakout attempt with high volume but no follow-through, making it a high-risk setup for a late-session entry. The technical structure lacks conviction, and the macro context (time of day) further reduces feasibility. SKIP unless a breakout above 570.7 (11:55 high) with volume confirmation occurs, which would warrant reassessment.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
