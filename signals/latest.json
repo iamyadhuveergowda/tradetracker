@@ -1,20 +1,20 @@
 {
-  "signal_id": "20261119-095606-ASIANPAINT",
-  "generated_at": "2026-11-19T09:56:06.611942+05:30",
-  "nifty_ltp": 25257.9,
+  "signal_id": "20261119-095810-ASIANPAINT",
+  "generated_at": "2026-11-19T09:58:10.312756+05:30",
+  "nifty_ltp": 25264.95,
   "candidates": [
     {
       "ticker": "ASIANPAINT",
       "signal": "BUY",
-      "ltp": 2590.0,
-      "stop": 2575.91,
-      "target": 2625.22,
+      "ltp": 2588.5,
+      "stop": 2574.41,
+      "target": 2623.72,
       "qty": 15,
       "indicators": {
         "rsi": 63.13,
         "atr": 9.3914,
         "atr_5m": 6.8945,
-        "vwap": 2581.93,
+        "vwap": 2582.06,
         "vol_ratio": 5.07
       },
       "scout_reason": "NIFTY NEUTRAL, sector CONSUMER GOODS NEUTRAL",
@@ -175,15 +175,15 @@
           "09:55",
           2590.7,
           2590.9,
-          2589.9,
-          2590.1,
-          4759
+          2586.1,
+          2588.2,
+          11909
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-19T09:56:07.970995+05:30"
+      "outcome_at": "2026-11-19T09:58:11.192397+05:30"
     }
   ]
 }
