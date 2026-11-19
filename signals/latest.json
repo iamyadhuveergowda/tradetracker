@@ -1,20 +1,20 @@
 {
-  "signal_id": "20261119-133204-TECHM",
-  "generated_at": "2026-11-19T13:32:04.891207+05:30",
-  "nifty_ltp": 25368.5,
+  "signal_id": "20261119-133420-TECHM",
+  "generated_at": "2026-11-19T13:34:20.501867+05:30",
+  "nifty_ltp": 25370.15,
   "candidates": [
     {
       "ticker": "TECHM",
       "signal": "SELL",
-      "ltp": 1711.7,
-      "stop": 1722.68,
-      "target": 1684.26,
+      "ltp": 1710.8,
+      "stop": 1721.78,
+      "target": 1683.36,
       "qty": 11,
       "indicators": {
         "rsi": 39.91,
         "atr": 7.318,
         "atr_5m": 3.7625,
-        "vwap": 1714.27,
+        "vwap": 1714.23,
         "vol_ratio": 2.45
       },
       "scout_reason": "NIFTY 50 +0.56% trending; SELL size cut 50%",
@@ -175,15 +175,15 @@
           "13:30",
           1711.4,
           1713.1,
-          1710.7,
-          1711.9,
-          11111
+          1710.5,
+          1710.6,
+          19600
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-19T13:32:06.585210+05:30"
+      "outcome_at": "2026-11-19T13:34:22.278981+05:30"
     }
   ]
 }
