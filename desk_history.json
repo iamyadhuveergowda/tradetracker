@@ -1393,5 +1393,37 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261119-131718-TECHM",
+    "signal_time": "2026-11-19T13:17:18+05:30",
+    "judged_at": "2026-11-19T13:17:45+05:30",
+    "age_min": 0.4,
+    "ticker": "TECHM",
+    "action": "SELL",
+    "entry": 1710.4,
+    "stop": 1721.43,
+    "target": 1682.84,
+    "qty": 11,
+    "verdict": "SKIP",
+    "confidence": null,
+    "filter": "SELL_FILTER_REGIME",
+    "raw_verdict": null,
+    "index_name": "NIFTY 50",
+    "index_day_pct": 0.52,
+    "setup_hash": "4f08c3e81fdfff48a2369cc00546c10d61848811",
+    "trigger": "",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "",
+      "sentiment": "",
+      "macro": "",
+      "risk": "SELL filtered: NIFTY 50 day +0.52% is not below -0.25% (SELL_FILTER_REGIME shadow test)."
+    },
+    "rationale": "SELL filtered: NIFTY 50 day +0.52% is not below -0.25% (SELL_FILTER_REGIME shadow test).",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
