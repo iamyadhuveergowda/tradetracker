@@ -1267,5 +1267,37 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261119-105643-DRREDDY",
+    "signal_time": "2026-11-19T10:56:43+05:30",
+    "judged_at": "2026-11-19T10:57:13+05:30",
+    "age_min": 0.5,
+    "ticker": "DRREDDY",
+    "action": "SELL",
+    "entry": 1384.1,
+    "stop": 1392.4,
+    "target": 1363.35,
+    "qty": 14,
+    "verdict": "SKIP",
+    "confidence": null,
+    "filter": "SELL_FILTER_REGIME",
+    "raw_verdict": null,
+    "index_name": "NIFTY 50",
+    "index_day_pct": 0.33,
+    "setup_hash": "0b4527ab7c7a87e761ed52251a293bac3f2ec600",
+    "trigger": "",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "",
+      "sentiment": "",
+      "macro": "",
+      "risk": "SELL filtered: NIFTY 50 day +0.33% is not below -0.25% (SELL_FILTER_REGIME shadow test)."
+    },
+    "rationale": "SELL filtered: NIFTY 50 day +0.33% is not below -0.25% (SELL_FILTER_REGIME shadow test).",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
