@@ -4746,5 +4746,35 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261119-142513-HINDALCO",
+    "signal_time": "2026-11-19T14:25:13+05:30",
+    "judged_at": "2026-11-19T14:25:30+05:30",
+    "age_min": 0.3,
+    "ticker": "HINDALCO",
+    "action": "BUY",
+    "entry": 903.85,
+    "stop": 900.23,
+    "target": 912.89,
+    "qty": 21,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "Valid only on a break above 906.80 with volume > 200k and RSI > 65",
+    "setup_hash": "47aaab9cdd1a0e26be53b99243c59b6446b1fd95",
+    "index_name": "NIFTY 50",
+    "index_day_pct": 0.93,
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "Candle structure shows a late-session pullback with a long wick at 14:20 (902.1–906.8) failing to close above 904.1, followed by a doji at 14:25 (903.4). RSI (59.3) is neutral, not overbought, but the lack of follow-through on the 14:20 spike (highest volume of the session: 203k) suggests exhaustion. ATR buffer (stop at 900.23) is tight (0.86 ATR), and the target (912.89) requires a 1.05% move in 65 minutes—unlikely without a catalyst. No clear momentum or reversal pattern.",
+      "sentiment": "No headline information available. Volume behavior shows a late-session surge at 14:20 (203k) but no follow-through; subsequent candles (14:25) lack conviction. Sector-wide prints are not visible in the data.",
+      "macro": "NIFTY is +0.90% overextended, but late-session entries (65 minutes to close) require exceptional structure. HINDALCO’s action is counter to the index’s late-day momentum, which typically favors liquidity-driven stocks. The BUY signal here lacks alignment with the broader tape’s exhaustion.",
+      "risk": "Results risk is empty. However, the stop distance (0.86 ATR) is aggressive, and the target (2.14 ATR) is tight for the time remaining (65 minutes). Reward:risk (2.5) is mathematically attractive but structurally unsupported. Feasibility is empty, but the target distance (912.89) implies a 1.05% move in 65 minutes—unrealistic without a breakout or catalyst."
+    },
+    "rationale": "HINDALCO’s BUY signal at 903.85 lacks structural validity: the 14:20 spike failed to close above 904.1, and the 14:25 doji signals indecision. Volume surged at 14:20 (203k) but did not sustain, and the RSI (59.3) is neutral. The trade direction contradicts the NIFTY’s late-session exhaustion (+0.90%), and the target (912.89) is unreachable in 65 minutes without a breakout. SKIP unless a break above 906.80 with volume > 200k and RSI > 65 materializes.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
