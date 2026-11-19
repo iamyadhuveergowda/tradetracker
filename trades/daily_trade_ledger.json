@@ -1934,7 +1934,7 @@
     "ticker": "DRREDDY",
     "action": "SELL",
     "qty": 14,
-    "remaining_qty": 14,
+    "remaining_qty": 0,
     "requested_qty": 14,
     "locked_margin_per_share": 277.64,
     "partial_booked": false,
@@ -1945,37 +1945,53 @@
     "open": 1392.6,
     "high": 1392.6,
     "low": 1387.9,
-    "close": 1395.6,
+    "close": 1396.0,
     "time": "12:11:58",
-    "status": "OPEN ⏳",
-    "exit_price": null,
-    "net_pnl": 0.0,
+    "status": "LOSS 🔴",
+    "exit_price": 1396.7,
+    "net_pnl": -173.06,
     "rationale": "BULL: price near VWAP (1387.16) with modest RSI 49, recent pullback from 1395 to 1388 suggests downside bias and target 1366.9 is within expected travel (20.8 pts < 1.5×32.9). BEAR: target lies 12.2 pts below the session low (1379.1) requiring a new low, and stop 1396 is 8.3 pts above entry (~1.5 ATR) risking early exit. VERDICT: APPROVE",
     "events": [
       {
         "time": "2026-11-19T12:11:58+05:30",
         "type": "ENTRY",
         "text": "PAPER SELL 14 @ ₹1388.20"
+      },
+      {
+        "time": "2026-11-19T15:10:21+05:30",
+        "type": "EXIT",
+        "text": "15:10 square-off: 14 @ ₹1396.70, net ₹-173.06"
       }
     ],
     "mode": "PAPER",
-    "last_price": 1395.6,
+    "last_price": 1396.7,
     "atr": 5.5423,
     "target_booked": false,
     "breakeven_set": false,
     "mfe_r": 0.505,
-    "mae_r": -0.89,
+    "mae_r": -0.939,
     "size_tag": "short_halfsize_ab",
     "size_reason": "short_halfsize",
     "vol_ratio": 2.01,
     "stop_atr_mult": 1.5,
     "rvol": 1.43,
     "rule_version": "v14",
-    "entry_brokerage_remaining": 20.0,
-    "charges": {},
-    "pnl_by_date": {},
+    "entry_brokerage_remaining": 0.0,
+    "charges": {
+      "brokerage": 40.0,
+      "exchange": 1.16,
+      "sebi": 0.04,
+      "stt": 4.86,
+      "stamp": 0.59,
+      "gst": 7.42,
+      "total": 54.06
+    },
+    "pnl_by_date": {
+      "2026-11-19": -173.06
+    },
     "orders": {},
-    "breakeven_price": 1382.65
+    "breakeven_price": 1382.65,
+    "exit_time": "2026-11-19T15:10:21+05:30"
   },
   {
     "trade_id": "20261119131936-BAJAJFINSV",
