@@ -4686,5 +4686,35 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261119-131928-BAJAJFINSV",
+    "signal_time": "2026-11-19T13:19:28+05:30",
+    "judged_at": "2026-11-19T13:20:15+05:30",
+    "age_min": 0.8,
+    "ticker": "BAJAJFINSV",
+    "action": "BUY",
+    "entry": 1881.0,
+    "stop": 1872.25,
+    "target": 1902.88,
+    "qty": 21,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "Valid only on a break above 1883.0 with follow-through volume > 30k",
+    "setup_hash": "71120cee963d29be00ad21bbabf3518455ad3763",
+    "index_name": "NIFTY 50",
+    "index_day_pct": 0.5,
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 57.66 suggests neutral momentum; ATR buffer (1.5x) is tight for a late-session entry. The 13:10 candle shows a strong bullish spike (1882.8) but lacks follow-through (13:15 closed at 1881.4). Candle structure is choppy with no clear breakout. Target (1902.88) is 3.75 ATR away, but the last 12 candles show no sustained momentum beyond 1883.0.",
+      "sentiment": "No headline information available. Volume surged at 13:10 (43301) but faded quickly; sector-wide prints are not visible in the data. The tape suggests hesitation rather than conviction.",
+      "macro": "NIFTY is bullish, but late-session entries (131 minutes left) require exceptional structure. The trade direction aligns with the index, but the lack of follow-through raises macro timing concerns.",
+      "risk": "Reward:risk is 2.5, but the stop (1872.25) is only 1.5 ATR away, and the target (1902.88) is tight given the time remaining. **Results risk is empty**, but the choppy tape increases execution risk. Feasibility is empty, but the target is unlikely to be reached in 131 minutes without a clear breakout."
+    },
+    "rationale": "BAJAJFINSV lacks a clean setup for a late-session GO. The 13:10 spike failed to sustain, and the RSI/ATR structure does not justify the risk. Skip unless a break above 1883.0 with volume > 30k materializes, signaling sector-wide follow-through.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
