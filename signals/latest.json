@@ -1,23 +1,23 @@
 {
-  "signal_id": "20261119-133649-SBILIFE",
-  "generated_at": "2026-11-19T13:36:49.836951+05:30",
-  "nifty_ltp": 25373.65,
+  "signal_id": "20261119-133903-SBILIFE",
+  "generated_at": "2026-11-19T13:39:03.748863+05:30",
+  "nifty_ltp": 25381.6,
   "candidates": [
     {
       "ticker": "SBILIFE",
       "signal": "BUY",
-      "ltp": 1805.6,
-      "stop": 1797.61,
-      "target": 1825.57,
-      "qty": 21,
+      "ltp": 1805.2,
+      "stop": 1797.21,
+      "target": 1825.17,
+      "qty": 10,
       "indicators": {
         "rsi": 50.68,
         "atr": 5.3248,
         "atr_5m": 2.7918,
-        "vwap": 1800.85,
+        "vwap": 1800.87,
         "vol_ratio": 5.2
       },
-      "scout_reason": "NIFTY BULLISH, sector LIFE INSURANCE NEUTRAL",
+      "scout_reason": "NIFTY 50 +0.61% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "12:00",
@@ -174,16 +174,16 @@
         [
           "13:35",
           1805.1,
-          1805.8,
+          1806.9,
           1804.8,
-          1805.3,
-          1274
+          1805.2,
+          3017
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
-      "outcome_reason": "INTO_WALL: entry 1805.6 is within 0.5*ATR (2.66) of recent swing high at 1805.6",
-      "outcome_at": "2026-11-19T13:36:55.016371+05:30"
+      "outcome_reason": "max_positions_reached",
+      "outcome_at": "2026-11-19T13:39:09.194523+05:30"
     }
   ]
 }
