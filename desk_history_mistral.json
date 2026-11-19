@@ -4502,5 +4502,35 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261119-122201-SBILIFE",
+    "signal_time": "2026-11-19T12:22:01+05:30",
+    "judged_at": "2026-11-19T12:22:26+05:30",
+    "age_min": 0.4,
+    "ticker": "SBILIFE",
+    "action": "BUY",
+    "entry": 1808.6,
+    "stop": 1799.76,
+    "target": 1830.7,
+    "qty": 21,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "setup_hash": "e2f54e3485c0c049439c4171b54c016595c3b4a2",
+    "index_name": "NIFTY 50",
+    "index_day_pct": 0.52,
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 62.09 suggests moderate overbought conditions, not extreme. The last 5-minute candle (12:20) is a small-bodied doji-like candle with low volume (1599), indicating indecision. The 12:15 candle shows a sharp spike to 1811.4 but closed near the open, lacking follow-through. ATR buffer (stop at 1.5 ATR) is tight, and the target (3.75 ATR) is not supported by recent momentum. The setup lacks a clean breakout or breakdown structure.",
+      "sentiment": "No headline information available. Volume behavior shows a spike at 12:15 (33063) but no sustained follow-through. Sector-wide prints (LIFE INSURANCE) are neutral, and the tape does not show a clear directional bias for the sector. The vol_ratio (4.89) is elevated but not exceptional.",
+      "macro": "NIFTY is bullish, but the time remaining (188 minutes) is insufficient for a late-session entry like this. Late-session entries require exceptional structure, which is absent here. The trade direction (BUY) does not align with a high-probability macro setup given the time of day and lack of momentum.",
+      "risk": "Reward:risk is 2.5, which is mathematically favorable but not justified by the structure. Stop distance (1.5 ATR) is tight, and the target (3.75 ATR) is not reachable in the remaining time (188 minutes) without a strong catalyst. No results risk is present, but the lack of momentum and indecision in the tape make this a high-risk entry. Feasibility is not explicitly marked as infeasible, but the target distance (3.75 ATR) and time left make it TIGHT and unlikely to be achieved."
+    },
+    "rationale": "SBILIFE lacks a clean technical setup, with indecisive candles and no follow-through despite elevated volume at 12:15. The BUY action is not supported by the tape or macro context, and the target is unreachable in the remaining time without a catalyst. Default to SKIP due to high risk and low conviction in the setup.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
