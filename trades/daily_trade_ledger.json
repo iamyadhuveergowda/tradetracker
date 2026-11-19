@@ -1945,7 +1945,7 @@
     "open": 1392.6,
     "high": 1392.6,
     "low": 1387.9,
-    "close": 1390.8,
+    "close": 1391.0,
     "time": "12:11:58",
     "status": "OPEN ⏳",
     "exit_price": null,
@@ -1959,7 +1959,7 @@
       }
     ],
     "mode": "PAPER",
-    "last_price": 1390.8,
+    "last_price": 1391.0,
     "atr": 5.5423,
     "target_booked": false,
     "breakeven_set": false,
@@ -1983,7 +1983,7 @@
     "ticker": "BAJAJFINSV",
     "action": "BUY",
     "qty": 21,
-    "remaining_qty": 21,
+    "remaining_qty": 0,
     "requested_qty": 21,
     "locked_margin_per_share": 376.06,
     "partial_booked": false,
@@ -1994,36 +1994,52 @@
     "open": 1878.2,
     "high": 1882.8,
     "low": 1875.2,
-    "close": 1877.5,
+    "close": 1871.1,
     "time": "13:19:36",
-    "status": "OPEN ⏳",
-    "exit_price": null,
-    "net_pnl": 0.0,
+    "status": "LOSS 🔴",
+    "exit_price": 1869.8,
+    "net_pnl": -281.55,
     "rationale": "BULL: Entry 1881 is just above VWAP (1877.24), RSI 57.66 and recent 5‑min candles show a three‑bar lift to the day high 1885, target 1902.88 is ~21.9 pts (~3.8 ATR) and fits within expected travel 21.49 pts. BEAR: Target lies 17.9 pts above the session high (1885) needing a breakout, and the required move (21.9 pts) is marginally above the expected travel of 21.49 pts, making the upside tight. VERDICT: APPROVE",
     "events": [
       {
         "time": "2026-11-19T13:19:36+05:30",
         "type": "ENTRY",
         "text": "PAPER BUY 21 @ ₹1880.30"
+      },
+      {
+        "time": "2026-11-19T14:59:44+05:30",
+        "type": "EXIT",
+        "text": "Stop hit: 21 @ ₹1869.80, net ₹-281.55"
       }
     ],
     "mode": "PAPER",
-    "last_price": 1877.5,
+    "last_price": 1869.8,
     "atr": 5.8347,
     "target_booked": false,
     "breakeven_set": false,
     "mfe_r": 0.617,
-    "mae_r": -0.32,
+    "mae_r": -1.051,
     "size_tag": "standard",
     "size_reason": "standard",
     "vol_ratio": 5.12,
     "stop_atr_mult": 1.5,
     "rvol": 1.0,
     "rule_version": "v14",
-    "entry_brokerage_remaining": 20.0,
-    "charges": {},
-    "pnl_by_date": {},
+    "entry_brokerage_remaining": 0.0,
+    "charges": {
+      "brokerage": 40.0,
+      "exchange": 2.34,
+      "sebi": 0.08,
+      "stt": 9.82,
+      "stamp": 1.18,
+      "gst": 7.64,
+      "total": 61.05
+    },
+    "pnl_by_date": {
+      "2026-11-19": -281.55
+    },
     "orders": {},
-    "breakeven_price": 1884.45
+    "breakeven_price": 1884.45,
+    "exit_time": "2026-11-19T14:59:44+05:30"
   }
 ]
