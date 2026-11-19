@@ -1,15 +1,15 @@
 {
-  "fetched_at_ist": "2026-11-19 09:03 IST",
+  "fetched_at_ist": "2026-11-19 09:06 IST",
   "indices": [
     {
       "name": "NIFTY 50",
-      "price": 25204.3,
+      "price": 25242.8,
       "label": "NEUTRAL",
-      "percent": -0.09
+      "percent": 0.06
     },
     {
       "name": "NIFTY BANK",
-      "price": 62295.3,
+      "price": 62290.3,
       "label": "BULLISH",
       "percent": 0.41
     },
@@ -21,15 +21,15 @@
     },
     {
       "name": "NIFTY IT",
-      "price": 31182.45,
-      "label": "BEARISH",
-      "percent": -0.26
+      "price": 31185.15,
+      "label": "NEUTRAL",
+      "percent": -0.25
     },
     {
       "name": "NIFTY AUTO",
-      "price": 27408.0,
+      "price": 27410.65,
       "label": "NEUTRAL",
-      "percent": 0.05
+      "percent": 0.06
     }
   ]
 }
