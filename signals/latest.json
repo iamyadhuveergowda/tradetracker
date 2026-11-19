@@ -1,40 +1,24 @@
 {
-  "signal_id": "20261119-094834-ASIANPAINT",
-  "generated_at": "2026-11-19T09:48:34.415348+05:30",
-  "nifty_ltp": 25245.25,
+  "signal_id": "20261119-095606-ASIANPAINT",
+  "generated_at": "2026-11-19T09:56:06.611942+05:30",
+  "nifty_ltp": 25257.9,
   "candidates": [
     {
       "ticker": "ASIANPAINT",
       "signal": "BUY",
-      "ltp": 2581.7,
-      "stop": 2567.61,
-      "target": 2616.92,
+      "ltp": 2590.0,
+      "stop": 2575.91,
+      "target": 2625.22,
       "qty": 15,
       "indicators": {
-        "rsi": 58.95,
+        "rsi": 63.13,
         "atr": 9.3914,
-        "atr_5m": 6.738,
-        "vwap": 2577.42,
-        "vol_ratio": 3.13
+        "atr_5m": 6.8945,
+        "vwap": 2581.93,
+        "vol_ratio": 5.07
       },
       "scout_reason": "NIFTY NEUTRAL, sector CONSUMER GOODS NEUTRAL",
       "candles_5m": [
-        [
-          "14:15",
-          2582.3,
-          2584.8,
-          2579.6,
-          2583.9,
-          8413
-        ],
-        [
-          "14:20",
-          2583.8,
-          2583.8,
-          2581.3,
-          2581.3,
-          8501
-        ],
         [
           "14:25",
           2581.5,
@@ -175,15 +159,31 @@
           "09:45",
           2585.0,
           2586.1,
-          2580.9,
-          2581.6,
-          10524
+          2578.9,
+          2585.3,
+          15104
+        ],
+        [
+          "09:50",
+          2585.9,
+          2593.8,
+          2585.4,
+          2590.2,
+          85639
+        ],
+        [
+          "09:55",
+          2590.7,
+          2590.9,
+          2589.9,
+          2590.1,
+          4759
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
-      "outcome_reason": "DISTRIBUTION: heaviest volume bar in last 6 candles at 15:10 (vol 21811) closed lower than its high, indicating supply against BUY direction",
-      "outcome_at": "2026-11-19T09:48:38.876404+05:30"
+      "outcome_reason": "scout: omitted from LLM output",
+      "outcome_at": "2026-11-19T09:56:07.970995+05:30"
     }
   ]
 }
