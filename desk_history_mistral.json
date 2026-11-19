@@ -4442,5 +4442,35 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261119-114857-ASIANPAINT",
+    "signal_time": "2026-11-19T11:48:57+05:30",
+    "judged_at": "2026-11-19T11:49:18+05:30",
+    "age_min": 0.4,
+    "ticker": "ASIANPAINT",
+    "action": "BUY",
+    "entry": 2596.5,
+    "stop": 2582.95,
+    "target": 2630.37,
+    "qty": 15,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "Valid only on a break above 2601.60 with follow-through volume > 30,000",
+    "setup_hash": "0f9df623917fab2b7d52d91b0981f4e0e35abb96",
+    "index_name": "NIFTY 50",
+    "index_day_pct": 0.49,
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 64.81 suggests moderate bullish momentum but not overbought. The 11:40 candle shows a strong breakout to 2601.60, but the last 5-minute candle (11:45) closed near the low of its range (2596.1), indicating weak follow-through. ATR buffer (1.5x) is tight for a late-session entry, and the target (2630.37) is 3.75 ATR away—unlikely to be achieved in 222 minutes without sustained momentum. Candle structure lacks conviction: no higher highs or higher lows post-breakout.",
+      "sentiment": "No headline information available. Volume spike at 11:40 (29,125) suggests initial interest, but the 11:45 candle volume (4,632) dropped sharply, indicating fading momentum. Sector-wide prints in Consumer Goods are not visible in the data, and the stock is trading independently of the NIFTY spot (25350.45).",
+      "macro": "Trade direction (BUY) aligns with NIFTY's bullish bias, but the time of day (11:48, 222 minutes to close) is late for a speculative breakout play. Late-session entries require exceptional structure, which is absent here. The stock is trading ~2.4% above NIFTY spot, which is not ideal for a sector-neutral consumer goods stock.",
+      "risk": "Reward:risk of 2.5 is mathematically attractive, but the stop distance (1.5 ATR) is too tight for a late-session entry, and the target (3.75 ATR) is highly ambitious given the time left. **Feasibility is TIGHT**: 3.75 ATR in 222 minutes (~1.68 ATR/hour) is aggressive and unlikely without a tailwind. No results risk, but the lack of follow-through volume and weak candle structure elevate execution risk. Stop-loss at 2582.95 (13.55 points below entry) is reasonable but leaves little room for error."
+    },
+    "rationale": "ASIANPAINT's breakout at 11:40 lacks follow-through, with volume collapsing and the 11:45 candle closing near its low. The technical setup is weak (no higher highs, fading momentum), sentiment is neutral with no visible sector support, and the macro context (late-session, 222 minutes to close) is unfavorable. The target is TIGHTLY feasible but requires sustained momentum, which is absent. Default to SKIP unless the stock breaks above 2601.60 with volume > 30,000 and holds for 2 consecutive candles.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
