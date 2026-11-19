@@ -1264,9 +1264,9 @@
       "risk": "Stop is set at 1285.12 (1.50 ATR, 8.28 pts), with target at 1314.09 (3.75 ATR, 20.69 pts) offering an R:R of 2.50. While feasibility is unflagged and results_risk is empty, achieving a 3.75 ATR expansion on NESTLEIND without broad market trend support is demanding."
     },
     "rationale": "While sector tailwinds exist, NESTLEIND faced sharp rejection at 1295.50 on peak volume (64,723 shares at 10:35), closing at 1293.0. Requiring a 3.75 ATR extension to 1314.09 right after supply emerged warrants a SKIP until 1295.50 is cleanly broken.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 1.21,
+    "outcome_at": "2026-11-20T00:29:57+05:30"
   },
   {
     "signal_id": "20261119-105643-DRREDDY",
@@ -1296,9 +1296,9 @@
       "risk": "SELL filtered: NIFTY 50 day +0.33% is not below -0.25% (SELL_FILTER_REGIME shadow test)."
     },
     "rationale": "SELL filtered: NIFTY 50 day +0.33% is not below -0.25% (SELL_FILTER_REGIME shadow test).",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-20T00:29:57+05:30"
   },
   {
     "signal_id": "20261119-111429-CIPLA",
@@ -1328,9 +1328,9 @@
       "risk": "SELL filtered: NIFTY 50 day % unavailable at judge time — SELL ineligible (fail-closed, SELL_FILTER_REGIME shadow test)."
     },
     "rationale": "SELL filtered: NIFTY 50 day % unavailable at judge time — SELL ineligible (fail-closed, SELL_FILTER_REGIME shadow test).",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-20T00:29:57+05:30"
   },
   {
     "signal_id": "20261119-120129-SBICARD",
@@ -1358,9 +1358,9 @@
       "risk": "Reward-to-risk is attractive at 2.50. The stop at 565.46 is 1.50 ATR away, well-shielded below the 11:10-11:15 base (565.35). Target at 579.07 demands 3.75 ATR, feasible with no flags or results risk present."
     },
     "rationale": "SBICARD presents a high-volume breakout from a multi-candle consolidation base with clean alignment across NIFTY and Financial Services. With a 1.50 ATR protective stop and 209 minutes remaining, risk-reward at 2.50 justifies a GO.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.85,
+    "outcome_at": "2026-11-20T00:29:57+05:30"
   },
   {
     "signal_id": "20261119-123906-DIVISLAB",
@@ -1390,9 +1390,9 @@
       "risk": "SELL filtered: NIFTY 50 day +0.61% is not below -0.25% (SELL_FILTER_REGIME shadow test)."
     },
     "rationale": "SELL filtered: NIFTY 50 day +0.61% is not below -0.25% (SELL_FILTER_REGIME shadow test).",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-20T00:29:57+05:30"
   },
   {
     "signal_id": "20261119-131718-TECHM",
@@ -1422,8 +1422,8 @@
       "risk": "SELL filtered: NIFTY 50 day +0.52% is not below -0.25% (SELL_FILTER_REGIME shadow test)."
     },
     "rationale": "SELL filtered: NIFTY 50 day +0.52% is not below -0.25% (SELL_FILTER_REGIME shadow test).",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-20T00:29:57+05:30"
   }
 ]
