@@ -1517,5 +1517,35 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261120-111800-SBILIFE",
+    "signal_time": "2026-11-20T11:18:00+05:30",
+    "judged_at": "2026-11-20T11:20:21+05:30",
+    "age_min": 2.3,
+    "ticker": "SBILIFE",
+    "action": "BUY",
+    "entry": 1809.4,
+    "stop": 1798.6,
+    "target": 1836.41,
+    "qty": 21,
+    "verdict": "SKIP",
+    "confidence": 75,
+    "trigger": "Valid only on a decisive 5-minute close above 1812.00",
+    "setup_hash": "2e397a5cd37fe4969ef51af24d47fdee1fd29b13",
+    "index_name": "NIFTY 50",
+    "index_day_pct": 0.09,
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "Price rallied from 1800.10 to a high of 1811.80, but the candle structure shows clear signs of stalling. The 11:15 candle printed an extreme volume spike of 75,202 contracts yet closed virtually flat (open 1809.5, close 1809.6, high 1811.2), leaving an upper wick and signaling heavy resistance/churning at the 1811-1812 zone. RSI is moderate at 56.63, but entering at 1809.40 buys directly into this overhead supply.",
+      "sentiment": "No headline news feed is available; sentiment is inferred purely from the tape. The volume ratio surged to 11.21x on the 11:10 and 11:15 bars, but the tape shows supply actively absorbing buying interest at 1811 rather than clean upward expansion. Sector context for Life Insurance is NEUTRAL.",
+      "macro": "NIFTY spot is at 25532.65 and tagged NEUTRAL, offering no index-level momentum or directional lift. 252 minutes remain to close, which is sufficient time, but trading long in a neutral sector without index support demands a cleaner breakout.",
+      "risk": "Stop distance is 1.50 ATR (10.80 pts at 1798.60) against a target distance of 3.75 ATR (27.01 pts at 1836.41) for a 2.5 reward-to-risk. Capturing 3.75 ATR in an intraday session without strong sector momentum is statistically demanding. Results risk is empty."
+    },
+    "rationale": "SBILIFE is a SKIP at 1809.40 despite 252 minutes remaining and 2.5 R:R. The 11:15 bar exhibited a massive volume spike of 75,202 shares with negligible upward range expansion, highlighting stubborn supply near 1811.00-1812.00 in a neutral index environment.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
