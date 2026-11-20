@@ -1,23 +1,23 @@
 {
-  "signal_id": "20261120-130639-MARUTI",
-  "generated_at": "2026-11-20T13:06:39.987837+05:30",
-  "nifty_ltp": 25735.1,
+  "signal_id": "20261120-130842-MARUTI",
+  "generated_at": "2026-11-20T13:08:42.244158+05:30",
+  "nifty_ltp": 25727.9,
   "candidates": [
     {
       "ticker": "MARUTI",
       "signal": "BUY",
-      "ltp": 13914.0,
-      "stop": 13806.36,
-      "target": 14183.09,
+      "ltp": 13902.0,
+      "stop": 13794.36,
+      "target": 14171.09,
       "qty": 1,
       "indicators": {
         "rsi": 62.43,
         "atr": 71.7572,
         "atr_5m": 33.9644,
-        "vwap": 13799.9,
+        "vwap": 13800.1,
         "vol_ratio": 2.13
       },
-      "scout_reason": "NIFTY 50 +0.87% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +0.84% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "11:30",
@@ -175,15 +175,15 @@
           "13:05",
           13912.0,
           13918.0,
-          13912.0,
-          13913.0,
-          1516
+          13900.0,
+          13900.0,
+          3825
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-20T13:06:41.140839+05:30"
+      "outcome_at": "2026-11-20T13:08:44.014882+05:30"
     }
   ]
 }
