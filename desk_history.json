@@ -1452,9 +1452,9 @@
       "risk": "Stop is set at 401.19 (1.50 ATR, 1.71 points) against a target of 407.18 (3.75 ATR, 4.28 points), yielding a 2.5 R:R. However, achieving 3.75 ATR in a neutral market environment requires clearing multiple resistance levels (403.00 and 403.50) that have not yet yielded. Results risk is empty."
     },
     "rationale": "BEL is attempting to push toward its morning high of 403.00, but volume dried up to 15,724 shares at 09:55 after the 09:50 test. With NIFTY neutral and an ambitious target of 407.18 (3.75 ATR away), entering at 402.90 directly into overhead supply is an unfavorable R:R execution. SKIP until a clean break above 403.50 materializes.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-21T00:08:08+05:30"
   },
   {
     "signal_id": "20261120-101611-WIPRO",
@@ -1482,9 +1482,9 @@
       "risk": "Stop is set at 184.37 (1.50 ATR), and target is 189.72 (3.75 ATR, 3.82 points). Although 314 minutes remain and feasibility is open, achieving a 3.75 ATR move requires slicing through clear resistance at 187.20, which is unsupported by current stalling volume."
     },
     "rationale": "SKIP. WIPRO suffered a sharp high-volume rejection at 187.20 early in the session and is currently idling near 185.89. Despite a 2.5 R:R and 314 minutes remaining, the stock faces substantial overhead resistance; stand aside unless it clears 187.20 with conviction.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-21T00:08:08+05:30"
   },
   {
     "signal_id": "20261120-111122-CIPLA",
@@ -1514,9 +1514,9 @@
       "risk": "SELL filtered: NIFTY 50 day +0.05% is not below -0.25% (SELL_FILTER_REGIME shadow test)."
     },
     "rationale": "SELL filtered: NIFTY 50 day +0.05% is not below -0.25% (SELL_FILTER_REGIME shadow test).",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-21T00:08:08+05:30"
   },
   {
     "signal_id": "20261120-111800-SBILIFE",
@@ -1544,9 +1544,9 @@
       "risk": "Stop distance is 1.50 ATR (10.80 pts at 1798.60) against a target distance of 3.75 ATR (27.01 pts at 1836.41) for a 2.5 reward-to-risk. Capturing 3.75 ATR in an intraday session without strong sector momentum is statistically demanding. Results risk is empty."
     },
     "rationale": "SBILIFE is a SKIP at 1809.40 despite 252 minutes remaining and 2.5 R:R. The 11:15 bar exhibited a massive volume spike of 75,202 shares with negligible upward range expansion, highlighting stubborn supply near 1811.00-1812.00 in a neutral index environment.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 1.58,
+    "outcome_at": "2026-11-21T00:08:08+05:30"
   },
   {
     "signal_id": "20261120-113016-SUNPHARMA",
@@ -1576,9 +1576,9 @@
       "risk": "SELL filtered: NIFTY 50 day +0.11% is not below -0.25% (SELL_FILTER_REGIME shadow test)."
     },
     "rationale": "SELL filtered: NIFTY 50 day +0.11% is not below -0.25% (SELL_FILTER_REGIME shadow test).",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-21T00:08:08+05:30"
   },
   {
     "signal_id": "20261120-113016-SUNPHARMA",
@@ -1608,9 +1608,9 @@
       "risk": "SELL filtered: NIFTY 50 day +0.11% is not below -0.25% (SELL_FILTER_REGIME shadow test)."
     },
     "rationale": "SELL filtered: NIFTY 50 day +0.11% is not below -0.25% (SELL_FILTER_REGIME shadow test).",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-21T00:08:08+05:30"
   },
   {
     "signal_id": "20261120-120710-ADANIENT",
@@ -1638,9 +1638,9 @@
       "risk": "Stop distance of 1.5 ATR (2693.66) is structurally sound, but the target of 2743.85 requires a 3.75 ATR (35.85 pts) expansion in 203 minutes when the prior hour range was merely 12 points. Feasibility and results risk fields are clean with no upcoming earnings scheduled."
     },
     "rationale": "SKIP ADANIENT BUY at 2708.00. The sharp rejection candle at 12:05 (closing at 2706.80 after a spike to 2711.90) indicates immediate supply, making a 2708.00 entry poor location. A 3.75 ATR target is demanding without clean consolidation above 2712.00.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.07,
+    "outcome_at": "2026-11-21T00:08:08+05:30"
   },
   {
     "signal_id": "20261120-123530-TCS",
@@ -1668,9 +1668,9 @@
       "risk": "Stop at 2389.05 is 1.50 ATR away, but reaching the 2454.68 target demands a 3.75 ATR (46.88 points) run with only 175 minutes left in the session. Results risk is empty."
     },
     "rationale": "SKIP. Entering at 2407.80 chases an isolated 12:30 volume spike into resistance. Demanding a 3.75 ATR extension in 175 minutes while NIFTY is already +0.78% overextended creates poor odds of target completion.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-21T00:08:08+05:30"
   },
   {
     "signal_id": "20261120-134929-HINDUNILVR",
@@ -1700,8 +1700,8 @@
       "risk": "SELL filtered: NIFTY 50 day +0.87% is not below -0.25% (SELL_FILTER_REGIME shadow test)."
     },
     "rationale": "SELL filtered: NIFTY 50 day +0.87% is not below -0.25% (SELL_FILTER_REGIME shadow test).",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-21T00:08:08+05:30"
   }
 ]
