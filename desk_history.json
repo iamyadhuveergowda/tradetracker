@@ -1611,5 +1611,35 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261120-120710-ADANIENT",
+    "signal_time": "2026-11-20T12:07:10+05:30",
+    "judged_at": "2026-11-20T12:07:27+05:30",
+    "age_min": 0.3,
+    "ticker": "ADANIENT",
+    "action": "BUY",
+    "entry": 2708.0,
+    "stop": 2693.66,
+    "target": 2743.85,
+    "qty": 14,
+    "verdict": "SKIP",
+    "confidence": 75,
+    "trigger": "Valid only on a break and sustained hold above 2712.00",
+    "setup_hash": "adf1d61c6bb1109fb545ef3ce8654b760dd342b8",
+    "index_name": "NIFTY 50",
+    "index_day_pct": 0.46,
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "The 12:00 candle spiked to 2711.90 on 18,624 volume, but the 12:05 bar printed an immediate rejection (open 2709.70, low/close 2706.80), falling back below the 2708.00 entry. RSI is 62.66 and ATR is 9.56. Buying at 2708.00 right after an intraday rejection is chasing into overhead resistance.",
+      "sentiment": "No headline news feed is available. Tape analysis shows high volume (18.6k) on the 12:00 push followed immediately by zero follow-through and drying volume (713 shares) on the 12:05 pullback, suggesting aggressive profit taking at the highs.",
+      "macro": "NIFTY tape is bullish at 25630.45, but sector context for Diversified is neutral. With 203 minutes remaining, broad market direction offers general support, but lack of sector momentum weakens conviction.",
+      "risk": "Stop distance of 1.5 ATR (2693.66) is structurally sound, but the target of 2743.85 requires a 3.75 ATR (35.85 pts) expansion in 203 minutes when the prior hour range was merely 12 points. Feasibility and results risk fields are clean with no upcoming earnings scheduled."
+    },
+    "rationale": "SKIP ADANIENT BUY at 2708.00. The sharp rejection candle at 12:05 (closing at 2706.80 after a spike to 2711.90) indicates immediate supply, making a 2708.00 entry poor location. A 3.75 ATR target is demanding without clean consolidation above 2712.00.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
