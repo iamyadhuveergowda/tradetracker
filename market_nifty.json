@@ -1,5 +1,5 @@
 {
-  "fetched_at_ist": "2026-11-20 15:17 IST",
+  "fetched_at_ist": "2026-11-20 15:20 IST",
   "indices": [
     {
       "name": "NIFTY 50",
@@ -15,9 +15,9 @@
     },
     {
       "name": "INDIA VIX",
-      "price": 17.28,
+      "price": 17.3,
       "label": "BULLISH",
-      "percent": 7.26
+      "percent": 7.42
     },
     {
       "name": "NIFTY IT",
