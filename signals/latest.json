@@ -1,20 +1,20 @@
 {
-  "signal_id": "20261120-113016-SUNPHARMA",
-  "generated_at": "2026-11-20T11:30:16.227394+05:30",
-  "nifty_ltp": 25541.0,
+  "signal_id": "20261120-113222-SUNPHARMA",
+  "generated_at": "2026-11-20T11:32:22.325193+05:30",
+  "nifty_ltp": 25553.65,
   "candidates": [
     {
       "ticker": "SUNPHARMA",
       "signal": "SELL",
-      "ltp": 1891.0,
-      "stop": 1900.01,
-      "target": 1868.48,
+      "ltp": 1892.7,
+      "stop": 1901.71,
+      "target": 1870.18,
       "qty": 20,
       "indicators": {
         "rsi": 48.69,
         "atr": 6.005,
         "atr_5m": 3.643,
-        "vwap": 1891.44,
+        "vwap": 1891.46,
         "vol_ratio": 2.33
       },
       "scout_reason": "NIFTY NEUTRAL, sector PHARMA BEARISH",
@@ -174,23 +174,23 @@
         [
           "11:30",
           1891.2,
-          1892.3,
-          1891.2,
-          1892.3,
-          501
+          1892.7,
+          1890.8,
+          1892.7,
+          6741
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-20T11:30:21.461057+05:30"
+      "outcome_at": "2026-11-20T11:32:23.679165+05:30"
     },
     {
       "ticker": "COALINDIA",
       "signal": "SELL",
-      "ltp": 389.05,
-      "stop": 390.79,
-      "target": 384.7,
+      "ltp": 389.1,
+      "stop": 390.84,
+      "target": 384.75,
       "qty": 101,
       "indicators": {
         "rsi": 40.77,
@@ -356,16 +356,16 @@
         [
           "11:30",
           389.0,
+          389.1,
           389.0,
-          389.0,
-          389.0,
-          2467
+          389.1,
+          11140
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-20T11:30:21.461076+05:30"
+      "outcome_at": "2026-11-20T11:32:23.679184+05:30"
     }
   ]
 }
