@@ -1,20 +1,20 @@
 {
-  "signal_id": "20261120-095623-BEL",
-  "generated_at": "2026-11-20T09:56:23.801905+05:30",
-  "nifty_ltp": 25539.75,
+  "signal_id": "20261120-095827-BEL",
+  "generated_at": "2026-11-20T09:58:27.747051+05:30",
+  "nifty_ltp": 25537.95,
   "candidates": [
     {
       "ticker": "BEL",
       "signal": "BUY",
-      "ltp": 402.9,
-      "stop": 401.19,
-      "target": 407.18,
+      "ltp": 403.1,
+      "stop": 401.39,
+      "target": 407.38,
       "qty": 97,
       "indicators": {
         "rsi": 57.21,
         "atr": 1.1412,
         "atr_5m": 0.9144,
-        "vwap": 401.96,
+        "vwap": 402.0,
         "vol_ratio": 2.3
       },
       "scout_reason": "NIFTY NEUTRAL, sector INFRASTRUCTURE NEUTRAL",
@@ -174,16 +174,16 @@
         [
           "09:55",
           402.7,
-          402.95,
+          403.2,
           402.55,
-          402.9,
-          15724
+          403.05,
+          60764
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
-      "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-20T09:56:26.664300+05:30"
+      "outcome_reason": "INTO_WALL: entry 403.1 is within 0.5*ATR (0.57) of session high 403.2",
+      "outcome_at": "2026-11-20T09:58:31.978730+05:30"
     }
   ]
 }
