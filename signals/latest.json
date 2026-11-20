@@ -1,20 +1,20 @@
 {
-  "signal_id": "20261120-113222-SUNPHARMA",
-  "generated_at": "2026-11-20T11:32:22.325193+05:30",
-  "nifty_ltp": 25553.65,
+  "signal_id": "20261120-113423-SUNPHARMA",
+  "generated_at": "2026-11-20T11:34:23.542487+05:30",
+  "nifty_ltp": 25551.5,
   "candidates": [
     {
       "ticker": "SUNPHARMA",
       "signal": "SELL",
-      "ltp": 1892.7,
-      "stop": 1901.71,
-      "target": 1870.18,
+      "ltp": 1892.1,
+      "stop": 1901.11,
+      "target": 1869.58,
       "qty": 20,
       "indicators": {
         "rsi": 48.69,
         "atr": 6.005,
         "atr_5m": 3.643,
-        "vwap": 1891.46,
+        "vwap": 1891.45,
         "vol_ratio": 2.33
       },
       "scout_reason": "NIFTY NEUTRAL, sector PHARMA BEARISH",
@@ -175,28 +175,28 @@
           "11:30",
           1891.2,
           1892.7,
-          1890.8,
-          1892.7,
-          6741
+          1890.3,
+          1892.1,
+          10233
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-20T11:32:23.679165+05:30"
+      "outcome_at": "2026-11-20T11:34:28.445458+05:30"
     },
     {
       "ticker": "COALINDIA",
       "signal": "SELL",
-      "ltp": 389.1,
-      "stop": 390.84,
-      "target": 384.75,
+      "ltp": 389.15,
+      "stop": 390.89,
+      "target": 384.8,
       "qty": 101,
       "indicators": {
         "rsi": 40.77,
         "atr": 1.1603,
         "atr_5m": 0.6264,
-        "vwap": 389.53,
+        "vwap": 389.52,
         "vol_ratio": 2.68
       },
       "scout_reason": "NIFTY NEUTRAL, sector ENERGY BEARISH",
@@ -356,16 +356,16 @@
         [
           "11:30",
           389.0,
-          389.1,
-          389.0,
-          389.1,
-          11140
+          389.2,
+          388.95,
+          389.2,
+          144519
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-20T11:32:23.679184+05:30"
+      "outcome_at": "2026-11-20T11:34:28.445476+05:30"
     }
   ]
 }
