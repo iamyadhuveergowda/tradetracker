@@ -1455,5 +1455,35 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261120-101611-WIPRO",
+    "signal_time": "2026-11-20T10:16:11+05:30",
+    "judged_at": "2026-11-20T10:16:31+05:30",
+    "age_min": 0.3,
+    "ticker": "WIPRO",
+    "action": "BUY",
+    "entry": 185.9,
+    "stop": 184.37,
+    "target": 189.72,
+    "qty": 212,
+    "verdict": "SKIP",
+    "confidence": 75,
+    "trigger": "Valid only on a break above 187.20",
+    "setup_hash": "a803e86c281fca602e41b760e15dfc6897ee45b8",
+    "index_name": "NIFTY 50",
+    "index_day_pct": 0.01,
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "Price rallied to a high of 187.20 between 09:25 and 09:35 but was met with aggressive rejection on heavy volume (981,745 shares at 09:35). Since then, it has stagnated in a narrow band around 185.80-186.16. At 10:15, volume plummeted to 32,032 with close at 185.89. Buying at 185.90 into overhead supply is premature without a base breakout.",
+      "sentiment": "No headline news feed is available; sentiment is inferred purely from the tape. The aggressive selling bar at 09:35 and failure to clear 186.16 on 726,917 volume at 10:10 indicate active sellers capping upside momentum.",
+      "macro": "NIFTY is neutral at 25513.75. While the scout notes sector IT is bullish, WIPRO's internal tape has stalled and is failing to lead the sector.",
+      "risk": "Stop is set at 184.37 (1.50 ATR), and target is 189.72 (3.75 ATR, 3.82 points). Although 314 minutes remain and feasibility is open, achieving a 3.75 ATR move requires slicing through clear resistance at 187.20, which is unsupported by current stalling volume."
+    },
+    "rationale": "SKIP. WIPRO suffered a sharp high-volume rejection at 187.20 early in the session and is currently idling near 185.89. Despite a 2.5 R:R and 314 minutes remaining, the stock faces substantial overhead resistance; stand aside unless it clears 187.20 with conviction.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
