@@ -5022,5 +5022,35 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261120-124729-LT",
+    "signal_time": "2026-11-20T12:47:29+05:30",
+    "judged_at": "2026-11-20T12:47:47+05:30",
+    "age_min": 0.3,
+    "ticker": "LT",
+    "action": "BUY",
+    "entry": 4194.5,
+    "stop": 4174.87,
+    "target": 4243.57,
+    "qty": 4,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "Valid only on a break above 4202.60 with volume > 100k and RSI > 70",
+    "setup_hash": "bb3c367b1d5bfb2ac1716a69f9ef1b3d5f684c48",
+    "index_name": "NIFTY 50",
+    "index_day_pct": 0.77,
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 61.09 is neutral; ATR buffer (13.0857) suggests a tight stop (1.5 ATR = 4174.87). The last 5m candle (12:45) is a doji with low volume (33942) and weak follow-through, indicating indecision. The 12:40 candle shows a spike high (4202.60) but closed lower, lacking momentum. No clear breakout structure.",
+      "sentiment": "No headline information available. Volume ratio (4.13) is elevated but not exceptional; sector-wide prints are not visible in the data. The tape shows hesitation near resistance (4202.60), with no follow-through buy volume.",
+      "macro": "NIFTY is +0.76% but overextended for a late-session BUY entry (163 minutes to close). Late-session entries require exceptional structure, which is absent here. The trade direction (BUY) aligns with the index tape, but timing is poor.",
+      "risk": "Reward:risk is 2.5 (target 4243.57), but feasibility is TIGHT (3.75 ATR target distance with 163 minutes left). Stop distance (1.5 ATR) is reasonable, but the lack of momentum and weak candle structure increases risk of a false breakout. No results risk, but pre-results volatility is not a factor."
+    },
+    "rationale": "LT lacks a clean setup for a BUY entry at 4194.50. The doji candle at 12:45, weak follow-through, and absence of momentum near resistance (4202.60) make this a high-risk entry. Even if triggered, the tight feasibility (3.75 ATR target distance) and late-session timing (163 minutes to close) weigh heavily against a GO. Default to SKIP unless a break above 4202.60 with volume > 100k and RSI > 70 materializes.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
