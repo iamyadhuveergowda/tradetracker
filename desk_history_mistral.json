@@ -4776,5 +4776,35 @@
     "outcome": "CLOSE",
     "outcome_r": 1.7,
     "outcome_at": "2026-11-20T00:39:56+05:30"
+  },
+  {
+    "signal_id": "20261120-095623-BEL",
+    "signal_time": "2026-11-20T09:56:23+05:30",
+    "judged_at": "2026-11-20T09:56:49+05:30",
+    "age_min": 0.4,
+    "ticker": "BEL",
+    "action": "BUY",
+    "entry": 402.9,
+    "stop": 401.19,
+    "target": 407.18,
+    "qty": 97,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "setup_hash": "2c445e439620e2beb41c47ea2f31a0c525e3248a",
+    "index_name": "NIFTY 50",
+    "index_day_pct": 0.06,
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 57.21 suggests neither overbought nor oversold conditions. The last 5-minute candle (09:55) closed at 402.9, near the entry price (402.9), but the candle structure is indecisive with a small range (402.55-402.95). The 12-candle lookback shows no clear momentum breakout; the last 3 candles (09:45-09:55) are tight and lack follow-through. ATR buffer (1.1412) is tight relative to the target distance (3.75 ATRs), and the stop (401.19) is only 1.5 ATRs away, leaving minimal room for error. The setup lacks a clean breakout or exhaustion pattern.",
+      "sentiment": "No headline information available. Volume behavior is mixed: the 15:10 candle shows a spike in volume (589737) but no sustained follow-through. The 09:55 candle volume (15724) is low, indicating weak conviction. Sector-wide prints (INFRASTRUCTURE) are neutral per scout, but no visible tape-wide momentum in BEL’s favor.",
+      "macro": "NIFTY is neutral, and the time remaining (334 minutes) is ample for a trade, but late-session entries require exceptional structure. BEL’s move is not aligned with any visible index tape momentum; it is trading in a tight range without clear directional bias. The lack of macro alignment (e.g., sector rotation or index breakout) further weakens the case.",
+      "risk": "Reward:risk is 2.5, which is mathematically attractive, but the stop distance (1.5 ATR) is too tight for the time remaining and the lack of momentum. The target (407.18) is 3.75 ATRs away, which is feasible in theory but requires BEL to break out of its recent range with no visible catalyst. No results risk is present, but the absence of a clear trigger or momentum makes this a high-risk setup. The volatility profile is not favorable for a late-session entry."
+    },
+    "rationale": "BEL’s BUY signal lacks a clean technical setup, visible tape momentum, or macro alignment. The RSI and candle structure are neutral, volume is unconvincing, and the stop is too close for comfort. While the reward:risk is mathematically appealing, the absence of a catalyst or breakout pattern makes this a speculative trade. Default to SKIP given the skepticism toward late-session entries without exceptional structure.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
