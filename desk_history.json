@@ -1641,5 +1641,35 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261120-123530-TCS",
+    "signal_time": "2026-11-20T12:35:30+05:30",
+    "judged_at": "2026-11-20T12:35:54+05:30",
+    "age_min": 0.4,
+    "ticker": "TCS",
+    "action": "BUY",
+    "entry": 2407.8,
+    "stop": 2389.05,
+    "target": 2454.68,
+    "qty": 8,
+    "verdict": "SKIP",
+    "confidence": 75,
+    "trigger": "Valid only on a sustained 5m close above 2412.00",
+    "setup_hash": "620f9a0f4d249edeaba618bbd3f2d7ec4e1a3522",
+    "index_name": "NIFTY 50",
+    "index_day_pct": 0.78,
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "A sharp 12-point expansion candle at 12:30 pushed off the 2395.00 support to 2411.50, driving RSI to 62.85. However, buying at 2407.80 directly chases this single-bar burst into immediate wick resistance at 2411.50 rather than entering on a pullback.",
+      "sentiment": "No headline information is available. Tape sentiment reflects aggressive buying at 12:30 with volume spiking to 71,325 (volume ratio 3.34), but follow-through above the 2411.50 high has not yet formed.",
+      "macro": "With NIFTY at 25712.95 (+0.78%), the broader index is flagged as overextended for fresh long exposure at 12:35 IST, elevating mean-reversion risk across index heavyweights.",
+      "risk": "Stop at 2389.05 is 1.50 ATR away, but reaching the 2454.68 target demands a 3.75 ATR (46.88 points) run with only 175 minutes left in the session. Results risk is empty."
+    },
+    "rationale": "SKIP. Entering at 2407.80 chases an isolated 12:30 volume spike into resistance. Demanding a 3.75 ATR extension in 175 minutes while NIFTY is already +0.78% overextended creates poor odds of target completion.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
