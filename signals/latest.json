@@ -1,23 +1,23 @@
 {
-  "signal_id": "20261120-131614-SUNPHARMA",
-  "generated_at": "2026-11-20T13:16:14.385771+05:30",
-  "nifty_ltp": 25714.6,
+  "signal_id": "20261120-131819-SUNPHARMA",
+  "generated_at": "2026-11-20T13:18:19.625871+05:30",
+  "nifty_ltp": 25711.35,
   "candidates": [
     {
       "ticker": "SUNPHARMA",
       "signal": "SELL",
-      "ltp": 1889.3,
-      "stop": 1897.64,
-      "target": 1868.44,
+      "ltp": 1889.1,
+      "stop": 1897.44,
+      "target": 1868.24,
       "qty": 10,
       "indicators": {
         "rsi": 45.69,
         "atr": 5.5622,
         "atr_5m": 3.1599,
-        "vwap": 1890.81,
+        "vwap": 1890.8,
         "vol_ratio": 2.83
       },
-      "scout_reason": "NIFTY 50 +0.79% trending; SELL size cut 50%",
+      "scout_reason": "NIFTY 50 +0.77% trending; SELL size cut 50%",
       "candles_5m": [
         [
           "11:40",
@@ -177,13 +177,13 @@
           1889.8,
           1888.4,
           1889.0,
-          7763
+          16942
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-20T13:16:15.646942+05:30"
+      "outcome_at": "2026-11-20T13:18:20.442122+05:30"
     }
   ]
 }
