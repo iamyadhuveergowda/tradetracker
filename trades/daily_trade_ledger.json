@@ -2129,7 +2129,7 @@
     "ticker": "HDFCLIFE",
     "action": "BUY",
     "qty": 33,
-    "remaining_qty": 33,
+    "remaining_qty": 0,
     "requested_qty": 33,
     "locked_margin_per_share": 116.34,
     "partial_booked": false,
@@ -2140,21 +2140,26 @@
     "open": 581.4,
     "high": 582.75,
     "low": 581.4,
-    "close": 587.3,
+    "close": 586.4,
     "time": "13:45:20",
-    "status": "OPEN ⏳",
-    "exit_price": null,
-    "net_pnl": 0.0,
+    "status": "WIN 🟢",
+    "exit_price": 586.11,
+    "net_pnl": 91.52,
     "rationale": "BULL: Price broke above VWAP (580.01) to 582 with strong buying volume on the 12:45‑12:50 candles (335k and 432k) and RSI 55.86 indicating momentum; stop 4.33 points (1.5 ATR) below entry gives good risk‑reward. / BEAR: Target 592.82 is 10.82 points (3.75 ATR) above entry, above the session high (587.25) and exceeds the typical 8.15‑point move expected in the remaining 84 min, stretching the upside. / VERDICT: APPROVE",
     "events": [
       {
         "time": "2026-11-20T13:45:20+05:30",
         "type": "ENTRY",
         "text": "PAPER BUY 33 @ ₹581.70"
+      },
+      {
+        "time": "2026-11-20T15:10:44+05:30",
+        "type": "EXIT",
+        "text": "15:10 square-off: 33 @ ₹586.11, net ₹91.52"
       }
     ],
     "mode": "PAPER",
-    "last_price": 587.3,
+    "last_price": 586.11,
     "atr": 2.8862,
     "target_booked": false,
     "breakeven_set": false,
@@ -2166,10 +2171,21 @@
     "stop_atr_mult": 1.5,
     "rvol": 1.46,
     "rule_version": "v14",
-    "entry_brokerage_remaining": 20.0,
-    "charges": {},
-    "pnl_by_date": {},
+    "entry_brokerage_remaining": 0.0,
+    "charges": {
+      "brokerage": 40.0,
+      "exchange": 1.14,
+      "sebi": 0.04,
+      "stt": 4.84,
+      "stamp": 0.58,
+      "gst": 7.41,
+      "total": 54.01
+    },
+    "pnl_by_date": {
+      "2026-11-20": 91.52
+    },
     "orders": {},
-    "breakeven_price": 584.1
+    "breakeven_price": 584.1,
+    "exit_time": "2026-11-20T15:10:44+05:30"
   }
 ]
