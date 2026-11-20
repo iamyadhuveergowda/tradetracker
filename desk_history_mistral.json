@@ -4962,5 +4962,35 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261120-120710-ADANIENT",
+    "signal_time": "2026-11-20T12:07:10+05:30",
+    "judged_at": "2026-11-20T12:07:33+05:30",
+    "age_min": 0.4,
+    "ticker": "ADANIENT",
+    "action": "BUY",
+    "entry": 2708.0,
+    "stop": 2693.66,
+    "target": 2743.85,
+    "qty": 14,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "setup_hash": "adf1d61c6bb1109fb545ef3ce8654b760dd342b8",
+    "index_name": "NIFTY 50",
+    "index_day_pct": 0.46,
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 62.66 indicates moderate overbought conditions, not extreme. The last 5-minute candle (12:05) closed at 2706.8, well below the entry price of 2708.0, and shows no follow-through momentum. The 12:00 candle had a strong volume spike (18624) but closed lower than its high (2711.9), suggesting exhaustion. ATR buffer (stop at 2693.66) is tight relative to the target (2743.85), and the stock lacks a clear breakout structure. The 11:55-12:05 candles show indecision with low volume (713) and no higher highs. No clean setup; appears to be chasing.",
+      "sentiment": "No headline information available. Volume behavior shows sector-wide prints with no clear directional follow-through. The 11:45 candle had a volume spike (11616), but the subsequent candles lacked conviction, suggesting weak sentiment.",
+      "macro": "NIFTY is at 25630.45, and the trade direction (BUY) aligns with the index tape. However, the time of day (12:07 IST, 203 minutes to close) is late for a fresh entry without exceptional structure. Late-session entries require stronger confirmation, which is absent here.",
+      "risk": "Reward:risk is 2.5, which is mathematically favorable, but the stop distance (1.5 ATR) is tight, and the target distance (3.75 ATR) is not feasible in the remaining 203 minutes (feasibility field empty, but the tape suggests limited upside). No results risk (empty field), but the lack of momentum and weak candle structure increases execution risk. The stock is not showing sector leadership or follow-through."
+    },
+    "rationale": "ADANIENT lacks a clean technical setup, with weak follow-through, low volume on the last candle, and no sector-wide leadership. The late-session entry (203 minutes to close) requires exceptional structure, which is absent. The RSI and candle behavior suggest chasing rather than a high-conviction trade. SKIP due to poor risk-reward alignment and lack of momentum.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
