@@ -11,3 +11,5 @@ pick_date,market,ticker,yf_symbol,ref_price,stop,target,watch_level,score,reason
 2026-11-18,NIFTY,ULTRACEMCO,ULTRACEMCO.NS,12428.0,12020.54,13446.66,12532.0,6,above 50d MA; 20d return +12.7%; RSI 67 strong; near 20d high; ATR 2.2% alive,271.64,66.7,0.1268,0.022,PENDING,,,1
 2026-11-19,NIFTY,CIPLA,CIPLA.NS,1418.5,1382.51,1508.47,1435.0,7,above 50d MA; 20d return +7.0%; RSI 62 strong; volume 1.2x avg; near 20d high; ATR 1.7% alive,23.99,62.2,0.0702,0.0172,PENDING,,,1
 2026-11-19,NIFTY,EICHERMOT,EICHERMOT.NS,8058.5,7706.7,8938.01,7947.0,7,above 50d MA; 20d return +7.5%; RSI 66 strong; volume 1.2x avg; near 20d high; ATR 2.7% alive,234.54,66.2,0.0746,0.0273,PENDING,,,1
+2026-11-20,NIFTY,EICHERMOT,EICHERMOT.NS,8058.5,7706.7,8938.01,8072.5,7,above 50d MA; 20d return +12.4%; RSI 69 strong; volume 1.2x avg; near 20d high; ATR 2.9% alive,234.54,68.9,0.1238,0.0291,,,,0
+2026-11-20,NIFTY,BAJAJFINSV,BAJAJFINSV.NS,1885.0,1814.95,2060.13,1906.0,7,above 50d MA; 20d return +11.5%; RSI 64 strong; volume 1.2x avg; near 20d high; ATR 2.5% alive,46.7,64.0,0.1154,0.0248,,,,0
