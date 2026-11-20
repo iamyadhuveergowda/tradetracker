@@ -2064,7 +2064,7 @@
     "ticker": "TCS",
     "action": "BUY",
     "qty": 8,
-    "remaining_qty": 8,
+    "remaining_qty": 0,
     "requested_qty": 8,
     "locked_margin_per_share": 481.3,
     "partial_booked": false,
@@ -2075,36 +2075,52 @@
     "open": 2399.0,
     "high": 2411.5,
     "low": 2398.0,
-    "close": 2390.7,
+    "close": 2387.4,
     "time": "12:35:36",
-    "status": "OPEN ⏳",
-    "exit_price": null,
-    "net_pnl": 0.0,
+    "status": "LOSS 🔴",
+    "exit_price": 2384.0,
+    "net_pnl": -233.93,
     "rationale": "BULL: Entry above VWAP with strong bullish volume on 12:30, RSI 62.9 and price breaking recent highs suggest momentum; target within 3.75 ATR and expected travel. BEAR: Target lies ~40 pts above session high, requiring a sizable move despite tight stop and limited news catalyst. VERDICT: APPROVED",
     "events": [
       {
         "time": "2026-11-20T12:35:36+05:30",
         "type": "ENTRY",
         "text": "PAPER BUY 8 @ ₹2406.50"
+      },
+      {
+        "time": "2026-11-20T13:24:12+05:30",
+        "type": "EXIT",
+        "text": "Stop hit: 8 @ ₹2384.00, net ₹-233.93"
       }
     ],
     "mode": "PAPER",
-    "last_price": 2390.7,
+    "last_price": 2384.0,
     "atr": 12.5013,
     "target_booked": false,
     "breakeven_set": false,
     "mfe_r": 0.133,
-    "mae_r": -0.843,
+    "mae_r": -1.019,
     "size_tag": "overextended_halfsize",
     "size_reason": "overextended",
     "vol_ratio": 3.34,
     "stop_atr_mult": 1.5,
     "rvol": 1.67,
     "rule_version": "v14",
-    "entry_brokerage_remaining": 20.0,
-    "charges": {},
-    "pnl_by_date": {},
+    "entry_brokerage_remaining": 0.0,
+    "charges": {
+      "brokerage": 40.0,
+      "exchange": 1.14,
+      "sebi": 0.04,
+      "stt": 4.77,
+      "stamp": 0.58,
+      "gst": 7.41,
+      "total": 53.93
+    },
+    "pnl_by_date": {
+      "2026-11-20": -233.93
+    },
     "orders": {},
-    "breakeven_price": 2416.2
+    "breakeven_price": 2416.2,
+    "exit_time": "2026-11-20T13:24:12+05:30"
   }
 ]
