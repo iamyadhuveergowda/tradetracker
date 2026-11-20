@@ -1,15 +1,15 @@
 {
-  "signal_id": "20261120-101611-WIPRO",
-  "generated_at": "2026-11-20T10:16:11.712642+05:30",
-  "nifty_ltp": 25513.75,
+  "signal_id": "20261120-101816-WIPRO",
+  "generated_at": "2026-11-20T10:18:16.695410+05:30",
+  "nifty_ltp": 25506.1,
   "candidates": [
     {
       "ticker": "WIPRO",
       "signal": "BUY",
-      "ltp": 185.9,
-      "stop": 184.37,
-      "target": 189.72,
-      "qty": 212,
+      "ltp": 185.99,
+      "stop": 184.46,
+      "target": 189.81,
+      "qty": 211,
       "indicators": {
         "rsi": 61.0,
         "atr": 1.019,
@@ -175,15 +175,15 @@
           "10:15",
           185.94,
           186.0,
-          185.85,
-          185.89,
-          32032
+          185.76,
+          185.99,
+          78957
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-20T10:16:14.856199+05:30"
+      "outcome_at": "2026-11-20T10:18:19.858943+05:30"
     }
   ]
 }
