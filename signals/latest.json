@@ -1,23 +1,23 @@
 {
-  "signal_id": "20261120-125217-LT",
-  "generated_at": "2026-11-20T12:52:17.457878+05:30",
-  "nifty_ltp": 25742.25,
+  "signal_id": "20261120-125506-LT",
+  "generated_at": "2026-11-20T12:55:06.217102+05:30",
+  "nifty_ltp": 25722.6,
   "candidates": [
     {
       "ticker": "LT",
       "signal": "BUY",
-      "ltp": 4200.6,
-      "stop": 4180.97,
-      "target": 4249.67,
+      "ltp": 4200.8,
+      "stop": 4181.17,
+      "target": 4249.87,
       "qty": 4,
       "indicators": {
         "rsi": 61.35,
         "atr": 13.0857,
         "atr_5m": 7.2418,
-        "vwap": 4179.51,
+        "vwap": 4179.69,
         "vol_ratio": 2.39
       },
-      "scout_reason": "NIFTY 50 +0.89% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +0.82% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "11:15",
@@ -175,15 +175,15 @@
           "12:50",
           4196.7,
           4202.2,
-          4196.0,
-          4200.5,
-          5818
+          4195.4,
+          4200.8,
+          18514
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-20T12:52:18.557130+05:30"
+      "outcome_at": "2026-11-20T12:55:07.129102+05:30"
     }
   ]
 }
