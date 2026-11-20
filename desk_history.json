@@ -1671,5 +1671,37 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261120-134929-HINDUNILVR",
+    "signal_time": "2026-11-20T13:49:29+05:30",
+    "judged_at": "2026-11-20T13:52:07+05:30",
+    "age_min": 2.6,
+    "ticker": "HINDUNILVR",
+    "action": "SELL",
+    "entry": 2047.5,
+    "stop": 2056.81,
+    "target": 2024.24,
+    "qty": 9,
+    "verdict": "SKIP",
+    "confidence": null,
+    "filter": "SELL_FILTER_REGIME",
+    "raw_verdict": null,
+    "index_name": "NIFTY 50",
+    "index_day_pct": 0.87,
+    "setup_hash": "18904dab944feef7710108643d54c54e06e36f7b",
+    "trigger": "",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "",
+      "sentiment": "",
+      "macro": "",
+      "risk": "SELL filtered: NIFTY 50 day +0.87% is not below -0.25% (SELL_FILTER_REGIME shadow test)."
+    },
+    "rationale": "SELL filtered: NIFTY 50 day +0.87% is not below -0.25% (SELL_FILTER_REGIME shadow test).",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
