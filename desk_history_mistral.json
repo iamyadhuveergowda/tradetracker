@@ -4992,5 +4992,35 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261120-123530-TCS",
+    "signal_time": "2026-11-20T12:35:30+05:30",
+    "judged_at": "2026-11-20T12:35:54+05:30",
+    "age_min": 0.4,
+    "ticker": "TCS",
+    "action": "BUY",
+    "entry": 2407.8,
+    "stop": 2389.05,
+    "target": 2454.68,
+    "qty": 8,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "Valid only on a break above 2411.50 with volume > 70k and RSI > 65 in a 5m candle",
+    "setup_hash": "620f9a0f4d249edeaba618bbd3f2d7ec4e1a3522",
+    "index_name": "NIFTY 50",
+    "index_day_pct": 0.78,
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "Momentum is weak: RSI at 62.85 (neutral) and ATR buffer (1.5x) suggests tight stop. The 12:30 candle (71325 vol) is a spike but lacks follow-through; 12:35 candle is a doji with no clear breakout. No clean setup—entry at 2407.8 is chasing the 12:30 spike. ATR (12.50) implies stop at 2389.05 is too close for a late-session trade (175 mins left).",
+      "sentiment": "No headline information available. Volume ratio (3.34) is elevated but not exceptional; sector-wide prints not visible in data. Late-session entry lacks conviction without broader tape confirmation.",
+      "macro": "NIFTY is +0.78% but overextended for a BUY signal at this juncture (175 mins to close). Late-session entries require exceptional structure, which is absent here. Index tape is neutral-to-negative without a clear breakout.",
+      "risk": "Reward:risk (2.5) is mathematically attractive but stop distance (1.5 ATR) is too tight for intraday. Feasibility is TIGHT (target_distance_atr: 3.75 in 175 mins is aggressive). No results risk, but late-session volatility is a concern. Target (2454.68) is reachable only if NIFTY rallies sharply, which is unlikely without catalyst."
+    },
+    "rationale": "SKIP: Chasing a late-session spike with weak momentum (RSI 62.85), no follow-through, and tight stop (1.5 ATR). Feasibility is TIGHT, and macro context (NIFTY overextended) does not support a BUY. Requires a break above 2411.50 with volume > 70k and RSI > 65 to reconsider.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
