@@ -2194,36 +2194,46 @@
     "ticker": "SUNPHARMA",
     "action": "SELL",
     "qty": 10,
-    "remaining_qty": 10,
+    "remaining_qty": 5,
     "requested_qty": 10,
     "locked_margin_per_share": 375.9,
-    "partial_booked": false,
+    "partial_booked": true,
     "entry": 1879.5,
-    "sl": 1892.62,
+    "sl": 1860.09,
     "initial_sl": 1892.62,
     "tgt": 1846.7,
     "open": 1884.9,
     "high": 1885.3,
     "low": 1879.2,
-    "close": 1853.6,
+    "close": 1852.9,
     "time": "10:56:09",
     "status": "OPEN ⏳",
     "exit_price": null,
-    "net_pnl": 0.0,
+    "net_pnl": 88.15,
     "rationale": "BULL: price sits just below VWAP (1879.87) after a modest pull‑back, RSI 46.36 shows room for downside, and the target distance (32.8) is within the 4.5 ATR range indicating a realistic move; BEAR: target lies 20.7 points below the session low (1867) requiring a break of the day low with limited momentum and no supporting news; VERDICT: APPROVE",
     "events": [
       {
         "time": "2026-11-23T10:56:09+05:30",
         "type": "ENTRY",
         "text": "PAPER SELL 10 @ ₹1879.50"
+      },
+      {
+        "time": "2026-11-23T14:52:43+05:30",
+        "type": "EXIT",
+        "text": "+2R partial booked: 5 @ ₹1854.13, net ₹88.15"
+      },
+      {
+        "time": "2026-11-23T14:52:43+05:30",
+        "type": "PARTIAL",
+        "text": "+2R reached; stop at ₹1871.76"
       }
     ],
     "mode": "PAPER",
-    "last_price": 1853.6,
+    "last_price": 1852.9,
     "atr": 7.2891,
     "target_booked": false,
-    "breakeven_set": false,
-    "mfe_r": 1.982,
+    "breakeven_set": true,
+    "mfe_r": 2.027,
     "mae_r": -0.793,
     "size_tag": "short_halfsize_ab",
     "size_reason": "short_halfsize",
@@ -2231,10 +2241,21 @@
     "stop_atr_mult": 1.8,
     "rvol": 0.92,
     "rule_version": "v14",
-    "entry_brokerage_remaining": 20.0,
-    "charges": {},
-    "pnl_by_date": {},
+    "entry_brokerage_remaining": 10.0,
+    "charges": {
+      "brokerage": 30.0,
+      "exchange": 0.55,
+      "sebi": 0.02,
+      "stt": 2.35,
+      "stamp": 0.28,
+      "gst": 5.5,
+      "total": 38.7
+    },
+    "pnl_by_date": {
+      "2026-11-23": 88.15
+    },
     "orders": {},
-    "breakeven_price": 1871.76
+    "breakeven_price": 1871.76,
+    "live_atr": 7.1886
   }
 ]
