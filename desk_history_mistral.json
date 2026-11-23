@@ -5206,5 +5206,35 @@
     "outcome": "STOP",
     "outcome_r": -1.0,
     "outcome_at": "2026-11-21T00:21:29+05:30"
+  },
+  {
+    "signal_id": "20261123-104357-CIPLA",
+    "signal_time": "2026-11-23T10:43:57+05:30",
+    "judged_at": "2026-11-23T10:44:19+05:30",
+    "age_min": 0.4,
+    "ticker": "CIPLA",
+    "action": "SELL",
+    "entry": 1408.2,
+    "stop": 1416.85,
+    "target": 1386.57,
+    "qty": 13,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "setup_hash": "e640aa8dfe8cda13693434d53c95eaf50a7a72d5",
+    "index_name": "NIFTY 50",
+    "index_day_pct": -0.76,
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 47.36 suggests neither extreme overbought nor oversold conditions. The last 5m candle (10:40) shows a bullish close at 1408.7, but the preceding candle (10:35) had a high volume spike (36559) with a sharp drop to 1406.1, indicating potential exhaustion. The SELL action at 1408.2 lacks clear momentum confirmation (e.g., breakdown below 1406.1 or RSI crossing 70+). ATR buffer (stop at 1416.85) is too wide for a short entry in a range-bound tape; the trade direction conflicts with the recent upward candle structure.",
+      "sentiment": "No headline information available. Volume ratio (3.06) is elevated, but the spike at 10:35 suggests profit-taking rather than sustained selling pressure. Sector-wide prints are not visible in the data, but the tape shows no clear follow-through for a short setup.",
+      "macro": "NIFTY is at 25606.5 (-0.75% from the signal time's implied level), but the time-to-close (287 minutes) is too late for a short entry without a clear breakdown. Late-session entries require exceptional structure, which is absent here. The index tape is not showing a strong bearish bias.",
+      "risk": "Reward:risk of 2.5 is mathematically appealing, but the stop distance (1.8 ATR) is too tight for a short in this liquidity environment. Target distance (4.5 ATR) is feasible in 287 minutes, but the lack of momentum and late-session timing increases execution risk. No results risk identified, but the trade lacks conviction due to weak structure."
+    },
+    "rationale": "CIPLA short setup lacks momentum confirmation, clear breakdown, and aligns poorly with the late-session tape. Elevated volume at 10:35 suggests exhaustion rather than selling pressure. SKIP due to weak structure, late timing, and lack of follow-through.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
