@@ -1,23 +1,23 @@
 {
-  "signal_id": "20261123-124652-ICICIBANK",
-  "generated_at": "2026-11-23T12:46:52.776734+05:30",
-  "nifty_ltp": 25515.35,
+  "signal_id": "20261123-124856-ICICIBANK",
+  "generated_at": "2026-11-23T12:48:56.580406+05:30",
+  "nifty_ltp": 25488.0,
   "candidates": [
     {
       "ticker": "ICICIBANK",
       "signal": "SELL",
-      "ltp": 1607.2,
-      "stop": 1620.03,
-      "target": 1575.13,
+      "ltp": 1606.3,
+      "stop": 1619.13,
+      "target": 1574.23,
       "qty": 12,
       "indicators": {
         "rsi": 41.31,
         "atr": 7.1269,
         "atr_5m": 3.6978,
-        "vwap": 1616.17,
+        "vwap": 1616.1,
         "vol_ratio": 4.52
       },
-      "scout_reason": "NIFTY 50 -1.11% oversold for SELL; size cut 50%",
+      "scout_reason": "NIFTY 50 -1.21% oversold for SELL; size cut 50%",
       "candles_5m": [
         [
           "11:10",
@@ -175,15 +175,15 @@
           "12:45",
           1607.1,
           1608.6,
-          1606.8,
-          1607.7,
-          73360
+          1606.0,
+          1606.3,
+          140869
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-23T12:46:53.992322+05:30"
+      "outcome_at": "2026-11-23T12:48:57.860284+05:30"
     }
   ]
 }
