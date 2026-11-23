@@ -1,23 +1,23 @@
 {
-  "signal_id": "20261123-112049-SBIN",
-  "generated_at": "2026-11-23T11:20:49.431537+05:30",
-  "nifty_ltp": 25599.25,
+  "signal_id": "20261123-112300-SBIN",
+  "generated_at": "2026-11-23T11:23:00.891138+05:30",
+  "nifty_ltp": 25610.5,
   "candidates": [
     {
       "ticker": "SBIN",
       "signal": "SELL",
-      "ltp": 1146.4,
-      "stop": 1157.62,
-      "target": 1118.35,
+      "ltp": 1146.8,
+      "stop": 1158.02,
+      "target": 1118.75,
       "qty": 17,
       "indicators": {
         "rsi": 40.79,
         "atr": 6.2344,
         "atr_5m": 3.9201,
-        "vwap": 1153.87,
+        "vwap": 1153.75,
         "vol_ratio": 1.8
       },
-      "scout_reason": "NIFTY 50 -0.78% oversold for SELL; size cut 50%",
+      "scout_reason": "NIFTY 50 -0.74% oversold for SELL; size cut 50%",
       "candles_5m": [
         [
           "09:45",
@@ -174,23 +174,23 @@
         [
           "11:20",
           1146.0,
-          1146.85,
-          1145.45,
-          1146.85,
-          72180
+          1146.9,
+          1143.6,
+          1146.6,
+          206883
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-23T11:20:57.996183+05:30"
+      "outcome_at": "2026-11-23T11:23:13.223064+05:30"
     },
     {
       "ticker": "AXISBANK",
       "signal": "SELL",
-      "ltp": 1412.3,
-      "stop": 1428.52,
-      "target": 1371.76,
+      "ltp": 1412.7,
+      "stop": 1428.92,
+      "target": 1372.16,
       "qty": 13,
       "indicators": {
         "rsi": 43.77,
@@ -199,7 +199,7 @@
         "vwap": 1414.12,
         "vol_ratio": 1.51
       },
-      "scout_reason": "NIFTY 50 -0.78% oversold for SELL; size cut 50%",
+      "scout_reason": "NIFTY 50 -0.74% oversold for SELL; size cut 50%",
       "candles_5m": [
         [
           "09:45",
@@ -356,16 +356,16 @@
         [
           "11:20",
           1411.8,
-          1412.7,
-          1411.2,
-          1412.0,
-          13430
+          1413.8,
+          1409.5,
+          1413.4,
+          86880
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
-      "outcome_reason": "DEBATE: BULL: Sell is supported by price below VWAP (1412.3 < 1414.12), RSI 43.8 showing room to fall, bearish macro (Nifty -0.78%) and a solid RR≈2.5 with stop at 1428.5. BEAR: Target 1371.76 is 27.7",
-      "outcome_at": "2026-11-23T11:20:57.996206+05:30"
+      "outcome_reason": "DEBATE: BULL: Entry at 1412.7 aligns with a pullback from the 1416.3 high (11:10 candle), RSI 43.77 suggests room for further downside, and the stop-loss at 1428.92 is above the recent swing highs, re",
+      "outcome_at": "2026-11-23T11:23:13.223084+05:30"
     }
   ]
 }
