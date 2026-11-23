@@ -3,15 +3,15 @@
   "indices": [
     {
       "name": "NIFTY 50",
-      "price": 25800.6,
+      "price": 25785.05,
       "label": "NEUTRAL",
-      "percent": 0.0
+      "percent": -0.06
     },
     {
       "name": "NIFTY BANK",
-      "price": 64635.2,
+      "price": 64540.15,
       "label": "NEUTRAL",
-      "percent": 0.0
+      "percent": -0.15
     },
     {
       "name": "INDIA VIX",
@@ -21,15 +21,15 @@
     },
     {
       "name": "NIFTY IT",
-      "price": 31322.65,
-      "label": "NEUTRAL",
-      "percent": 0.0
+      "price": 31414.05,
+      "label": "BULLISH",
+      "percent": 0.29
     },
     {
       "name": "NIFTY AUTO",
-      "price": 28787.65,
-      "label": "NEUTRAL",
-      "percent": 0.0
+      "price": 28923.0,
+      "label": "BULLISH",
+      "percent": 0.47
     }
   ]
 }
