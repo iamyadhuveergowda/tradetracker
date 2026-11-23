@@ -1730,9 +1730,9 @@
       "risk": "Target distance of 4.5 ATR (21.63 pts down to 1386.57) is excessively ambitious for an intraday session with 287 minutes remaining, despite a favorable R:R of 2.5 and stop at 1.8 ATR (1416.85)."
     },
     "rationale": "SKIP CIPLA SELL at 1408.2. Expecting a 4.5 ATR move down to 1386.57 while the index is oversold (-0.75%) and price remains comfortably above session support at 1401.50 carries low probability of full realization.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.96,
+    "outcome_at": "2026-11-24T03:33:44+05:30"
   },
   {
     "signal_id": "20261123-105602-SUNPHARMA",
@@ -1760,8 +1760,8 @@
       "risk": "Stop at 1892.22 (1.8 ATR) sits appropriately above the session high of 1888.9, but the target at 1846.3 demands a 4.5 ATR (32.8 point) slide, requiring a breakdown deep below the morning lows that is statistically demanding given the recent upward momentum."
     },
     "rationale": "SKIP. Although the 10:50 bar showed heavy volume rejection from 1888.9, the 10:55 bar saw volume collapse to 1,870 without breakdown follow-through. With NIFTY already oversold at -0.89% and the target requiring a heavy 4.5 ATR decline to 1846.3, initiating a short here is chasing an incomplete reversal.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 1.46,
+    "outcome_at": "2026-11-24T03:33:44+05:30"
   }
 ]
