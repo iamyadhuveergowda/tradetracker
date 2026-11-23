@@ -1,5 +1,5 @@
 {
-  "fetched_at_ist": "2026-11-23 19:26 IST",
+  "fetched_at_ist": "2026-11-23 19:29 IST",
   "indices": [
     {
       "name": "NIFTY 50",
@@ -27,9 +27,9 @@
     },
     {
       "name": "NIFTY AUTO",
-      "price": null,
-      "label": "NEUTRAL",
-      "percent": null
+      "price": 28490.7,
+      "label": "BEARISH",
+      "percent": -1.03
     }
   ]
 }
