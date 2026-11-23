@@ -1703,5 +1703,35 @@
     "outcome": "STOP",
     "outcome_r": -1.0,
     "outcome_at": "2026-11-21T00:08:08+05:30"
+  },
+  {
+    "signal_id": "20261123-104357-CIPLA",
+    "signal_time": "2026-11-23T10:43:57+05:30",
+    "judged_at": "2026-11-23T10:44:19+05:30",
+    "age_min": 0.4,
+    "ticker": "CIPLA",
+    "action": "SELL",
+    "entry": 1408.2,
+    "stop": 1416.85,
+    "target": 1386.57,
+    "qty": 13,
+    "verdict": "SKIP",
+    "confidence": 75,
+    "trigger": "Valid only on a breakdown below morning support at 1401.50",
+    "setup_hash": "e640aa8dfe8cda13693434d53c95eaf50a7a72d5",
+    "index_name": "NIFTY 50",
+    "index_day_pct": -0.76,
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI sits neutral at 47.36. Although the 10:35 candle experienced heavy selling from 1412.0 to 1406.1, the 10:40 candle drifted back up to close at 1408.7. The structure remains range-bound between the 10:10 low of 1401.5 and 10:30 high of 1412.0, making an entry at 1408.2 premature.",
+      "sentiment": "No headline information is available. Tape sentiment shows strong institutional supply on the 10:35 bar (volume 36,559), but immediate selling follow-through vanished on the 10:40 candle with volume collapsing to 3,601.",
+      "macro": "NIFTY spot is at 25606.5 and flagged as -0.75% oversold. Entering a short when the broad index is already oversold increases the hazard of an index-led short-covering bounce.",
+      "risk": "Target distance of 4.5 ATR (21.63 pts down to 1386.57) is excessively ambitious for an intraday session with 287 minutes remaining, despite a favorable R:R of 2.5 and stop at 1.8 ATR (1416.85)."
+    },
+    "rationale": "SKIP CIPLA SELL at 1408.2. Expecting a 4.5 ATR move down to 1386.57 while the index is oversold (-0.75%) and price remains comfortably above session support at 1401.50 carries low probability of full realization.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
