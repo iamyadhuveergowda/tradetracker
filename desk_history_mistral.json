@@ -5416,5 +5416,35 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261123-132532-HINDALCO",
+    "signal_time": "2026-11-23T13:25:32+05:30",
+    "judged_at": "2026-11-23T13:25:51+05:30",
+    "age_min": 0.3,
+    "ticker": "HINDALCO",
+    "action": "SELL",
+    "entry": 905.0,
+    "stop": 914.11,
+    "target": 882.23,
+    "qty": 21,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "setup_hash": "9c184a24efb1399a8548e48c821c4eebb6511125",
+    "index_name": "NIFTY 50",
+    "index_day_pct": -1.39,
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "Candle structure shows a choppy, indecisive tape with no clear breakdown below 905.0. The last 5-minute candle (13:25) closed at 904.75, just above the entry level of 905.0, and the RSI (42.08) is neutral. The ATR buffer (5.06) suggests volatility, but the lack of a clean break below 905.0 or a follow-through sell-off makes this a weak setup. The 13:10 candle's spike to 905.65 followed by a pullback hints at short-covering or profit-taking, not a structural breakdown.",
+      "sentiment": "No headline information available. Volume behavior shows elevated prints (e.g., 13:15 and 13:20 candles with volumes of 165,895 and 198,755, respectively), but these are not accompanied by a decisive directional move. The vol_ratio (2.03) suggests some participation, but the lack of follow-through on the downside is concerning.",
+      "macro": "The trade direction (SELL) aligns with the NIFTY's oversold condition (-1.37%), but the time of day (125 minutes to close) is late for a short entry without exceptional structure. Late-session shorts require a clear breakdown or extreme exhaustion, neither of which is present here.",
+      "risk": "The reward:risk (2.5) is mathematically appealing, but the stop distance (1.8 ATR) is tight, and the target (882.23) is 4.5 ATR away. With 125 minutes left, the target is **FEASIBLE** but requires a sustained move, which is unlikely without a catalyst. No results risk is present, but the lack of a clean setup and late-session timing elevate risk."
+    },
+    "rationale": "HINDALCO lacks a clean technical breakdown, follow-through, or exceptional late-session structure for a SELL. The elevated volume prints are not directional, and the RSI/ATR do not support a high-conviction short. The target is mathematically reachable in time, but the setup is weak. Default to SKIP.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
