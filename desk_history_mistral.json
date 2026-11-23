@@ -5446,5 +5446,35 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261123-133146-ITC",
+    "signal_time": "2026-11-23T13:31:46+05:30",
+    "judged_at": "2026-11-23T13:32:07+05:30",
+    "age_min": 0.4,
+    "ticker": "ITC",
+    "action": "BUY",
+    "entry": 301.0,
+    "stop": 299.14,
+    "target": 305.65,
+    "qty": 65,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "Valid only on a break above 302.35 with volume > 2.5M and RSI > 70",
+    "setup_hash": "2d835ff23fa7a4d91b952956d0c661b3acbc961e",
+    "index_name": "NIFTY 50",
+    "index_day_pct": -1.31,
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "Candle at 12:45 shows a sharp spike to 302.35 (highest in last 12 candles) but closes at 301.55 with a long lower wick, indicating rejection. RSI (61.41) is neutral, not overbought. Current entry (301.0) is below the recent high but lacks follow-through momentum. ATR buffer (1.0336) suggests tight stop (1.8 ATR = 1.87), but target (305.65) is 4.5 ATR away—unrealistic in 119 minutes without a clear breakout. Volume ratio (2.29) is elevated but not exceptional.",
+      "sentiment": "No headline information available. Volume surge at 12:45 (3.09M) suggests intraday interest, but subsequent candles show fading momentum. Sector-wide prints not visible in data; tape behavior is inconsistent with a clean setup.",
+      "macro": "NIFTY is down -1.34% at 25454.95, trending lower. Late-session entries (119 minutes left) require exceptional structure, especially in a weakening index. This BUY action is counter-trend and lacks macro alignment.",
+      "risk": "Target distance (4.5 ATR) is infeasible in the time remaining (119 minutes). Stop distance (1.8 ATR) is tight, and reward:risk (2.5) is misleading without a high-probability trigger. No results risk, but late-session entries in a declining index carry higher slippage risk. Feasibility is TIGHT due to target distance."
+    },
+    "rationale": "ITC lacks a clean breakout structure, with the recent high (302.35) failing to hold and RSI neutral. The BUY action is counter-trend to the NIFTY's -1.34% decline, and the target (305.65) is unreachable in 119 minutes without a catalyst. Volume is elevated but not sustained. SKIP unless a break above 302.35 with volume > 2.5M and RSI > 70 materializes, which would warrant reconsideration.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
