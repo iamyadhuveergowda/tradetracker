@@ -13,3 +13,5 @@ pick_date,market,ticker,yf_symbol,ref_price,stop,target,watch_level,score,reason
 2026-11-19,NIFTY,EICHERMOT,EICHERMOT.NS,8058.5,7706.7,8938.01,7947.0,7,above 50d MA; 20d return +7.5%; RSI 66 strong; volume 1.2x avg; near 20d high; ATR 2.7% alive,234.54,66.2,0.0746,0.0273,PENDING,,,1
 2026-11-20,NIFTY,BAJAJFINSV,BAJAJFINSV.NS,1892.0,1818.3,2076.26,1906.0,7,above 50d MA; 20d return +11.5%; RSI 64 strong; volume 1.2x avg; near 20d high; ATR 2.5% alive,49.14,64.0,0.1154,0.0248,PENDING,,,1
 2026-11-20,NIFTY,EICHERMOT,EICHERMOT.NS,8113.0,7759.48,8996.79,8072.5,7,above 50d MA; 20d return +12.4%; RSI 69 strong; volume 1.2x avg; near 20d high; ATR 2.9% alive,235.68,68.9,0.1238,0.0291,PENDING,,,1
+2026-11-23,NIFTY,BAJAJFINSV,BAJAJFINSV.NS,1892.0,1818.3,2076.26,1913.4,7,above 50d MA; 20d return +12.8%; RSI 65 strong; volume 1.2x avg; near 20d high; ATR 2.6% alive,49.14,64.8,0.1275,0.026,,,,0
+2026-11-23,NIFTY,POWERGRID,POWERGRID.NS,269.0,259.02,293.94,270.2,7,above 50d MA; 20d return +8.3%; RSI 61 strong; volume 1.2x avg; near 20d high; ATR 2.5% alive,6.65,60.8,0.0829,0.0247,,,,0
