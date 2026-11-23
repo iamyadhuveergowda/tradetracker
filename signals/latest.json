@@ -1,14 +1,14 @@
 {
-  "signal_id": "20261123-132532-HINDALCO",
-  "generated_at": "2026-11-23T13:25:32.817635+05:30",
-  "nifty_ltp": 25446.25,
+  "signal_id": "20261123-132740-HINDALCO",
+  "generated_at": "2026-11-23T13:27:40.486967+05:30",
+  "nifty_ltp": 25450.05,
   "candidates": [
     {
       "ticker": "HINDALCO",
       "signal": "SELL",
-      "ltp": 905.0,
-      "stop": 914.11,
-      "target": 882.23,
+      "ltp": 904.0,
+      "stop": 913.11,
+      "target": 881.23,
       "qty": 21,
       "indicators": {
         "rsi": 42.08,
@@ -17,7 +17,7 @@
         "vwap": 909.27,
         "vol_ratio": 2.03
       },
-      "scout_reason": "NIFTY 50 -1.37% oversold for SELL; size cut 50%",
+      "scout_reason": "NIFTY 50 -1.36% oversold for SELL; size cut 50%",
       "candles_5m": [
         [
           "11:50",
@@ -175,15 +175,15 @@
           "13:25",
           904.5,
           905.05,
-          904.35,
-          904.75,
-          15537
+          903.6,
+          904.0,
+          22690
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-23T13:25:33.791491+05:30"
+      "outcome_at": "2026-11-23T13:27:41.611504+05:30"
     }
   ]
 }
