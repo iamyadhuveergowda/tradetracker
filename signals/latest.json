@@ -1,23 +1,23 @@
 {
-  "signal_id": "20261123-133554-NESTLEIND",
-  "generated_at": "2026-11-23T13:35:54.914295+05:30",
-  "nifty_ltp": 25457.3,
+  "signal_id": "20261123-133756-NESTLEIND",
+  "generated_at": "2026-11-23T13:37:56.760680+05:30",
+  "nifty_ltp": 25458.75,
   "candidates": [
     {
       "ticker": "NESTLEIND",
       "signal": "SELL",
-      "ltp": 1311.3,
-      "stop": 1319.83,
-      "target": 1289.98,
+      "ltp": 1311.7,
+      "stop": 1320.23,
+      "target": 1290.38,
       "qty": 15,
       "indicators": {
         "rsi": 47.05,
         "atr": 4.7385,
         "atr_5m": 2.2073,
-        "vwap": 1316.56,
+        "vwap": 1316.55,
         "vol_ratio": 1.96
       },
-      "scout_reason": "NIFTY 50 -1.33% oversold for SELL; size cut 50%",
+      "scout_reason": "NIFTY 50 -1.32% oversold for SELL; size cut 50%",
       "candles_5m": [
         [
           "12:00",
@@ -174,16 +174,16 @@
         [
           "13:35",
           1311.7,
-          1311.7,
+          1312.0,
           1310.9,
-          1311.2,
-          252
+          1311.7,
+          1434
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-23T13:35:55.891109+05:30"
+      "outcome_at": "2026-11-23T13:37:58.001839+05:30"
     }
   ]
 }
