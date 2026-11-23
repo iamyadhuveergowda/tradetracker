@@ -5356,5 +5356,35 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261123-123726-HDFCLIFE",
+    "signal_time": "2026-11-23T12:37:26+05:30",
+    "judged_at": "2026-11-23T12:37:43+05:30",
+    "age_min": 0.3,
+    "ticker": "HDFCLIFE",
+    "action": "SELL",
+    "entry": 580.55,
+    "stop": 584.85,
+    "target": 569.8,
+    "qty": 33,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "setup_hash": "3ce6ee8fe55ec3588eaa7d356dfe84869215f777",
+    "index_name": "NIFTY 50",
+    "index_day_pct": -1.14,
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 49.9 suggests neutral momentum, not oversold. The last 5-minute candle (12:35) closed at 580.60, near the entry price of 580.55, with a narrow range (580.15-580.60) and low volume (5169). The candle structure lacks follow-through momentum, and the stop (584.85) is above the recent highs, making it vulnerable to a reversal. ATR buffer (1.5) is tight, but the target (569.80) is 3.75 ATRs away, requiring a sustained downtrend unlikely in the remaining 173 minutes (15:30 close).",
+      "sentiment": "No headline information available. Volume behavior shows a spike at 12:30 (88378) but has since tapered off, suggesting lack of conviction in the downside move. Sector-wide prints are not visible in the data, but the stock’s relative volume ratio (3.03) indicates some participation, though not overwhelming.",
+      "macro": "NIFTY is down -1.14% from its spot (25506.35), but late-session entries (173 minutes left) require exceptional structure. The sell setup lacks alignment with broader index momentum, which may be exhausted or reversing. Late-session shorts in a weakening index are high-risk without clear follow-through.",
+      "risk": "Reward:risk is 2.5, but the target distance (3.75 ATR) is aggressive for the time remaining. Stop distance (1.5 ATR) is tight, and the stock is not showing clear breakdown momentum. No results risk is present, but the lack of follow-through and weak candle structure elevate risk. Feasibility is not marked as infeasible, but the trade is TIGHT given the time constraints."
+    },
+    "rationale": "HDFCLIFE’s sell setup lacks conviction due to neutral RSI, weak candle structure, and absence of follow-through momentum. The late-session timing (173 minutes left) and tight stop (1.5 ATR) make this a high-risk trade without clear upside potential. SKIP unless the stock shows a decisive breakdown below 580.15 with increased volume and follow-through.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
