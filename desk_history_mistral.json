@@ -5266,5 +5266,35 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261123-105812-DIVISLAB",
+    "signal_time": "2026-11-23T10:58:12+05:30",
+    "judged_at": "2026-11-23T10:58:29+05:30",
+    "age_min": 0.3,
+    "ticker": "DIVISLAB",
+    "action": "BUY",
+    "entry": 11263.5,
+    "stop": 11178.4,
+    "target": 11476.25,
+    "qty": 1,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "setup_hash": "38859dc8e839600f0a7d8dcd427643c3774612f8",
+    "index_name": "NIFTY 50",
+    "index_day_pct": -0.88,
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI (55.02) is neutral, not extreme. Candle structure shows a late-morning breakdown from 11362.5 to 11250.0, with a 10:50 candle attempting a recovery but closing at 11278.0 (still below the 10:45 high of 11262.0). ATR buffer (47.278) suggests volatility is moderate, but the stop (11178.4) is 1.8 ATR away, which is tight for a late-session entry. No clear momentum reversal or breakout structure.",
+      "sentiment": "No headline information available. Volume behavior shows elevated prints (e.g., 10:50 candle volume: 62572) but no sustained follow-through. Sector-wide prints are not visible in the data, and the tape lacks clear directional conviction.",
+      "macro": "NIFTY is down -0.91%, and the trade direction (BUY) is counter-trend. With 272 minutes left, late-session entries require exceptional structure, which is absent here. The index is weak, and this stock lacks alignment with the broader tape.",
+      "risk": "Reward:risk is 2.5, which is mathematically favorable, but the stop distance (1.8 ATR) is tight, and the target (11476.25) is 4.5 ATR away. Feasibility is not flagged as INFEASIBLE or TIGHT, but the time-to-close (272 minutes) is insufficient for a recovery to the target without a strong catalyst. No results risk is present."
+    },
+    "rationale": "DIVISLAB lacks a clean technical setup, aligns poorly with the weak NIFTY tape, and has a tight stop. The late-session entry is speculative without a clear catalyst or momentum reversal. SKIP due to insufficient conviction in the trade structure.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
