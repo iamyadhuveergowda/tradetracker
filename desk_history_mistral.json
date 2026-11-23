@@ -5476,5 +5476,35 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261123-133554-NESTLEIND",
+    "signal_time": "2026-11-23T13:35:54+05:30",
+    "judged_at": "2026-11-23T13:36:13+05:30",
+    "age_min": 0.3,
+    "ticker": "NESTLEIND",
+    "action": "SELL",
+    "entry": 1311.3,
+    "stop": 1319.83,
+    "target": 1289.98,
+    "qty": 15,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "setup_hash": "35d87c885268fd77adadaa70a96eb5291b0760fd",
+    "index_name": "NIFTY 50",
+    "index_day_pct": -1.32,
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 47.05 suggests neither extreme overbought nor oversold conditions. The last 5-minute candle (13:35) shows a small bearish candle with low volume (252) and a close near the low, but the prior candle (13:30) was bullish with high volume (12741), indicating a lack of follow-through. The stop distance (1.8 ATR) is tight, and the target (1289.98) is 4.5 ATR away, which is a 2.5:1 reward-to-risk ratio. The candle structure lacks a clean breakdown or rejection pattern, and the move appears choppy rather than decisive.",
+      "sentiment": "No headline information available. Volume behavior shows a spike at 13:30 (12741) but no sustained follow-through in the 13:35 candle (252), suggesting weak conviction. The stock is not showing sector-wide leadership or rejection in the tape.",
+      "macro": "NIFTY is down -1.33% at 25457.3, but the time remaining (115 minutes) is insufficient for a meaningful intraday reversal. Late-session entries require exceptional structure, which is absent here. The SELL action aligns with the index trend, but the lack of clarity in the stock's tape makes it risky.",
+      "risk": "Reward-to-risk is favorable (2.5:1), but the stop is tight (1.8 ATR), and the target is not reachable in the remaining time (4.5 ATR in 115 minutes is unlikely). No results risk is present, but the stock's tape lacks conviction. Feasibility is not flagged, but the structure is not compelling for a late-session trade."
+    },
+    "rationale": "NESTLEIND lacks a clean technical setup for a SELL at this juncture, with choppy tape and weak follow-through. The index trend aligns, but the stock's behavior is inconclusive, and the time remaining is insufficient for a reliable move to the target. Defaulting to SKIP due to lack of conviction in the setup.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
