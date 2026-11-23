@@ -2194,7 +2194,7 @@
     "ticker": "SUNPHARMA",
     "action": "SELL",
     "qty": 10,
-    "remaining_qty": 5,
+    "remaining_qty": 0,
     "requested_qty": 10,
     "locked_margin_per_share": 375.9,
     "partial_booked": true,
@@ -2205,11 +2205,11 @@
     "open": 1884.9,
     "high": 1885.3,
     "low": 1879.2,
-    "close": 1856.6,
+    "close": 1856.0,
     "time": "10:56:09",
-    "status": "OPEN ⏳",
-    "exit_price": null,
-    "net_pnl": 88.15,
+    "status": "WIN 🟢",
+    "exit_price": 1856.93,
+    "net_pnl": 162.3,
     "rationale": "BULL: price sits just below VWAP (1879.87) after a modest pull‑back, RSI 46.36 shows room for downside, and the target distance (32.8) is within the 4.5 ATR range indicating a realistic move; BEAR: target lies 20.7 points below the session low (1867) requiring a break of the day low with limited momentum and no supporting news; VERDICT: APPROVE",
     "events": [
       {
@@ -2226,10 +2226,15 @@
         "time": "2026-11-23T14:52:43+05:30",
         "type": "PARTIAL",
         "text": "+2R reached; stop at ₹1871.76"
+      },
+      {
+        "time": "2026-11-23T15:10:26+05:30",
+        "type": "EXIT",
+        "text": "15:10 square-off: 5 @ ₹1856.93, net ₹74.15"
       }
     ],
     "mode": "PAPER",
-    "last_price": 1856.6,
+    "last_price": 1856.93,
     "atr": 7.2891,
     "target_booked": false,
     "breakeven_set": true,
@@ -2241,21 +2246,22 @@
     "stop_atr_mult": 1.8,
     "rvol": 0.92,
     "rule_version": "v14",
-    "entry_brokerage_remaining": 10.0,
+    "entry_brokerage_remaining": 0.0,
     "charges": {
-      "brokerage": 30.0,
-      "exchange": 0.55,
-      "sebi": 0.02,
-      "stt": 2.35,
-      "stamp": 0.28,
-      "gst": 5.5,
-      "total": 38.7
+      "brokerage": 60.0,
+      "exchange": 1.1,
+      "sebi": 0.04,
+      "stt": 4.7,
+      "stamp": 0.56,
+      "gst": 11.0,
+      "total": 77.4
     },
     "pnl_by_date": {
-      "2026-11-23": 88.15
+      "2026-11-23": 162.3
     },
     "orders": {},
     "breakeven_price": 1871.76,
-    "live_atr": 7.1886
+    "live_atr": 7.1886,
+    "exit_time": "2026-11-23T15:10:26+05:30"
   }
 ]
