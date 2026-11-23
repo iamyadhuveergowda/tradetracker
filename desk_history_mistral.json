@@ -5656,5 +5656,35 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261123-143742-AXISBANK",
+    "signal_time": "2026-11-23T14:37:42+05:30",
+    "judged_at": "2026-11-23T14:38:03+05:30",
+    "age_min": 0.3,
+    "ticker": "AXISBANK",
+    "action": "SELL",
+    "entry": 1399.6,
+    "stop": 1405.2,
+    "target": 1385.6,
+    "qty": 14,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "Valid only on a break below 1396.30 with follow-through volume > 150k",
+    "setup_hash": "5c02fe23f2fc45ee3d101ac098237bbf26c123d3",
+    "index_name": "NIFTY 50",
+    "index_day_pct": -1.36,
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 38.15 suggests oversold but not extreme. The last 5m candle (14:35) shows a doji-like structure with indecision, and the 14:05 candle (1396.3 low) failed to hold, indicating weak momentum. ATR buffer (6.8888) is tight for a SELL entry; stop at 1405.2 is 0.81 ATR away, but the target (1385.6) is 2.03 ATR away, requiring a sharp move. Candle structure lacks conviction for a late-session short.",
+      "sentiment": "No headline information available. Volume spike at 14:00 (135512) suggests a short-covering rally attempt, but the 14:05-14:10 drop (1396.3 low) lacked follow-through volume (96975), indicating weak bearish conviction. Sector-wide prints are not visible in the data.",
+      "macro": "NIFTY is down -1.37% at 25447.45, but late-session entries (53 minutes left) require exceptional structure. The SELL action aligns with the index tape, but the lack of follow-through on the downside raises macro alignment doubts.",
+      "risk": "Reward:risk is 2.5, but the target (1385.6) is 13.9 points away (~2.03 ATR), and with only 53 minutes left, this is **TIGHT** feasibility. Stop at 1405.2 is 5.6 points away (~0.81 ATR), leaving minimal room for error. No results risk, but the late-session timing and weak candle structure elevate risk."
+    },
+    "rationale": "AXISBANK's SELL setup lacks conviction due to weak follow-through volume on the downside, indecisive candle structure, and tight feasibility (2.03 ATR target in 53 minutes). The RSI is not extreme, and the macro alignment, while present, is undermined by late-session timing. Requires a break below 1396.3 with volume > 150k to reconsider.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
