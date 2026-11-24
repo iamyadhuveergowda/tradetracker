@@ -15,5 +15,5 @@ pick_date,market,ticker,yf_symbol,ref_price,stop,target,watch_level,score,reason
 2026-11-20,NIFTY,EICHERMOT,EICHERMOT.NS,8113.0,7759.48,8996.79,8072.5,7,above 50d MA; 20d return +12.4%; RSI 69 strong; volume 1.2x avg; near 20d high; ATR 2.9% alive,235.68,68.9,0.1238,0.0291,PENDING,,,1
 2026-11-23,NIFTY,BAJAJFINSV,BAJAJFINSV.NS,1880.1,1804.67,2068.67,1913.4,7,above 50d MA; 20d return +12.8%; RSI 65 strong; volume 1.2x avg; near 20d high; ATR 2.6% alive,50.29,64.8,0.1275,0.026,PENDING,,,1
 2026-11-23,NIFTY,POWERGRID,POWERGRID.NS,264.85,254.53,290.66,270.2,7,above 50d MA; 20d return +8.3%; RSI 61 strong; volume 1.2x avg; near 20d high; ATR 2.5% alive,6.88,60.8,0.0829,0.0247,PENDING,,,1
-2026-11-24,NIFTY,SHRIRAMFIN,SHRIRAMFIN.NS,995.9,950.15,1110.28,1015.0,7,above 50d MA; 20d return +15.1%; RSI 61 strong; volume 1.2x avg; near 20d high; ATR 3.1% alive,30.5,60.5,0.1513,0.0306,,,,0
-2026-11-24,NIFTY,DIVISLAB,DIVISLAB.NS,11203.0,10660.91,12558.22,11824.0,6,above 50d MA; 20d return +25.2%; RSI 69 strong; volume 1.2x avg; ATR 3.2% alive,361.39,68.7,0.2517,0.0323,,,,0
+2026-11-24,NIFTY,DIVISLAB,DIVISLAB.NS,11203.0,10660.91,12558.22,11824.0,6,above 50d MA; 20d return +25.2%; RSI 69 strong; volume 1.2x avg; ATR 3.2% alive,361.39,68.7,0.2517,0.0323,PENDING,,,0
+2026-11-24,NIFTY,SHRIRAMFIN,SHRIRAMFIN.NS,995.9,950.15,1110.28,1015.0,7,above 50d MA; 20d return +15.1%; RSI 61 strong; volume 1.2x avg; near 20d high; ATR 3.1% alive,30.5,60.5,0.1513,0.0306,PENDING,,,0
