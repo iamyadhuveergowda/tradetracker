@@ -5718,5 +5718,35 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261125-110049-KOTAKBANK",
+    "signal_time": "2026-11-25T11:00:49+05:30",
+    "judged_at": "2026-11-25T11:01:06+05:30",
+    "age_min": 0.3,
+    "ticker": "KOTAKBANK",
+    "action": "BUY",
+    "entry": 511.4,
+    "stop": 507.35,
+    "target": 521.52,
+    "qty": 38,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "setup_hash": "ec2a32a2849278b5222ed6cf122f5675be228e90",
+    "index_name": "NIFTY 50",
+    "index_day_pct": 2.15,
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 57.78 is neutral, not extreme. Candle structure at 11:00 shows a tight range (511.10-511.45) with no clear breakout momentum. The last 5-minute candle is a doji-like indecision candle, lacking follow-through. ATR buffer (1.5x ATR) stop-loss is reasonable, but the setup lacks conviction for a late-session entry with 270 minutes left. Volume spike at 10:55 (868,581) was a dead-cat bounce with no follow-through, suggesting weak participation.",
+      "sentiment": "No headline information available. Volume behavior shows erratic prints with no clear sector-wide follow-through. The 10:55 candle's volume spike was isolated and did not sustain momentum into the 11:00 candle, indicating lack of conviction in the tape.",
+      "macro": "NIFTY is +2.11% at 25,884.1, but late-session entries require exceptional structure. The index is overextended, but KOTAKBANK’s lack of participation in the broader rally (no clear breakout or follow-through) makes it misaligned with the tape. Late-session entries in such conditions are risky unless the stock shows exceptional structure.",
+      "risk": "Reward:risk of 2.5 is mathematically attractive, but the target (521.52) is 3.75 ATR away, which is tight given 270 minutes left to close. Stop-loss is 1.5 ATR away (507.35), but the lack of momentum and weak candle structure increases the risk of a false break. No results risk, but the stock’s failure to participate in the broader rally is a red flag. Feasibility is not explicitly marked as infeasible, but the late-session timing and weak structure make it a high-risk setup."
+    },
+    "rationale": "KOTAKBANK’s BUY signal at 511.40 lacks conviction due to weak candle structure, erratic volume behavior, and misalignment with the broader NIFTY rally. The RSI is neutral, and the late-session timing (270 minutes to close) demands exceptional structure, which is absent here. The reward:risk ratio is mathematically favorable, but the risk of a false breakout outweighs the potential. SKIP unless the stock shows a clear breakout with follow-through and volume confirmation.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
