@@ -1,20 +1,20 @@
 {
-  "signal_id": "20261125-130019-TITAN",
-  "generated_at": "2026-11-25T13:00:19.264039+05:30",
-  "nifty_ltp": 25710.7,
+  "signal_id": "20261125-130500-TITAN",
+  "generated_at": "2026-11-25T13:05:00.854056+05:30",
+  "nifty_ltp": 25708.8,
   "candidates": [
     {
       "ticker": "TITAN",
       "signal": "SELL",
-      "ltp": 4629.5,
-      "stop": 4654.04,
-      "target": 4568.15,
+      "ltp": 4628.3,
+      "stop": 4652.84,
+      "target": 4566.95,
       "qty": 4,
       "indicators": {
         "rsi": 38.76,
         "atr": 16.3602,
         "atr_5m": 7.1671,
-        "vwap": 4638.39,
+        "vwap": 4638.26,
         "vol_ratio": 3.47
       },
       "scout_reason": "NIFTY 50 +1.42% trending; SELL size cut 50%",
@@ -174,16 +174,16 @@
         [
           "13:00",
           4629.0,
-          4629.0,
-          4628.2,
-          4628.2,
-          39
+          4631.4,
+          4620.0,
+          4631.4,
+          10465
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-25T13:00:20.164180+05:30"
+      "outcome_at": "2026-11-25T13:05:01.697815+05:30"
     }
   ]
 }
