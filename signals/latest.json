@@ -1,14 +1,14 @@
 {
-  "signal_id": "20261125-120605-SBILIFE",
-  "generated_at": "2026-11-25T12:06:05.030906+05:30",
-  "nifty_ltp": 25897.5,
+  "signal_id": "20261125-120759-SBILIFE",
+  "generated_at": "2026-11-25T12:07:59.444797+05:30",
+  "nifty_ltp": 25909.2,
   "candidates": [
     {
       "ticker": "SBILIFE",
       "signal": "BUY",
-      "ltp": 1843.1,
-      "stop": 1831.15,
-      "target": 1872.97,
+      "ltp": 1842.7,
+      "stop": 1830.75,
+      "target": 1872.57,
       "qty": 10,
       "indicators": {
         "rsi": 55.2,
@@ -17,7 +17,7 @@
         "vwap": 1846.62,
         "vol_ratio": 2.9
       },
-      "scout_reason": "NIFTY 50 +2.16% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +2.21% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "10:30",
@@ -182,8 +182,8 @@
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
-      "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-25T12:06:06.333120+05:30"
+      "outcome_reason": "DEBATE: BULL: Entry at 1842.7 aligns with a pullback to the 5m VWAP (1846.62) and holds above the 1840s support zone, with RSI at 55.2 (neutral) and no immediate overbought signal. The 1872.57 target ",
+      "outcome_at": "2026-11-25T12:08:12.859405+05:30"
     }
   ]
 }
