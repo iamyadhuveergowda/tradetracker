@@ -2270,7 +2270,7 @@
     "ticker": "POWERGRID",
     "action": "BUY",
     "qty": 73,
-    "remaining_qty": 73,
+    "remaining_qty": 0,
     "requested_qty": 73,
     "locked_margin_per_share": 53.32,
     "partial_booked": false,
@@ -2281,37 +2281,53 @@
     "open": 266.3,
     "high": 266.95,
     "low": 266.3,
-    "close": 265.0,
+    "close": 264.5,
     "time": "12:19:48",
-    "status": "OPEN ⏳",
-    "exit_price": null,
-    "net_pnl": 0.0,
+    "status": "LOSS 🔴",
+    "exit_price": 264.49,
+    "net_pnl": -208.05,
     "rationale": "BULL: Entry 266.6 sits just above VWAP (265.47) and below recent swing high (268.2); price has already posted four consecutive 5‑min closes above entry (up to 267.65) showing strong upward momentum; RSI 55.37 gives room and stop 264.84 provides ~2.5 R:R. BEAR: Target 271.01 lies 2.81 points (~2.4 ATR) above the session high of 268.2, demanding a new high in the remaining 170 min with no news catalyst. VERDICT: APPROVED",
     "events": [
       {
         "time": "2026-11-25T12:19:48+05:30",
         "type": "ENTRY",
         "text": "PAPER BUY 73 @ ₹266.60"
+      },
+      {
+        "time": "2026-11-25T12:56:19+05:30",
+        "type": "EXIT",
+        "text": "Stop hit: 73 @ ₹264.49, net ₹-208.05"
       }
     ],
     "mode": "PAPER",
-    "last_price": 265.0,
+    "last_price": 264.49,
     "atr": 1.1757,
     "target_booked": false,
     "breakeven_set": false,
     "mfe_r": 0.057,
-    "mae_r": -0.909,
+    "mae_r": -1.193,
     "size_tag": "overextended_halfsize",
     "size_reason": "overextended",
     "vol_ratio": 2.55,
     "stop_atr_mult": 1.5,
     "rvol": 0.94,
     "rule_version": "v14",
-    "entry_brokerage_remaining": 20.0,
-    "charges": {},
-    "pnl_by_date": {},
+    "entry_brokerage_remaining": 0.0,
+    "charges": {
+      "brokerage": 40.0,
+      "exchange": 1.15,
+      "sebi": 0.04,
+      "stt": 4.83,
+      "stamp": 0.58,
+      "gst": 7.41,
+      "total": 54.02
+    },
+    "pnl_by_date": {
+      "2026-11-25": -208.05
+    },
     "orders": {},
-    "breakeven_price": 267.67
+    "breakeven_price": 267.67,
+    "exit_time": "2026-11-25T12:56:19+05:30"
   },
   {
     "trade_id": "20261125125522-GRASIM",
@@ -2330,7 +2346,7 @@
     "open": 3151.6,
     "high": 3154.6,
     "low": 3146.5,
-    "close": 3153.7,
+    "close": 3153.5,
     "time": "12:55:22",
     "status": "OPEN ⏳",
     "exit_price": null,
