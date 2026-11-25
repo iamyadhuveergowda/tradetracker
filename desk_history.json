@@ -1825,5 +1825,37 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261125-130019-TITAN",
+    "signal_time": "2026-11-25T13:00:19+05:30",
+    "judged_at": "2026-11-25T13:00:50+05:30",
+    "age_min": 0.5,
+    "ticker": "TITAN",
+    "action": "SELL",
+    "entry": 4629.5,
+    "stop": 4654.04,
+    "target": 4568.15,
+    "qty": 4,
+    "verdict": "SKIP",
+    "confidence": null,
+    "filter": "SELL_FILTER_REGIME",
+    "raw_verdict": null,
+    "index_name": "NIFTY 50",
+    "index_day_pct": 1.41,
+    "setup_hash": "46ca41c51d21ca7ff62607f5f3bc32163f1e3b24",
+    "trigger": "",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "",
+      "sentiment": "",
+      "macro": "",
+      "risk": "SELL filtered: NIFTY 50 day +1.41% is not below -0.25% (SELL_FILTER_REGIME shadow test)."
+    },
+    "rationale": "SELL filtered: NIFTY 50 day +1.41% is not below -0.25% (SELL_FILTER_REGIME shadow test).",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
