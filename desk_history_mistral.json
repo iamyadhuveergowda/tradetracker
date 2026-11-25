@@ -5838,5 +5838,35 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261125-120605-SBILIFE",
+    "signal_time": "2026-11-25T12:06:05+05:30",
+    "judged_at": "2026-11-25T12:06:23+05:30",
+    "age_min": 0.3,
+    "ticker": "SBILIFE",
+    "action": "BUY",
+    "entry": 1843.1,
+    "stop": 1831.15,
+    "target": 1872.97,
+    "qty": 10,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "setup_hash": "5542af1c617277964d8fdd92e3259e74ef9befa8",
+    "index_name": "NIFTY 50",
+    "index_day_pct": 2.14,
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 55.2 is neutral, not extreme. The last 5m candle (12:05) closed at 1843.4, below the entry price of 1843.1, indicating a lack of follow-through. The 12:00 candle shows a strong volume spike (58791) but closed lower than its high, suggesting exhaustion. ATR buffer (1.5) is tight, and the target (1872.97) is 3.75 ATR away—unlikely to be reached in 204 minutes without a strong catalyst. Candle structure lacks a clean breakout or reversal signal.",
+      "sentiment": "No headline information available. Volume ratio (2.9) is elevated but not exceptional. Sector-wide prints are not visible in the data, and the tape shows no clear follow-through momentum post-12:00 spike.",
+      "macro": "NIFTY is +2.16% at 25897.5, overextended for a BUY signal. Late-session entries (204 minutes left) require exceptional structure, which is absent here. The trade direction (BUY) does not align with the index tape's likely consolidation or pullback phase.",
+      "risk": "Reward:risk is 2.5, but the target distance (3.75 ATR) is too aggressive for the time remaining. Stop distance (1.5 ATR) is tight, and the lack of a clear entry trigger (price already below entry) increases risk. No results risk, but the technical setup is weak."
+    },
+    "rationale": "SKIP due to lack of follow-through momentum, weak candle structure, and overextended NIFTY tape. The trade does not align with the macro environment or time-of-day dynamics, and the target is infeasible in the remaining session time.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
