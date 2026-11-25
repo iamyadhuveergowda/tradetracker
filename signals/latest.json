@@ -1,23 +1,23 @@
 {
-  "signal_id": "20261125-121535-POWERGRID",
-  "generated_at": "2026-11-25T12:15:35.415619+05:30",
-  "nifty_ltp": 25896.4,
+  "signal_id": "20261125-121739-POWERGRID",
+  "generated_at": "2026-11-25T12:17:39.181316+05:30",
+  "nifty_ltp": 25886.2,
   "candidates": [
     {
       "ticker": "POWERGRID",
       "signal": "BUY",
-      "ltp": 266.75,
-      "stop": 264.99,
-      "target": 271.16,
+      "ltp": 266.6,
+      "stop": 264.84,
+      "target": 271.01,
       "qty": 73,
       "indicators": {
         "rsi": 55.37,
         "atr": 1.1757,
         "atr_5m": 0.5613,
-        "vwap": 265.46,
+        "vwap": 265.47,
         "vol_ratio": 2.55
       },
-      "scout_reason": "NIFTY 50 +2.16% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +2.12% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "10:40",
@@ -175,15 +175,15 @@
           "12:15",
           266.9,
           266.9,
-          266.7,
-          266.9,
-          4659
+          266.6,
+          266.75,
+          24622
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
-      "outcome_reason": "DISTRIBUTION: heaviest volume bar at 12:00 (504303) showed supply into highs, opposing BUY direction",
-      "outcome_at": "2026-11-25T12:15:40.929845+05:30"
+      "outcome_reason": "DISTRIBUTION: heaviest volume bar (504303 at 12:00) showed down move against BUY direction, indicating supply into highs",
+      "outcome_at": "2026-11-25T12:17:44.303711+05:30"
     }
   ]
 }
