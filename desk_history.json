@@ -1792,9 +1792,9 @@
       "risk": "SELL filtered: NIFTY 50 day +1.55% is not below -0.25% (SELL_FILTER_REGIME shadow test)."
     },
     "rationale": "SELL filtered: NIFTY 50 day +1.55% is not below -0.25% (SELL_FILTER_REGIME shadow test).",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-26T01:27:30+05:30"
   },
   {
     "signal_id": "20261125-111438-INFY",
@@ -1822,9 +1822,9 @@
       "risk": "While the stop distance of 1.5 ATR (1129.45) is mathematically sound, reaching a 3.75 ATR target at 1167.08 (a 26.88-point rally) is highly improbable in the remaining session time given the sluggish 5-minute volatility and lack of directional momentum. No results risk indicated."
     },
     "rationale": "SKIP. Target distance of 3.75 ATR to 1167.08 is excessively demanding for a stock chopping between 1136.00 and 1145.00, especially against an overextended NIFTY index tape (+2.22%).",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-26T01:27:30+05:30"
   },
   {
     "signal_id": "20261125-130019-TITAN",
@@ -1854,9 +1854,9 @@
       "risk": "SELL filtered: NIFTY 50 day +1.41% is not below -0.25% (SELL_FILTER_REGIME shadow test)."
     },
     "rationale": "SELL filtered: NIFTY 50 day +1.41% is not below -0.25% (SELL_FILTER_REGIME shadow test).",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-26T01:27:30+05:30"
   },
   {
     "signal_id": "20261125-134122-MARUTI",
@@ -1886,9 +1886,9 @@
       "risk": "SELL filtered: NIFTY 50 day +1.39% is not below -0.25% (SELL_FILTER_REGIME shadow test)."
     },
     "rationale": "SELL filtered: NIFTY 50 day +1.39% is not below -0.25% (SELL_FILTER_REGIME shadow test).",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-26T01:27:30+05:30"
   },
   {
     "signal_id": "20261125-141821-EICHERMOT",
@@ -1916,8 +1916,8 @@
       "risk": "Target of 8393.1 sits 2.73 ATR (83.10 points) away, which is an excessive distance to cover in 72 minutes from the 8310.0 entry. While R:R is theoretically 2.5 with a 1.09 ATR stop (8276.76), time decay makes the target unrealistic. Results risk is empty."
     },
     "rationale": "SKIP EICHERMOT BUY. The stock has stalled below 8330.0 with distribution volume at 14:10. Demanding a 2.73 ATR upward expansion in just 72 minutes against an overextended NIFTY (+1.65%) is an unfavourable intraday risk.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.78,
+    "outcome_at": "2026-11-26T01:27:30+05:30"
   }
 ]
