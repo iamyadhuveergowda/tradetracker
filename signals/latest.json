@@ -1,14 +1,14 @@
 {
-  "signal_id": "20261125-130701-BRITANNIA",
-  "generated_at": "2026-11-25T13:07:01.912222+05:30",
-  "nifty_ltp": 25686.0,
+  "signal_id": "20261125-130856-BRITANNIA",
+  "generated_at": "2026-11-25T13:08:56.856260+05:30",
+  "nifty_ltp": 25664.65,
   "candidates": [
     {
       "ticker": "BRITANNIA",
       "signal": "BUY",
-      "ltp": 4956.8,
-      "stop": 4928.81,
-      "target": 5026.77,
+      "ltp": 4955.0,
+      "stop": 4927.01,
+      "target": 5024.97,
       "qty": 3,
       "indicators": {
         "rsi": 53.82,
@@ -17,7 +17,7 @@
         "vwap": 4937.54,
         "vol_ratio": 4.44
       },
-      "scout_reason": "NIFTY 50 +1.33% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +1.24% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "11:30",
@@ -183,7 +183,7 @@
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-25T13:07:02.936062+05:30"
+      "outcome_at": "2026-11-25T13:08:57.810458+05:30"
     }
   ]
 }
