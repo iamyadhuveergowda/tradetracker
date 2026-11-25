@@ -3,33 +3,33 @@
   "indices": [
     {
       "name": "NIFTY 50",
-      "price": 25784.6,
+      "price": 25800.45,
       "label": "BULLISH",
-      "percent": 1.72
+      "percent": 1.78
     },
     {
       "name": "NIFTY BANK",
-      "price": 63629.25,
+      "price": 63682.05,
       "label": "BULLISH",
-      "percent": 1.67
+      "percent": 1.75
     },
     {
       "name": "INDIA VIX",
-      "price": 17.72,
-      "label": "NEUTRAL",
-      "percent": 0.13
+      "price": 17.75,
+      "label": "BULLISH",
+      "percent": 0.28
     },
     {
       "name": "NIFTY IT",
-      "price": 32117.45,
+      "price": 32124.65,
       "label": "BULLISH",
-      "percent": 0.84
+      "percent": 0.86
     },
     {
       "name": "NIFTY AUTO",
-      "price": 28782.0,
+      "price": 28791.65,
       "label": "BULLISH",
-      "percent": 1.02
+      "percent": 1.06
     }
   ]
 }

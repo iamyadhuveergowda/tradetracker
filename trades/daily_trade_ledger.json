@@ -2335,7 +2335,7 @@
     "ticker": "GRASIM",
     "action": "BUY",
     "qty": 6,
-    "remaining_qty": 6,
+    "remaining_qty": 0,
     "requested_qty": 6,
     "locked_margin_per_share": 630.7,
     "partial_booked": false,
@@ -2346,21 +2346,26 @@
     "open": 3151.6,
     "high": 3154.6,
     "low": 3146.5,
-    "close": 3160.0,
+    "close": 3162.1,
     "time": "12:55:22",
-    "status": "OPEN ⏳",
-    "exit_price": null,
-    "net_pnl": 0.0,
+    "status": "LOSS 🔴",
+    "exit_price": 3160.52,
+    "net_pnl": -11.76,
     "rationale": "BULL: Entry 3148.8 sits just above VWAP (3140.68) with RSI 55, recent higher highs (day_high 3168.5) and ATR 12.704 supporting upside; target 3196.44 is within 1.5× expected travel (47.64 pts vs 85.56 pts) and stop 3129.74 is safely below entry. BEAR: Target requires 47.64 pts move (~1.5% of price) with only 134.7 min left, price still 19.7 pts below session high, limiting upside and exposing stop. VERDICT: APPROVE",
     "events": [
       {
         "time": "2026-11-25T12:55:22+05:30",
         "type": "ENTRY",
         "text": "PAPER BUY 6 @ ₹3153.50"
+      },
+      {
+        "time": "2026-11-25T15:10:53+05:30",
+        "type": "EXIT",
+        "text": "15:10 square-off: 6 @ ₹3160.52, net ₹-11.76"
       }
     ],
     "mode": "PAPER",
-    "last_price": 3160.0,
+    "last_price": 3160.52,
     "atr": 12.704,
     "target_booked": false,
     "breakeven_set": false,
@@ -2372,10 +2377,21 @@
     "stop_atr_mult": 1.5,
     "rvol": 0.87,
     "rule_version": "v14",
-    "entry_brokerage_remaining": 20.0,
-    "charges": {},
-    "pnl_by_date": {},
+    "entry_brokerage_remaining": 0.0,
+    "charges": {
+      "brokerage": 40.0,
+      "exchange": 1.13,
+      "sebi": 0.04,
+      "stt": 4.74,
+      "stamp": 0.57,
+      "gst": 7.41,
+      "total": 53.88
+    },
+    "pnl_by_date": {
+      "2026-11-25": -11.76
+    },
     "orders": {},
-    "breakeven_price": 3166.41
+    "breakeven_price": 3166.41,
+    "exit_time": "2026-11-25T15:10:53+05:30"
   }
 ]
