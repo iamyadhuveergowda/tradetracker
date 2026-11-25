@@ -1889,5 +1889,35 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261125-141821-EICHERMOT",
+    "signal_time": "2026-11-25T14:18:21+05:30",
+    "judged_at": "2026-11-25T14:18:40+05:30",
+    "age_min": 0.3,
+    "ticker": "EICHERMOT",
+    "action": "BUY",
+    "entry": 8310.0,
+    "stop": 8276.76,
+    "target": 8393.1,
+    "qty": 2,
+    "verdict": "SKIP",
+    "confidence": 80,
+    "trigger": "Valid only on a break above 8330.0 with expanding volume",
+    "setup_hash": "6fb57a13a43302535b92499e8edefa5fd253c349",
+    "index_name": "NIFTY 50",
+    "index_day_pct": 1.65,
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "Price topped at 8330.0 at 14:00 and has since consolidated with lower highs. The 14:10 bar printed a heavy volume flush of 15,217 shares closing down at 8305.0, followed by a low-volume drift to 8308.0 at 14:15. Neutral RSI at 52.3 does not reflect sufficient breakout momentum.",
+      "sentiment": "Tape-based analysis only; no news feed is available. Buying momentum stalled above 8320.0, and elevated selling volume at 14:10 suggests distribution at the highs rather than aggressive accumulation.",
+      "macro": "With only 72 minutes remaining to close, late-session entries demand pristine structure. NIFTY is already overextended (+1.65% up at 25768.0), raising the probability of late-day index profit-taking spilling into large caps.",
+      "risk": "Target of 8393.1 sits 2.73 ATR (83.10 points) away, which is an excessive distance to cover in 72 minutes from the 8310.0 entry. While R:R is theoretically 2.5 with a 1.09 ATR stop (8276.76), time decay makes the target unrealistic. Results risk is empty."
+    },
+    "rationale": "SKIP EICHERMOT BUY. The stock has stalled below 8330.0 with distribution volume at 14:10. Demanding a 2.73 ATR upward expansion in just 72 minutes against an overextended NIFTY (+1.65%) is an unfavourable intraday risk.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
