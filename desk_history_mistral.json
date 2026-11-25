@@ -5715,9 +5715,9 @@
       "risk": "SELL filtered: NIFTY 50 day +1.55% is not below -0.25% (SELL_FILTER_REGIME shadow test)."
     },
     "rationale": "SELL filtered: NIFTY 50 day +1.55% is not below -0.25% (SELL_FILTER_REGIME shadow test).",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-26T01:42:43+05:30"
   },
   {
     "signal_id": "20261125-110049-KOTAKBANK",
@@ -5745,9 +5745,9 @@
       "risk": "Reward:risk of 2.5 is mathematically attractive, but the target (521.52) is 3.75 ATR away, which is tight given 270 minutes left to close. Stop-loss is 1.5 ATR away (507.35), but the lack of momentum and weak candle structure increases the risk of a false break. No results risk, but the stock’s failure to participate in the broader rally is a red flag. Feasibility is not explicitly marked as infeasible, but the late-session timing and weak structure make it a high-risk setup."
     },
     "rationale": "KOTAKBANK’s BUY signal at 511.40 lacks conviction due to weak candle structure, erratic volume behavior, and misalignment with the broader NIFTY rally. The RSI is neutral, and the late-session timing (270 minutes to close) demands exceptional structure, which is absent here. The reward:risk ratio is mathematically favorable, but the risk of a false breakout outweighs the potential. SKIP unless the stock shows a clear breakout with follow-through and volume confirmation.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-26T01:42:43+05:30"
   },
   {
     "signal_id": "20261125-111438-INFY",
@@ -5775,9 +5775,9 @@
       "risk": "Reward:risk of 2.5 is mathematically appealing, but stop distance (1.5 ATR) is too tight for a late-session trade. Target distance (3.75 ATR) is feasible in 256 minutes, but the lack of momentum and choppy tape increases slippage risk. No results risk, but the trade lacks conviction given the time of day and structure."
     },
     "rationale": "SKIP: INFY lacks a clean technical setup, shows no follow-through in a late-session tape, and the stop is too close for comfort. The reward:risk is mathematically attractive, but the risk of slippage and lack of momentum outweigh the potential. No meaningful trigger exists in-session to justify a GO.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-26T01:42:43+05:30"
   },
   {
     "signal_id": "20261125-113018-TATASTEEL",
@@ -5805,9 +5805,9 @@
       "risk": "Reward:risk is 2.5:1, which is mathematically appealing, but the feasibility is TIGHT given the target distance (3.75 ATR) and time left (240 mins). No results risk is flagged, but the lack of follow-through volume and indecisive candles increase execution risk. The stop is well-placed, but the entry lacks conviction."
     },
     "rationale": "TATASTEEL's BUY setup at 163.49 is rejected due to weak technical structure (doji at 11:30, failed momentum post-11:20), lack of follow-through volume, and misalignment with the late-session NIFTY tape. The reward:risk ratio is mathematically sound but unfeasible in the remaining 240 minutes without a clear catalyst. Default to SKIP with high confidence (85) due to these structural flaws.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-26T01:42:43+05:30"
   },
   {
     "signal_id": "20261125-113743-POWERGRID",
@@ -5835,9 +5835,9 @@
       "risk": "Reward:risk of 2.49 is mathematically attractive, but the stop distance (1.5 ATR) is too close for a late-session trade, especially given the stock’s volatility (ATR = 1.2641). The target (271.94) is 3.75 ATR away, but with only 233 minutes left, achieving this target is highly unlikely without a catalyst. No results risk, but the stock’s weak tape participation and lack of follow-through increase execution risk. Feasibility is TIGHT due to time constraints."
     },
     "rationale": "POWERGRID’s BUY signal at 267.2 lacks a clean technical setup, weak tape participation, and misaligns with the broader index’s momentum. The late-session timing (233 minutes to close) and tight feasibility (3.75 ATR target in limited time) make this a high-risk, low-probability trade. Default to SKIP despite the attractive reward:risk ratio.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-26T01:42:43+05:30"
   },
   {
     "signal_id": "20261125-120605-SBILIFE",
@@ -5865,9 +5865,9 @@
       "risk": "Reward:risk is 2.5, but the target distance (3.75 ATR) is too aggressive for the time remaining. Stop distance (1.5 ATR) is tight, and the lack of a clear entry trigger (price already below entry) increases risk. No results risk, but the technical setup is weak."
     },
     "rationale": "SKIP due to lack of follow-through momentum, weak candle structure, and overextended NIFTY tape. The trade does not align with the macro environment or time-of-day dynamics, and the target is infeasible in the remaining session time.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-26T01:42:43+05:30"
   },
   {
     "signal_id": "20261125-122147-COALINDIA",
@@ -5895,9 +5895,9 @@
       "risk": "Reward:risk of 2.49 is mathematically appealing, but stop distance (1.5 ATR) is tight, and target (389.24) is 3.75 ATR away. Feasibility is unmarked, but with 189 minutes left, a 4.29-point move (entry to target) is aggressive. No results risk."
     },
     "rationale": "Weak candle structure (bearish engulfing at 12:20), lack of follow-through, and late-session timing make this a high-risk chase. SKIP despite decent reward:risk due to poor tape alignment and technical breakdown.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-26T01:42:43+05:30"
   },
   {
     "signal_id": "20261125-122147-COALINDIA",
@@ -5925,9 +5925,9 @@
       "risk": "Reward:risk of 2.5 is mathematically appealing, but the stop (1.5 ATR) is tight, and the target (3.75 ATR) is aggressive for the time remaining. Feasibility is unmarked, but a 12.19-point move (entry to target) is unlikely in 189 minutes. No results risk."
     },
     "rationale": "Indecisive candle structure, lack of follow-through, and late-session timing make this a speculative chase. Would only consider a GO on a break above 595.2 with volume > 30,000 to confirm momentum, but still skeptical due to weak tape alignment.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-26T01:42:43+05:30"
   },
   {
     "signal_id": "20261125-122835-HEROMOTOCO",
@@ -5955,9 +5955,9 @@
       "risk": "Reward:risk of 2.5 is mathematically appealing, but the target (5744.18) is 3.75 ATR away—unrealistic in 182 minutes without a catalyst. Stop is 1.5 ATR away (5616.53), which is tight for a late-session trade. No results risk, but the lack of follow-through and choppy tape increase the risk of a false breakout. Feasibility is TIGHT due to time constraints and target distance."
     },
     "rationale": "HEROMOTOCO’s late-session spike lacks follow-through, and the target is unreachable in the remaining time (182 minutes). The RSI and choppy candle structure post-12:20 suggest exhaustion. No sector-wide or index-aligned momentum. SKIP due to high risk of a false breakout and tight feasibility.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "TARGET",
+    "outcome_r": 2.5,
+    "outcome_at": "2026-11-26T01:42:43+05:30"
   },
   {
     "signal_id": "20261125-125512-GRASIM",
@@ -5985,9 +5985,9 @@
       "risk": "Reward:risk is 2.5, which is mathematically attractive, but the stop distance (1.5 ATR) is too tight for the remaining time (155 minutes). Target distance (3.75 ATR) is feasible in theory, but the tape lacks conviction. No results risk identified, but the late-session timing and lack of structure elevate risk. Feasibility is not explicitly marked as INFEASIBLE, but the target distance (3196.44) from entry (3148.8) is 47.64 points, which is ~3.75 ATR. Given the time left, this is TIGHT and requires near-perfect execution, which is unlikely in this choppy tape."
     },
     "rationale": "GRASIM BUY at 3148.8 lacks a clean technical setup, with choppy candles and no follow-through momentum. Late-session entries require exceptional structure, which is absent here. While reward:risk is mathematically favorable (2.5), the stop is too tight (1.5 ATR) and the target is TIGHT given the remaining 155 minutes. Volume spikes are erratic, and no sector-wide prints or headline information support the trade. Default to SKIP due to high risk of failure in the remaining session time.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.69,
+    "outcome_at": "2026-11-26T01:42:43+05:30"
   },
   {
     "signal_id": "20261125-125512-GRASIM",
@@ -6017,9 +6017,9 @@
       "risk": "SELL filtered: NIFTY 50 day +1.54% is not below -0.25% (SELL_FILTER_REGIME shadow test)."
     },
     "rationale": "SELL filtered: NIFTY 50 day +1.54% is not below -0.25% (SELL_FILTER_REGIME shadow test).",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.16,
+    "outcome_at": "2026-11-26T01:42:43+05:30"
   },
   {
     "signal_id": "20261125-130019-TITAN",
@@ -6049,9 +6049,9 @@
       "risk": "SELL filtered: NIFTY 50 day +1.41% is not below -0.25% (SELL_FILTER_REGIME shadow test)."
     },
     "rationale": "SELL filtered: NIFTY 50 day +1.41% is not below -0.25% (SELL_FILTER_REGIME shadow test).",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-26T01:42:43+05:30"
   },
   {
     "signal_id": "20261125-130701-BRITANNIA",
@@ -6079,9 +6079,9 @@
       "risk": "Reward:risk of 2.5 is mathematically appealing, but stop distance (1.5 ATR) is too tight for a late-session trade. Target (5026.77) is **feasible** (3.75 ATR, 143 minutes left), but requires a sharp V-shaped reversal with no confirmation. **Results risk is empty**, but earnings volatility cannot be ruled out. **High probability of a trap** given the lack of follow-through."
     },
     "rationale": "BRITANNIA’s BUY signal lacks conviction due to weak candle structure, no momentum confirmation, and late-session timing. The 12:45 hammer failed to hold, and the 13:05 close at 4954.3 signals distribution. **Skip unless a break below 4951.10 with volume > 20k triggers a short-term mean-reversion setup**, but even then, the risk of a gap-down open tomorrow (no results risk) or a fade into close remains high. Confidence in SKIP is 85 due to structural flaws.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "TARGET",
+    "outcome_r": 2.5,
+    "outcome_at": "2026-11-26T01:42:43+05:30"
   },
   {
     "signal_id": "20261125-132646-HINDUNILVR",
@@ -6109,9 +6109,9 @@
       "risk": "Reward:risk is 2.5:1, but the target (2136.8) is 3.75 ATR away, which is tight for a stock with no results risk. Feasibility is not flagged as INFEASIBLE, but the time-to-close and lack of follow-through make this a speculative play."
     },
     "rationale": "SKIP due to weak follow-through in the 13:25 candle, late-session timing (124 minutes to close), and lack of sector-wide confirmation. The structure is not compelling enough for a GO.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "TARGET",
+    "outcome_r": 2.5,
+    "outcome_at": "2026-11-26T01:42:43+05:30"
   },
   {
     "signal_id": "20261125-132646-HINDUNILVR",
@@ -6139,9 +6139,9 @@
       "risk": "Reward:risk is 2.5:1, but the target (1358.16) is 3.75 ATR away, which is tight for a stock with no results risk. Feasibility is not flagged as INFEASIBLE, but the lack of follow-through and late-session timing make this a high-risk play. A break above 1340.0 with volume > 20k could justify reconsideration."
     },
     "rationale": "SKIP due to weak follow-through after the 13:20 breakout and late-session timing (124 minutes to close). A break above 1340.0 with volume > 20k could make this valid, but current structure is insufficient for a GO.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "TARGET",
+    "outcome_r": 2.5,
+    "outcome_at": "2026-11-26T01:42:43+05:30"
   },
   {
     "signal_id": "20261125-134122-MARUTI",
@@ -6171,9 +6171,9 @@
       "risk": "SELL filtered: NIFTY 50 day +1.39% is not below -0.25% (SELL_FILTER_REGIME shadow test)."
     },
     "rationale": "SELL filtered: NIFTY 50 day +1.39% is not below -0.25% (SELL_FILTER_REGIME shadow test).",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-26T01:42:43+05:30"
   },
   {
     "signal_id": "20261125-134851-EICHERMOT",
@@ -6201,9 +6201,9 @@
       "risk": "Reward:risk of 2.5 is mathematically appealing, but the stop distance (1.5 ATR) is too tight for the remaining time (102 minutes). Feasibility is TIGHT: target distance (3.75 ATR) may not be reachable in the time left. No results risk, but the lack of follow-through and choppy tape elevate risk. The trade is speculative and lacks conviction."
     },
     "rationale": "EICHERMOT lacks a clean technical setup for a late-session BUY. The choppy tape, weak follow-through, and tight stop distance (1.5 ATR) make this a high-risk entry. The NIFTY's overextension and time of day further reduce conviction. SKIP unless a break above 8310.0 with volume > 15000 occurs, signaling renewed momentum.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.81,
+    "outcome_at": "2026-11-26T01:42:43+05:30"
   },
   {
     "signal_id": "20261125-140155-APOLLOHOSP",
@@ -6231,9 +6231,9 @@
       "risk": "Reward:risk of 2.5 is decent, but stop distance (1.5 ATR) is tight for a late-session trade. Feasibility is empty, but target distance (3.75 ATR) may not be achievable in the remaining time. No results risk."
     },
     "rationale": "Choppy tape with no clear momentum or follow-through; late-session entry lacks conviction despite decent reward:risk. Default to SKIP due to weak structure and time constraints.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.01,
+    "outcome_at": "2026-11-26T01:42:43+05:30"
   },
   {
     "signal_id": "20261125-140155-APOLLOHOSP",
@@ -6261,8 +6261,8 @@
       "risk": "Reward:risk of 2.5 is acceptable, but stop distance (1.5 ATR) is tight for a late-session trade. Feasibility is empty, but target distance (3.75 ATR) may not be achievable in the remaining time. No results risk."
     },
     "rationale": "Late-session volume spike failed to sustain; weak candle structure and lack of macro alignment make this a low-conviction entry. Default to SKIP due to time constraints and poor follow-through.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": -0.02,
+    "outcome_at": "2026-11-26T01:42:43+05:30"
   }
 ]
