@@ -2346,7 +2346,7 @@
     "open": 3151.6,
     "high": 3154.6,
     "low": 3146.5,
-    "close": 3152.3,
+    "close": 3155.0,
     "time": "12:55:22",
     "status": "OPEN ⏳",
     "exit_price": null,
@@ -2360,7 +2360,7 @@
       }
     ],
     "mode": "PAPER",
-    "last_price": 3152.3,
+    "last_price": 3155.0,
     "atr": 12.704,
     "target_booked": false,
     "breakeven_set": false,
