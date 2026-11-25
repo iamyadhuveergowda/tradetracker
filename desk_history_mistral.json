@@ -5748,5 +5748,35 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261125-111438-INFY",
+    "signal_time": "2026-11-25T11:14:38+05:30",
+    "judged_at": "2026-11-25T11:14:59+05:30",
+    "age_min": 0.3,
+    "ticker": "INFY",
+    "action": "BUY",
+    "entry": 1140.2,
+    "stop": 1129.45,
+    "target": 1167.08,
+    "qty": 17,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "setup_hash": "6f608b3e750ad8322a8e41a28f293a2a6eb4ccc5",
+    "index_name": "NIFTY 50",
+    "index_day_pct": 2.22,
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 60.94 suggests neutral momentum, not overbought. Last 5m candle (11:10) closed flat with no follow-through; prior candles show choppy, low-volume range-bound action (1136-1144). ATR buffer (7.1685) is tight for a late-session entry, and the stop (1129.45) sits 1.5 ATR below entry, leaving little room for error. No clear breakout or breakdown structure—appears to be chasing.",
+      "sentiment": "No headline information available. Volume ratio (1.8) is elevated but lacks directional conviction; sector-wide prints are not visible in the provided data. Late-session tape shows NIFTY overextended (+2.22%), but INFY’s lack of follow-through suggests weak participation.",
+      "macro": "NIFTY is +2.22% at 25912.05, but late-session entries (256 minutes left) require exceptional structure. INFY’s action is detached from the broader index tape, which is showing signs of exhaustion. Late-session rallies often fail without fresh momentum.",
+      "risk": "Reward:risk of 2.5 is mathematically appealing, but stop distance (1.5 ATR) is too tight for a late-session trade. Target distance (3.75 ATR) is feasible in 256 minutes, but the lack of momentum and choppy tape increases slippage risk. No results risk, but the trade lacks conviction given the time of day and structure."
+    },
+    "rationale": "SKIP: INFY lacks a clean technical setup, shows no follow-through in a late-session tape, and the stop is too close for comfort. The reward:risk is mathematically attractive, but the risk of slippage and lack of momentum outweigh the potential. No meaningful trigger exists in-session to justify a GO.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
