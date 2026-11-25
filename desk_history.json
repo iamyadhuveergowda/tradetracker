@@ -1763,5 +1763,37 @@
     "outcome": "CLOSE",
     "outcome_r": 1.46,
     "outcome_at": "2026-11-24T03:33:44+05:30"
+  },
+  {
+    "signal_id": "20261125-100535-BEL",
+    "signal_time": "2026-11-25T10:05:35+05:30",
+    "judged_at": "2026-11-25T10:05:52+05:30",
+    "age_min": 0.3,
+    "ticker": "BEL",
+    "action": "SELL",
+    "entry": 396.35,
+    "stop": 398.12,
+    "target": 391.92,
+    "qty": 49,
+    "verdict": "SKIP",
+    "confidence": null,
+    "filter": "SELL_FILTER_REGIME",
+    "raw_verdict": null,
+    "index_name": "NIFTY 50",
+    "index_day_pct": 1.55,
+    "setup_hash": "ea3edfd16b6b42b8d408a7203da6d004f4d927d2",
+    "trigger": "",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "",
+      "sentiment": "",
+      "macro": "",
+      "risk": "SELL filtered: NIFTY 50 day +1.55% is not below -0.25% (SELL_FILTER_REGIME shadow test)."
+    },
+    "rationale": "SELL filtered: NIFTY 50 day +1.55% is not below -0.25% (SELL_FILTER_REGIME shadow test).",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
