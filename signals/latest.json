@@ -1,23 +1,23 @@
 {
-  "signal_id": "20261125-140155-APOLLOHOSP",
-  "generated_at": "2026-11-25T14:01:55.950534+05:30",
-  "nifty_ltp": 25760.05,
+  "signal_id": "20261125-140406-APOLLOHOSP",
+  "generated_at": "2026-11-25T14:04:06.543785+05:30",
+  "nifty_ltp": 25758.0,
   "candidates": [
     {
       "ticker": "APOLLOHOSP",
       "signal": "BUY",
-      "ltp": 9299.5,
-      "stop": 9251.02,
-      "target": 9420.69,
+      "ltp": 9301.5,
+      "stop": 9253.02,
+      "target": 9422.69,
       "qty": 2,
       "indicators": {
         "rsi": 50.31,
         "atr": 32.3182,
         "atr_5m": 13.6229,
-        "vwap": 9275.33,
+        "vwap": 9275.87,
         "vol_ratio": 3.47
       },
-      "scout_reason": "NIFTY 50 +1.62% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +1.61% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "12:25",
@@ -174,23 +174,23 @@
         [
           "14:00",
           9300.0,
-          9303.0,
-          9298.0,
-          9299.5,
-          2857
+          9303.5,
+          9291.0,
+          9297.5,
+          14122
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-25T14:02:06.066982+05:30"
+      "outcome_at": "2026-11-25T14:04:09.928025+05:30"
     },
     {
       "ticker": "CIPLA",
       "signal": "BUY",
-      "ltp": 1433.4,
-      "stop": 1425.37,
-      "target": 1453.48,
+      "ltp": 1432.9,
+      "stop": 1424.87,
+      "target": 1452.98,
       "qty": 13,
       "indicators": {
         "rsi": 52.18,
@@ -199,7 +199,7 @@
         "vwap": 1430.97,
         "vol_ratio": 4.94
       },
-      "scout_reason": "NIFTY 50 +1.62% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +1.61% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "12:25",
@@ -357,15 +357,15 @@
           "14:00",
           1433.9,
           1434.6,
-          1432.7,
-          1432.7,
-          29330
+          1431.8,
+          1432.4,
+          37885
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
-      "outcome_reason": "DISTRIBUTION: heaviest volume bar in last 6 candles at 13:55 with volume 69566 closed at high 1433.7, indicating supply into highs against BUY direction; TIME_DECAY: target distance 20.08 exceeds 1.5*",
-      "outcome_at": "2026-11-25T14:02:06.067005+05:30"
+      "outcome_reason": "scout: omitted from LLM output",
+      "outcome_at": "2026-11-25T14:04:09.928046+05:30"
     }
   ]
 }
