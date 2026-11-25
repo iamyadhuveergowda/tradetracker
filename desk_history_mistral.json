@@ -6052,5 +6052,35 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261125-130701-BRITANNIA",
+    "signal_time": "2026-11-25T13:07:01+05:30",
+    "judged_at": "2026-11-25T13:07:20+05:30",
+    "age_min": 0.3,
+    "ticker": "BRITANNIA",
+    "action": "BUY",
+    "entry": 4956.8,
+    "stop": 4928.81,
+    "target": 5026.77,
+    "qty": 3,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "Valid only on a break below 4951.10 (12:45 low) with follow-through volume > 20k",
+    "setup_hash": "dfeb208c8743f3d30521aae933826c973d769503",
+    "index_name": "NIFTY 50",
+    "index_day_pct": 1.29,
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 53.82 is neutral; ATR buffer (1.5x) is tight. Candle structure shows a late-session breakdown: 12:45 candle prints a hammer-like reversal with high volume (8755), but 12:50-13:05 fails to hold above 4960. 13:05 closes at 4954.3, a fresh low in the last 12 candles, with no clear momentum reversal. No higher-timeframe confirmation (e.g., 15m/30m structure) visible. **Chasing** the overextended NIFTY narrative without a defined pullback entry.",
+      "sentiment": "No headline information available. Volume spike at 12:55 (15490) and 13:00 (21052) suggests profit-taking or short-covering exhaustion, but no follow-through buying. Sector-wide prints (FMCG) show mixed tape: some peers hold support, others break down. **Weak relative sentiment** in the absence of a clear catalyst.",
+      "macro": "NIFTY +1.33% is overextended, but late-session entries (143 minutes to close) require exceptional structure. BUY action in BRITANNIA aligns with index tape, but the stock is lagging the broader rally. **Macro alignment is secondary to micro-structure here**—no room for error in a fading session.",
+      "risk": "Reward:risk of 2.5 is mathematically appealing, but stop distance (1.5 ATR) is too tight for a late-session trade. Target (5026.77) is **feasible** (3.75 ATR, 143 minutes left), but requires a sharp V-shaped reversal with no confirmation. **Results risk is empty**, but earnings volatility cannot be ruled out. **High probability of a trap** given the lack of follow-through."
+    },
+    "rationale": "BRITANNIA’s BUY signal lacks conviction due to weak candle structure, no momentum confirmation, and late-session timing. The 12:45 hammer failed to hold, and the 13:05 close at 4954.3 signals distribution. **Skip unless a break below 4951.10 with volume > 20k triggers a short-term mean-reversion setup**, but even then, the risk of a gap-down open tomorrow (no results risk) or a fade into close remains high. Confidence in SKIP is 85 due to structural flaws.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
