@@ -1,23 +1,23 @@
 {
-  "signal_id": "20261125-140612-APOLLOHOSP",
-  "generated_at": "2026-11-25T14:06:12.458885+05:30",
-  "nifty_ltp": 25753.45,
+  "signal_id": "20261125-140815-APOLLOHOSP",
+  "generated_at": "2026-11-25T14:08:15.861645+05:30",
+  "nifty_ltp": 25737.5,
   "candidates": [
     {
       "ticker": "APOLLOHOSP",
       "signal": "BUY",
-      "ltp": 9305.0,
-      "stop": 9256.52,
-      "target": 9426.19,
+      "ltp": 9305.5,
+      "stop": 9257.02,
+      "target": 9426.69,
       "qty": 2,
       "indicators": {
         "rsi": 52.99,
         "atr": 32.3182,
         "atr_5m": 13.5784,
-        "vwap": 9276.2,
+        "vwap": 9276.31,
         "vol_ratio": 2.37
       },
-      "scout_reason": "NIFTY 50 +1.59% overextended for BUY; size cut 50%",
+      "scout_reason": "NIFTY 50 +1.53% overextended for BUY; size cut 50%",
       "candles_5m": [
         [
           "12:30",
@@ -176,14 +176,14 @@
           9303.5,
           9307.5,
           9301.0,
-          9304.0,
-          929
+          9305.0,
+          2633
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-25T14:06:14.165860+05:30"
+      "outcome_at": "2026-11-25T14:08:17.123841+05:30"
     }
   ]
 }
