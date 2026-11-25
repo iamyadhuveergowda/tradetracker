@@ -5928,5 +5928,35 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261125-122835-HEROMOTOCO",
+    "signal_time": "2026-11-25T12:28:35+05:30",
+    "judged_at": "2026-11-25T12:28:54+05:30",
+    "age_min": 0.3,
+    "ticker": "HEROMOTOCO",
+    "action": "BUY",
+    "entry": 5653.0,
+    "stop": 5616.53,
+    "target": 5744.18,
+    "qty": 3,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "setup_hash": "dacb77de3a5a5f51ffda353f2d35d25a0bf5ab08",
+    "index_name": "NIFTY 50",
+    "index_day_pct": 2.17,
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 64.94 suggests moderate overbought conditions, not extreme. The last 5m candle (12:25) shows a strong bullish spike (high 5672.5, close 5654.5) but lacks follow-through into the 12:28 signal time. The 12:20 candle (high 5663.0) was a sharp move but closed lower than its high, indicating potential exhaustion. ATR buffer (stop at 5616.53) is tight (1.5 ATR), and the target (5744.18) is 3.75 ATR away—unlikely to be reached in 182 minutes without a catalyst. Candle structure is choppy post-12:20 spike, with no clear momentum continuation.",
+      "sentiment": "No headline information available. Volume surged in the 12:20-12:25 candles (42,839 → 36,986), but the lack of follow-through into 12:28 suggests fading momentum. Sector-wide prints are not visible in the data, but the tape shows no broad-based participation in this move.",
+      "macro": "NIFTY is +2.16% at 25,897.05, but late-session entries (182 minutes to close) require exceptional structure. The index is overextended, but this stock’s move lacks alignment with the broader tape. Late-session rallies often fail without index participation.",
+      "risk": "Reward:risk of 2.5 is mathematically appealing, but the target (5744.18) is 3.75 ATR away—unrealistic in 182 minutes without a catalyst. Stop is 1.5 ATR away (5616.53), which is tight for a late-session trade. No results risk, but the lack of follow-through and choppy tape increase the risk of a false breakout. Feasibility is TIGHT due to time constraints and target distance."
+    },
+    "rationale": "HEROMOTOCO’s late-session spike lacks follow-through, and the target is unreachable in the remaining time (182 minutes). The RSI and choppy candle structure post-12:20 suggest exhaustion. No sector-wide or index-aligned momentum. SKIP due to high risk of a false breakout and tight feasibility.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
