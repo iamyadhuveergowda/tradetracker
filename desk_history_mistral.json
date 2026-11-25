@@ -6174,5 +6174,35 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261125-134851-EICHERMOT",
+    "signal_time": "2026-11-25T13:48:51+05:30",
+    "judged_at": "2026-11-25T13:49:08+05:30",
+    "age_min": 0.3,
+    "ticker": "EICHERMOT",
+    "action": "BUY",
+    "entry": 8298.5,
+    "stop": 8252.0,
+    "target": 8414.75,
+    "qty": 2,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "Valid only on a break above 8310.0 with follow-through volume > 15000",
+    "setup_hash": "afe6807283b091d3075b4d381fc24e5a671c3250",
+    "index_name": "NIFTY 50",
+    "index_day_pct": 1.5,
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "RSI at 54.01 is neutral, not overbought. The last 12 candles show a choppy tape with no clear momentum: 13:30 candle printed a high of 8310.0 but closed at 8295.0, failing to sustain. ATR buffer (1.5) is tight, and the stop at 8252.0 (1.5 ATR) is too close for a late-session entry. The 13:45 candle closed at 8299.0, below the 8304.5 high of 13:40, indicating weak follow-through. No clean setup; appears to be chasing.",
+      "sentiment": "No headline information available. Volume behavior is inconsistent: 13:30 candle had high volume (15147) but failed to close near its high, suggesting profit-taking or hesitation. Sector-wide prints are not visible in the data, but the NIFTY is overextended (+1.48%), which could lead to a pullback.",
+      "macro": "Late-session entry (102 minutes left) requires exceptional structure. The NIFTY is near session highs, increasing the risk of a mean-reversion move. The trade direction (BUY) aligns with the index tape, but the time of day is unfavorable for a speculative long without a clear catalyst.",
+      "risk": "Reward:risk of 2.5 is mathematically appealing, but the stop distance (1.5 ATR) is too tight for the remaining time (102 minutes). Feasibility is TIGHT: target distance (3.75 ATR) may not be reachable in the time left. No results risk, but the lack of follow-through and choppy tape elevate risk. The trade is speculative and lacks conviction."
+    },
+    "rationale": "EICHERMOT lacks a clean technical setup for a late-session BUY. The choppy tape, weak follow-through, and tight stop distance (1.5 ATR) make this a high-risk entry. The NIFTY's overextension and time of day further reduce conviction. SKIP unless a break above 8310.0 with volume > 15000 occurs, signaling renewed momentum.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
