@@ -6142,5 +6142,37 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261125-134122-MARUTI",
+    "signal_time": "2026-11-25T13:41:22+05:30",
+    "judged_at": "2026-11-25T13:41:39+05:30",
+    "age_min": 0.3,
+    "ticker": "MARUTI",
+    "action": "SELL",
+    "entry": 14055.0,
+    "stop": 14160.32,
+    "target": 13791.7,
+    "qty": 1,
+    "verdict": "SKIP",
+    "confidence": null,
+    "filter": "SELL_FILTER_REGIME",
+    "raw_verdict": null,
+    "index_name": "NIFTY 50",
+    "index_day_pct": 1.39,
+    "setup_hash": "a57cd7f67e2af102fcab88e1d00a1e2fa664cd56",
+    "trigger": "",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "",
+      "sentiment": "",
+      "macro": "",
+      "risk": "SELL filtered: NIFTY 50 day +1.39% is not below -0.25% (SELL_FILTER_REGIME shadow test)."
+    },
+    "rationale": "SELL filtered: NIFTY 50 day +1.39% is not below -0.25% (SELL_FILTER_REGIME shadow test).",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
