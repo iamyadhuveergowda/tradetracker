@@ -1,20 +1,20 @@
 {
-  "signal_id": "20261126-135129-BAJFINANCE",
-  "generated_at": "2026-11-26T13:51:29.918487+05:30",
-  "nifty_ltp": 25829.5,
+  "signal_id": "20261126-135414-BAJFINANCE",
+  "generated_at": "2026-11-26T13:54:14.580036+05:30",
+  "nifty_ltp": 25809.55,
   "candidates": [
     {
       "ticker": "BAJFINANCE",
       "signal": "SELL",
-      "ltp": 1111.35,
-      "stop": 1118.78,
-      "target": 1092.78,
+      "ltp": 1111.55,
+      "stop": 1118.98,
+      "target": 1092.98,
       "qty": 35,
       "indicators": {
         "rsi": 40.39,
         "atr": 4.951,
         "atr_5m": 2.4905,
-        "vwap": 1114.04,
+        "vwap": 1114.02,
         "vol_ratio": 1.71
       },
       "scout_reason": "NIFTY NEUTRAL, sector FINANCIAL SERVICES NEUTRAL",
@@ -175,9 +175,9 @@
           "13:50",
           1111.7,
           1112.15,
-          1110.9,
-          1110.9,
-          33152
+          1110.45,
+          1111.6,
+          73809
         ]
       ],
       "stop_floor_bound": false,
@@ -187,15 +187,15 @@
     {
       "ticker": "HINDALCO",
       "signal": "BUY",
-      "ltp": 917.5,
-      "stop": 911.2,
-      "target": 933.24,
+      "ltp": 917.55,
+      "stop": 911.25,
+      "target": 933.29,
       "qty": 42,
       "indicators": {
         "rsi": 58.27,
         "atr": 4.1969,
         "atr_5m": 1.8641,
-        "vwap": 910.3,
+        "vwap": 910.35,
         "vol_ratio": 1.84
       },
       "scout_reason": "NIFTY NEUTRAL, sector METAL BULLISH",
@@ -356,9 +356,9 @@
           "13:50",
           917.8,
           918.3,
-          917.5,
-          917.5,
-          25033
+          916.8,
+          917.3,
+          77723
         ]
       ],
       "stop_floor_bound": false,
