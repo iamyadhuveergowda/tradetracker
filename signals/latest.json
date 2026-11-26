@@ -1,14 +1,14 @@
 {
-  "signal_id": "20261126-120527-BAJAJFINSV",
-  "generated_at": "2026-11-26T12:05:27.762188+05:30",
-  "nifty_ltp": 25914.25,
+  "signal_id": "20261126-120720-BAJAJFINSV",
+  "generated_at": "2026-11-26T12:07:20.865907+05:30",
+  "nifty_ltp": 25927.55,
   "candidates": [
     {
       "ticker": "BAJAJFINSV",
       "signal": "SELL",
-      "ltp": 1895.2,
-      "stop": 1912.51,
-      "target": 1851.92,
+      "ltp": 1896.7,
+      "stop": 1914.01,
+      "target": 1853.42,
       "qty": 10,
       "indicators": {
         "rsi": 44.77,
@@ -17,7 +17,7 @@
         "vwap": 1894.44,
         "vol_ratio": 2.09
       },
-      "scout_reason": "NIFTY 50 +0.37% trending; SELL size cut 50%",
+      "scout_reason": "NIFTY 50 +0.42% trending; SELL size cut 50%",
       "candles_5m": [
         [
           "10:30",
@@ -183,7 +183,7 @@
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-26T12:05:29.000009+05:30"
+      "outcome_at": "2026-11-26T12:07:21.981690+05:30"
     }
   ]
 }
