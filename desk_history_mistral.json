@@ -6360,5 +6360,37 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261126-140158-TATAMOTORS",
+    "signal_time": "2026-11-26T14:01:58+05:30",
+    "judged_at": "2026-11-26T14:02:17+05:30",
+    "age_min": 0.3,
+    "ticker": "TATAMOTORS",
+    "action": "SELL",
+    "entry": 259.95,
+    "stop": 261.36,
+    "target": 256.43,
+    "qty": 150,
+    "verdict": "SKIP",
+    "confidence": null,
+    "filter": "SELL_FILTER_REGIME",
+    "raw_verdict": null,
+    "index_name": "NIFTY 50",
+    "index_day_pct": -0.15,
+    "setup_hash": "87cb7d4587d7ce8f7e2f525b50cdba8b13bffc6f",
+    "trigger": "",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "",
+      "sentiment": "",
+      "macro": "",
+      "risk": "SELL filtered: NIFTY 50 day -0.15% is not below -0.25% (SELL_FILTER_REGIME shadow test)."
+    },
+    "rationale": "SELL filtered: NIFTY 50 day -0.15% is not below -0.25% (SELL_FILTER_REGIME shadow test).",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
