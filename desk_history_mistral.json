@@ -6293,9 +6293,9 @@
       "risk": "SELL filtered: NIFTY 50 day +0.36% is not below -0.25% (SELL_FILTER_REGIME shadow test)."
     },
     "rationale": "SELL filtered: NIFTY 50 day +0.36% is not below -0.25% (SELL_FILTER_REGIME shadow test).",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.54,
+    "outcome_at": "2026-11-27T01:20:04+05:30"
   },
   {
     "signal_id": "20261126-122617-DRREDDY",
@@ -6325,9 +6325,9 @@
       "risk": "SELL filtered: NIFTY 50 day +0.46% is not below -0.25% (SELL_FILTER_REGIME shadow test)."
     },
     "rationale": "SELL filtered: NIFTY 50 day +0.46% is not below -0.25% (SELL_FILTER_REGIME shadow test).",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.4,
+    "outcome_at": "2026-11-27T01:20:04+05:30"
   },
   {
     "signal_id": "20261126-132020-TITAN",
@@ -6357,9 +6357,9 @@
       "risk": "SELL filtered: NIFTY 50 day +0.24% is not below -0.25% (SELL_FILTER_REGIME shadow test)."
     },
     "rationale": "SELL filtered: NIFTY 50 day +0.24% is not below -0.25% (SELL_FILTER_REGIME shadow test).",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.18,
+    "outcome_at": "2026-11-27T01:20:04+05:30"
   },
   {
     "signal_id": "20261126-140158-TATAMOTORS",
@@ -6421,8 +6421,8 @@
       "risk": "SELL filtered: NIFTY 50 day +0.04% is not below -0.25% (SELL_FILTER_REGIME shadow test)."
     },
     "rationale": "SELL filtered: NIFTY 50 day +0.04% is not below -0.25% (SELL_FILTER_REGIME shadow test).",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-27T01:20:04+05:30"
   }
 ]
