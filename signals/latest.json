@@ -1,23 +1,23 @@
 {
-  "signal_id": "20261126-122617-DRREDDY",
-  "generated_at": "2026-11-26T12:26:17.175144+05:30",
-  "nifty_ltp": 25935.65,
+  "signal_id": "20261126-122901-DRREDDY",
+  "generated_at": "2026-11-26T12:29:01.178899+05:30",
+  "nifty_ltp": 25916.45,
   "candidates": [
     {
       "ticker": "DRREDDY",
       "signal": "SELL",
-      "ltp": 1394.6,
-      "stop": 1401.12,
-      "target": 1378.3,
+      "ltp": 1394.5,
+      "stop": 1401.02,
+      "target": 1378.2,
       "qty": 14,
       "indicators": {
         "rsi": 45.64,
         "atr": 4.3466,
         "atr_5m": 2.2366,
-        "vwap": 1395.87,
+        "vwap": 1395.83,
         "vol_ratio": 2.81
       },
-      "scout_reason": "NIFTY 50 +0.45% trending; SELL size cut 50%",
+      "scout_reason": "NIFTY 50 +0.38% trending; SELL size cut 50%",
       "candles_5m": [
         [
           "10:50",
@@ -176,14 +176,14 @@
           1393.8,
           1395.0,
           1393.2,
-          1394.3,
-          2366
+          1394.0,
+          11651
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-26T12:26:18.263858+05:30"
+      "outcome_at": "2026-11-26T12:29:02.430810+05:30"
     }
   ]
 }
