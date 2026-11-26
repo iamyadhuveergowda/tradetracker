@@ -1948,9 +1948,9 @@
       "risk": "SELL filtered: NIFTY 50 day +0.36% is not below -0.25% (SELL_FILTER_REGIME shadow test)."
     },
     "rationale": "SELL filtered: NIFTY 50 day +0.36% is not below -0.25% (SELL_FILTER_REGIME shadow test).",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.54,
+    "outcome_at": "2026-11-27T01:08:02+05:30"
   },
   {
     "signal_id": "20261126-122617-DRREDDY",
@@ -1980,9 +1980,9 @@
       "risk": "SELL filtered: NIFTY 50 day +0.46% is not below -0.25% (SELL_FILTER_REGIME shadow test)."
     },
     "rationale": "SELL filtered: NIFTY 50 day +0.46% is not below -0.25% (SELL_FILTER_REGIME shadow test).",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.4,
+    "outcome_at": "2026-11-27T01:08:02+05:30"
   },
   {
     "signal_id": "20261126-132020-TITAN",
@@ -2012,9 +2012,9 @@
       "risk": "SELL filtered: NIFTY 50 day +0.24% is not below -0.25% (SELL_FILTER_REGIME shadow test)."
     },
     "rationale": "SELL filtered: NIFTY 50 day +0.24% is not below -0.25% (SELL_FILTER_REGIME shadow test).",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.18,
+    "outcome_at": "2026-11-27T01:08:02+05:30"
   },
   {
     "signal_id": "20261126-134125-SBILIFE",
@@ -2042,9 +2042,9 @@
       "risk": "Target of 1870.31 requires 28.31 points or 3.75 ATR, which is unrealistic to achieve in 109 minutes without an established trend. Stop is 11.32 points (1.5 ATR) at 1830.68. Results risk is empty."
     },
     "rationale": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.03,
+    "outcome_at": "2026-11-27T01:08:02+05:30"
   },
   {
     "signal_id": "20261126-140401-TATAMOTORS",
@@ -2106,8 +2106,8 @@
       "risk": "SELL filtered: NIFTY 50 day +0.04% is not below -0.25% (SELL_FILTER_REGIME shadow test)."
     },
     "rationale": "SELL filtered: NIFTY 50 day +0.04% is not below -0.25% (SELL_FILTER_REGIME shadow test).",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-27T01:08:02+05:30"
   }
 ]
