@@ -1,23 +1,23 @@
 {
-  "signal_id": "20261126-113603-BPCL",
-  "generated_at": "2026-11-26T11:36:03.804180+05:30",
-  "nifty_ltp": 25889.35,
+  "signal_id": "20261126-113849-BPCL",
+  "generated_at": "2026-11-26T11:38:49.150300+05:30",
+  "nifty_ltp": 25874.75,
   "candidates": [
     {
       "ticker": "BPCL",
       "signal": "BUY",
-      "ltp": 308.65,
-      "stop": 307.09,
-      "target": 312.54,
+      "ltp": 308.5,
+      "stop": 306.94,
+      "target": 312.39,
       "qty": 127,
       "indicators": {
         "rsi": 54.98,
         "atr": 1.0383,
         "atr_5m": 0.5893,
-        "vwap": 307.71,
+        "vwap": 307.72,
         "vol_ratio": 2.73
       },
-      "scout_reason": "NIFTY BULLISH, sector ENERGY BULLISH",
+      "scout_reason": "NIFTY NEUTRAL, sector ENERGY BULLISH",
       "candles_5m": [
         [
           "10:00",
@@ -175,15 +175,15 @@
           "11:35",
           308.55,
           308.7,
-          308.45,
-          308.7,
-          2102
+          308.4,
+          308.6,
+          12226
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-26T11:36:04.702290+05:30"
+      "outcome_at": "2026-11-26T11:38:49.915233+05:30"
     }
   ]
 }
