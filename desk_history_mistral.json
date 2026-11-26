@@ -6264,5 +6264,37 @@
     "outcome": "CLOSE",
     "outcome_r": -0.02,
     "outcome_at": "2026-11-26T01:42:43+05:30"
+  },
+  {
+    "signal_id": "20261126-120527-BAJAJFINSV",
+    "signal_time": "2026-11-26T12:05:27+05:30",
+    "judged_at": "2026-11-26T12:05:44+05:30",
+    "age_min": 0.3,
+    "ticker": "BAJAJFINSV",
+    "action": "SELL",
+    "entry": 1895.2,
+    "stop": 1912.51,
+    "target": 1851.92,
+    "qty": 10,
+    "verdict": "SKIP",
+    "confidence": null,
+    "filter": "SELL_FILTER_REGIME",
+    "raw_verdict": null,
+    "index_name": "NIFTY 50",
+    "index_day_pct": 0.36,
+    "setup_hash": "b12a47539320552dac8c307110714a236657bddf",
+    "trigger": "",
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "",
+      "sentiment": "",
+      "macro": "",
+      "risk": "SELL filtered: NIFTY 50 day +0.36% is not below -0.25% (SELL_FILTER_REGIME shadow test)."
+    },
+    "rationale": "SELL filtered: NIFTY 50 day +0.36% is not below -0.25% (SELL_FILTER_REGIME shadow test).",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
