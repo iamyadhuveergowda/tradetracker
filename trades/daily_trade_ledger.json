@@ -2400,7 +2400,7 @@
     "ticker": "BEL",
     "action": "BUY",
     "qty": 96,
-    "remaining_qty": 96,
+    "remaining_qty": 0,
     "requested_qty": 96,
     "locked_margin_per_share": 81.25,
     "partial_booked": false,
@@ -2411,36 +2411,52 @@
     "open": 405.0,
     "high": 406.35,
     "low": 405.0,
-    "close": 404.25,
+    "close": 403.75,
     "time": "11:58:05",
-    "status": "OPEN ⏳",
-    "exit_price": null,
-    "net_pnl": 0.0,
+    "status": "LOSS 🔴",
+    "exit_price": 403.54,
+    "net_pnl": -321.03,
     "rationale": "BULL: Entry at 406.1 sits just above recent support around 405.0‑405.3, with a tight stop 2.26 points below entry and a target 5.64 points (~3.7 ATR) below the session high, RSI neutral (51.6) and VWAP (406.89) just above entry indicating slight upside bias. BEAR: Target requires a ~3.7 ATR move and the price must climb ~4.9 points to reach the session high, with modest upward momentum and no strong volume breakout; entry is below VWAP, suggesting possible resistance near 410. VERDICT: APPROVE",
     "events": [
       {
         "time": "2026-11-26T11:58:05+05:30",
         "type": "ENTRY",
         "text": "PAPER BUY 96 @ ₹406.25"
+      },
+      {
+        "time": "2026-11-26T13:59:17+05:30",
+        "type": "EXIT",
+        "text": "Stop hit: 96 @ ₹403.54, net ₹-321.03"
       }
     ],
     "mode": "PAPER",
-    "last_price": 404.25,
+    "last_price": 403.54,
     "atr": 1.5045,
     "target_booked": false,
     "breakeven_set": false,
     "mfe_r": 0.0,
-    "mae_r": -0.907,
+    "mae_r": -1.106,
     "size_tag": "standard",
     "size_reason": "standard",
     "vol_ratio": 2.23,
     "stop_atr_mult": 1.5,
     "rvol": 1.42,
     "rule_version": "v14",
-    "entry_brokerage_remaining": 20.0,
-    "charges": {},
-    "pnl_by_date": {},
+    "entry_brokerage_remaining": 0.0,
+    "charges": {
+      "brokerage": 40.0,
+      "exchange": 2.31,
+      "sebi": 0.08,
+      "stt": 9.68,
+      "stamp": 1.17,
+      "gst": 7.63,
+      "total": 60.87
+    },
+    "pnl_by_date": {
+      "2026-11-26": -321.03
+    },
     "orders": {},
-    "breakeven_price": 407.13
+    "breakeven_price": 407.13,
+    "exit_time": "2026-11-26T13:59:17+05:30"
   }
 ]
