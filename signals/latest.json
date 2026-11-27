@@ -1,23 +1,23 @@
 {
-  "signal_id": "20261127-142542-BAJAJ-AUTO",
-  "generated_at": "2026-11-27T14:25:42.940451+05:30",
-  "nifty_ltp": 25662.35,
+  "signal_id": "20261127-142826-BAJAJ-AUTO",
+  "generated_at": "2026-11-27T14:28:26.714310+05:30",
+  "nifty_ltp": 25677.35,
   "candidates": [
     {
       "ticker": "BAJAJ-AUTO",
       "signal": "SELL",
-      "ltp": 10514.0,
-      "stop": 10556.06,
-      "target": 10408.86,
+      "ltp": 10510.0,
+      "stop": 10552.04,
+      "target": 10404.9,
       "qty": 1,
       "indicators": {
         "rsi": 38.24,
         "atr": 43.0373,
         "atr_5m": 21.8214,
-        "vwap": 10640.34,
+        "vwap": 10639.44,
         "vol_ratio": 1.53
       },
-      "scout_reason": "NIFTY 50 -0.86% oversold for SELL; size cut 50%",
+      "scout_reason": "NIFTY 50 -0.80% oversold for SELL; size cut 50%",
       "candles_5m": [
         [
           "12:50",
@@ -174,16 +174,16 @@
         [
           "14:25",
           10509.0,
-          10514.0,
-          10508.0,
-          10510.0,
-          354
+          10515.0,
+          10506.0,
+          10507.0,
+          3188
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-27T14:25:43.724319+05:30"
+      "outcome_at": "2026-11-27T14:28:27.565751+05:30"
     }
   ]
 }
