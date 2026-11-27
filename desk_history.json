@@ -2109,5 +2109,35 @@
     "outcome": "STOP",
     "outcome_r": -1.0,
     "outcome_at": "2026-11-27T01:08:02+05:30"
+  },
+  {
+    "signal_id": "20261127-105753-CIPLA",
+    "signal_time": "2026-11-27T10:57:53+05:30",
+    "judged_at": "2026-11-27T10:58:55+05:30",
+    "age_min": 1.0,
+    "ticker": "CIPLA",
+    "action": "SELL",
+    "entry": 1441.1,
+    "stop": 1449.74,
+    "target": 1419.51,
+    "qty": 27,
+    "verdict": "GO",
+    "confidence": 76,
+    "trigger": "Enter short on retest of 1441.10 or break below session low 1439.30",
+    "setup_hash": "4d58e4c20594b1ca92e9a24846c75b61bd9138fc",
+    "index_name": "NIFTY 50",
+    "index_day_pct": -0.57,
+    "results_risk": "",
+    "feasibility": "",
+    "analyst_notes": {
+      "technical": "Clear distribution structure. A heavy breakdown candle occurred at 10:30 printed on 93,079 volume, reversing the morning rally to 1451.80. Subsequent bars established lower highs and lower lows down to 1439.80 with RSI at 38.36, indicating orderly bearish momentum rather than an exhausted oversold state.",
+      "sentiment": "No headline news feed is available. Purely judging from the tape, aggressive institutional distribution is evident from the 10:30 volume surge (93,079 vs 10k-20k average) and sustained above-average turnover (volume ratio 1.76) pressing prices lower.",
+      "macro": "Aligned with broader market conditions as NIFTY trades bearish at 25750.10. With 273 minutes remaining in the session, there is ample runway for intraday trend continuation.",
+      "risk": "Reward-to-risk is sound at 2.50. The stop is positioned at 1449.74 (1.50 ATR / 8.64 pts), safely above the 10:30 breakdown node, targeting 1419.51 (3.75 ATR). Results risk is empty."
+    },
+    "rationale": "High-conviction short setup supported by a heavy 10:30 volume breakdown, RSI at 38.36, alignment with a bearish NIFTY, and an attractive 2.50 reward-to-risk with 273 minutes left to run.",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
