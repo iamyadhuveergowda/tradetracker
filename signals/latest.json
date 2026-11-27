@@ -1,14 +1,14 @@
 {
-  "signal_id": "20261127-121706-INFY",
-  "generated_at": "2026-11-27T12:17:06.691812+05:30",
-  "nifty_ltp": 25714.35,
+  "signal_id": "20261127-121950-INFY",
+  "generated_at": "2026-11-27T12:19:50.882391+05:30",
+  "nifty_ltp": 25725.6,
   "candidates": [
     {
       "ticker": "INFY",
       "signal": "SELL",
-      "ltp": 1156.8,
-      "stop": 1165.2,
-      "target": 1135.8,
+      "ltp": 1157.0,
+      "stop": 1165.4,
+      "target": 1136.0,
       "qty": 16,
       "indicators": {
         "rsi": 48.67,
@@ -17,7 +17,7 @@
         "vwap": 1157.64,
         "vol_ratio": 2.03
       },
-      "scout_reason": "NIFTY 50 -0.66% oversold for SELL; size cut 50%",
+      "scout_reason": "NIFTY 50 -0.61% oversold for SELL; size cut 50%",
       "candles_5m": [
         [
           "10:40",
@@ -174,16 +174,16 @@
         [
           "12:15",
           1156.9,
-          1157.2,
+          1158.1,
           1156.1,
-          1156.9,
-          66500
+          1157.5,
+          167526
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-27T12:17:07.358336+05:30"
+      "outcome_at": "2026-11-27T12:19:51.808775+05:30"
     }
   ]
 }
