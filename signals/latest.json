@@ -1,32 +1,24 @@
 {
-  "signal_id": "20261127-105753-CIPLA",
-  "generated_at": "2026-11-27T10:57:53.191312+05:30",
-  "nifty_ltp": 25750.1,
+  "signal_id": "20261127-110037-CIPLA",
+  "generated_at": "2026-11-27T11:00:37.628680+05:30",
+  "nifty_ltp": 25724.55,
   "candidates": [
     {
       "ticker": "CIPLA",
       "signal": "SELL",
-      "ltp": 1441.1,
-      "stop": 1449.74,
-      "target": 1419.51,
-      "qty": 27,
+      "ltp": 1438.9,
+      "stop": 1447.54,
+      "target": 1417.31,
+      "qty": 13,
       "indicators": {
-        "rsi": 38.36,
+        "rsi": 36.05,
         "atr": 5.7578,
-        "atr_5m": 3.5836,
-        "vwap": 1443.97,
-        "vol_ratio": 1.76
+        "atr_5m": 3.6633,
+        "vwap": 1443.13,
+        "vol_ratio": 5.38
       },
-      "scout_reason": "NIFTY BEARISH, sector PHARMA NEUTRAL",
+      "scout_reason": "NIFTY 50 -0.62% oversold for SELL; size cut 50%",
       "candles_5m": [
-        [
-          "09:20",
-          1442.6,
-          1446.3,
-          1442.6,
-          1444.5,
-          9325
-        ],
         [
           "09:25",
           1445.2,
@@ -175,14 +167,23 @@
           "10:55",
           1440.9,
           1441.4,
-          1439.8,
-          1439.8,
-          35366
+          1436.7,
+          1438.8,
+          115459
+        ],
+        [
+          "11:00",
+          1438.4,
+          1439.1,
+          1438.4,
+          1439.0,
+          1750
         ]
       ],
       "stop_floor_bound": false,
-      "outcome": null,
-      "outcome_reason": ""
+      "outcome": "dropped_other",
+      "outcome_reason": "scout: omitted from LLM output",
+      "outcome_at": "2026-11-27T11:00:38.918801+05:30"
     }
   ]
 }
