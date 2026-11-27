@@ -2136,8 +2136,8 @@
       "risk": "Reward-to-risk is sound at 2.50. The stop is positioned at 1449.74 (1.50 ATR / 8.64 pts), safely above the 10:30 breakdown node, targeting 1419.51 (3.75 ATR). Results risk is empty."
     },
     "rationale": "High-conviction short setup supported by a heavy 10:30 volume breakdown, RSI at 38.36, alignment with a bearish NIFTY, and an attractive 2.50 reward-to-risk with 273 minutes left to run.",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.14,
+    "outcome_at": "2026-11-28T00:59:21+05:30"
   }
 ]
