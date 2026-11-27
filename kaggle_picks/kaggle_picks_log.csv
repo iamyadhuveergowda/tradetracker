@@ -21,3 +21,5 @@ pick_date,market,ticker,yf_symbol,ref_price,stop,target,watch_level,score,reason
 2026-11-25,NIFTY,SHRIRAMFIN,SHRIRAMFIN.NS,989.95,943.03,1107.26,1015.0,7,above 50d MA; 20d return +15.1%; RSI 61 strong; volume 1.2x avg; near 20d high; ATR 3.1% alive,31.28,60.5,0.1513,0.0306,PENDING,,,1
 2026-11-26,NIFTY,BRITANNIA,BRITANNIA.NS,5185.0,4975.03,5709.92,5098.3,7,above 50d MA; 20d return +10.8%; RSI 63 strong; volume 1.2x avg; near 20d high; ATR 2.6% alive,139.98,63.5,0.1083,0.0258,PENDING,,,1
 2026-11-26,NIFTY,HDFCLIFE,HDFCLIFE.NS,594.4,566.76,663.49,609.75,7,above 50d MA; 20d return +15.9%; RSI 64 strong; volume 1.2x avg; near 20d high; ATR 3.0% alive,18.42,63.7,0.1586,0.0304,PENDING,,,1
+2026-11-27,NIFTY,BRITANNIA,BRITANNIA.NS,5076.2,4879.88,5566.99,5098.3,7,above 50d MA; 20d return +10.8%; RSI 63 strong; volume 1.2x avg; near 20d high; ATR 2.6% alive,130.88,63.5,0.1083,0.0258,,,,0
+2026-11-27,NIFTY,CIPLA,CIPLA.NS,1433.2,1394.95,1528.82,1447.0,7,above 50d MA; 20d return +5.8%; RSI 64 strong; volume 1.2x avg; near 20d high; ATR 1.8% alive,25.5,63.6,0.0577,0.0178,,,,0
