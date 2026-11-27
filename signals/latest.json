@@ -1,7 +1,7 @@
 {
-  "signal_id": "20261127-120207-BPCL",
-  "generated_at": "2026-11-27T12:02:07.357630+05:30",
-  "nifty_ltp": 25731.65,
+  "signal_id": "20261127-120452-BPCL",
+  "generated_at": "2026-11-27T12:04:52.299322+05:30",
+  "nifty_ltp": 25725.1,
   "candidates": [
     {
       "ticker": "BPCL",
@@ -14,10 +14,10 @@
         "rsi": 61.72,
         "atr": 1.056,
         "atr_5m": 0.5544,
-        "vwap": 307.31,
+        "vwap": 307.32,
         "vol_ratio": 4.6
       },
-      "scout_reason": "NIFTY 50 -0.59% trending; BUY size cut 50%",
+      "scout_reason": "NIFTY 50 -0.62% trending; BUY size cut 50%",
       "candles_5m": [
         [
           "10:25",
@@ -174,16 +174,16 @@
         [
           "12:00",
           308.1,
-          308.2,
+          308.35,
+          308.0,
           308.1,
-          308.1,
-          1574
+          30689
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-27T12:02:09.017821+05:30"
+      "outcome_at": "2026-11-27T12:04:53.259119+05:30"
     }
   ]
 }
