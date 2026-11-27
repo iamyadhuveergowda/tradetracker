@@ -1,23 +1,23 @@
 {
-  "signal_id": "20261127-115640-MARUTI",
-  "generated_at": "2026-11-27T11:56:40.345158+05:30",
-  "nifty_ltp": 25702.85,
+  "signal_id": "20261127-115923-MARUTI",
+  "generated_at": "2026-11-27T11:59:23.733486+05:30",
+  "nifty_ltp": 25711.7,
   "candidates": [
     {
       "ticker": "MARUTI",
       "signal": "SELL",
-      "ltp": 13900.0,
-      "stop": 13980.14,
-      "target": 13699.65,
+      "ltp": 13890.0,
+      "stop": 13970.14,
+      "target": 13689.65,
       "qty": 1,
       "indicators": {
         "rsi": 36.95,
         "atr": 53.4275,
         "atr_5m": 33.0125,
-        "vwap": 13972.31,
+        "vwap": 13970.54,
         "vol_ratio": 2.27
       },
-      "scout_reason": "NIFTY 50 -0.70% oversold for SELL; size cut 50%",
+      "scout_reason": "NIFTY 50 -0.67% oversold for SELL; size cut 50%",
       "candles_5m": [
         [
           "10:20",
@@ -174,31 +174,32 @@
         [
           "11:55",
           13891.0,
-          13902.0,
-          13890.0,
-          13901.0,
-          1314
+          13908.0,
+          13887.0,
+          13894.0,
+          5962
         ]
       ],
       "stop_floor_bound": false,
-      "outcome": null,
-      "outcome_reason": ""
+      "outcome": "dropped_other",
+      "outcome_reason": "scout: omitted from LLM output",
+      "outcome_at": "2026-11-27T11:59:25.074117+05:30"
     },
     {
       "ticker": "BPCL",
       "signal": "BUY",
-      "ltp": 308.1,
-      "stop": 306.52,
-      "target": 312.06,
+      "ltp": 308.05,
+      "stop": 306.47,
+      "target": 312.01,
       "qty": 63,
       "indicators": {
         "rsi": 59.63,
         "atr": 1.056,
         "atr_5m": 0.5624,
-        "vwap": 307.22,
+        "vwap": 307.3,
         "vol_ratio": 2.31
       },
-      "scout_reason": "NIFTY 50 -0.70% trending; BUY size cut 50%",
+      "scout_reason": "NIFTY 50 -0.67% trending; BUY size cut 50%",
       "candles_5m": [
         [
           "10:20",
@@ -358,12 +359,13 @@
           308.2,
           307.75,
           308.0,
-          43219
+          251539
         ]
       ],
       "stop_floor_bound": false,
-      "outcome": null,
-      "outcome_reason": ""
+      "outcome": "dropped_other",
+      "outcome_reason": "scout: omitted from LLM output",
+      "outcome_at": "2026-11-27T11:59:25.074136+05:30"
     }
   ]
 }
