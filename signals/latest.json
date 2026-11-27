@@ -1,23 +1,23 @@
 {
-  "signal_id": "20261127-124034-GRASIM",
-  "generated_at": "2026-11-27T12:40:34.723824+05:30",
-  "nifty_ltp": 25693.1,
+  "signal_id": "20261127-124315-GRASIM",
+  "generated_at": "2026-11-27T12:43:15.560027+05:30",
+  "nifty_ltp": 25706.05,
   "candidates": [
     {
       "ticker": "GRASIM",
       "signal": "SELL",
-      "ltp": 3162.8,
-      "stop": 3178.26,
-      "target": 3124.16,
+      "ltp": 3163.9,
+      "stop": 3179.36,
+      "target": 3125.26,
       "qty": 6,
       "indicators": {
         "rsi": 42.4,
         "atr": 10.3035,
         "atr_5m": 5.9467,
-        "vwap": 3186.33,
+        "vwap": 3186.14,
         "vol_ratio": 6.04
       },
-      "scout_reason": "NIFTY 50 -0.74% oversold for SELL; size cut 50%",
+      "scout_reason": "NIFTY 50 -0.69% oversold for SELL; size cut 50%",
       "candles_5m": [
         [
           "11:05",
@@ -174,10 +174,10 @@
         [
           "12:40",
           3163.3,
-          3163.9,
-          3162.3,
-          3162.8,
-          158
+          3164.4,
+          3160.8,
+          3163.7,
+          1948
         ]
       ],
       "stop_floor_bound": false,
@@ -187,18 +187,18 @@
     {
       "ticker": "ADANIENT",
       "signal": "SELL",
-      "ltp": 2651.2,
-      "stop": 2668.24,
-      "target": 2608.61,
+      "ltp": 2652.3,
+      "stop": 2669.34,
+      "target": 2609.71,
       "qty": 7,
       "indicators": {
         "rsi": 39.97,
         "atr": 11.3575,
         "atr_5m": 5.3818,
-        "vwap": 2673.17,
+        "vwap": 2673.15,
         "vol_ratio": 2.08
       },
-      "scout_reason": "NIFTY 50 -0.74% oversold for SELL; size cut 50%",
+      "scout_reason": "NIFTY 50 -0.69% oversold for SELL; size cut 50%",
       "candles_5m": [
         [
           "11:05",
@@ -355,10 +355,10 @@
         [
           "12:40",
           2651.5,
-          2651.6,
-          2651.0,
-          2651.5,
-          172
+          2653.4,
+          2650.6,
+          2652.3,
+          1167
         ]
       ],
       "stop_floor_bound": false,
