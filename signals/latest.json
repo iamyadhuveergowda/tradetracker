@@ -1,20 +1,20 @@
 {
-  "signal_id": "20261127-111052-ITC",
-  "generated_at": "2026-11-27T11:10:52.639354+05:30",
-  "nifty_ltp": 25751.0,
+  "signal_id": "20261127-111249-ITC",
+  "generated_at": "2026-11-27T11:12:49.350447+05:30",
+  "nifty_ltp": 25750.85,
   "candidates": [
     {
       "ticker": "ITC",
       "signal": "SELL",
-      "ltp": 304.65,
-      "stop": 306.16,
-      "target": 300.86,
+      "ltp": 305.05,
+      "stop": 306.56,
+      "target": 301.26,
       "qty": 128,
       "indicators": {
         "rsi": 36.21,
         "atr": 1.0096,
         "atr_5m": 0.5776,
-        "vwap": 305.84,
+        "vwap": 305.8,
         "vol_ratio": 2.36
       },
       "scout_reason": "NIFTY BEARISH, sector FMCG BEARISH",
@@ -174,10 +174,10 @@
         [
           "11:10",
           304.5,
-          304.65,
-          304.45,
-          304.45,
-          53238
+          305.1,
+          304.05,
+          305.1,
+          370011
         ]
       ],
       "stop_floor_bound": false,
@@ -187,9 +187,9 @@
     {
       "ticker": "POWERGRID",
       "signal": "BUY",
-      "ltp": 268.55,
-      "stop": 267.04,
-      "target": 272.33,
+      "ltp": 268.5,
+      "stop": 266.99,
+      "target": 272.28,
       "qty": 73,
       "indicators": {
         "rsi": 52.75,
@@ -356,9 +356,9 @@
           "11:10",
           268.7,
           268.7,
+          268.4,
           268.5,
-          268.5,
-          12876
+          24129
         ]
       ],
       "stop_floor_bound": false,
@@ -376,7 +376,7 @@
         "rsi": 57.33,
         "atr": 7.4431,
         "atr_5m": 4.069,
-        "vwap": 1846.2,
+        "vwap": 1846.24,
         "vol_ratio": 2.19
       },
       "scout_reason": "NIFTY 50 -0.52% trending; BUY size cut 50%",
@@ -537,9 +537,9 @@
           "11:10",
           1850.7,
           1850.7,
-          1849.8,
-          1850.5,
-          1647
+          1849.3,
+          1850.0,
+          3822
         ]
       ],
       "stop_floor_bound": false,
